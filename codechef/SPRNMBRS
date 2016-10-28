@@ -1,0 +1,71 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aEuler's phi function for a positive integer N is usually denoted as \u03c6(N) and defined as the number of positive integers less than or equal to N that are coprime with N. Let's call a positive integer N a super number if N can be divided by \u03c6(N) without a remainder.\u000ae.g. 2 is a super number (since 2 mod \u03c6(2) = 0), while 3 is not (since 3 mod \u03c6(3) = 1).\u000aYou are given two positive integers L and R. Your task is to find count of super numbers in the range [L, R].\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test case is described by a single line containing two positive integers L and R.\u000aOutput\u000aFor each test case, output a single line containing one integer: the number of super numbers in the range.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a1 \u2264 L \u2264 R \u2264 1018\u000aExample\u000aInput:\u000a3\u000a2 3\u000a90 95\u000a12 21\u000a\u000aOutput:\u000a1\u000a0\u000a3\u000aExplanation\u000aIn the first example, 2 is a super number while 3 is not (as explained in the statement). So, the number of super numbers in the range [2, 3] will be equal to 1.\u000aAuthor: kostya_by\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/SPRNMBRS\u000aTags: cook62 easy-medium kostya_by number-theory\u000aDate Added: 5-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aEuler's phi function for a positive integer N is usually denoted as \u03c6(N) and defined as the number of positive integers less than or equal to N that are coprime with N. Let's call a positive integer N a super number if N can be divided by \u03c6(N) without a remainder.\u000ae.g. 2 is a super number (since 2 mod \u03c6(2) = 0), while 3 is not (since 3 mod \u03c6(3) = 1).\u000aYou are given two positive integers L and R. Your task is to find count of super numbers in the range [L, R].\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test case is described by a single line containing two positive integers L and R.\u000aOutput\u000aFor each test case, output a single line containing one integer: the number of super numbers in the range.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a1 \u2264 L \u2264 R \u2264 1018\u000aExample\u000aInput:\u000a3\u000a2 3\u000a90 95\u000a12 21\u000a\u000aOutput:\u000a1\u000a0\u000a3\u000aExplanation\u000aIn the first example, 2 is a super number while 3 is not (as explained in the statement). So, the number of super numbers in the range [2, 3] will be equal to 1.\u000aAuthor: kostya_by\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/SPRNMBRS\u000aTags: cook62 easy-medium kostya_by number-theory\u000aDate Added: 5-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian as well. Mandarin Chinese Russian   Euler's phi function for a positive integer N is usually denoted as \u03c6(N) and defined as the number of positive integers less than or equal to N that are coprime with N. Let's call a positive integer N a super number if N can be divided by \u03c6(N) without a remainder.\u000ae.g. 2 is a super number (since 2 mod \u03c6(2) = 0), while 3 is not (since 3 mod \u03c6(3) = 1). Euler's phi function N \u03c6(N) N coprime N N super N \u03c6(N)  2 mod \u03c6(2) = 0 3 mod \u03c6(3) = 1 You are given two positive integers L and R. Your task is to find count of super numbers in the range [L, R]. L R [L, R] Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T Each test case is described by a single line containing two positive integers L and R. L R Output For each test case, output a single line containing one integer: the number of super numbers in the range. Constraints 1 \u2264 T \u2264 1000\u000a1 \u2264 L \u2264 R \u2264 1018 1 \u2264 T \u2264 1000 T 1 \u2264 L \u2264 R \u2264 1018 L R 18 Example Input:\u000a3\u000a2 3\u000a90 95\u000a12 21\u000a\u000aOutput:\u000a1\u000a0\u000a3 Input: Output: Explanation In the first example, 2 is a super number while 3 is not (as explained in the statement). So, the number of super numbers in the range [2, 3] will be equal to 1. In the first example  Author: kostya_by\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/SPRNMBRS\u000aTags: cook62 easy-medium kostya_by number-theory\u000aDate Added: 5-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kostya_by\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/SPRNMBRS\u000aTags: cook62 easy-medium kostya_by number-theory\u000aDate Added: 5-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kostya_by Author: kostya_by kostya_by Tester: shangjingbo Tester: shangjingbo shangjingbo Editorial: http://discuss.codechef.com/problems/SPRNMBRS Editorial: http://discuss.codechef.com/problems/SPRNMBRS http://discuss.codechef.com/problems/SPRNMBRS Tags: cook62 easy-medium kostya_by number-theory Tags: cook62 easy-medium kostya_by number-theory cook62 easy-medium kostya_by number-theory Date Added: 5-09-2015 Date Added: 5-09-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook62 easy-medium kostya_by number-theory
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/SPRNMBRS
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian as well.
+p17
+aVEuler's phi function for a positive integer N is usually denoted as \u03c6(N) and defined as the number of positive integers less than or equal to N that are coprime with N. Let's call a positive integer N a super number if N can be divided by \u03c6(N) without a remainder.
+p18
+aVe.g. 2 is a super number (since 2 mod \u03c6(2) = 0), while 3 is not (since 3 mod \u03c6(3) = 1).
+p19
+aVYou are given two positive integers L and R. Your task is to find count of super numbers in the range [L, R].
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVEach test case is described by a single line containing two positive integers L and R.
+p25
+aVOutput
+p26
+aVFor each test case, output a single line containing one integer: the number of super numbers in the range.
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV1 \u2264 T \u2264 1000
+p31
+aV1 \u2264 L \u2264 R \u2264 1018
+p32
+asS'id'
+p33
+c__builtin__
+id
+p34
+sS'name'
+p35
+VSPRNMBRS
+p36
+sb.

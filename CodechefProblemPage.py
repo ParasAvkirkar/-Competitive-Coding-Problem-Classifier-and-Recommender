@@ -10,10 +10,12 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import requests
 
+driver = webdriver.Chrome()
 
-def getCodechefProblem(problemUrl, driver):
+def getCodechefProblem(problemUrl):
 	count = 0
 	#driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+
 	#Get problem Name
 	problemName = ''
 	for c in problemUrl[::-1]:
@@ -25,9 +27,7 @@ def getCodechefProblem(problemUrl, driver):
 	print('reach problem page '+ problemUrl)
 	try:
 		problemText = ''
-		#divProblem = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "problem-page-complete")))
-		# wait = WebDriverWait(driver, 10)
-		# wait.until(EC.presence_of_element_located((By.ID, "problem-page-complete")))
+		divProblem = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "problem-page-complete")))
 
 		divProblem = driver.find_element_by_id('problem-page-complete')					
 		#print(str(divProblem))
@@ -46,12 +46,15 @@ def getCodechefProblem(problemUrl, driver):
 		prob = Problem(problemName, problemUrl, problemTags, problemText)
 		# print(problemText)
 		# print(prob)
+		
+		count = count + 1
+		return prob
 	except Exception as e:
-		print('element not found')
-		print(e)
-		prob = None
-	else:
-		pass
+			print('element not found')
+			print(e)
+			with open('codechef/unscuccessful', 'a') as f:
+				f.write(problemName+'\n')
+			return None
 	finally:
 		pass
-		return prob
+		#driver.quit()

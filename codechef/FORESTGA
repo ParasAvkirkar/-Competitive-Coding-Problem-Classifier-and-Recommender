@@ -1,0 +1,81 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is the head of commercial logging industry that recently bought a farm containing N trees. You are given initial height of the i-th tree by Hi and the rate of growth of height as Ri meters per month. For simplicity, you can assume that all the trees are perfect cylinders of equal radius. This allows us to consider only the height of trees when we talk about the amount of wood.\u000aIn Chef's country, laws don't allow one to cut a tree partially, so one has to cut the tree completely for gathering wood. Also, laws prohibit cutting trees of heights (strictly) lower than L meters.\u000aToday Chef received an order of W meters (of height) of wood. Chef wants to deliver this order as soon as possible. Find out how minimum number of months he should wait after which he will able to fulfill the order. You can assume that Chef's company's sawing machines are very efficient and take negligible amount of time to cut the trees.\u000aInput\u000aThere is a single test case per test file.\u000aThe first line of the input contains three space separated integers N, W and L denoting the number of trees in the farm, the amount of wood (in meters) that have to be gathered and the minimum allowed height of the tree to cut.\u000aEach of next N lines contain two space separated integers denoting Hi and Ri respectively.\u000aOutput\u000aOutput a single integer denoting the number of months that have to pass before Chef will be able to fulfill the order.\u000aConstraints\u000a1 \u2264 N \u2264 105\u000a1 \u2264 W, L \u2264 1018\u000a1 \u2264 Hi, Ri \u2264 109\u000aSubtasks\u000aSubtask #1 [40 points]: 1 \u2264 N, W, L \u2264 104\u000aSubtask #2 [60 points]: No additional constraints\u000aExample\u000aInput:\u000a3 74 51\u000a2 2\u000a5 7\u000a2 9\u000a\u000aOutput:\u000a7\u000aExplanation\u000aAfter 6 months, heights of each tree will be 14, 47 and 56 respectively. Chef is allowed to cut only the third tree, sadly it is not enough to fulfill an order of 74 meters of wood.\u000aAfter 7 months, heights of each tree will be 16, 54 and 65 respectively. Now Chef is allowed to cut second and third trees. Cutting both of them would provide him 119 meters of wood, which is enough to fulfill the order.\u000aAuthor: cenadar\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/FORESTGA\u000aTags: binary-search cenadar easy may16\u000aDate Added: 20-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is the head of commercial logging industry that recently bought a farm containing N trees. You are given initial height of the i-th tree by Hi and the rate of growth of height as Ri meters per month. For simplicity, you can assume that all the trees are perfect cylinders of equal radius. This allows us to consider only the height of trees when we talk about the amount of wood.\u000aIn Chef's country, laws don't allow one to cut a tree partially, so one has to cut the tree completely for gathering wood. Also, laws prohibit cutting trees of heights (strictly) lower than L meters.\u000aToday Chef received an order of W meters (of height) of wood. Chef wants to deliver this order as soon as possible. Find out how minimum number of months he should wait after which he will able to fulfill the order. You can assume that Chef's company's sawing machines are very efficient and take negligible amount of time to cut the trees.\u000aInput\u000aThere is a single test case per test file.\u000aThe first line of the input contains three space separated integers N, W and L denoting the number of trees in the farm, the amount of wood (in meters) that have to be gathered and the minimum allowed height of the tree to cut.\u000aEach of next N lines contain two space separated integers denoting Hi and Ri respectively.\u000aOutput\u000aOutput a single integer denoting the number of months that have to pass before Chef will be able to fulfill the order.\u000aConstraints\u000a1 \u2264 N \u2264 105\u000a1 \u2264 W, L \u2264 1018\u000a1 \u2264 Hi, Ri \u2264 109\u000aSubtasks\u000aSubtask #1 [40 points]: 1 \u2264 N, W, L \u2264 104\u000aSubtask #2 [60 points]: No additional constraints\u000aExample\u000aInput:\u000a3 74 51\u000a2 2\u000a5 7\u000a2 9\u000a\u000aOutput:\u000a7\u000aExplanation\u000aAfter 6 months, heights of each tree will be 14, 47 and 56 respectively. Chef is allowed to cut only the third tree, sadly it is not enough to fulfill an order of 74 meters of wood.\u000aAfter 7 months, heights of each tree will be 16, 54 and 65 respectively. Now Chef is allowed to cut second and third trees. Cutting both of them would provide him 119 meters of wood, which is enough to fulfill the order.\u000aAuthor: cenadar\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/FORESTGA\u000aTags: binary-search cenadar easy may16\u000aDate Added: 20-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef is the head of commercial logging industry that recently bought a farm containing N trees. You are given initial height of the i-th tree by Hi and the rate of growth of height as Ri meters per month. For simplicity, you can assume that all the trees are perfect cylinders of equal radius. This allows us to consider only the height of trees when we talk about the amount of wood. N Hi i Ri i In Chef's country, laws don't allow one to cut a tree partially, so one has to cut the tree completely for gathering wood. Also, laws prohibit cutting trees of heights (strictly) lower than L meters. L Today Chef received an order of W meters (of height) of wood. Chef wants to deliver this order as soon as possible. Find out how minimum number of months he should wait after which he will able to fulfill the order. You can assume that Chef's company's sawing machines are very efficient and take negligible amount of time to cut the trees. W Input There is a single test case per test file. The first line of the input contains three space separated integers N, W and L denoting the number of trees in the farm, the amount of wood (in meters) that have to be gathered and the minimum allowed height of the tree to cut. N W L Each of next N lines contain two space separated integers denoting Hi and Ri respectively. N Hi i Ri i Output Output a single integer denoting the number of months that have to pass before Chef will be able to fulfill the order. Constraints 1 \u2264 N \u2264 105\u000a1 \u2264 W, L \u2264 1018\u000a1 \u2264 Hi, Ri \u2264 109 1 \u2264 N \u2264 105 1 N 105 5 1 \u2264 W, L \u2264 1018 1 W L 1018 18 1 \u2264 Hi, Ri \u2264 109 1 Hi i Ri i 109 9 Subtasks Subtask #1 [40 points]: 1 \u2264 N, W, L \u2264 104\u000aSubtask #2 [60 points]: No additional constraints Subtask #1 [40 points]: 1 \u2264 N, W, L \u2264 104 Subtask #1 [40 points]: 1 \u2264 N W L 104 4 Subtask #2 [60 points]: No additional constraints Subtask #2 [60 points]: Example Input:\u000a3 74 51\u000a2 2\u000a5 7\u000a2 9\u000a\u000aOutput:\u000a7 Input: Output: Explanation After 6 months, heights of each tree will be 14, 47 and 56 respectively. Chef is allowed to cut only the third tree, sadly it is not enough to fulfill an order of 74 meters of wood. 6 14 47 56 After 7 months, heights of each tree will be 16, 54 and 65 respectively. Now Chef is allowed to cut second and third trees. Cutting both of them would provide him 119 meters of wood, which is enough to fulfill the order. 7 16 54 65 119  Author: cenadar\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/FORESTGA\u000aTags: binary-search cenadar easy may16\u000aDate Added: 20-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: cenadar\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/FORESTGA\u000aTags: binary-search cenadar easy may16\u000aDate Added: 20-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: cenadar Author: cenadar cenadar Tester: kevinsogo Tester: kevinsogo kevinsogo Editorial: http://discuss.codechef.com/problems/FORESTGA Editorial: http://discuss.codechef.com/problems/FORESTGA http://discuss.codechef.com/problems/FORESTGA Tags: binary-search cenadar easy may16 Tags: binary-search cenadar easy may16 binary-search cenadar easy may16 Date Added: 20-02-2016 Date Added: 20-02-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V binary-search cenadar easy may16
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/FORESTGA
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef is the head of commercial logging industry that recently bought a farm containing N trees. You are given initial height of the i-th tree by Hi and the rate of growth of height as Ri meters per month. For simplicity, you can assume that all the trees are perfect cylinders of equal radius. This allows us to consider only the height of trees when we talk about the amount of wood.
+p18
+aVIn Chef's country, laws don't allow one to cut a tree partially, so one has to cut the tree completely for gathering wood. Also, laws prohibit cutting trees of heights (strictly) lower than L meters.
+p19
+aVToday Chef received an order of W meters (of height) of wood. Chef wants to deliver this order as soon as possible. Find out how minimum number of months he should wait after which he will able to fulfill the order. You can assume that Chef's company's sawing machines are very efficient and take negligible amount of time to cut the trees.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThere is a single test case per test file.
+p24
+aVThe first line of the input contains three space separated integers N, W and L denoting the number of trees in the farm, the amount of wood (in meters) that have to be gathered and the minimum allowed height of the tree to cut.
+p25
+aVEach of next N lines contain two space separated integers denoting Hi and Ri respectively.
+p26
+aVOutput
+p27
+aVOutput a single integer denoting the number of months that have to pass before Chef will be able to fulfill the order.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 N \u2264 105
+p32
+aV1 \u2264 W, L \u2264 1018
+p33
+aV1 \u2264 Hi, Ri \u2264 109
+p34
+aVSubtasks
+p35
+aVSubtask #1 [40 points]: 1 \u2264 N, W, L \u2264 104
+p36
+aVSubtask #2 [60 points]: No additional constraints
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'name'
+p40
+VFORESTGA
+p41
+sb.

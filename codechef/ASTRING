@@ -1,0 +1,83 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese as well.\u000aAkhil comes across a string S of length N. He started wondering about the smallest lexicographical subsequence of string S of length K.\u000aA subsequence of a string is formed by deleting some characters (possibly none) from it's original string.\u000aA string A is said to be lexicographically smaller than the string B of the same length if at the first position where A and B differ, A contains a letter which appears earlier in the dictionary than the corresponding letter in B.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows:\u000aFirst line of each test case will contain string S\u000aSecond line of each test case will contain an integer K.\u000aOutput\u000aFor each test case, output a single line containing the lexicographically smallest subsequence of S of length K.\u000aConstraints\u000a1 \u2264 T \u2264 5\u000a1 \u2264 K \u2264 N\u000aS consists of lowercase English alphabet characters, i.e. from 'a' to 'z'.\u000aSubtasks\u000aSubtask #1 (10 points) : 1 \u2264 |S| \u2264 100\u000aSubtask #2 (20 points) : 1 \u2264 |S| \u2264 103\u000aSubtask #3 (70 points) : 1 \u2264 |S| \u2264 105\u000aExample\u000aInput:\u000a2\u000aabdc\u000a3\u000abacb\u000a2\u000a\u000aOutput:\u000aabc\u000aab\u000aExplanation\u000aExample case 1. "abc" is the smallest lexicographical subsequence out of ["abd", "bdc", "abc", "adc"].\u000aExample case 2. "ab" is the smallest lexicographical subsequence of length 2.\u000aAuthor: amitpandeykgp\u000aTester: prateekg603\u000aEditorial: http://discuss.codechef.com/problems/ASTRING\u000aTags: amitpandeykgp implementation ltime36\u000aDate Added: 24-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese as well.\u000aAkhil comes across a string S of length N. He started wondering about the smallest lexicographical subsequence of string S of length K.\u000aA subsequence of a string is formed by deleting some characters (possibly none) from it's original string.\u000aA string A is said to be lexicographically smaller than the string B of the same length if at the first position where A and B differ, A contains a letter which appears earlier in the dictionary than the corresponding letter in B.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows:\u000aFirst line of each test case will contain string S\u000aSecond line of each test case will contain an integer K.\u000aOutput\u000aFor each test case, output a single line containing the lexicographically smallest subsequence of S of length K.\u000aConstraints\u000a1 \u2264 T \u2264 5\u000a1 \u2264 K \u2264 N\u000aS consists of lowercase English alphabet characters, i.e. from 'a' to 'z'.\u000aSubtasks\u000aSubtask #1 (10 points) : 1 \u2264 |S| \u2264 100\u000aSubtask #2 (20 points) : 1 \u2264 |S| \u2264 103\u000aSubtask #3 (70 points) : 1 \u2264 |S| \u2264 105\u000aExample\u000aInput:\u000a2\u000aabdc\u000a3\u000abacb\u000a2\u000a\u000aOutput:\u000aabc\u000aab\u000aExplanation\u000aExample case 1. "abc" is the smallest lexicographical subsequence out of ["abd", "bdc", "abc", "adc"].\u000aExample case 2. "ab" is the smallest lexicographical subsequence of length 2.\u000aAuthor: amitpandeykgp\u000aTester: prateekg603\u000aEditorial: http://discuss.codechef.com/problems/ASTRING\u000aTags: amitpandeykgp implementation ltime36\u000aDate Added: 24-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese , Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Akhil comes across a string S of length N. He started wondering about the smallest lexicographical subsequence of string S of length K. S N S K A subsequence of a string is formed by deleting some characters (possibly none) from it's original string. A string A is said to be lexicographically smaller than the string B of the same length if at the first position where A and B differ, A contains a letter which appears earlier in the dictionary than the corresponding letter in B. A B A B A B Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows:\u000aFirst line of each test case will contain string S\u000aSecond line of each test case will contain an integer K. The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows: T T First line of each test case will contain string S S Second line of each test case will contain an integer K. K Output For each test case, output a single line containing the lexicographically smallest subsequence of S of length K. For each test case, output a single line containing the lexicographically smallest subsequence of S of length K. S K Constraints 1 \u2264 T \u2264 5\u000a1 \u2264 K \u2264 N\u000aS consists of lowercase English alphabet characters, i.e. from 'a' to 'z'. 1 \u2264 T \u2264 5 1 T 5 1 \u2264 K \u2264 N 1 K N S consists of lowercase English alphabet characters, i.e. from 'a' to 'z'. S Subtasks Subtask #1 (10 points) : 1 \u2264 |S| \u2264 100 1 |S| 100 Subtask #2 (20 points) : 1 \u2264 |S| \u2264 103 1 |S| 103 3 Subtask #3 (70 points) : 1 \u2264 |S| \u2264 105 1 |S| 105 5 Example Input:\u000a2\u000aabdc\u000a3\u000abacb\u000a2\u000a\u000aOutput:\u000aabc\u000aab Input: Output: Explanation Example case 1. "abc" is the smallest lexicographical subsequence out of ["abd", "bdc", "abc", "adc"]. Example case 1. Example case 2. "ab" is the smallest lexicographical subsequence of length 2. Example case 2.  Author: amitpandeykgp\u000aTester: prateekg603\u000aEditorial: http://discuss.codechef.com/problems/ASTRING\u000aTags: amitpandeykgp implementation ltime36\u000aDate Added: 24-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: amitpandeykgp\u000aTester: prateekg603\u000aEditorial: http://discuss.codechef.com/problems/ASTRING\u000aTags: amitpandeykgp implementation ltime36\u000aDate Added: 24-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: amitpandeykgp Author: amitpandeykgp amitpandeykgp Tester: prateekg603 Tester: prateekg603 prateekg603 Editorial: http://discuss.codechef.com/problems/ASTRING Editorial: http://discuss.codechef.com/problems/ASTRING http://discuss.codechef.com/problems/ASTRING Tags: amitpandeykgp implementation ltime36 Tags: amitpandeykgp implementation ltime36 amitpandeykgp implementation ltime36 Date Added: 24-05-2016 Date Added: 24-05-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V amitpandeykgp implementation ltime36
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/ASTRING
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese , Russian and Vietnamese as well.
+p17
+aVAkhil comes across a string S of length N. He started wondering about the smallest lexicographical subsequence of string S of length K.
+p18
+aVA subsequence of a string is formed by deleting some characters (possibly none) from it's original string.
+p19
+aVA string A is said to be lexicographically smaller than the string B of the same length if at the first position where A and B differ, A contains a letter which appears earlier in the dictionary than the corresponding letter in B.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows:
+p24
+aVFirst line of each test case will contain string S
+p25
+aVSecond line of each test case will contain an integer K.
+p26
+aVOutput
+p27
+aVFor each test case, output a single line containing the lexicographically smallest subsequence of S of length K.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 T \u2264 5
+p32
+aV1 \u2264 K \u2264 N
+p33
+aVS consists of lowercase English alphabet characters, i.e. from 'a' to 'z'.
+p34
+aVSubtasks
+p35
+aVSubtask #1 (10 points) : 1 \u2264 |S| \u2264 100
+p36
+aVSubtask #2 (20 points) : 1 \u2264 |S| \u2264 103
+p37
+aVSubtask #3 (70 points) : 1 \u2264 |S| \u2264 105
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'name'
+p41
+VASTRING
+p42
+sb.

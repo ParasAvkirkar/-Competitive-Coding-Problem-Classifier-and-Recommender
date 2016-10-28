@@ -1,0 +1,73 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aLet's consider a rectangular table R consisting of N rows and M columns. Rows are enumerated from 1 to N from top to bottom. Columns are enumerated from 1 to M from left to right. Each element of R is a non-negative integer. R is called steady if the sum of elements in the ith row is not less then the sum of elements in the (i-1)th row for each i where 2 \u2264 i \u2264 N and the sum of elements in the Nth row is less than or equal to M. Your task is to find the number of different steady tables of size N x M modulo 1 000 000 000.\u000aInput\u000aThe first line of input contains a single integer T denoting number of test cases. First and the only line of each test case contains two space separated integers N and M denoting the number of rows and columns respectively.\u000aOutput\u000aFor each test case, print a single integer corresponding to the answer.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N, M \u2264 2000\u000aSubtasks\u000aSubtask 1 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 50 : ( 23 pts )\u000aSubtask 2 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 500 : ( 29 pts )\u000aSubtask 3 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 2000 : ( 48 pts )\u000aExample\u000aInput:\u000a3\u000a1 1\u000a2 2\u000a2 3\u000aOutput:\u000a2\u000a25\u000a273\u000aExplanation\u000aTest case 1 : There are only 2 such grids possible 0 and 1.\u000aAuthor: pavel1996\u000aEditorial: http://discuss.codechef.com/problems/STDYTAB\u000aTags: combinatorics dp easy june15 pavel1996\u000aDate Added: 21-09-2014\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aLet's consider a rectangular table R consisting of N rows and M columns. Rows are enumerated from 1 to N from top to bottom. Columns are enumerated from 1 to M from left to right. Each element of R is a non-negative integer. R is called steady if the sum of elements in the ith row is not less then the sum of elements in the (i-1)th row for each i where 2 \u2264 i \u2264 N and the sum of elements in the Nth row is less than or equal to M. Your task is to find the number of different steady tables of size N x M modulo 1 000 000 000.\u000aInput\u000aThe first line of input contains a single integer T denoting number of test cases. First and the only line of each test case contains two space separated integers N and M denoting the number of rows and columns respectively.\u000aOutput\u000aFor each test case, print a single integer corresponding to the answer.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N, M \u2264 2000\u000aSubtasks\u000aSubtask 1 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 50 : ( 23 pts )\u000aSubtask 2 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 500 : ( 29 pts )\u000aSubtask 3 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 2000 : ( 48 pts )\u000aExample\u000aInput:\u000a3\u000a1 1\u000a2 2\u000a2 3\u000aOutput:\u000a2\u000a25\u000a273\u000aExplanation\u000aTest case 1 : There are only 2 such grids possible 0 and 1.\u000aAuthor: pavel1996\u000aEditorial: http://discuss.codechef.com/problems/STDYTAB\u000aTags: combinatorics dp easy june15 pavel1996\u000aDate Added: 21-09-2014\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Let's consider a rectangular table R consisting of N rows and M columns. Rows are enumerated from 1 to N from top to bottom. Columns are enumerated from 1 to M from left to right. Each element of R is a non-negative integer. R is called steady if the sum of elements in the ith row is not less then the sum of elements in the (i-1)th row for each i where 2 \u2264 i \u2264 N and the sum of elements in the Nth row is less than or equal to M. Your task is to find the number of different steady tables of size N x M modulo 1 000 000 000. R N M 1 N M R R steady ith th (i-1)th th i 2 \u2264 i \u2264 N Nth th M N x M 1 000 000 000 Input The first line of input contains a single integer T denoting number of test cases. First and the only line of each test case contains two space separated integers N and M denoting the number of rows and columns respectively. T N M Output For each test case, print a single integer corresponding to the answer. Constraints 1 \u2264 T \u2264 10\u000a1 \u2264 N, M \u2264 2000 1 \u2264 T \u2264 10 1 T 10 1 \u2264 N, M \u2264 2000 1 N, M 2000 Subtasks Subtask 1 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 50 : ( 23 pts )\u000aSubtask 2 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 500 : ( 29 pts )\u000aSubtask 3 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 2000 : ( 48 pts ) Subtask 1 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 50 : ( 23 pts ) Subtask 1 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 50 : ( 23 pts ) Subtask 2 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 500 : ( 29 pts ) Subtask 2 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 500 : ( 29 pts ) Subtask 3 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 2000 : ( 48 pts ) Subtask 3 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 2000 : ( 48 pts ) Example Input:\u000a3\u000a1 1\u000a2 2\u000a2 3\u000aOutput:\u000a2\u000a25\u000a273 Input: Output: Explanation Test case 1 : There are only 2 such grids possible 0 and 1.  Author: pavel1996\u000aEditorial: http://discuss.codechef.com/problems/STDYTAB\u000aTags: combinatorics dp easy june15 pavel1996\u000aDate Added: 21-09-2014\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: pavel1996\u000aEditorial: http://discuss.codechef.com/problems/STDYTAB\u000aTags: combinatorics dp easy june15 pavel1996\u000aDate Added: 21-09-2014\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: pavel1996 Author: pavel1996 pavel1996 Editorial: http://discuss.codechef.com/problems/STDYTAB Editorial: http://discuss.codechef.com/problems/STDYTAB http://discuss.codechef.com/problems/STDYTAB Tags: combinatorics dp easy june15 pavel1996 Tags: combinatorics dp easy june15 pavel1996 combinatorics dp easy june15 pavel1996 Date Added: 21-09-2014 Date Added: 21-09-2014 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V combinatorics dp easy june15 pavel1996
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/STDYTAB
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVLet's consider a rectangular table R consisting of N rows and M columns. Rows are enumerated from 1 to N from top to bottom. Columns are enumerated from 1 to M from left to right. Each element of R is a non-negative integer. R is called steady if the sum of elements in the ith row is not less then the sum of elements in the (i-1)th row for each i where 2 \u2264 i \u2264 N and the sum of elements in the Nth row is less than or equal to M. Your task is to find the number of different steady tables of size N x M modulo 1 000 000 000.
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVThe first line of input contains a single integer T denoting number of test cases. First and the only line of each test case contains two space separated integers N and M denoting the number of rows and columns respectively.
+p22
+aVOutput
+p23
+aVFor each test case, print a single integer corresponding to the answer.
+p24
+asS'constraints'
+p25
+(lp26
+VConstraints
+p27
+aV1 \u2264 T \u2264 10
+p28
+aV1 \u2264 N, M \u2264 2000
+p29
+aVSubtasks
+p30
+aVSubtask 1 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 50 : ( 23 pts )
+p31
+aVSubtask 2 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 500 : ( 29 pts )
+p32
+aVSubtask 3 : 1 \u2264 T \u2264 10 , 1 \u2264 N,M \u2264 2000 : ( 48 pts )
+p33
+asS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VSTDYTAB
+p37
+sb.

@@ -1,0 +1,89 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aOur chef Remy ate all the delicious food he made. As a result, he has become really fat :). Chef's assistant Linguini has taken up the herculean task of bringing back chef Remy to shape.\u000aLinguini has built a fence which has N planks in a straight line. The planks are numbered 1 to N from left to right. In front of M of these N planks, he has put a bucket of paint. The paints may be of different colors. Each color is represented by any uppercase letter (A-Z). Chef Remy needs to paint the fence. He uses his painting brush to paint the fence.\u000aChef Remy starts the task by choosing a plank which has a bucket of paint in front of it and dips his brush in the bucket. He starts walking randomly along the straight fence passing the planks. He never moves out of the fence. Note that walking randomly along a fence means that Remy keeps walking all the time along his current direction. He can change his direction any time he wishes. Moving along a straight fence has just two directions, forward and backward.\u000aLinguini has devised the following recipe for painting the fence.\u000aEach bucket has an infinite supply of paint.\u000aThe brush can carry paint of a single color at any time.\u000aWhen Remy passes a paint bucket, the brush acquires the color in the bucket first.\u000aEvery plank that Remy passes in his random walk must be colored with the color in the brush. A plank will be colored completely.\u000aA plank can be colored multiple times. A plank's color is the latest color it is painted with.\u000aA fence coloring is complete when each plank is painted with some color. Linguini is watching Remy dance around with colors. He wonders how many different complete fence colorings will he be able to see. Two fence colorings are different if there is atleast one plank numbered x whose color differs in both the colorings. Find out the number of different complete fence colorings modulo 1000000009.\u000aInput\u000aFirst line contains T, the number of test cases. T test cases follow. The first line of each case contains N and M separated by a space. Next M lines follow each of the form x and y separated by a space. Here x is the color in the bucket which is placed at plank numbered y.\u000aConstraints\u000a1 <= T <= 10\u000a1 <= N <= 100000\u000a1 <= M <= N\u000ax will be an uppercase letter between A to Z\u000a1 <= y <= N\u000aOutput\u000aThe number of different complete fence colorings modulo 1000000009 for each case on a new line.\u000aExample\u000aInput:\u000a\u000a3\u000a2 1\u000aR 1\u000a3 1\u000aA 2\u000a6 2\u000aA 2\u000aB 6\u000a\u000aOutput:\u000a1\u000a1\u000a4\u000aAuthor: rosyish\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/FATCHEF\u000aTags: combinatorics easy oct14 rosyish\u000aDate Added: 12-04-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aOur chef Remy ate all the delicious food he made. As a result, he has become really fat :). Chef's assistant Linguini has taken up the herculean task of bringing back chef Remy to shape.\u000aLinguini has built a fence which has N planks in a straight line. The planks are numbered 1 to N from left to right. In front of M of these N planks, he has put a bucket of paint. The paints may be of different colors. Each color is represented by any uppercase letter (A-Z). Chef Remy needs to paint the fence. He uses his painting brush to paint the fence.\u000aChef Remy starts the task by choosing a plank which has a bucket of paint in front of it and dips his brush in the bucket. He starts walking randomly along the straight fence passing the planks. He never moves out of the fence. Note that walking randomly along a fence means that Remy keeps walking all the time along his current direction. He can change his direction any time he wishes. Moving along a straight fence has just two directions, forward and backward.\u000aLinguini has devised the following recipe for painting the fence.\u000aEach bucket has an infinite supply of paint.\u000aThe brush can carry paint of a single color at any time.\u000aWhen Remy passes a paint bucket, the brush acquires the color in the bucket first.\u000aEvery plank that Remy passes in his random walk must be colored with the color in the brush. A plank will be colored completely.\u000aA plank can be colored multiple times. A plank's color is the latest color it is painted with.\u000aA fence coloring is complete when each plank is painted with some color. Linguini is watching Remy dance around with colors. He wonders how many different complete fence colorings will he be able to see. Two fence colorings are different if there is atleast one plank numbered x whose color differs in both the colorings. Find out the number of different complete fence colorings modulo 1000000009.\u000aInput\u000aFirst line contains T, the number of test cases. T test cases follow. The first line of each case contains N and M separated by a space. Next M lines follow each of the form x and y separated by a space. Here x is the color in the bucket which is placed at plank numbered y.\u000aConstraints\u000a1 <= T <= 10\u000a1 <= N <= 100000\u000a1 <= M <= N\u000ax will be an uppercase letter between A to Z\u000a1 <= y <= N\u000aOutput\u000aThe number of different complete fence colorings modulo 1000000009 for each case on a new line.\u000aExample\u000aInput:\u000a\u000a3\u000a2 1\u000aR 1\u000a3 1\u000aA 2\u000a6 2\u000aA 2\u000aB 6\u000a\u000aOutput:\u000a1\u000a1\u000a4\u000aAuthor: rosyish\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/FATCHEF\u000aTags: combinatorics easy oct14 rosyish\u000aDate Added: 12-04-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Our chef Remy ate all the delicious food he made. As a result, he has become really fat :). Chef's assistant Linguini has taken up the herculean task of bringing back chef Remy to shape. Linguini has built a fence which has N planks in a straight line. The planks are numbered 1 to N from left to right. In front of M of these N planks, he has put a bucket of paint. The paints may be of different colors. Each color is represented by any uppercase letter (A-Z). Chef Remy needs to paint the fence. He uses his painting brush to paint the fence. N M Chef Remy starts the task by choosing a plank which has a bucket of paint in front of it and dips his brush in the bucket. He starts walking randomly along the straight fence passing the planks. He never moves out of the fence. Note that walking randomly along a fence means that Remy keeps walking all the time along his current direction. He can change his direction any time he wishes. Moving along a straight fence has just two directions, forward and backward. Linguini has devised the following recipe for painting the fence. Each bucket has an infinite supply of paint.\u000aThe brush can carry paint of a single color at any time.\u000aWhen Remy passes a paint bucket, the brush acquires the color in the bucket first.\u000aEvery plank that Remy passes in his random walk must be colored with the color in the brush. A plank will be colored completely.\u000aA plank can be colored multiple times. A plank's color is the latest color it is painted with. Each bucket has an infinite supply of paint. The brush can carry paint of a single color at any time. When Remy passes a paint bucket, the brush acquires the color in the bucket first. Every plank that Remy passes in his random walk must be colored with the color in the brush. A plank will be colored completely. A plank can be colored multiple times. A plank's color is the latest color it is painted with.  A fence coloring is complete when each plank is painted with some color. Linguini is watching Remy dance around with colors. He wonders how many different complete fence colorings will he be able to see. Two fence colorings are different if there is atleast one plank numbered x whose color differs in both the colorings. Find out the number of different complete fence colorings modulo 1000000009. x Input First line contains T, the number of test cases. T test cases follow. The first line of each case contains N and M separated by a space. Next M lines follow each of the form x and y separated by a space. Here x is the color in the bucket which is placed at plank numbered y. T N M x y Constraints  1 <= T <= 10\u000a1 <= N <= 100000\u000a1 <= M <= N\u000ax will be an uppercase letter between A to Z\u000a1 <= y <= N 1 <= T <= 10 1 <= N <= 100000 1 <= M <= N x will be an uppercase letter between A to Z 1 <= y <= N  Output The number of different complete fence colorings modulo 1000000009 for each case on a new line. Example Input:\u000a\u000a3\u000a2 1\u000aR 1\u000a3 1\u000aA 2\u000a6 2\u000aA 2\u000aB 6\u000a\u000aOutput:\u000a1\u000a1\u000a4 Input: Output:  Author: rosyish\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/FATCHEF\u000aTags: combinatorics easy oct14 rosyish\u000aDate Added: 12-04-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: rosyish\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/FATCHEF\u000aTags: combinatorics easy oct14 rosyish\u000aDate Added: 12-04-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: rosyish Author: rosyish rosyish Tester: shangjingbo Tester: shangjingbo shangjingbo Editorial: http://discuss.codechef.com/problems/FATCHEF Editorial: http://discuss.codechef.com/problems/FATCHEF http://discuss.codechef.com/problems/FATCHEF Tags: combinatorics easy oct14 rosyish Tags: combinatorics easy oct14 rosyish combinatorics easy oct14 rosyish Date Added: 12-04-2012 Date Added: 12-04-2012 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V combinatorics easy oct14 rosyish
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/FATCHEF
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVOur chef Remy ate all the delicious food he made. As a result, he has become really fat :). Chef's assistant Linguini has taken up the herculean task of bringing back chef Remy to shape.
+p18
+aVLinguini has built a fence which has N planks in a straight line. The planks are numbered 1 to N from left to right. In front of M of these N planks, he has put a bucket of paint. The paints may be of different colors. Each color is represented by any uppercase letter (A-Z). Chef Remy needs to paint the fence. He uses his painting brush to paint the fence.
+p19
+aVChef Remy starts the task by choosing a plank which has a bucket of paint in front of it and dips his brush in the bucket. He starts walking randomly along the straight fence passing the planks. He never moves out of the fence. Note that walking randomly along a fence means that Remy keeps walking all the time along his current direction. He can change his direction any time he wishes. Moving along a straight fence has just two directions, forward and backward.
+p20
+aVLinguini has devised the following recipe for painting the fence.
+p21
+aVEach bucket has an infinite supply of paint.
+p22
+aVThe brush can carry paint of a single color at any time.
+p23
+aVWhen Remy passes a paint bucket, the brush acquires the color in the bucket first.
+p24
+aVEvery plank that Remy passes in his random walk must be colored with the color in the brush. A plank will be colored completely.
+p25
+aVA plank can be colored multiple times. A plank's color is the latest color it is painted with.
+p26
+aVA fence coloring is complete when each plank is painted with some color. Linguini is watching Remy dance around with colors. He wonders how many different complete fence colorings will he be able to see. Two fence colorings are different if there is atleast one plank numbered x whose color differs in both the colorings. Find out the number of different complete fence colorings modulo 1000000009.
+p27
+asS'input'
+p28
+(lp29
+VInput
+p30
+aVFirst line contains T, the number of test cases. T test cases follow. The first line of each case contains N and M separated by a space. Next M lines follow each of the form x and y separated by a space. Here x is the color in the bucket which is placed at plank numbered y.
+p31
+asS'constraints'
+p32
+(lp33
+VConstraints
+p34
+aV1 <= T <= 10
+p35
+aV1 <= N <= 100000
+p36
+aV1 <= M <= N
+p37
+aVx will be an uppercase letter between A to Z
+p38
+aV1 <= y <= N
+p39
+aVOutput
+p40
+aVThe number of different complete fence colorings modulo 1000000009 for each case on a new line.
+p41
+asS'id'
+p42
+c__builtin__
+id
+p43
+sS'name'
+p44
+VFATCHEF
+p45
+sb.

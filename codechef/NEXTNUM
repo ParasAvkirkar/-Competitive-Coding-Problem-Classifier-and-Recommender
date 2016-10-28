@@ -1,0 +1,67 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Russian here\u000aThe Head Chef has received his id from the Association of Byteland . He wants to know the numerical rank of his number among the numbers that can be formed by the exact same digits ( i.e. among numbers having same number of 0's , 1's ... 9's as his id ) . Note that id's can start with 0 . Given a number, find the rank of the number .\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test case contains a single integer N denoting the id the chef has received .\u000aOutput\u000aFor each test case, output a single line containing the answer to the given test case .\u000aConstraints\u000a1 \u2264 T \u2264 10000\u000a1 \u2264 number of digits in N \u2264 18\u000aExample\u000aInput:\u000a2\u000a276\u000a762\u000a\u000aOutput:\u000a2\u000a6\u000aExplanation\u000aExample case 1.The numbers that can be formed with one '2' ; one '7' and one '6' in increasing order are :\u000a\u000a267\u000a\u000a276\u000a\u000a627\u000a\u000a672\u000a\u000a726\u000a\u000a762\u000a\u000aThe rank for 276 is 2 and rank for 762 is 6.\u000aAuthor: vineetpaliwal\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/NEXTNUM\u000aTags: bruteforce cakewalk cook40 enumeration factorial vineetpaliwal\u000aDate Added: 1-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Russian here\u000aThe Head Chef has received his id from the Association of Byteland . He wants to know the numerical rank of his number among the numbers that can be formed by the exact same digits ( i.e. among numbers having same number of 0's , 1's ... 9's as his id ) . Note that id's can start with 0 . Given a number, find the rank of the number .\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test case contains a single integer N denoting the id the chef has received .\u000aOutput\u000aFor each test case, output a single line containing the answer to the given test case .\u000aConstraints\u000a1 \u2264 T \u2264 10000\u000a1 \u2264 number of digits in N \u2264 18\u000aExample\u000aInput:\u000a2\u000a276\u000a762\u000a\u000aOutput:\u000a2\u000a6\u000aExplanation\u000aExample case 1.The numbers that can be formed with one '2' ; one '7' and one '6' in increasing order are :\u000a\u000a267\u000a\u000a276\u000a\u000a627\u000a\u000a672\u000a\u000a726\u000a\u000a762\u000a\u000aThe rank for 276 is 2 and rank for 762 is 6.\u000aAuthor: vineetpaliwal\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/NEXTNUM\u000aTags: bruteforce cakewalk cook40 enumeration factorial vineetpaliwal\u000aDate Added: 1-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Russian here here The Head Chef has received his id from the Association of Byteland . He wants to know the numerical rank of his number among the numbers that can be formed by the exact same digits ( i.e. among numbers having same number of 0's , 1's ... 9's as his id ) . Note that id's can start with 0 . Given a number, find the rank of the number . Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test case contains a single integer N denoting the id the chef has received . The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T Each test case contains a single integer N denoting the id the chef has received . N Output For each test case, output a single line containing the answer to the given test case . For each test case, output a single line containing the answer to the given test case . Constraints 1 \u2264 T \u2264 10000\u000a1 \u2264 number of digits in N \u2264 18 1 \u2264 T \u2264 10000 1 T 10000 1 \u2264 number of digits in N \u2264 18 1 number of digits in N 18 Example Input:\u000a2\u000a276\u000a762\u000a\u000aOutput:\u000a2\u000a6 Input: Output: Explanation Example case 1.The numbers that can be formed with one '2' ; one '7' and one '6' in increasing order are :\u000a\u000a267\u000a\u000a276\u000a\u000a627\u000a\u000a672\u000a\u000a726\u000a\u000a762\u000a\u000aThe rank for 276 is 2 and rank for 762 is 6. Example case 1.               rank rank  Author: vineetpaliwal\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/NEXTNUM\u000aTags: bruteforce cakewalk cook40 enumeration factorial vineetpaliwal\u000aDate Added: 1-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: vineetpaliwal\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/NEXTNUM\u000aTags: bruteforce cakewalk cook40 enumeration factorial vineetpaliwal\u000aDate Added: 1-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: vineetpaliwal Author: vineetpaliwal vineetpaliwal Tester: rubanenko Tester: rubanenko rubanenko Editorial: http://discuss.codechef.com/problems/NEXTNUM Editorial: http://discuss.codechef.com/problems/NEXTNUM http://discuss.codechef.com/problems/NEXTNUM Tags: bruteforce cakewalk cook40 enumeration factorial vineetpaliwal Tags: bruteforce cakewalk cook40 enumeration factorial vineetpaliwal bruteforce cakewalk cook40 enumeration factorial vineetpaliwal Date Added: 1-11-2013 Date Added: 1-11-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V bruteforce cakewalk cook40 enumeration factorial vineetpaliwal
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/NEXTNUM
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Russian here
+p17
+aVThe Head Chef has received his id from the Association of Byteland . He wants to know the numerical rank of his number among the numbers that can be formed by the exact same digits ( i.e. among numbers having same number of 0's , 1's ... 9's as his id ) . Note that id's can start with 0 . Given a number, find the rank of the number .
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p22
+aVEach test case contains a single integer N denoting the id the chef has received .
+p23
+aVOutput
+p24
+aVFor each test case, output a single line containing the answer to the given test case .
+p25
+asS'constraints'
+p26
+(lp27
+VConstraints
+p28
+aV1 \u2264 T \u2264 10000
+p29
+aV1 \u2264 number of digits in N \u2264 18
+p30
+asS'id'
+p31
+c__builtin__
+id
+p32
+sS'name'
+p33
+VNEXTNUM
+p34
+sb.

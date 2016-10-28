@@ -1,0 +1,73 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aWatson gives an array A of N integers A1, A2, ..., AN to Sherlock. He wants Sherlock to reorganize the array in a way such that no two adjacent numbers differ by more than 1.\u000aFormally, if reorganized array is B1, B2, ..., BN, then the condition that | Bi - Bi + 1 | \u2264 1, for all 1 \u2264 i < N(where |x| denotes the absolute value of x) should be met.\u000aSherlock is not sure that a solution exists, so he asks you.\u000aInput\u000aFirst line contains T, number of test cases. Each test case consists of N in one line followed by N integers in next line denoting A1, A2, ..., AN.\u000aOutput\u000aFor each test case, output in one line YES or NO denoting if array A can be reorganized in required way or not.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 109\u000aSum of N over all test cases \u2264 2*105\u000aExample\u000aInput:\u000a2\u000a4\u000a3 2 2 3 \u000a2\u000a1 5\u000a\u000aOutput:\u000aYES\u000aNO\u000aExplanation\u000aTest case 1:\u000aNo need to reorganise.\u000a\u000aTest case 2:\u000aNo possible way.\u000aAuthor: darkshadows\u000aTags: cook75 darkshadows logic simple sorting\u000aDate Added: 27-09-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aWatson gives an array A of N integers A1, A2, ..., AN to Sherlock. He wants Sherlock to reorganize the array in a way such that no two adjacent numbers differ by more than 1.\u000aFormally, if reorganized array is B1, B2, ..., BN, then the condition that | Bi - Bi + 1 | \u2264 1, for all 1 \u2264 i < N(where |x| denotes the absolute value of x) should be met.\u000aSherlock is not sure that a solution exists, so he asks you.\u000aInput\u000aFirst line contains T, number of test cases. Each test case consists of N in one line followed by N integers in next line denoting A1, A2, ..., AN.\u000aOutput\u000aFor each test case, output in one line YES or NO denoting if array A can be reorganized in required way or not.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 109\u000aSum of N over all test cases \u2264 2*105\u000aExample\u000aInput:\u000a2\u000a4\u000a3 2 2 3 \u000a2\u000a1 5\u000a\u000aOutput:\u000aYES\u000aNO\u000aExplanation\u000aTest case 1:\u000aNo need to reorganise.\u000a\u000aTest case 2:\u000aNo possible way.\u000aAuthor: darkshadows\u000aTags: cook75 darkshadows logic simple sorting\u000aDate Added: 27-09-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Watson gives an array A of N integers A1, A2, ..., AN to Sherlock. He wants Sherlock to reorganize the array in a way such that no two adjacent numbers differ by more than 1. A N A1, A2, ..., AN 1 2 N Formally, if reorganized array is B1, B2, ..., BN, then the condition that | Bi - Bi + 1 | \u2264 1, for all 1 \u2264 i < N(where |x| denotes the absolute value of x) should be met. B1, B2, ..., BN 1 2 N | Bi - Bi + 1 | \u2264 1 i i + 1 1 \u2264 i < N |x| x Sherlock is not sure that a solution exists, so he asks you. Input First line contains T, number of test cases. Each test case consists of N in one line followed by N integers in next line denoting A1, A2, ..., AN. T N N A1, A2, ..., AN 1 2 N Output For each test case, output in one line YES or NO denoting if array A can be reorganized in required way or not. YES NO A Constraints 1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 109\u000aSum of N over all test cases \u2264 2*105 1 \u2264 T \u2264 100 1 T 100 1 \u2264 N \u2264 105 1 N 105 5 1 \u2264 Ai \u2264 109 1 Ai i 109 9 Sum of N over all test cases \u2264 2*105 N 2*105 5 Example Input:\u000a2\u000a4\u000a3 2 2 3 \u000a2\u000a1 5\u000a\u000aOutput:\u000aYES\u000aNO Input: Output: Explanation Test case 1:\u000aNo need to reorganise.\u000a\u000aTest case 2:\u000aNo possible way.      Author: darkshadows\u000aTags: cook75 darkshadows logic simple sorting\u000aDate Added: 27-09-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: darkshadows\u000aTags: cook75 darkshadows logic simple sorting\u000aDate Added: 27-09-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: darkshadows Author: darkshadows darkshadows Tags: cook75 darkshadows logic simple sorting Tags: cook75 darkshadows logic simple sorting cook75 darkshadows logic simple sorting Date Added: 27-09-2016 Date Added: 27-09-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook75 darkshadows logic simple sorting
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/PERMEXIS
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVWatson gives an array A of N integers A1, A2, ..., AN to Sherlock. He wants Sherlock to reorganize the array in a way such that no two adjacent numbers differ by more than 1.
+p18
+aVFormally, if reorganized array is B1, B2, ..., BN, then the condition that | Bi - Bi + 1 | \u2264 1, for all 1 \u2264 i < N(where |x| denotes the absolute value of x) should be met.
+p19
+aVSherlock is not sure that a solution exists, so he asks you.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVFirst line contains T, number of test cases. Each test case consists of N in one line followed by N integers in next line denoting A1, A2, ..., AN.
+p24
+aVOutput
+p25
+aVFor each test case, output in one line YES or NO denoting if array A can be reorganized in required way or not.
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aV1 \u2264 T \u2264 100
+p30
+aV1 \u2264 N \u2264 105
+p31
+aV1 \u2264 Ai \u2264 109
+p32
+aVSum of N over all test cases \u2264 2*105
+p33
+asS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VPERMEXIS
+p37
+sb.

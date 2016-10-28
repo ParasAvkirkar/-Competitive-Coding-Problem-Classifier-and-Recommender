@@ -1,0 +1,89 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aOne day, Chef prepared D brand new dishes. He named the i-th dish by a string Si. After the cooking, he decided to categorize each of these D dishes as special or not.\u000aA dish Si is called special if it's name (i.e. the string Si) can be represented in the form of a double string by removing at most one (possibly zero) character from it's name from any position.\u000aA string is called a double string if it can be represented as a concatenation of two identical, non-empty strings.\u000ae.g. "abab" is a double string as it can be represented as "ab" + "ab" where + operation denotes concatenation.\u000aSimilarly, "aa", "abcabc" are double strings whereas "a", "abba", "abc" are not.\u000aInput\u000aFirst line of the input contains an integer D denoting the number of dishes prepared by Chef on that day.\u000aEach of the next D lines will contain description of a dish.\u000aThe i-th line contains the name of i-th dish Si.\u000aOutput\u000aFor each of the D dishes, print a single line containing "YES" or "NO" (without quotes) denoting whether the dish can be called as a special or not.\u000aConstraints\u000a1 \u2264 D \u2264 106\u000a1 \u2264 |Si| \u2264 106.\u000aEach character of string Si will be lower case English alphabet (i.e. from 'a' to 'z').\u000aSubtasks\u000aSubtask #1 : (20 points)\u000aSum of |Si| in an input file doesn't exceed 2 * 103\u000aSubtask 2 : (80 points)\u000aSum of |Si| in an input file doesn't exceed 2 * 106\u000aExample\u000aInput:\u000a3\u000aaba\u000aabac\u000aabcd\u000a\u000aOutput:\u000aYES\u000aNO\u000aNO\u000aExplanation\u000aExample case 1.\u000aWe can remove the character at position 1 (0-based index) to get "aa" which is a double string. Hence, it is a special dish.\u000aExample case 2.\u000aIt is not possible to remove the character at any of the position to get the double string. Hence, it is not a special dish.\u000aAuthor: prateekg603\u000aTester: furko\u000aEditorial: http://discuss.codechef.com/problems/CHEFSPL\u000aTags: march16 prateekg603 simple string\u000aDate Added: 10-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aOne day, Chef prepared D brand new dishes. He named the i-th dish by a string Si. After the cooking, he decided to categorize each of these D dishes as special or not.\u000aA dish Si is called special if it's name (i.e. the string Si) can be represented in the form of a double string by removing at most one (possibly zero) character from it's name from any position.\u000aA string is called a double string if it can be represented as a concatenation of two identical, non-empty strings.\u000ae.g. "abab" is a double string as it can be represented as "ab" + "ab" where + operation denotes concatenation.\u000aSimilarly, "aa", "abcabc" are double strings whereas "a", "abba", "abc" are not.\u000aInput\u000aFirst line of the input contains an integer D denoting the number of dishes prepared by Chef on that day.\u000aEach of the next D lines will contain description of a dish.\u000aThe i-th line contains the name of i-th dish Si.\u000aOutput\u000aFor each of the D dishes, print a single line containing "YES" or "NO" (without quotes) denoting whether the dish can be called as a special or not.\u000aConstraints\u000a1 \u2264 D \u2264 106\u000a1 \u2264 |Si| \u2264 106.\u000aEach character of string Si will be lower case English alphabet (i.e. from 'a' to 'z').\u000aSubtasks\u000aSubtask #1 : (20 points)\u000aSum of |Si| in an input file doesn't exceed 2 * 103\u000aSubtask 2 : (80 points)\u000aSum of |Si| in an input file doesn't exceed 2 * 106\u000aExample\u000aInput:\u000a3\u000aaba\u000aabac\u000aabcd\u000a\u000aOutput:\u000aYES\u000aNO\u000aNO\u000aExplanation\u000aExample case 1.\u000aWe can remove the character at position 1 (0-based index) to get "aa" which is a double string. Hence, it is a special dish.\u000aExample case 2.\u000aIt is not possible to remove the character at any of the position to get the double string. Hence, it is not a special dish.\u000aAuthor: prateekg603\u000aTester: furko\u000aEditorial: http://discuss.codechef.com/problems/CHEFSPL\u000aTags: march16 prateekg603 simple string\u000aDate Added: 10-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese One day, Chef prepared D brand new dishes. He named the i-th dish by a string Si. After the cooking, he decided to categorize each of these D dishes as special or not. D Si i D special A dish Si is called special if it's name (i.e. the string Si) can be represented in the form of a double string by removing at most one (possibly zero) character from it's name from any position. Si i special Si i double A string is called a double string if it can be represented as a concatenation of two identical, non-empty strings.\u000ae.g. "abab" is a double string as it can be represented as "ab" + "ab" where + operation denotes concatenation.\u000aSimilarly, "aa", "abcabc" are double strings whereas "a", "abba", "abc" are not. double   Input First line of the input contains an integer D denoting the number of dishes prepared by Chef on that day.\u000aEach of the next D lines will contain description of a dish.\u000aThe i-th line contains the name of i-th dish Si. First line of the input contains an integer D denoting the number of dishes prepared by Chef on that day. D Each of the next D lines will contain description of a dish.\u000aThe i-th line contains the name of i-th dish Si. D The i-th line contains the name of i-th dish Si. The i-th line contains the name of i-th dish Si. Si i Output For each of the D dishes, print a single line containing "YES" or "NO" (without quotes) denoting whether the dish can be called as a special or not. D YES NO special Constraints 1 \u2264 D \u2264 106\u000a1 \u2264 |Si| \u2264 106.\u000aEach character of string Si will be lower case English alphabet (i.e. from 'a' to 'z'). 1 \u2264 D \u2264 106 1 D 106 6 1 \u2264 |Si| \u2264 106. 1 |Si| i 106 6 Each character of string Si will be lower case English alphabet (i.e. from 'a' to 'z'). Si i Subtasks Subtask #1 : (20 points) Subtask #1 : (20 points) Sum of |Si| in an input file doesn't exceed 2 * 103 Sum of |Si| in an input file doesn't exceed 2 * 103 |Si| i 2 * 103 3 Subtask 2 : (80 points) Subtask 2 : (80 points) Sum of |Si| in an input file doesn't exceed 2 * 106 Sum of |Si| in an input file doesn't exceed 2 * 106 |Si| i 2 * 106 6 Example Input:\u000a3\u000aaba\u000aabac\u000aabcd\u000a\u000aOutput:\u000aYES\u000aNO\u000aNO Input: Output: Explanation Example case 1.\u000aWe can remove the character at position 1 (0-based index) to get "aa" which is a double string. Hence, it is a special dish. Example case 1.  double special Example case 2.\u000aIt is not possible to remove the character at any of the position to get the double string. Hence, it is not a special dish. Example case 2.  special  Author: prateekg603\u000aTester: furko\u000aEditorial: http://discuss.codechef.com/problems/CHEFSPL\u000aTags: march16 prateekg603 simple string\u000aDate Added: 10-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: prateekg603\u000aTester: furko\u000aEditorial: http://discuss.codechef.com/problems/CHEFSPL\u000aTags: march16 prateekg603 simple string\u000aDate Added: 10-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: prateekg603 Author: prateekg603 prateekg603 Tester: furko Tester: furko furko Editorial: http://discuss.codechef.com/problems/CHEFSPL Editorial: http://discuss.codechef.com/problems/CHEFSPL http://discuss.codechef.com/problems/CHEFSPL Tags: march16 prateekg603 simple string Tags: march16 prateekg603 simple string march16 prateekg603 simple string Date Added: 10-02-2016 Date Added: 10-02-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V march16 prateekg603 simple string
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFSPL
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVOne day, Chef prepared D brand new dishes. He named the i-th dish by a string Si. After the cooking, he decided to categorize each of these D dishes as special or not.
+p18
+aVA dish Si is called special if it's name (i.e. the string Si) can be represented in the form of a double string by removing at most one (possibly zero) character from it's name from any position.
+p19
+aVA string is called a double string if it can be represented as a concatenation of two identical, non-empty strings.
+p20
+aVe.g. "abab" is a double string as it can be represented as "ab" + "ab" where + operation denotes concatenation.
+p21
+aVSimilarly, "aa", "abcabc" are double strings whereas "a", "abba", "abc" are not.
+p22
+asS'input'
+p23
+(lp24
+VInput
+p25
+aVFirst line of the input contains an integer D denoting the number of dishes prepared by Chef on that day.
+p26
+aVEach of the next D lines will contain description of a dish.
+p27
+aVThe i-th line contains the name of i-th dish Si.
+p28
+aVOutput
+p29
+aVFor each of the D dishes, print a single line containing "YES" or "NO" (without quotes) denoting whether the dish can be called as a special or not.
+p30
+asS'constraints'
+p31
+(lp32
+VConstraints
+p33
+aV1 \u2264 D \u2264 106
+p34
+aV1 \u2264 |Si| \u2264 106.
+p35
+aVEach character of string Si will be lower case English alphabet (i.e. from 'a' to 'z').
+p36
+aVSubtasks
+p37
+aVSubtask #1 : (20 points)
+p38
+aVSum of |Si| in an input file doesn't exceed 2 * 103
+p39
+aVSubtask 2 : (80 points)
+p40
+aVSum of |Si| in an input file doesn't exceed 2 * 106
+p41
+asS'id'
+p42
+c__builtin__
+id
+p43
+sS'name'
+p44
+VCHEFSPL
+p45
+sb.

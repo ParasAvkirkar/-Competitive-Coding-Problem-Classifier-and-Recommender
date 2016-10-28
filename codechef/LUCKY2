@@ -1,0 +1,65 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aChef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.\u000aLet F(X) equals to the number of lucky digits in decimal representation of X. Chef wants to know the number of such integers X, that L \u2264 X \u2264 R and F(X) is a lucky number. Help him and calculate that number modulo 109+7.\u000aInput\u000aFirst line contains one integer T, the number of test cases. Each of the following T lines contains two space separated positive integers L and R.\u000aOutput\u000aFor each of the T test cases print one integer, the number of such X, that L \u2264 X \u2264 R and F(X) is a lucky number, modulo 1000000007.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 L \u2264 R \u2264 101000\u000aExample\u000aInput:\u000a4\u000a1 100\u000a1 10000\u000a1 100000\u000a4444 4447\u000a\u000aOutput:\u000a0\u000a16\u000a640\u000a2\u000aNotes\u000aFirst test case: of course, any number of less than 4 digits can't contain lucky number of lucky digits, so the answer is 0.\u000aSecond test case: 16 required numbers are 4444 4447 4474 4477 4744 4747 4774 4777 7444 7447 7474 7477 7744 7747 7774 7777.\u000aThird test case: there are 640 required lucky numbers. Some of them are 4474, 14747, 41474, 77277, 44407, 74749.\u000aFourth test case: the only two required numbers are 4444 and 4447.\u000aAuthor: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKY2\u000aTags: easy march12 witua\u000aDate Added: 11-11-2011\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aChef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.\u000aLet F(X) equals to the number of lucky digits in decimal representation of X. Chef wants to know the number of such integers X, that L \u2264 X \u2264 R and F(X) is a lucky number. Help him and calculate that number modulo 109+7.\u000aInput\u000aFirst line contains one integer T, the number of test cases. Each of the following T lines contains two space separated positive integers L and R.\u000aOutput\u000aFor each of the T test cases print one integer, the number of such X, that L \u2264 X \u2264 R and F(X) is a lucky number, modulo 1000000007.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 L \u2264 R \u2264 101000\u000aExample\u000aInput:\u000a4\u000a1 100\u000a1 10000\u000a1 100000\u000a4444 4447\u000a\u000aOutput:\u000a0\u000a16\u000a640\u000a2\u000aNotes\u000aFirst test case: of course, any number of less than 4 digits can't contain lucky number of lucky digits, so the answer is 0.\u000aSecond test case: 16 required numbers are 4444 4447 4474 4477 4744 4747 4774 4777 7444 7447 7474 7477 7744 7747 7774 7777.\u000aThird test case: there are 640 required lucky numbers. Some of them are 4474, 14747, 41474, 77277, 44407, 74749.\u000aFourth test case: the only two required numbers are 4444 and 4447.\u000aAuthor: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKY2\u000aTags: easy march12 witua\u000aDate Added: 11-11-2011\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Chef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not. 4 7 47 744 4 5 17 467 Let F(X) equals to the number of lucky digits in decimal representation of X. Chef wants to know the number of such integers X, that L \u2264 X \u2264 R and F(X) is a lucky number. Help him and calculate that number modulo 109+7. F(X) X X L \u2264 X \u2264 R F(X) 109+7 9 Input  First line contains one integer T, the number of test cases. Each of the following T lines contains two space separated positive integers L and R. T T L R Output  For each of the T test cases print one integer, the number of such X, that L \u2264 X \u2264 R and F(X) is a lucky number, modulo 1000000007. T X L \u2264 X \u2264 R F(X) 1000000007 Constraints  1 \u2264 T \u2264 10 T 1 \u2264 L \u2264 R \u2264 101000 L R 1000 Example Input:\u000a4\u000a1 100\u000a1 10000\u000a1 100000\u000a4444 4447\u000a\u000aOutput:\u000a0\u000a16\u000a640\u000a2 Input: Output: Notes  First test case: of course, any number of less than 4 digits can't contain lucky number of lucky digits, so the answer is 0. Second test case: 16 required numbers are 4444 4447 4474 4477 4744 4747 4774 4777 7444 7447 7474 7477 7744 7747 7774 7777. 4444 4447 4474 4477 4744 4747 4774 4777 7444 7447 7474 7477 7744 7747 7774 7777 Third test case: there are 640 required lucky numbers. Some of them are 4474, 14747, 41474, 77277, 44407, 74749. 4474, 14747, 41474, 77277, 44407, 74749 Fourth test case: the only two required numbers are 4444 and 4447. 4444 4447  Author: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKY2\u000aTags: easy march12 witua\u000aDate Added: 11-11-2011\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKY2\u000aTags: easy march12 witua\u000aDate Added: 11-11-2011\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua Author: witua witua Tester: anton_lunyov Tester: anton_lunyov anton_lunyov Editorial: http://discuss.codechef.com/problems/LUCKY2 Editorial: http://discuss.codechef.com/problems/LUCKY2 http://discuss.codechef.com/problems/LUCKY2 Tags: easy march12 witua Tags: easy march12 witua easy march12 witua Date Added: 11-11-2011 Date Added: 11-11-2011 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy march12 witua
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LUCKY2
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVChef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.
+p17
+aVLet F(X) equals to the number of lucky digits in decimal representation of X. Chef wants to know the number of such integers X, that L \u2264 X \u2264 R and F(X) is a lucky number. Help him and calculate that number modulo 109+7.
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVFirst line contains one integer T, the number of test cases. Each of the following T lines contains two space separated positive integers L and R.
+p22
+aVOutput
+p23
+aVFor each of the T test cases print one integer, the number of such X, that L \u2264 X \u2264 R and F(X) is a lucky number, modulo 1000000007.
+p24
+asS'constraints'
+p25
+(lp26
+VConstraints
+p27
+aV1 \u2264 T \u2264 10
+p28
+aV1 \u2264 L \u2264 R \u2264 101000
+p29
+asS'id'
+p30
+c__builtin__
+id
+p31
+sS'name'
+p32
+VLUCKY2
+p33
+sb.

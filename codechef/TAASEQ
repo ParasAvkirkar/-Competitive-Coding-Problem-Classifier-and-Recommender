@@ -1,0 +1,77 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aJem couldn't even finish half of the homework exercises in "Advanced topics in algorithm" class. The teacher is really upset and gives him one final problem to solve - if he can't solve it, he is gonna fail the course.\u000aJem is given an array A consisting of N integers. The teacher asks him to remove exactly one number in the array to make the array become an arithmetic progressions.\u000aJem wanted to ask the teacher about the definition of arithmetic progressions but he remembered that he had heard this term in last week's lesson just before falling asleep. Now his life is in your hands again!\u000aAnyways, we provide you the definition of arithmetic progression. Arithmetic progression is a sequence of numbers, where the difference between any two adjacent numbers is same.\u000aInput\u000aInput contains mutilpe test cases. The first line of the input contains a single integer T represents the number of tests. It is followed by T group of line represent the test cases.\u000aEach test case consists of two lines where the first line contains a single integer N.\u000aThe second line contains N space separated integers denoting the array A.\u000aOutput\u000aFor each test case print out single integer which is the number you will remove from the array. If there is more than one solution take the smallest one. If there is no solution print out -1.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a2 \u2264 N \u2264 105\u000a0 \u2264 Ai \u2264 109\u000aExample\u000aInput:\u000a3\u000a2\u000a3 4\u000a4\u000a1 5 3 4\u000a6\u000a2 4 6 7 8 10\u000a\u000aOutput:\u000a3\u000a-1\u000a7\u000aExplaination\u000atest 1: an array contain a single integer is considered to be an arithmetic progression so you can remove any number in the array. But note that we must print out the smallest result which is 3.\u000atest 2: there is no solution since none of [1, 3, 4], [1, 5, 3], [1, 5, 4], [5, 3, 4] is an arithmetic progressions.\u000atest 3: the only way to archive an airthmetic progressions is remove the number 7 which will give us [2, 4, 6, 8, 10].\u000aAuthor: tuananh93\u000aTester: errichto\u000aEditorial: http://discuss.codechef.com/problems/TAASEQ\u000aTags: cook74 dynamic-prog easy tuananh93\u000aDate Added: 8-09-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aJem couldn't even finish half of the homework exercises in "Advanced topics in algorithm" class. The teacher is really upset and gives him one final problem to solve - if he can't solve it, he is gonna fail the course.\u000aJem is given an array A consisting of N integers. The teacher asks him to remove exactly one number in the array to make the array become an arithmetic progressions.\u000aJem wanted to ask the teacher about the definition of arithmetic progressions but he remembered that he had heard this term in last week's lesson just before falling asleep. Now his life is in your hands again!\u000aAnyways, we provide you the definition of arithmetic progression. Arithmetic progression is a sequence of numbers, where the difference between any two adjacent numbers is same.\u000aInput\u000aInput contains mutilpe test cases. The first line of the input contains a single integer T represents the number of tests. It is followed by T group of line represent the test cases.\u000aEach test case consists of two lines where the first line contains a single integer N.\u000aThe second line contains N space separated integers denoting the array A.\u000aOutput\u000aFor each test case print out single integer which is the number you will remove from the array. If there is more than one solution take the smallest one. If there is no solution print out -1.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a2 \u2264 N \u2264 105\u000a0 \u2264 Ai \u2264 109\u000aExample\u000aInput:\u000a3\u000a2\u000a3 4\u000a4\u000a1 5 3 4\u000a6\u000a2 4 6 7 8 10\u000a\u000aOutput:\u000a3\u000a-1\u000a7\u000aExplaination\u000atest 1: an array contain a single integer is considered to be an arithmetic progression so you can remove any number in the array. But note that we must print out the smallest result which is 3.\u000atest 2: there is no solution since none of [1, 3, 4], [1, 5, 3], [1, 5, 4], [5, 3, 4] is an arithmetic progressions.\u000atest 3: the only way to archive an airthmetic progressions is remove the number 7 which will give us [2, 4, 6, 8, 10].\u000aAuthor: tuananh93\u000aTester: errichto\u000aEditorial: http://discuss.codechef.com/problems/TAASEQ\u000aTags: cook74 dynamic-prog easy tuananh93\u000aDate Added: 8-09-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Jem couldn't even finish half of the homework exercises in "Advanced topics in algorithm" class. The teacher is really upset and gives him one final problem to solve - if he can't solve it, he is gonna fail the course. Jem is given an array A consisting of N integers. The teacher asks him to remove exactly one number in the array to make the array become an arithmetic progressions. A N Jem wanted to ask the teacher about the definition of arithmetic progressions but he remembered that he had heard this term in last week's lesson just before falling asleep. Now his life is in your hands again! Anyways, we provide you the definition of arithmetic progression. Arithmetic progression is a sequence of numbers, where the difference between any two adjacent numbers is same. Input Input contains mutilpe test cases. The first line of the input contains a single integer T represents the number of tests. It is followed by T group of line represent the test cases. T Each test case consists of two lines where the first line contains a single integer N. N The second line contains N space separated integers denoting the array A. N A Output For each test case print out single integer which is the number you will remove from the array. If there is more than one solution take the smallest one. If there is no solution print out -1. Constraints 1 \u2264 T \u2264 10\u000a2 \u2264 N \u2264 105\u000a0 \u2264 Ai \u2264 109 1 \u2264 T \u2264 10 1 \u2264 T \u2264 10 2 \u2264 N \u2264 105 2 \u2264 N \u2264 105 5 0 \u2264 Ai \u2264 109 0 \u2264 Ai \u2264 109 i 9 Example Input:\u000a3\u000a2\u000a3 4\u000a4\u000a1 5 3 4\u000a6\u000a2 4 6 7 8 10\u000a\u000aOutput:\u000a3\u000a-1\u000a7 Input Output Explaination test 1: an array contain a single integer is considered to be an arithmetic progression so you can remove any number in the array. But note that we must print out the smallest result which is 3. test 1: smallest result test 2: there is no solution since none of [1, 3, 4], [1, 5, 3], [1, 5, 4], [5, 3, 4] is an arithmetic progressions. test 2: test 3: the only way to archive an airthmetic progressions is remove the number 7 which will give us [2, 4, 6, 8, 10]. test 3:  Author: tuananh93\u000aTester: errichto\u000aEditorial: http://discuss.codechef.com/problems/TAASEQ\u000aTags: cook74 dynamic-prog easy tuananh93\u000aDate Added: 8-09-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: tuananh93\u000aTester: errichto\u000aEditorial: http://discuss.codechef.com/problems/TAASEQ\u000aTags: cook74 dynamic-prog easy tuananh93\u000aDate Added: 8-09-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: tuananh93 Author: tuananh93 tuananh93 Tester: errichto Tester: errichto errichto Editorial: http://discuss.codechef.com/problems/TAASEQ Editorial: http://discuss.codechef.com/problems/TAASEQ http://discuss.codechef.com/problems/TAASEQ Tags: cook74 dynamic-prog easy tuananh93 Tags: cook74 dynamic-prog easy tuananh93 cook74 dynamic-prog easy tuananh93 Date Added: 8-09-2016 Date Added: 8-09-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook74 dynamic-prog easy tuananh93
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/TAASEQ
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVJem couldn't even finish half of the homework exercises in "Advanced topics in algorithm" class. The teacher is really upset and gives him one final problem to solve - if he can't solve it, he is gonna fail the course.
+p18
+aVJem is given an array A consisting of N integers. The teacher asks him to remove exactly one number in the array to make the array become an arithmetic progressions.
+p19
+aVJem wanted to ask the teacher about the definition of arithmetic progressions but he remembered that he had heard this term in last week's lesson just before falling asleep. Now his life is in your hands again!
+p20
+aVAnyways, we provide you the definition of arithmetic progression. Arithmetic progression is a sequence of numbers, where the difference between any two adjacent numbers is same.
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVInput contains mutilpe test cases. The first line of the input contains a single integer T represents the number of tests. It is followed by T group of line represent the test cases.
+p25
+aVEach test case consists of two lines where the first line contains a single integer N.
+p26
+aVThe second line contains N space separated integers denoting the array A.
+p27
+aVOutput
+p28
+aVFor each test case print out single integer which is the number you will remove from the array. If there is more than one solution take the smallest one. If there is no solution print out -1.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 T \u2264 10
+p33
+aV2 \u2264 N \u2264 105
+p34
+aV0 \u2264 Ai \u2264 109
+p35
+asS'id'
+p36
+c__builtin__
+id
+p37
+sS'name'
+p38
+VTAASEQ
+p39
+sb.

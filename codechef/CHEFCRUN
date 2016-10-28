@@ -1,0 +1,83 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef likes to play with graphs a lot. Today he created a graph in the following way. He first lays down N nodes in a circle. The nodes nodes are numbered from 1 to N, in the clockwise order, i.e. the node 2 is followed by 1, 3 is followed by 2, and 1 is followed by N. Two vertices are said to be adjacent if they don't have an intermediate vertex placed between them. There is an edge between each adjacent pair of vertices, so there are total N such edges. Each edge has an integer associated with it (may be negative).\u000aChef wants to find a walk from node start to node end using the above described edges. Chef has to pay cost for each edge in the walk equal to the integer associated with the edge. He wants to minimize the total cost he will incur. Also, Chef does not like to move through an edge more than twice. Find out minimum cost that Chef has to pay.\u000aNote that a walk from a node u to v can contain repeated vertices in it. Please refer to link for a formal definition.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the number of nodes.\u000aThe second line contains N space-separated integers R1, R2, ..., RN denoting the integer of the rib from node i to node (i % N) + 1. Note that RN is an integer on a rib from node N to node 1.\u000aThe third line contains two integers start and end denoting the first and the last node of the walk.\u000aOutput\u000aFor each test case, output a single line containing the minimal possible cost Chef need to pay.\u000aConstraints\u000a-106 \u2264 Ri \u2264 106\u000a1 \u2264 start < end \u2264 N\u000aSubtasks\u000aSubtask #1 (20 points): 1 \u2264 sum of N \u2264 20; 1 \u2264 N \u2264 8\u000aSubtask #2 (30 points): 1 \u2264 sum of all N \u2264 103; 1 \u2264 N \u2264 200\u000aSubtask #3 (50 points): 1 \u2264 sum of all N \u2264 106; 1 \u2264 N \u2264 2 × 105\u000aExample\u000aInput:\u000a2\u000a4\u000a1 2 1 1\u000a1 3\u000a5\u000a-5 100 100 100 2\u000a1 5\u000a\u000aOutput:\u000a2\u000a-8\u000aExplanation\u000aExample case 1. Chef's walk starts with node 1. He goes to node 4 by incurring a cost of 1. Then from node 4, he goes to node 3 by incurring a cost of 1 more. Total cost incurred is 2.\u000aExample case 2. Chef goes from 1 to 2 by incurring a cost of -5. Then from 2 to 1 using the edge second time and incurring cost of -5 again. Now, he can not use the edge between 1 and 2 again, as he has traversed the edge already twice. Now he will go from node 1 to node 4 by paying a cost of 2. Total sum of costs incurred is -5 + -5 + 2 = -8. This is the minimum possible cost that Chef can have.\u000aAuthor: berezin\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFCRUN\u000aTags: aug16 berezin easy prefix-sum\u000aDate Added: 13-10-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef likes to play with graphs a lot. Today he created a graph in the following way. He first lays down N nodes in a circle. The nodes nodes are numbered from 1 to N, in the clockwise order, i.e. the node 2 is followed by 1, 3 is followed by 2, and 1 is followed by N. Two vertices are said to be adjacent if they don't have an intermediate vertex placed between them. There is an edge between each adjacent pair of vertices, so there are total N such edges. Each edge has an integer associated with it (may be negative).\u000aChef wants to find a walk from node start to node end using the above described edges. Chef has to pay cost for each edge in the walk equal to the integer associated with the edge. He wants to minimize the total cost he will incur. Also, Chef does not like to move through an edge more than twice. Find out minimum cost that Chef has to pay.\u000aNote that a walk from a node u to v can contain repeated vertices in it. Please refer to link for a formal definition.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the number of nodes.\u000aThe second line contains N space-separated integers R1, R2, ..., RN denoting the integer of the rib from node i to node (i % N) + 1. Note that RN is an integer on a rib from node N to node 1.\u000aThe third line contains two integers start and end denoting the first and the last node of the walk.\u000aOutput\u000aFor each test case, output a single line containing the minimal possible cost Chef need to pay.\u000aConstraints\u000a-106 \u2264 Ri \u2264 106\u000a1 \u2264 start < end \u2264 N\u000aSubtasks\u000aSubtask #1 (20 points): 1 \u2264 sum of N \u2264 20; 1 \u2264 N \u2264 8\u000aSubtask #2 (30 points): 1 \u2264 sum of all N \u2264 103; 1 \u2264 N \u2264 200\u000aSubtask #3 (50 points): 1 \u2264 sum of all N \u2264 106; 1 \u2264 N \u2264 2 × 105\u000aExample\u000aInput:\u000a2\u000a4\u000a1 2 1 1\u000a1 3\u000a5\u000a-5 100 100 100 2\u000a1 5\u000a\u000aOutput:\u000a2\u000a-8\u000aExplanation\u000aExample case 1. Chef's walk starts with node 1. He goes to node 4 by incurring a cost of 1. Then from node 4, he goes to node 3 by incurring a cost of 1 more. Total cost incurred is 2.\u000aExample case 2. Chef goes from 1 to 2 by incurring a cost of -5. Then from 2 to 1 using the edge second time and incurring cost of -5 again. Now, he can not use the edge between 1 and 2 again, as he has traversed the edge already twice. Now he will go from node 1 to node 4 by paying a cost of 2. Total sum of costs incurred is -5 + -5 + 2 = -8. This is the minimum possible cost that Chef can have.\u000aAuthor: berezin\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFCRUN\u000aTags: aug16 berezin easy prefix-sum\u000aDate Added: 13-10-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef likes to play with graphs a lot. Today he created a graph in the following way. He first lays down N nodes in a circle. The nodes nodes are numbered from 1 to N, in the clockwise order, i.e. the node 2 is followed by 1, 3 is followed by 2, and 1 is followed by N. Two vertices are said to be adjacent if they don't have an intermediate vertex placed between them. There is an edge between each adjacent pair of vertices, so there are total N such edges. Each edge has an integer associated with it (may be negative). N 1 N 2 1 3 2 1 N N Chef wants to find a walk from node start to node end using the above described edges. Chef has to pay cost for each edge in the walk equal to the integer associated with the edge. He wants to minimize the total cost he will incur. Also, Chef does not like to move through an edge more than twice. Find out minimum cost that Chef has to pay. walk start end Note that a walk from a node u to v can contain repeated vertices in it. Please refer to link for a formal definition. u v link Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a single integer N denoting the number of nodes. N The second line contains N space-separated integers R1, R2, ..., RN denoting the integer of the rib from node i to node (i % N) + 1. Note that RN is an integer on a rib from node N to node 1. N R1 1 R2 2 RN N i (i % N) + 1 RN N N 1 The third line contains two integers start and end denoting the first and the last node of the walk. start end Output For each test case, output a single line containing the minimal possible cost Chef need to pay. Constraints  -106 \u2264 Ri \u2264 106\u000a1 \u2264 start < end \u2264 N -106 \u2264 Ri \u2264 106 -106 6 Ri i 106 6 1 \u2264 start < end \u2264 N 1 start end N  Subtasks  Subtask #1 (20 points): 1 \u2264 sum of N \u2264 20; 1 \u2264 N \u2264 8\u000aSubtask #2 (30 points): 1 \u2264 sum of all N \u2264 103; 1 \u2264 N \u2264 200\u000aSubtask #3 (50 points): 1 \u2264 sum of all N \u2264 106; 1 \u2264 N \u2264 2 × 105 Subtask #1 (20 points): 1 \u2264 sum of N \u2264 20; 1 \u2264 N \u2264 8 Subtask #1 (20 points): 1 N 20 1 N 8 Subtask #2 (30 points): 1 \u2264 sum of all N \u2264 103; 1 \u2264 N \u2264 200 Subtask #2 (30 points): 1 N 103 3 1 N 200 Subtask #3 (50 points): 1 \u2264 sum of all N \u2264 106; 1 \u2264 N \u2264 2 × 105 Subtask #3 (50 points): 1 N 106 6 1 N 2 × 105 5  Example Input:\u000a2\u000a4\u000a1 2 1 1\u000a1 3\u000a5\u000a-5 100 100 100 2\u000a1 5\u000a\u000aOutput:\u000a2\u000a-8 Input: 2\u000a4\u000a1 2 1 1\u000a1 3\u000a5\u000a-5 100 100 100 2\u000a1 5 Output: 2\u000a-8 Explanation Example case 1. Chef's walk starts with node 1. He goes to node 4 by incurring a cost of 1. Then from node 4, he goes to node 3 by incurring a cost of 1 more. Total cost incurred is 2. Example case 1. 4 Example case 2. Chef goes from 1 to 2 by incurring a cost of -5. Then from 2 to 1 using the edge second time and incurring cost of -5 again. Now, he can not use the edge between 1 and 2 again, as he has traversed the edge already twice. Now he will go from node 1 to node 4 by paying a cost of 2. Total sum of costs incurred is -5 + -5 + 2 = -8. This is the minimum possible cost that Chef can have. Example case 2. 1 2 -5 2 1 second time -5  Author: berezin\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFCRUN\u000aTags: aug16 berezin easy prefix-sum\u000aDate Added: 13-10-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFCRUN\u000aTags: aug16 berezin easy prefix-sum\u000aDate Added: 13-10-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin Author: berezin berezin Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/CHEFCRUN Editorial: http://discuss.codechef.com/problems/CHEFCRUN http://discuss.codechef.com/problems/CHEFCRUN Tags: aug16 berezin easy prefix-sum Tags: aug16 berezin easy prefix-sum aug16 berezin easy prefix-sum Date Added: 13-10-2015 Date Added: 13-10-2015 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V aug16 berezin easy prefix-sum
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFCRUN
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef likes to play with graphs a lot. Today he created a graph in the following way. He first lays down N nodes in a circle. The nodes nodes are numbered from 1 to N, in the clockwise order, i.e. the node 2 is followed by 1, 3 is followed by 2, and 1 is followed by N. Two vertices are said to be adjacent if they don't have an intermediate vertex placed between them. There is an edge between each adjacent pair of vertices, so there are total N such edges. Each edge has an integer associated with it (may be negative).
+p18
+aVChef wants to find a walk from node start to node end using the above described edges. Chef has to pay cost for each edge in the walk equal to the integer associated with the edge. He wants to minimize the total cost he will incur. Also, Chef does not like to move through an edge more than twice. Find out minimum cost that Chef has to pay.
+p19
+aVNote that a walk from a node u to v can contain repeated vertices in it. Please refer to link for a formal definition.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVThe first line of each test case contains a single integer N denoting the number of nodes.
+p25
+aVThe second line contains N space-separated integers R1, R2, ..., RN denoting the integer of the rib from node i to node (i % N) + 1. Note that RN is an integer on a rib from node N to node 1.
+p26
+aVThe third line contains two integers start and end denoting the first and the last node of the walk.
+p27
+aVOutput
+p28
+aVFor each test case, output a single line containing the minimal possible cost Chef need to pay.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV-106 \u2264 Ri \u2264 106
+p33
+aV1 \u2264 start < end \u2264 N
+p34
+aVSubtasks
+p35
+aVSubtask #1 (20 points): 1 \u2264 sum of N \u2264 20; 1 \u2264 N \u2264 8
+p36
+aVSubtask #2 (30 points): 1 \u2264 sum of all N \u2264 103; 1 \u2264 N \u2264 200
+p37
+aVSubtask #3 (50 points): 1 \u2264 sum of all N \u2264 106; 1 \u2264 N \u2264 2 × 105
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'name'
+p41
+VCHEFCRUN
+p42
+sb.

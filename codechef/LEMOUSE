@@ -1,0 +1,69 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aIt is well-known that the elephants are afraid of mouses. The Little Elephant from the Zoo of Lviv is not an exception.\u000aThe Little Elephant is on a board A of n rows and m columns (0-based numeration). At the beginning he is in cell with coordinates (0; 0) and he wants to go to cell with coordinates (n-1; m-1). From cell (x; y) Little Elephant can go either to (x+1; y) or (x; y+1).\u000aEach cell of the board contains either 1 or 0. If A[i][j] = 1, then there is a single mouse in cell (i; j). Mouse at cell (i; j) scared Little Elephants if and only if during the path there was at least one such cell (x; y) (which belongs to that path) and |i-x| + |j-y| <= 1.\u000aLittle Elephant wants to find some correct path from (0; 0) to (n-1; m-1) such that the number of mouses that have scared the Little Elephant is minimal possible. Print that number.\u000aInput\u000aFirst line contains single integer T - the number of test cases. Then T test cases follow. First line of each test case contain pair of integers n and m - the size of the board. Next n lines contain n strings, each of size m and consisted of digits 0 and 1.\u000aOutput\u000aIn T lines print T integer - the answers for the corresponding test.\u000aConstraints\u000a1 <= T <= 50\u000a2 <= n, m <= 100\u000aExample\u000aInput:\u000a2\u000a3 9\u000a001000001\u000a111111010\u000a100100100\u000a7 9\u000a010101110\u000a110110111\u000a010011111\u000a100100000\u000a000010100\u000a011011000\u000a000100101\u000a\u000aOutput:\u000a9\u000a10\u000aExplanation\u000aExample case 1: The optimized path is: (0, 0) -> (0, 1) -> (0, 2) -> (0, 3) -> (0, 4) -> (0, 5) -> (0, 6) -> (0, 7) -> (0, 8) -> (1, 8) -> (2, 8). The mouses that scared the Little Elephant are at the following cells: (1, 0), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 7), (0, 2), (0, 8).\u000aExample case 2: The optimized path is: (0, 0) -> (1, 0) -> (1, 1) -> (2, 1) -> (2, 2) -> (3, 2) -> (3, 3) -> (4, 3) -> (4, 4) -> (5, 4) -> (5, 5) -> (6, 5) -> (6, 6) -> (6, 7) -> (6, 8). The 10 mouses that scared the Little Elephant are at the following cells: (0, 1), (1, 0), (1, 1), (2, 1), (3, 3), (4, 4), (5, 4), (5, 5), (6, 6), (6, 8).\u000aAuthor: witua\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/LEMOUSE\u000aTags: dynamic-prog june13 simple witua\u000aDate Added: 20-03-2012\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aIt is well-known that the elephants are afraid of mouses. The Little Elephant from the Zoo of Lviv is not an exception.\u000aThe Little Elephant is on a board A of n rows and m columns (0-based numeration). At the beginning he is in cell with coordinates (0; 0) and he wants to go to cell with coordinates (n-1; m-1). From cell (x; y) Little Elephant can go either to (x+1; y) or (x; y+1).\u000aEach cell of the board contains either 1 or 0. If A[i][j] = 1, then there is a single mouse in cell (i; j). Mouse at cell (i; j) scared Little Elephants if and only if during the path there was at least one such cell (x; y) (which belongs to that path) and |i-x| + |j-y| <= 1.\u000aLittle Elephant wants to find some correct path from (0; 0) to (n-1; m-1) such that the number of mouses that have scared the Little Elephant is minimal possible. Print that number.\u000aInput\u000aFirst line contains single integer T - the number of test cases. Then T test cases follow. First line of each test case contain pair of integers n and m - the size of the board. Next n lines contain n strings, each of size m and consisted of digits 0 and 1.\u000aOutput\u000aIn T lines print T integer - the answers for the corresponding test.\u000aConstraints\u000a1 <= T <= 50\u000a2 <= n, m <= 100\u000aExample\u000aInput:\u000a2\u000a3 9\u000a001000001\u000a111111010\u000a100100100\u000a7 9\u000a010101110\u000a110110111\u000a010011111\u000a100100000\u000a000010100\u000a011011000\u000a000100101\u000a\u000aOutput:\u000a9\u000a10\u000aExplanation\u000aExample case 1: The optimized path is: (0, 0) -> (0, 1) -> (0, 2) -> (0, 3) -> (0, 4) -> (0, 5) -> (0, 6) -> (0, 7) -> (0, 8) -> (1, 8) -> (2, 8). The mouses that scared the Little Elephant are at the following cells: (1, 0), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 7), (0, 2), (0, 8).\u000aExample case 2: The optimized path is: (0, 0) -> (1, 0) -> (1, 1) -> (2, 1) -> (2, 2) -> (3, 2) -> (3, 3) -> (4, 3) -> (4, 4) -> (5, 4) -> (5, 5) -> (6, 5) -> (6, 6) -> (6, 7) -> (6, 8). The 10 mouses that scared the Little Elephant are at the following cells: (0, 1), (1, 0), (1, 1), (2, 1), (3, 3), (4, 4), (5, 4), (5, 5), (6, 6), (6, 8).\u000aAuthor: witua\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/LEMOUSE\u000aTags: dynamic-prog june13 simple witua\u000aDate Added: 20-03-2012\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. It is well-known that the elephants are afraid of mouses. The Little Elephant from the Zoo of Lviv is not an exception. The Little Elephant is on a board A of n rows and m columns (0-based numeration). At the beginning he is in cell with coordinates (0; 0) and he wants to go to cell with coordinates (n-1; m-1). From cell (x; y) Little Elephant can go either to (x+1; y) or (x; y+1). A n m (0; 0) (n-1; m-1) (x; y) (x+1; y) (x; y+1) Each cell of the board contains either 1 or 0. If A[i][j] = 1, then there is a single mouse in cell (i; j). Mouse at cell (i; j) scared Little Elephants if and only if during the path there was at least one such cell (x; y) (which belongs to that path) and |i-x| + |j-y| <= 1. 1 0 A[i][j] = 1 (i; j) (i; j) (x; y) |i-x| + |j-y| <= 1 Little Elephant wants to find some correct path from (0; 0) to (n-1; m-1) such that the number of mouses that have scared the Little Elephant is minimal possible. Print that number. (0; 0) (n-1; m-1) Input  First line contains single integer T - the number of test cases. Then T test cases follow. First line of each test case contain pair of integers n and m - the size of the board. Next n lines contain n strings, each of size m and consisted of digits 0 and 1. T T n m n n m 0 1 Output  In T lines print T integer - the answers for the corresponding test. T T Constraints  1 <= T <= 50 1 T 50 2 <= n, m <= 100 2 n, m 100 Example Input:\u000a2\u000a3 9\u000a001000001\u000a111111010\u000a100100100\u000a7 9\u000a010101110\u000a110110111\u000a010011111\u000a100100000\u000a000010100\u000a011011000\u000a000100101\u000a\u000aOutput:\u000a9\u000a10 Input: Output: Explanation  Example case 1: The optimized path is: (0, 0) -> (0, 1) -> (0, 2) -> (0, 3) -> (0, 4) -> (0, 5) -> (0, 6) -> (0, 7) -> (0, 8) -> (1, 8) -> (2, 8). The mouses that scared the Little Elephant are at the following cells: (1, 0), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 7), (0, 2), (0, 8). Example case 1: Example case 2: The optimized path is: (0, 0) -> (1, 0) -> (1, 1) -> (2, 1) -> (2, 2) -> (3, 2) -> (3, 3) -> (4, 3) -> (4, 4) -> (5, 4) -> (5, 5) -> (6, 5) -> (6, 6) -> (6, 7) -> (6, 8). The 10 mouses that scared the Little Elephant are at the following cells: (0, 1), (1, 0), (1, 1), (2, 1), (3, 3), (4, 4), (5, 4), (5, 5), (6, 6), (6, 8). Example case 2:  Author: witua\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/LEMOUSE\u000aTags: dynamic-prog june13 simple witua\u000aDate Added: 20-03-2012\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/LEMOUSE\u000aTags: dynamic-prog june13 simple witua\u000aDate Added: 20-03-2012\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua Author: witua witua Tester: tuananh93 Tester: tuananh93 tuananh93 Editorial: http://discuss.codechef.com/problems/LEMOUSE Editorial: http://discuss.codechef.com/problems/LEMOUSE http://discuss.codechef.com/problems/LEMOUSE Tags: dynamic-prog june13 simple witua Tags: dynamic-prog june13 simple witua dynamic-prog june13 simple witua Date Added: 20-03-2012 Date Added: 20-03-2012 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V dynamic-prog june13 simple witua
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LEMOUSE
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVIt is well-known that the elephants are afraid of mouses. The Little Elephant from the Zoo of Lviv is not an exception.
+p17
+aVThe Little Elephant is on a board A of n rows and m columns (0-based numeration). At the beginning he is in cell with coordinates (0; 0) and he wants to go to cell with coordinates (n-1; m-1). From cell (x; y) Little Elephant can go either to (x+1; y) or (x; y+1).
+p18
+aVEach cell of the board contains either 1 or 0. If A[i][j] = 1, then there is a single mouse in cell (i; j). Mouse at cell (i; j) scared Little Elephants if and only if during the path there was at least one such cell (x; y) (which belongs to that path) and |i-x| + |j-y| <= 1.
+p19
+aVLittle Elephant wants to find some correct path from (0; 0) to (n-1; m-1) such that the number of mouses that have scared the Little Elephant is minimal possible. Print that number.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVFirst line contains single integer T - the number of test cases. Then T test cases follow. First line of each test case contain pair of integers n and m - the size of the board. Next n lines contain n strings, each of size m and consisted of digits 0 and 1.
+p24
+aVOutput
+p25
+aVIn T lines print T integer - the answers for the corresponding test.
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aV1 <= T <= 50
+p30
+aV2 <= n, m <= 100
+p31
+asS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VLEMOUSE
+p35
+sb.

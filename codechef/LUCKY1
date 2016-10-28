@@ -1,0 +1,65 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 3 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aChef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.\u000aLet Fd(x) equals to the number of digits d in decimal representation of the positive integer x. Chef interests only in functions F4(x) and F7(x). For the given positive integer N he wants to know the total number of different pairs (L; R) such that F4(L) + F4(L + 1) + ... + F4(R) equals to F7(L) + F7(L + 1) + ... + F7(R) and 1 \u2264 L \u2264 R \u2264 N.\u000aInput\u000aThe first line contains a single positive integer T, the number of test cases. T test cases follow. The only line of each test case contains a positive integer N .\u000aOutput\u000aFor each test case, output a single line containing the answer for the corresponding test case.\u000aConstraints\u000a1 \u2264 T \u2264 100000\u000a1 \u2264 N \u2264 100000\u000aExample\u000aInput:\u000a3\u000a3\u000a10\u000a100\u000a\u000aOutput:\u000a6\u000a31\u000a1266\u000aAuthor: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKY1\u000aTags: easy feb12 witua\u000aDate Added: 11-11-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aChef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.\u000aLet Fd(x) equals to the number of digits d in decimal representation of the positive integer x. Chef interests only in functions F4(x) and F7(x). For the given positive integer N he wants to know the total number of different pairs (L; R) such that F4(L) + F4(L + 1) + ... + F4(R) equals to F7(L) + F7(L + 1) + ... + F7(R) and 1 \u2264 L \u2264 R \u2264 N.\u000aInput\u000aThe first line contains a single positive integer T, the number of test cases. T test cases follow. The only line of each test case contains a positive integer N .\u000aOutput\u000aFor each test case, output a single line containing the answer for the corresponding test case.\u000aConstraints\u000a1 \u2264 T \u2264 100000\u000a1 \u2264 N \u2264 100000\u000aExample\u000aInput:\u000a3\u000a3\u000a10\u000a100\u000a\u000aOutput:\u000a6\u000a31\u000a1266\u000aAuthor: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKY1\u000aTags: easy feb12 witua\u000aDate Added: 11-11-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Chef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not. 4 7 47 744 4 5 17 467 Let Fd(x) equals to the number of digits d in decimal representation of the positive integer x. Chef interests only in functions F4(x) and F7(x). For the given positive integer N he wants to know the total number of different pairs (L; R) such that F4(L) + F4(L + 1) + ... + F4(R) equals to F7(L) + F7(L + 1) + ... + F7(R) and 1 \u2264 L \u2264 R \u2264 N. Fd(x) d d x F4(x) 4 F7(x) 7 N (L; R) F4(L) + F4(L + 1) + ... + F4(R) 4 4 4 F7(L) + F7(L + 1) + ... + F7(R) 7 7 7 1 \u2264 L \u2264 R \u2264 N Input  The first line contains a single positive integer T, the number of test cases. T test cases follow. The only line of each test case contains a positive integer N . T T N Output  For each test case, output a single line containing the answer for the corresponding test case. Constraints  1 \u2264 T \u2264 100000 T 1 \u2264 N \u2264 100000 N Example Input:\u000a3\u000a3\u000a10\u000a100\u000a\u000aOutput:\u000a6\u000a31\u000a1266 Input: Output:   Author: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKY1\u000aTags: easy feb12 witua\u000aDate Added: 11-11-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKY1\u000aTags: easy feb12 witua\u000aDate Added: 11-11-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua Author: witua witua Tester: anton_lunyov Tester: anton_lunyov anton_lunyov Editorial: http://discuss.codechef.com/problems/LUCKY1 Editorial: http://discuss.codechef.com/problems/LUCKY1 http://discuss.codechef.com/problems/LUCKY1 Tags: easy feb12 witua Tags: easy feb12 witua easy feb12 witua Date Added: 11-11-2011 Date Added: 11-11-2011 Time Limit: 3 sec Time Limit: 3 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy feb12 witua
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LUCKY1
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVChef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.
+p17
+aVLet Fd(x) equals to the number of digits d in decimal representation of the positive integer x. Chef interests only in functions F4(x) and F7(x). For the given positive integer N he wants to know the total number of different pairs (L; R) such that F4(L) + F4(L + 1) + ... + F4(R) equals to F7(L) + F7(L + 1) + ... + F7(R) and 1 \u2264 L \u2264 R \u2264 N.
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVThe first line contains a single positive integer T, the number of test cases. T test cases follow. The only line of each test case contains a positive integer N .
+p22
+aVOutput
+p23
+aVFor each test case, output a single line containing the answer for the corresponding test case.
+p24
+asS'constraints'
+p25
+(lp26
+VConstraints
+p27
+aV1 \u2264 T \u2264 100000
+p28
+aV1 \u2264 N \u2264 100000
+p29
+asS'id'
+p30
+c__builtin__
+id
+p31
+sS'name'
+p32
+VLUCKY1
+p33
+sb.

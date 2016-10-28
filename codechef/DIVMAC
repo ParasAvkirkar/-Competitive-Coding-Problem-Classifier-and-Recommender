@@ -1,0 +1,122 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 - 3 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef has created a special dividing machine that supports the below given operations on an array of positive integers.\u000aThere are two operations that Chef implemented on the machine.\u000aType 0 Operation\u000aUpdate(L,R):\u000a for i = L to R:\u000a  a[i] = a[i] / LeastPrimeDivisor(a[i])\u000aType 1 Operation\u000aGet(L,R):\u000a result = 1\u000a for i = L to R:\u000a  result = max(result, LeastPrimeDivisor(a[i]))\u000a return result;\u000aThe function LeastPrimeDivisor(x) finds the smallest prime divisor of a number. If the number does not have any prime divisors, then it returns 1.\u000aChef has provided you an array of size N, on which you have to apply M operations using the special machine. Each operation will be one of the above given two types. Your task is to implement the special dividing machine operations designed by Chef. Chef finds this task quite easy using his machine, do you too?\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two space-separated integers N, M, denoting the size of array A and the number of queries correspondingly.\u000aThe second line of each test case contains N space-separated integers A1, A2, ..., AN denoting the initial array for dividing machine.\u000aEach of following M lines contain three space-separated integers type, L, R - the type of operation (0 - Update operation, 1 - Get operation), and the arguments of function, respectively\u000aOutput\u000aFor each test case, output answer of each query of type 1 (Get query) separated by space. Each test case from the same file should start from the new line.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 Ai \u2264 106\u000a1 \u2264 L \u2264 R \u2264 N\u000a0 \u2264 type \u2264 1\u000aSum of M over all test cases in a single test file does not exceed 106\u000aSubtasks\u000aSubtask #1: (10 points)\u000a1 \u2264 N, M \u2264 103\u000a\u000aSubtask #2: (25 points)\u000a1 \u2264 N, M \u2264 105\u000aAi is a prime number.\u000a\u000aSubtask #3: (65 points)\u000a1 \u2264 N, M \u2264 105\u000aExample\u000aInput:\u000a2\u000a6 7\u000a2 5 8 10 3 44\u000a1 2 6\u000a0 2 3\u000a1 2 6\u000a0 4 6\u000a1 1 6\u000a0 1 6\u000a1 4 6\u000a2 2\u000a1 3\u000a0 2 2\u000a1 1 2\u000a\u000aOutput:\u000a5 3 5 11\u000a1\u000aExplanation\u000aExample case 1.The states of array A after each Update-operation:\u000aA: = [2 1 4 10 3 44]\u000aA: = [2 1 4 5 1 22]\u000aA: = [1 1 2 1 1 11]\u000aAuthor: kaizer\u000aTester: dpraveen\u000aEditorial: http://discuss.codechef.com/problems/DIVMAC\u000aTags: kaizer medium segment-tree sept16\u000aDate Added: 5-07-2015\u000aTime Limit: 1 - 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef has created a special dividing machine that supports the below given operations on an array of positive integers.\u000aThere are two operations that Chef implemented on the machine.\u000aType 0 Operation\u000aUpdate(L,R):\u000a for i = L to R:\u000a  a[i] = a[i] / LeastPrimeDivisor(a[i])\u000aType 1 Operation\u000aGet(L,R):\u000a result = 1\u000a for i = L to R:\u000a  result = max(result, LeastPrimeDivisor(a[i]))\u000a return result;\u000aThe function LeastPrimeDivisor(x) finds the smallest prime divisor of a number. If the number does not have any prime divisors, then it returns 1.\u000aChef has provided you an array of size N, on which you have to apply M operations using the special machine. Each operation will be one of the above given two types. Your task is to implement the special dividing machine operations designed by Chef. Chef finds this task quite easy using his machine, do you too?\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two space-separated integers N, M, denoting the size of array A and the number of queries correspondingly.\u000aThe second line of each test case contains N space-separated integers A1, A2, ..., AN denoting the initial array for dividing machine.\u000aEach of following M lines contain three space-separated integers type, L, R - the type of operation (0 - Update operation, 1 - Get operation), and the arguments of function, respectively\u000aOutput\u000aFor each test case, output answer of each query of type 1 (Get query) separated by space. Each test case from the same file should start from the new line.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 Ai \u2264 106\u000a1 \u2264 L \u2264 R \u2264 N\u000a0 \u2264 type \u2264 1\u000aSum of M over all test cases in a single test file does not exceed 106\u000aSubtasks\u000aSubtask #1: (10 points)\u000a1 \u2264 N, M \u2264 103\u000a\u000aSubtask #2: (25 points)\u000a1 \u2264 N, M \u2264 105\u000aAi is a prime number.\u000a\u000aSubtask #3: (65 points)\u000a1 \u2264 N, M \u2264 105\u000aExample\u000aInput:\u000a2\u000a6 7\u000a2 5 8 10 3 44\u000a1 2 6\u000a0 2 3\u000a1 2 6\u000a0 4 6\u000a1 1 6\u000a0 1 6\u000a1 4 6\u000a2 2\u000a1 3\u000a0 2 2\u000a1 1 2\u000a\u000aOutput:\u000a5 3 5 11\u000a1\u000aExplanation\u000aExample case 1.The states of array A after each Update-operation:\u000aA: = [2 1 4 10 3 44]\u000aA: = [2 1 4 5 1 22]\u000aA: = [1 1 2 1 1 11]\u000aAuthor: kaizer\u000aTester: dpraveen\u000aEditorial: http://discuss.codechef.com/problems/DIVMAC\u000aTags: kaizer medium segment-tree sept16\u000aDate Added: 5-07-2015\u000aTime Limit: 1 - 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef has created a special dividing machine that supports the below given operations on an array of positive integers. special dividing machine There are two operations that Chef implemented on the machine. Type 0 Operation Type 0 Operation   Update(L,R):\u000a for i = L to R:\u000a  a[i] = a[i] / LeastPrimeDivisor(a[i]) Update(L,R):\u000a for i = L to R:\u000a  a[i] = a[i] / LeastPrimeDivisor(a[i]) Update(L,R):   Type 1 Operation Type 1 Operation   Get(L,R):\u000a result = 1\u000a for i = L to R:\u000a  result = max(result, LeastPrimeDivisor(a[i]))\u000a return result; Get(L,R):\u000a result = 1\u000a for i = L to R:\u000a  result = max(result, LeastPrimeDivisor(a[i]))\u000a return result; Get(L,R):   The function LeastPrimeDivisor(x) finds the smallest prime divisor of a number. If the number does not have any prime divisors, then it returns 1. LeastPrimeDivisor(x) Chef has provided you an array of size N, on which you have to apply M operations using the special machine. Each operation will be one of the above given two types. Your task is to implement the special dividing machine operations designed by Chef. Chef finds this task quite easy using his machine, do you too? N M special dividing machine Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T  N M A  The second line of each test case contains N space-separated integers A1, A2, ..., AN denoting the initial array for dividing machine. N A1 1 A2 2 AN N Each of following M lines contain three space-separated integers type, L, R - the type of operation (0 - Update operation, 1 - Get operation), and the arguments of function, respectively M type L R 0 Update 1 Get Output For each test case, output answer of each query of type 1 (Get query) separated by space. Each test case from the same file should start from the new line. Get Constraints 1 \u2264 T \u2264 100\u000a1 \u2264 Ai \u2264 106\u000a1 \u2264 L \u2264 R \u2264 N\u000a0 \u2264 type \u2264 1\u000aSum of M over all test cases in a single test file does not exceed 106 1 \u2264 T \u2264 100 1 T 100 1 \u2264 Ai \u2264 106 1 Ai i 106 6 1 \u2264 L \u2264 R \u2264 N 1 L R N 0 \u2264 type \u2264 1 0 type 1 Sum of M over all test cases in a single test file does not exceed 106 M 106 6 Subtasks Subtask #1: (10 points) Subtask #1: (10 points) 1 \u2264 N, M \u2264 103 1 \u2264 N, M \u2264 103 1 N M 103 3  Subtask #2: (25 points) Subtask #2: (25 points) 1 \u2264 N, M \u2264 105\u000aAi is a prime number. 1 \u2264 N, M \u2264 105 1 N M 105 5 Ai is a prime number. Ai i  Subtask #3: (65 points) Subtask #3: (65 points) 1 \u2264 N, M \u2264 105 1 \u2264 N, M \u2264 105 1 N M 105 5 Example Input:\u000a2\u000a6 7\u000a2 5 8 10 3 44\u000a1 2 6\u000a0 2 3\u000a1 2 6\u000a0 4 6\u000a1 1 6\u000a0 1 6\u000a1 4 6\u000a2 2\u000a1 3\u000a0 2 2\u000a1 1 2\u000a\u000aOutput:\u000a5 3 5 11\u000a1 Input: 2\u000a6 7\u000a2 5 8 10 3 44\u000a1 2 6\u000a0 2 3\u000a1 2 6\u000a0 4 6\u000a1 1 6\u000a0 1 6\u000a1 4 6\u000a2 2\u000a1 3\u000a0 2 2\u000a1 1 2 Output: 5 3 5 11\u000a1 Explanation Example case 1.The states of array A after each Update-operation: Example case 1. Update A: = [2 1 4 10 3 44]\u000aA: = [2 1 4 5 1 22]\u000aA: = [1 1 2 1 1 11] A: A: A:  Author: kaizer\u000aTester: dpraveen\u000aEditorial: http://discuss.codechef.com/problems/DIVMAC\u000aTags: kaizer medium segment-tree sept16\u000aDate Added: 5-07-2015\u000aTime Limit: 1 - 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kaizer\u000aTester: dpraveen\u000aEditorial: http://discuss.codechef.com/problems/DIVMAC\u000aTags: kaizer medium segment-tree sept16\u000aDate Added: 5-07-2015\u000aTime Limit: 1 - 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kaizer Author: kaizer kaizer Tester: dpraveen Tester: dpraveen dpraveen Editorial: http://discuss.codechef.com/problems/DIVMAC Editorial: http://discuss.codechef.com/problems/DIVMAC http://discuss.codechef.com/problems/DIVMAC Tags: kaizer medium segment-tree sept16 Tags: kaizer medium segment-tree sept16 kaizer medium segment-tree sept16 Date Added: 5-07-2015 Date Added: 5-07-2015 Time Limit: 1 - 3 sec Time Limit: 1 - 3 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V kaizer medium segment-tree sept16
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/DIVMAC
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef has created a special dividing machine that supports the below given operations on an array of positive integers.
+p18
+aVThere are two operations that Chef implemented on the machine.
+p19
+aVType 0 Operation
+p20
+aVUpdate(L,R):
+p21
+aV for i = L to R:
+p22
+aV  a[i] = a[i] / LeastPrimeDivisor(a[i])
+p23
+aVType 1 Operation
+p24
+aVGet(L,R):
+p25
+aV result = 1
+p26
+aV for i = L to R:
+p27
+aV  result = max(result, LeastPrimeDivisor(a[i]))
+p28
+aV return result;
+p29
+aVThe function LeastPrimeDivisor(x) finds the smallest prime divisor of a number. If the number does not have any prime divisors, then it returns 1.
+p30
+aVChef has provided you an array of size N, on which you have to apply M operations using the special machine. Each operation will be one of the above given two types. Your task is to implement the special dividing machine operations designed by Chef. Chef finds this task quite easy using his machine, do you too?
+p31
+asS'input'
+p32
+(lp33
+VInput
+p34
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p35
+aVThe first line of each test case contains two space-separated integers N, M, denoting the size of array A and the number of queries correspondingly.
+p36
+aVThe second line of each test case contains N space-separated integers A1, A2, ..., AN denoting the initial array for dividing machine.
+p37
+aVEach of following M lines contain three space-separated integers type, L, R - the type of operation (0 - Update operation, 1 - Get operation), and the arguments of function, respectively
+p38
+aVOutput
+p39
+aVFor each test case, output answer of each query of type 1 (Get query) separated by space. Each test case from the same file should start from the new line.
+p40
+asS'constraints'
+p41
+(lp42
+VConstraints
+p43
+aV1 \u2264 T \u2264 100
+p44
+aV1 \u2264 Ai \u2264 106
+p45
+aV1 \u2264 L \u2264 R \u2264 N
+p46
+aV0 \u2264 type \u2264 1
+p47
+aVSum of M over all test cases in a single test file does not exceed 106
+p48
+aVSubtasks
+p49
+aVSubtask #1: (10 points)
+p50
+aV1 \u2264 N, M \u2264 103
+p51
+aV
+p52
+aVSubtask #2: (25 points)
+p53
+aV1 \u2264 N, M \u2264 105
+p54
+aVAi is a prime number.
+p55
+ag52
+aVSubtask #3: (65 points)
+p56
+aV1 \u2264 N, M \u2264 105
+p57
+asS'id'
+p58
+c__builtin__
+id
+p59
+sS'name'
+p60
+VDIVMAC
+p61
+sb.

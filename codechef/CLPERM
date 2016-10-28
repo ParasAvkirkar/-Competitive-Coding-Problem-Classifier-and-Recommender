@@ -1,0 +1,95 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aToday is Chef's birthday. His mom gifted him a truly lovable gift, a permutation of first N positive integers.\u000aShe placed the permutation on a very long table in front of Chef and left it for him to play with it. But as there was a lot of people coming and wishing him. It was interfering with his game which made him very angry and he banged the table very hard due to which K numbers from the permutation fell down and went missing.\u000aSeeing her son's gift being spoilt, his mom became very sad. Chef didn't want his mom to be sad as he loves her the most. So to make her happy, he decided to play a game with her with the remaining N - K numbers on the table. Chef wants his mom to win all the games.\u000aChef and his mom play alternatively and optimally. In Xth move, a player can choose some numbers out of all the numbers available on the table such that chosen numbers sum up to X. After the move, Chosen numbers are placed back on the table.The player who is not able to make a move loses.\u000aNow, Chef has to decide who should move first so that his Mom wins the game.\u000aAs Chef is a small child, he needs your help to decide who should move first. Please help him, he has promised to share his birthday cake with you :)\u000aInput\u000aFirst Line of input contains a single integer T denoting the number of test cases.\u000aFirst line of each test case contains two space separated integers N and K denoting the size of\u000apermutation and number of numbers fall down from the table.\u000aNext line of each test case contains K space separated integers denoting the values of missing numbers.\u000aOutput\u000aFor each test case, print "Chef" if chef should move first otherwise print "Mom" (without quotes).\u000aConstraints\u000a1 \u2264 T \u2264 105, 1 \u2264 N \u2264 109\u000a0 \u2264 K \u2264 min(105, N)\u000aAll K numbers are distinct.\u000aValue of each of K number belongs to [1,N].\u000aSum of K over all the test cases does not exceed 5*105.\u000aScoring\u000aSubtask 1 (13 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 102, 1 \u2264 K < N.\u000aSubtask 2 (17 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 105, K = 0.\u000aSubtask 3 (70 pts): Original Constraints.\u000aExample\u000aInput\u000a2\u000a5 2\u000a3 5\u000a5 1\u000a1\u000aOutput\u000aMom\u000aChef\u000aExplanation\u000aFor test case 1.\u000aMom can choose {1} to make 1.\u000aChef can choose {2} to make 2.\u000aMom can choose {1,2} to make 3.\u000aChef can choose {4} to make 4.\u000aMom can choose {1,4} to make 5.\u000aChef can choose {2,4} to make 6.\u000aMom can choose {1,2,4} to make 7.\u000aChef cannot make 8 out of the numbers on the table.\u000aSo,Chef loses and Mom wins.\u000aAuthor: ma5termind\u000aTester: shiplu\u000aEditorial: http://discuss.codechef.com/problems/CLPERM\u000aTags: jan15 ma5termind maths medium\u000aDate Added: 28-09-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aToday is Chef's birthday. His mom gifted him a truly lovable gift, a permutation of first N positive integers.\u000aShe placed the permutation on a very long table in front of Chef and left it for him to play with it. But as there was a lot of people coming and wishing him. It was interfering with his game which made him very angry and he banged the table very hard due to which K numbers from the permutation fell down and went missing.\u000aSeeing her son's gift being spoilt, his mom became very sad. Chef didn't want his mom to be sad as he loves her the most. So to make her happy, he decided to play a game with her with the remaining N - K numbers on the table. Chef wants his mom to win all the games.\u000aChef and his mom play alternatively and optimally. In Xth move, a player can choose some numbers out of all the numbers available on the table such that chosen numbers sum up to X. After the move, Chosen numbers are placed back on the table.The player who is not able to make a move loses.\u000aNow, Chef has to decide who should move first so that his Mom wins the game.\u000aAs Chef is a small child, he needs your help to decide who should move first. Please help him, he has promised to share his birthday cake with you :)\u000aInput\u000aFirst Line of input contains a single integer T denoting the number of test cases.\u000aFirst line of each test case contains two space separated integers N and K denoting the size of\u000apermutation and number of numbers fall down from the table.\u000aNext line of each test case contains K space separated integers denoting the values of missing numbers.\u000aOutput\u000aFor each test case, print "Chef" if chef should move first otherwise print "Mom" (without quotes).\u000aConstraints\u000a1 \u2264 T \u2264 105, 1 \u2264 N \u2264 109\u000a0 \u2264 K \u2264 min(105, N)\u000aAll K numbers are distinct.\u000aValue of each of K number belongs to [1,N].\u000aSum of K over all the test cases does not exceed 5*105.\u000aScoring\u000aSubtask 1 (13 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 102, 1 \u2264 K < N.\u000aSubtask 2 (17 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 105, K = 0.\u000aSubtask 3 (70 pts): Original Constraints.\u000aExample\u000aInput\u000a2\u000a5 2\u000a3 5\u000a5 1\u000a1\u000aOutput\u000aMom\u000aChef\u000aExplanation\u000aFor test case 1.\u000aMom can choose {1} to make 1.\u000aChef can choose {2} to make 2.\u000aMom can choose {1,2} to make 3.\u000aChef can choose {4} to make 4.\u000aMom can choose {1,4} to make 5.\u000aChef can choose {2,4} to make 6.\u000aMom can choose {1,2,4} to make 7.\u000aChef cannot make 8 out of the numbers on the table.\u000aSo,Chef loses and Mom wins.\u000aAuthor: ma5termind\u000aTester: shiplu\u000aEditorial: http://discuss.codechef.com/problems/CLPERM\u000aTags: jan15 ma5termind maths medium\u000aDate Added: 28-09-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Today is Chef's birthday. His mom gifted him a truly lovable gift, a permutation of first N positive integers. N She placed the permutation on a very long table in front of Chef and left it for him to play with it. But as there was a lot of people coming and wishing him. It was interfering with his game which made him very angry and he banged the table very hard due to which K numbers from the permutation fell down and went missing. K Seeing her son's gift being spoilt, his mom became very sad. Chef didn't want his mom to be sad as he loves her the most. So to make her happy, he decided to play a game with her with the remaining N - K numbers on the table. Chef wants his mom to win all the games. N - K Chef and his mom play alternatively and optimally. In Xth move, a player can choose some numbers out of all the numbers available on the table such that chosen numbers sum up to X. After the move, Chosen numbers are placed back on the table.The player who is not able to make a move loses. Xth X Now, Chef has to decide who should move first so that his Mom wins the game. As Chef is a small child, he needs your help to decide who should move first. Please help him, he has promised to share his birthday cake with you :) Input First Line of input contains a single integer T denoting the number of test cases.\u000aFirst line of each test case contains two space separated integers N and K denoting the size of\u000apermutation and number of numbers fall down from the table.\u000aNext line of each test case contains K space separated integers denoting the values of missing numbers. First Line of input contains a single integer T denoting the number of test cases. T First line of each test case contains two space separated integers N and K denoting the size of\u000apermutation and number of numbers fall down from the table. N K  Next line of each test case contains K space separated integers denoting the values of missing numbers. K Output For each test case, print "Chef" if chef should move first otherwise print "Mom" (without quotes). "Chef" "Mom" Constraints 1 \u2264 T \u2264 105, 1 \u2264 N \u2264 109\u000a0 \u2264 K \u2264 min(105, N)\u000aAll K numbers are distinct.\u000aValue of each of K number belongs to [1,N].\u000aSum of K over all the test cases does not exceed 5*105. 1 \u2264 T \u2264 105, 1 \u2264 N \u2264 109 1 \u2264 T \u2264 105, 1 \u2264 N \u2264 109 5 9 0 \u2264 K \u2264 min(105, N) 0 \u2264 K \u2264 min(105, N) 5 All K numbers are distinct. K Value of each of K number belongs to [1,N]. K [1,N] Sum of K over all the test cases does not exceed 5*105. K 5*105. 5 Scoring Subtask 1 (13 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 102, 1 \u2264 K < N.\u000aSubtask 2 (17 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 105, K = 0.\u000aSubtask 3 (70 pts): Original Constraints. Subtask 1 (13 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 102, 1 \u2264 K < N. T N 2 Subtask 2 (17 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 105, K = 0. T N 5 Subtask 3 (70 pts): Original Constraints. Example Input\u000a2\u000a5 2\u000a3 5\u000a5 1\u000a1\u000aOutput\u000aMom\u000aChef Input Output Explanation For test case 1. Mom can choose {1} to make 1.\u000aChef can choose {2} to make 2.\u000aMom can choose {1,2} to make 3.\u000aChef can choose {4} to make 4.\u000aMom can choose {1,4} to make 5.\u000aChef can choose {2,4} to make 6.\u000aMom can choose {1,2,4} to make 7.\u000aChef cannot make 8 out of the numbers on the table. Mom can choose {1} to make 1. Chef can choose {2} to make 2. Mom can choose {1,2} to make 3. Chef can choose {4} to make 4. Mom can choose {1,4} to make 5. Chef can choose {2,4} to make 6. Mom can choose {1,2,4} to make 7. Chef cannot make 8 out of the numbers on the table. So,Chef loses and Mom wins.  Author: ma5termind\u000aTester: shiplu\u000aEditorial: http://discuss.codechef.com/problems/CLPERM\u000aTags: jan15 ma5termind maths medium\u000aDate Added: 28-09-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind\u000aTester: shiplu\u000aEditorial: http://discuss.codechef.com/problems/CLPERM\u000aTags: jan15 ma5termind maths medium\u000aDate Added: 28-09-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind Author: ma5termind ma5termind Tester: shiplu Tester: shiplu shiplu Editorial: http://discuss.codechef.com/problems/CLPERM Editorial: http://discuss.codechef.com/problems/CLPERM http://discuss.codechef.com/problems/CLPERM Tags: jan15 ma5termind maths medium Tags: jan15 ma5termind maths medium jan15 ma5termind maths medium Date Added: 28-09-2014 Date Added: 28-09-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V jan15 ma5termind maths medium
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CLPERM
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVToday is Chef's birthday. His mom gifted him a truly lovable gift, a permutation of first N positive integers.
+p18
+aVShe placed the permutation on a very long table in front of Chef and left it for him to play with it. But as there was a lot of people coming and wishing him. It was interfering with his game which made him very angry and he banged the table very hard due to which K numbers from the permutation fell down and went missing.
+p19
+aVSeeing her son's gift being spoilt, his mom became very sad. Chef didn't want his mom to be sad as he loves her the most. So to make her happy, he decided to play a game with her with the remaining N - K numbers on the table. Chef wants his mom to win all the games.
+p20
+aVChef and his mom play alternatively and optimally. In Xth move, a player can choose some numbers out of all the numbers available on the table such that chosen numbers sum up to X. After the move, Chosen numbers are placed back on the table.The player who is not able to make a move loses.
+p21
+aVNow, Chef has to decide who should move first so that his Mom wins the game.
+p22
+aVAs Chef is a small child, he needs your help to decide who should move first. Please help him, he has promised to share his birthday cake with you :)
+p23
+asS'input'
+p24
+(lp25
+VInput
+p26
+aVFirst Line of input contains a single integer T denoting the number of test cases.
+p27
+aVFirst line of each test case contains two space separated integers N and K denoting the size of
+p28
+aVpermutation and number of numbers fall down from the table.
+p29
+aVNext line of each test case contains K space separated integers denoting the values of missing numbers.
+p30
+aVOutput
+p31
+aVFor each test case, print "Chef" if chef should move first otherwise print "Mom" (without quotes).
+p32
+asS'constraints'
+p33
+(lp34
+VConstraints
+p35
+aV1 \u2264 T \u2264 105, 1 \u2264 N \u2264 109
+p36
+aV0 \u2264 K \u2264 min(105, N)
+p37
+aVAll K numbers are distinct.
+p38
+aVValue of each of K number belongs to [1,N].
+p39
+aVSum of K over all the test cases does not exceed 5*105.
+p40
+aVScoring
+p41
+aVSubtask 1 (13 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 102, 1 \u2264 K < N.
+p42
+aVSubtask 2 (17 pts): 1 \u2264 T \u2264 100, 1 \u2264 N \u2264 105, K = 0.
+p43
+aVSubtask 3 (70 pts): Original Constraints.
+p44
+asS'id'
+p45
+c__builtin__
+id
+p46
+sS'name'
+p47
+VCLPERM
+p48
+sb.

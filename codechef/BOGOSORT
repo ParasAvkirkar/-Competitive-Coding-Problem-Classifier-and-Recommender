@@ -1,0 +1,63 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 10000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRecently Johnny have learned bogosort sorting algorithm. He thought that it is too ineffective. So he decided to improve it. As you may know this algorithm shuffles the sequence randomly until it is sorted. Johnny decided that we don't need to shuffle the whole sequence every time. If after the last shuffle several first elements end up in the right places we will fix them and don't shuffle those elements furthermore. We will do the same for the last elements if they are in the right places. For example, if the initial sequence is (3, 5, 1, 6, 4, 2) and after one shuffle Johnny gets (1, 2, 5, 4, 3, 6) he will fix 1, 2 and 6 and proceed with sorting (5, 4, 3) using the same algorithm. Johnny hopes that this optimization will significantly improve the algorithm. Help him calculate the expected amount of shuffles for the improved algorithm to sort the sequence of the first n natural numbers given that no elements are in the right places initially.\u000aInput\u000aThe first line of input file is number t - the number of test cases. Each of the following t lines hold single number n - the number of elements in the sequence.\u000aConstraints\u000a1 <= t <= 150\u000a2 <= n <= 150\u000aOutput\u000aFor each test case output the expected amount of shuffles needed for the improved algorithm to sort the sequence of first n natural numbers in the form of irreducible fractions.\u000aExample\u000aInput:\u000a3\u000a2\u000a6\u000a10\u000a\u000aOutput:\u000a2\u000a1826/189\u000a877318/35343\u000aAuthor: spooky\u000aTester: subra\u000aEditorial: http://discuss.codechef.com/problems/BOGOSORT\u000aTags: easy feb11 spooky\u000aDate Added: 6-08-2010\u000aTime Limit: 2 sec\u000aSource Limit: 10000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRecently Johnny have learned bogosort sorting algorithm. He thought that it is too ineffective. So he decided to improve it. As you may know this algorithm shuffles the sequence randomly until it is sorted. Johnny decided that we don't need to shuffle the whole sequence every time. If after the last shuffle several first elements end up in the right places we will fix them and don't shuffle those elements furthermore. We will do the same for the last elements if they are in the right places. For example, if the initial sequence is (3, 5, 1, 6, 4, 2) and after one shuffle Johnny gets (1, 2, 5, 4, 3, 6) he will fix 1, 2 and 6 and proceed with sorting (5, 4, 3) using the same algorithm. Johnny hopes that this optimization will significantly improve the algorithm. Help him calculate the expected amount of shuffles for the improved algorithm to sort the sequence of the first n natural numbers given that no elements are in the right places initially.\u000aInput\u000aThe first line of input file is number t - the number of test cases. Each of the following t lines hold single number n - the number of elements in the sequence.\u000aConstraints\u000a1 <= t <= 150\u000a2 <= n <= 150\u000aOutput\u000aFor each test case output the expected amount of shuffles needed for the improved algorithm to sort the sequence of first n natural numbers in the form of irreducible fractions.\u000aExample\u000aInput:\u000a3\u000a2\u000a6\u000a10\u000a\u000aOutput:\u000a2\u000a1826/189\u000a877318/35343\u000aAuthor: spooky\u000aTester: subra\u000aEditorial: http://discuss.codechef.com/problems/BOGOSORT\u000aTags: easy feb11 spooky\u000aDate Added: 6-08-2010\u000aTime Limit: 2 sec\u000aSource Limit: 10000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC All submissions for this problem are available. Recently Johnny have learned bogosort sorting algorithm. He thought that it is too ineffective. So he decided to improve it. As you may know this algorithm shuffles the sequence randomly until it is sorted. Johnny decided that we don't need to shuffle the whole sequence every time. If after the last shuffle several first elements end up in the right places we will fix them and don't shuffle those elements furthermore. We will do the same for the last elements if they are in the right places. For example, if the initial sequence is (3, 5, 1, 6, 4, 2) and after one shuffle Johnny gets (1, 2, 5, 4, 3, 6) he will fix 1, 2 and 6 and proceed with sorting (5, 4, 3) using the same algorithm. Johnny hopes that this optimization will significantly improve the algorithm. Help him calculate the expected amount of shuffles for the improved algorithm to sort the sequence of the first n natural numbers given that no elements are in the right places initially. Input The first line of input file is number t - the number of test cases. Each of the following t lines hold single number n - the number of elements in the sequence. Constraints  1 <= t <= 150\u000a2 <= n <= 150  Output  For each test case output the expected amount of shuffles needed for the improved algorithm to sort the sequence of first n natural numbers in the form of irreducible fractions. Example Input:\u000a3\u000a2\u000a6\u000a10\u000a\u000aOutput:\u000a2\u000a1826/189\u000a877318/35343 Input: Output:   Author: spooky\u000aTester: subra\u000aEditorial: http://discuss.codechef.com/problems/BOGOSORT\u000aTags: easy feb11 spooky\u000aDate Added: 6-08-2010\u000aTime Limit: 2 sec\u000aSource Limit: 10000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Author: spooky\u000aTester: subra\u000aEditorial: http://discuss.codechef.com/problems/BOGOSORT\u000aTags: easy feb11 spooky\u000aDate Added: 6-08-2010\u000aTime Limit: 2 sec\u000aSource Limit: 10000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Author: spooky Author: spooky spooky Tester: subra Tester: subra subra Editorial: http://discuss.codechef.com/problems/BOGOSORT Editorial: http://discuss.codechef.com/problems/BOGOSORT http://discuss.codechef.com/problems/BOGOSORT Tags: easy feb11 spooky Tags: easy feb11 spooky easy feb11 spooky Date Added: 6-08-2010 Date Added: 6-08-2010 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 10000 Bytes Source Limit: 10000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy feb11 spooky
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/BOGOSORT
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRecently Johnny have learned bogosort sorting algorithm. He thought that it is too ineffective. So he decided to improve it. As you may know this algorithm shuffles the sequence randomly until it is sorted. Johnny decided that we don't need to shuffle the whole sequence every time. If after the last shuffle several first elements end up in the right places we will fix them and don't shuffle those elements furthermore. We will do the same for the last elements if they are in the right places. For example, if the initial sequence is (3, 5, 1, 6, 4, 2) and after one shuffle Johnny gets (1, 2, 5, 4, 3, 6) he will fix 1, 2 and 6 and proceed with sorting (5, 4, 3) using the same algorithm. Johnny hopes that this optimization will significantly improve the algorithm. Help him calculate the expected amount of shuffles for the improved algorithm to sort the sequence of the first n natural numbers given that no elements are in the right places initially.
+p17
+asS'input'
+p18
+(lp19
+VInput
+p20
+aVThe first line of input file is number t - the number of test cases. Each of the following t lines hold single number n - the number of elements in the sequence.
+p21
+asS'constraints'
+p22
+(lp23
+VConstraints
+p24
+aV1 <= t <= 150
+p25
+aV2 <= n <= 150
+p26
+aVOutput
+p27
+aVFor each test case output the expected amount of shuffles needed for the improved algorithm to sort the sequence of first n natural numbers in the form of irreducible fractions.
+p28
+asS'id'
+p29
+c__builtin__
+id
+p30
+sS'name'
+p31
+VBOGOSORT
+p32
+sb.

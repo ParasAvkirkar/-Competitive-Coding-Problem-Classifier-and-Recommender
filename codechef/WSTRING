@@ -1,0 +1,99 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aKira likes to play with strings very much. Moreover he likes the shape of 'W' very much. He takes a string and try to make a 'W' shape out of it such that each angular point is a '#' character and each sides has same characters. He calls them W strings.\u000aFor example, the W string can be formed from "aaaaa#bb#cc#dddd" such as:\u000a    a\u000a     a             d\u000a      a     #     d\u000a       a   b c   d\u000a        a b   c d\u000a         #     #\u000aHe also call the strings which can generate a 'W' shape (satisfying the above conditions) W strings.\u000aMore formally, a string S is a W string if and only if it satisfies the following conditions (some terms and notations are explained in Note, please see it if you cannot understand):\u000aThe string S contains exactly 3 '#' characters. Let the indexes of all '#' be P1 < P2 < P3 (indexes are 0-origin).\u000aEach substring of S[0, P1\u22121], S[P1+1, P2\u22121], S[P2+1, P3\u22121], S[P3+1, |S|\u22121] contains exactly one kind of characters, where S[a, b] denotes the non-empty substring from a+1th character to b+1th character, and |S| denotes the length of string S (See Note for details).\u000aNow, his friend Ryuk gives him a string S and asks him to find the length of the longest W string which is a subsequence of S, with only one condition that there must not be any '#' symbols between the positions of the first and the second '#' symbol he chooses, nor between the second and the third (here the "positions" we are looking at are in S), i.e. suppose the index of the '#'s he chooses to make the W string are P1, P2, P3 (in increasing order) in the original string S, then there must be no index i such that S[i] = '#' where P1 < i < P2 or P2 < i < P3.\u000aHelp Kira and he won't write your name in the Death Note.\u000aNote:\u000aFor a given string S, let S[k] denote the k+1th character of string S, and let the index of the character S[k] be k. Let |S| denote the length of the string S. And a substring of a string S is a string S[a, b] = S[a] S[a+1] ... S[b], where 0 \u2264 a \u2264 b < |S|. And a subsequence of a string S is a string S[i0] S[i1] ... S[in\u22121], where 0 \u2264 i0 < i1 < ... < in\u22121 < |S|.\u000aFor example, let S be the string "kira", then S[0] = 'k', S[1] = 'i', S[3] = 'a', and |S| = 4. All of S[0, 2] = "kir", S[1, 1] = "i", and S[0, 3] = "kira" are substrings of S, but "ik", "kr", and "arik" are not. All of "k", "kr", "kira", "kia" are subsequences of S, but "ik", "kk" are not.\u000aFrom the above definition of W string, for example, "a#b#c#d", "aaa#yyy#aaa#yy", and "o#oo#ooo#oooo" are W string, but "a#b#c#d#e", "#a#a#a", and "aa##a#a" are not.\u000aInput\u000aFirst line of input contains an integer T, denoting the number of test cases. Then T lines follow. Each line contains a string S.\u000aOutput\u000aOutput an integer, denoting the length of the longest W string as explained before. If S has no W string as its subsequence, then output 0.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 |S| \u2264 10000 (104)\u000aS contains no characters other than lower English characters ('a' to 'z') and '#' (without quotes)\u000aExample\u000aInput:\u000a3\u000aaaaaa#bb#cc#dddd\u000aacb#aab#bab#accba\u000aabc#dda#bb#bb#aca\u000a\u000aOutput:\u000a16\u000a10\u000a11\u000aExplanation\u000aIn the first case: the whole string forms a W String.\u000aIn the second case: acb#aab#bab#accba, the longest W string is acb#aab#bab#accba\u000aIn the third case: abc#dda#bb#bb#aca, note that even though abc#dda#bb#bb#aca (boldened characters form the subsequence) is a W string of length 12, it violates Ryuk's condition that there should not be any #'s inbetween the 3 chosen # positions. One correct string of length 11 is abc#dda#bb#bb#aca\u000aAuthor: jay_adm\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/WSTRING\u000aTags: dynamic-prog easy jay_adm june13\u000aDate Added: 27-04-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aKira likes to play with strings very much. Moreover he likes the shape of 'W' very much. He takes a string and try to make a 'W' shape out of it such that each angular point is a '#' character and each sides has same characters. He calls them W strings.\u000aFor example, the W string can be formed from "aaaaa#bb#cc#dddd" such as:\u000a    a\u000a     a             d\u000a      a     #     d\u000a       a   b c   d\u000a        a b   c d\u000a         #     #\u000aHe also call the strings which can generate a 'W' shape (satisfying the above conditions) W strings.\u000aMore formally, a string S is a W string if and only if it satisfies the following conditions (some terms and notations are explained in Note, please see it if you cannot understand):\u000aThe string S contains exactly 3 '#' characters. Let the indexes of all '#' be P1 < P2 < P3 (indexes are 0-origin).\u000aEach substring of S[0, P1\u22121], S[P1+1, P2\u22121], S[P2+1, P3\u22121], S[P3+1, |S|\u22121] contains exactly one kind of characters, where S[a, b] denotes the non-empty substring from a+1th character to b+1th character, and |S| denotes the length of string S (See Note for details).\u000aNow, his friend Ryuk gives him a string S and asks him to find the length of the longest W string which is a subsequence of S, with only one condition that there must not be any '#' symbols between the positions of the first and the second '#' symbol he chooses, nor between the second and the third (here the "positions" we are looking at are in S), i.e. suppose the index of the '#'s he chooses to make the W string are P1, P2, P3 (in increasing order) in the original string S, then there must be no index i such that S[i] = '#' where P1 < i < P2 or P2 < i < P3.\u000aHelp Kira and he won't write your name in the Death Note.\u000aNote:\u000aFor a given string S, let S[k] denote the k+1th character of string S, and let the index of the character S[k] be k. Let |S| denote the length of the string S. And a substring of a string S is a string S[a, b] = S[a] S[a+1] ... S[b], where 0 \u2264 a \u2264 b < |S|. And a subsequence of a string S is a string S[i0] S[i1] ... S[in\u22121], where 0 \u2264 i0 < i1 < ... < in\u22121 < |S|.\u000aFor example, let S be the string "kira", then S[0] = 'k', S[1] = 'i', S[3] = 'a', and |S| = 4. All of S[0, 2] = "kir", S[1, 1] = "i", and S[0, 3] = "kira" are substrings of S, but "ik", "kr", and "arik" are not. All of "k", "kr", "kira", "kia" are subsequences of S, but "ik", "kk" are not.\u000aFrom the above definition of W string, for example, "a#b#c#d", "aaa#yyy#aaa#yy", and "o#oo#ooo#oooo" are W string, but "a#b#c#d#e", "#a#a#a", and "aa##a#a" are not.\u000aInput\u000aFirst line of input contains an integer T, denoting the number of test cases. Then T lines follow. Each line contains a string S.\u000aOutput\u000aOutput an integer, denoting the length of the longest W string as explained before. If S has no W string as its subsequence, then output 0.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 |S| \u2264 10000 (104)\u000aS contains no characters other than lower English characters ('a' to 'z') and '#' (without quotes)\u000aExample\u000aInput:\u000a3\u000aaaaaa#bb#cc#dddd\u000aacb#aab#bab#accba\u000aabc#dda#bb#bb#aca\u000a\u000aOutput:\u000a16\u000a10\u000a11\u000aExplanation\u000aIn the first case: the whole string forms a W String.\u000aIn the second case: acb#aab#bab#accba, the longest W string is acb#aab#bab#accba\u000aIn the third case: abc#dda#bb#bb#aca, note that even though abc#dda#bb#bb#aca (boldened characters form the subsequence) is a W string of length 12, it violates Ryuk's condition that there should not be any #'s inbetween the 3 chosen # positions. One correct string of length 11 is abc#dda#bb#bb#aca\u000aAuthor: jay_adm\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/WSTRING\u000aTags: dynamic-prog easy jay_adm june13\u000aDate Added: 27-04-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Kira likes to play with strings very much. Moreover he likes the shape of 'W' very much. He takes a string and try to make a 'W' shape out of it such that each angular point is a '#' character and each sides has same characters. He calls them W strings. W strings For example, the W string can be formed from "aaaaa#bb#cc#dddd" such as: W string     a\u000a     a             d\u000a      a     #     d\u000a       a   b c   d\u000a        a b   c d\u000a         #     # He also call the strings which can generate a 'W' shape (satisfying the above conditions) W strings. W strings More formally, a string S is a W string if and only if it satisfies the following conditions (some terms and notations are explained in Note, please see it if you cannot understand): S W string Note The string S contains exactly 3 '#' characters. Let the indexes of all '#' be P1 < P2 < P3 (indexes are 0-origin).\u000aEach substring of S[0, P1\u22121], S[P1+1, P2\u22121], S[P2+1, P3\u22121], S[P3+1, |S|\u22121] contains exactly one kind of characters, where S[a, b] denotes the non-empty substring from a+1th character to b+1th character, and |S| denotes the length of string S (See Note for details). The string S contains exactly 3 '#' characters. Let the indexes of all '#' be P1 < P2 < P3 (indexes are 0-origin). S exactly 3 P1 < P2 < P3 1 2 3 0 Each substring of S[0, P1\u22121], S[P1+1, P2\u22121], S[P2+1, P3\u22121], S[P3+1, |S|\u22121] contains exactly one kind of characters, where S[a, b] denotes the non-empty substring from a+1th character to b+1th character, and |S| denotes the length of string S (See Note for details). S[0, P1\u22121], S[P1+1, P2\u22121], S[P2+1, P3\u22121], S[P3+1, |S|\u22121] 1 1 2 2 3 3 S[a, b] a+1 th b+1 th |S| S Note Now, his friend Ryuk gives him a string S and asks him to find the length of the longest W string which is a subsequence of S, with only one condition that there must not be any '#' symbols between the positions of the first and the second '#' symbol he chooses, nor between the second and the third (here the "positions" we are looking at are in S), i.e. suppose the index of the '#'s he chooses to make the W string are P1, P2, P3 (in increasing order) in the original string S, then there must be no index i such that S[i] = '#' where P1 < i < P2 or P2 < i < P3. S W string S S W string P1, P2, P3 1 2 3 S i S[i] P1 < i < P2 or P2 < i < P3 1 2 2 3 Help Kira and he won't write your name in the Death Note. Death Note Note: Note For a given string S, let S[k] denote the k+1th character of string S, and let the index of the character S[k] be k. Let |S| denote the length of the string S. And a substring of a string S is a string S[a, b] = S[a] S[a+1] ... S[b], where 0 \u2264 a \u2264 b < |S|. And a subsequence of a string S is a string S[i0] S[i1] ... S[in\u22121], where 0 \u2264 i0 < i1 < ... < in\u22121 < |S|. S S[k] k+1 th S S[k] k |S| S S S[a, b] = S[a] S[a+1] ... S[b] 0 \u2264 a \u2264 b < |S| S S[i0] S[i1] ... S[in\u22121] 0 1 n\u22121 0 \u2264 i0 < i1 < ... < in\u22121 < |S| 0 1 n\u22121 For example, let S be the string "kira", then S[0] = 'k', S[1] = 'i', S[3] = 'a', and |S| = 4. All of S[0, 2] = "kir", S[1, 1] = "i", and S[0, 3] = "kira" are substrings of S, but "ik", "kr", and "arik" are not. All of "k", "kr", "kira", "kia" are subsequences of S, but "ik", "kk" are not. S S[0] S[1] S[3] |S| = 4 S[0, 2] S[1, 1] S[0, 3] S S From the above definition of W string, for example, "a#b#c#d", "aaa#yyy#aaa#yy", and "o#oo#ooo#oooo" are W string, but "a#b#c#d#e", "#a#a#a", and "aa##a#a" are not. W string W string Input First line of input contains an integer T, denoting the number of test cases. Then T lines follow. Each line contains a string S. T T S Output Output an integer, denoting the length of the longest W string as explained before. If S has no W string as its subsequence, then output 0. W string S W string 0 Constraints  1 \u2264 T \u2264 100\u000a1 \u2264 |S| \u2264 10000 (104)\u000aS contains no characters other than lower English characters ('a' to 'z') and '#' (without quotes) 1 \u2264 T \u2264 100 1 \u2264 T \u2264 100 1 \u2264 |S| \u2264 10000 (104) 1 \u2264 |S| \u2264 10000 (104) 4 S contains no characters other than lower English characters ('a' to 'z') and '#' (without quotes) S  Example Input:\u000a3\u000aaaaaa#bb#cc#dddd\u000aacb#aab#bab#accba\u000aabc#dda#bb#bb#aca\u000a\u000aOutput:\u000a16\u000a10\u000a11 Input: Output: Explanation In the first case: the whole string forms a W String. W String In the second case: acb#aab#bab#accba, the longest W string is acb#aab#bab#accba W string b#aa #b b#a a In the third case: abc#dda#bb#bb#aca, note that even though abc#dda#bb#bb#aca (boldened characters form the subsequence) is a W string of length 12, it violates Ryuk's condition that there should not be any #'s inbetween the 3 chosen # positions. One correct string of length 11 is abc#dda#bb#bb#aca a #dd #bb bb#a a W string 12 3 11 a a#bb#bb#a a  Author: jay_adm\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/WSTRING\u000aTags: dynamic-prog easy jay_adm june13\u000aDate Added: 27-04-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: jay_adm\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/WSTRING\u000aTags: dynamic-prog easy jay_adm june13\u000aDate Added: 27-04-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: jay_adm Author: jay_adm jay_adm Tester: tuananh93 Tester: tuananh93 tuananh93 Editorial: http://discuss.codechef.com/problems/WSTRING Editorial: http://discuss.codechef.com/problems/WSTRING http://discuss.codechef.com/problems/WSTRING Tags: dynamic-prog easy jay_adm june13 Tags: dynamic-prog easy jay_adm june13 dynamic-prog easy jay_adm june13 Date Added: 27-04-2013 Date Added: 27-04-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V dynamic-prog easy jay_adm june13
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/WSTRING
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVKira likes to play with strings very much. Moreover he likes the shape of 'W' very much. He takes a string and try to make a 'W' shape out of it such that each angular point is a '#' character and each sides has same characters. He calls them W strings.
+p17
+aVFor example, the W string can be formed from "aaaaa#bb#cc#dddd" such as:
+p18
+aV    a
+p19
+aV     a             d
+p20
+aV      a     #     d
+p21
+aV       a   b c   d
+p22
+aV        a b   c d
+p23
+aV         #     #
+p24
+aVHe also call the strings which can generate a 'W' shape (satisfying the above conditions) W strings.
+p25
+aVMore formally, a string S is a W string if and only if it satisfies the following conditions (some terms and notations are explained in Note, please see it if you cannot understand):
+p26
+aVThe string S contains exactly 3 '#' characters. Let the indexes of all '#' be P1 < P2 < P3 (indexes are 0-origin).
+p27
+aVEach substring of S[0, P1\u22121], S[P1+1, P2\u22121], S[P2+1, P3\u22121], S[P3+1, |S|\u22121] contains exactly one kind of characters, where S[a, b] denotes the non-empty substring from a+1th character to b+1th character, and |S| denotes the length of string S (See Note for details).
+p28
+aVNow, his friend Ryuk gives him a string S and asks him to find the length of the longest W string which is a subsequence of S, with only one condition that there must not be any '#' symbols between the positions of the first and the second '#' symbol he chooses, nor between the second and the third (here the "positions" we are looking at are in S), i.e. suppose the index of the '#'s he chooses to make the W string are P1, P2, P3 (in increasing order) in the original string S, then there must be no index i such that S[i] = '#' where P1 < i < P2 or P2 < i < P3.
+p29
+aVHelp Kira and he won't write your name in the Death Note.
+p30
+aVNote:
+p31
+aVFor a given string S, let S[k] denote the k+1th character of string S, and let the index of the character S[k] be k. Let |S| denote the length of the string S. And a substring of a string S is a string S[a, b] = S[a] S[a+1] ... S[b], where 0 \u2264 a \u2264 b < |S|. And a subsequence of a string S is a string S[i0] S[i1] ... S[in\u22121], where 0 \u2264 i0 < i1 < ... < in\u22121 < |S|.
+p32
+aVFor example, let S be the string "kira", then S[0] = 'k', S[1] = 'i', S[3] = 'a', and |S| = 4. All of S[0, 2] = "kir", S[1, 1] = "i", and S[0, 3] = "kira" are substrings of S, but "ik", "kr", and "arik" are not. All of "k", "kr", "kira", "kia" are subsequences of S, but "ik", "kk" are not.
+p33
+aVFrom the above definition of W string, for example, "a#b#c#d", "aaa#yyy#aaa#yy", and "o#oo#ooo#oooo" are W string, but "a#b#c#d#e", "#a#a#a", and "aa##a#a" are not.
+p34
+asS'input'
+p35
+(lp36
+VInput
+p37
+aVFirst line of input contains an integer T, denoting the number of test cases. Then T lines follow. Each line contains a string S.
+p38
+aVOutput
+p39
+aVOutput an integer, denoting the length of the longest W string as explained before. If S has no W string as its subsequence, then output 0.
+p40
+asS'constraints'
+p41
+(lp42
+VConstraints
+p43
+aV1 \u2264 T \u2264 100
+p44
+aV1 \u2264 |S| \u2264 10000 (104)
+p45
+aVS contains no characters other than lower English characters ('a' to 'z') and '#' (without quotes)
+p46
+asS'id'
+p47
+c__builtin__
+id
+p48
+sS'name'
+p49
+VWSTRING
+p50
+sb.

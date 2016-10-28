@@ -1,0 +1,93 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aThe Head Chef is receiving a lot of orders for cooking the best of the problems lately. For this, he organized an hiring event to hire some talented Chefs. He gave the following problem to test the skills of the participating Chefs. Can you solve this problem and be eligible for getting hired by Head Chef.\u000aA non-negative number n is said to be magical if it satisfies the following property. Let S denote the multi-set of numbers corresponding to the non-empty subsequences of the digits of the number n in decimal representation. Please note that the numbers in the set S can have leading zeros. Let us take an element s of the multi-set S, prod(s) denotes the product of all the digits of number s in decimal representation.\u000aThe number n will be called magical if sum of prod(s) for all elements s in S, is even.\u000aFor example, consider a number 246, its all possible non-empty subsequence will be S = {2, 4, 6, 24, 46, 26, 246}. Products of digits of these subsequences will be {prod(2) = 2, prod(4) = 4, prod(6) = 6, prod(24) = 8, prod(46) = 24, prod(26) = 12, prod(246) = 48, i.e. {2, 4, 6, 8, 24, 12, 48}. Sum of all of these is 104, which is even. Hence 246 is a magical number.\u000aPlease note that multi-set S can contain repeated elements, e.g. if number is 55, then S = {5, 5, 55}. Products of digits of these subsequences will be {prod(5) = 5, prod(5) = 5, prod(55) = 25}, i.e. {5, 5, 25}. Sum of all of these is 35 which is odd. Hence 55 is not a\u000amagical number.\u000aConsider a number 204, then S = {2, 0, 4, 20, 04, 24, 204}. Products of digits of these subsequences will be {2, 0, 4, 0, 0, 8, 0}. Sum of all these elements will be 14 which is even. So 204 is a magical number.\u000aThe task was to simply find the Kth magical number.\u000aInput\u000aFirst line of the input contains an integer T denoting the number of test cases.\u000aEach of the next T lines contains a single integer K.\u000aOutput\u000aFor each test case, print a single integer corresponding to the Kth magical number.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 K \u2264 1012.\u000aSubtasks\u000aSubtask #1 : (20 points)\u000a1 \u2264 T \u2264 100\u000a1 \u2264 K \u2264 104.\u000aSubtask 2 : (80 points)\u000aOriginal Constraints\u000aExample\u000aInput:\u000a2\u000a2\u000a5\u000a\u000aOutput:\u000a2\u000a8\u000aExplanation\u000aExample case 1.\u000a2 is the 2nd magical number, since it satisfies the property of the magical number. The first magical number will be of course 0.\u000aAuthor: prateekg603\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/CHEARMY\u000aTags: easy june16 prateekg603 simple-math\u000aDate Added: 16-07-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aThe Head Chef is receiving a lot of orders for cooking the best of the problems lately. For this, he organized an hiring event to hire some talented Chefs. He gave the following problem to test the skills of the participating Chefs. Can you solve this problem and be eligible for getting hired by Head Chef.\u000aA non-negative number n is said to be magical if it satisfies the following property. Let S denote the multi-set of numbers corresponding to the non-empty subsequences of the digits of the number n in decimal representation. Please note that the numbers in the set S can have leading zeros. Let us take an element s of the multi-set S, prod(s) denotes the product of all the digits of number s in decimal representation.\u000aThe number n will be called magical if sum of prod(s) for all elements s in S, is even.\u000aFor example, consider a number 246, its all possible non-empty subsequence will be S = {2, 4, 6, 24, 46, 26, 246}. Products of digits of these subsequences will be {prod(2) = 2, prod(4) = 4, prod(6) = 6, prod(24) = 8, prod(46) = 24, prod(26) = 12, prod(246) = 48, i.e. {2, 4, 6, 8, 24, 12, 48}. Sum of all of these is 104, which is even. Hence 246 is a magical number.\u000aPlease note that multi-set S can contain repeated elements, e.g. if number is 55, then S = {5, 5, 55}. Products of digits of these subsequences will be {prod(5) = 5, prod(5) = 5, prod(55) = 25}, i.e. {5, 5, 25}. Sum of all of these is 35 which is odd. Hence 55 is not a\u000amagical number.\u000aConsider a number 204, then S = {2, 0, 4, 20, 04, 24, 204}. Products of digits of these subsequences will be {2, 0, 4, 0, 0, 8, 0}. Sum of all these elements will be 14 which is even. So 204 is a magical number.\u000aThe task was to simply find the Kth magical number.\u000aInput\u000aFirst line of the input contains an integer T denoting the number of test cases.\u000aEach of the next T lines contains a single integer K.\u000aOutput\u000aFor each test case, print a single integer corresponding to the Kth magical number.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 K \u2264 1012.\u000aSubtasks\u000aSubtask #1 : (20 points)\u000a1 \u2264 T \u2264 100\u000a1 \u2264 K \u2264 104.\u000aSubtask 2 : (80 points)\u000aOriginal Constraints\u000aExample\u000aInput:\u000a2\u000a2\u000a5\u000a\u000aOutput:\u000a2\u000a8\u000aExplanation\u000aExample case 1.\u000a2 is the 2nd magical number, since it satisfies the property of the magical number. The first magical number will be of course 0.\u000aAuthor: prateekg603\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/CHEARMY\u000aTags: easy june16 prateekg603 simple-math\u000aDate Added: 16-07-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese The Head Chef is receiving a lot of orders for cooking the best of the problems lately. For this, he organized an hiring event to hire some talented Chefs. He gave the following problem to test the skills of the participating Chefs. Can you solve this problem and be eligible for getting hired by Head Chef. A non-negative number n is said to be magical if it satisfies the following property. Let S denote the multi-set of numbers corresponding to the non-empty subsequences of the digits of the number n in decimal representation. Please note that the numbers in the set S can have leading zeros. Let us take an element s of the multi-set S, prod(s) denotes the product of all the digits of number s in decimal representation.\u000aThe number n will be called magical if sum of prod(s) for all elements s in S, is even. n magical S n S leading zeros s S prod(s) s  n prod(s) s S For example, consider a number 246, its all possible non-empty subsequence will be S = {2, 4, 6, 24, 46, 26, 246}. Products of digits of these subsequences will be {prod(2) = 2, prod(4) = 4, prod(6) = 6, prod(24) = 8, prod(46) = 24, prod(26) = 12, prod(246) = 48, i.e. {2, 4, 6, 8, 24, 12, 48}. Sum of all of these is 104, which is even. Hence 246 is a magical number. S = {2, 4, 6, 24, 46, 26, 246} {prod(2) = 2, prod(4) = 4, prod(6) = 6, prod(24) = 8, prod(46) = 24, prod(26) = 12, prod(246) = 48 {2, 4, 6, 8, 24, 12, 48} magical Please note that multi-set S can contain repeated elements, e.g. if number is 55, then S = {5, 5, 55}. Products of digits of these subsequences will be {prod(5) = 5, prod(5) = 5, prod(55) = 25}, i.e. {5, 5, 25}. Sum of all of these is 35 which is odd. Hence 55 is not a\u000amagical number. S S = {5, 5, 55} {prod(5) = 5, prod(5) = 5, prod(55) = 25} {5, 5, 25}  magical Consider a number 204, then S = {2, 0, 4, 20, 04, 24, 204}. Products of digits of these subsequences will be {2, 0, 4, 0, 0, 8, 0}. Sum of all these elements will be 14 which is even. So 204 is a magical number. S = {2, 0, 4, 20, 04, 24, 204} {2, 0, 4, 0, 0, 8, 0} magical The task was to simply find the Kth magical number. Kth th magical Input First line of the input contains an integer T denoting the number of test cases.\u000aEach of the next T lines contains a single integer K. First line of the input contains an integer T denoting the number of test cases. T Each of the next T lines contains a single integer K. T K Output For each test case, print a single integer corresponding to the Kth magical number. Kth th Constraints 1 \u2264 T \u2264 105\u000a1 \u2264 K \u2264 1012. 1 \u2264 T \u2264 105 1 T 105 5 1 \u2264 K \u2264 1012. 1 K 1012 12 Subtasks Subtask #1 : (20 points) Subtask #1 : (20 points) 1 \u2264 T \u2264 100\u000a1 \u2264 K \u2264 104. 1 \u2264 T \u2264 100 1 T 100 1 \u2264 K \u2264 104. 1 K 104 4 Subtask 2 : (80 points) Subtask 2 : (80 points) Original Constraints Example Input:\u000a2\u000a2\u000a5\u000a\u000aOutput:\u000a2\u000a8 Input: Output: Explanation Example case 1.\u000a2 is the 2nd magical number, since it satisfies the property of the magical number. The first magical number will be of course 0. Example case 1.  nd  Author: prateekg603\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/CHEARMY\u000aTags: easy june16 prateekg603 simple-math\u000aDate Added: 16-07-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: prateekg603\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/CHEARMY\u000aTags: easy june16 prateekg603 simple-math\u000aDate Added: 16-07-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: prateekg603 Author: prateekg603 prateekg603 Tester: iscsi Tester: iscsi iscsi Editorial: http://discuss.codechef.com/problems/CHEARMY Editorial: http://discuss.codechef.com/problems/CHEARMY http://discuss.codechef.com/problems/CHEARMY Tags: easy june16 prateekg603 simple-math Tags: easy june16 prateekg603 simple-math easy june16 prateekg603 simple-math Date Added: 16-07-2015 Date Added: 16-07-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy june16 prateekg603 simple-math
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEARMY
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVThe Head Chef is receiving a lot of orders for cooking the best of the problems lately. For this, he organized an hiring event to hire some talented Chefs. He gave the following problem to test the skills of the participating Chefs. Can you solve this problem and be eligible for getting hired by Head Chef.
+p18
+aVA non-negative number n is said to be magical if it satisfies the following property. Let S denote the multi-set of numbers corresponding to the non-empty subsequences of the digits of the number n in decimal representation. Please note that the numbers in the set S can have leading zeros. Let us take an element s of the multi-set S, prod(s) denotes the product of all the digits of number s in decimal representation.
+p19
+aVThe number n will be called magical if sum of prod(s) for all elements s in S, is even.
+p20
+aVFor example, consider a number 246, its all possible non-empty subsequence will be S = {2, 4, 6, 24, 46, 26, 246}. Products of digits of these subsequences will be {prod(2) = 2, prod(4) = 4, prod(6) = 6, prod(24) = 8, prod(46) = 24, prod(26) = 12, prod(246) = 48, i.e. {2, 4, 6, 8, 24, 12, 48}. Sum of all of these is 104, which is even. Hence 246 is a magical number.
+p21
+aVPlease note that multi-set S can contain repeated elements, e.g. if number is 55, then S = {5, 5, 55}. Products of digits of these subsequences will be {prod(5) = 5, prod(5) = 5, prod(55) = 25}, i.e. {5, 5, 25}. Sum of all of these is 35 which is odd. Hence 55 is not a
+p22
+aVmagical number.
+p23
+aVConsider a number 204, then S = {2, 0, 4, 20, 04, 24, 204}. Products of digits of these subsequences will be {2, 0, 4, 0, 0, 8, 0}. Sum of all these elements will be 14 which is even. So 204 is a magical number.
+p24
+aVThe task was to simply find the Kth magical number.
+p25
+asS'input'
+p26
+(lp27
+VInput
+p28
+aVFirst line of the input contains an integer T denoting the number of test cases.
+p29
+aVEach of the next T lines contains a single integer K.
+p30
+aVOutput
+p31
+aVFor each test case, print a single integer corresponding to the Kth magical number.
+p32
+asS'constraints'
+p33
+(lp34
+VConstraints
+p35
+aV1 \u2264 T \u2264 105
+p36
+aV1 \u2264 K \u2264 1012.
+p37
+aVSubtasks
+p38
+aVSubtask #1 : (20 points)
+p39
+aV1 \u2264 T \u2264 100
+p40
+aV1 \u2264 K \u2264 104.
+p41
+aVSubtask 2 : (80 points)
+p42
+aVOriginal Constraints
+p43
+asS'id'
+p44
+c__builtin__
+id
+p45
+sS'name'
+p46
+VCHEARMY
+p47
+sb.

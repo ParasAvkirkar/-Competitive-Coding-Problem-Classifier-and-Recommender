@@ -1,0 +1,85 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian\u000aA squarer is a simple and convenient device. You give it some positive integer X and it calculates its square.\u000aLeha is implementing a module of this device which is responsible for squaring the numbers consisting of multiple repetitions of one digit. But it turned out that it's not as simple as he thought.\u000aPlease help him now!\u000aInput\u000aThe first line contains one integer T denoting the number of testcases. The descriptions of T test cases follow.\u000aEach of the following T lines contain 2 space-separated integers - N and D, respectively. It means that the number X in the corresponding testcase consists of the digit D repeated N times (in decimal representation).\u000aOutput\u000aAs the answer can be very large, we ask you to output its hash which is computed in the following way:\u000aLet's consider the integer answer Y as a 0-indexed array starting from its leftmost digit. The hash function is calculated as:\u000ap0*Y[0] + p1*Y[1] + ... + pM-1*Y[M-1] modulo 109 + 7\u000awhere M is the length of the array representation of Y and p equals 23.\u000aConstraints\u000a1 \u2264 T \u2264 20\u000a1 \u2264 D \u2264 9\u000aSubtask 1 (16 points): 1 \u2264 N \u2264 9\u000aSubtask 2 (25 points): 1 \u2264 N \u2264 100\u000aSubtask 3 (27 points): 1 \u2264 N \u2264 2 × 104\u000aSubtask 4 (32 points): 1 \u2264 N \u2264 106\u000aExample\u000aInput:\u000a3\u000a1 4\u000a3 6\u000a3 5\u000a\u000aOutput:\u000a139\u000a40079781\u000a32745632\u000aExplanation\u000aIn the first test case, X = 4 and Y = 16. Its hash equals 1*1 + 23*6 = 139.\u000aAuthor: pavel1996\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/FSTSQ\u000aTags: ad-hoc easy implementation ltime29 pavel1996\u000aDate Added: 27-09-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian\u000aA squarer is a simple and convenient device. You give it some positive integer X and it calculates its square.\u000aLeha is implementing a module of this device which is responsible for squaring the numbers consisting of multiple repetitions of one digit. But it turned out that it's not as simple as he thought.\u000aPlease help him now!\u000aInput\u000aThe first line contains one integer T denoting the number of testcases. The descriptions of T test cases follow.\u000aEach of the following T lines contain 2 space-separated integers - N and D, respectively. It means that the number X in the corresponding testcase consists of the digit D repeated N times (in decimal representation).\u000aOutput\u000aAs the answer can be very large, we ask you to output its hash which is computed in the following way:\u000aLet's consider the integer answer Y as a 0-indexed array starting from its leftmost digit. The hash function is calculated as:\u000ap0*Y[0] + p1*Y[1] + ... + pM-1*Y[M-1] modulo 109 + 7\u000awhere M is the length of the array representation of Y and p equals 23.\u000aConstraints\u000a1 \u2264 T \u2264 20\u000a1 \u2264 D \u2264 9\u000aSubtask 1 (16 points): 1 \u2264 N \u2264 9\u000aSubtask 2 (25 points): 1 \u2264 N \u2264 100\u000aSubtask 3 (27 points): 1 \u2264 N \u2264 2 × 104\u000aSubtask 4 (32 points): 1 \u2264 N \u2264 106\u000aExample\u000aInput:\u000a3\u000a1 4\u000a3 6\u000a3 5\u000a\u000aOutput:\u000a139\u000a40079781\u000a32745632\u000aExplanation\u000aIn the first test case, X = 4 and Y = 16. Its hash equals 1*1 + 23*6 = 139.\u000aAuthor: pavel1996\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/FSTSQ\u000aTags: ad-hoc easy implementation ltime29 pavel1996\u000aDate Added: 27-09-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian Mandarin Chinese Russian A squarer is a simple and convenient device. You give it some positive integer X and it calculates its square. X Leha is implementing a module of this device which is responsible for squaring the numbers consisting of multiple repetitions of one digit. But it turned out that it's not as simple as he thought. Please help him now! Input The first line contains one integer T denoting the number of testcases. The descriptions of T test cases follow. T T Each of the following T lines contain 2 space-separated integers - N and D, respectively. It means that the number X in the corresponding testcase consists of the digit D repeated N times (in decimal representation). T 2 N D X D N Output As the answer can be very large, we ask you to output its hash which is computed in the following way: Let's consider the integer answer Y as a 0-indexed array starting from its leftmost digit. The hash function is calculated as:\u000ap0*Y[0] + p1*Y[1] + ... + pM-1*Y[M-1] modulo 109 + 7\u000awhere M is the length of the array representation of Y and p equals 23. Y  p0*Y[0] + p1*Y[1] + ... + pM-1*Y[M-1] modulo 109 + 7 0 1 M-1 9  M Y p 23 Constraints 1 \u2264 T \u2264 20\u000a1 \u2264 D \u2264 9\u000aSubtask 1 (16 points): 1 \u2264 N \u2264 9\u000aSubtask 2 (25 points): 1 \u2264 N \u2264 100\u000aSubtask 3 (27 points): 1 \u2264 N \u2264 2 × 104\u000aSubtask 4 (32 points): 1 \u2264 N \u2264 106 1 \u2264 T \u2264 20 1 T 20 1 \u2264 D \u2264 9 1 D 9 Subtask 1 (16 points): 1 \u2264 N \u2264 9 1 N 9 Subtask 2 (25 points): 1 \u2264 N \u2264 100 1 N 100 Subtask 3 (27 points): 1 \u2264 N \u2264 2 × 104 1 N 2 × 104 4 Subtask 4 (32 points): 1 \u2264 N \u2264 106 1 N 106 6 Example Input:\u000a3\u000a1 4\u000a3 6\u000a3 5\u000a\u000aOutput:\u000a139\u000a40079781\u000a32745632 Input: 3\u000a1 4\u000a3 6\u000a3 5 Output: 139\u000a40079781\u000a32745632 Explanation In the first test case, X = 4 and Y = 16. Its hash equals 1*1 + 23*6 = 139. X = 4 Y = 16 1*1 + 23*6 = 139  Author: pavel1996\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/FSTSQ\u000aTags: ad-hoc easy implementation ltime29 pavel1996\u000aDate Added: 27-09-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: pavel1996\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/FSTSQ\u000aTags: ad-hoc easy implementation ltime29 pavel1996\u000aDate Added: 27-09-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: pavel1996 Author: pavel1996 pavel1996 Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/FSTSQ Editorial: http://discuss.codechef.com/problems/FSTSQ http://discuss.codechef.com/problems/FSTSQ Tags: ad-hoc easy implementation ltime29 pavel1996 Tags: ad-hoc easy implementation ltime29 pavel1996 ad-hoc easy implementation ltime29 pavel1996 Date Added: 27-09-2015 Date Added: 27-09-2015 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V ad-hoc easy implementation ltime29 pavel1996
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/FSTSQ
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian
+p17
+aVA squarer is a simple and convenient device. You give it some positive integer X and it calculates its square.
+p18
+aVLeha is implementing a module of this device which is responsible for squaring the numbers consisting of multiple repetitions of one digit. But it turned out that it's not as simple as he thought.
+p19
+aVPlease help him now!
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line contains one integer T denoting the number of testcases. The descriptions of T test cases follow.
+p24
+aVEach of the following T lines contain 2 space-separated integers - N and D, respectively. It means that the number X in the corresponding testcase consists of the digit D repeated N times (in decimal representation).
+p25
+aVOutput
+p26
+aVAs the answer can be very large, we ask you to output its hash which is computed in the following way:
+p27
+aVLet's consider the integer answer Y as a 0-indexed array starting from its leftmost digit. The hash function is calculated as:
+p28
+aVp0*Y[0] + p1*Y[1] + ... + pM-1*Y[M-1] modulo 109 + 7
+p29
+aVwhere M is the length of the array representation of Y and p equals 23.
+p30
+asS'constraints'
+p31
+(lp32
+VConstraints
+p33
+aV1 \u2264 T \u2264 20
+p34
+aV1 \u2264 D \u2264 9
+p35
+aVSubtask 1 (16 points): 1 \u2264 N \u2264 9
+p36
+aVSubtask 2 (25 points): 1 \u2264 N \u2264 100
+p37
+aVSubtask 3 (27 points): 1 \u2264 N \u2264 2 × 104
+p38
+aVSubtask 4 (32 points): 1 \u2264 N \u2264 106
+p39
+asS'id'
+p40
+c__builtin__
+id
+p41
+sS'name'
+p42
+VFSTSQ
+p43
+sb.

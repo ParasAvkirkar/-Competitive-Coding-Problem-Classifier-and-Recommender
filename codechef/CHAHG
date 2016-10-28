@@ -1,0 +1,87 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is an advocate for Go Green Initiative. Today he had n trees planted in a row outside his his restaurant. Today, the height of i-th tree is hi feet. The trees grow at a rate of mi feet per day.\u000aChef knows that trees will look beautiful if they form a zig-zag sequence. The trees will be said to be in Zig-zag sequence if the heights of tree first increases or decreases, then alternates between decreasing/increasing respectively. Formally, the trees will be said to in Zig-zag sequence if one of the following two conditions holds.\u000ah1 < h2 > h3 < h4 and so on..\u000ah1 > h2 < h3 > h4 and so on..\u000aChef wants to know intervals of time when the heights of the trees will form a zig-zag sequence.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer n, denoting the number of trees.\u000aThe ith of following N lines contains two space separated integers hi and mi, denoting the initial height and the growth speed for ith tree.  \u000aOutput\u000aFor each test case, output an integer Q - the amount of the periods of consecutive moments of time, when the trees for a zig-zag sequence.\u000aOn the following Q lines, output the intervals of time when the trees' heights form a zig-zag sequence. For each intervals, output its' smallest and the largest instants of time. If the range is infinite, output Inf as the right bound.\u000aThe test cases are designed in such a way that the total output won't exceed 2 MB.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 10\u000aSubtask 1 (23 points): 0 \u2264 hi, mi \u2264 10\u000aSubtask 2 (77 points): 0 \u2264 hi, mi \u2264 109\u000a1 \u2264 sum of n over a test cases in a single test file \u2264 5 × 105\u000aExample\u000aInput:\u000a3\u000a3\u000a0 1\u000a2 2\u000a0 3\u000a2\u000a2 1\u000a1 2\u000a3\u000a1 1\u000a2 2\u000a3 3\u000a\u000aOutput:\u000a1\u000a0 1\u000a2\u000a0 0\u000a2 Inf\u000a0\u000aExplanation\u000aExample case 1. In the first case 0 2 0 is already a zig-zag sequence, but on the 2nd second it will become 2 6 6 and will never turn back into zig-zag\u000aAuthor: witalij_hq\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHAHG\u000aTags: aug16 easy witalij_hq\u000aDate Added: 23-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is an advocate for Go Green Initiative. Today he had n trees planted in a row outside his his restaurant. Today, the height of i-th tree is hi feet. The trees grow at a rate of mi feet per day.\u000aChef knows that trees will look beautiful if they form a zig-zag sequence. The trees will be said to be in Zig-zag sequence if the heights of tree first increases or decreases, then alternates between decreasing/increasing respectively. Formally, the trees will be said to in Zig-zag sequence if one of the following two conditions holds.\u000ah1 < h2 > h3 < h4 and so on..\u000ah1 > h2 < h3 > h4 and so on..\u000aChef wants to know intervals of time when the heights of the trees will form a zig-zag sequence.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer n, denoting the number of trees.\u000aThe ith of following N lines contains two space separated integers hi and mi, denoting the initial height and the growth speed for ith tree.  \u000aOutput\u000aFor each test case, output an integer Q - the amount of the periods of consecutive moments of time, when the trees for a zig-zag sequence.\u000aOn the following Q lines, output the intervals of time when the trees' heights form a zig-zag sequence. For each intervals, output its' smallest and the largest instants of time. If the range is infinite, output Inf as the right bound.\u000aThe test cases are designed in such a way that the total output won't exceed 2 MB.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 10\u000aSubtask 1 (23 points): 0 \u2264 hi, mi \u2264 10\u000aSubtask 2 (77 points): 0 \u2264 hi, mi \u2264 109\u000a1 \u2264 sum of n over a test cases in a single test file \u2264 5 × 105\u000aExample\u000aInput:\u000a3\u000a3\u000a0 1\u000a2 2\u000a0 3\u000a2\u000a2 1\u000a1 2\u000a3\u000a1 1\u000a2 2\u000a3 3\u000a\u000aOutput:\u000a1\u000a0 1\u000a2\u000a0 0\u000a2 Inf\u000a0\u000aExplanation\u000aExample case 1. In the first case 0 2 0 is already a zig-zag sequence, but on the 2nd second it will become 2 6 6 and will never turn back into zig-zag\u000aAuthor: witalij_hq\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHAHG\u000aTags: aug16 easy witalij_hq\u000aDate Added: 23-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef is an advocate for Go Green Initiative. Today he had n trees planted in a row outside his his restaurant. Today, the height of i-th tree is hi feet. The trees grow at a rate of mi feet per day. n i hi i mi i Chef knows that trees will look beautiful if they form a zig-zag sequence. The trees will be said to be in Zig-zag sequence if the heights of tree first increases or decreases, then alternates between decreasing/increasing respectively. Formally, the trees will be said to in Zig-zag sequence if one of the following two conditions holds. zig-zag Zig-zag Zig-zag h1 < h2 > h3 < h4 and so on..\u000ah1 > h2 < h3 > h4 and so on.. h1 < h2 > h3 < h4 and so on.. h1 < h2 > h3 < h4 1 2 3 4 h1 > h2 < h3 > h4 and so on.. h1 > h2 < h3 > h4 1 2 3 4  Chef wants to know intervals of time when the heights of the trees will form a zig-zag sequence. zig-zag Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a single integer n, denoting the number of trees. n The ith of following N lines contains two space separated integers hi and mi, denoting the initial height and the growth speed for ith tree.   ith th N hi i mi i i th Output For each test case, output an integer Q - the amount of the periods of consecutive moments of time, when the trees for a zig-zag sequence. Q On the following Q lines, output the intervals of time when the trees' heights form a zig-zag sequence. For each intervals, output its' smallest and the largest instants of time. If the range is infinite, output Inf as the right bound. Q Inf The test cases are designed in such a way that the total output won't exceed 2 MB. Constraints  1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 10\u000aSubtask 1 (23 points): 0 \u2264 hi, mi \u2264 10\u000aSubtask 2 (77 points): 0 \u2264 hi, mi \u2264 109\u000a1 \u2264 sum of n over a test cases in a single test file \u2264 5 × 105 1 \u2264 T \u2264 105 1 T 105 5 1 \u2264 n \u2264 10 1 n 10 Subtask 1 (23 points): 0 \u2264 hi, mi \u2264 10 0 hi, mi hi i mi i 10 Subtask 2 (77 points): 0 \u2264 hi, mi \u2264 109 0 hi, mi hi i mi i 109 9 1 \u2264 sum of n over a test cases in a single test file \u2264 5 × 105 1 n 5 × 105 5  Example Input:\u000a3\u000a3\u000a0 1\u000a2 2\u000a0 3\u000a2\u000a2 1\u000a1 2\u000a3\u000a1 1\u000a2 2\u000a3 3\u000a\u000aOutput:\u000a1\u000a0 1\u000a2\u000a0 0\u000a2 Inf\u000a0 Input: 3\u000a3\u000a0 1\u000a2 2\u000a0 3\u000a2\u000a2 1\u000a1 2\u000a3\u000a1 1\u000a2 2\u000a3 3 Output: 1\u000a0 1\u000a2\u000a0 0\u000a2 Inf\u000a0 Explanation Example case 1. In the first case 0 2 0 is already a zig-zag sequence, but on the 2nd second it will become 2 6 6 and will never turn back into zig-zag Example case 1. 0 2 0 zig-zag 2 6 6 zig-zag  Author: witalij_hq\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHAHG\u000aTags: aug16 easy witalij_hq\u000aDate Added: 23-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHAHG\u000aTags: aug16 easy witalij_hq\u000aDate Added: 23-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq Author: witalij_hq witalij_hq Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/CHAHG Editorial: http://discuss.codechef.com/problems/CHAHG http://discuss.codechef.com/problems/CHAHG Tags: aug16 easy witalij_hq Tags: aug16 easy witalij_hq aug16 easy witalij_hq Date Added: 23-02-2015 Date Added: 23-02-2015 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V aug16 easy witalij_hq
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHAHG
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef is an advocate for Go Green Initiative. Today he had n trees planted in a row outside his his restaurant. Today, the height of i-th tree is hi feet. The trees grow at a rate of mi feet per day.
+p18
+aVChef knows that trees will look beautiful if they form a zig-zag sequence. The trees will be said to be in Zig-zag sequence if the heights of tree first increases or decreases, then alternates between decreasing/increasing respectively. Formally, the trees will be said to in Zig-zag sequence if one of the following two conditions holds.
+p19
+aVh1 < h2 > h3 < h4 and so on..
+p20
+aVh1 > h2 < h3 > h4 and so on..
+p21
+aVChef wants to know intervals of time when the heights of the trees will form a zig-zag sequence.
+p22
+asS'input'
+p23
+(lp24
+VInput
+p25
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p26
+aVThe first line of each test case contains a single integer n, denoting the number of trees.
+p27
+aVThe ith of following N lines contains two space separated integers hi and mi, denoting the initial height and the growth speed for ith tree.  
+p28
+aVOutput
+p29
+aVFor each test case, output an integer Q - the amount of the periods of consecutive moments of time, when the trees for a zig-zag sequence.
+p30
+aVOn the following Q lines, output the intervals of time when the trees' heights form a zig-zag sequence. For each intervals, output its' smallest and the largest instants of time. If the range is infinite, output Inf as the right bound.
+p31
+aVThe test cases are designed in such a way that the total output won't exceed 2 MB.
+p32
+asS'constraints'
+p33
+(lp34
+VConstraints
+p35
+aV1 \u2264 T \u2264 105
+p36
+aV1 \u2264 n \u2264 10
+p37
+aVSubtask 1 (23 points): 0 \u2264 hi, mi \u2264 10
+p38
+aVSubtask 2 (77 points): 0 \u2264 hi, mi \u2264 109
+p39
+aV1 \u2264 sum of n over a test cases in a single test file \u2264 5 × 105
+p40
+asS'id'
+p41
+c__builtin__
+id
+p42
+sS'name'
+p43
+VCHAHG
+p44
+sb.

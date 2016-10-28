@@ -1,0 +1,81 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aWhile studying representation of numbers in various bases, Chef discovered an interesting properties of some positive numbers, which Chef believed are somewhat easy to memorize. Chef called such positive numbers easy numbers.\u000aThese numbers had an interesting property: Let the base Chef is currently studying be b. Represent the number in base b (without leading zeros). For each prefix of length k (from 1 to number of digits in number in the base), the number formed by considering the digits of the prefix in base b is divisible by k.\u000aFor example, let base Chef is studying be 2.\u000a1 is an easy number as its prefix of length 1 (i.e. 1) is divisible by 1.\u000a2 is also an easy number, as its prefix of length 1 (i.e. 1) is divisible by 1 and the prefix of length 2 (i.e. 2, represented as 10 in base 2) is also divisible by 2.\u000a3 is not an easy number, as its prefix of length 2 (i.e. 3, represented as 11 in base 2) is not divisible by 2.\u000aNow Chef finds these numbers easy and thinks that following question related to easy numbers will be easy for you too. He asks you to find the number of easy numbers represented in base b and consisting of exactly d digits. As the answer could be quite large, output it modulo 109 + 7.\u000aInput\u000aFirst line of the input contains a single integer T denoting the number of test cases.\u000aFor each test case, there will be a single line containing two space separated integers b, d, denoting the base and number of digits respectively.\u000aOutput\u000aFor each test case, output a single integer denoting the number of easy numbers in base b consisting of d digits, modulo 109 + 7.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a2 \u2264 b \u2264 16\u000a1 \u2264 d \u2264 109\u000aExample\u000aInput:\u000a2\u000a2 2\u000a10 3\u000a\u000aOutput:\u000a1\u000a150\u000aExplanation\u000aExample case 1. There are 2 numbers in base 2 consisting of 2 digits. Those are 2 (represented as 10 in base 2) and 3 (represented as 11 in base 2). 2 is an easy number, whereas 3 is not (see the explanation about it in the problem statement). Hence the number of easy numbers consisting of 2 digits in base 2 are 1.\u000aAuthor: wwwwodddd\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/EZNO\u000aTags: backtracking cook70 easy enumeration pdn precomputation wwwwodddd\u000aDate Added: 14-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aWhile studying representation of numbers in various bases, Chef discovered an interesting properties of some positive numbers, which Chef believed are somewhat easy to memorize. Chef called such positive numbers easy numbers.\u000aThese numbers had an interesting property: Let the base Chef is currently studying be b. Represent the number in base b (without leading zeros). For each prefix of length k (from 1 to number of digits in number in the base), the number formed by considering the digits of the prefix in base b is divisible by k.\u000aFor example, let base Chef is studying be 2.\u000a1 is an easy number as its prefix of length 1 (i.e. 1) is divisible by 1.\u000a2 is also an easy number, as its prefix of length 1 (i.e. 1) is divisible by 1 and the prefix of length 2 (i.e. 2, represented as 10 in base 2) is also divisible by 2.\u000a3 is not an easy number, as its prefix of length 2 (i.e. 3, represented as 11 in base 2) is not divisible by 2.\u000aNow Chef finds these numbers easy and thinks that following question related to easy numbers will be easy for you too. He asks you to find the number of easy numbers represented in base b and consisting of exactly d digits. As the answer could be quite large, output it modulo 109 + 7.\u000aInput\u000aFirst line of the input contains a single integer T denoting the number of test cases.\u000aFor each test case, there will be a single line containing two space separated integers b, d, denoting the base and number of digits respectively.\u000aOutput\u000aFor each test case, output a single integer denoting the number of easy numbers in base b consisting of d digits, modulo 109 + 7.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a2 \u2264 b \u2264 16\u000a1 \u2264 d \u2264 109\u000aExample\u000aInput:\u000a2\u000a2 2\u000a10 3\u000a\u000aOutput:\u000a1\u000a150\u000aExplanation\u000aExample case 1. There are 2 numbers in base 2 consisting of 2 digits. Those are 2 (represented as 10 in base 2) and 3 (represented as 11 in base 2). 2 is an easy number, whereas 3 is not (see the explanation about it in the problem statement). Hence the number of easy numbers consisting of 2 digits in base 2 are 1.\u000aAuthor: wwwwodddd\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/EZNO\u000aTags: backtracking cook70 easy enumeration pdn precomputation wwwwodddd\u000aDate Added: 14-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese While studying representation of numbers in various bases, Chef discovered an interesting properties of some positive numbers, which Chef believed are somewhat easy to memorize. Chef called such positive numbers easy numbers. positive positive easy These numbers had an interesting property: Let the base Chef is currently studying be b. Represent the number in base b (without leading zeros). For each prefix of length k (from 1 to number of digits in number in the base), the number formed by considering the digits of the prefix in base b is divisible by k. b b k b k For example, let base Chef is studying be 2. 2 1 is an easy number as its prefix of length 1 (i.e. 1) is divisible by 1.\u000a2 is also an easy number, as its prefix of length 1 (i.e. 1) is divisible by 1 and the prefix of length 2 (i.e. 2, represented as 10 in base 2) is also divisible by 2.\u000a3 is not an easy number, as its prefix of length 2 (i.e. 3, represented as 11 in base 2) is not divisible by 2. 1 is an easy number as its prefix of length 1 (i.e. 1) is divisible by 1. easy 2 is also an easy number, as its prefix of length 1 (i.e. 1) is divisible by 1 and the prefix of length 2 (i.e. 2, represented as 10 in base 2) is also divisible by 2. easy 3 is not an easy number, as its prefix of length 2 (i.e. 3, represented as 11 in base 2) is not divisible by 2. easy Now Chef finds these numbers easy and thinks that following question related to easy numbers will be easy for you too. He asks you to find the number of easy numbers represented in base b and consisting of exactly d digits. As the answer could be quite large, output it modulo 109 + 7. easy easy b d 109 + 7 9 Input First line of the input contains a single integer T denoting the number of test cases. T For each test case, there will be a single line containing two space separated integers b, d, denoting the base and number of digits respectively. b, d Output For each test case, output a single integer denoting the number of easy numbers in base b consisting of d digits, modulo 109 + 7. easy b d 109 + 7 9 Constraints 1 \u2264 T \u2264 100\u000a2 \u2264 b \u2264 16\u000a1 \u2264 d \u2264 109 1 \u2264 T \u2264 100 1 T 100 2 \u2264 b \u2264 16 2 b 16 1 \u2264 d \u2264 109 1 d 109 9 Example Input:\u000a2\u000a2 2\u000a10 3\u000a\u000aOutput:\u000a1\u000a150 Input: Output: Explanation Example case 1. There are 2 numbers in base 2 consisting of 2 digits. Those are 2 (represented as 10 in base 2) and 3 (represented as 11 in base 2). 2 is an easy number, whereas 3 is not (see the explanation about it in the problem statement). Hence the number of easy numbers consisting of 2 digits in base 2 are 1. Example case 1.  Author: wwwwodddd\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/EZNO\u000aTags: backtracking cook70 easy enumeration pdn precomputation wwwwodddd\u000aDate Added: 14-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: wwwwodddd\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/EZNO\u000aTags: backtracking cook70 easy enumeration pdn precomputation wwwwodddd\u000aDate Added: 14-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: wwwwodddd Author: wwwwodddd wwwwodddd Tester: kevinsogo Tester: kevinsogo kevinsogo Editorial: http://discuss.codechef.com/problems/EZNO Editorial: http://discuss.codechef.com/problems/EZNO http://discuss.codechef.com/problems/EZNO Tags: backtracking cook70 easy enumeration pdn precomputation wwwwodddd Tags: backtracking cook70 easy enumeration pdn precomputation wwwwodddd backtracking cook70 easy enumeration pdn precomputation wwwwodddd Date Added: 14-05-2016 Date Added: 14-05-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V backtracking cook70 easy enumeration pdn precomputation wwwwodddd
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/EZNO
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVWhile studying representation of numbers in various bases, Chef discovered an interesting properties of some positive numbers, which Chef believed are somewhat easy to memorize. Chef called such positive numbers easy numbers.
+p18
+aVThese numbers had an interesting property: Let the base Chef is currently studying be b. Represent the number in base b (without leading zeros). For each prefix of length k (from 1 to number of digits in number in the base), the number formed by considering the digits of the prefix in base b is divisible by k.
+p19
+aVFor example, let base Chef is studying be 2.
+p20
+aV1 is an easy number as its prefix of length 1 (i.e. 1) is divisible by 1.
+p21
+aV2 is also an easy number, as its prefix of length 1 (i.e. 1) is divisible by 1 and the prefix of length 2 (i.e. 2, represented as 10 in base 2) is also divisible by 2.
+p22
+aV3 is not an easy number, as its prefix of length 2 (i.e. 3, represented as 11 in base 2) is not divisible by 2.
+p23
+aVNow Chef finds these numbers easy and thinks that following question related to easy numbers will be easy for you too. He asks you to find the number of easy numbers represented in base b and consisting of exactly d digits. As the answer could be quite large, output it modulo 109 + 7.
+p24
+asS'input'
+p25
+(lp26
+VInput
+p27
+aVFirst line of the input contains a single integer T denoting the number of test cases.
+p28
+aVFor each test case, there will be a single line containing two space separated integers b, d, denoting the base and number of digits respectively.
+p29
+aVOutput
+p30
+aVFor each test case, output a single integer denoting the number of easy numbers in base b consisting of d digits, modulo 109 + 7.
+p31
+asS'constraints'
+p32
+(lp33
+VConstraints
+p34
+aV1 \u2264 T \u2264 100
+p35
+aV2 \u2264 b \u2264 16
+p36
+aV1 \u2264 d \u2264 109
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'name'
+p40
+VEZNO
+p41
+sb.

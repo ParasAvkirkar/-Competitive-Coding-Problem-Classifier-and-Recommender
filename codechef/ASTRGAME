@@ -1,0 +1,105 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aTeddy and Tracy like to play a game based on strings. The game is as follows. Initially, Tracy writes a long random string on a whiteboard. Then, each player starting with Teddy makes turn alternately. Each turn, the player must erase a contiguous substring that exists in the dictionary. The dictionary consists of N words.\u000aOf course, the player that can't erase any substring in his turn loses the game, and the other player is declared the winner.\u000aNote that after a substring R is erased, the remaining substring becomes separated, i.e. they cannot erase a word that occurs partially to the left of R and partially to the right of R.\u000aDetermine the winner of the game, assuming that both players play optimally.\u000aInput\u000aThe first line contains a single integer T, the number of test cases. T test cases follow. The first line of each testcase contains a string S, the string Tracy writes on the whiteboard. The next line contains a single integer N. N lines follow. The i-th line contains a single string wi, the i-th word in the dictionary.\u000aOutput\u000aFor each test case, output a single line containing the name of the winner of the game.\u000aExample\u000aInput:\u000a3\u000acodechef\u000a2\u000acode\u000achef\u000afoo\u000a1\u000abar\u000amississippi\u000a4\u000assissi\u000amippi\u000ami\u000appi\u000a\u000aOutput:\u000aTracy\u000aTracy\u000aTeddy\u000aConstraints\u000a1 <= T <= 5\u000a1 <= N <= 30\u000a1 <= |S| <= 30\u000a1 <= |wi| <= 30\u000aS and wi contain only characters 'a'-'z'\u000aAuthor: fushar\u000aTester: pieguy\u000aEditorial: http://discuss.codechef.com/problems/ASTRGAME\u000aTags: dec10 easy fushar\u000aDate Added: 28-10-2010\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aTeddy and Tracy like to play a game based on strings. The game is as follows. Initially, Tracy writes a long random string on a whiteboard. Then, each player starting with Teddy makes turn alternately. Each turn, the player must erase a contiguous substring that exists in the dictionary. The dictionary consists of N words.\u000aOf course, the player that can't erase any substring in his turn loses the game, and the other player is declared the winner.\u000aNote that after a substring R is erased, the remaining substring becomes separated, i.e. they cannot erase a word that occurs partially to the left of R and partially to the right of R.\u000aDetermine the winner of the game, assuming that both players play optimally.\u000aInput\u000aThe first line contains a single integer T, the number of test cases. T test cases follow. The first line of each testcase contains a string S, the string Tracy writes on the whiteboard. The next line contains a single integer N. N lines follow. The i-th line contains a single string wi, the i-th word in the dictionary.\u000aOutput\u000aFor each test case, output a single line containing the name of the winner of the game.\u000aExample\u000aInput:\u000a3\u000acodechef\u000a2\u000acode\u000achef\u000afoo\u000a1\u000abar\u000amississippi\u000a4\u000assissi\u000amippi\u000ami\u000appi\u000a\u000aOutput:\u000aTracy\u000aTracy\u000aTeddy\u000aConstraints\u000a1 <= T <= 5\u000a1 <= N <= 30\u000a1 <= |S| <= 30\u000a1 <= |wi| <= 30\u000aS and wi contain only characters 'a'-'z'\u000aAuthor: fushar\u000aTester: pieguy\u000aEditorial: http://discuss.codechef.com/problems/ASTRGAME\u000aTags: dec10 easy fushar\u000aDate Added: 28-10-2010\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC All submissions for this problem are available. Teddy and Tracy like to play a game based on strings. The game is as follows. Initially, Tracy writes a long random string on a whiteboard. Then, each player starting with Teddy makes turn alternately. Each turn, the player must erase a contiguous substring that exists in the dictionary. The dictionary consists of N words. N Of course, the player that can't erase any substring in his turn loses the game, and the other player is declared the winner. Note that after a substring R is erased, the remaining substring becomes separated, i.e. they cannot erase a word that occurs partially to the left of R and partially to the right of R. Determine the winner of the game, assuming that both players play optimally. Input The first line contains a single integer T, the number of test cases. T test cases follow. The first line of each testcase contains a string S, the string Tracy writes on the whiteboard. The next line contains a single integer N. N lines follow. The i-th line contains a single string wi, the i-th word in the dictionary. T T S N N i wi i i Output For each test case, output a single line containing the name of the winner of the game. Example Input:\u000a3\u000acodechef\u000a2\u000acode\u000achef\u000afoo\u000a1\u000abar\u000amississippi\u000a4\u000assissi\u000amippi\u000ami\u000appi\u000a\u000aOutput:\u000aTracy\u000aTracy\u000aTeddy Input: Output: Constraints 1 <= T <= 5\u000a1 <= N <= 30\u000a1 <= |S| <= 30\u000a1 <= |wi| <= 30\u000aS and wi contain only characters 'a'-'z' 1 <= T <= 5 T 1 <= N <= 30 N 1 <= |S| <= 30 S 1 <= |wi| <= 30 wi i S and wi contain only characters 'a'-'z' S wi i  Author: fushar\u000aTester: pieguy\u000aEditorial: http://discuss.codechef.com/problems/ASTRGAME\u000aTags: dec10 easy fushar\u000aDate Added: 28-10-2010\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Author: fushar\u000aTester: pieguy\u000aEditorial: http://discuss.codechef.com/problems/ASTRGAME\u000aTags: dec10 easy fushar\u000aDate Added: 28-10-2010\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Author: fushar Author: fushar fushar Tester: pieguy Tester: pieguy pieguy Editorial: http://discuss.codechef.com/problems/ASTRGAME Editorial: http://discuss.codechef.com/problems/ASTRGAME http://discuss.codechef.com/problems/ASTRGAME Tags: dec10 easy fushar Tags: dec10 easy fushar dec10 easy fushar Date Added: 28-10-2010 Date Added: 28-10-2010 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V dec10 easy fushar
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/ASTRGAME
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVTeddy and Tracy like to play a game based on strings. The game is as follows. Initially, Tracy writes a long random string on a whiteboard. Then, each player starting with Teddy makes turn alternately. Each turn, the player must erase a contiguous substring that exists in the dictionary. The dictionary consists of N words.
+p17
+aVOf course, the player that can't erase any substring in his turn loses the game, and the other player is declared the winner.
+p18
+aVNote that after a substring R is erased, the remaining substring becomes separated, i.e. they cannot erase a word that occurs partially to the left of R and partially to the right of R.
+p19
+aVDetermine the winner of the game, assuming that both players play optimally.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line contains a single integer T, the number of test cases. T test cases follow. The first line of each testcase contains a string S, the string Tracy writes on the whiteboard. The next line contains a single integer N. N lines follow. The i-th line contains a single string wi, the i-th word in the dictionary.
+p24
+aVOutput
+p25
+aVFor each test case, output a single line containing the name of the winner of the game.
+p26
+aVExample
+p27
+aVInput:
+p28
+aV3
+p29
+aVcodechef
+p30
+aV2
+p31
+aVcode
+p32
+aVchef
+p33
+aVfoo
+p34
+aV1
+p35
+aVbar
+p36
+aVmississippi
+p37
+aV4
+p38
+aVssissi
+p39
+aVmippi
+p40
+aVmi
+p41
+aVppi
+p42
+aV
+p43
+aVOutput:
+p44
+aVTracy
+p45
+aVTracy
+p46
+aVTeddy
+p47
+asS'constraints'
+p48
+(lp49
+sS'id'
+p50
+c__builtin__
+id
+p51
+sS'name'
+p52
+VASTRGAME
+p53
+sb.

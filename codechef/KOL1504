@@ -1,0 +1,85 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aCodeChef has received an order from the President of Mithai country for his son's birthday cake. The president is a person of very high temper and CodeChef doesn't want to tick him him, so he had to prepare a cake exactly as described by the President's son. He asked for a cake with N layers and each layer has to be of a type specified by him. The type of layer is represented by a lowercase letter from the English alphabet.\u000aCodeChef asked his sous Chef, Jalebi Bai, to make this cake, who was very sleepy due to a very long and tiring journey to a planet far far away earlier.\u000aDue to tiredness, Jalebi Bai screwed up the the layers while baking the cake. Thankfully, it has the same number of layers as required, but any of the layers may or may not be the same as described in the order. CodeChef is really worried because of this, as making a new cake will cost him a huge amount of money.\u000aAt this point of time, Samosa Bhai comes to the rescue. He has a layer swapper (patent pending) which can swap the layers of a cake without ruining the cake. This swapper has a limitation that it can swap layers separated exactly by distance D only, meaning there should be exactly D-1 layers in between the two layers to be swapped.\u000aYou have to tell if the cake made by Jalebi Bai can be changed into the cake described by the President's son using Samosa Bhai's swapper.\u000aInput\u000aThe first line contains T, the number of test cases.\u000aThe first line of each test case contains N and D.\u000aThe next line contains a lowercase string A representing the cake described by the President's son.\u000aThe next line contains a lowercase string B representing the cake made by Jalebi Bai.\u000aOutput\u000aFor each test case, output "Yes" [without quotes] if it is possible to transform the cake B into cake A using the layer swapper. Otherwise, output "No" [without quotes].\u000aConstraints\u000a1 \u2264 T \u2264 20000\u000a1 \u2264 N \u2264 105\u000a1 \u2264 D \u2264 105\u000aSize of String A = Size of String B = N\u000a1 \u2264 Sum of N \u2264 105\u000aAll characters are from 'a' to 'z' in string A and B.\u000aExample\u000aInput:\u000a5\u000a4 2\u000aqnyu\u000aynqu\u000a4 1\u000afbnc\u000anbcf\u000a5 2\u000aabcde\u000aedacb\u000a5 2\u000aabcde\u000aedabc\u000a3 1\u000aeff\u000abae\u000a\u000aOutput:\u000aYes\u000aYes\u000aNo\u000aYes\u000aNo\u000aExplanation\u000aExample case 1. Swap layer 'y' with 'q'.\u000aExample case 2. Follow the following swap order:\u000aSwap Layer 'f' with 'c', The cake will now be "nbfc"\u000aSwap Layer 'n' with 'b', The cake will now be "bnfc"\u000aSwap Layer 'n' with 'f', The cake will now be "bfnc"\u000aSwap Layer 'f' with 'b', The cake will now be "fbnc"\u000aExample case 4. Follow the following swap order:\u000aSwap Layer 'b' with 'd', The cake will now be "ebadc"\u000aSwap Layer 'a' with 'e', The cake will now be "abedc"\u000aSwap Layer 'e' with 'c', The cake will now be "abcde"\u000aAuthor: devuy11\u000aEditorial: http://discuss.codechef.com/problems/KOL1504\u000aTags: acm15kol devuy11 sorting\u000aDate Added: 9-12-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: C, CPP14, JAVA\u000aSUBMIT All submissions for this problem are available.\u000aCodeChef has received an order from the President of Mithai country for his son's birthday cake. The president is a person of very high temper and CodeChef doesn't want to tick him him, so he had to prepare a cake exactly as described by the President's son. He asked for a cake with N layers and each layer has to be of a type specified by him. The type of layer is represented by a lowercase letter from the English alphabet.\u000aCodeChef asked his sous Chef, Jalebi Bai, to make this cake, who was very sleepy due to a very long and tiring journey to a planet far far away earlier.\u000aDue to tiredness, Jalebi Bai screwed up the the layers while baking the cake. Thankfully, it has the same number of layers as required, but any of the layers may or may not be the same as described in the order. CodeChef is really worried because of this, as making a new cake will cost him a huge amount of money.\u000aAt this point of time, Samosa Bhai comes to the rescue. He has a layer swapper (patent pending) which can swap the layers of a cake without ruining the cake. This swapper has a limitation that it can swap layers separated exactly by distance D only, meaning there should be exactly D-1 layers in between the two layers to be swapped.\u000aYou have to tell if the cake made by Jalebi Bai can be changed into the cake described by the President's son using Samosa Bhai's swapper.\u000aInput\u000aThe first line contains T, the number of test cases.\u000aThe first line of each test case contains N and D.\u000aThe next line contains a lowercase string A representing the cake described by the President's son.\u000aThe next line contains a lowercase string B representing the cake made by Jalebi Bai.\u000aOutput\u000aFor each test case, output "Yes" [without quotes] if it is possible to transform the cake B into cake A using the layer swapper. Otherwise, output "No" [without quotes].\u000aConstraints\u000a1 \u2264 T \u2264 20000\u000a1 \u2264 N \u2264 105\u000a1 \u2264 D \u2264 105\u000aSize of String A = Size of String B = N\u000a1 \u2264 Sum of N \u2264 105\u000aAll characters are from 'a' to 'z' in string A and B.\u000aExample\u000aInput:\u000a5\u000a4 2\u000aqnyu\u000aynqu\u000a4 1\u000afbnc\u000anbcf\u000a5 2\u000aabcde\u000aedacb\u000a5 2\u000aabcde\u000aedabc\u000a3 1\u000aeff\u000abae\u000a\u000aOutput:\u000aYes\u000aYes\u000aNo\u000aYes\u000aNo\u000aExplanation\u000aExample case 1. Swap layer 'y' with 'q'.\u000aExample case 2. Follow the following swap order:\u000aSwap Layer 'f' with 'c', The cake will now be "nbfc"\u000aSwap Layer 'n' with 'b', The cake will now be "bnfc"\u000aSwap Layer 'n' with 'f', The cake will now be "bfnc"\u000aSwap Layer 'f' with 'b', The cake will now be "fbnc"\u000aExample case 4. Follow the following swap order:\u000aSwap Layer 'b' with 'd', The cake will now be "ebadc"\u000aSwap Layer 'a' with 'e', The cake will now be "abedc"\u000aSwap Layer 'e' with 'c', The cake will now be "abcde"\u000aAuthor: devuy11\u000aEditorial: http://discuss.codechef.com/problems/KOL1504\u000aTags: acm15kol devuy11 sorting\u000aDate Added: 9-12-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: C, CPP14, JAVA All submissions for this problem are available. CodeChef has received an order from the President of Mithai country for his son's birthday cake. The president is a person of very high temper and CodeChef doesn't want to tick him him, so he had to prepare a cake exactly as described by the President's son. He asked for a cake with N layers and each layer has to be of a type specified by him. The type of layer is represented by a lowercase letter from the English alphabet. N CodeChef asked his sous Chef, Jalebi Bai, to make this cake, who was very sleepy due to a very long and tiring journey to a planet far far away earlier.\u000aDue to tiredness, Jalebi Bai screwed up the the layers while baking the cake. Thankfully, it has the same number of layers as required, but any of the layers may or may not be the same as described in the order. CodeChef is really worried because of this, as making a new cake will cost him a huge amount of money.  At this point of time, Samosa Bhai comes to the rescue. He has a layer swapper (patent pending) which can swap the layers of a cake without ruining the cake. This swapper has a limitation that it can swap layers separated exactly by distance D only, meaning there should be exactly D-1 layers in between the two layers to be swapped. exactly D exactly D-1 You have to tell if the cake made by Jalebi Bai can be changed into the cake described by the President's son using Samosa Bhai's swapper. Input The first line contains T, the number of test cases. T The first line of each test case contains N and D. N D The next line contains a lowercase string A representing the cake described by the President's son. A The next line contains a lowercase string B representing the cake made by Jalebi Bai. B Output For each test case, output "Yes" [without quotes] if it is possible to transform the cake B into cake A using the layer swapper. Otherwise, output "No" [without quotes]. Yes B A No Constraints 1 \u2264 T \u2264 20000\u000a1 \u2264 N \u2264 105\u000a1 \u2264 D \u2264 105\u000aSize of String A = Size of String B = N\u000a1 \u2264 Sum of N \u2264 105\u000aAll characters are from 'a' to 'z' in string A and B. 1 \u2264 T \u2264 20000 1 T 20000 1 \u2264 N \u2264 105 1 N 105 5 1 \u2264 D \u2264 105 1 D 105 5 Size of String A = Size of String B = N Size of String A = Size of String B = N 1 \u2264 Sum of N \u2264 105 1 Sum of N 105 5 All characters are from 'a' to 'z' in string A and B. All characters are from 'a' to 'z' in string A and B. Example Input:\u000a5\u000a4 2\u000aqnyu\u000aynqu\u000a4 1\u000afbnc\u000anbcf\u000a5 2\u000aabcde\u000aedacb\u000a5 2\u000aabcde\u000aedabc\u000a3 1\u000aeff\u000abae\u000a\u000aOutput:\u000aYes\u000aYes\u000aNo\u000aYes\u000aNo Input: Output: Explanation Example case 1. Swap layer 'y' with 'q'. Example case 1. Example case 2. Follow the following swap order: Example case 2. Swap Layer 'f' with 'c', The cake will now be "nbfc"\u000aSwap Layer 'n' with 'b', The cake will now be "bnfc"\u000aSwap Layer 'n' with 'f', The cake will now be "bfnc"\u000aSwap Layer 'f' with 'b', The cake will now be "fbnc" Swap Layer 'f' with 'c', The cake will now be "nbfc" Swap Layer 'n' with 'b', The cake will now be "bnfc" Swap Layer 'n' with 'f', The cake will now be "bfnc" Swap Layer 'f' with 'b', The cake will now be "fbnc" Example case 4. Follow the following swap order: Example case 4. Swap Layer 'b' with 'd', The cake will now be "ebadc"\u000aSwap Layer 'a' with 'e', The cake will now be "abedc"\u000aSwap Layer 'e' with 'c', The cake will now be "abcde" Swap Layer 'b' with 'd', The cake will now be "ebadc" Swap Layer 'a' with 'e', The cake will now be "abedc" Swap Layer 'e' with 'c', The cake will now be "abcde"  Author: devuy11\u000aEditorial: http://discuss.codechef.com/problems/KOL1504\u000aTags: acm15kol devuy11 sorting\u000aDate Added: 9-12-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: C, CPP14, JAVA Author: devuy11\u000aEditorial: http://discuss.codechef.com/problems/KOL1504\u000aTags: acm15kol devuy11 sorting\u000aDate Added: 9-12-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: C, CPP14, JAVA Author: devuy11 Author: devuy11 devuy11 Editorial: http://discuss.codechef.com/problems/KOL1504 Editorial: http://discuss.codechef.com/problems/KOL1504 http://discuss.codechef.com/problems/KOL1504 Tags: acm15kol devuy11 sorting Tags: acm15kol devuy11 sorting acm15kol devuy11 sorting Date Added: 9-12-2015 Date Added: 9-12-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: C, CPP14, JAVA Languages: C, CPP14, JAVA SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V acm15kol devuy11 sorting
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/KOL1504
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVCodeChef has received an order from the President of Mithai country for his son's birthday cake. The president is a person of very high temper and CodeChef doesn't want to tick him him, so he had to prepare a cake exactly as described by the President's son. He asked for a cake with N layers and each layer has to be of a type specified by him. The type of layer is represented by a lowercase letter from the English alphabet.
+p17
+aVCodeChef asked his sous Chef, Jalebi Bai, to make this cake, who was very sleepy due to a very long and tiring journey to a planet far far away earlier.
+p18
+aVDue to tiredness, Jalebi Bai screwed up the the layers while baking the cake. Thankfully, it has the same number of layers as required, but any of the layers may or may not be the same as described in the order. CodeChef is really worried because of this, as making a new cake will cost him a huge amount of money.
+p19
+aVAt this point of time, Samosa Bhai comes to the rescue. He has a layer swapper (patent pending) which can swap the layers of a cake without ruining the cake. This swapper has a limitation that it can swap layers separated exactly by distance D only, meaning there should be exactly D-1 layers in between the two layers to be swapped.
+p20
+aVYou have to tell if the cake made by Jalebi Bai can be changed into the cake described by the President's son using Samosa Bhai's swapper.
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVThe first line contains T, the number of test cases.
+p25
+aVThe first line of each test case contains N and D.
+p26
+aVThe next line contains a lowercase string A representing the cake described by the President's son.
+p27
+aVThe next line contains a lowercase string B representing the cake made by Jalebi Bai.
+p28
+aVOutput
+p29
+aVFor each test case, output "Yes" [without quotes] if it is possible to transform the cake B into cake A using the layer swapper. Otherwise, output "No" [without quotes].
+p30
+asS'constraints'
+p31
+(lp32
+VConstraints
+p33
+aV1 \u2264 T \u2264 20000
+p34
+aV1 \u2264 N \u2264 105
+p35
+aV1 \u2264 D \u2264 105
+p36
+aVSize of String A = Size of String B = N
+p37
+aV1 \u2264 Sum of N \u2264 105
+p38
+aVAll characters are from 'a' to 'z' in string A and B.
+p39
+asS'id'
+p40
+c__builtin__
+id
+p41
+sS'name'
+p42
+VKOL1504
+p43
+sb.

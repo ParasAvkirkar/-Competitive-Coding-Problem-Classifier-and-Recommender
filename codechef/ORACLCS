@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aDevu is a disastrous oracle: his predictions about various events of your life are horrifying. Instead of providing good luck, he "blesses" you with bad luck. The secret behind his wickedness is a hidden omen which is a string of length m. On your visit to him, you can ask a lot of questions about your future, each of which should be a string of length m. In total you asked him n such questions, denoted by strings s1, s2, ... , sn of length m each. Each of the question strings is composed of the characters 'a' and 'b' only.\u000aAmount of bad luck this visit will bring you is equal to the length of longest common subsequence (LCS) of all the question strings and the hidden omen string. Of course, as the omen string is hidden, you are wondering what could be the least value of bad luck you can get.\u000aCan you find out what could be the least bad luck you can get? Find it fast, before Devu tells you any bad omens.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aFirst line of each test case contains a single integer n denoting number of strings.\u000aFor each of next n lines, the ith line contains the string si.\u000aOutput\u000aFor each test case, output a single integer corresponding to the answer of the problem.\u000aConstraints\u000aAll the strings (including the hidden omen) contain the characters 'a' and 'b' only.\u000aSubtask #1: (40 points)\u000a1 \u2264 T, n, m \u2264 14\u000aSubtask #2: (60 points)\u000a1 \u2264 T, n, m \u2264 100\u000aExample\u000aInput:\u000a3\u000a2\u000aab\u000aba\u000a2\u000aaa\u000abb\u000a3\u000aaabb\u000aabab\u000abaab\u000a\u000aOutput:\u000a1\u000a0\u000a2\u000aExplanation\u000aIn the first example, the minimum value of LCS of all the strings is 1, the string by oracle can be one of these {aa, ab, ba, bb}.\u000aIn the second example, whatever string oracle has does not matter, LCS will always be zero.\u000aAuthor: admin2\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/ORACLCS\u000aTags: admin2 dec15 lcs simple\u000aDate Added: 3-10-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aDevu is a disastrous oracle: his predictions about various events of your life are horrifying. Instead of providing good luck, he "blesses" you with bad luck. The secret behind his wickedness is a hidden omen which is a string of length m. On your visit to him, you can ask a lot of questions about your future, each of which should be a string of length m. In total you asked him n such questions, denoted by strings s1, s2, ... , sn of length m each. Each of the question strings is composed of the characters 'a' and 'b' only.\u000aAmount of bad luck this visit will bring you is equal to the length of longest common subsequence (LCS) of all the question strings and the hidden omen string. Of course, as the omen string is hidden, you are wondering what could be the least value of bad luck you can get.\u000aCan you find out what could be the least bad luck you can get? Find it fast, before Devu tells you any bad omens.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aFirst line of each test case contains a single integer n denoting number of strings.\u000aFor each of next n lines, the ith line contains the string si.\u000aOutput\u000aFor each test case, output a single integer corresponding to the answer of the problem.\u000aConstraints\u000aAll the strings (including the hidden omen) contain the characters 'a' and 'b' only.\u000aSubtask #1: (40 points)\u000a1 \u2264 T, n, m \u2264 14\u000aSubtask #2: (60 points)\u000a1 \u2264 T, n, m \u2264 100\u000aExample\u000aInput:\u000a3\u000a2\u000aab\u000aba\u000a2\u000aaa\u000abb\u000a3\u000aaabb\u000aabab\u000abaab\u000a\u000aOutput:\u000a1\u000a0\u000a2\u000aExplanation\u000aIn the first example, the minimum value of LCS of all the strings is 1, the string by oracle can be one of these {aa, ab, ba, bb}.\u000aIn the second example, whatever string oracle has does not matter, LCS will always be zero.\u000aAuthor: admin2\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/ORACLCS\u000aTags: admin2 dec15 lcs simple\u000aDate Added: 3-10-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Devu is a disastrous oracle: his predictions about various events of your life are horrifying. Instead of providing good luck, he "blesses" you with bad luck. The secret behind his wickedness is a hidden omen which is a string of length m. On your visit to him, you can ask a lot of questions about your future, each of which should be a string of length m. In total you asked him n such questions, denoted by strings s1, s2, ... , sn of length m each. Each of the question strings is composed of the characters 'a' and 'b' only. m m n s1 1 s2 2 sn n m Amount of bad luck this visit will bring you is equal to the length of longest common subsequence (LCS) of all the question strings and the hidden omen string. Of course, as the omen string is hidden, you are wondering what could be the least value of bad luck you can get. LCS Can you find out what could be the least bad luck you can get? Find it fast, before Devu tells you any bad omens. Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T First line of each test case contains a single integer n denoting number of strings. n For each of next n lines, the ith line contains the string si. n i th si i Output  Constraints All the strings (including the hidden omen) contain the characters 'a' and 'b' only. All the strings (including the hidden omen) contain the characters 'a' and 'b' only.  Subtask #1: (40 points) Subtask #1:  1 \u2264 T, n, m \u2264 14 1 \u2264 T, n, m \u2264 14 1 T, n, m 14  Subtask #2: (60 points) Subtask #2:  1 \u2264 T, n, m \u2264 100 1 \u2264 T, n, m \u2264 100 1 T, n, m 100  Example Input:\u000a3\u000a2\u000aab\u000aba\u000a2\u000aaa\u000abb\u000a3\u000aaabb\u000aabab\u000abaab\u000a\u000aOutput:\u000a1\u000a0\u000a2 Input: 3\u000a2\u000aab\u000aba\u000a2\u000aaa\u000abb\u000a3\u000aaabb\u000aabab\u000abaab Output: 1\u000a0\u000a2 Explanation In the first example, the minimum value of LCS of all the strings is 1, the string by oracle can be one of these {aa, ab, ba, bb}. In the first example In the second example, whatever string oracle has does not matter, LCS will always be zero. In the second example  Author: admin2\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/ORACLCS\u000aTags: admin2 dec15 lcs simple\u000aDate Added: 3-10-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: admin2\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/ORACLCS\u000aTags: admin2 dec15 lcs simple\u000aDate Added: 3-10-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: admin2 Author: admin2 admin2 Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/ORACLCS Editorial: http://discuss.codechef.com/problems/ORACLCS http://discuss.codechef.com/problems/ORACLCS Tags: admin2 dec15 lcs simple Tags: admin2 dec15 lcs simple admin2 dec15 lcs simple Date Added: 3-10-2015 Date Added: 3-10-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V admin2 dec15 lcs simple
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/ORACLCS
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVDevu is a disastrous oracle: his predictions about various events of your life are horrifying. Instead of providing good luck, he "blesses" you with bad luck. The secret behind his wickedness is a hidden omen which is a string of length m. On your visit to him, you can ask a lot of questions about your future, each of which should be a string of length m. In total you asked him n such questions, denoted by strings s1, s2, ... , sn of length m each. Each of the question strings is composed of the characters 'a' and 'b' only.
+p18
+aVAmount of bad luck this visit will bring you is equal to the length of longest common subsequence (LCS) of all the question strings and the hidden omen string. Of course, as the omen string is hidden, you are wondering what could be the least value of bad luck you can get.
+p19
+aVCan you find out what could be the least bad luck you can get? Find it fast, before Devu tells you any bad omens.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVFirst line of each test case contains a single integer n denoting number of strings.
+p25
+aVFor each of next n lines, the ith line contains the string si.
+p26
+aVOutput
+p27
+aVFor each test case, output a single integer corresponding to the answer of the problem.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aVAll the strings (including the hidden omen) contain the characters 'a' and 'b' only.
+p32
+aVSubtask #1: (40 points)
+p33
+aV1 \u2264 T, n, m \u2264 14
+p34
+aVSubtask #2: (60 points)
+p35
+aV1 \u2264 T, n, m \u2264 100
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VORACLCS
+p40
+sb.

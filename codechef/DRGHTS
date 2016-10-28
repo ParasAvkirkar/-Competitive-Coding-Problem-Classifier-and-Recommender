@@ -1,0 +1,69 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aFurik and Rubik have come to the sanatorium, which consists of N rooms and M passageways. Each passageway connects two rooms, and there is at most one way to move between each pair of rooms. Some rooms have opened windows. There is a draught between two different rooms if both rooms have opened windows, and are connected with each other by some way.\u000aFurik is interested in one question: what is the number of pairs of rooms, which have a draught between them. Rubik wants to know what is the number of the rooms, which have at least one draught passing through the room.\u000aInput\u000aThe first line contains two space-separated integers N and M. The next line contains N integers, where the ith number is equal to 1, if the window in the room number i is opened, otherwise 0. Then the next M lines contain pairs of integers, where the ith pair denotes the numbers of the connected rooms by ith passageway. Consider that the rooms are numerated by different integers from 1 to N.\u000aOutput\u000aIn a single line print two numbers, denoting the answers to Furik and Rubik questions.\u000aConstraints\u000a1 \u2264 N \u2264 50000 (5 × 104)\u000a0 \u2264 M \u2264 N \u2212 1\u000aThere is at most one way to move between each pair of rooms, that is, the given graph is a forest\u000aExample\u000aInput:\u000a6 5\u000a1 1 1 1 1 0\u000a1 2\u000a1 6\u000a1 5\u000a2 4\u000a4 3\u000a\u000aOutput:\u000a10 5\u000a\u000aInput:\u000a2 1\u000a1 0\u000a1 2\u000a\u000aOutput:\u000a0 0\u000aAuthor: sereja\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/DRGHTS\u000aTags: easy feb14 sereja\u000aDate Added: 15-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aFurik and Rubik have come to the sanatorium, which consists of N rooms and M passageways. Each passageway connects two rooms, and there is at most one way to move between each pair of rooms. Some rooms have opened windows. There is a draught between two different rooms if both rooms have opened windows, and are connected with each other by some way.\u000aFurik is interested in one question: what is the number of pairs of rooms, which have a draught between them. Rubik wants to know what is the number of the rooms, which have at least one draught passing through the room.\u000aInput\u000aThe first line contains two space-separated integers N and M. The next line contains N integers, where the ith number is equal to 1, if the window in the room number i is opened, otherwise 0. Then the next M lines contain pairs of integers, where the ith pair denotes the numbers of the connected rooms by ith passageway. Consider that the rooms are numerated by different integers from 1 to N.\u000aOutput\u000aIn a single line print two numbers, denoting the answers to Furik and Rubik questions.\u000aConstraints\u000a1 \u2264 N \u2264 50000 (5 × 104)\u000a0 \u2264 M \u2264 N \u2212 1\u000aThere is at most one way to move between each pair of rooms, that is, the given graph is a forest\u000aExample\u000aInput:\u000a6 5\u000a1 1 1 1 1 0\u000a1 2\u000a1 6\u000a1 5\u000a2 4\u000a4 3\u000a\u000aOutput:\u000a10 5\u000a\u000aInput:\u000a2 1\u000a1 0\u000a1 2\u000a\u000aOutput:\u000a0 0\u000aAuthor: sereja\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/DRGHTS\u000aTags: easy feb14 sereja\u000aDate Added: 15-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Furik and Rubik have come to the sanatorium, which consists of N rooms and M passageways. Each passageway connects two rooms, and there is at most one way to move between each pair of rooms. Some rooms have opened windows. There is a draught between two different rooms if both rooms have opened windows, and are connected with each other by some way. N M Furik is interested in one question: what is the number of pairs of rooms, which have a draught between them. Rubik wants to know what is the number of the rooms, which have at least one draught passing through the room. Input The first line contains two space-separated integers N and M. The next line contains N integers, where the ith number is equal to 1, if the window in the room number i is opened, otherwise 0. Then the next M lines contain pairs of integers, where the ith pair denotes the numbers of the connected rooms by ith passageway. Consider that the rooms are numerated by different integers from 1 to N. N M N i th 1 i 0 M i th i th 1 N Output In a single line print two numbers, denoting the answers to Furik and Rubik questions. Constraints 1 \u2264 N \u2264 50000 (5 × 104)\u000a0 \u2264 M \u2264 N \u2212 1\u000aThere is at most one way to move between each pair of rooms, that is, the given graph is a forest 1 \u2264 N \u2264 50000 (5 × 104) 1 N 50000 (5 × 104) 4 0 \u2264 M \u2264 N \u2212 1 0 M N \u2212 1 There is at most one way to move between each pair of rooms, that is, the given graph is a forest Example Input:\u000a6 5\u000a1 1 1 1 1 0\u000a1 2\u000a1 6\u000a1 5\u000a2 4\u000a4 3\u000a\u000aOutput:\u000a10 5\u000a\u000aInput:\u000a2 1\u000a1 0\u000a1 2\u000a\u000aOutput:\u000a0 0 Input: Output: Input: Output:  Author: sereja\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/DRGHTS\u000aTags: easy feb14 sereja\u000aDate Added: 15-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/DRGHTS\u000aTags: easy feb14 sereja\u000aDate Added: 15-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja Author: sereja sereja Tester: gerald Tester: gerald gerald Editorial: http://discuss.codechef.com/problems/DRGHTS Editorial: http://discuss.codechef.com/problems/DRGHTS http://discuss.codechef.com/problems/DRGHTS Tags: easy feb14 sereja Tags: easy feb14 sereja easy feb14 sereja Date Added: 15-06-2013 Date Added: 15-06-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy feb14 sereja
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/DRGHTS
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVFurik and Rubik have come to the sanatorium, which consists of N rooms and M passageways. Each passageway connects two rooms, and there is at most one way to move between each pair of rooms. Some rooms have opened windows. There is a draught between two different rooms if both rooms have opened windows, and are connected with each other by some way.
+p18
+aVFurik is interested in one question: what is the number of pairs of rooms, which have a draught between them. Rubik wants to know what is the number of the rooms, which have at least one draught passing through the room.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVThe first line contains two space-separated integers N and M. The next line contains N integers, where the ith number is equal to 1, if the window in the room number i is opened, otherwise 0. Then the next M lines contain pairs of integers, where the ith pair denotes the numbers of the connected rooms by ith passageway. Consider that the rooms are numerated by different integers from 1 to N.
+p23
+aVOutput
+p24
+aVIn a single line print two numbers, denoting the answers to Furik and Rubik questions.
+p25
+asS'constraints'
+p26
+(lp27
+VConstraints
+p28
+aV1 \u2264 N \u2264 50000 (5 × 104)
+p29
+aV0 \u2264 M \u2264 N \u2212 1
+p30
+aVThere is at most one way to move between each pair of rooms, that is, the given graph is a forest
+p31
+asS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VDRGHTS
+p35
+sb.

@@ -1,0 +1,77 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef's new hobby is painting, but he learned the fact that it's not easy to paint 2D pictures in a hard way, after wasting a lot of canvas paper, paint and of course time. From now on, he decided to paint 1D pictures only.\u000aChef's canvas is N millimeters long and is initially all white. For simplicity, colors will be represented by an integer between 0 and 105. 0 indicates white. The picture he is envisioning is also N millimeters long and the ith millimeter consists purely of the color Ci. Unfortunately, his brush isn't fine enough to paint every millimeter one by one. The brush is 3 millimeters wide and so it can only paint three millimeters at a time with the same color. Painting over the same place completely replaces the color by the new one. Also, Chef has lots of bottles of paints of each color, so he will never run out of paint of any color.\u000aChef also doesn't want to ruin the edges of the canvas, so he doesn't want to paint any part beyond the painting. This means, for example, Chef cannot paint just the first millimeter of the canvas, or just the last two millimeters, etc.\u000aHelp Chef by telling him whether he can finish the painting or not with these restrictions.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N. The second line contains N space-separated integers C1, C2, ..., CN denoting the colors of Chef's painting.\u000aOutput\u000aFor each test case, output a single line containing either \u201cYes\u201d or \u201cNo\u201d (without quotes), denoting whether Chef can finish the painting or not.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a3 \u2264 N \u2264 105\u000aThe sum of the Ns over all the test cases in a single test file is \u2264 5×105\u000a1 \u2264 Ci \u2264 105\u000aExample\u000aInput:\u000a3\u000a4\u000a1 5 5 5\u000a4\u000a1 1 1 5\u000a3\u000a5 5 2\u000a\u000aOutput:\u000aYes\u000aYes\u000aNo\u000aExplanation\u000aExample case 1. Chef's canvas initially contains the colors [0,0,0,0]. Chef can finish the painting by first painting the first three millimeters with color 1, so the colors become [1,1,1,0], and then the last three millimeters with color 5 so that it becomes [1,5,5,5].\u000aExample case 2. Chef's canvas initially contains the colors [0,0,0,0]. Chef can finish the painting by first painting the last three millimeters by color 5 so the colors become [0,5,5,5], and then the first three millimeters by color 1 so it becomes [1,1,1,5].\u000aExample case 3. In this test case, Chef can only paint the painting as a whole, so all parts must have the same color, and the task is impossible.\u000aAuthor: kevinsogo\u000aTester: xcwgf666,antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/MAKEART\u000aTags: cakewalk kevinsogo loops snckpa16\u000aDate Added: 30-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef's new hobby is painting, but he learned the fact that it's not easy to paint 2D pictures in a hard way, after wasting a lot of canvas paper, paint and of course time. From now on, he decided to paint 1D pictures only.\u000aChef's canvas is N millimeters long and is initially all white. For simplicity, colors will be represented by an integer between 0 and 105. 0 indicates white. The picture he is envisioning is also N millimeters long and the ith millimeter consists purely of the color Ci. Unfortunately, his brush isn't fine enough to paint every millimeter one by one. The brush is 3 millimeters wide and so it can only paint three millimeters at a time with the same color. Painting over the same place completely replaces the color by the new one. Also, Chef has lots of bottles of paints of each color, so he will never run out of paint of any color.\u000aChef also doesn't want to ruin the edges of the canvas, so he doesn't want to paint any part beyond the painting. This means, for example, Chef cannot paint just the first millimeter of the canvas, or just the last two millimeters, etc.\u000aHelp Chef by telling him whether he can finish the painting or not with these restrictions.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N. The second line contains N space-separated integers C1, C2, ..., CN denoting the colors of Chef's painting.\u000aOutput\u000aFor each test case, output a single line containing either \u201cYes\u201d or \u201cNo\u201d (without quotes), denoting whether Chef can finish the painting or not.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a3 \u2264 N \u2264 105\u000aThe sum of the Ns over all the test cases in a single test file is \u2264 5×105\u000a1 \u2264 Ci \u2264 105\u000aExample\u000aInput:\u000a3\u000a4\u000a1 5 5 5\u000a4\u000a1 1 1 5\u000a3\u000a5 5 2\u000a\u000aOutput:\u000aYes\u000aYes\u000aNo\u000aExplanation\u000aExample case 1. Chef's canvas initially contains the colors [0,0,0,0]. Chef can finish the painting by first painting the first three millimeters with color 1, so the colors become [1,1,1,0], and then the last three millimeters with color 5 so that it becomes [1,5,5,5].\u000aExample case 2. Chef's canvas initially contains the colors [0,0,0,0]. Chef can finish the painting by first painting the last three millimeters by color 5 so the colors become [0,5,5,5], and then the first three millimeters by color 1 so it becomes [1,1,1,5].\u000aExample case 3. In this test case, Chef can only paint the painting as a whole, so all parts must have the same color, and the task is impossible.\u000aAuthor: kevinsogo\u000aTester: xcwgf666,antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/MAKEART\u000aTags: cakewalk kevinsogo loops snckpa16\u000aDate Added: 30-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef's new hobby is painting, but he learned the fact that it's not easy to paint 2D pictures in a hard way, after wasting a lot of canvas paper, paint and of course time. From now on, he decided to paint 1D pictures only. Chef's canvas is N millimeters long and is initially all white. For simplicity, colors will be represented by an integer between 0 and 105. 0 indicates white. The picture he is envisioning is also N millimeters long and the ith millimeter consists purely of the color Ci. Unfortunately, his brush isn't fine enough to paint every millimeter one by one. The brush is 3 millimeters wide and so it can only paint three millimeters at a time with the same color. Painting over the same place completely replaces the color by the new one. Also, Chef has lots of bottles of paints of each color, so he will never run out of paint of any color. N 0 105 5 0 N i th Ci i with the same color. Chef also doesn't want to ruin the edges of the canvas, so he doesn't want to paint any part beyond the painting. This means, for example, Chef cannot paint just the first millimeter of the canvas, or just the last two millimeters, etc. Help Chef by telling him whether he can finish the painting or not with these restrictions. Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a single integer N. The second line contains N space-separated integers C1, C2, ..., CN denoting the colors of Chef's painting. N N C1 1 C2 2 CN N Output For each test case, output a single line containing either \u201cYes\u201d or \u201cNo\u201d (without quotes), denoting whether Chef can finish the painting or not. Yes No Constraints 1 \u2264 T \u2264 105\u000a3 \u2264 N \u2264 105\u000aThe sum of the Ns over all the test cases in a single test file is \u2264 5×105\u000a1 \u2264 Ci \u2264 105 1 \u2264 T \u2264 105 1 T 105 5 3 \u2264 N \u2264 105 3 N 105 5 The sum of the Ns over all the test cases in a single test file is \u2264 5×105 N 5×105 5 1 \u2264 Ci \u2264 105 1 Ci i 105 5 Example Input:\u000a3\u000a4\u000a1 5 5 5\u000a4\u000a1 1 1 5\u000a3\u000a5 5 2\u000a\u000aOutput:\u000aYes\u000aYes\u000aNo Input: 3\u000a4\u000a1 5 5 5\u000a4\u000a1 1 1 5\u000a3\u000a5 5 2 Output: Yes\u000aYes\u000aNo Explanation Example case 1. Chef's canvas initially contains the colors [0,0,0,0]. Chef can finish the painting by first painting the first three millimeters with color 1, so the colors become [1,1,1,0], and then the last three millimeters with color 5 so that it becomes [1,5,5,5]. Example case 1. Example case 2. Chef's canvas initially contains the colors [0,0,0,0]. Chef can finish the painting by first painting the last three millimeters by color 5 so the colors become [0,5,5,5], and then the first three millimeters by color 1 so it becomes [1,1,1,5]. Example case 2. Example case 3. In this test case, Chef can only paint the painting as a whole, so all parts must have the same color, and the task is impossible. Example case 3.  Author: kevinsogo\u000aTester: xcwgf666,antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/MAKEART\u000aTags: cakewalk kevinsogo loops snckpa16\u000aDate Added: 30-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kevinsogo\u000aTester: xcwgf666,antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/MAKEART\u000aTags: cakewalk kevinsogo loops snckpa16\u000aDate Added: 30-05-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kevinsogo Author: kevinsogo kevinsogo Tester: xcwgf666,antoniuk1 Tester: xcwgf666,antoniuk1 xcwgf666,antoniuk1 Editorial: http://discuss.codechef.com/problems/MAKEART Editorial: http://discuss.codechef.com/problems/MAKEART http://discuss.codechef.com/problems/MAKEART Tags: cakewalk kevinsogo loops snckpa16 Tags: cakewalk kevinsogo loops snckpa16 cakewalk kevinsogo loops snckpa16 Date Added: 30-05-2016 Date Added: 30-05-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cakewalk kevinsogo loops snckpa16
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/MAKEART
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef's new hobby is painting, but he learned the fact that it's not easy to paint 2D pictures in a hard way, after wasting a lot of canvas paper, paint and of course time. From now on, he decided to paint 1D pictures only.
+p18
+aVChef's canvas is N millimeters long and is initially all white. For simplicity, colors will be represented by an integer between 0 and 105. 0 indicates white. The picture he is envisioning is also N millimeters long and the ith millimeter consists purely of the color Ci. Unfortunately, his brush isn't fine enough to paint every millimeter one by one. The brush is 3 millimeters wide and so it can only paint three millimeters at a time with the same color. Painting over the same place completely replaces the color by the new one. Also, Chef has lots of bottles of paints of each color, so he will never run out of paint of any color.
+p19
+aVChef also doesn't want to ruin the edges of the canvas, so he doesn't want to paint any part beyond the painting. This means, for example, Chef cannot paint just the first millimeter of the canvas, or just the last two millimeters, etc.
+p20
+aVHelp Chef by telling him whether he can finish the painting or not with these restrictions.
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p25
+aVThe first line of each test case contains a single integer N. The second line contains N space-separated integers C1, C2, ..., CN denoting the colors of Chef's painting.
+p26
+aVOutput
+p27
+aVFor each test case, output a single line containing either \u201cYes\u201d or \u201cNo\u201d (without quotes), denoting whether Chef can finish the painting or not.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 T \u2264 105
+p32
+aV3 \u2264 N \u2264 105
+p33
+aVThe sum of the Ns over all the test cases in a single test file is \u2264 5×105
+p34
+aV1 \u2264 Ci \u2264 105
+p35
+asS'id'
+p36
+c__builtin__
+id
+p37
+sS'name'
+p38
+VMAKEART
+p39
+sb.

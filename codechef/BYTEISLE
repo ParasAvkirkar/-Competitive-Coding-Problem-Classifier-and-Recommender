@@ -1,0 +1,103 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aA long school holiday has come, and you decided to visit the famous Byte Island. You know there are only two types of Bytelandians: Byteknights and Byteknaves. A Byteknight always tells the truth, whereas a Byteknave always lies.\u000aIt is known that there are N Bytelandians in the island, and now you meet all of them. You are curious about their types. Because you are a smart logician, you don't want to ask them questions that immediately reveal their types (that's too boring). Instead, to each Bytelandian you ask, "How many Byteknights are there here?"\u000aTo your surprise, they also don't answer your questions directly. Instead, the i-th Bytelandian answers of the form "The number of Byteknights here is between ai and bi, inclusive". You record all answers in your pocket note.\u000aNow that you have collected all information you need, determine the type of each Bytelandian.\u000aInput\u000aThe first line contains a single integer T, the number of test cases. T test cases follow. The first line of each test case contains a single integer N. N lines follow. The i-th line contains two integers ai and bi.\u000aOutput\u000aFor each test case, output two lines. In the first line, output a single integer indicating the number of different solutions, modulo 1000000007. In the next line, output the lexicographically smallest solution. A solution is a string consisting of N characters, where the i-th character of the string is '1' if the i-th Bytelandian is a Byteknight, or '0' in case of a Byteknave. It is guaranteed that there is at least one valid solution.\u000aExample\u000aInput:\u000a3\u000a1\u000a0 1\u000a4\u000a1 4\u000a2 4\u000a3 4\u000a4 4\u000a3\u000a1 2\u000a0 0\u000a1 3\u000a\u000aOutput:\u000a1\u000a1\u000a5\u000a0000\u000a1\u000a101\u000aConstraints\u000a1 <= T <= 5\u000a1 <= N <= 50000\u000a0 <= ai <= bi <= N\u000aAuthor: fushar\u000aTester: pieguy\u000aEditorial: http://discuss.codechef.com/problems/BYTEISLE\u000aTags: dec10 easy fushar\u000aDate Added: 25-10-2010\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aA long school holiday has come, and you decided to visit the famous Byte Island. You know there are only two types of Bytelandians: Byteknights and Byteknaves. A Byteknight always tells the truth, whereas a Byteknave always lies.\u000aIt is known that there are N Bytelandians in the island, and now you meet all of them. You are curious about their types. Because you are a smart logician, you don't want to ask them questions that immediately reveal their types (that's too boring). Instead, to each Bytelandian you ask, "How many Byteknights are there here?"\u000aTo your surprise, they also don't answer your questions directly. Instead, the i-th Bytelandian answers of the form "The number of Byteknights here is between ai and bi, inclusive". You record all answers in your pocket note.\u000aNow that you have collected all information you need, determine the type of each Bytelandian.\u000aInput\u000aThe first line contains a single integer T, the number of test cases. T test cases follow. The first line of each test case contains a single integer N. N lines follow. The i-th line contains two integers ai and bi.\u000aOutput\u000aFor each test case, output two lines. In the first line, output a single integer indicating the number of different solutions, modulo 1000000007. In the next line, output the lexicographically smallest solution. A solution is a string consisting of N characters, where the i-th character of the string is '1' if the i-th Bytelandian is a Byteknight, or '0' in case of a Byteknave. It is guaranteed that there is at least one valid solution.\u000aExample\u000aInput:\u000a3\u000a1\u000a0 1\u000a4\u000a1 4\u000a2 4\u000a3 4\u000a4 4\u000a3\u000a1 2\u000a0 0\u000a1 3\u000a\u000aOutput:\u000a1\u000a1\u000a5\u000a0000\u000a1\u000a101\u000aConstraints\u000a1 <= T <= 5\u000a1 <= N <= 50000\u000a0 <= ai <= bi <= N\u000aAuthor: fushar\u000aTester: pieguy\u000aEditorial: http://discuss.codechef.com/problems/BYTEISLE\u000aTags: dec10 easy fushar\u000aDate Added: 25-10-2010\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC All submissions for this problem are available. A long school holiday has come, and you decided to visit the famous Byte Island. You know there are only two types of Bytelandians: Byteknights and Byteknaves. A Byteknight always tells the truth, whereas a Byteknave always lies. It is known that there are N Bytelandians in the island, and now you meet all of them. You are curious about their types. Because you are a smart logician, you don't want to ask them questions that immediately reveal their types (that's too boring). Instead, to each Bytelandian you ask, "How many Byteknights are there here?" N To your surprise, they also don't answer your questions directly. Instead, the i-th Bytelandian answers of the form "The number of Byteknights here is between ai and bi, inclusive". You record all answers in your pocket note. i ai i bi i Now that you have collected all information you need, determine the type of each Bytelandian. Input The first line contains a single integer T, the number of test cases. T test cases follow. The first line of each test case contains a single integer N. N lines follow. The i-th line contains two integers ai and bi. T T N N i ai i bi i Output For each test case, output two lines. In the first line, output a single integer indicating the number of different solutions, modulo 1000000007. In the next line, output the lexicographically smallest solution. A solution is a string consisting of N characters, where the i-th character of the string is '1' if the i-th Bytelandian is a Byteknight, or '0' in case of a Byteknave. It is guaranteed that there is at least one valid solution. N i i Example Input:\u000a3\u000a1\u000a0 1\u000a4\u000a1 4\u000a2 4\u000a3 4\u000a4 4\u000a3\u000a1 2\u000a0 0\u000a1 3\u000a\u000aOutput:\u000a1\u000a1\u000a5\u000a0000\u000a1\u000a101 Input: Output: Constraints 1 <= T <= 5\u000a1 <= N <= 50000\u000a0 <= ai <= bi <= N 1 <= T <= 5 T 1 <= N <= 50000 N 0 <= ai <= bi <= N ai i bi i N  Author: fushar\u000aTester: pieguy\u000aEditorial: http://discuss.codechef.com/problems/BYTEISLE\u000aTags: dec10 easy fushar\u000aDate Added: 25-10-2010\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Author: fushar\u000aTester: pieguy\u000aEditorial: http://discuss.codechef.com/problems/BYTEISLE\u000aTags: dec10 easy fushar\u000aDate Added: 25-10-2010\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Author: fushar Author: fushar fushar Tester: pieguy Tester: pieguy pieguy Editorial: http://discuss.codechef.com/problems/BYTEISLE Editorial: http://discuss.codechef.com/problems/BYTEISLE http://discuss.codechef.com/problems/BYTEISLE Tags: dec10 easy fushar Tags: dec10 easy fushar dec10 easy fushar Date Added: 25-10-2010 Date Added: 25-10-2010 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V dec10 easy fushar
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/BYTEISLE
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVA long school holiday has come, and you decided to visit the famous Byte Island. You know there are only two types of Bytelandians: Byteknights and Byteknaves. A Byteknight always tells the truth, whereas a Byteknave always lies.
+p17
+aVIt is known that there are N Bytelandians in the island, and now you meet all of them. You are curious about their types. Because you are a smart logician, you don't want to ask them questions that immediately reveal their types (that's too boring). Instead, to each Bytelandian you ask, "How many Byteknights are there here?"
+p18
+aVTo your surprise, they also don't answer your questions directly. Instead, the i-th Bytelandian answers of the form "The number of Byteknights here is between ai and bi, inclusive". You record all answers in your pocket note.
+p19
+aVNow that you have collected all information you need, determine the type of each Bytelandian.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line contains a single integer T, the number of test cases. T test cases follow. The first line of each test case contains a single integer N. N lines follow. The i-th line contains two integers ai and bi.
+p24
+aVOutput
+p25
+aVFor each test case, output two lines. In the first line, output a single integer indicating the number of different solutions, modulo 1000000007. In the next line, output the lexicographically smallest solution. A solution is a string consisting of N characters, where the i-th character of the string is '1' if the i-th Bytelandian is a Byteknight, or '0' in case of a Byteknave. It is guaranteed that there is at least one valid solution.
+p26
+aVExample
+p27
+aVInput:
+p28
+aV3
+p29
+aV1
+p30
+aV0 1
+p31
+aV4
+p32
+aV1 4
+p33
+aV2 4
+p34
+aV3 4
+p35
+aV4 4
+p36
+ag29
+aV1 2
+p37
+aV0 0
+p38
+aV1 3
+p39
+aV
+p40
+aVOutput:
+p41
+ag30
+ag30
+aV5
+p42
+aV0000
+p43
+ag30
+aV101
+p44
+asS'constraints'
+p45
+(lp46
+sS'id'
+p47
+c__builtin__
+id
+p48
+sS'name'
+p49
+VBYTEISLE
+p50
+sb.

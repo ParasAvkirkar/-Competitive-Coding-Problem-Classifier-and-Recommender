@@ -1,0 +1,83 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Russian here\u000aThe Head Chef is studying the motivation and satisfaction level of his chefs . The motivation and satisfaction of a Chef can be represented as an integer . The Head Chef wants to know the N th smallest sum of one satisfaction value and one motivation value for various values of N . The satisfaction and motivation values may correspond to the same chef or different chefs . Given two arrays, the first array denoting the motivation value and the second array denoting the satisfaction value of the chefs . We can get a set of sums(add one element from the first array and one from the second). For each query ( denoted by an integer qi ( i = 1 to Q ) , Q denotes number of queries ) , find the qi th element in the set of sums ( in non-decreasing order ) .\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a two space seperated integers K and Q denoting the number of chefs and the number of queries .\u000aThe second line of each test case contains K space-separated integers A1, A2, ..., AK denoting the motivation of Chefs.\u000aThe third line of each test case contains K space-separated integers B1, B2, ..., BK denoting the satisfaction of Chefs.\u000aThe next Q lines contain a single integer qi ( for i = 1 to Q ) , find the qi th element in the set of sums .\u000aOutput\u000aFor each query of each test case, output a single line containing the answer to the query of the testcase\u000aConstraints\u000aShould contain all the constraints on the input data that you may have. Format it like:\u000a1 \u2264 T \u2264 5\u000a1 \u2264 K \u2264 20000\u000a1 \u2264 Q \u2264 500\u000a1 \u2264 qi ( for i = 1 to Q ) \u2264 10000\u000a1 \u2264 Ai \u2264 10^18 ( for i = 1 to K )\u000a1 \u2264 Bi \u2264 10^18 ( for i = 1 to K )\u000aExample\u000aInput:\u000a1\u000a3 1\u000a1 2 3\u000a4 5 6\u000a4\u000a\u000aOutput:\u000a7\u000aExplanation\u000aExample case 1. There are 9 elements in the set of sums :\u000a\u000a1 + 4 = 5\u000a\u000a2 + 4 = 6\u000a\u000a1 + 5 = 6\u000a\u000a1 + 6 = 7\u000a\u000a2 + 5 = 7\u000a\u000a3 + 4 = 7\u000a\u000a2 + 6 = 8\u000a\u000a3 + 5 = 8\u000a\u000a3 + 6 = 9\u000a\u000aThe fourth smallest element is 7.\u000aAuthor: vineetpaliwal\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/LOWSUM\u000aTags: binarysearch cook40 easy priority sorting vineetpaliwal\u000aDate Added: 28-10-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Russian here\u000aThe Head Chef is studying the motivation and satisfaction level of his chefs . The motivation and satisfaction of a Chef can be represented as an integer . The Head Chef wants to know the N th smallest sum of one satisfaction value and one motivation value for various values of N . The satisfaction and motivation values may correspond to the same chef or different chefs . Given two arrays, the first array denoting the motivation value and the second array denoting the satisfaction value of the chefs . We can get a set of sums(add one element from the first array and one from the second). For each query ( denoted by an integer qi ( i = 1 to Q ) , Q denotes number of queries ) , find the qi th element in the set of sums ( in non-decreasing order ) .\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a two space seperated integers K and Q denoting the number of chefs and the number of queries .\u000aThe second line of each test case contains K space-separated integers A1, A2, ..., AK denoting the motivation of Chefs.\u000aThe third line of each test case contains K space-separated integers B1, B2, ..., BK denoting the satisfaction of Chefs.\u000aThe next Q lines contain a single integer qi ( for i = 1 to Q ) , find the qi th element in the set of sums .\u000aOutput\u000aFor each query of each test case, output a single line containing the answer to the query of the testcase\u000aConstraints\u000aShould contain all the constraints on the input data that you may have. Format it like:\u000a1 \u2264 T \u2264 5\u000a1 \u2264 K \u2264 20000\u000a1 \u2264 Q \u2264 500\u000a1 \u2264 qi ( for i = 1 to Q ) \u2264 10000\u000a1 \u2264 Ai \u2264 10^18 ( for i = 1 to K )\u000a1 \u2264 Bi \u2264 10^18 ( for i = 1 to K )\u000aExample\u000aInput:\u000a1\u000a3 1\u000a1 2 3\u000a4 5 6\u000a4\u000a\u000aOutput:\u000a7\u000aExplanation\u000aExample case 1. There are 9 elements in the set of sums :\u000a\u000a1 + 4 = 5\u000a\u000a2 + 4 = 6\u000a\u000a1 + 5 = 6\u000a\u000a1 + 6 = 7\u000a\u000a2 + 5 = 7\u000a\u000a3 + 4 = 7\u000a\u000a2 + 6 = 8\u000a\u000a3 + 5 = 8\u000a\u000a3 + 6 = 9\u000a\u000aThe fourth smallest element is 7.\u000aAuthor: vineetpaliwal\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/LOWSUM\u000aTags: binarysearch cook40 easy priority sorting vineetpaliwal\u000aDate Added: 28-10-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Russian here here The Head Chef is studying the motivation and satisfaction level of his chefs . The motivation and satisfaction of a Chef can be represented as an integer . The Head Chef wants to know the N th smallest sum of one satisfaction value and one motivation value for various values of N . The satisfaction and motivation values may correspond to the same chef or different chefs . Given two arrays, the first array denoting the motivation value and the second array denoting the satisfaction value of the chefs . We can get a set of sums(add one element from the first array and one from the second). For each query ( denoted by an integer qi ( i = 1 to Q ) , Q denotes number of queries ) , find the qi th element in the set of sums ( in non-decreasing order ) . N N i i Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a two space seperated integers K and Q denoting the number of chefs and the number of queries .\u000aThe second line of each test case contains K space-separated integers A1, A2, ..., AK denoting the motivation of Chefs.\u000aThe third line of each test case contains K space-separated integers B1, B2, ..., BK denoting the satisfaction of Chefs.\u000aThe next Q lines contain a single integer qi ( for i = 1 to Q ) , find the qi th element in the set of sums . The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a two space seperated integers K and Q denoting the number of chefs and the number of queries . K Q The second line of each test case contains K space-separated integers A1, A2, ..., AK denoting the motivation of Chefs. K A1 1 A2 2 AK K The third line of each test case contains K space-separated integers B1, B2, ..., BK denoting the satisfaction of Chefs. K B1 1 B2 2 BK K The next Q lines contain a single integer qi ( for i = 1 to Q ) , find the qi th element in the set of sums . i i Output For each query of each test case, output a single line containing the answer to the query of the testcase For each query of each test case, output a single line containing the answer to the query of the testcase Constraints Should contain all the constraints on the input data that you may have. Format it like: 1 \u2264 T \u2264 5\u000a1 \u2264 K \u2264 20000\u000a1 \u2264 Q \u2264 500\u000a1 \u2264 qi ( for i = 1 to Q ) \u2264 10000\u000a1 \u2264 Ai \u2264 10^18 ( for i = 1 to K )\u000a1 \u2264 Bi \u2264 10^18 ( for i = 1 to K ) 1 \u2264 T \u2264 5 1 T 5 1 \u2264 K \u2264 20000 1 K 20000 1 \u2264 Q \u2264 500 1 Q 500 1 \u2264 qi ( for i = 1 to Q ) \u2264 10000 1 qi ( for i = 1 to Q ) i 10000 1 \u2264 Ai \u2264 10^18 ( for i = 1 to K ) 1 Ai i 10^18 ( for i = 1 to K ) 1 \u2264 Bi \u2264 10^18 ( for i = 1 to K ) 1 Bi i 10^18 ( for i = 1 to K ) Example Input:\u000a1\u000a3 1\u000a1 2 3\u000a4 5 6\u000a4\u000a\u000aOutput:\u000a7 Input: Output: Explanation Example case 1. There are 9 elements in the set of sums :\u000a\u000a1 + 4 = 5\u000a\u000a2 + 4 = 6\u000a\u000a1 + 5 = 6\u000a\u000a1 + 6 = 7\u000a\u000a2 + 5 = 7\u000a\u000a3 + 4 = 7\u000a\u000a2 + 6 = 8\u000a\u000a3 + 5 = 8\u000a\u000a3 + 6 = 9\u000a\u000aThe fourth smallest element is 7. Example case 1.                      Author: vineetpaliwal\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/LOWSUM\u000aTags: binarysearch cook40 easy priority sorting vineetpaliwal\u000aDate Added: 28-10-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: vineetpaliwal\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/LOWSUM\u000aTags: binarysearch cook40 easy priority sorting vineetpaliwal\u000aDate Added: 28-10-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: vineetpaliwal Author: vineetpaliwal vineetpaliwal Tester: rubanenko Tester: rubanenko rubanenko Editorial: http://discuss.codechef.com/problems/LOWSUM Editorial: http://discuss.codechef.com/problems/LOWSUM http://discuss.codechef.com/problems/LOWSUM Tags: binarysearch cook40 easy priority sorting vineetpaliwal Tags: binarysearch cook40 easy priority sorting vineetpaliwal binarysearch cook40 easy priority sorting vineetpaliwal Date Added: 28-10-2013 Date Added: 28-10-2013 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V binarysearch cook40 easy priority sorting vineetpaliwal
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LOWSUM
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Russian here
+p17
+aVThe Head Chef is studying the motivation and satisfaction level of his chefs . The motivation and satisfaction of a Chef can be represented as an integer . The Head Chef wants to know the N th smallest sum of one satisfaction value and one motivation value for various values of N . The satisfaction and motivation values may correspond to the same chef or different chefs . Given two arrays, the first array denoting the motivation value and the second array denoting the satisfaction value of the chefs . We can get a set of sums(add one element from the first array and one from the second). For each query ( denoted by an integer qi ( i = 1 to Q ) , Q denotes number of queries ) , find the qi th element in the set of sums ( in non-decreasing order ) .
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p22
+aVThe first line of each test case contains a two space seperated integers K and Q denoting the number of chefs and the number of queries .
+p23
+aVThe second line of each test case contains K space-separated integers A1, A2, ..., AK denoting the motivation of Chefs.
+p24
+aVThe third line of each test case contains K space-separated integers B1, B2, ..., BK denoting the satisfaction of Chefs.
+p25
+aVThe next Q lines contain a single integer qi ( for i = 1 to Q ) , find the qi th element in the set of sums .
+p26
+aVOutput
+p27
+aVFor each query of each test case, output a single line containing the answer to the query of the testcase
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aVShould contain all the constraints on the input data that you may have. Format it like:
+p32
+aV1 \u2264 T \u2264 5
+p33
+aV1 \u2264 K \u2264 20000
+p34
+aV1 \u2264 Q \u2264 500
+p35
+aV1 \u2264 qi ( for i = 1 to Q ) \u2264 10000
+p36
+aV1 \u2264 Ai \u2264 10^18 ( for i = 1 to K )
+p37
+aV1 \u2264 Bi \u2264 10^18 ( for i = 1 to K )
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'name'
+p41
+VLOWSUM
+p42
+sb.
