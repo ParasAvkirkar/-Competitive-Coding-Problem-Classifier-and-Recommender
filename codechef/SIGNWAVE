@@ -1,0 +1,115 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aThere are S sine functions and C cosine functions as following:\u000a\u000aai sin(2i x), 0 \u2264 x \u2264 2\u03c0, for i = 0, 1, ..., S\u22121,\u000a\u000abj cos(2j x), 0 \u2264 x \u2264 2\u03c0, for j = 0, 1, ..., C\u22121,\u000a\u000awhere ai, bj are some positive constants (and note that the answer of this problem does not depend on ai and bj).\u000aFor example, the following figures show the case of S = 2, C = 0 and the case of S = 3, C = 2.\u000aThis figure shows the case of S = 2, C = 0. There are two sine functions a1 sin(x) denoted by the red line, and a2 sin(2x) denoted by the blue line.\u000aThis figure shows the case of S = 3, C = 2. There are five functions a1 sin(x), a2 sin(2x), a3 sin(4x), b1 cos(x) and b2 cos(2x). In the figure, three sine functions are denoted by blue lines, and two cosine functions are denoted by red lines.\u000aChef wants to find the number of the points on the x-axis such that at least K functions through the points.\u000aInput\u000aThe first line of input contains an integer T, denoting the number of test cases. Then T test cases follow.\u000aEach test case contains one line. The line contains three space-separated integers S, C, K.\u000aOutput\u000aFor each test case, print the number of the points on the x-axis such that at least K functions through the points.\u000aConstraints and Subtasks\u000a1 \u2264 T \u2264 200\u000aSubtask 1: 15 points\u000a0 \u2264 S \u2264 12\u000a0 \u2264 C \u2264 12\u000a1 \u2264 K \u2264 25\u000aSubtask 2: 30 points\u000a0 \u2264 S \u2264 50\u000aC = 0\u000a1 \u2264 K \u2264 50\u000aSubtask 3: 25 points\u000a0 \u2264 S \u2264 50\u000a0 \u2264 C \u2264 50\u000aK = 1\u000aSubtask 4: 30 points\u000a0 \u2264 S \u2264 50\u000a0 \u2264 C \u2264 50\u000a1 \u2264 K \u2264 100\u000aExample\u000aInput:\u000a4\u000a2 0 1\u000a2 0 2\u000a3 2 1\u000a3 2 3\u000a\u000aOutput:\u000a5\u000a3\u000a9\u000a5\u000aExplanation\u000aExample 1. This is the case of S = 2, C = 0. So the situation is the same as the first figure in the statement. There are 5 points on the x-axis such that at least 1 function through the points. That is, x = 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0.\u000aExample 2. This is also the case of S = 2, C = 0. So the situation is the same as the first figure in the statement. There are 3 points on the x-axis such that at least 2 functions through the points. That is, x = 0, \u03c0, 2\u03c0.\u000aExample 3. This is the case of S = 3, C = 2. So the situation is the same as the second figure in the statement. There are 9 points on the x-axis such that at least 1 function through the points. That is, x = 0, \u03c0/4, \u03c0/2, 3\u03c0/4, \u03c0, 5\u03c0/4, 3\u03c0/2, 7\u03c0/4, 2\u03c0.\u000aExample 4. This is the case of S = 3, C = 2. So the situation is the same as the second figure in the statement. There are 5 points on the x-axis such that at least 3 functions through the points. That is, x = 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0. For example, three sine function through the point x = 0, and two sine functions and one cosine function through the point x = \u03c0/2.\u000aAuthor: chandubaba\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/SIGNWAVE\u000aTags: chandubaba march15 simple trigonometry\u000aDate Added: 6-01-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aThere are S sine functions and C cosine functions as following:\u000a\u000aai sin(2i x), 0 \u2264 x \u2264 2\u03c0, for i = 0, 1, ..., S\u22121,\u000a\u000abj cos(2j x), 0 \u2264 x \u2264 2\u03c0, for j = 0, 1, ..., C\u22121,\u000a\u000awhere ai, bj are some positive constants (and note that the answer of this problem does not depend on ai and bj).\u000aFor example, the following figures show the case of S = 2, C = 0 and the case of S = 3, C = 2.\u000aThis figure shows the case of S = 2, C = 0. There are two sine functions a1 sin(x) denoted by the red line, and a2 sin(2x) denoted by the blue line.\u000aThis figure shows the case of S = 3, C = 2. There are five functions a1 sin(x), a2 sin(2x), a3 sin(4x), b1 cos(x) and b2 cos(2x). In the figure, three sine functions are denoted by blue lines, and two cosine functions are denoted by red lines.\u000aChef wants to find the number of the points on the x-axis such that at least K functions through the points.\u000aInput\u000aThe first line of input contains an integer T, denoting the number of test cases. Then T test cases follow.\u000aEach test case contains one line. The line contains three space-separated integers S, C, K.\u000aOutput\u000aFor each test case, print the number of the points on the x-axis such that at least K functions through the points.\u000aConstraints and Subtasks\u000a1 \u2264 T \u2264 200\u000aSubtask 1: 15 points\u000a0 \u2264 S \u2264 12\u000a0 \u2264 C \u2264 12\u000a1 \u2264 K \u2264 25\u000aSubtask 2: 30 points\u000a0 \u2264 S \u2264 50\u000aC = 0\u000a1 \u2264 K \u2264 50\u000aSubtask 3: 25 points\u000a0 \u2264 S \u2264 50\u000a0 \u2264 C \u2264 50\u000aK = 1\u000aSubtask 4: 30 points\u000a0 \u2264 S \u2264 50\u000a0 \u2264 C \u2264 50\u000a1 \u2264 K \u2264 100\u000aExample\u000aInput:\u000a4\u000a2 0 1\u000a2 0 2\u000a3 2 1\u000a3 2 3\u000a\u000aOutput:\u000a5\u000a3\u000a9\u000a5\u000aExplanation\u000aExample 1. This is the case of S = 2, C = 0. So the situation is the same as the first figure in the statement. There are 5 points on the x-axis such that at least 1 function through the points. That is, x = 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0.\u000aExample 2. This is also the case of S = 2, C = 0. So the situation is the same as the first figure in the statement. There are 3 points on the x-axis such that at least 2 functions through the points. That is, x = 0, \u03c0, 2\u03c0.\u000aExample 3. This is the case of S = 3, C = 2. So the situation is the same as the second figure in the statement. There are 9 points on the x-axis such that at least 1 function through the points. That is, x = 0, \u03c0/4, \u03c0/2, 3\u03c0/4, \u03c0, 5\u03c0/4, 3\u03c0/2, 7\u03c0/4, 2\u03c0.\u000aExample 4. This is the case of S = 3, C = 2. So the situation is the same as the second figure in the statement. There are 5 points on the x-axis such that at least 3 functions through the points. That is, x = 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0. For example, three sine function through the point x = 0, and two sine functions and one cosine function through the point x = \u03c0/2.\u000aAuthor: chandubaba\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/SIGNWAVE\u000aTags: chandubaba march15 simple trigonometry\u000aDate Added: 6-01-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian There are S sine functions and C cosine functions as following: S C   ai sin(2i x), 0 \u2264 x \u2264 2\u03c0, for i = 0, 1, ..., S\u22121, ai sin(2i x) i i 0 \u2264 x \u2264 2\u03c0 i = 0, 1, ..., S\u22121    bj cos(2j x), 0 \u2264 x \u2264 2\u03c0, for j = 0, 1, ..., C\u22121, bj cos(2j x) j j 0 \u2264 x \u2264 2\u03c0 j = 0, 1, ..., C\u22121  where ai, bj are some positive constants (and note that the answer of this problem does not depend on ai and bj).  ai, bj i j ai i bj j For example, the following figures show the case of S = 2, C = 0 and the case of S = 3, C = 2. S = 2, C = 0 S = 3, C = 2   This figure shows the case of S = 2, C = 0. There are two sine functions a1 sin(x) denoted by the red line, and a2 sin(2x) denoted by the blue line. S = 2, C = 0 a1 sin(x) 1 a2 sin(2x) 2   This figure shows the case of S = 3, C = 2. There are five functions a1 sin(x), a2 sin(2x), a3 sin(4x), b1 cos(x) and b2 cos(2x). In the figure, three sine functions are denoted by blue lines, and two cosine functions are denoted by red lines. S = 3, C = 2 a1 sin(x) 1 a2 sin(2x) 2 a3 sin(4x) 3 b1 cos(x) 1 b2 cos(2x) 2 Chef wants to find the number of the points on the x-axis such that at least K functions through the points. x K Input The first line of input contains an integer T, denoting the number of test cases. Then T test cases follow. T T Each test case contains one line. The line contains three space-separated integers S, C, K. S, C, K Output For each test case, print the number of the points on the x-axis such that at least K functions through the points. x K Constraints and Subtasks 1 \u2264 T \u2264 200 1 \u2264 T \u2264 200 1 \u2264 T \u2264 200  Subtask 1: 15 points Subtask 1: 15 points 0 \u2264 S \u2264 12\u000a0 \u2264 C \u2264 12\u000a1 \u2264 K \u2264 25 0 \u2264 S \u2264 12 0 \u2264 S \u2264 12 0 \u2264 C \u2264 12 0 \u2264 C \u2264 12 1 \u2264 K \u2264 25 1 \u2264 K \u2264 25  Subtask 2: 30 points Subtask 2: 30 points 0 \u2264 S \u2264 50\u000aC = 0\u000a1 \u2264 K \u2264 50 0 \u2264 S \u2264 50 0 \u2264 S \u2264 50 C = 0 C = 0 1 \u2264 K \u2264 50 1 \u2264 K \u2264 50  Subtask 3: 25 points Subtask 3: 25 points 0 \u2264 S \u2264 50\u000a0 \u2264 C \u2264 50\u000aK = 1 0 \u2264 S \u2264 50 0 \u2264 S \u2264 50 0 \u2264 C \u2264 50 0 \u2264 C \u2264 50 K = 1 K = 1  Subtask 4: 30 points Subtask 4: 30 points 0 \u2264 S \u2264 50\u000a0 \u2264 C \u2264 50\u000a1 \u2264 K \u2264 100 0 \u2264 S \u2264 50 0 \u2264 S \u2264 50 0 \u2264 C \u2264 50 0 \u2264 C \u2264 50 1 \u2264 K \u2264 100 1 \u2264 K \u2264 100 Example Input:\u000a4\u000a2 0 1\u000a2 0 2\u000a3 2 1\u000a3 2 3\u000a\u000aOutput:\u000a5\u000a3\u000a9\u000a5 Input: Output: Explanation Example 1. This is the case of S = 2, C = 0. So the situation is the same as the first figure in the statement. There are 5 points on the x-axis such that at least 1 function through the points. That is, x = 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0. Example 1. S = 2, C = 0 5 x 1 x = 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0 Example 2. This is also the case of S = 2, C = 0. So the situation is the same as the first figure in the statement. There are 3 points on the x-axis such that at least 2 functions through the points. That is, x = 0, \u03c0, 2\u03c0. Example 2. S = 2, C = 0 3 x 2 x = 0, \u03c0, 2\u03c0 Example 3. This is the case of S = 3, C = 2. So the situation is the same as the second figure in the statement. There are 9 points on the x-axis such that at least 1 function through the points. That is, x = 0, \u03c0/4, \u03c0/2, 3\u03c0/4, \u03c0, 5\u03c0/4, 3\u03c0/2, 7\u03c0/4, 2\u03c0. Example 3. S = 3, C = 2 9 x 1 x = 0, \u03c0/4, \u03c0/2, 3\u03c0/4, \u03c0, 5\u03c0/4, 3\u03c0/2, 7\u03c0/4, 2\u03c0 Example 4. This is the case of S = 3, C = 2. So the situation is the same as the second figure in the statement. There are 5 points on the x-axis such that at least 3 functions through the points. That is, x = 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0. For example, three sine function through the point x = 0, and two sine functions and one cosine function through the point x = \u03c0/2. Example 4. S = 3, C = 2 5 x 3 x = 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0 x = 0 x = \u03c0/2  Author: chandubaba\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/SIGNWAVE\u000aTags: chandubaba march15 simple trigonometry\u000aDate Added: 6-01-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: chandubaba\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/SIGNWAVE\u000aTags: chandubaba march15 simple trigonometry\u000aDate Added: 6-01-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: chandubaba Author: chandubaba chandubaba Tester: laycurse Tester: laycurse laycurse Editorial: http://discuss.codechef.com/problems/SIGNWAVE Editorial: http://discuss.codechef.com/problems/SIGNWAVE http://discuss.codechef.com/problems/SIGNWAVE Tags: chandubaba march15 simple trigonometry Tags: chandubaba march15 simple trigonometry chandubaba march15 simple trigonometry Date Added: 6-01-2015 Date Added: 6-01-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V chandubaba march15 simple trigonometry
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/SIGNWAVE
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVThere are S sine functions and C cosine functions as following:
+p18
+aV
+p19
+aVai sin(2i x), 0 \u2264 x \u2264 2\u03c0, for i = 0, 1, ..., S\u22121,
+p20
+ag19
+aVbj cos(2j x), 0 \u2264 x \u2264 2\u03c0, for j = 0, 1, ..., C\u22121,
+p21
+ag19
+aVwhere ai, bj are some positive constants (and note that the answer of this problem does not depend on ai and bj).
+p22
+aVFor example, the following figures show the case of S = 2, C = 0 and the case of S = 3, C = 2.
+p23
+aVThis figure shows the case of S = 2, C = 0. There are two sine functions a1 sin(x) denoted by the red line, and a2 sin(2x) denoted by the blue line.
+p24
+aVThis figure shows the case of S = 3, C = 2. There are five functions a1 sin(x), a2 sin(2x), a3 sin(4x), b1 cos(x) and b2 cos(2x). In the figure, three sine functions are denoted by blue lines, and two cosine functions are denoted by red lines.
+p25
+aVChef wants to find the number of the points on the x-axis such that at least K functions through the points.
+p26
+asS'input'
+p27
+(lp28
+VInput
+p29
+aVThe first line of input contains an integer T, denoting the number of test cases. Then T test cases follow.
+p30
+aVEach test case contains one line. The line contains three space-separated integers S, C, K.
+p31
+aVOutput
+p32
+aVFor each test case, print the number of the points on the x-axis such that at least K functions through the points.
+p33
+asS'constraints'
+p34
+(lp35
+VConstraints and Subtasks
+p36
+aV1 \u2264 T \u2264 200
+p37
+aVSubtask 1: 15 points
+p38
+aV0 \u2264 S \u2264 12
+p39
+aV0 \u2264 C \u2264 12
+p40
+aV1 \u2264 K \u2264 25
+p41
+aVSubtask 2: 30 points
+p42
+aV0 \u2264 S \u2264 50
+p43
+aVC = 0
+p44
+aV1 \u2264 K \u2264 50
+p45
+aVSubtask 3: 25 points
+p46
+aV0 \u2264 S \u2264 50
+p47
+aV0 \u2264 C \u2264 50
+p48
+aVK = 1
+p49
+aVSubtask 4: 30 points
+p50
+aV0 \u2264 S \u2264 50
+p51
+aV0 \u2264 C \u2264 50
+p52
+aV1 \u2264 K \u2264 100
+p53
+asS'id'
+p54
+c__builtin__
+id
+p55
+sS'name'
+p56
+VSIGNWAVE
+p57
+sb.

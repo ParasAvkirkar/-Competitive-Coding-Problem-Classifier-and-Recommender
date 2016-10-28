@@ -1,0 +1,89 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 - 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aSpring is interesting season of year. Chef is thinking about different things, but last time he thinks about interesting game - "Strange Matrix".\u000aChef has a matrix that consists of n rows, each contains m elements. Initially, the element aij of matrix equals j. (1 \u2264 i \u2264 n, 1 \u2264 j \u2264 m).\u000aThen p times some element aij is increased by 1.\u000aThen Chef needs to calculate the following:\u000aFor each row he tries to move from the last element (with number m) to the first one (with the number 1).\u000aWhile staying in aij Chef can only move to aij - 1 only if aij - 1 \u2264 aij.\u000aThe cost of such a movement is aij - aij - 1.\u000aOtherwise Chef can't move and lose (in this row).\u000aIf Chef can move from the last element of the row to the first one, then the answer is the total cost of all the movements.\u000aIf Chef can't move from the last element of the row to the first one, then the answer is -1.\u000aHelp Chef to find answers for all the rows after P commands of increasing.\u000aInput\u000aThe first line contains three integers n, m and p denoting the number of rows, the number of elements a single row and the number of increasing commands.\u000aEach of next p lines contains two integers i and j denoting that the element aij is increased by one.\u000aOutput\u000aFor each row in a single line print the answer after the P increasing commands.\u000a  Constraints\u000a1 \u2264 n, m, p \u2264 10 ^ 5\u000a1 \u2264 i \u2264 n\u000a1 \u2264 j \u2264 m\u000a  Example\u000aInput:\u000a4 4 6\u000a2 2\u000a3 2 \u000a3 2 \u000a4 3\u000a4 4\u000a4 3\u000a\u000aOutput:\u000a3\u000a3\u000a-1\u000a4\u000a  Explanation\u000aHere is the whole matrix after P commands:\u000a1 2 3 4\u000a1 3 3 4\u000a1 4 3 4\u000a1 2 5 5\u000a Explanations to the answer: \u000aThe first line is without changes: 4-3=1, 3-2=1, 2-1=1. answer = 3. \u000aThe second line: 4-3=1, 3-3=0, 3-1=2. The answer is 3. \u000aThe third line: 4-3=1, 3-4=-1, Chef can't move to the first number here. Therefore, the answer is -1. \u000aThe fourth line: 5-5=0, 5-2=3, 2-1=1. The answer is 4. \u000aAuthor: berezin\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFBM\u000aTags: berezin easy implementation may14\u000aDate Added: 18-03-2014\u000aTime Limit: 1 - 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aSpring is interesting season of year. Chef is thinking about different things, but last time he thinks about interesting game - "Strange Matrix".\u000aChef has a matrix that consists of n rows, each contains m elements. Initially, the element aij of matrix equals j. (1 \u2264 i \u2264 n, 1 \u2264 j \u2264 m).\u000aThen p times some element aij is increased by 1.\u000aThen Chef needs to calculate the following:\u000aFor each row he tries to move from the last element (with number m) to the first one (with the number 1).\u000aWhile staying in aij Chef can only move to aij - 1 only if aij - 1 \u2264 aij.\u000aThe cost of such a movement is aij - aij - 1.\u000aOtherwise Chef can't move and lose (in this row).\u000aIf Chef can move from the last element of the row to the first one, then the answer is the total cost of all the movements.\u000aIf Chef can't move from the last element of the row to the first one, then the answer is -1.\u000aHelp Chef to find answers for all the rows after P commands of increasing.\u000aInput\u000aThe first line contains three integers n, m and p denoting the number of rows, the number of elements a single row and the number of increasing commands.\u000aEach of next p lines contains two integers i and j denoting that the element aij is increased by one.\u000aOutput\u000aFor each row in a single line print the answer after the P increasing commands.\u000a  Constraints\u000a1 \u2264 n, m, p \u2264 10 ^ 5\u000a1 \u2264 i \u2264 n\u000a1 \u2264 j \u2264 m\u000a  Example\u000aInput:\u000a4 4 6\u000a2 2\u000a3 2 \u000a3 2 \u000a4 3\u000a4 4\u000a4 3\u000a\u000aOutput:\u000a3\u000a3\u000a-1\u000a4\u000a  Explanation\u000aHere is the whole matrix after P commands:\u000a1 2 3 4\u000a1 3 3 4\u000a1 4 3 4\u000a1 2 5 5\u000a Explanations to the answer: \u000aThe first line is without changes: 4-3=1, 3-2=1, 2-1=1. answer = 3. \u000aThe second line: 4-3=1, 3-3=0, 3-1=2. The answer is 3. \u000aThe third line: 4-3=1, 3-4=-1, Chef can't move to the first number here. Therefore, the answer is -1. \u000aThe fourth line: 5-5=0, 5-2=3, 2-1=1. The answer is 4. \u000aAuthor: berezin\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFBM\u000aTags: berezin easy implementation may14\u000aDate Added: 18-03-2014\u000aTime Limit: 1 - 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Spring is interesting season of year. Chef is thinking about different things, but last time he thinks about interesting game - "Strange Matrix". Chef has a matrix that consists of n rows, each contains m elements. Initially, the element aij of matrix equals j. (1 \u2264 i \u2264 n, 1 \u2264 j \u2264 m). n m aij i j j (1 \u2264 i \u2264 n, 1 \u2264 j \u2264 m) Then p times some element aij is increased by 1. p aij i j 1 Then Chef needs to calculate the following: For each row he tries to move from the last element (with number m) to the first one (with the number 1).\u000aWhile staying in aij Chef can only move to aij - 1 only if aij - 1 \u2264 aij.\u000aThe cost of such a movement is aij - aij - 1.\u000aOtherwise Chef can't move and lose (in this row).\u000aIf Chef can move from the last element of the row to the first one, then the answer is the total cost of all the movements.\u000aIf Chef can't move from the last element of the row to the first one, then the answer is -1. For each row he tries to move from the last element (with number m) to the first one (with the number 1). m 1 While staying in aij Chef can only move to aij - 1 only if aij - 1 \u2264 aij. aij i j aij - 1 i j - 1 aij - 1 \u2264 aij i j - 1 aij i j The cost of such a movement is aij - aij - 1. aij i j aij - 1 i j - 1 Otherwise Chef can't move and lose (in this row). If Chef can move from the last element of the row to the first one, then the answer is the total cost of all the movements. If Chef can't move from the last element of the row to the first one, then the answer is -1. -1 Help Chef to find answers for all the rows after P commands of increasing. P Input  The first line contains three integers n, m and p denoting the number of rows, the number of elements a single row and the number of increasing commands.\u000aEach of next p lines contains two integers i and j denoting that the element aij is increased by one. The first line contains three integers n, m and p denoting the number of rows, the number of elements a single row and the number of increasing commands. n m p Each of next p lines contains two integers i and j denoting that the element aij is increased by one. p i j aij i j  Output For each row in a single line print the answer after the P increasing commands. For each row in a single line print the answer after the P increasing commands. P   Constraints 1 \u2264 n, m, p \u2264 10 ^ 5\u000a1 \u2264 i \u2264 n\u000a1 \u2264 j \u2264 m 1 \u2264 n, m, p \u2264 10 ^ 5 1 n, m, p 10 ^ 5 1 \u2264 i \u2264 n 1 i n 1 \u2264 j \u2264 m 1 j m   Example Input:\u000a4 4 6\u000a2 2\u000a3 2 \u000a3 2 \u000a4 3\u000a4 4\u000a4 3\u000a\u000aOutput:\u000a3\u000a3\u000a-1\u000a4 Input: Output:   Explanation Here is the whole matrix after P commands:\u000a1 2 3 4\u000a1 3 3 4\u000a1 4 3 4\u000a1 2 5 5\u000a Explanations to the answer: \u000aThe first line is without changes: 4-3=1, 3-2=1, 2-1=1. answer = 3. \u000aThe second line: 4-3=1, 3-3=0, 3-1=2. The answer is 3. \u000aThe third line: 4-3=1, 3-4=-1, Chef can't move to the first number here. Therefore, the answer is -1. \u000aThe fourth line: 5-5=0, 5-2=3, 2-1=1. The answer is 4.  Here is the whole matrix after P commands: P  Explanations to the answer:  The first line is without changes: 4-3=1, 3-2=1, 2-1=1. answer = 3. \u000aThe second line: 4-3=1, 3-3=0, 3-1=2. The answer is 3. \u000aThe third line: 4-3=1, 3-4=-1, Chef can't move to the first number here. Therefore, the answer is -1. \u000aThe fourth line: 5-5=0, 5-2=3, 2-1=1. The answer is 4.  The first line is without changes: 4-3=1, 3-2=1, 2-1=1. answer = 3.  The second line: 4-3=1, 3-3=0, 3-1=2. The answer is 3.  The third line: 4-3=1, 3-4=-1, Chef can't move to the first number here. Therefore, the answer is -1.  The fourth line: 5-5=0, 5-2=3, 2-1=1. The answer is 4.   Author: berezin\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFBM\u000aTags: berezin easy implementation may14\u000aDate Added: 18-03-2014\u000aTime Limit: 1 - 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFBM\u000aTags: berezin easy implementation may14\u000aDate Added: 18-03-2014\u000aTime Limit: 1 - 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin Author: berezin berezin Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/CHEFBM Editorial: http://discuss.codechef.com/problems/CHEFBM http://discuss.codechef.com/problems/CHEFBM Tags: berezin easy implementation may14 Tags: berezin easy implementation may14 berezin easy implementation may14 Date Added: 18-03-2014 Date Added: 18-03-2014 Time Limit: 1 - 2 sec Time Limit: 1 - 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V berezin easy implementation may14
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFBM
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVSpring is interesting season of year. Chef is thinking about different things, but last time he thinks about interesting game - "Strange Matrix".
+p18
+aVChef has a matrix that consists of n rows, each contains m elements. Initially, the element aij of matrix equals j. (1 \u2264 i \u2264 n, 1 \u2264 j \u2264 m).
+p19
+aVThen p times some element aij is increased by 1.
+p20
+aVThen Chef needs to calculate the following:
+p21
+aVFor each row he tries to move from the last element (with number m) to the first one (with the number 1).
+p22
+aVWhile staying in aij Chef can only move to aij - 1 only if aij - 1 \u2264 aij.
+p23
+aVThe cost of such a movement is aij - aij - 1.
+p24
+aVOtherwise Chef can't move and lose (in this row).
+p25
+aVIf Chef can move from the last element of the row to the first one, then the answer is the total cost of all the movements.
+p26
+aVIf Chef can't move from the last element of the row to the first one, then the answer is -1.
+p27
+aVHelp Chef to find answers for all the rows after P commands of increasing.
+p28
+asS'input'
+p29
+(lp30
+VInput
+p31
+aVThe first line contains three integers n, m and p denoting the number of rows, the number of elements a single row and the number of increasing commands.
+p32
+aVEach of next p lines contains two integers i and j denoting that the element aij is increased by one.
+p33
+aVOutput
+p34
+aVFor each row in a single line print the answer after the P increasing commands.
+p35
+asS'constraints'
+p36
+(lp37
+VConstraints
+p38
+aV1 \u2264 n, m, p \u2264 10 ^ 5
+p39
+aV1 \u2264 i \u2264 n
+p40
+aV1 \u2264 j \u2264 m
+p41
+asS'id'
+p42
+c__builtin__
+id
+p43
+sS'name'
+p44
+VCHEFBM
+p45
+sb.

@@ -1,0 +1,85 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is working with lines on a 2-D plane.\u000aHe knows that every line on a plane can be clearly defined by three coefficients A, B and C: any point (x, y) lies on the line if and only if A * x + B * y + C = 0.\u000aLet's call a set of lines to be perfect if there does not exist a point that belongs to two or more distinct lines of the set.\u000aHe has a set of lines on a plane and he wants to find out the size of the largest perfect subset of this set.\u000aInput\u000aThe first line of input contains one integers T denoting the number of test cases.\u000aEach test case consists of one integer N denoting number of lines.\u000aNext N lines contain 3 space-separated integers each denoting coefficients A, B and C respectively.\u000aOutput\u000aFor each test case output the cardinality of the largest perfect subset in a single line.\u000aConstraints\u000a1 \u2264 N \u2264 Nmax\u000aSum over all N for all test cases \u2264 NSmax\u000a|A|, |B|, |C| \u2264 109\u000aFor a line with coefficients A, B and C either A or B is not zero.\u000aSubtasks\u000aSubtask #1 [35 points]: Nmax = 5000, NSmax = 50000\u000aSubtask #2 [65 points]: Nmax = NSmax = 105\u000aExample\u000aInput:\u000a1\u000a5\u000a1 0 0\u000a1 2 3\u000a3 4 5\u000a30 40 0\u000a30 40 50\u000a\u000aOutput:\u000a2\u000aExplanation\u000aLines 3*x + 4*y + 5 = 0 and 30*x + 40*y + 0 = 0 form a biggest perfect subset.\u000aAuthor: cenadar\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/PLANEDIV\u000aTags: cenadar dec15 euclidean gcd parallel sets simple sorting\u000aDate Added: 19-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is working with lines on a 2-D plane.\u000aHe knows that every line on a plane can be clearly defined by three coefficients A, B and C: any point (x, y) lies on the line if and only if A * x + B * y + C = 0.\u000aLet's call a set of lines to be perfect if there does not exist a point that belongs to two or more distinct lines of the set.\u000aHe has a set of lines on a plane and he wants to find out the size of the largest perfect subset of this set.\u000aInput\u000aThe first line of input contains one integers T denoting the number of test cases.\u000aEach test case consists of one integer N denoting number of lines.\u000aNext N lines contain 3 space-separated integers each denoting coefficients A, B and C respectively.\u000aOutput\u000aFor each test case output the cardinality of the largest perfect subset in a single line.\u000aConstraints\u000a1 \u2264 N \u2264 Nmax\u000aSum over all N for all test cases \u2264 NSmax\u000a|A|, |B|, |C| \u2264 109\u000aFor a line with coefficients A, B and C either A or B is not zero.\u000aSubtasks\u000aSubtask #1 [35 points]: Nmax = 5000, NSmax = 50000\u000aSubtask #2 [65 points]: Nmax = NSmax = 105\u000aExample\u000aInput:\u000a1\u000a5\u000a1 0 0\u000a1 2 3\u000a3 4 5\u000a30 40 0\u000a30 40 50\u000a\u000aOutput:\u000a2\u000aExplanation\u000aLines 3*x + 4*y + 5 = 0 and 30*x + 40*y + 0 = 0 form a biggest perfect subset.\u000aAuthor: cenadar\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/PLANEDIV\u000aTags: cenadar dec15 euclidean gcd parallel sets simple sorting\u000aDate Added: 19-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef is working with lines on a 2-D plane. He knows that every line on a plane can be clearly defined by three coefficients A, B and C: any point (x, y) lies on the line if and only if A * x + B * y + C = 0. A B C (x, y) A * x + B * y + C = 0 Let's call a set of lines to be perfect if there does not exist a point that belongs to two or more distinct lines of the set. perfect He has a set of lines on a plane and he wants to find out the size of the largest perfect subset of this set. perfect Input The first line of input contains one integers T denoting the number of test cases. T Each test case consists of one integer N denoting number of lines. N Next N lines contain 3 space-separated integers each denoting coefficients A, B and C respectively. N 3 A B C Output For each test case output the cardinality of the largest perfect subset in a single line. Constraints 1 \u2264 N \u2264 Nmax\u000aSum over all N for all test cases \u2264 NSmax\u000a|A|, |B|, |C| \u2264 109\u000aFor a line with coefficients A, B and C either A or B is not zero. 1 \u2264 N \u2264 Nmax 1 N Nmax max Sum over all N for all test cases \u2264 NSmax N NSmax max |A|, |B|, |C| \u2264 109 |A|, |B|, |C| 109 9 For a line with coefficients A, B and C either A or B is not zero. A B C A B Subtasks Subtask #1 [35 points]: Nmax = 5000, NSmax = 50000\u000aSubtask #2 [65 points]: Nmax = NSmax = 105 Subtask #1 [35 points]: Nmax = 5000, NSmax = 50000 Subtask #1 [35 points]: Nmax = 5000, NSmax = 50000 max max Subtask #2 [65 points]: Nmax = NSmax = 105 Subtask #2 [65 points]: Nmax = NSmax = 105 max max 5 Example Input:\u000a1\u000a5\u000a1 0 0\u000a1 2 3\u000a3 4 5\u000a30 40 0\u000a30 40 50\u000a\u000aOutput:\u000a2 Input: 1\u000a5\u000a1 0 0\u000a1 2 3\u000a3 4 5\u000a30 40 0\u000a30 40 50 Output: 2 Explanation Lines 3*x + 4*y + 5 = 0 and 30*x + 40*y + 0 = 0 form a biggest perfect subset. 3*x + 4*y + 5 = 0 30*x + 40*y + 0 = 0  Author: cenadar\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/PLANEDIV\u000aTags: cenadar dec15 euclidean gcd parallel sets simple sorting\u000aDate Added: 19-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: cenadar\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/PLANEDIV\u000aTags: cenadar dec15 euclidean gcd parallel sets simple sorting\u000aDate Added: 19-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: cenadar Author: cenadar cenadar Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/PLANEDIV Editorial: http://discuss.codechef.com/problems/PLANEDIV http://discuss.codechef.com/problems/PLANEDIV Tags: cenadar dec15 euclidean gcd parallel sets simple sorting Tags: cenadar dec15 euclidean gcd parallel sets simple sorting cenadar dec15 euclidean gcd parallel sets simple sorting Date Added: 19-09-2015 Date Added: 19-09-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cenadar dec15 euclidean gcd parallel sets simple sorting
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/PLANEDIV
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef is working with lines on a 2-D plane.
+p18
+aVHe knows that every line on a plane can be clearly defined by three coefficients A, B and C: any point (x, y) lies on the line if and only if A * x + B * y + C = 0.
+p19
+aVLet's call a set of lines to be perfect if there does not exist a point that belongs to two or more distinct lines of the set.
+p20
+aVHe has a set of lines on a plane and he wants to find out the size of the largest perfect subset of this set.
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVThe first line of input contains one integers T denoting the number of test cases.
+p25
+aVEach test case consists of one integer N denoting number of lines.
+p26
+aVNext N lines contain 3 space-separated integers each denoting coefficients A, B and C respectively.
+p27
+aVOutput
+p28
+aVFor each test case output the cardinality of the largest perfect subset in a single line.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 N \u2264 Nmax
+p33
+aVSum over all N for all test cases \u2264 NSmax
+p34
+aV|A|, |B|, |C| \u2264 109
+p35
+aVFor a line with coefficients A, B and C either A or B is not zero.
+p36
+aVSubtasks
+p37
+aVSubtask #1 [35 points]: Nmax = 5000, NSmax = 50000
+p38
+aVSubtask #2 [65 points]: Nmax = NSmax = 105
+p39
+asS'id'
+p40
+c__builtin__
+id
+p41
+sS'name'
+p42
+VPLANEDIV
+p43
+sb.

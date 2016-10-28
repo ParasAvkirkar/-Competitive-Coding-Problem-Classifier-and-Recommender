@@ -1,0 +1,71 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 3 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is well known for his delicious cakes with various flavors and shapes. One of his famous cakes is in the shape of a rooted binary tree of height H. The rooted binary tree has a very interesting property - for each non leaf node v, the height of the sub-tree rooted at the right child of v is exactly 1 more than that of the sub-tree rooted at the left child of node v. Note that the height of the leaf node of the tree is considered to be one and that of an empty subtree is considered to be zero. You can observe that the above property uniquely determines the rooted tree for a fixed height. So, instead of giving the entire rooted tree, we will just specify its height in the input.\u000aChef wants to cut his cake into some vertex-disjoint paths such that each node belongs to exactly one path. He wants your help to find out the minimum number of vertex-disjoint paths that cake be cut into.\u000aLet us take an example. The picture below describes the tree of height H = 4. Chef can cut this tree into 2 vertex-disjoint paths. These two paths are shown in green and red colors, respectively. This is the minimum number of paths that Chef can cut the cake into.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. This is followed by the description of the test cases.\u000aThe only line of each test case contains a single integer H.\u000aOutput\u000aFor each test case, output a single integer in a separate line denoting the minimum number of vertex disjoint paths into which cake can be cut. As the answer could be large, output it modulo 109 + 7\u000aConstraints\u000a1 \u2264 T \u2264 104\u000a1 \u2264 H \u2264 1018\u000aExample\u000aInput:\u000a2\u000a1\u000a4\u000a\u000aOutput:\u000a1\u000a2\u000aExplanation\u000aExample case 1. The rooted tree will consist of only 1 node. So, Chef can cut the entire cake into 1 vertex-disjoint path consisting of the single node itself.\u000aExample case 2. This case is already explained in the problem description.\u000aAuthor: kingofnumbers\u000aTags: kingofnumbers\u000aDate Added: 3-04-2016\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is well known for his delicious cakes with various flavors and shapes. One of his famous cakes is in the shape of a rooted binary tree of height H. The rooted binary tree has a very interesting property - for each non leaf node v, the height of the sub-tree rooted at the right child of v is exactly 1 more than that of the sub-tree rooted at the left child of node v. Note that the height of the leaf node of the tree is considered to be one and that of an empty subtree is considered to be zero. You can observe that the above property uniquely determines the rooted tree for a fixed height. So, instead of giving the entire rooted tree, we will just specify its height in the input.\u000aChef wants to cut his cake into some vertex-disjoint paths such that each node belongs to exactly one path. He wants your help to find out the minimum number of vertex-disjoint paths that cake be cut into.\u000aLet us take an example. The picture below describes the tree of height H = 4. Chef can cut this tree into 2 vertex-disjoint paths. These two paths are shown in green and red colors, respectively. This is the minimum number of paths that Chef can cut the cake into.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. This is followed by the description of the test cases.\u000aThe only line of each test case contains a single integer H.\u000aOutput\u000aFor each test case, output a single integer in a separate line denoting the minimum number of vertex disjoint paths into which cake can be cut. As the answer could be large, output it modulo 109 + 7\u000aConstraints\u000a1 \u2264 T \u2264 104\u000a1 \u2264 H \u2264 1018\u000aExample\u000aInput:\u000a2\u000a1\u000a4\u000a\u000aOutput:\u000a1\u000a2\u000aExplanation\u000aExample case 1. The rooted tree will consist of only 1 node. So, Chef can cut the entire cake into 1 vertex-disjoint path consisting of the single node itself.\u000aExample case 2. This case is already explained in the problem description.\u000aAuthor: kingofnumbers\u000aTags: kingofnumbers\u000aDate Added: 3-04-2016\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef is well known for his delicious cakes with various flavors and shapes. One of his famous cakes is in the shape of a rooted binary tree of height H. The rooted binary tree has a very interesting property - for each non leaf node v, the height of the sub-tree rooted at the right child of v is exactly 1 more than that of the sub-tree rooted at the left child of node v. Note that the height of the leaf node of the tree is considered to be one and that of an empty subtree is considered to be zero. You can observe that the above property uniquely determines the rooted tree for a fixed height. So, instead of giving the entire rooted tree, we will just specify its height in the input. H v v v Chef wants to cut his cake into some vertex-disjoint paths such that each node belongs to exactly one path. He wants your help to find out the minimum number of vertex-disjoint paths that cake be cut into. Let us take an example. The picture below describes the tree of height H = 4. Chef can cut this tree into 2 vertex-disjoint paths. These two paths are shown in green and red colors, respectively. This is the minimum number of paths that Chef can cut the cake into. H = 4   Input The first line of the input contains an integer T denoting the number of test cases. This is followed by the description of the test cases. T The only line of each test case contains a single integer H. H Output For each test case, output a single integer in a separate line denoting the minimum number of vertex disjoint paths into which cake can be cut. As the answer could be large, output it modulo 109 + 7 109 + 7 9 Constraints 1 \u2264 T \u2264 104\u000a1 \u2264 H \u2264 1018 1 \u2264 T \u2264 104 1 T 104 4 1 \u2264 H \u2264 1018 1 H 1018 18 Example Input:\u000a2\u000a1\u000a4\u000a\u000aOutput:\u000a1\u000a2 Input: 2\u000a1\u000a4 Output: 1\u000a2 Explanation Example case 1. The rooted tree will consist of only 1 node. So, Chef can cut the entire cake into 1 vertex-disjoint path consisting of the single node itself. Example case 1. Example case 2. This case is already explained in the problem description. Example case 2.  Author: kingofnumbers\u000aTags: kingofnumbers\u000aDate Added: 3-04-2016\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kingofnumbers\u000aTags: kingofnumbers\u000aDate Added: 3-04-2016\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kingofnumbers Author: kingofnumbers kingofnumbers Tags: kingofnumbers Tags: kingofnumbers kingofnumbers Date Added: 3-04-2016 Date Added: 3-04-2016 Time Limit: 3 sec Time Limit: 3 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V kingofnumbers
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/TREECAKE
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef is well known for his delicious cakes with various flavors and shapes. One of his famous cakes is in the shape of a rooted binary tree of height H. The rooted binary tree has a very interesting property - for each non leaf node v, the height of the sub-tree rooted at the right child of v is exactly 1 more than that of the sub-tree rooted at the left child of node v. Note that the height of the leaf node of the tree is considered to be one and that of an empty subtree is considered to be zero. You can observe that the above property uniquely determines the rooted tree for a fixed height. So, instead of giving the entire rooted tree, we will just specify its height in the input.
+p18
+aVChef wants to cut his cake into some vertex-disjoint paths such that each node belongs to exactly one path. He wants your help to find out the minimum number of vertex-disjoint paths that cake be cut into.
+p19
+aVLet us take an example. The picture below describes the tree of height H = 4. Chef can cut this tree into 2 vertex-disjoint paths. These two paths are shown in green and red colors, respectively. This is the minimum number of paths that Chef can cut the cake into.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. This is followed by the description of the test cases.
+p24
+aVThe only line of each test case contains a single integer H.
+p25
+aVOutput
+p26
+aVFor each test case, output a single integer in a separate line denoting the minimum number of vertex disjoint paths into which cake can be cut. As the answer could be large, output it modulo 109 + 7
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV1 \u2264 T \u2264 104
+p31
+aV1 \u2264 H \u2264 1018
+p32
+asS'id'
+p33
+c__builtin__
+id
+p34
+sS'name'
+p35
+VTREECAKE
+p36
+sb.

@@ -1,0 +1,81 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aMaxim likes arithmetic progressions and does not like sequences which are not arithmetic progressions.\u000aNow he is interested in the question: how many subsequences of his sequence a, consisting of n elements, are not arithmetic progressions.\u000aSequence s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] is called a subsequence of sequence a[1],\u2009\u2009a[2],\u2009\u2009...,\u2009\u2009a[n], if there will be such increasing sequence of indices i[1],\u2009i[2],\u2009...,\u2009i[k] (1\u2009\u2009\u2264\u2009\u2009i[1]\u2009\u2009<\u2009\u2009i[2]\u2009\u2009<\u2009... \u2009\u2009<\u2009\u2009i[k]\u2009\u2009\u2264\u2009\u2009n), that a[i[j]]\u2009\u2009=\u2009\u2009s[j]. In other words, sequence s can be obtained from the a by deleting some elements.\u000aSequence s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] is called an arithmetic progression, if it can be represented as :\u000as[1]\u2009=\u2009p, where p \u2014 some integer;\u000as[i]\u2009=\u2009p\u2009+\u2009(i\u2009-\u20091)·q (i\u2009>\u20091), where q \u2014 some integer.\u000aIn particular, the empty sequence or a sequence of one element is an arithmetic progression.\u000a  Input\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. \u000aThe first line of each test case contains an integer n \u2014 the number of elements in the sequence. The next line of the test case contains n integer, a[1],\u2009a[2],\u2009...,\u2009a[n] \u2014 elements of the sequence.\u000aOutput\u000aFor each test case print the remainder of the division the answer on 1000000007 (10^9\u2009+\u20097). All answers print on different lines. \u000aConstraints\u000a 1\u2009\u2264\u2009T\u2009\u2264\u200910\u000a 1\u2009\u2264\u2009n\u2009\u2264\u2009200000\u000a 1\u2009\u2264\u2009a[i]\u2009\u2264\u2009100\u000aExample\u000aInput:\u000a2\u000a1\u000a1\u000a3\u000a1 2 1\u000a\u000aOutput:\u000a0\u000a1\u000a  Author: sereja\u000aEditorial: http://discuss.codechef.com/problems/MAXPR\u000aTags: combinatorics dp easy june14 sereja\u000aDate Added: 25-05-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aMaxim likes arithmetic progressions and does not like sequences which are not arithmetic progressions.\u000aNow he is interested in the question: how many subsequences of his sequence a, consisting of n elements, are not arithmetic progressions.\u000aSequence s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] is called a subsequence of sequence a[1],\u2009\u2009a[2],\u2009\u2009...,\u2009\u2009a[n], if there will be such increasing sequence of indices i[1],\u2009i[2],\u2009...,\u2009i[k] (1\u2009\u2009\u2264\u2009\u2009i[1]\u2009\u2009<\u2009\u2009i[2]\u2009\u2009<\u2009... \u2009\u2009<\u2009\u2009i[k]\u2009\u2009\u2264\u2009\u2009n), that a[i[j]]\u2009\u2009=\u2009\u2009s[j]. In other words, sequence s can be obtained from the a by deleting some elements.\u000aSequence s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] is called an arithmetic progression, if it can be represented as :\u000as[1]\u2009=\u2009p, where p \u2014 some integer;\u000as[i]\u2009=\u2009p\u2009+\u2009(i\u2009-\u20091)·q (i\u2009>\u20091), where q \u2014 some integer.\u000aIn particular, the empty sequence or a sequence of one element is an arithmetic progression.\u000a  Input\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. \u000aThe first line of each test case contains an integer n \u2014 the number of elements in the sequence. The next line of the test case contains n integer, a[1],\u2009a[2],\u2009...,\u2009a[n] \u2014 elements of the sequence.\u000aOutput\u000aFor each test case print the remainder of the division the answer on 1000000007 (10^9\u2009+\u20097). All answers print on different lines. \u000aConstraints\u000a 1\u2009\u2264\u2009T\u2009\u2264\u200910\u000a 1\u2009\u2264\u2009n\u2009\u2264\u2009200000\u000a 1\u2009\u2264\u2009a[i]\u2009\u2264\u2009100\u000aExample\u000aInput:\u000a2\u000a1\u000a1\u000a3\u000a1 2 1\u000a\u000aOutput:\u000a0\u000a1\u000a  Author: sereja\u000aEditorial: http://discuss.codechef.com/problems/MAXPR\u000aTags: combinatorics dp easy june14 sereja\u000aDate Added: 25-05-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Maxim likes arithmetic progressions and does not like sequences which are not arithmetic progressions. Now he is interested in the question: how many subsequences of his sequence a, consisting of n elements, are not arithmetic progressions. a n Sequence s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] is called a subsequence of sequence a[1],\u2009\u2009a[2],\u2009\u2009...,\u2009\u2009a[n], if there will be such increasing sequence of indices i[1],\u2009i[2],\u2009...,\u2009i[k] (1\u2009\u2009\u2264\u2009\u2009i[1]\u2009\u2009<\u2009\u2009i[2]\u2009\u2009<\u2009... \u2009\u2009<\u2009\u2009i[k]\u2009\u2009\u2264\u2009\u2009n), that a[i[j]]\u2009\u2009=\u2009\u2009s[j]. In other words, sequence s can be obtained from the a by deleting some elements. s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] a[1],\u2009\u2009a[2],\u2009\u2009...,\u2009\u2009a[n] i[1],\u2009i[2],\u2009...,\u2009i[k] (1\u2009\u2009\u2264\u2009\u2009i[1]\u2009\u2009<\u2009\u2009i[2]\u2009\u2009<\u2009... \u2009\u2009<\u2009\u2009i[k]\u2009\u2009\u2264\u2009\u2009n) a[i[j]] s[j] s a Sequence s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] is called an arithmetic progression, if it can be represented as : s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] s[1]\u2009=\u2009p, where p \u2014 some integer; s[1] p p s[i]\u2009=\u2009p\u2009+\u2009(i\u2009-\u20091)·q (i\u2009>\u20091), where q \u2014 some integer. s[i] p\u2009+\u2009(i\u2009-\u20091)·q (i\u2009>\u20091) q In particular, the empty sequence or a sequence of one element is an arithmetic progression.   Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.  T T The first line of each test case contains an integer n \u2014 the number of elements in the sequence. The next line of the test case contains n integer, a[1],\u2009a[2],\u2009...,\u2009a[n] \u2014 elements of the sequence. n n a[1],\u2009a[2],\u2009...,\u2009a[n] Output For each test case print the remainder of the division the answer on 1000000007 (10^9\u2009+\u20097). All answers print on different lines.  1000000007 (10^9\u2009+\u20097) Constraints  1\u2009\u2264\u2009T\u2009\u2264\u200910 1\u2009\u2264\u2009T\u2009\u2264\u200910  1\u2009\u2264\u2009n\u2009\u2264\u2009200000  1\u2009\u2264\u2009a[i]\u2009\u2264\u2009100  Example Input:\u000a2\u000a1\u000a1\u000a3\u000a1 2 1\u000a\u000aOutput:\u000a0\u000a1 Input: Output:    Author: sereja\u000aEditorial: http://discuss.codechef.com/problems/MAXPR\u000aTags: combinatorics dp easy june14 sereja\u000aDate Added: 25-05-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja\u000aEditorial: http://discuss.codechef.com/problems/MAXPR\u000aTags: combinatorics dp easy june14 sereja\u000aDate Added: 25-05-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja Author: sereja sereja Editorial: http://discuss.codechef.com/problems/MAXPR Editorial: http://discuss.codechef.com/problems/MAXPR http://discuss.codechef.com/problems/MAXPR Tags: combinatorics dp easy june14 sereja Tags: combinatorics dp easy june14 sereja combinatorics dp easy june14 sereja Date Added: 25-05-2013 Date Added: 25-05-2013 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V combinatorics dp easy june14 sereja
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/MAXPR
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVMaxim likes arithmetic progressions and does not like sequences which are not arithmetic progressions.
+p18
+aVNow he is interested in the question: how many subsequences of his sequence a, consisting of n elements, are not arithmetic progressions.
+p19
+aVSequence s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] is called a subsequence of sequence a[1],\u2009\u2009a[2],\u2009\u2009...,\u2009\u2009a[n], if there will be such increasing sequence of indices i[1],\u2009i[2],\u2009...,\u2009i[k] (1\u2009\u2009\u2264\u2009\u2009i[1]\u2009\u2009<\u2009\u2009i[2]\u2009\u2009<\u2009... \u2009\u2009<\u2009\u2009i[k]\u2009\u2009\u2264\u2009\u2009n), that a[i[j]]\u2009\u2009=\u2009\u2009s[j]. In other words, sequence s can be obtained from the a by deleting some elements.
+p20
+aVSequence s[1],\u2009\u2009s[2],\u2009\u2009...,\u2009\u2009s[k] is called an arithmetic progression, if it can be represented as :
+p21
+aVs[1]\u2009=\u2009p, where p \u2014 some integer;
+p22
+aVs[i]\u2009=\u2009p\u2009+\u2009(i\u2009-\u20091)·q (i\u2009>\u20091), where q \u2014 some integer.
+p23
+aVIn particular, the empty sequence or a sequence of one element is an arithmetic progression.
+p24
+asS'input'
+p25
+(lp26
+VInput
+p27
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p28
+aVThe first line of each test case contains an integer n \u2014 the number of elements in the sequence. The next line of the test case contains n integer, a[1],\u2009a[2],\u2009...,\u2009a[n] \u2014 elements of the sequence.
+p29
+aVOutput
+p30
+aVFor each test case print the remainder of the division the answer on 1000000007 (10^9\u2009+\u20097). All answers print on different lines.
+p31
+asS'constraints'
+p32
+(lp33
+VConstraints
+p34
+aV1\u2009\u2264\u2009T\u2009\u2264\u200910
+p35
+aV1\u2009\u2264\u2009n\u2009\u2264\u2009200000
+p36
+aV1\u2009\u2264\u2009a[i]\u2009\u2264\u2009100
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'name'
+p40
+VMAXPR
+p41
+sb.

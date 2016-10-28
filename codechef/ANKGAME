@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aThere are N piles of stones, where i-th pile has Ai stones. A game is played on these piles, in order from pile 1 to N. When the game is on the i-th pile, a player can remove any non-zero number of stones from this pile in a single move. If the current pile becomes empty, the game moves on to the next pile. The player who is unable to make a move loses.\u000aSrijan and Ankit are going to play this game. Ankit, being younger, always gets to start the game. However, Srijan, being clever, sneaks into the game arena early and permutes the order of piles. Then, the game is played on this new order of piles. Your task is to find out the number of orders in which the piles can be arranged so that Ankit wins the game. Assume that both the players play optimally. Since the answer can be very large, output it modulo 109 + 7.\u000aNote that two orders are considered different if their contents are different. Formally, two orders A and B are different if there exists an index k (1 \u2264 k \u2264 N) such that Ak != Bk.\u000aInput\u000aThe first line contains an integer T, denoting the number of test cases to follow. Each of the test cases contains exactly two lines.\u000aThe first line for each test case contains an integer N, denoting the number of piles, and the next line contains N space-separated integers, denoting the number of stones in the piles.\u000aOutput\u000aFor each test case, output a single integer corresponding to the answer for that test case.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 1010\u000aThe sum of values of N over all test cases does not exceed 106.\u000aExample:\u000aSample input:\u000a2\u000a3\u000a1 1 2\u000a2\u000a2 3\u000aSample Output:\u000a2\u000a2\u000aExplanation:\u000aCase 1:\u000aThe following different orders are possible:\u000a[1, 1, 2]\u000aAnkit removes the only stone in the first pile.\u000aSrijan removes the only stone in the second pile.\u000aAnkit removes both the stones in the second pile.\u000aAnkit wins.\u000a[1, 2, 1]\u000aAnkit removes the only stone in the first pile.\u000aSrijan takes one stone from then the second pile. Ankit removes the remaining one stone from the second pile.\u000aSrijan removes the only stone in the third pile.\u000aSrijan wins.\u000a[2, 1, 1]\u000aAnkit removes both the stones in the first pile.\u000aSrijan removes the only stone in the second pile.\u000aAnkit removes the only stone in the second pile.\u000aAnkit wins.\u000aThus, Ankit wins on 2 different orders.\u000aAuthor: code_master01\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/ANKGAME\u000aTags: code_master01 combinatorics cook59 counting easy-medium game-theory\u000aDate Added: 31-03-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aThere are N piles of stones, where i-th pile has Ai stones. A game is played on these piles, in order from pile 1 to N. When the game is on the i-th pile, a player can remove any non-zero number of stones from this pile in a single move. If the current pile becomes empty, the game moves on to the next pile. The player who is unable to make a move loses.\u000aSrijan and Ankit are going to play this game. Ankit, being younger, always gets to start the game. However, Srijan, being clever, sneaks into the game arena early and permutes the order of piles. Then, the game is played on this new order of piles. Your task is to find out the number of orders in which the piles can be arranged so that Ankit wins the game. Assume that both the players play optimally. Since the answer can be very large, output it modulo 109 + 7.\u000aNote that two orders are considered different if their contents are different. Formally, two orders A and B are different if there exists an index k (1 \u2264 k \u2264 N) such that Ak != Bk.\u000aInput\u000aThe first line contains an integer T, denoting the number of test cases to follow. Each of the test cases contains exactly two lines.\u000aThe first line for each test case contains an integer N, denoting the number of piles, and the next line contains N space-separated integers, denoting the number of stones in the piles.\u000aOutput\u000aFor each test case, output a single integer corresponding to the answer for that test case.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 1010\u000aThe sum of values of N over all test cases does not exceed 106.\u000aExample:\u000aSample input:\u000a2\u000a3\u000a1 1 2\u000a2\u000a2 3\u000aSample Output:\u000a2\u000a2\u000aExplanation:\u000aCase 1:\u000aThe following different orders are possible:\u000a[1, 1, 2]\u000aAnkit removes the only stone in the first pile.\u000aSrijan removes the only stone in the second pile.\u000aAnkit removes both the stones in the second pile.\u000aAnkit wins.\u000a[1, 2, 1]\u000aAnkit removes the only stone in the first pile.\u000aSrijan takes one stone from then the second pile. Ankit removes the remaining one stone from the second pile.\u000aSrijan removes the only stone in the third pile.\u000aSrijan wins.\u000a[2, 1, 1]\u000aAnkit removes both the stones in the first pile.\u000aSrijan removes the only stone in the second pile.\u000aAnkit removes the only stone in the second pile.\u000aAnkit wins.\u000aThus, Ankit wins on 2 different orders.\u000aAuthor: code_master01\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/ANKGAME\u000aTags: code_master01 combinatorics cook59 counting easy-medium game-theory\u000aDate Added: 31-03-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian as well. Mandarin Chinese Russian There are N piles of stones, where i-th pile has Ai stones. A game is played on these piles, in order from pile 1 to N. When the game is on the i-th pile, a player can remove any non-zero number of stones from this pile in a single move. If the current pile becomes empty, the game moves on to the next pile. The player who is unable to make a move loses. N A i 1 N Srijan and Ankit are going to play this game. Ankit, being younger, always gets to start the game. However, Srijan, being clever, sneaks into the game arena early and permutes the order of piles. Then, the game is played on this new order of piles. Your task is to find out the number of orders in which the piles can be arranged so that Ankit wins the game. Assume that both the players play optimally. Since the answer can be very large, output it modulo 109 + 7. 109 + 7 9 Note that two orders are considered different if their contents are different. Formally, two orders A and B are different if there exists an index k (1 \u2264 k \u2264 N) such that Ak != Bk. k (1 \u2264 k \u2264 N Ak != Bk k k Input The first line contains an integer T, denoting the number of test cases to follow. Each of the test cases contains exactly two lines.\u000aThe first line for each test case contains an integer N, denoting the number of piles, and the next line contains N space-separated integers, denoting the number of stones in the piles. The first line contains an integer T, denoting the number of test cases to follow. Each of the test cases contains exactly two lines. T The first line for each test case contains an integer N, denoting the number of piles, and the next line contains N space-separated integers, denoting the number of stones in the piles. N N Output For each test case, output a single integer corresponding to the answer for that test case. Constraints 1 \u2264 T \u2264 1000\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 1010\u000aThe sum of values of N over all test cases does not exceed 106. 1 \u2264 T \u2264 1000 T 1 \u2264 N \u2264 105 N 5  1 \u2264 Ai \u2264 1010 A i 10  The sum of values of N over all test cases does not exceed 106. N 6 Example: Sample input: Sample input: 2\u000a3\u000a1 1 2\u000a2\u000a2 3 Sample Output: Sample Output: 2\u000a2 Explanation: Explanation: Case 1:\u000aThe following different orders are possible: Case 1:  [1, 1, 2]\u000aAnkit removes the only stone in the first pile.\u000aSrijan removes the only stone in the second pile.\u000aAnkit removes both the stones in the second pile.\u000aAnkit wins.     [1, 2, 1]\u000aAnkit removes the only stone in the first pile.\u000aSrijan takes one stone from then the second pile. Ankit removes the remaining one stone from the second pile.\u000aSrijan removes the only stone in the third pile.\u000aSrijan wins.     [2, 1, 1]\u000aAnkit removes both the stones in the first pile.\u000aSrijan removes the only stone in the second pile.\u000aAnkit removes the only stone in the second pile.\u000aAnkit wins.     Thus, Ankit wins on 2 different orders.  Author: code_master01\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/ANKGAME\u000aTags: code_master01 combinatorics cook59 counting easy-medium game-theory\u000aDate Added: 31-03-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: code_master01\u000aTester: rubanenko\u000aEditorial: http://discuss.codechef.com/problems/ANKGAME\u000aTags: code_master01 combinatorics cook59 counting easy-medium game-theory\u000aDate Added: 31-03-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: code_master01 Author: code_master01 code_master01 Tester: rubanenko Tester: rubanenko rubanenko Editorial: http://discuss.codechef.com/problems/ANKGAME Editorial: http://discuss.codechef.com/problems/ANKGAME http://discuss.codechef.com/problems/ANKGAME Tags: code_master01 combinatorics cook59 counting easy-medium game-theory Tags: code_master01 combinatorics cook59 counting easy-medium game-theory code_master01 combinatorics cook59 counting easy-medium game-theory Date Added: 31-03-2015 Date Added: 31-03-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V code_master01 combinatorics cook59 counting easy-medium game-theory
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/ANKGAME
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian as well.
+p17
+aVThere are N piles of stones, where i-th pile has Ai stones. A game is played on these piles, in order from pile 1 to N. When the game is on the i-th pile, a player can remove any non-zero number of stones from this pile in a single move. If the current pile becomes empty, the game moves on to the next pile. The player who is unable to make a move loses.
+p18
+aVSrijan and Ankit are going to play this game. Ankit, being younger, always gets to start the game. However, Srijan, being clever, sneaks into the game arena early and permutes the order of piles. Then, the game is played on this new order of piles. Your task is to find out the number of orders in which the piles can be arranged so that Ankit wins the game. Assume that both the players play optimally. Since the answer can be very large, output it modulo 109 + 7.
+p19
+aVNote that two orders are considered different if their contents are different. Formally, two orders A and B are different if there exists an index k (1 \u2264 k \u2264 N) such that Ak != Bk.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line contains an integer T, denoting the number of test cases to follow. Each of the test cases contains exactly two lines.
+p24
+aVThe first line for each test case contains an integer N, denoting the number of piles, and the next line contains N space-separated integers, denoting the number of stones in the piles.
+p25
+aVOutput
+p26
+aVFor each test case, output a single integer corresponding to the answer for that test case.
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV1 \u2264 T \u2264 1000
+p31
+aV1 \u2264 N \u2264 105
+p32
+aV1 \u2264 Ai \u2264 1010
+p33
+aVThe sum of values of N over all test cases does not exceed 106.
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VANKGAME
+p38
+sb.

@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aMike is fond of collecting stamps. He has a lot of rare and unusual ones in his collection. Unfortunately, a few days ago he was fired from his well-paid job.\u000aBut he doesn't complain about that, he acts! That's why Mike picked up N stamps from his collection and is going to sell them. He has already placed an announcement on the Internet and got M offers. Each offer can be described as a set of stamps, that the buyer wants to buy. Now Mike needs your help to choose a set of offers, that he should accept.\u000aHe can't accept offers partially. Also, as far as Mike has the only copy of each stamp, he can sell one stamp to at most one buyer.\u000aOf course, Mike wants to maximize the number of accepted offers. Help him!\u000aInput\u000aThe first line contains two integer N and M, denoting the number of the stamps and the number of the offers.\u000aThe next M lines contain the descriptions of the offers. The (i+1)'th line of the input contains the description of the i'th offer and corresponds to the following pattern: Ki Ai, 1 Ai, 2, ..., Ai, Ki. Ki - is the number of the stamps, which the i'th buyer wants to buy, Ai - is the list of the stamps sorted in the ascending order.\u000a  Output\u000aOutput should contain the only integer, denoting the maximal number of the offers, that Mike can accept.\u000a  Constraints\u000a1 \u2264 N \u2264 20,000\u000a1 \u2264 M \u2264 20\u000a1 \u2264 Ki\u000a  Example\u000aInput:\u000a4 3\u000a2 1 2\u000a2 2 3\u000a2 3 4\u000a\u000aOutput:\u000a2\u000a  Explanation\u000aIn the example test Mike should accept the first and the third offer.\u000aAuthor: kostya_by\u000aEditorial: http://discuss.codechef.com/problems/MIKE3\u000aTags: easy kostya_by march14 search\u000aDate Added: 26-01-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aMike is fond of collecting stamps. He has a lot of rare and unusual ones in his collection. Unfortunately, a few days ago he was fired from his well-paid job.\u000aBut he doesn't complain about that, he acts! That's why Mike picked up N stamps from his collection and is going to sell them. He has already placed an announcement on the Internet and got M offers. Each offer can be described as a set of stamps, that the buyer wants to buy. Now Mike needs your help to choose a set of offers, that he should accept.\u000aHe can't accept offers partially. Also, as far as Mike has the only copy of each stamp, he can sell one stamp to at most one buyer.\u000aOf course, Mike wants to maximize the number of accepted offers. Help him!\u000aInput\u000aThe first line contains two integer N and M, denoting the number of the stamps and the number of the offers.\u000aThe next M lines contain the descriptions of the offers. The (i+1)'th line of the input contains the description of the i'th offer and corresponds to the following pattern: Ki Ai, 1 Ai, 2, ..., Ai, Ki. Ki - is the number of the stamps, which the i'th buyer wants to buy, Ai - is the list of the stamps sorted in the ascending order.\u000a  Output\u000aOutput should contain the only integer, denoting the maximal number of the offers, that Mike can accept.\u000a  Constraints\u000a1 \u2264 N \u2264 20,000\u000a1 \u2264 M \u2264 20\u000a1 \u2264 Ki\u000a  Example\u000aInput:\u000a4 3\u000a2 1 2\u000a2 2 3\u000a2 3 4\u000a\u000aOutput:\u000a2\u000a  Explanation\u000aIn the example test Mike should accept the first and the third offer.\u000aAuthor: kostya_by\u000aEditorial: http://discuss.codechef.com/problems/MIKE3\u000aTags: easy kostya_by march14 search\u000aDate Added: 26-01-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Mike is fond of collecting stamps. He has a lot of rare and unusual ones in his collection. Unfortunately, a few days ago he was fired from his well-paid job. But he doesn't complain about that, he acts! That's why Mike picked up N stamps from his collection and is going to sell them. He has already placed an announcement on the Internet and got M offers. Each offer can be described as a set of stamps, that the buyer wants to buy. Now Mike needs your help to choose a set of offers, that he should accept. N M He can't accept offers partially. Also, as far as Mike has the only copy of each stamp, he can sell one stamp to at most one buyer. Of course, Mike wants to maximize the number of accepted offers. Help him! Input The first line contains two integer N and M, denoting the number of the stamps and the number of the offers. N M The next M lines contain the descriptions of the offers. The (i+1)'th line of the input contains the description of the i'th offer and corresponds to the following pattern: Ki Ai, 1 Ai, 2, ..., Ai, Ki. Ki - is the number of the stamps, which the i'th buyer wants to buy, Ai - is the list of the stamps sorted in the ascending order. M (i+1) i Ki i Ai, 1 i, 1 Ai, 2 i, 2 Ai, Ki i, Ki i Ki i i Ai i   Output Output should contain the only integer, denoting the maximal number of the offers, that Mike can accept.   Constraints 1 \u2264 N \u2264 20,000 N 1 \u2264 M \u2264 20 M 1 \u2264 Ki Ki i   Example Input:\u000a4 3\u000a2 1 2\u000a2 2 3\u000a2 3 4\u000a\u000aOutput:\u000a2 Input: Output:   Explanation In the example test Mike should accept the first and the third offer.  Author: kostya_by\u000aEditorial: http://discuss.codechef.com/problems/MIKE3\u000aTags: easy kostya_by march14 search\u000aDate Added: 26-01-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kostya_by\u000aEditorial: http://discuss.codechef.com/problems/MIKE3\u000aTags: easy kostya_by march14 search\u000aDate Added: 26-01-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kostya_by Author: kostya_by kostya_by Editorial: http://discuss.codechef.com/problems/MIKE3 Editorial: http://discuss.codechef.com/problems/MIKE3 http://discuss.codechef.com/problems/MIKE3 Tags: easy kostya_by march14 search Tags: easy kostya_by march14 search easy kostya_by march14 search Date Added: 26-01-2014 Date Added: 26-01-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy kostya_by march14 search
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/MIKE3
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVMike is fond of collecting stamps. He has a lot of rare and unusual ones in his collection. Unfortunately, a few days ago he was fired from his well-paid job.
+p18
+aVBut he doesn't complain about that, he acts! That's why Mike picked up N stamps from his collection and is going to sell them. He has already placed an announcement on the Internet and got M offers. Each offer can be described as a set of stamps, that the buyer wants to buy. Now Mike needs your help to choose a set of offers, that he should accept.
+p19
+aVHe can't accept offers partially. Also, as far as Mike has the only copy of each stamp, he can sell one stamp to at most one buyer.
+p20
+aVOf course, Mike wants to maximize the number of accepted offers. Help him!
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVThe first line contains two integer N and M, denoting the number of the stamps and the number of the offers.
+p25
+aVThe next M lines contain the descriptions of the offers. The (i+1)'th line of the input contains the description of the i'th offer and corresponds to the following pattern: Ki Ai, 1 Ai, 2, ..., Ai, Ki. Ki - is the number of the stamps, which the i'th buyer wants to buy, Ai - is the list of the stamps sorted in the ascending order.
+p26
+aVOutput
+p27
+aVOutput should contain the only integer, denoting the maximal number of the offers, that Mike can accept.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 N \u2264 20,000
+p32
+aV1 \u2264 M \u2264 20
+p33
+aV1 \u2264 Ki
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VMIKE3
+p38
+sb.

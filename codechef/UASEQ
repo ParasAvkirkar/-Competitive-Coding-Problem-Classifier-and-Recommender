@@ -1,0 +1,73 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aYou are given an array that consists of n integer numbers. You have to change at most K elements of this array, so that the resulting array will be a arithmetic progression. From all the possible arithmetic progressions, you should choose most beautiful.\u000aYou can uniquely define the arithmetic progression by two numbers a0 and d - the first element of the given progression and the step that defines next element. (ai = a0+i * d). The progression A(a0 , d0) is more beautiful than the progression B(b0, d1) iff (a0 < b0 or (a0 = b0 and d0 < d1))\u000aInput\u000aThe first line contains two integers N and K denoting the number of elements in the given array and the number of elements that you can change\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the given array.\u000aOutput\u000aOutput a single line containing the resulting array with at most K changes. Mind that among all the arithmetic sequences you have to choose the most beautiful.\u000aIn the given test data, it is always possible to recover at least one arithmetic progression under the constraints of the problem.\u000aConstraints\u000a2 \u2264 N \u2264 100000\u000a0 \u2264 K \u2264 min(10, N-2)\u000a-109 \u2264 Ai \u2264 109\u000a  Example\u000aInput:\u000a4 2\u000a1 2 1 4\u000a\u000aOutput:\u000a-5 -2 1 4 \u000a  Author: furko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/UASEQ\u000aTags: adhoc easy furko sept14\u000aDate Added: 24-06-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aYou are given an array that consists of n integer numbers. You have to change at most K elements of this array, so that the resulting array will be a arithmetic progression. From all the possible arithmetic progressions, you should choose most beautiful.\u000aYou can uniquely define the arithmetic progression by two numbers a0 and d - the first element of the given progression and the step that defines next element. (ai = a0+i * d). The progression A(a0 , d0) is more beautiful than the progression B(b0, d1) iff (a0 < b0 or (a0 = b0 and d0 < d1))\u000aInput\u000aThe first line contains two integers N and K denoting the number of elements in the given array and the number of elements that you can change\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the given array.\u000aOutput\u000aOutput a single line containing the resulting array with at most K changes. Mind that among all the arithmetic sequences you have to choose the most beautiful.\u000aIn the given test data, it is always possible to recover at least one arithmetic progression under the constraints of the problem.\u000aConstraints\u000a2 \u2264 N \u2264 100000\u000a0 \u2264 K \u2264 min(10, N-2)\u000a-109 \u2264 Ai \u2264 109\u000a  Example\u000aInput:\u000a4 2\u000a1 2 1 4\u000a\u000aOutput:\u000a-5 -2 1 4 \u000a  Author: furko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/UASEQ\u000aTags: adhoc easy furko sept14\u000aDate Added: 24-06-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian You are given an array that consists of n integer numbers. You have to change at most K elements of this array, so that the resulting array will be a arithmetic progression. From all the possible arithmetic progressions, you should choose most beautiful. n K beautiful You can uniquely define the arithmetic progression by two numbers a0 and d - the first element of the given progression and the step that defines next element. (ai = a0+i * d). The progression A(a0 , d0) is more beautiful than the progression B(b0, d1) iff (a0 < b0 or (a0 = b0 and d0 < d1)) a0 0 d ai = a0+i * d i 0 A(a0 , d0) 0 0 beautiful B(b0, d1) 0 1 (a0 < b0 or (a0 = b0 and d0 < d1)) 0 0 0 0 0 1 Input The first line contains two integers N and K denoting the number of elements in the given array and the number of elements that you can change N K The second line contains N space-separated integers A1, A2, ..., AN denoting the given array. N A1 1 A2 2 AN N Output Output a single line containing the resulting array with at most K changes. Mind that among all the arithmetic sequences you have to choose the most beautiful. K beautiful In the given test data, it is always possible to recover at least one arithmetic progression under the constraints of the problem. Constraints 2 \u2264 N \u2264 100000\u000a0 \u2264 K \u2264 min(10, N-2)\u000a-109 \u2264 Ai \u2264 109 2 \u2264 N \u2264 100000 2 N 100000 0 \u2264 K \u2264 min(10, N-2) 0 K min(10, N-2) -109 \u2264 Ai \u2264 109 -109 9 Ai i 109 9   Example Input:\u000a4 2\u000a1 2 1 4\u000a\u000aOutput:\u000a-5 -2 1 4  Input: Output:    Author: furko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/UASEQ\u000aTags: adhoc easy furko sept14\u000aDate Added: 24-06-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: furko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/UASEQ\u000aTags: adhoc easy furko sept14\u000aDate Added: 24-06-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: furko Author: furko furko Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/UASEQ Editorial: http://discuss.codechef.com/problems/UASEQ http://discuss.codechef.com/problems/UASEQ Tags: adhoc easy furko sept14 Tags: adhoc easy furko sept14 adhoc easy furko sept14 Date Added: 24-06-2014 Date Added: 24-06-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V adhoc easy furko sept14
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/UASEQ
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVYou are given an array that consists of n integer numbers. You have to change at most K elements of this array, so that the resulting array will be a arithmetic progression. From all the possible arithmetic progressions, you should choose most beautiful.
+p18
+aVYou can uniquely define the arithmetic progression by two numbers a0 and d - the first element of the given progression and the step that defines next element. (ai = a0+i * d). The progression A(a0 , d0) is more beautiful than the progression B(b0, d1) iff (a0 < b0 or (a0 = b0 and d0 < d1))
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVThe first line contains two integers N and K denoting the number of elements in the given array and the number of elements that you can change
+p23
+aVThe second line contains N space-separated integers A1, A2, ..., AN denoting the given array.
+p24
+aVOutput
+p25
+aVOutput a single line containing the resulting array with at most K changes. Mind that among all the arithmetic sequences you have to choose the most beautiful.
+p26
+aVIn the given test data, it is always possible to recover at least one arithmetic progression under the constraints of the problem.
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV2 \u2264 N \u2264 100000
+p31
+aV0 \u2264 K \u2264 min(10, N-2)
+p32
+aV-109 \u2264 Ai \u2264 109
+p33
+asS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VUASEQ
+p37
+sb.

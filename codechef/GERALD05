@@ -1,0 +1,83 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aRead problems statements in Russian here\u000aProblem Statement\u000aChef studies combinatorics. He tries to group objects by their rang (a positive integer associated with each object). He also gives the formula for calculating the number of different objects with rang N as following:\u000athe number of different objects with rang N = F(N) = A0 + A1 * N + A2 * N2 + A3 * N3.\u000aNow Chef wants to know how many different multisets of these objects exist such that sum of rangs of the objects in the multiset equals to S. You are given the coefficients in F(N) and the target sum S. Please, find the number of different multisets modulo 1,000,000,007.\u000aYou should consider a multiset as an unordered sequence of integers. Two multisets are different if and only if there at least exists one element which occurs X times in the first multiset but Y times in the second one, where (X \u2260 Y).\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains four integers A0, A1, A2, A3. The second line contains an integer S.\u000aOutput\u000aFor each test case, output a single line containing a single integer - the answer to the test case modulo 1,000,000,007.\u000aConstraints\u000a1 \u2264 T \u2264 500\u000a1 \u2264 S \u2264 100\u000a0 \u2264 Ai \u2264 1000\u000aSum of all S for all test cases is not greater than 500. It's guaranteed that at least one Ai is non-zero.\u000aExample\u000aInput:\u000a4\u000a1 0 0 0\u000a1\u000a1 0 0 0\u000a3\u000a0 1 0 0\u000a2\u000a2 3 1 4\u000a10\u000a\u000aOutput:\u000a1\u000a3\u000a3\u000a213986343\u000aExplanation\u000aExample case 2.\u000a\u000aIn the second example function looks as follows F(N) = 1. So for each rang there is a single object of the rang. To get multiset with sum of rangs equal to 3, you can pick: three objects of rang 1, or one object of rang 1 and one of rang 2, or only one object of rang 3.\u000a\u000aExample case 3.\u000a\u000aIn the third example function looks as follows F(N) = N. So, you have one distinct object of rang 1, two distinct objects of rang 2, three distinct objects of rang 3 and so on. To get\u000amultiset with sum of rangs equal to 2, you can pick: two objects of rang 1, one of objects of rang 2 (two ways).\u000aAuthor: gerald\u000aTester: rustinpiece\u000aEditorial: http://discuss.codechef.com/problems/GERALD05\u000aTags: combinatorics cook41 dp gerald medium\u000aDate Added: 10-12-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aRead problems statements in Russian here\u000aProblem Statement\u000aChef studies combinatorics. He tries to group objects by their rang (a positive integer associated with each object). He also gives the formula for calculating the number of different objects with rang N as following:\u000athe number of different objects with rang N = F(N) = A0 + A1 * N + A2 * N2 + A3 * N3.\u000aNow Chef wants to know how many different multisets of these objects exist such that sum of rangs of the objects in the multiset equals to S. You are given the coefficients in F(N) and the target sum S. Please, find the number of different multisets modulo 1,000,000,007.\u000aYou should consider a multiset as an unordered sequence of integers. Two multisets are different if and only if there at least exists one element which occurs X times in the first multiset but Y times in the second one, where (X \u2260 Y).\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains four integers A0, A1, A2, A3. The second line contains an integer S.\u000aOutput\u000aFor each test case, output a single line containing a single integer - the answer to the test case modulo 1,000,000,007.\u000aConstraints\u000a1 \u2264 T \u2264 500\u000a1 \u2264 S \u2264 100\u000a0 \u2264 Ai \u2264 1000\u000aSum of all S for all test cases is not greater than 500. It's guaranteed that at least one Ai is non-zero.\u000aExample\u000aInput:\u000a4\u000a1 0 0 0\u000a1\u000a1 0 0 0\u000a3\u000a0 1 0 0\u000a2\u000a2 3 1 4\u000a10\u000a\u000aOutput:\u000a1\u000a3\u000a3\u000a213986343\u000aExplanation\u000aExample case 2.\u000a\u000aIn the second example function looks as follows F(N) = 1. So for each rang there is a single object of the rang. To get multiset with sum of rangs equal to 3, you can pick: three objects of rang 1, or one object of rang 1 and one of rang 2, or only one object of rang 3.\u000a\u000aExample case 3.\u000a\u000aIn the third example function looks as follows F(N) = N. So, you have one distinct object of rang 1, two distinct objects of rang 2, three distinct objects of rang 3 and so on. To get\u000amultiset with sum of rangs equal to 2, you can pick: two objects of rang 1, one of objects of rang 2 (two ways).\u000aAuthor: gerald\u000aTester: rustinpiece\u000aEditorial: http://discuss.codechef.com/problems/GERALD05\u000aTags: combinatorics cook41 dp gerald medium\u000aDate Added: 10-12-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese here here Read problems statements in Russian here here Problem Statement Chef studies combinatorics. He tries to group objects by their rang (a positive integer associated with each object). He also gives the formula for calculating the number of different objects with rang N as following: rang rang N  the number of different objects with rang N = F(N) = A0 + A1 * N + A2 * N2 + A3 * N3. the number of different objects with rang N = F(N) = A0 + A1 * N + A2 * N2 + A3 * N3 rang 0 1 2 2 3 3  Now Chef wants to know how many different multisets of these objects exist such that sum of rangs of the objects in the multiset equals to S. You are given the coefficients in F(N) and the target sum S. Please, find the number of different multisets modulo 1,000,000,007. rang S F(N) S 1,000,000,007  You should consider a multiset as an unordered sequence of integers. Two multisets are different if and only if there at least exists one element which occurs X times in the first multiset but Y times in the second one, where (X \u2260 Y). X Y (X \u2260 Y) Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains four integers A0, A1, A2, A3. The second line contains an integer S. T T   A0 0 A1 1 A2 2 A3 3 S Output For each test case, output a single line containing a single integer - the answer to the test case modulo 1,000,000,007. 1,000,000,007 Constraints 1 \u2264 T \u2264 500\u000a1 \u2264 S \u2264 100\u000a0 \u2264 Ai \u2264 1000\u000aSum of all S for all test cases is not greater than 500. It's guaranteed that at least one Ai is non-zero. 1 \u2264 T \u2264 500 1 T 500 1 \u2264 S \u2264 100 1 S 100 0 \u2264 Ai \u2264 1000 0 Ai i 1000 Sum of all S for all test cases is not greater than 500. It's guaranteed that at least one Ai is non-zero. S Ai i Example Input:\u000a4\u000a1 0 0 0\u000a1\u000a1 0 0 0\u000a3\u000a0 1 0 0\u000a2\u000a2 3 1 4\u000a10\u000a\u000aOutput:\u000a1\u000a3\u000a3\u000a213986343 Input: Output: Explanation Example case 2.\u000a\u000aIn the second example function looks as follows F(N) = 1. So for each rang there is a single object of the rang. To get multiset with sum of rangs equal to 3, you can pick: three objects of rang 1, or one object of rang 1 and one of rang 2, or only one object of rang 3.\u000a\u000aExample case 3.\u000a\u000aIn the third example function looks as follows F(N) = N. So, you have one distinct object of rang 1, two distinct objects of rang 2, three distinct objects of rang 3 and so on. To get\u000amultiset with sum of rangs equal to 2, you can pick: two objects of rang 1, one of objects of rang 2 (two ways). Example case 2.   F(N) = 1 rang rang rang rang rang rang rang   Example case 3.   F(N) = N rang rang rang  rang rang rang  Author: gerald\u000aTester: rustinpiece\u000aEditorial: http://discuss.codechef.com/problems/GERALD05\u000aTags: combinatorics cook41 dp gerald medium\u000aDate Added: 10-12-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: gerald\u000aTester: rustinpiece\u000aEditorial: http://discuss.codechef.com/problems/GERALD05\u000aTags: combinatorics cook41 dp gerald medium\u000aDate Added: 10-12-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: gerald Author: gerald gerald Tester: rustinpiece Tester: rustinpiece rustinpiece Editorial: http://discuss.codechef.com/problems/GERALD05 Editorial: http://discuss.codechef.com/problems/GERALD05 http://discuss.codechef.com/problems/GERALD05 Tags: combinatorics cook41 dp gerald medium Tags: combinatorics cook41 dp gerald medium combinatorics cook41 dp gerald medium Date Added: 10-12-2013 Date Added: 10-12-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V combinatorics cook41 dp gerald medium
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/GERALD05
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese here
+p17
+aVRead problems statements in Russian here
+p18
+aVProblem Statement
+p19
+aVChef studies combinatorics. He tries to group objects by their rang (a positive integer associated with each object). He also gives the formula for calculating the number of different objects with rang N as following:
+p20
+aVthe number of different objects with rang N = F(N) = A0 + A1 * N + A2 * N2 + A3 * N3.
+p21
+aVNow Chef wants to know how many different multisets of these objects exist such that sum of rangs of the objects in the multiset equals to S. You are given the coefficients in F(N) and the target sum S. Please, find the number of different multisets modulo 1,000,000,007.
+p22
+aVYou should consider a multiset as an unordered sequence of integers. Two multisets are different if and only if there at least exists one element which occurs X times in the first multiset but Y times in the second one, where (X \u2260 Y).
+p23
+asS'input'
+p24
+(lp25
+VInput
+p26
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p27
+aV
+p28
+aVThe first line of each test case contains four integers A0, A1, A2, A3. The second line contains an integer S.
+p29
+aVOutput
+p30
+aVFor each test case, output a single line containing a single integer - the answer to the test case modulo 1,000,000,007.
+p31
+asS'constraints'
+p32
+(lp33
+VConstraints
+p34
+aV1 \u2264 T \u2264 500
+p35
+aV1 \u2264 S \u2264 100
+p36
+aV0 \u2264 Ai \u2264 1000
+p37
+aVSum of all S for all test cases is not greater than 500. It's guaranteed that at least one Ai is non-zero.
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'name'
+p41
+VGERALD05
+p42
+sb.

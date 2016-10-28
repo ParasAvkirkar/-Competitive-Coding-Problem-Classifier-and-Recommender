@@ -1,0 +1,95 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 5 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aThere are a lot of problems related to the shortest paths. Nevertheless, there are not much problems, related to the shortest paths in average.\u000aConsider a directed graph G, consisting of N nodes and M edges. Consider a walk from the node A to the node B in this graph. The average length of this walk will be total sum of weight of its' edges divided by number of edges. Every edge counts as many times as it appears in this path.\u000aNow, your problem is quite simple. For the given graph and two given nodes, find out the shortest average length of the walk between these nodes. Please note, that the length of the walk need not to be finite, but average walk length will be.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a pair of space-separated integers N and M denoting the number of nodes and the number of edges in the graph.\u000aEach of the following M lines contains a triple of space-separated integers Xi Yi Zi, denoting the arc, connecting the node Xi to the node Yi (but not vice-versa!) having the weight of Zi.\u000aThe next line contains a pair of space separated integers A and B, denoting the first and the last node of the path.\u000aOutput\u000aFor each test case, output a single line containing the length of the shortest path in average.\u000aIf there is no path at all, output just -1 on the corresponding line of the output.\u000aConstraints\u000a1 \u2264 N \u2264 500\u000a1 \u2264 M \u2264 1000\u000aA is not equal to B\u000a1 \u2264 A, B, Xi, Yi \u2264 N\u000a1 \u2264 Zi \u2264 100\u000aThere are no self-loops and multiple edges in the graph.\u000a1 \u2264 sum of N over all test cases \u2264 10000\u000a1 \u2264 sum of M over all test cases \u2264 20000\u000aSubtasks\u000aSubtask #1 (45 points): 1 \u2264 N \u2264 10, 1 \u2264 M \u2264 20; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-2.\u000aSubtask #2 (55 points): no additional constraints; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-6.\u000aExample\u000aInput:\u000a2\u000a3 3\u000a1 2 1\u000a2 3 2\u000a3 2 3\u000a1 3\u000a3 3\u000a1 2 10\u000a2 3 1\u000a3 2 1\u000a1 3\u000a\u000aOutput:\u000a1.5\u000a1.0\u000aExplanation\u000aExample case 1. The walk 1 -> 2 and 2 -> 3 has average length of 3/2 = 1.5. Any other walks in the graph will have more or equal average length than this.\u000aAuthor: xcwgf666\u000aTester: harshil7924\u000aEditorial: http://discuss.codechef.com/problems/AVGSHORT\u000aTags: bellman-ford easy-medium graph ltime39 shortest-path xcwgf666\u000aDate Added: 6-08-2016\u000aTime Limit: 5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aThere are a lot of problems related to the shortest paths. Nevertheless, there are not much problems, related to the shortest paths in average.\u000aConsider a directed graph G, consisting of N nodes and M edges. Consider a walk from the node A to the node B in this graph. The average length of this walk will be total sum of weight of its' edges divided by number of edges. Every edge counts as many times as it appears in this path.\u000aNow, your problem is quite simple. For the given graph and two given nodes, find out the shortest average length of the walk between these nodes. Please note, that the length of the walk need not to be finite, but average walk length will be.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a pair of space-separated integers N and M denoting the number of nodes and the number of edges in the graph.\u000aEach of the following M lines contains a triple of space-separated integers Xi Yi Zi, denoting the arc, connecting the node Xi to the node Yi (but not vice-versa!) having the weight of Zi.\u000aThe next line contains a pair of space separated integers A and B, denoting the first and the last node of the path.\u000aOutput\u000aFor each test case, output a single line containing the length of the shortest path in average.\u000aIf there is no path at all, output just -1 on the corresponding line of the output.\u000aConstraints\u000a1 \u2264 N \u2264 500\u000a1 \u2264 M \u2264 1000\u000aA is not equal to B\u000a1 \u2264 A, B, Xi, Yi \u2264 N\u000a1 \u2264 Zi \u2264 100\u000aThere are no self-loops and multiple edges in the graph.\u000a1 \u2264 sum of N over all test cases \u2264 10000\u000a1 \u2264 sum of M over all test cases \u2264 20000\u000aSubtasks\u000aSubtask #1 (45 points): 1 \u2264 N \u2264 10, 1 \u2264 M \u2264 20; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-2.\u000aSubtask #2 (55 points): no additional constraints; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-6.\u000aExample\u000aInput:\u000a2\u000a3 3\u000a1 2 1\u000a2 3 2\u000a3 2 3\u000a1 3\u000a3 3\u000a1 2 10\u000a2 3 1\u000a3 2 1\u000a1 3\u000a\u000aOutput:\u000a1.5\u000a1.0\u000aExplanation\u000aExample case 1. The walk 1 -> 2 and 2 -> 3 has average length of 3/2 = 1.5. Any other walks in the graph will have more or equal average length than this.\u000aAuthor: xcwgf666\u000aTester: harshil7924\u000aEditorial: http://discuss.codechef.com/problems/AVGSHORT\u000aTags: bellman-ford easy-medium graph ltime39 shortest-path xcwgf666\u000aDate Added: 6-08-2016\u000aTime Limit: 5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese There are a lot of problems related to the shortest paths. Nevertheless, there are not much problems, related to the shortest paths in average. in average Consider a directed graph G, consisting of N nodes and M edges. Consider a walk from the node A to the node B in this graph. The average length of this walk will be total sum of weight of its' edges divided by number of edges. Every edge counts as many times as it appears in this path. G N M A B Now, your problem is quite simple. For the given graph and two given nodes, find out the shortest average length of the walk between these nodes. Please note, that the length of the walk need not to be finite, but average walk length will be. Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a pair of space-separated integers N and M denoting the number of nodes and the number of edges in the graph. N M Each of the following M lines contains a triple of space-separated integers Xi Yi Zi, denoting the arc, connecting the node Xi to the node Yi (but not vice-versa!) having the weight of Zi. M Xi Yi Zi i i i Xi i Yi i Zi i The next line contains a pair of space separated integers A and B, denoting the first and the last node of the path. A B Output For each test case, output a single line containing the length of the shortest path in average. in average If there is no path at all, output just -1 on the corresponding line of the output. -1 Constraints 1 \u2264 N \u2264 500\u000a1 \u2264 M \u2264 1000\u000aA is not equal to B\u000a1 \u2264 A, B, Xi, Yi \u2264 N\u000a1 \u2264 Zi \u2264 100\u000aThere are no self-loops and multiple edges in the graph.\u000a1 \u2264 sum of N over all test cases \u2264 10000\u000a1 \u2264 sum of M over all test cases \u2264 20000 1 \u2264 N \u2264 500 1 N 500 1 \u2264 M \u2264 1000 1 M 1000 A is not equal to B A B 1 \u2264 A, B, Xi, Yi \u2264 N 1 A B Xi i Yi i N 1 \u2264 Zi \u2264 100 1 Zi i 100 There are no self-loops and multiple edges in the graph. 1 \u2264 sum of N over all test cases \u2264 10000 1 N 10000 1 \u2264 sum of M over all test cases \u2264 20000 1 M 20000 Subtasks Subtask #1 (45 points): 1 \u2264 N \u2264 10, 1 \u2264 M \u2264 20; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-2.\u000aSubtask #2 (55 points): no additional constraints; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-6. Subtask #1 (45 points): 1 \u2264 N \u2264 10, 1 \u2264 M \u2264 20; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-2. Subtask #1 (45 points) 1 N 10 1 M 20 10-2 -2 Subtask #2 (55 points): no additional constraints; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-6. Subtask #2 (55 points) 10-6 -6 Example Input:\u000a2\u000a3 3\u000a1 2 1\u000a2 3 2\u000a3 2 3\u000a1 3\u000a3 3\u000a1 2 10\u000a2 3 1\u000a3 2 1\u000a1 3\u000a\u000aOutput:\u000a1.5\u000a1.0 Input: 2\u000a3 3\u000a1 2 1\u000a2 3 2\u000a3 2 3\u000a1 3\u000a3 3\u000a1 2 10\u000a2 3 1\u000a3 2 1\u000a1 3 Output: 1.5\u000a1.0 Explanation Example case 1. The walk 1 -> 2 and 2 -> 3 has average length of 3/2 = 1.5. Any other walks in the graph will have more or equal average length than this. Example case 1.  Author: xcwgf666\u000aTester: harshil7924\u000aEditorial: http://discuss.codechef.com/problems/AVGSHORT\u000aTags: bellman-ford easy-medium graph ltime39 shortest-path xcwgf666\u000aDate Added: 6-08-2016\u000aTime Limit: 5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: xcwgf666\u000aTester: harshil7924\u000aEditorial: http://discuss.codechef.com/problems/AVGSHORT\u000aTags: bellman-ford easy-medium graph ltime39 shortest-path xcwgf666\u000aDate Added: 6-08-2016\u000aTime Limit: 5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: xcwgf666 Author: xcwgf666 xcwgf666 Tester: harshil7924 Tester: harshil7924 harshil7924 Editorial: http://discuss.codechef.com/problems/AVGSHORT Editorial: http://discuss.codechef.com/problems/AVGSHORT http://discuss.codechef.com/problems/AVGSHORT Tags: bellman-ford easy-medium graph ltime39 shortest-path xcwgf666 Tags: bellman-ford easy-medium graph ltime39 shortest-path xcwgf666 bellman-ford easy-medium graph ltime39 shortest-path xcwgf666 Date Added: 6-08-2016 Date Added: 6-08-2016 Time Limit: 5 sec Time Limit: 5 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V bellman-ford easy-medium graph ltime39 shortest-path xcwgf666
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/AVGSHORT
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVThere are a lot of problems related to the shortest paths. Nevertheless, there are not much problems, related to the shortest paths in average.
+p18
+aVConsider a directed graph G, consisting of N nodes and M edges. Consider a walk from the node A to the node B in this graph. The average length of this walk will be total sum of weight of its' edges divided by number of edges. Every edge counts as many times as it appears in this path.
+p19
+aVNow, your problem is quite simple. For the given graph and two given nodes, find out the shortest average length of the walk between these nodes. Please note, that the length of the walk need not to be finite, but average walk length will be.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVThe first line of each test case contains a pair of space-separated integers N and M denoting the number of nodes and the number of edges in the graph.
+p25
+aVEach of the following M lines contains a triple of space-separated integers Xi Yi Zi, denoting the arc, connecting the node Xi to the node Yi (but not vice-versa!) having the weight of Zi.
+p26
+aVThe next line contains a pair of space separated integers A and B, denoting the first and the last node of the path.
+p27
+aVOutput
+p28
+aVFor each test case, output a single line containing the length of the shortest path in average.
+p29
+aVIf there is no path at all, output just -1 on the corresponding line of the output.
+p30
+asS'constraints'
+p31
+(lp32
+VConstraints
+p33
+aV1 \u2264 N \u2264 500
+p34
+aV1 \u2264 M \u2264 1000
+p35
+aVA is not equal to B
+p36
+aV1 \u2264 A, B, Xi, Yi \u2264 N
+p37
+aV1 \u2264 Zi \u2264 100
+p38
+aVThere are no self-loops and multiple edges in the graph.
+p39
+aV1 \u2264 sum of N over all test cases \u2264 10000
+p40
+aV1 \u2264 sum of M over all test cases \u2264 20000
+p41
+aVSubtasks
+p42
+aVSubtask #1 (45 points): 1 \u2264 N \u2264 10, 1 \u2264 M \u2264 20; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-2.
+p43
+aVSubtask #2 (55 points): no additional constraints; Your answer will be considered correct in case it has an absolute or relative error of no more than 10-6.
+p44
+asS'id'
+p45
+c__builtin__
+id
+p46
+sS'name'
+p47
+VAVGSHORT
+p48
+sb.

@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aProblem Statement\u000aLittle Elephant from Zoo of Lviv likes bamboo very much. He currently has n stems of bamboo, Hi - height of i-th stem of bamboo (0-based numeration).\u000aToday inspector Andrii from World Bamboo Association is visiting the plantation. He doesn't like current situation. He wants the height of i-th stem to be Di, for each i from 0 to n-1, inclusive.\u000aLittle Elephant is going to buy some special substance. One bottle of such substance he can use to single stem of bamboo. After using substance for stem i, the height of i-th stem is decrased by 1 and the height of j-th stem is increased by 1 for each j not equal to i. Note that it is possible for some of the stems to have negative height, but after all transformations all stems should have positive height.\u000aSubstance is very expensive. Help Little Elephant and find the minimal number of bottles of substance required for changing current plantation to one that inspector wants. If it's impossible, print -1.\u000aInput\u000aFirst line contain single integer T - the number of test cases. T test cases follow. First line of each test case contains single integer n - the number of stems in the plantation. Second line contains n integers separated by single space - starting plantation. Next line of each test case contains n integers - plantation that inspector Andrii requires.\u000aOutput\u000aIn T lines print T integers - the answers for the corresponding test cases.\u000aConstraints\u000a1 <= T <= 50\u000a1 <= n <= 50\u000a1 <= Hi, Di <= 50\u000aExample\u000aInput:\u000a3\u000a1\u000a1\u000a2\u000a2\u000a1 2\u000a2 1\u000a3\u000a3 2 2\u000a4 5 3\u000a\u000a\u000aOutput:\u000a-1\u000a1\u000a5\u000aAuthor: witua\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/LEBAMBOO\u000aTags: ad-hoc oct13 simple-easy witua\u000aDate Added: 6-04-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aProblem Statement\u000aLittle Elephant from Zoo of Lviv likes bamboo very much. He currently has n stems of bamboo, Hi - height of i-th stem of bamboo (0-based numeration).\u000aToday inspector Andrii from World Bamboo Association is visiting the plantation. He doesn't like current situation. He wants the height of i-th stem to be Di, for each i from 0 to n-1, inclusive.\u000aLittle Elephant is going to buy some special substance. One bottle of such substance he can use to single stem of bamboo. After using substance for stem i, the height of i-th stem is decrased by 1 and the height of j-th stem is increased by 1 for each j not equal to i. Note that it is possible for some of the stems to have negative height, but after all transformations all stems should have positive height.\u000aSubstance is very expensive. Help Little Elephant and find the minimal number of bottles of substance required for changing current plantation to one that inspector wants. If it's impossible, print -1.\u000aInput\u000aFirst line contain single integer T - the number of test cases. T test cases follow. First line of each test case contains single integer n - the number of stems in the plantation. Second line contains n integers separated by single space - starting plantation. Next line of each test case contains n integers - plantation that inspector Andrii requires.\u000aOutput\u000aIn T lines print T integers - the answers for the corresponding test cases.\u000aConstraints\u000a1 <= T <= 50\u000a1 <= n <= 50\u000a1 <= Hi, Di <= 50\u000aExample\u000aInput:\u000a3\u000a1\u000a1\u000a2\u000a2\u000a1 2\u000a2 1\u000a3\u000a3 2 2\u000a4 5 3\u000a\u000a\u000aOutput:\u000a-1\u000a1\u000a5\u000aAuthor: witua\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/LEBAMBOO\u000aTags: ad-hoc oct13 simple-easy witua\u000aDate Added: 6-04-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese here here Problem Statement Little Elephant from Zoo of Lviv likes bamboo very much. He currently has n stems of bamboo, Hi - height of i-th stem of bamboo (0-based numeration). n Hi i i-th Today inspector Andrii from World Bamboo Association is visiting the plantation. He doesn't like current situation. He wants the height of i-th stem to be Di, for each i from 0 to n-1, inclusive. i-th Di i i 0 n-1 Little Elephant is going to buy some special substance. One bottle of such substance he can use to single stem of bamboo. After using substance for stem i, the height of i-th stem is decrased by 1 and the height of j-th stem is increased by 1 for each j not equal to i. Note that it is possible for some of the stems to have negative height, but after all transformations all stems should have positive height. i i-th 1 j-th 1 j i Substance is very expensive. Help Little Elephant and find the minimal number of bottles of substance required for changing current plantation to one that inspector wants. If it's impossible, print -1. -1 Input  First line contain single integer T - the number of test cases. T test cases follow. First line of each test case contains single integer n - the number of stems in the plantation. Second line contains n integers separated by single space - starting plantation. Next line of each test case contains n integers - plantation that inspector Andrii requires. T T n n n Output  In T lines print T integers - the answers for the corresponding test cases. T T Constraints  1 <= T <= 50 T 1 <= n <= 50 n 1 <= Hi, Di <= 50 Hi, Di i i Example Input:\u000a3\u000a1\u000a1\u000a2\u000a2\u000a1 2\u000a2 1\u000a3\u000a3 2 2\u000a4 5 3\u000a\u000a\u000aOutput:\u000a-1\u000a1\u000a5 Input: Output:   Author: witua\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/LEBAMBOO\u000aTags: ad-hoc oct13 simple-easy witua\u000aDate Added: 6-04-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/LEBAMBOO\u000aTags: ad-hoc oct13 simple-easy witua\u000aDate Added: 6-04-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua Author: witua witua Tester: shangjingbo Tester: shangjingbo shangjingbo Editorial: http://discuss.codechef.com/problems/LEBAMBOO Editorial: http://discuss.codechef.com/problems/LEBAMBOO http://discuss.codechef.com/problems/LEBAMBOO Tags: ad-hoc oct13 simple-easy witua Tags: ad-hoc oct13 simple-easy witua ad-hoc oct13 simple-easy witua Date Added: 6-04-2012 Date Added: 6-04-2012 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V ad-hoc oct13 simple-easy witua
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LEBAMBOO
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese here
+p17
+aVProblem Statement
+p18
+aVLittle Elephant from Zoo of Lviv likes bamboo very much. He currently has n stems of bamboo, Hi - height of i-th stem of bamboo (0-based numeration).
+p19
+aVToday inspector Andrii from World Bamboo Association is visiting the plantation. He doesn't like current situation. He wants the height of i-th stem to be Di, for each i from 0 to n-1, inclusive.
+p20
+aVLittle Elephant is going to buy some special substance. One bottle of such substance he can use to single stem of bamboo. After using substance for stem i, the height of i-th stem is decrased by 1 and the height of j-th stem is increased by 1 for each j not equal to i. Note that it is possible for some of the stems to have negative height, but after all transformations all stems should have positive height.
+p21
+aVSubstance is very expensive. Help Little Elephant and find the minimal number of bottles of substance required for changing current plantation to one that inspector wants. If it's impossible, print -1.
+p22
+asS'input'
+p23
+(lp24
+VInput
+p25
+aVFirst line contain single integer T - the number of test cases. T test cases follow. First line of each test case contains single integer n - the number of stems in the plantation. Second line contains n integers separated by single space - starting plantation. Next line of each test case contains n integers - plantation that inspector Andrii requires.
+p26
+aVOutput
+p27
+aVIn T lines print T integers - the answers for the corresponding test cases.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 <= T <= 50
+p32
+aV1 <= n <= 50
+p33
+aV1 <= Hi, Di <= 50
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VLEBAMBOO
+p38
+sb.

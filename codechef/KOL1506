@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1.5 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aSamosa Bhai got tired of the difficult tasks given by CodeChef along with meagre salary being paid to him. So he moves to Aloo uncle's village and opens a courier company there. In the village, everyone knows Aloo uncle and Kachori Aunty, so everyone sends their gifts using Samosa Bhai's courier company only.\u000aThere are N houses in a row in the village. On New Year's Eve, each house sends a gift to all the other houses.\u000aThe distance between two houses situated at positions x and y in the row is |x - y|. Samosa Bhai's courier company charges dk rupees for each delivery, where d is the distance between the 2 houses.\u000aEveryone chose Samosa Bhai's company because of Aloo uncle and Kachori aunty. So he decides to give them the amount of money earned by him modulo 1000000007 (109 + 7). You need to compute this amount.\u000aInput\u000aThe first line of input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains 2 integers \u2014 N and k \u2014 denoting the number of houses and the exponent k, resepctively. The second line contains N space-separated integers A1, A2, \u2026 , AN denoting the positions of the houses.\u000aOutput\u000aFor each test case, output a single line with the amount given to Aloo uncle and Kachori aunty by Samosa Bhai.\u000aConstraints\u000a1 \u2264 T \u2264 104\u000a2 \u2264 N \u2264 105\u000a0 \u2264 k \u2264 100\u000a0 \u2264 Ai \u2264 1000000006\u000aThe sum of N over all test cases will be at most 100000\u000a2 houses can be at the same position\u000aExample\u000aInput:\u000a5\u000a2 2\u000a7 2\u000a2 3\u000a7 2\u000a3 2\u000a1 3 2\u000a10 2\u000a1 2 3 4 5 6 7 8 9 10\u000a10 10\u000a1 2 3 4 5 6 7 8 9 10\u000a\u000aOutput:\u000a50\u000a250\u000a12\u000a1650\u000a558199159\u000aExplanation\u000aExample case 1. House 1 sends a gift to House 2 with cost (|2 - 7|)2 and house 2 sends a gift to house 1 with cost (|7-2|)2, for a total cost of 50\u000aExample case 3. The cost for gift from house with index 1 to house with index 2 is 22 = 4, from houses 1 to 3 is 1, from houses 2 to 3 is 1. Taking into account the gifts sent the other way (from 2 to 1, 3 to 1 and 3 to 2), the total cost is 4 + 1 + 1 + 4 + 1 + 1 = 12\u000aAuthor: balajiganapath\u000aEditorial: http://discuss.codechef.com/problems/KOL1506\u000aTags: acm15kol balajiganapath binomial dynamic-prog\u000aDate Added: 9-12-2015\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: C, CPP14, JAVA\u000aSUBMIT All submissions for this problem are available.\u000aSamosa Bhai got tired of the difficult tasks given by CodeChef along with meagre salary being paid to him. So he moves to Aloo uncle's village and opens a courier company there. In the village, everyone knows Aloo uncle and Kachori Aunty, so everyone sends their gifts using Samosa Bhai's courier company only.\u000aThere are N houses in a row in the village. On New Year's Eve, each house sends a gift to all the other houses.\u000aThe distance between two houses situated at positions x and y in the row is |x - y|. Samosa Bhai's courier company charges dk rupees for each delivery, where d is the distance between the 2 houses.\u000aEveryone chose Samosa Bhai's company because of Aloo uncle and Kachori aunty. So he decides to give them the amount of money earned by him modulo 1000000007 (109 + 7). You need to compute this amount.\u000aInput\u000aThe first line of input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains 2 integers \u2014 N and k \u2014 denoting the number of houses and the exponent k, resepctively. The second line contains N space-separated integers A1, A2, \u2026 , AN denoting the positions of the houses.\u000aOutput\u000aFor each test case, output a single line with the amount given to Aloo uncle and Kachori aunty by Samosa Bhai.\u000aConstraints\u000a1 \u2264 T \u2264 104\u000a2 \u2264 N \u2264 105\u000a0 \u2264 k \u2264 100\u000a0 \u2264 Ai \u2264 1000000006\u000aThe sum of N over all test cases will be at most 100000\u000a2 houses can be at the same position\u000aExample\u000aInput:\u000a5\u000a2 2\u000a7 2\u000a2 3\u000a7 2\u000a3 2\u000a1 3 2\u000a10 2\u000a1 2 3 4 5 6 7 8 9 10\u000a10 10\u000a1 2 3 4 5 6 7 8 9 10\u000a\u000aOutput:\u000a50\u000a250\u000a12\u000a1650\u000a558199159\u000aExplanation\u000aExample case 1. House 1 sends a gift to House 2 with cost (|2 - 7|)2 and house 2 sends a gift to house 1 with cost (|7-2|)2, for a total cost of 50\u000aExample case 3. The cost for gift from house with index 1 to house with index 2 is 22 = 4, from houses 1 to 3 is 1, from houses 2 to 3 is 1. Taking into account the gifts sent the other way (from 2 to 1, 3 to 1 and 3 to 2), the total cost is 4 + 1 + 1 + 4 + 1 + 1 = 12\u000aAuthor: balajiganapath\u000aEditorial: http://discuss.codechef.com/problems/KOL1506\u000aTags: acm15kol balajiganapath binomial dynamic-prog\u000aDate Added: 9-12-2015\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: C, CPP14, JAVA All submissions for this problem are available. Samosa Bhai got tired of the difficult tasks given by CodeChef along with meagre salary being paid to him. So he moves to Aloo uncle's village and opens a courier company there. In the village, everyone knows Aloo uncle and Kachori Aunty, so everyone sends their gifts using Samosa Bhai's courier company only. There are N houses in a row in the village. On New Year's Eve, each house sends a gift to all the other houses.\u000aThe distance between two houses situated at positions x and y in the row is |x - y|. Samosa Bhai's courier company charges dk rupees for each delivery, where d is the distance between the 2 houses. N  x y |x - y| dk k d Everyone chose Samosa Bhai's company because of Aloo uncle and Kachori aunty. So he decides to give them the amount of money earned by him modulo 1000000007 (109 + 7). You need to compute this amount. 1000000007 (109 + 7) 9 Input The first line of input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains 2 integers \u2014 N and k \u2014 denoting the number of houses and the exponent k, resepctively. The second line contains N space-separated integers A1, A2, \u2026 , AN denoting the positions of the houses. The first line of input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains 2 integers \u2014 N and k \u2014 denoting the number of houses and the exponent k, resepctively. The second line contains N space-separated integers A1, A2, \u2026 , AN denoting the positions of the houses. N k k N A1 1 A2 2 AN N Output For each test case, output a single line with the amount given to Aloo uncle and Kachori aunty by Samosa Bhai. For each test case, output a single line with the amount given to Aloo uncle and Kachori aunty by Samosa Bhai. Constraints 1 \u2264 T \u2264 104\u000a2 \u2264 N \u2264 105\u000a0 \u2264 k \u2264 100\u000a0 \u2264 Ai \u2264 1000000006\u000aThe sum of N over all test cases will be at most 100000\u000a2 houses can be at the same position 1 \u2264 T \u2264 104 1 T 104 4 2 \u2264 N \u2264 105 2 N 105 5 0 \u2264 k \u2264 100 0 k 100 0 \u2264 Ai \u2264 1000000006 0 Ai i 1000000006 The sum of N over all test cases will be at most 100000 N 100000 2 houses can be at the same position can Example Input:\u000a5\u000a2 2\u000a7 2\u000a2 3\u000a7 2\u000a3 2\u000a1 3 2\u000a10 2\u000a1 2 3 4 5 6 7 8 9 10\u000a10 10\u000a1 2 3 4 5 6 7 8 9 10\u000a\u000aOutput:\u000a50\u000a250\u000a12\u000a1650\u000a558199159 Input: Output: Explanation Example case 1. House 1 sends a gift to House 2 with cost (|2 - 7|)2 and house 2 sends a gift to house 1 with cost (|7-2|)2, for a total cost of 50 Example case 1. 2 2 Example case 3. The cost for gift from house with index 1 to house with index 2 is 22 = 4, from houses 1 to 3 is 1, from houses 2 to 3 is 1. Taking into account the gifts sent the other way (from 2 to 1, 3 to 1 and 3 to 2), the total cost is 4 + 1 + 1 + 4 + 1 + 1 = 12 Example case 3. 2  Author: balajiganapath\u000aEditorial: http://discuss.codechef.com/problems/KOL1506\u000aTags: acm15kol balajiganapath binomial dynamic-prog\u000aDate Added: 9-12-2015\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: C, CPP14, JAVA Author: balajiganapath\u000aEditorial: http://discuss.codechef.com/problems/KOL1506\u000aTags: acm15kol balajiganapath binomial dynamic-prog\u000aDate Added: 9-12-2015\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: C, CPP14, JAVA Author: balajiganapath Author: balajiganapath balajiganapath Editorial: http://discuss.codechef.com/problems/KOL1506 Editorial: http://discuss.codechef.com/problems/KOL1506 http://discuss.codechef.com/problems/KOL1506 Tags: acm15kol balajiganapath binomial dynamic-prog Tags: acm15kol balajiganapath binomial dynamic-prog acm15kol balajiganapath binomial dynamic-prog Date Added: 9-12-2015 Date Added: 9-12-2015 Time Limit: 1.5 sec Time Limit: 1.5 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: C, CPP14, JAVA Languages: C, CPP14, JAVA SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V acm15kol balajiganapath binomial dynamic-prog
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/KOL1506
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVSamosa Bhai got tired of the difficult tasks given by CodeChef along with meagre salary being paid to him. So he moves to Aloo uncle's village and opens a courier company there. In the village, everyone knows Aloo uncle and Kachori Aunty, so everyone sends their gifts using Samosa Bhai's courier company only.
+p17
+aVThere are N houses in a row in the village. On New Year's Eve, each house sends a gift to all the other houses.
+p18
+aVThe distance between two houses situated at positions x and y in the row is |x - y|. Samosa Bhai's courier company charges dk rupees for each delivery, where d is the distance between the 2 houses.
+p19
+aVEveryone chose Samosa Bhai's company because of Aloo uncle and Kachori aunty. So he decides to give them the amount of money earned by him modulo 1000000007 (109 + 7). You need to compute this amount.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVThe first line of each test case contains 2 integers \u2014 N and k \u2014 denoting the number of houses and the exponent k, resepctively. The second line contains N space-separated integers A1, A2, \u2026 , AN denoting the positions of the houses.
+p25
+aVOutput
+p26
+aVFor each test case, output a single line with the amount given to Aloo uncle and Kachori aunty by Samosa Bhai.
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV1 \u2264 T \u2264 104
+p31
+aV2 \u2264 N \u2264 105
+p32
+aV0 \u2264 k \u2264 100
+p33
+aV0 \u2264 Ai \u2264 1000000006
+p34
+aVThe sum of N over all test cases will be at most 100000
+p35
+aV2 houses can be at the same position
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VKOL1506
+p40
+sb.

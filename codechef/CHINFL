@@ -1,0 +1,99 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aA recent glut in Chefland's markets has caused the local currency Peppercorn to devaluate sharply. (Peppercorns are getting cheaper on an average, though there could be ups and downs).\u000aAnd Chef needs to rescue his wealth! Initially, he had D Peppercorns. There are N exchange kiosks in the city he lives in, where he can go and exchange his Peppercorns for a well-known stable currency, the Antarctican Dollar. For each kiosk, the exchange rate for the first M seconds of the day is known (both for buying and selling). All kiosks are arranged in a row, and to travel from the ith to the jth kiosk, you need to spend |i-j| seconds, and to exchange currency at any kiosk, you also need 1 second. So, starting at point of time 0 at any of the kiosks (he can get there before trading starts for the day), Chef runs from one kiosk to another to buy and sell currency. You need to find the maximum amount of Peppercorns Chef could have after the Mth second.\u000aNote\u000aIf X is a buying rate, the kiosk will pay you X Peppercorns for 1 Antarctican Dollar.\u000aIf X is a selling rate, you will pay the kiosk X Peppercorns for 1 Antarctican Dollar.\u000aInput\u000aFirst line of input contains three numbers \u2014 N, M and D. N lines follow. ith line (i = 0 \u2026 N-1) contains 2*M integers \u2014 currency rate for ith kiosk. Numbers Ai, 2j and Ai, 2j+1 (j = 0 \u2026 M-1) are the selling and buying rates, respectively, at the jth second for the ith kiosk.\u000aOutput\u000aOutput a single number: the maximum amount of money (in Peppercorns - in the end Chef ought to have all the money converted to local currency since it's the only valid currency in the country for financial operations) he could have after M seconds, with absolute or relative error not more than 1e-6.\u000aIf the amount of money of any currency that Chef will own at any point of time exceeds 1018, output file should contain only a single line containing the string \u201cQuintillionnaire\u201d (without quotes, followed by a newline character).\u000aConstraints\u000a1 \u2264 D \u2264 1018\u000a1 \u2264 N, M \u2264 103\u000a1 \u2264 Ai, j \u2264 109\u000aAi, 2j > Ai, 2j+1 (because there are no miracles in Chefland \u2014 you\u2019ll always pay more than what the kiosk will pay you. Otherwise, one could\u2019ve indefinitely sold and bought and increased their money this way).\u000aSubtasks\u000aSubtask 1 (20 points):\u000a1 \u2264 N \u2264 100\u000a1 \u2264 M \u2264 100\u000a1 \u2264 D \u2264 103\u000a1 \u2264 Ai,j \u2264 103\u000aSubtask 2 (30 points):\u000a1 \u2264 N \u2264 100\u000a1 \u2264 M \u2264 100\u000aSubtask 3 (50 points): No additional constraints\u000aExample\u000aInput:\u000a3 3 5\u000a2 1 5 3 7 6\u000a2 1 4 3 6 5\u000a10 9 8 7 6 5\u000a\u000aOutput:\u000a15.0000000000\u000aAuthor: witalij_hq\u000aTester: antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/CHINFL\u000aTags: dp jan16 medium witalij_hq\u000aDate Added: 23-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aA recent glut in Chefland's markets has caused the local currency Peppercorn to devaluate sharply. (Peppercorns are getting cheaper on an average, though there could be ups and downs).\u000aAnd Chef needs to rescue his wealth! Initially, he had D Peppercorns. There are N exchange kiosks in the city he lives in, where he can go and exchange his Peppercorns for a well-known stable currency, the Antarctican Dollar. For each kiosk, the exchange rate for the first M seconds of the day is known (both for buying and selling). All kiosks are arranged in a row, and to travel from the ith to the jth kiosk, you need to spend |i-j| seconds, and to exchange currency at any kiosk, you also need 1 second. So, starting at point of time 0 at any of the kiosks (he can get there before trading starts for the day), Chef runs from one kiosk to another to buy and sell currency. You need to find the maximum amount of Peppercorns Chef could have after the Mth second.\u000aNote\u000aIf X is a buying rate, the kiosk will pay you X Peppercorns for 1 Antarctican Dollar.\u000aIf X is a selling rate, you will pay the kiosk X Peppercorns for 1 Antarctican Dollar.\u000aInput\u000aFirst line of input contains three numbers \u2014 N, M and D. N lines follow. ith line (i = 0 \u2026 N-1) contains 2*M integers \u2014 currency rate for ith kiosk. Numbers Ai, 2j and Ai, 2j+1 (j = 0 \u2026 M-1) are the selling and buying rates, respectively, at the jth second for the ith kiosk.\u000aOutput\u000aOutput a single number: the maximum amount of money (in Peppercorns - in the end Chef ought to have all the money converted to local currency since it's the only valid currency in the country for financial operations) he could have after M seconds, with absolute or relative error not more than 1e-6.\u000aIf the amount of money of any currency that Chef will own at any point of time exceeds 1018, output file should contain only a single line containing the string \u201cQuintillionnaire\u201d (without quotes, followed by a newline character).\u000aConstraints\u000a1 \u2264 D \u2264 1018\u000a1 \u2264 N, M \u2264 103\u000a1 \u2264 Ai, j \u2264 109\u000aAi, 2j > Ai, 2j+1 (because there are no miracles in Chefland \u2014 you\u2019ll always pay more than what the kiosk will pay you. Otherwise, one could\u2019ve indefinitely sold and bought and increased their money this way).\u000aSubtasks\u000aSubtask 1 (20 points):\u000a1 \u2264 N \u2264 100\u000a1 \u2264 M \u2264 100\u000a1 \u2264 D \u2264 103\u000a1 \u2264 Ai,j \u2264 103\u000aSubtask 2 (30 points):\u000a1 \u2264 N \u2264 100\u000a1 \u2264 M \u2264 100\u000aSubtask 3 (50 points): No additional constraints\u000aExample\u000aInput:\u000a3 3 5\u000a2 1 5 3 7 6\u000a2 1 4 3 6 5\u000a10 9 8 7 6 5\u000a\u000aOutput:\u000a15.0000000000\u000aAuthor: witalij_hq\u000aTester: antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/CHINFL\u000aTags: dp jan16 medium witalij_hq\u000aDate Added: 23-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese A recent glut in Chefland's markets has caused the local currency Peppercorn to devaluate sharply. (Peppercorns are getting cheaper on an average, though there could be ups and downs). Peppercorn And Chef needs to rescue his wealth! Initially, he had D Peppercorns. There are N exchange kiosks in the city he lives in, where he can go and exchange his Peppercorns for a well-known stable currency, the Antarctican Dollar. For each kiosk, the exchange rate for the first M seconds of the day is known (both for buying and selling). All kiosks are arranged in a row, and to travel from the ith to the jth kiosk, you need to spend |i-j| seconds, and to exchange currency at any kiosk, you also need 1 second. So, starting at point of time 0 at any of the kiosks (he can get there before trading starts for the day), Chef runs from one kiosk to another to buy and sell currency. You need to find the maximum amount of Peppercorns Chef could have after the Mth second. D N M ith th jth th |i-j| 1 0 Mth th Note If X is a buying rate, the kiosk will pay you X Peppercorns for 1 Antarctican Dollar.\u000aIf X is a selling rate, you will pay the kiosk X Peppercorns for 1 Antarctican Dollar. If X is a buying rate, the kiosk will pay you X Peppercorns for 1 Antarctican Dollar. X X 1 If X is a selling rate, you will pay the kiosk X Peppercorns for 1 Antarctican Dollar. X X 1 Input First line of input contains three numbers \u2014 N, M and D. N lines follow. ith line (i = 0 \u2026 N-1) contains 2*M integers \u2014 currency rate for ith kiosk. Numbers Ai, 2j and Ai, 2j+1 (j = 0 \u2026 M-1) are the selling and buying rates, respectively, at the jth second for the ith kiosk. N M D N i i = 0 \u2026 N-1 2*M ith th Ai, 2j i, 2j Ai, 2j+1 i, 2j+1 j = 0 \u2026 M-1 jth th ith th Output Output a single number: the maximum amount of money (in Peppercorns - in the end Chef ought to have all the money converted to local currency since it's the only valid currency in the country for financial operations) he could have after M seconds, with absolute or relative error not more than 1e-6. M 1e-6 If the amount of money of any currency that Chef will own at any point of time exceeds 1018, output file should contain only a single line containing the string \u201cQuintillionnaire\u201d (without quotes, followed by a newline character). 1018 18 only a single line \u201cQuintillionnaire\u201d Constraints 1 \u2264 D \u2264 1018\u000a1 \u2264 N, M \u2264 103\u000a1 \u2264 Ai, j \u2264 109\u000aAi, 2j > Ai, 2j+1 (because there are no miracles in Chefland \u2014 you\u2019ll always pay more than what the kiosk will pay you. Otherwise, one could\u2019ve indefinitely sold and bought and increased their money this way). 1 \u2264 D \u2264 1018 1 D 1018 18 1 \u2264 N, M \u2264 103 1 N, M 103 3 1 \u2264 Ai, j \u2264 109 1 Ai, j i, j 109 9 Ai, 2j > Ai, 2j+1 (because there are no miracles in Chefland \u2014 you\u2019ll always pay more than what the kiosk will pay you. Otherwise, one could\u2019ve indefinitely sold and bought and increased their money this way). Ai, 2j i, 2j Ai, 2j+1 i, 2j+1 Subtasks Subtask 1 (20 points): 1 \u2264 N \u2264 100\u000a1 \u2264 M \u2264 100\u000a1 \u2264 D \u2264 103\u000a1 \u2264 Ai,j \u2264 103 1 \u2264 N \u2264 100 1 \u2264 N \u2264 100 1 \u2264 M \u2264 100 1 \u2264 M \u2264 100 1 \u2264 D \u2264 103 1 \u2264 D \u2264 103 3 1 \u2264 Ai,j \u2264 103 1 \u2264 Ai,j \u2264 103 i,j 3 Subtask 2 (30 points): 1 \u2264 N \u2264 100\u000a1 \u2264 M \u2264 100 1 \u2264 N \u2264 100 1 \u2264 N \u2264 100 1 \u2264 M \u2264 100 1 \u2264 M \u2264 100 Subtask 3 (50 points): Example Input:\u000a3 3 5\u000a2 1 5 3 7 6\u000a2 1 4 3 6 5\u000a10 9 8 7 6 5\u000a\u000aOutput:\u000a15.0000000000 Input: Output:  Author: witalij_hq\u000aTester: antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/CHINFL\u000aTags: dp jan16 medium witalij_hq\u000aDate Added: 23-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq\u000aTester: antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/CHINFL\u000aTags: dp jan16 medium witalij_hq\u000aDate Added: 23-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq Author: witalij_hq witalij_hq Tester: antoniuk1 Tester: antoniuk1 antoniuk1 Editorial: http://discuss.codechef.com/problems/CHINFL Editorial: http://discuss.codechef.com/problems/CHINFL http://discuss.codechef.com/problems/CHINFL Tags: dp jan16 medium witalij_hq Tags: dp jan16 medium witalij_hq dp jan16 medium witalij_hq Date Added: 23-02-2015 Date Added: 23-02-2015 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V dp jan16 medium witalij_hq
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHINFL
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVA recent glut in Chefland's markets has caused the local currency Peppercorn to devaluate sharply. (Peppercorns are getting cheaper on an average, though there could be ups and downs).
+p18
+aVAnd Chef needs to rescue his wealth! Initially, he had D Peppercorns. There are N exchange kiosks in the city he lives in, where he can go and exchange his Peppercorns for a well-known stable currency, the Antarctican Dollar. For each kiosk, the exchange rate for the first M seconds of the day is known (both for buying and selling). All kiosks are arranged in a row, and to travel from the ith to the jth kiosk, you need to spend |i-j| seconds, and to exchange currency at any kiosk, you also need 1 second. So, starting at point of time 0 at any of the kiosks (he can get there before trading starts for the day), Chef runs from one kiosk to another to buy and sell currency. You need to find the maximum amount of Peppercorns Chef could have after the Mth second.
+p19
+aVNote
+p20
+aVIf X is a buying rate, the kiosk will pay you X Peppercorns for 1 Antarctican Dollar.
+p21
+aVIf X is a selling rate, you will pay the kiosk X Peppercorns for 1 Antarctican Dollar.
+p22
+asS'input'
+p23
+(lp24
+VInput
+p25
+aVFirst line of input contains three numbers \u2014 N, M and D. N lines follow. ith line (i = 0 \u2026 N-1) contains 2*M integers \u2014 currency rate for ith kiosk. Numbers Ai, 2j and Ai, 2j+1 (j = 0 \u2026 M-1) are the selling and buying rates, respectively, at the jth second for the ith kiosk.
+p26
+aVOutput
+p27
+aVOutput a single number: the maximum amount of money (in Peppercorns - in the end Chef ought to have all the money converted to local currency since it's the only valid currency in the country for financial operations) he could have after M seconds, with absolute or relative error not more than 1e-6.
+p28
+aVIf the amount of money of any currency that Chef will own at any point of time exceeds 1018, output file should contain only a single line containing the string \u201cQuintillionnaire\u201d (without quotes, followed by a newline character).
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 D \u2264 1018
+p33
+aV1 \u2264 N, M \u2264 103
+p34
+aV1 \u2264 Ai, j \u2264 109
+p35
+aVAi, 2j > Ai, 2j+1 (because there are no miracles in Chefland \u2014 you\u2019ll always pay more than what the kiosk will pay you. Otherwise, one could\u2019ve indefinitely sold and bought and increased their money this way).
+p36
+aVSubtasks
+p37
+aVSubtask 1 (20 points):
+p38
+aV1 \u2264 N \u2264 100
+p39
+aV1 \u2264 M \u2264 100
+p40
+aV1 \u2264 D \u2264 103
+p41
+aV1 \u2264 Ai,j \u2264 103
+p42
+aVSubtask 2 (30 points):
+p43
+aV1 \u2264 N \u2264 100
+p44
+aV1 \u2264 M \u2264 100
+p45
+aVSubtask 3 (50 points): No additional constraints
+p46
+asS'id'
+p47
+c__builtin__
+id
+p48
+sS'name'
+p49
+VCHINFL
+p50
+sb.

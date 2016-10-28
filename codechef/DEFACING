@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2.013 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aAll chefs in the Wolf town are scored by the government and receive the score at the beginning of every year. Now Dark Chef tries to deface his score. The score is shown with the following 7-segment display:\u000aDark Chef can turn on some segments, but he can not turn off any segment. Thus, he can increase his score like as follows:\u000aPlease, note that Dark Chef can add new 7-segment digits to the beginning or the end of his score. But he is not allowed to end up with the score having leading zeros (except when the score is zero itself, see example case 6).\u000aNow he has received the score S, and he wants to increase his score as much as possible. But the maximum possible score government could give is M. So his score must not exceed M. Your task is to calculate the maximum possible score he could get after defacing.\u000aNote. The digit "1" can not be changed to the digit "6", because in the representation of the digit "1" we have right 2 segments turned on, while for the digit "6" the upper-right segment must be turned off, see example case 12 for clarity. And, of course, the defaced score must be represented by the digits which have exactly the same form as shown in the above figure.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. The only line of each test case contains two space separated integers S and M, Dark Chef's score and the maximum score the government could give respectively.\u000aOutput\u000aFor each test case, output a single line containing the maximum possible score Dark Chef could get after defacing.\u000aConstraints\u000a1 \u2264 T \u2264 201301\u000a0 \u2264 S \u2264 M \u2264 20130120\u000aEach positive integer in the input will be given without leading zeros\u000aIf S or M is equal to zero, it will be given in the input as "0" (quotes for clarity)\u000aExample\u000aInput:\u000a12\u000a25 100\u000a77 100\u000a0 100\u000a8 13\u000a8 24\u000a0 0\u000a19 38\u000a89375 9247529\u000a804276 2857282\u000a0 20130120\u000a3284709 20130120\u000a1 6\u000a\u000aOutput:\u000a89\u000a100\u000a100\u000a8\u000a18\u000a0\u000a38\u000a9189999\u000a2809898\u000a20130120\u000a19889989\u000a4\u000aExplanation\u000aThe first three example cases correspond to the figure in the problem statement.\u000aAuthor: laycurse\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/DEFACING\u000aTags: cook30 easy greedy laycurse\u000aDate Added: 2-01-2013\u000aTime Limit: 2.013 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aAll chefs in the Wolf town are scored by the government and receive the score at the beginning of every year. Now Dark Chef tries to deface his score. The score is shown with the following 7-segment display:\u000aDark Chef can turn on some segments, but he can not turn off any segment. Thus, he can increase his score like as follows:\u000aPlease, note that Dark Chef can add new 7-segment digits to the beginning or the end of his score. But he is not allowed to end up with the score having leading zeros (except when the score is zero itself, see example case 6).\u000aNow he has received the score S, and he wants to increase his score as much as possible. But the maximum possible score government could give is M. So his score must not exceed M. Your task is to calculate the maximum possible score he could get after defacing.\u000aNote. The digit "1" can not be changed to the digit "6", because in the representation of the digit "1" we have right 2 segments turned on, while for the digit "6" the upper-right segment must be turned off, see example case 12 for clarity. And, of course, the defaced score must be represented by the digits which have exactly the same form as shown in the above figure.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. The only line of each test case contains two space separated integers S and M, Dark Chef's score and the maximum score the government could give respectively.\u000aOutput\u000aFor each test case, output a single line containing the maximum possible score Dark Chef could get after defacing.\u000aConstraints\u000a1 \u2264 T \u2264 201301\u000a0 \u2264 S \u2264 M \u2264 20130120\u000aEach positive integer in the input will be given without leading zeros\u000aIf S or M is equal to zero, it will be given in the input as "0" (quotes for clarity)\u000aExample\u000aInput:\u000a12\u000a25 100\u000a77 100\u000a0 100\u000a8 13\u000a8 24\u000a0 0\u000a19 38\u000a89375 9247529\u000a804276 2857282\u000a0 20130120\u000a3284709 20130120\u000a1 6\u000a\u000aOutput:\u000a89\u000a100\u000a100\u000a8\u000a18\u000a0\u000a38\u000a9189999\u000a2809898\u000a20130120\u000a19889989\u000a4\u000aExplanation\u000aThe first three example cases correspond to the figure in the problem statement.\u000aAuthor: laycurse\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/DEFACING\u000aTags: cook30 easy greedy laycurse\u000aDate Added: 2-01-2013\u000aTime Limit: 2.013 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. All chefs in the Wolf town are scored by the government and receive the score at the beginning of every year. Now Dark Chef tries to deface his score. The score is shown with the following 7-segment display:  Dark Chef can turn on some segments, but he can not turn off any segment. Thus, he can increase his score like as follows:  Please, note that Dark Chef can add new 7-segment digits to the beginning or the end of his score. But he is not allowed to end up with the score having leading zeros (except when the score is zero itself, see example case 6). 6 Now he has received the score S, and he wants to increase his score as much as possible. But the maximum possible score government could give is M. So his score must not exceed M. Your task is to calculate the maximum possible score he could get after defacing. S M M Note. The digit "1" can not be changed to the digit "6", because in the representation of the digit "1" we have right 2 segments turned on, while for the digit "6" the upper-right segment must be turned off, see example case 12 for clarity. And, of course, the defaced score must be represented by the digits which have exactly the same form as shown in the above figure. Note. "1" not "6" "1" right 2 "6" 12 Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. The only line of each test case contains two space separated integers S and M, Dark Chef's score and the maximum score the government could give respectively. T T S M Output For each test case, output a single line containing the maximum possible score Dark Chef could get after defacing. Constraints 1 \u2264 T \u2264 201301\u000a0 \u2264 S \u2264 M \u2264 20130120\u000aEach positive integer in the input will be given without leading zeros\u000aIf S or M is equal to zero, it will be given in the input as "0" (quotes for clarity) 1 \u2264 T \u2264 201301 1 T 201301 0 \u2264 S \u2264 M \u2264 20130120 0 S M 20130120 Each positive integer in the input will be given without leading zeros If S or M is equal to zero, it will be given in the input as "0" (quotes for clarity) S M "0" Example Input:\u000a12\u000a25 100\u000a77 100\u000a0 100\u000a8 13\u000a8 24\u000a0 0\u000a19 38\u000a89375 9247529\u000a804276 2857282\u000a0 20130120\u000a3284709 20130120\u000a1 6\u000a\u000aOutput:\u000a89\u000a100\u000a100\u000a8\u000a18\u000a0\u000a38\u000a9189999\u000a2809898\u000a20130120\u000a19889989\u000a4 Input: Output: Explanation The first three example cases correspond to the figure in the problem statement.  Author: laycurse\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/DEFACING\u000aTags: cook30 easy greedy laycurse\u000aDate Added: 2-01-2013\u000aTime Limit: 2.013 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: laycurse\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/DEFACING\u000aTags: cook30 easy greedy laycurse\u000aDate Added: 2-01-2013\u000aTime Limit: 2.013 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: laycurse Author: laycurse laycurse Tester: anton_lunyov Tester: anton_lunyov anton_lunyov Editorial: http://discuss.codechef.com/problems/DEFACING Editorial: http://discuss.codechef.com/problems/DEFACING http://discuss.codechef.com/problems/DEFACING Tags: cook30 easy greedy laycurse Tags: cook30 easy greedy laycurse cook30 easy greedy laycurse Date Added: 2-01-2013 Date Added: 2-01-2013 Time Limit: 2.013 sec Time Limit: 2.013 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook30 easy greedy laycurse
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/DEFACING
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVAll chefs in the Wolf town are scored by the government and receive the score at the beginning of every year. Now Dark Chef tries to deface his score. The score is shown with the following 7-segment display:
+p17
+aVDark Chef can turn on some segments, but he can not turn off any segment. Thus, he can increase his score like as follows:
+p18
+aVPlease, note that Dark Chef can add new 7-segment digits to the beginning or the end of his score. But he is not allowed to end up with the score having leading zeros (except when the score is zero itself, see example case 6).
+p19
+aVNow he has received the score S, and he wants to increase his score as much as possible. But the maximum possible score government could give is M. So his score must not exceed M. Your task is to calculate the maximum possible score he could get after defacing.
+p20
+aVNote. The digit "1" can not be changed to the digit "6", because in the representation of the digit "1" we have right 2 segments turned on, while for the digit "6" the upper-right segment must be turned off, see example case 12 for clarity. And, of course, the defaced score must be represented by the digits which have exactly the same form as shown in the above figure.
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. The only line of each test case contains two space separated integers S and M, Dark Chef's score and the maximum score the government could give respectively.
+p25
+aVOutput
+p26
+aVFor each test case, output a single line containing the maximum possible score Dark Chef could get after defacing.
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV1 \u2264 T \u2264 201301
+p31
+aV0 \u2264 S \u2264 M \u2264 20130120
+p32
+aVEach positive integer in the input will be given without leading zeros
+p33
+aVIf S or M is equal to zero, it will be given in the input as "0" (quotes for clarity)
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VDEFACING
+p38
+sb.

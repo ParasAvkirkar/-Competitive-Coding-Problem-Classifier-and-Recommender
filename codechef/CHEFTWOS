@@ -1,0 +1,91 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef's loves his dog so much! Once his dog created two strings a and b each of length n consisting of digits 1 and 2, and even a problem about them!\u000aChef's Dog will tell by barking if a string x (also containing only digits 1 and 2 and with length N) is good or not by performing the following actions.\u000aIt starts at first digit of the string, i.e. at i = 1.\u000aIt can move from digit i to either i - 1 or i + 1 if xi equals 1 and the corresponding digits exist.\u000aIt can move from digit i to either i - 2 or i + 2 if xi equals 2 and the corresponding digits exist.\u000aIt must visit each digit exactly once.\u000aIt must finish at the last digit (XN).\u000aChef's dog wants to make both the strings a and b good by choosing some subset S (possibly empty) of indices of set {1, 2, ..., n} and swapping each index i \u03f5 S between string a and b, i.e. swapping ai and bi. Can you find how many such subsets S exist out there? As the answer could be large, output it modulo 109 + 7.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line contains string a.\u000aThe second line contains string b.\u000aOutput\u000aFor each test case, output a single line containing answer of the problem.\u000aConstraints\u000a1 \u2264 T \u2264 20\u000a1 \u2264 |a| = |b| \u2264 105\u000a'1' \u2264 ai, bi \u2264 '2'\u000aSubtasks\u000aSubtask #1 (30 points) |a|, |b| \u2264 10\u000aSubtask #2 (70 points) original constraints\u000aExample\u000aInput:\u000a2\u000a1111\u000a2211\u000a222\u000a111\u000a\u000aOutput:\u000a8\u000a0\u000aExplanation\u000aTest case 1. Possible subsets are: {}, {1, 2}, {1, 2, 3}, {1, 2, 4}, {1, 2, 3, 4}, {3}, {4}, {3, 4}.\u000aTest case 2. There are no possible sets S which can make both the strings good.\u000aAuthor: berezin\u000aTester: alex_2oo8\u000aEditorial: http://discuss.codechef.com/problems/CHEFTWOS\u000aTags: berezin dp easy oct16\u000aDate Added: 11-06-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef's loves his dog so much! Once his dog created two strings a and b each of length n consisting of digits 1 and 2, and even a problem about them!\u000aChef's Dog will tell by barking if a string x (also containing only digits 1 and 2 and with length N) is good or not by performing the following actions.\u000aIt starts at first digit of the string, i.e. at i = 1.\u000aIt can move from digit i to either i - 1 or i + 1 if xi equals 1 and the corresponding digits exist.\u000aIt can move from digit i to either i - 2 or i + 2 if xi equals 2 and the corresponding digits exist.\u000aIt must visit each digit exactly once.\u000aIt must finish at the last digit (XN).\u000aChef's dog wants to make both the strings a and b good by choosing some subset S (possibly empty) of indices of set {1, 2, ..., n} and swapping each index i \u03f5 S between string a and b, i.e. swapping ai and bi. Can you find how many such subsets S exist out there? As the answer could be large, output it modulo 109 + 7.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line contains string a.\u000aThe second line contains string b.\u000aOutput\u000aFor each test case, output a single line containing answer of the problem.\u000aConstraints\u000a1 \u2264 T \u2264 20\u000a1 \u2264 |a| = |b| \u2264 105\u000a'1' \u2264 ai, bi \u2264 '2'\u000aSubtasks\u000aSubtask #1 (30 points) |a|, |b| \u2264 10\u000aSubtask #2 (70 points) original constraints\u000aExample\u000aInput:\u000a2\u000a1111\u000a2211\u000a222\u000a111\u000a\u000aOutput:\u000a8\u000a0\u000aExplanation\u000aTest case 1. Possible subsets are: {}, {1, 2}, {1, 2, 3}, {1, 2, 4}, {1, 2, 3, 4}, {3}, {4}, {3, 4}.\u000aTest case 2. There are no possible sets S which can make both the strings good.\u000aAuthor: berezin\u000aTester: alex_2oo8\u000aEditorial: http://discuss.codechef.com/problems/CHEFTWOS\u000aTags: berezin dp easy oct16\u000aDate Added: 11-06-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef's loves his dog so much! Once his dog created two strings a and b each of length n consisting of digits 1 and 2, and even a problem about them! a b n 1 2 Chef's Dog will tell by barking if a string x (also containing only digits 1 and 2 and with length N) is good or not by performing the following actions. x 1 2 N good It starts at first digit of the string, i.e. at i = 1.\u000aIt can move from digit i to either i - 1 or i + 1 if xi equals 1 and the corresponding digits exist.\u000aIt can move from digit i to either i - 2 or i + 2 if xi equals 2 and the corresponding digits exist.\u000aIt must visit each digit exactly once.\u000aIt must finish at the last digit (XN). It starts at first digit of the string, i.e. at i = 1. i = 1 It can move from digit i to either i - 1 or i + 1 if xi equals 1 and the corresponding digits exist. i i - 1 i + 1 xi i 1 It can move from digit i to either i - 2 or i + 2 if xi equals 2 and the corresponding digits exist. i i - 2 i + 2 xi i 2 It must visit each digit exactly once. must exactly It must finish at the last digit (XN). must XN N  Chef's dog wants to make both the strings a and b good by choosing some subset S (possibly empty) of indices of set {1, 2, ..., n} and swapping each index i \u03f5 S between string a and b, i.e. swapping ai and bi. Can you find how many such subsets S exist out there? As the answer could be large, output it modulo 109 + 7. a b good S {1, 2, ..., n} i \u03f5 S a b ai i bi i S 109 + 7 9 Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line contains string a. a The second line contains string b. b Output For each test case, output a single line containing answer of the problem. Constraints 1 \u2264 T \u2264 20\u000a1 \u2264 |a| = |b| \u2264 105\u000a'1' \u2264 ai, bi \u2264 '2' 1 \u2264 T \u2264 20 1 T 20 1 \u2264 |a| = |b| \u2264 105 1 |a| = |b| 105 5 '1' \u2264 ai, bi \u2264 '2' '1' ai, bi i i '2' Subtasks Subtask #1 (30 points) |a|, |b| \u2264 10\u000aSubtask #2 (70 points) original constraints Subtask #1 (30 points) |a|, |b| \u2264 10 |a|, |b| Subtask #2 (70 points) original constraints original constraints Example Input:\u000a2\u000a1111\u000a2211\u000a222\u000a111\u000a\u000aOutput:\u000a8\u000a0 Input: Output: Explanation Test case 1. Possible subsets are: {}, {1, 2}, {1, 2, 3}, {1, 2, 4}, {1, 2, 3, 4}, {3}, {4}, {3, 4}. Test case 1. {} {1, 2} {1, 2, 3} {1, 2, 4} {1, 2, 3, 4} {3} {4} {3, 4} Test case 2. There are no possible sets S which can make both the strings good. Test case 2. S  Author: berezin\u000aTester: alex_2oo8\u000aEditorial: http://discuss.codechef.com/problems/CHEFTWOS\u000aTags: berezin dp easy oct16\u000aDate Added: 11-06-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin\u000aTester: alex_2oo8\u000aEditorial: http://discuss.codechef.com/problems/CHEFTWOS\u000aTags: berezin dp easy oct16\u000aDate Added: 11-06-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin Author: berezin berezin Tester: alex_2oo8 Tester: alex_2oo8 alex_2oo8 Editorial: http://discuss.codechef.com/problems/CHEFTWOS Editorial: http://discuss.codechef.com/problems/CHEFTWOS http://discuss.codechef.com/problems/CHEFTWOS Tags: berezin dp easy oct16 Tags: berezin dp easy oct16 berezin dp easy oct16 Date Added: 11-06-2016 Date Added: 11-06-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V berezin dp easy oct16
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFTWOS
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef's loves his dog so much! Once his dog created two strings a and b each of length n consisting of digits 1 and 2, and even a problem about them!
+p18
+aVChef's Dog will tell by barking if a string x (also containing only digits 1 and 2 and with length N) is good or not by performing the following actions.
+p19
+aVIt starts at first digit of the string, i.e. at i = 1.
+p20
+aVIt can move from digit i to either i - 1 or i + 1 if xi equals 1 and the corresponding digits exist.
+p21
+aVIt can move from digit i to either i - 2 or i + 2 if xi equals 2 and the corresponding digits exist.
+p22
+aVIt must visit each digit exactly once.
+p23
+aVIt must finish at the last digit (XN).
+p24
+aVChef's dog wants to make both the strings a and b good by choosing some subset S (possibly empty) of indices of set {1, 2, ..., n} and swapping each index i \u03f5 S between string a and b, i.e. swapping ai and bi. Can you find how many such subsets S exist out there? As the answer could be large, output it modulo 109 + 7.
+p25
+asS'input'
+p26
+(lp27
+VInput
+p28
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p29
+aVThe first line contains string a.
+p30
+aVThe second line contains string b.
+p31
+aVOutput
+p32
+aVFor each test case, output a single line containing answer of the problem.
+p33
+asS'constraints'
+p34
+(lp35
+VConstraints
+p36
+aV1 \u2264 T \u2264 20
+p37
+aV1 \u2264 |a| = |b| \u2264 105
+p38
+aV'1' \u2264 ai, bi \u2264 '2'
+p39
+aVSubtasks
+p40
+aVSubtask #1 (30 points) |a|, |b| \u2264 10
+p41
+aVSubtask #2 (70 points) original constraints
+p42
+asS'id'
+p43
+c__builtin__
+id
+p44
+sS'name'
+p45
+VCHEFTWOS
+p46
+sb.

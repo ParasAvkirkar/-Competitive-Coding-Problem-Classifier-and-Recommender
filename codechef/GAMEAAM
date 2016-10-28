@@ -1,0 +1,71 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 0.5 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aTwo players are playing a game. The game is played on a sequence of positive integer pairs. The players make their moves alternatively. During his move the player chooses a pair and decreases the larger integer in the pair by a positive multiple of the smaller integer in the pair in such a way that both integers in the pair remain positive. If two numbers in some pair become equal then the pair is removed from the sequence. The player who can not make any move loses (or in another words the player who encounters an empty sequence loses). Given the sequence of positive integer pairs determine whether the first player can win or not (assuming that both players are playing optimally).\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test starts with an integer N denoting the number of pairs. Each of the next N lines contains a pair of positive integers.\u000a  Output\u000aFor each test case, output a single line containing "YES" if the first player can win and "NO" otherwise.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 100\u000aAll other integers are between 1 to 108\u000aThe integers in each pair will be different\u000a  Example\u000aInput:\u000a3\u000a1\u000a2 3\u000a2\u000a4 5\u000a5 6\u000a2\u000a2 3\u000a3 5\u000a\u000aOutput:\u000aNO\u000aNO\u000aYES\u000a  Explanation\u000aExample case 1. The first player don't have any choice other subtracting 2 from 3. So during the turn of the second player integer pair will be (2,1). The second player will win by subtracting 1 from 2.\u000aExample case 2. If the first player choose to move (4,5) to (4,1) the second player will make it to (1,1). If the first player choose to move (5,6) to (5,1) the second player will make it to (1,1). So regardless of the move of the first player, the second will always win.\u000aExample case 3. The first player will select pair (3,5) and make it to (3,2). Now both pairs are equal. So whatever the move of second player he will just mirror that move in another pair. This will ensure his win.\u000aAuthor: satej\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/GAMEAAM\u000aTags: cook42 easy game-theory satej sprague-grundy\u000aDate Added: 15-01-2014\u000aTime Limit: 0.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aTwo players are playing a game. The game is played on a sequence of positive integer pairs. The players make their moves alternatively. During his move the player chooses a pair and decreases the larger integer in the pair by a positive multiple of the smaller integer in the pair in such a way that both integers in the pair remain positive. If two numbers in some pair become equal then the pair is removed from the sequence. The player who can not make any move loses (or in another words the player who encounters an empty sequence loses). Given the sequence of positive integer pairs determine whether the first player can win or not (assuming that both players are playing optimally).\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test starts with an integer N denoting the number of pairs. Each of the next N lines contains a pair of positive integers.\u000a  Output\u000aFor each test case, output a single line containing "YES" if the first player can win and "NO" otherwise.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 100\u000aAll other integers are between 1 to 108\u000aThe integers in each pair will be different\u000a  Example\u000aInput:\u000a3\u000a1\u000a2 3\u000a2\u000a4 5\u000a5 6\u000a2\u000a2 3\u000a3 5\u000a\u000aOutput:\u000aNO\u000aNO\u000aYES\u000a  Explanation\u000aExample case 1. The first player don't have any choice other subtracting 2 from 3. So during the turn of the second player integer pair will be (2,1). The second player will win by subtracting 1 from 2.\u000aExample case 2. If the first player choose to move (4,5) to (4,1) the second player will make it to (1,1). If the first player choose to move (5,6) to (5,1) the second player will make it to (1,1). So regardless of the move of the first player, the second will always win.\u000aExample case 3. The first player will select pair (3,5) and make it to (3,2). Now both pairs are equal. So whatever the move of second player he will just mirror that move in another pair. This will ensure his win.\u000aAuthor: satej\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/GAMEAAM\u000aTags: cook42 easy game-theory satej sprague-grundy\u000aDate Added: 15-01-2014\u000aTime Limit: 0.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian as well. Mandarin Chinese Russian Two players are playing a game. The game is played on a sequence of positive integer pairs. The players make their moves alternatively. During his move the player chooses a pair and decreases the larger integer in the pair by a positive multiple of the smaller integer in the pair in such a way that both integers in the pair remain positive. If two numbers in some pair become equal then the pair is removed from the sequence. The player who can not make any move loses (or in another words the player who encounters an empty sequence loses). Given the sequence of positive integer pairs determine whether the first player can win or not (assuming that both players are playing optimally). Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test starts with an integer N denoting the number of pairs. Each of the next N lines contains a pair of positive integers. T T  N N   Output For each test case, output a single line containing "YES" if the first player can win and "NO" otherwise. Constraints 1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 100\u000aAll other integers are between 1 to 108\u000aThe integers in each pair will be different 1 \u2264 T \u2264 100 1 T 100 1 \u2264 N \u2264 100 1 N 100 All other integers are between 1 to 108 1 108 8 The integers in each pair will be different   Example Input:\u000a3\u000a1\u000a2 3\u000a2\u000a4 5\u000a5 6\u000a2\u000a2 3\u000a3 5\u000a\u000aOutput:\u000aNO\u000aNO\u000aYES Input: Output:   Explanation Example case 1. The first player don't have any choice other subtracting 2 from 3. So during the turn of the second player integer pair will be (2,1). The second player will win by subtracting 1 from 2. Example case 1. Example case 2. If the first player choose to move (4,5) to (4,1) the second player will make it to (1,1). If the first player choose to move (5,6) to (5,1) the second player will make it to (1,1). So regardless of the move of the first player, the second will always win. Example case 2. Example case 3. The first player will select pair (3,5) and make it to (3,2). Now both pairs are equal. So whatever the move of second player he will just mirror that move in another pair. This will ensure his win. Example case 3.  Author: satej\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/GAMEAAM\u000aTags: cook42 easy game-theory satej sprague-grundy\u000aDate Added: 15-01-2014\u000aTime Limit: 0.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: satej\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/GAMEAAM\u000aTags: cook42 easy game-theory satej sprague-grundy\u000aDate Added: 15-01-2014\u000aTime Limit: 0.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: satej Author: satej satej Tester: gerald Tester: gerald gerald Editorial: http://discuss.codechef.com/problems/GAMEAAM Editorial: http://discuss.codechef.com/problems/GAMEAAM http://discuss.codechef.com/problems/GAMEAAM Tags: cook42 easy game-theory satej sprague-grundy Tags: cook42 easy game-theory satej sprague-grundy cook42 easy game-theory satej sprague-grundy Date Added: 15-01-2014 Date Added: 15-01-2014 Time Limit: 0.5 sec Time Limit: 0.5 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook42 easy game-theory satej sprague-grundy
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/GAMEAAM
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian as well.
+p17
+aVTwo players are playing a game. The game is played on a sequence of positive integer pairs. The players make their moves alternatively. During his move the player chooses a pair and decreases the larger integer in the pair by a positive multiple of the smaller integer in the pair in such a way that both integers in the pair remain positive. If two numbers in some pair become equal then the pair is removed from the sequence. The player who can not make any move loses (or in another words the player who encounters an empty sequence loses). Given the sequence of positive integer pairs determine whether the first player can win or not (assuming that both players are playing optimally).
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p22
+aVEach test starts with an integer N denoting the number of pairs. Each of the next N lines contains a pair of positive integers.
+p23
+aVOutput
+p24
+aVFor each test case, output a single line containing "YES" if the first player can win and "NO" otherwise.
+p25
+asS'constraints'
+p26
+(lp27
+VConstraints
+p28
+aV1 \u2264 T \u2264 100
+p29
+aV1 \u2264 N \u2264 100
+p30
+aVAll other integers are between 1 to 108
+p31
+aVThe integers in each pair will be different
+p32
+asS'id'
+p33
+c__builtin__
+id
+p34
+sS'name'
+p35
+VGAMEAAM
+p36
+sb.

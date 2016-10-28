@@ -1,0 +1,73 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese\u000aDevu loves to play with his dear mouse Jerry. One day they play a game on 2 dimensional grid of dimensions n * n (n \u2265 2). Jerry is currently at coordinates (sx, sy) and wants to move to location (ex, ey) where cheese is placed by Devu. Also Devu is very cunning and has placed a bomb at location (bx, by). All these three locations are distinct.\u000aIn a single move, Jerry can go either up, down, left or right in the grid such that it never goes out of the grid. Also, it has to avoid the bomb. Find out minimum number of moves Jerry needs. It is guaranteed that it is always possible to do so.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows."\u000aThe first line of each test case contains seven space separated integers n, sx, sy , ex, ey, bx, by.\u000aOutput\u000aFor each test case, output a single line containing an integer corresponding to minimum number of moves Jerry needs.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a2 \u2264 n \u2264 20\u000a1 \u2264 sx, sy , ex, ey, bx, by \u2264 n\u000aNo two or more poitns in the three points are same.\u000aExample\u000aInput:\u000a2\u000a2 1 1 2 2 1 2\u000a3 1 1 1 3 1 2\u000a\u000aOutput:\u000a2\u000a4\u000aExplanation\u000aExample case 1. ...\u000aJerry will move directly (1, 1) to (2, 1) and then to (2, 2) in total 2 moves.\u000aExample case 2. ...\u000aAuthor: admin2\u000aEditorial: http://discuss.codechef.com/problems/DEVJERRY\u000aTags: admin2 snck151c\u000aDate Added: 1-06-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese\u000aDevu loves to play with his dear mouse Jerry. One day they play a game on 2 dimensional grid of dimensions n * n (n \u2265 2). Jerry is currently at coordinates (sx, sy) and wants to move to location (ex, ey) where cheese is placed by Devu. Also Devu is very cunning and has placed a bomb at location (bx, by). All these three locations are distinct.\u000aIn a single move, Jerry can go either up, down, left or right in the grid such that it never goes out of the grid. Also, it has to avoid the bomb. Find out minimum number of moves Jerry needs. It is guaranteed that it is always possible to do so.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows."\u000aThe first line of each test case contains seven space separated integers n, sx, sy , ex, ey, bx, by.\u000aOutput\u000aFor each test case, output a single line containing an integer corresponding to minimum number of moves Jerry needs.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a2 \u2264 n \u2264 20\u000a1 \u2264 sx, sy , ex, ey, bx, by \u2264 n\u000aNo two or more poitns in the three points are same.\u000aExample\u000aInput:\u000a2\u000a2 1 1 2 2 1 2\u000a3 1 1 1 3 1 2\u000a\u000aOutput:\u000a2\u000a4\u000aExplanation\u000aExample case 1. ...\u000aJerry will move directly (1, 1) to (2, 1) and then to (2, 2) in total 2 moves.\u000aExample case 2. ...\u000aAuthor: admin2\u000aEditorial: http://discuss.codechef.com/problems/DEVJERRY\u000aTags: admin2 snck151c\u000aDate Added: 1-06-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese , Russian and Vietnamese Mandarin Chinese Russian Vietnamese Devu loves to play with his dear mouse Jerry. One day they play a game on 2 dimensional grid of dimensions n * n (n \u2265 2). Jerry is currently at coordinates (sx, sy) and wants to move to location (ex, ey) where cheese is placed by Devu. Also Devu is very cunning and has placed a bomb at location (bx, by). All these three locations are distinct. n * n n (sx, sy) x y (ex, ey) x y (bx, by) x y In a single move, Jerry can go either up, down, left or right in the grid such that it never goes out of the grid. Also, it has to avoid the bomb. Find out minimum number of moves Jerry needs. It is guaranteed that it is always possible to do so. Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows."\u000aThe first line of each test case contains seven space separated integers n, sx, sy , ex, ey, bx, by. The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows." T T The first line of each test case contains seven space separated integers n, sx, sy , ex, ey, bx, by. n, sx, sy , ex, ey, bx, by x y x y x y Output For each test case, output a single line containing an integer corresponding to minimum number of moves Jerry needs. For each test case, output a single line containing an integer corresponding to minimum number of moves Jerry needs. Constraints 1 \u2264 T \u2264 1000\u000a2 \u2264 n \u2264 20\u000a1 \u2264 sx, sy , ex, ey, bx, by \u2264 n\u000aNo two or more poitns in the three points are same. 1 \u2264 T \u2264 1000 1 T 1000 2 \u2264 n \u2264 20 2 n 20 1 \u2264 sx, sy , ex, ey, bx, by \u2264 n 1 \u2264 sx, sy , ex, ey, bx, by \u2264 n x y x y x y No two or more poitns in the three points are same. Example Input:\u000a2\u000a2 1 1 2 2 1 2\u000a3 1 1 1 3 1 2\u000a\u000aOutput:\u000a2\u000a4 Input: Output: Explanation Example case 1. ... Example case 1. Example case 2. ... Example case 2.   Author: admin2\u000aEditorial: http://discuss.codechef.com/problems/DEVJERRY\u000aTags: admin2 snck151c\u000aDate Added: 1-06-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: admin2\u000aEditorial: http://discuss.codechef.com/problems/DEVJERRY\u000aTags: admin2 snck151c\u000aDate Added: 1-06-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: admin2 Author: admin2 admin2 Editorial: http://discuss.codechef.com/problems/DEVJERRY Editorial: http://discuss.codechef.com/problems/DEVJERRY http://discuss.codechef.com/problems/DEVJERRY Tags: admin2 snck151c Tags: admin2 snck151c admin2 snck151c Date Added: 1-06-2015 Date Added: 1-06-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V admin2 snck151c
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/DEVJERRY
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese , Russian and Vietnamese
+p17
+aVDevu loves to play with his dear mouse Jerry. One day they play a game on 2 dimensional grid of dimensions n * n (n \u2265 2). Jerry is currently at coordinates (sx, sy) and wants to move to location (ex, ey) where cheese is placed by Devu. Also Devu is very cunning and has placed a bomb at location (bx, by). All these three locations are distinct.
+p18
+aVIn a single move, Jerry can go either up, down, left or right in the grid such that it never goes out of the grid. Also, it has to avoid the bomb. Find out minimum number of moves Jerry needs. It is guaranteed that it is always possible to do so.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows."
+p23
+aVThe first line of each test case contains seven space separated integers n, sx, sy , ex, ey, bx, by.
+p24
+aVOutput
+p25
+aVFor each test case, output a single line containing an integer corresponding to minimum number of moves Jerry needs.
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aV1 \u2264 T \u2264 1000
+p30
+aV2 \u2264 n \u2264 20
+p31
+aV1 \u2264 sx, sy , ex, ey, bx, by \u2264 n
+p32
+aVNo two or more poitns in the three points are same.
+p33
+asS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VDEVJERRY
+p37
+sb.

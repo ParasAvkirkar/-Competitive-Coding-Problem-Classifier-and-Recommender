@@ -1,0 +1,77 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aAlice and Bob are playing the game. Initially, there is a single rooted tree. Players take turns alternately, Alice starts.\u000aIn a single turn, Alice should choose any non-empty subset of roots of tree (or trees) and remove them. On the other hand, Bob should choose any non-empty subset of leafs and remove them from the tree (or trees). (Please note that Bob always takes some of the deepest in the original tree leafs.) It's not allowed to skip the turn. The game ends when a player can't take a turn.\u000aThe Alice's goal is to minimize the number of turns made by the both players, while Bob wants this number to be the maximal. Considering they both play optimally, what is the number of turns eventually made?\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the number of nodes of the tree.\u000aThe next N-1 lines contain pairs of nodes' numbers Ui and Vi (one pair per line), denoting the edges of the tree.\u000aThe nodes are numbered from 1 to N, inclusive, and the node with the index 1 is the root of the tree.\u000aOutput\u000aFor each test case, output a single line containing the answer to the corresponding test case.\u000aConstraints\u000a1 \u2264 T \u2264 40\u000a1 \u2264 N \u2264 10000\u000a1 \u2264 Ui, Vi \u2264 N\u000a  Example\u000aInput:\u000a3\u000a2\u000a1 2\u000a7\u000a1 3\u000a1 4\u000a4 2\u000a4 5\u000a4 6\u000a6 7\u000a1\u000a\u000aOutput:\u000a2\u000a5\u000a1\u000aAuthor: witua\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/TREEGAME\u000aTags: cook49 easy games greedy pointers witua\u000aDate Added: 14-04-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aAlice and Bob are playing the game. Initially, there is a single rooted tree. Players take turns alternately, Alice starts.\u000aIn a single turn, Alice should choose any non-empty subset of roots of tree (or trees) and remove them. On the other hand, Bob should choose any non-empty subset of leafs and remove them from the tree (or trees). (Please note that Bob always takes some of the deepest in the original tree leafs.) It's not allowed to skip the turn. The game ends when a player can't take a turn.\u000aThe Alice's goal is to minimize the number of turns made by the both players, while Bob wants this number to be the maximal. Considering they both play optimally, what is the number of turns eventually made?\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the number of nodes of the tree.\u000aThe next N-1 lines contain pairs of nodes' numbers Ui and Vi (one pair per line), denoting the edges of the tree.\u000aThe nodes are numbered from 1 to N, inclusive, and the node with the index 1 is the root of the tree.\u000aOutput\u000aFor each test case, output a single line containing the answer to the corresponding test case.\u000aConstraints\u000a1 \u2264 T \u2264 40\u000a1 \u2264 N \u2264 10000\u000a1 \u2264 Ui, Vi \u2264 N\u000a  Example\u000aInput:\u000a3\u000a2\u000a1 2\u000a7\u000a1 3\u000a1 4\u000a4 2\u000a4 5\u000a4 6\u000a6 7\u000a1\u000a\u000aOutput:\u000a2\u000a5\u000a1\u000aAuthor: witua\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/TREEGAME\u000aTags: cook49 easy games greedy pointers witua\u000aDate Added: 14-04-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian as well. Mandarin Chinese Russian Alice and Bob are playing the game. Initially, there is a single rooted tree. Players take turns alternately, Alice starts. In a single turn, Alice should choose any non-empty subset of roots of tree (or trees) and remove them. On the other hand, Bob should choose any non-empty subset of leafs and remove them from the tree (or trees). (Please note that Bob always takes some of the deepest in the original tree leafs.) It's not allowed to skip the turn. The game ends when a player can't take a turn. Please note deepest The Alice's goal is to minimize the number of turns made by the both players, while Bob wants this number to be the maximal. Considering they both play optimally, what is the number of turns eventually made? Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a single integer N denoting the number of nodes of the tree. N The next N-1 lines contain pairs of nodes' numbers Ui and Vi (one pair per line), denoting the edges of the tree. N-1 Ui i Vi i The nodes are numbered from 1 to N, inclusive, and the node with the index 1 is the root of the tree. 1 N 1 Output For each test case, output a single line containing the answer to the corresponding test case. Constraints 1 \u2264 T \u2264 40\u000a1 \u2264 N \u2264 10000\u000a1 \u2264 Ui, Vi \u2264 N 1 \u2264 T \u2264 40 1 T 40 1 \u2264 N \u2264 10000 1 N 10000 1 \u2264 Ui, Vi \u2264 N 1 Ui, Vi i i N   Example Input:\u000a3\u000a2\u000a1 2\u000a7\u000a1 3\u000a1 4\u000a4 2\u000a4 5\u000a4 6\u000a6 7\u000a1\u000a\u000aOutput:\u000a2\u000a5\u000a1 Input: Output:  Author: witua\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/TREEGAME\u000aTags: cook49 easy games greedy pointers witua\u000aDate Added: 14-04-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/TREEGAME\u000aTags: cook49 easy games greedy pointers witua\u000aDate Added: 14-04-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua Author: witua witua Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/TREEGAME Editorial: http://discuss.codechef.com/problems/TREEGAME http://discuss.codechef.com/problems/TREEGAME Tags: cook49 easy games greedy pointers witua Tags: cook49 easy games greedy pointers witua cook49 easy games greedy pointers witua Date Added: 14-04-2014 Date Added: 14-04-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook49 easy games greedy pointers witua
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/TREEGAME
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian as well.
+p17
+aVAlice and Bob are playing the game. Initially, there is a single rooted tree. Players take turns alternately, Alice starts.
+p18
+aVIn a single turn, Alice should choose any non-empty subset of roots of tree (or trees) and remove them. On the other hand, Bob should choose any non-empty subset of leafs and remove them from the tree (or trees). (Please note that Bob always takes some of the deepest in the original tree leafs.) It's not allowed to skip the turn. The game ends when a player can't take a turn.
+p19
+aVThe Alice's goal is to minimize the number of turns made by the both players, while Bob wants this number to be the maximal. Considering they both play optimally, what is the number of turns eventually made?
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVThe first line of each test case contains a single integer N denoting the number of nodes of the tree.
+p25
+aVThe next N-1 lines contain pairs of nodes' numbers Ui and Vi (one pair per line), denoting the edges of the tree.
+p26
+aVThe nodes are numbered from 1 to N, inclusive, and the node with the index 1 is the root of the tree.
+p27
+aVOutput
+p28
+aVFor each test case, output a single line containing the answer to the corresponding test case.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 T \u2264 40
+p33
+aV1 \u2264 N \u2264 10000
+p34
+aV1 \u2264 Ui, Vi \u2264 N
+p35
+asS'id'
+p36
+c__builtin__
+id
+p37
+sS'name'
+p38
+VTREEGAME
+p39
+sb.

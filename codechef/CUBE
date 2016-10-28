@@ -1,0 +1,82 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 0.5 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aThis winter our chef plans to unveil his latest creation - Cube Cakes. As the name suggests, this new delicacy is a cake in the form of a perfect cube with secret ingredients from the chef's inventory. Since it is a relatively new creation of the chef, he wants to master the ability to make perfectly identical Cube Cakes. For this, he wants you to write a program that will calculate the similarity between two given Cube Cakes.\u000a\u000a\u000aEach Cube Cake can be represented as a cube of size N where each cell of the cube contains a lowercase alphabet ('a'-'z'). The similarity between two Cube Cakes ( of size N each ) is defined as the maximum sized common sub-cube that exists at exactly the same position in both the Cube Cakes. Two sub-cubes are said to be common if at-least P% of their corresponding characters are equal. You need to find the size S of the largest such sub-cube and also the number of common sub-cubes of size S in the Cube Cake.\u000aInput\u000aThe first line contains an integer T denoting the number of test cases. Then the descriptions of testcases follows.\u000aThe first line of each testcase contains integers N (the size of the Cube Cakes A and B that are to be compared) and P.\u000aThe next line contains a string SA containing N3 lowercase characters ('a'-'z'), where the A[i][j][k]th element of the Cube Cake A is given by SA[ i*N*N + j*N + k ] where 0 \u2264 i, j, k \u2264 N-1 .\u000aThe next line contains a string SB containing N3 lowercase characters ('a'-'z'), SB is the description of the Cube Cake B in the way analogical to A.\u000aOutput\u000aFor every test case, print in a single line the similarity between the two Cube Cakes S and the number of common sub-cubes of size S.\u000aIf there is no common sub cube present, just print -1 in a single line.\u000aConstraints\u000a1 \u2264 T \u2264 40\u000a1 \u2264 N \u2264 40\u000a0 \u2264 P \u2264 100\u000a| SA |, |SB | = N3\u000aExample\u000aInput:\u000a3\u000a2 40\u000aabcdefgh\u000aabcdefgh\u000a2 100\u000aabcdefgh\u000accccccch\u000a1 100\u000aa\u000ab\u000a\u000aOutput:\u000a2 1\u000a1 2\u000a-1\u000aExplanation\u000aExample case 1.\u000a\u000aSince both the Cube Cakes are identical, the whole cube matches and hence the similarity is 2. Also, there is only one sub-cube of size 2.\u000aExample case 2.\u000a\u000aSince P is 100, all characters in the sub-cube must match. The sub cube 'c' and 'h' each of size 1 are the largest cube satisfying this criteria. Hence the similarity is 1 and corresponding count is 2 .\u000aExample case 3.\u000a\u000aSince no characters match in the cube, we cannot find a common subcube here.\u000aAuthor: viv001\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/CUBE\u000aTags: dec13 easy viv001\u000aDate Added: 1-10-2013\u000aTime Limit: 0.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aThis winter our chef plans to unveil his latest creation - Cube Cakes. As the name suggests, this new delicacy is a cake in the form of a perfect cube with secret ingredients from the chef's inventory. Since it is a relatively new creation of the chef, he wants to master the ability to make perfectly identical Cube Cakes. For this, he wants you to write a program that will calculate the similarity between two given Cube Cakes.\u000a\u000a\u000aEach Cube Cake can be represented as a cube of size N where each cell of the cube contains a lowercase alphabet ('a'-'z'). The similarity between two Cube Cakes ( of size N each ) is defined as the maximum sized common sub-cube that exists at exactly the same position in both the Cube Cakes. Two sub-cubes are said to be common if at-least P% of their corresponding characters are equal. You need to find the size S of the largest such sub-cube and also the number of common sub-cubes of size S in the Cube Cake.\u000aInput\u000aThe first line contains an integer T denoting the number of test cases. Then the descriptions of testcases follows.\u000aThe first line of each testcase contains integers N (the size of the Cube Cakes A and B that are to be compared) and P.\u000aThe next line contains a string SA containing N3 lowercase characters ('a'-'z'), where the A[i][j][k]th element of the Cube Cake A is given by SA[ i*N*N + j*N + k ] where 0 \u2264 i, j, k \u2264 N-1 .\u000aThe next line contains a string SB containing N3 lowercase characters ('a'-'z'), SB is the description of the Cube Cake B in the way analogical to A.\u000aOutput\u000aFor every test case, print in a single line the similarity between the two Cube Cakes S and the number of common sub-cubes of size S.\u000aIf there is no common sub cube present, just print -1 in a single line.\u000aConstraints\u000a1 \u2264 T \u2264 40\u000a1 \u2264 N \u2264 40\u000a0 \u2264 P \u2264 100\u000a| SA |, |SB | = N3\u000aExample\u000aInput:\u000a3\u000a2 40\u000aabcdefgh\u000aabcdefgh\u000a2 100\u000aabcdefgh\u000accccccch\u000a1 100\u000aa\u000ab\u000a\u000aOutput:\u000a2 1\u000a1 2\u000a-1\u000aExplanation\u000aExample case 1.\u000a\u000aSince both the Cube Cakes are identical, the whole cube matches and hence the similarity is 2. Also, there is only one sub-cube of size 2.\u000aExample case 2.\u000a\u000aSince P is 100, all characters in the sub-cube must match. The sub cube 'c' and 'h' each of size 1 are the largest cube satisfying this criteria. Hence the similarity is 1 and corresponding count is 2 .\u000aExample case 3.\u000a\u000aSince no characters match in the cube, we cannot find a common subcube here.\u000aAuthor: viv001\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/CUBE\u000aTags: dec13 easy viv001\u000aDate Added: 1-10-2013\u000aTime Limit: 0.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian This winter our chef plans to unveil his latest creation - Cube Cakes. As the name suggests, this new delicacy is a cake in the form of a perfect cube with secret ingredients from the chef's inventory. Since it is a relatively new creation of the chef, he wants to master the ability to make perfectly identical Cube Cakes. For this, he wants you to write a program that will calculate the similarity between two given Cube Cakes.    Each Cube Cake can be represented as a cube of size N where each cell of the cube contains a lowercase alphabet ('a'-'z'). The similarity between two Cube Cakes ( of size N each ) is defined as the maximum sized common sub-cube that exists at exactly the same position in both the Cube Cakes. Two sub-cubes are said to be common if at-least P% of their corresponding characters are equal. You need to find the size S of the largest such sub-cube and also the number of common sub-cubes of size S in the Cube Cake. N N common common P% S common S Input The first line contains an integer T denoting the number of test cases. Then the descriptions of testcases follows. T The first line of each testcase contains integers N (the size of the Cube Cakes A and B that are to be compared) and P.\u000aThe next line contains a string SA containing N3 lowercase characters ('a'-'z'), where the A[i][j][k]th element of the Cube Cake A is given by SA[ i*N*N + j*N + k ] where 0 \u2264 i, j, k \u2264 N-1 .\u000aThe next line contains a string SB containing N3 lowercase characters ('a'-'z'), SB is the description of the Cube Cake B in the way analogical to A. N A B P  SA A N3 3 A[i][j][k]th th A SA[ i*N*N + j*N + k ] A 0 i, j, k N-1  SB B N3 3 SB B B A Output For every test case, print in a single line the similarity between the two Cube Cakes S and the number of common sub-cubes of size S.\u000aIf there is no common sub cube present, just print -1 in a single line. S common S  common -1 Constraints 1 \u2264 T \u2264 40\u000a1 \u2264 N \u2264 40\u000a0 \u2264 P \u2264 100\u000a| SA |, |SB | = N3 1 \u2264 T \u2264 40 1 T 40 1 \u2264 N \u2264 40 1 N 40 0 \u2264 P \u2264 100 0 P 100 | SA |, |SB | = N3 | SA |, |SB | A B N3 3 Example Input:\u000a3\u000a2 40\u000aabcdefgh\u000aabcdefgh\u000a2 100\u000aabcdefgh\u000accccccch\u000a1 100\u000aa\u000ab\u000a\u000aOutput:\u000a2 1\u000a1 2\u000a-1 Input: Output: Explanation Example case 1.\u000a\u000aSince both the Cube Cakes are identical, the whole cube matches and hence the similarity is 2. Also, there is only one sub-cube of size 2. Example case 1.   2 2  Example case 2.\u000a\u000aSince P is 100, all characters in the sub-cube must match. The sub cube 'c' and 'h' each of size 1 are the largest cube satisfying this criteria. Hence the similarity is 1 and corresponding count is 2 . Example case 2.   P 100 'c' 'h' 1 1 2  Example case 3.\u000a\u000aSince no characters match in the cube, we cannot find a common subcube here. Example case 3.   common   Author: viv001\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/CUBE\u000aTags: dec13 easy viv001\u000aDate Added: 1-10-2013\u000aTime Limit: 0.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: viv001\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/CUBE\u000aTags: dec13 easy viv001\u000aDate Added: 1-10-2013\u000aTime Limit: 0.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: viv001 Author: viv001 viv001 Tester: gerald Tester: gerald gerald Editorial: http://discuss.codechef.com/problems/CUBE Editorial: http://discuss.codechef.com/problems/CUBE http://discuss.codechef.com/problems/CUBE Tags: dec13 easy viv001 Tags: dec13 easy viv001 dec13 easy viv001 Date Added: 1-10-2013 Date Added: 1-10-2013 Time Limit: 0.5 sec Time Limit: 0.5 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V dec13 easy viv001
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CUBE
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVThis winter our chef plans to unveil his latest creation - Cube Cakes. As the name suggests, this new delicacy is a cake in the form of a perfect cube with secret ingredients from the chef's inventory. Since it is a relatively new creation of the chef, he wants to master the ability to make perfectly identical Cube Cakes. For this, he wants you to write a program that will calculate the similarity between two given Cube Cakes.
+p18
+aV
+p19
+ag19
+aVEach Cube Cake can be represented as a cube of size N where each cell of the cube contains a lowercase alphabet ('a'-'z'). The similarity between two Cube Cakes ( of size N each ) is defined as the maximum sized common sub-cube that exists at exactly the same position in both the Cube Cakes. Two sub-cubes are said to be common if at-least P% of their corresponding characters are equal. You need to find the size S of the largest such sub-cube and also the number of common sub-cubes of size S in the Cube Cake.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line contains an integer T denoting the number of test cases. Then the descriptions of testcases follows.
+p24
+aVThe first line of each testcase contains integers N (the size of the Cube Cakes A and B that are to be compared) and P.
+p25
+aVThe next line contains a string SA containing N3 lowercase characters ('a'-'z'), where the A[i][j][k]th element of the Cube Cake A is given by SA[ i*N*N + j*N + k ] where 0 \u2264 i, j, k \u2264 N-1 .
+p26
+aVThe next line contains a string SB containing N3 lowercase characters ('a'-'z'), SB is the description of the Cube Cake B in the way analogical to A.
+p27
+aVOutput
+p28
+aVFor every test case, print in a single line the similarity between the two Cube Cakes S and the number of common sub-cubes of size S.
+p29
+aVIf there is no common sub cube present, just print -1 in a single line.
+p30
+asS'constraints'
+p31
+(lp32
+VConstraints
+p33
+aV1 \u2264 T \u2264 40
+p34
+aV1 \u2264 N \u2264 40
+p35
+aV0 \u2264 P \u2264 100
+p36
+aV| SA |, |SB | = N3
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'name'
+p40
+VCUBE
+p41
+sb.

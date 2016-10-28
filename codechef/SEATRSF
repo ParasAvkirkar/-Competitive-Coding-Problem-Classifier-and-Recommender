@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aProblem Statement\u000aSereja has a sequence of n integers a[1], a[2], ..., a[n]. Sereja can do following transformation of the array:\u000a  create a new sequence of n integers b[1], b[2], ..., b[n]in this way: (1\u2009\u2264\u2009i\u2009\u2264\u2009n)\u000aReplace the sequence a by b, i.e., a[i] = b[i] for all i in [1, n]\u000a  Sereja decided to use his transformation k times. Then he computed the value of , where r \u2014 the sequence obtained after k transformations of sequence a, as described above.\u000a  Sereja lost sequence a, but he was left with the numbers q(r) and k. Now Sereja is interested in the question : what is the number of the sequences of the integers \u0441[1], \u0441[2], ..., \u0441[n], such that 1\u2009\u2264\u2009c[i]\u2009\u2264\u2009m and q(d)\u2009=\u2009q(r), where d \u2014 the sequence obtained after k transformations of sequence c, as described above.\u000a  Input\u000aThe first lines contains a single integer T, denoting the number of test cases. Each test case consist of four integers : n, m, q(r), k.\u000a  Output\u000aIn a single line print the remainder of division the answer of the problem on number 10^9\u2009+\u20097.\u000a  Constraints\u000a1 \u2264 T \u2264 10000\u000a1 \u2264 n,\u2009m,\u2009q(r), k \u2264 10^9\u000a  Example\u000aInput:\u000a3\u000a1 1 1 1\u000a2 2 1 1\u000a2 3 1 1\u000a\u000aOutput:\u000a0\u000a2\u000a4\u000a  Author: sereja\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/SEATRSF\u000aTags: combinatorics easy inclusn-exclusn oct13 sereja\u000aDate Added: 9-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aProblem Statement\u000aSereja has a sequence of n integers a[1], a[2], ..., a[n]. Sereja can do following transformation of the array:\u000a  create a new sequence of n integers b[1], b[2], ..., b[n]in this way: (1\u2009\u2264\u2009i\u2009\u2264\u2009n)\u000aReplace the sequence a by b, i.e., a[i] = b[i] for all i in [1, n]\u000a  Sereja decided to use his transformation k times. Then he computed the value of , where r \u2014 the sequence obtained after k transformations of sequence a, as described above.\u000a  Sereja lost sequence a, but he was left with the numbers q(r) and k. Now Sereja is interested in the question : what is the number of the sequences of the integers \u0441[1], \u0441[2], ..., \u0441[n], such that 1\u2009\u2264\u2009c[i]\u2009\u2264\u2009m and q(d)\u2009=\u2009q(r), where d \u2014 the sequence obtained after k transformations of sequence c, as described above.\u000a  Input\u000aThe first lines contains a single integer T, denoting the number of test cases. Each test case consist of four integers : n, m, q(r), k.\u000a  Output\u000aIn a single line print the remainder of division the answer of the problem on number 10^9\u2009+\u20097.\u000a  Constraints\u000a1 \u2264 T \u2264 10000\u000a1 \u2264 n,\u2009m,\u2009q(r), k \u2264 10^9\u000a  Example\u000aInput:\u000a3\u000a1 1 1 1\u000a2 2 1 1\u000a2 3 1 1\u000a\u000aOutput:\u000a0\u000a2\u000a4\u000a  Author: sereja\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/SEATRSF\u000aTags: combinatorics easy inclusn-exclusn oct13 sereja\u000aDate Added: 9-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese here here Problem Statement  Sereja has a sequence of n integers a[1], a[2], ..., a[n]. Sereja can do following transformation of the array: n a[1], a[2], ..., a[n]    create a new sequence of n integers b[1], b[2], ..., b[n]in this way: (1\u2009\u2264\u2009i\u2009\u2264\u2009n) n b[1], b[2], ..., b[n]  (1\u2009\u2264\u2009i\u2009\u2264\u2009n)  Replace the sequence a by b, i.e., a[i] = b[i] for all i in [1, n]   Sereja decided to use his transformation k times. Then he computed the value of , where r \u2014 the sequence obtained after k transformations of sequence a, as described above. k   r k a   Sereja lost sequence a, but he was left with the numbers q(r) and k. Now Sereja is interested in the question : what is the number of the sequences of the integers \u0441[1], \u0441[2], ..., \u0441[n], such that 1\u2009\u2264\u2009c[i]\u2009\u2264\u2009m and q(d)\u2009=\u2009q(r), where d \u2014 the sequence obtained after k transformations of sequence c, as described above. a q(r) k \u0441[1], \u0441[2], ..., \u0441[n] 1\u2009\u2264\u2009c[i]\u2009\u2264\u2009m q(d)\u2009=\u2009q(r) d k c   Input  The first lines contains a single integer T, denoting the number of test cases. Each test case consist of four integers : n, m, q(r), k. n, m, q(r), k    Output  In a single line print the remainder of division the answer of the problem on number 10^9\u2009+\u20097. 10^9\u2009+\u20097    Constraints 1 \u2264 T \u2264 10000\u000a1 \u2264 n,\u2009m,\u2009q(r), k \u2264 10^9 1 \u2264 T \u2264 10000 1 T 10000 1 \u2264 n,\u2009m,\u2009q(r), k \u2264 10^9 1 n,\u2009m,\u2009q(r), k 10^9   Example Input:\u000a3\u000a1 1 1 1\u000a2 2 1 1\u000a2 3 1 1\u000a\u000aOutput:\u000a0\u000a2\u000a4 Input: Output:    Author: sereja\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/SEATRSF\u000aTags: combinatorics easy inclusn-exclusn oct13 sereja\u000aDate Added: 9-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/SEATRSF\u000aTags: combinatorics easy inclusn-exclusn oct13 sereja\u000aDate Added: 9-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja Author: sereja sereja Tester: shangjingbo Tester: shangjingbo shangjingbo Editorial: http://discuss.codechef.com/problems/SEATRSF Editorial: http://discuss.codechef.com/problems/SEATRSF http://discuss.codechef.com/problems/SEATRSF Tags: combinatorics easy inclusn-exclusn oct13 sereja Tags: combinatorics easy inclusn-exclusn oct13 sereja combinatorics easy inclusn-exclusn oct13 sereja Date Added: 9-06-2013 Date Added: 9-06-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V combinatorics easy inclusn-exclusn oct13 sereja
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/SEATRSF
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese here
+p17
+aVProblem Statement
+p18
+aVSereja has a sequence of n integers a[1], a[2], ..., a[n]. Sereja can do following transformation of the array:
+p19
+aVcreate a new sequence of n integers b[1], b[2], ..., b[n]in this way: (1\u2009\u2264\u2009i\u2009\u2264\u2009n)
+p20
+aVReplace the sequence a by b, i.e., a[i] = b[i] for all i in [1, n]
+p21
+aVSereja decided to use his transformation k times. Then he computed the value of , where r \u2014 the sequence obtained after k transformations of sequence a, as described above.
+p22
+aVSereja lost sequence a, but he was left with the numbers q(r) and k. Now Sereja is interested in the question : what is the number of the sequences of the integers \u0441[1], \u0441[2], ..., \u0441[n], such that 1\u2009\u2264\u2009c[i]\u2009\u2264\u2009m and q(d)\u2009=\u2009q(r), where d \u2014 the sequence obtained after k transformations of sequence c, as described above.
+p23
+asS'input'
+p24
+(lp25
+VInput
+p26
+aVThe first lines contains a single integer T, denoting the number of test cases. Each test case consist of four integers : n, m, q(r), k.
+p27
+aVOutput
+p28
+aVIn a single line print the remainder of division the answer of the problem on number 10^9\u2009+\u20097.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 T \u2264 10000
+p33
+aV1 \u2264 n,\u2009m,\u2009q(r), k \u2264 10^9
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VSEATRSF
+p38
+sb.

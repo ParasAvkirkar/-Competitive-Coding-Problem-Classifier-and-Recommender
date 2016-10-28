@@ -1,0 +1,87 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aSereja has a matrix A with N rows and M columns with positive integer elements. Consider the multiset Sij made from the elements in the ith row, along with those in the jth column of A (do not count the element Aij twice). Then, define a matrix F as Fij = maxx \u2208 Sij count(x, Sij), where count(x, S) gives the number of times a number x occurs in the multiset S.\u000aFor example, for the matrix\u000a1 2 1 2\u000a3 4 1 2\u000a1 1 1 1\u000a2 2 2 2\u000aThe matrix F is\u000a3 3 4 4\u000a3 3 3 3\u000a5 4 6 4\u000a4 5 4 6\u000aYour task is to find the value of the maximum element of F.\u000aInput\u000aThe first line of input contains a single integer T, the number of test cases. T tests follow. First line of each test case contains two integers, N and M. Each of the next N lines contain M numbers, representing the matrix A.\u000aOutput\u000aFor each test case, output a line containing a single integer, the answer to the problem.\u000aConstraints\u000a1 \u2264 sum of N*M over all testcases \u2264 106\u000a1 \u2264 A[i][j] \u2264 106\u000aExample\u000aInput:\u000a1\u000a4 4\u000a1 2 1 2\u000a3 4 1 2\u000a1 1 1 1\u000a2 2 2 2\u000a\u000aOutput:\u000a6\u000aSub tasks\u000aSub task #1: 1 \u2264 N, M \u2264 10 (10 points)\u000aSub task #2: 1 \u2264 N, M \u2264 100 (20 points)\u000aSub task #3: original constraints (70 points)\u000aAuthor: sereja\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/SEATL\u000aTags: feb16 medium sereja\u000aDate Added: 1-12-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aSereja has a matrix A with N rows and M columns with positive integer elements. Consider the multiset Sij made from the elements in the ith row, along with those in the jth column of A (do not count the element Aij twice). Then, define a matrix F as Fij = maxx \u2208 Sij count(x, Sij), where count(x, S) gives the number of times a number x occurs in the multiset S.\u000aFor example, for the matrix\u000a1 2 1 2\u000a3 4 1 2\u000a1 1 1 1\u000a2 2 2 2\u000aThe matrix F is\u000a3 3 4 4\u000a3 3 3 3\u000a5 4 6 4\u000a4 5 4 6\u000aYour task is to find the value of the maximum element of F.\u000aInput\u000aThe first line of input contains a single integer T, the number of test cases. T tests follow. First line of each test case contains two integers, N and M. Each of the next N lines contain M numbers, representing the matrix A.\u000aOutput\u000aFor each test case, output a line containing a single integer, the answer to the problem.\u000aConstraints\u000a1 \u2264 sum of N*M over all testcases \u2264 106\u000a1 \u2264 A[i][j] \u2264 106\u000aExample\u000aInput:\u000a1\u000a4 4\u000a1 2 1 2\u000a3 4 1 2\u000a1 1 1 1\u000a2 2 2 2\u000a\u000aOutput:\u000a6\u000aSub tasks\u000aSub task #1: 1 \u2264 N, M \u2264 10 (10 points)\u000aSub task #2: 1 \u2264 N, M \u2264 100 (20 points)\u000aSub task #3: original constraints (70 points)\u000aAuthor: sereja\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/SEATL\u000aTags: feb16 medium sereja\u000aDate Added: 1-12-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Sereja has a matrix A with N rows and M columns with positive integer elements. Consider the multiset Sij made from the elements in the ith row, along with those in the jth column of A (do not count the element Aij twice). Then, define a matrix F as Fij = maxx \u2208 Sij count(x, Sij), where count(x, S) gives the number of times a number x occurs in the multiset S. A N M Sij ij i th j th A Aij ij F Fij = maxx \u2208 Sij count(x, Sij) ij max x \u2208 Sij ij count ij count(x, S) count x S For example, for the matrix 1 2 1 2\u000a3 4 1 2\u000a1 1 1 1\u000a2 2 2 2  The matrix F is F 3 3 4 4\u000a3 3 3 3\u000a5 4 6 4\u000a4 5 4 6  Your task is to find the value of the maximum element of F. F Input T T N M N M A Output Constraints 1 \u2264 sum of N*M over all testcases \u2264 106\u000a1 \u2264 A[i][j] \u2264 106 1 \u2264 sum of N*M over all testcases \u2264 106 1 sum of N*M over all testcases 106 6 1 \u2264 A[i][j] \u2264 106 1 A[i][j] 106 6 Example Input:\u000a1\u000a4 4\u000a1 2 1 2\u000a3 4 1 2\u000a1 1 1 1\u000a2 2 2 2\u000a\u000aOutput:\u000a6 Input: Output: Sub tasks Sub task #1: 1 \u2264 N, M \u2264 10 (10 points)\u000aSub task #2: 1 \u2264 N, M \u2264 100 (20 points)\u000aSub task #3: original constraints (70 points) Sub task #1: 1 \u2264 N, M \u2264 10 (10 points) 1 \u2264 N, M \u2264 10 Sub task #2: 1 \u2264 N, M \u2264 100 (20 points) 1 \u2264 N, M \u2264 100 Sub task #3: original constraints (70 points) original constraints  Author: sereja\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/SEATL\u000aTags: feb16 medium sereja\u000aDate Added: 1-12-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/SEATL\u000aTags: feb16 medium sereja\u000aDate Added: 1-12-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja Author: sereja sereja Tester: iscsi Tester: iscsi iscsi Editorial: http://discuss.codechef.com/problems/SEATL Editorial: http://discuss.codechef.com/problems/SEATL http://discuss.codechef.com/problems/SEATL Tags: feb16 medium sereja Tags: feb16 medium sereja feb16 medium sereja Date Added: 1-12-2014 Date Added: 1-12-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V feb16 medium sereja
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/SEATL
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVSereja has a matrix A with N rows and M columns with positive integer elements. Consider the multiset Sij made from the elements in the ith row, along with those in the jth column of A (do not count the element Aij twice). Then, define a matrix F as Fij = maxx \u2208 Sij count(x, Sij), where count(x, S) gives the number of times a number x occurs in the multiset S.
+p18
+aVFor example, for the matrix
+p19
+aV1 2 1 2
+p20
+aV3 4 1 2
+p21
+aV1 1 1 1
+p22
+aV2 2 2 2
+p23
+aVThe matrix F is
+p24
+aV3 3 4 4
+p25
+aV3 3 3 3
+p26
+aV5 4 6 4
+p27
+aV4 5 4 6
+p28
+aVYour task is to find the value of the maximum element of F.
+p29
+asS'input'
+p30
+(lp31
+VInput
+p32
+aVThe first line of input contains a single integer T, the number of test cases. T tests follow. First line of each test case contains two integers, N and M. Each of the next N lines contain M numbers, representing the matrix A.
+p33
+aVOutput
+p34
+aVFor each test case, output a line containing a single integer, the answer to the problem.
+p35
+asS'constraints'
+p36
+(lp37
+VConstraints
+p38
+aV1 \u2264 sum of N*M over all testcases \u2264 106
+p39
+aV1 \u2264 A[i][j] \u2264 106
+p40
+asS'id'
+p41
+c__builtin__
+id
+p42
+sS'name'
+p43
+VSEATL
+p44
+sb.

@@ -1,0 +1,91 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aSereja has a string A consisting of n lower case English letters.\u000aSereja calls two strings X and Y each of length n similar if they can be made equal by applying the following operation at most once in each of them.\u000aChose any two position i, j in the string (i can be equal to j too). Swap the characters at position i with character at position j.\u000aFor example strings "abcd" and "acbd" are similar, strings "ab" and "ab" are similar, but strings "abcde" and "bcdea" are not similar. Note that strings "abc" and "cab" are also similar, as you can swap 'a' and 'c' in the first string to get "cba" and 'a' and 'b' in the second string to get "cba".\u000aNow Sereja is interested in finding number of ordered pairs of non similar strings X and Y such that they can be constructed from a given string A by permutation of its characters. As answer could be large, please output your answer modulo (109 + 7).\u000aNote\u000aA string s (of size n) is said to be constructed from string t (also of size n) by permutation of its characters if there exists a permutation P (of length n), such that s[i] = t[P[i]] for each i from 1 to n.\u000aInput\u000aFirst line contain integer T - number of test cases.\u000aFor each of the next T lines:\u000aEach line contains a string A as defined in the problem.\u000aOutput\u000aFor each test case, output answer modulo 1000000007 (109 + 7) in separate line.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 n \u2264 10^5\u000aConstraints\u000aSubtask #1: 1 \u2264 n \u2264 10 (25 points)\u000aSubtask #2: 1 \u2264 n \u2264 100 (25 points)\u000aSubtask #3: 1 \u2264 n \u2264 1000 (25 points)\u000aSubtask #4: original constraints (25 points)\u000aExample\u000aInput:\u000a2\u000az\u000aabcd\u000a\u000aOutput:\u000a0\u000a144\u000aAuthor: sereja\u000aTester: furko\u000aEditorial: http://discuss.codechef.com/problems/SEATSTR2\u000aTags: combinatorics march16 medium sereja\u000aDate Added: 11-10-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aSereja has a string A consisting of n lower case English letters.\u000aSereja calls two strings X and Y each of length n similar if they can be made equal by applying the following operation at most once in each of them.\u000aChose any two position i, j in the string (i can be equal to j too). Swap the characters at position i with character at position j.\u000aFor example strings "abcd" and "acbd" are similar, strings "ab" and "ab" are similar, but strings "abcde" and "bcdea" are not similar. Note that strings "abc" and "cab" are also similar, as you can swap 'a' and 'c' in the first string to get "cba" and 'a' and 'b' in the second string to get "cba".\u000aNow Sereja is interested in finding number of ordered pairs of non similar strings X and Y such that they can be constructed from a given string A by permutation of its characters. As answer could be large, please output your answer modulo (109 + 7).\u000aNote\u000aA string s (of size n) is said to be constructed from string t (also of size n) by permutation of its characters if there exists a permutation P (of length n), such that s[i] = t[P[i]] for each i from 1 to n.\u000aInput\u000aFirst line contain integer T - number of test cases.\u000aFor each of the next T lines:\u000aEach line contains a string A as defined in the problem.\u000aOutput\u000aFor each test case, output answer modulo 1000000007 (109 + 7) in separate line.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 n \u2264 10^5\u000aConstraints\u000aSubtask #1: 1 \u2264 n \u2264 10 (25 points)\u000aSubtask #2: 1 \u2264 n \u2264 100 (25 points)\u000aSubtask #3: 1 \u2264 n \u2264 1000 (25 points)\u000aSubtask #4: original constraints (25 points)\u000aExample\u000aInput:\u000a2\u000az\u000aabcd\u000a\u000aOutput:\u000a0\u000a144\u000aAuthor: sereja\u000aTester: furko\u000aEditorial: http://discuss.codechef.com/problems/SEATSTR2\u000aTags: combinatorics march16 medium sereja\u000aDate Added: 11-10-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Sereja has a string A consisting of n lower case English letters. A n Sereja calls two strings X and Y each of length n similar if they can be made equal by applying the following operation at most once in each of them. X Y n similar each Chose any two position i, j in the string (i can be equal to j too). Swap the characters at position i with character at position j. Chose any two position i, j in the string (i can be equal to j too). Swap the characters at position i with character at position j. i, j i j i j For example strings "abcd" and "acbd" are similar, strings "ab" and "ab" are similar, but strings "abcde" and "bcdea" are not similar. Note that strings "abc" and "cab" are also similar, as you can swap 'a' and 'c' in the first string to get "cba" and 'a' and 'b' in the second string to get "cba". "abcd" "acbd" "ab" "ab" "abcde" "bcdea" "abc" "cab" "cba" "cba" Now Sereja is interested in finding number of ordered pairs of non similar strings X and Y such that they can be constructed from a given string A by permutation of its characters. As answer could be large, please output your answer modulo (109 + 7). ordered similar X Y A 9 Note\u000aA string s (of size n) is said to be constructed from string t (also of size n) by permutation of its characters if there exists a permutation P (of length n), such that s[i] = t[P[i]] for each i from 1 to n. Note  s n t n P n s[i] = t[P[i]] i n Input First line contain integer T - number of test cases.\u000aFor each of the next T lines:\u000aEach line contains a string A as defined in the problem. First line contain integer T - number of test cases. T For each of the next T lines:\u000aEach line contains a string A as defined in the problem. T Each line contains a string A as defined in the problem. Each line contains a string A as defined in the problem. A Output For each test case, output answer modulo 1000000007 (109 + 7) in separate line. 9 Constraints 1 \u2264 T \u2264 10\u000a1 \u2264 n \u2264 10^5 1 \u2264 T \u2264 10 1 T 10 1 \u2264 n \u2264 10^5 1 n 10^5 Constraints Subtask #1: 1 \u2264 n \u2264 10 (25 points)\u000aSubtask #2: 1 \u2264 n \u2264 100 (25 points)\u000aSubtask #3: 1 \u2264 n \u2264 1000 (25 points)\u000aSubtask #4: original constraints (25 points) Subtask #1: 1 \u2264 n \u2264 10 (25 points) Subtask #1: 1 n 10 25 Subtask #2: 1 \u2264 n \u2264 100 (25 points) Subtask #2: 1 n 100 25 Subtask #3: 1 \u2264 n \u2264 1000 (25 points) Subtask #3: 1 n 1000 25 Subtask #4: original constraints (25 points) Subtask #4: original constraints 25 Example Input:\u000a2\u000az\u000aabcd\u000a\u000aOutput:\u000a0\u000a144 Input: Output:  Author: sereja\u000aTester: furko\u000aEditorial: http://discuss.codechef.com/problems/SEATSTR2\u000aTags: combinatorics march16 medium sereja\u000aDate Added: 11-10-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja\u000aTester: furko\u000aEditorial: http://discuss.codechef.com/problems/SEATSTR2\u000aTags: combinatorics march16 medium sereja\u000aDate Added: 11-10-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja Author: sereja sereja Tester: furko Tester: furko furko Editorial: http://discuss.codechef.com/problems/SEATSTR2 Editorial: http://discuss.codechef.com/problems/SEATSTR2 http://discuss.codechef.com/problems/SEATSTR2 Tags: combinatorics march16 medium sereja Tags: combinatorics march16 medium sereja combinatorics march16 medium sereja Date Added: 11-10-2014 Date Added: 11-10-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V combinatorics march16 medium sereja
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/SEATSTR2
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVSereja has a string A consisting of n lower case English letters.
+p18
+aVSereja calls two strings X and Y each of length n similar if they can be made equal by applying the following operation at most once in each of them.
+p19
+aVChose any two position i, j in the string (i can be equal to j too). Swap the characters at position i with character at position j.
+p20
+aVFor example strings "abcd" and "acbd" are similar, strings "ab" and "ab" are similar, but strings "abcde" and "bcdea" are not similar. Note that strings "abc" and "cab" are also similar, as you can swap 'a' and 'c' in the first string to get "cba" and 'a' and 'b' in the second string to get "cba".
+p21
+aVNow Sereja is interested in finding number of ordered pairs of non similar strings X and Y such that they can be constructed from a given string A by permutation of its characters. As answer could be large, please output your answer modulo (109 + 7).
+p22
+aVNote
+p23
+aVA string s (of size n) is said to be constructed from string t (also of size n) by permutation of its characters if there exists a permutation P (of length n), such that s[i] = t[P[i]] for each i from 1 to n.
+p24
+asS'input'
+p25
+(lp26
+VInput
+p27
+aVFirst line contain integer T - number of test cases.
+p28
+aVFor each of the next T lines:
+p29
+aVEach line contains a string A as defined in the problem.
+p30
+aVOutput
+p31
+aVFor each test case, output answer modulo 1000000007 (109 + 7) in separate line.
+p32
+asS'constraints'
+p33
+(lp34
+VConstraints
+p35
+aV1 \u2264 T \u2264 10
+p36
+aV1 \u2264 n \u2264 10^5
+p37
+aVConstraints
+p38
+aVSubtask #1: 1 \u2264 n \u2264 10 (25 points)
+p39
+aVSubtask #2: 1 \u2264 n \u2264 100 (25 points)
+p40
+aVSubtask #3: 1 \u2264 n \u2264 1000 (25 points)
+p41
+aVSubtask #4: original constraints (25 points)
+p42
+asS'id'
+p43
+c__builtin__
+id
+p44
+sS'name'
+p45
+VSEATSTR2
+p46
+sb.

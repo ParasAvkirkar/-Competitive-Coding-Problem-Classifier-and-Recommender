@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aSereja is hosting his birthday dinner. He invited his N close friends. Let us number the people from 1 to N according to the order in which they arrive at the event. The dinner is being held in long straight corridor in which people sit in a way such that they won't leave any empty space in between two consecutive persons at any given time.\u000aWhen a person number i arrives at the corridor, he must go and stand to the immediate right of the person numbered A[i] (if A[i] = 0, then this person just stands at the leftmost end of the line).\u000aBut there is a problem, as there is no space between two consecutive persons at any given time, so for this person to sit, space must be created by moving either all the persons to left of the place to the left one step each, or all the persons to right of the place to the right one step each.\u000aNow, Sereja is wondering about what could be the minimum number of steps people will take so as to sit in the dinner party. Please find it fast, so that Sereja can peacefully entertain his guests.\u000aInput\u000aFirst line of input contain an integer T \u2014 the number of test cases. T tests follow.\u000aFirst line of each test case contain the integer N, and the next line contains N integers \u2014 A[1], A[2], ... , A[N].\u000aOutput\u000aFor each test case, output a single line with the answer \u2014 the minimal number of steps required.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 100\u000a0 \u2264 A[i] < i\u000aExample\u000aInput:\u000a3\u000a1\u000a0\u000a3\u000a0 0 0\u000a5\u000a0 1 2 1 4\u000a\u000aOutput:\u000a0\u000a0\u000a3\u000aExplanation\u000aExample case 3.\u000aFirst three persons don't need any steps to sit. The line after the arrangement of these persons will look like [1, 2, 3].\u000a\u000aWhen person #4 comes in, he wants to sit to the right of person 1, so we need to either move the first person to the left, or the second and third persons to the right. The first case is clearly better. Now the line will look like [1, 4, 2, 3].\u000a\u000aWhen person #5 arrives, he will need to move 2 persons in either case. The final arrangement will be [1, 4, 5, 2, 3].\u000aSo total number of steps people moved during the entire process is 1 + 2 = 3. So the answer is 3.\u000aAuthor: sereja\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/SEALINE\u000aTags: cook64 easy implementation sereja simulation\u000aDate Added: 5-11-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aSereja is hosting his birthday dinner. He invited his N close friends. Let us number the people from 1 to N according to the order in which they arrive at the event. The dinner is being held in long straight corridor in which people sit in a way such that they won't leave any empty space in between two consecutive persons at any given time.\u000aWhen a person number i arrives at the corridor, he must go and stand to the immediate right of the person numbered A[i] (if A[i] = 0, then this person just stands at the leftmost end of the line).\u000aBut there is a problem, as there is no space between two consecutive persons at any given time, so for this person to sit, space must be created by moving either all the persons to left of the place to the left one step each, or all the persons to right of the place to the right one step each.\u000aNow, Sereja is wondering about what could be the minimum number of steps people will take so as to sit in the dinner party. Please find it fast, so that Sereja can peacefully entertain his guests.\u000aInput\u000aFirst line of input contain an integer T \u2014 the number of test cases. T tests follow.\u000aFirst line of each test case contain the integer N, and the next line contains N integers \u2014 A[1], A[2], ... , A[N].\u000aOutput\u000aFor each test case, output a single line with the answer \u2014 the minimal number of steps required.\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 100\u000a0 \u2264 A[i] < i\u000aExample\u000aInput:\u000a3\u000a1\u000a0\u000a3\u000a0 0 0\u000a5\u000a0 1 2 1 4\u000a\u000aOutput:\u000a0\u000a0\u000a3\u000aExplanation\u000aExample case 3.\u000aFirst three persons don't need any steps to sit. The line after the arrangement of these persons will look like [1, 2, 3].\u000a\u000aWhen person #4 comes in, he wants to sit to the right of person 1, so we need to either move the first person to the left, or the second and third persons to the right. The first case is clearly better. Now the line will look like [1, 4, 2, 3].\u000a\u000aWhen person #5 arrives, he will need to move 2 persons in either case. The final arrangement will be [1, 4, 5, 2, 3].\u000aSo total number of steps people moved during the entire process is 1 + 2 = 3. So the answer is 3.\u000aAuthor: sereja\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/SEALINE\u000aTags: cook64 easy implementation sereja simulation\u000aDate Added: 5-11-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Sereja is hosting his birthday dinner. He invited his N close friends. Let us number the people from 1 to N according to the order in which they arrive at the event. The dinner is being held in long straight corridor in which people sit in a way such that they won't leave any empty space in between two consecutive persons at any given time. N 1 N When a person number i arrives at the corridor, he must go and stand to the immediate right of the person numbered A[i] (if A[i] = 0, then this person just stands at the leftmost end of the line). i A[i] A[i] = 0 But there is a problem, as there is no space between two consecutive persons at any given time, so for this person to sit, space must be created by moving either all the persons to left of the place to the left one step each, or all the persons to right of the place to the right one step each. Now, Sereja is wondering about what could be the minimum number of steps people will take so as to sit in the dinner party. Please find it fast, so that Sereja can peacefully entertain his guests. Input First line of input contain an integer T \u2014 the number of test cases. T tests follow. T T First line of each test case contain the integer N, and the next line contains N integers \u2014 A[1], A[2], ... , A[N]. N N A[1], A[2], ... , A[N] Output Constraints 1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 100\u000a0 \u2264 A[i] < i 1 \u2264 T \u2264 100 1 T 100 1 \u2264 N \u2264 100 1 N 100 0 \u2264 A[i] < i 0 A[i] i Example Input:\u000a3\u000a1\u000a0\u000a3\u000a0 0 0\u000a5\u000a0 1 2 1 4\u000a\u000aOutput:\u000a0\u000a0\u000a3 Input: Output: Explanation Example case 3. Example case 3. First three persons don't need any steps to sit. The line after the arrangement of these persons will look like [1, 2, 3].\u000a\u000aWhen person #4 comes in, he wants to sit to the right of person 1, so we need to either move the first person to the left, or the second and third persons to the right. The first case is clearly better. Now the line will look like [1, 4, 2, 3].\u000a\u000aWhen person #5 arrives, he will need to move 2 persons in either case. The final arrangement will be [1, 4, 5, 2, 3]. First three persons don't need any steps to sit. The line after the arrangement of these persons will look like [1, 2, 3]. [1, 2, 3]  When person #4 comes in, he wants to sit to the right of person 1, so we need to either move the first person to the left, or the second and third persons to the right. The first case is clearly better. Now the line will look like [1, 4, 2, 3]. [1, 4, 2, 3]  When person #5 arrives, he will need to move 2 persons in either case. The final arrangement will be [1, 4, 5, 2, 3]. [1, 4, 5, 2, 3]   So total number of steps people moved during the entire process is 1 + 2 = 3. So the answer is 3. 1 + 2 = 3  Author: sereja\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/SEALINE\u000aTags: cook64 easy implementation sereja simulation\u000aDate Added: 5-11-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/SEALINE\u000aTags: cook64 easy implementation sereja simulation\u000aDate Added: 5-11-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja Author: sereja sereja Tester: iscsi Tester: iscsi iscsi Editorial: http://discuss.codechef.com/problems/SEALINE Editorial: http://discuss.codechef.com/problems/SEALINE http://discuss.codechef.com/problems/SEALINE Tags: cook64 easy implementation sereja simulation Tags: cook64 easy implementation sereja simulation cook64 easy implementation sereja simulation Date Added: 5-11-2015 Date Added: 5-11-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook64 easy implementation sereja simulation
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/SEALINE
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVSereja is hosting his birthday dinner. He invited his N close friends. Let us number the people from 1 to N according to the order in which they arrive at the event. The dinner is being held in long straight corridor in which people sit in a way such that they won't leave any empty space in between two consecutive persons at any given time.
+p18
+aVWhen a person number i arrives at the corridor, he must go and stand to the immediate right of the person numbered A[i] (if A[i] = 0, then this person just stands at the leftmost end of the line).
+p19
+aVBut there is a problem, as there is no space between two consecutive persons at any given time, so for this person to sit, space must be created by moving either all the persons to left of the place to the left one step each, or all the persons to right of the place to the right one step each.
+p20
+aVNow, Sereja is wondering about what could be the minimum number of steps people will take so as to sit in the dinner party. Please find it fast, so that Sereja can peacefully entertain his guests.
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVFirst line of input contain an integer T \u2014 the number of test cases. T tests follow.
+p25
+aVFirst line of each test case contain the integer N, and the next line contains N integers \u2014 A[1], A[2], ... , A[N].
+p26
+aVOutput
+p27
+aVFor each test case, output a single line with the answer \u2014 the minimal number of steps required.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 T \u2264 100
+p32
+aV1 \u2264 N \u2264 100
+p33
+aV0 \u2264 A[i] < i
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VSEALINE
+p38
+sb.
