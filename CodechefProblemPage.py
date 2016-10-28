@@ -9,19 +9,18 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 import requests
-import dryscrape
 
 
 def getCodechefProblem(problemUrl, driver):
-	#driver = webdriver.Chrome()
+	count = 0
+	#driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 	#Get problem Name
 	problemName = ''
-	for c in problemUrl:
+	for c in problemUrl[::-1]:
 		if c == '/':
 			break
 		problemName = problemName + c
 	problemName = problemName[::-1]
-
 	driver.get(problemUrl)
 	print('reach problem page '+ problemUrl)
 	try:
@@ -44,7 +43,7 @@ def getCodechefProblem(problemUrl, driver):
 			if 'tag' in hrefTag.get_attribute('href'):
 				problemTags = problemTags + ' ' + hrefTag.text
 		
-		prob = Problem(problemName, problemName, problemTags, problemText)
+		prob = Problem(problemName, problemUrl, problemTags, problemText)
 		# print(problemText)
 		# print(prob)
 	except Exception as e:
