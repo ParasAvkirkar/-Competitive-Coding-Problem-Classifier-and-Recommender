@@ -10,12 +10,19 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import requests
 
+<<<<<<< HEAD
 driver = webdriver.Chrome()
 
 def getCodechefProblem(problemUrl):
 	count = 0
 	#driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 
+=======
+driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+def getCodechefProblem(problemUrl):
+	count = 0
+	# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+>>>>>>> 1f8a67045b3f53745b9b761020a956f680347761
 	#Get problem Name
 	problemName = ''
 	for c in problemUrl[::-1]:
@@ -27,7 +34,11 @@ def getCodechefProblem(problemUrl):
 	print('reach problem page '+ problemUrl)
 	try:
 		problemText = ''
+<<<<<<< HEAD
 		divProblem = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "problem-page-complete")))
+=======
+		divProblem = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID, "problem-page-complete")))
+>>>>>>> 1f8a67045b3f53745b9b761020a956f680347761
 
 		divProblem = driver.find_element_by_id('problem-page-complete')					
 		#print(str(divProblem))
@@ -55,6 +66,11 @@ def getCodechefProblem(problemUrl):
 			with open('codechef/unscuccessful', 'a') as f:
 				f.write(problemName+'\n')
 			return None
+<<<<<<< HEAD
 	finally:
 		pass
 		#driver.quit()
+=======
+	# finally:
+	# 	driver.quit()
+>>>>>>> 1f8a67045b3f53745b9b761020a956f680347761
