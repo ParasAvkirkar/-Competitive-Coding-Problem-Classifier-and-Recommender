@@ -16,12 +16,6 @@ class Problem:
 	def process_description(self):
 		description_lines = self.description.split('\n')
 		print(description_lines)
-<<<<<<< HEAD
-		try:
-			input_start = description_lines.index('Input')
-		except ValueError:
-			input_start = description_lines.index('Input :')
-=======
 		description_lines = [line.strip() for line in description_lines]
 		try:
 			input_start = description_lines.index('Input')
@@ -31,20 +25,13 @@ class Problem:
 			except ValueError:
 				input_start = description_lines.index('Input:')
 
->>>>>>> 1f8a67045b3f53745b9b761020a956f680347761
+
 		try:
 			constraint_start = description_lines.index('Constraints')
 		except ValueError:
 			try:
 				constraint_start = description_lines.index('Constraints :')
 			except ValueError:
-<<<<<<< HEAD
-				constraint_start = [i for i,word in enumerate(description_lines) if word.startswith('Constraints and Subtasks')][0]
-		try:
-			example_start = description_lines.index('Example')
-		except ValueError:
-			example_start = description_lines.index('Example:')
-=======
 				try:
 					constraint_start = [i for i,word in enumerate(description_lines) if word.startswith('Constraints and Subtasks')][0]
 				except ValueError:
@@ -57,7 +44,7 @@ class Problem:
 				example_start = description_lines.index('Example:')
 			except ValueError:
 				example_start = description_lines.index('Example :')
->>>>>>> 1f8a67045b3f53745b9b761020a956f680347761
+
 		time_limit_start =  [i for i,word in enumerate(description_lines) if word.startswith('Time Limit:')][0]
 		sources_limit_start =  [i for i,word in enumerate(description_lines) if word.startswith('Source Limit:')][0]
 		lang_limit_start =  [i for i,word in enumerate(description_lines) if word.startswith('Languages:')][0]
