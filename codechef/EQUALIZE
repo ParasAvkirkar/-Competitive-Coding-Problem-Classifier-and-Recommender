@@ -1,0 +1,107 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 3 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is creating a map for a certain real-time strategy video game. In this game, a map is a 2D rectangle of dimensions N × M tiles. Initially, the tile at row i and column j has a height of Hi,j. Heights are always integers.\u000aBefore creating the map, Chef first wants to make the heights of all the tiles equal. But he can only change height values using the equalize tool. The equalize tool is rectangular in shape, with dimensions K × L, and upon application, it replaces the height values of all the affected cells by their median. The equalize tool cannot be rotated. For example, in the following 5 × 9 grid of heights:\u000a9 8 8 8 7 7 7 8 7\u000a1 1 1 4 4 5 2 4 4\u000a2 3 1 2 1 2 1 1 9\u000a3 2 8 8 9 9 7 7 7\u000a7 7 7 7 7 7 8 8 8\u000aSuppose the dimensions of the equalize tool is 3 × 7, and we apply it in the middle 3 × 7 region. The median of the values in that region is 3, so after application, the grid becomes:\u000a9 8 8 8 7 7 7 8 7\u000a1 3 3 3 3 3 3 3 4\u000a2 3 3 3 3 3 3 3 9\u000a3 3 3 3 3 3 3 3 7\u000a7 7 7 7 7 7 8 8 8\u000aNote that K and L are odd integers, so that the median is always an integer.\u000aChef wants to make all height values equal by repeatedly applying the equalize tool. Furthermore, he also wants the final (common) height to be as large as possible. What is the maximum final (common) height that he can obtain?\u000aFurthermore, you have to answer Q queries, where each query denotes a different set of values for K and L.\u000aInput\u000aThe first line of input contains three integers, N, M, Q.\u000aThe following N lines describe the height values. Each line contains M integers. The jth value in the ith line contains Hi,j.\u000aThe following Q lines describe the queries. The jth line contains two integers, Kj and Lj.\u000aOutput\u000aFor each query, output a single integer, the maximum final (common) height that Chef can obtain, assuming the size of the equalize tool is Kj × Lj.\u000aConstraints\u000a3 \u2264 N, M \u2264 1000\u000a1 \u2264 Q \u2264 25\u000a0 \u2264 Hi,j \u2264 107\u000a3 \u2264 Kj \u2264 N\u000a3 \u2264 Lj \u2264 M\u000aKj and Lj are odd.\u000aExample\u000aInput:\u000a3 7 3\u000a8 5 5 5 8 6 8\u000a8 9 5 5 5 9 8\u000a8 6 8 5 5 5 8\u000a3 3\u000a3 5\u000a3 7\u000a\u000aOutput:\u000a8\u000a5\u000a6\u000aExplanation\u000aIn the first query, Chef can obtain a final height of 8 by first applying the equalizer on the leftmost 3 × 3 region:\u000a8 8 8 5 8 6 8\u000a8 8 8 5 5 9 8\u000a8 8 8 5 5 5 8\u000athen the rightmost 3 × 3 region:\u000a8 8 8 5 8 8 8\u000a8 8 8 5 8 8 8\u000a8 8 8 5 8 8 8\u000aand then finally the middlemost 3 × 3 region:\u000a8 8 8 8 8 8 8\u000a8 8 8 8 8 8 8\u000a8 8 8 8 8 8 8\u000aIt can be shown that this is the largest final height that can be obtained.\u000aAuthor: kevinsogo\u000aTags: kevinsogo\u000aDate Added: 7-06-2016\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef is creating a map for a certain real-time strategy video game. In this game, a map is a 2D rectangle of dimensions N × M tiles. Initially, the tile at row i and column j has a height of Hi,j. Heights are always integers.\u000aBefore creating the map, Chef first wants to make the heights of all the tiles equal. But he can only change height values using the equalize tool. The equalize tool is rectangular in shape, with dimensions K × L, and upon application, it replaces the height values of all the affected cells by their median. The equalize tool cannot be rotated. For example, in the following 5 × 9 grid of heights:\u000a9 8 8 8 7 7 7 8 7\u000a1 1 1 4 4 5 2 4 4\u000a2 3 1 2 1 2 1 1 9\u000a3 2 8 8 9 9 7 7 7\u000a7 7 7 7 7 7 8 8 8\u000aSuppose the dimensions of the equalize tool is 3 × 7, and we apply it in the middle 3 × 7 region. The median of the values in that region is 3, so after application, the grid becomes:\u000a9 8 8 8 7 7 7 8 7\u000a1 3 3 3 3 3 3 3 4\u000a2 3 3 3 3 3 3 3 9\u000a3 3 3 3 3 3 3 3 7\u000a7 7 7 7 7 7 8 8 8\u000aNote that K and L are odd integers, so that the median is always an integer.\u000aChef wants to make all height values equal by repeatedly applying the equalize tool. Furthermore, he also wants the final (common) height to be as large as possible. What is the maximum final (common) height that he can obtain?\u000aFurthermore, you have to answer Q queries, where each query denotes a different set of values for K and L.\u000aInput\u000aThe first line of input contains three integers, N, M, Q.\u000aThe following N lines describe the height values. Each line contains M integers. The jth value in the ith line contains Hi,j.\u000aThe following Q lines describe the queries. The jth line contains two integers, Kj and Lj.\u000aOutput\u000aFor each query, output a single integer, the maximum final (common) height that Chef can obtain, assuming the size of the equalize tool is Kj × Lj.\u000aConstraints\u000a3 \u2264 N, M \u2264 1000\u000a1 \u2264 Q \u2264 25\u000a0 \u2264 Hi,j \u2264 107\u000a3 \u2264 Kj \u2264 N\u000a3 \u2264 Lj \u2264 M\u000aKj and Lj are odd.\u000aExample\u000aInput:\u000a3 7 3\u000a8 5 5 5 8 6 8\u000a8 9 5 5 5 9 8\u000a8 6 8 5 5 5 8\u000a3 3\u000a3 5\u000a3 7\u000a\u000aOutput:\u000a8\u000a5\u000a6\u000aExplanation\u000aIn the first query, Chef can obtain a final height of 8 by first applying the equalizer on the leftmost 3 × 3 region:\u000a8 8 8 5 8 6 8\u000a8 8 8 5 5 9 8\u000a8 8 8 5 5 5 8\u000athen the rightmost 3 × 3 region:\u000a8 8 8 5 8 8 8\u000a8 8 8 5 8 8 8\u000a8 8 8 5 8 8 8\u000aand then finally the middlemost 3 × 3 region:\u000a8 8 8 8 8 8 8\u000a8 8 8 8 8 8 8\u000a8 8 8 8 8 8 8\u000aIt can be shown that this is the largest final height that can be obtained.\u000aAuthor: kevinsogo\u000aTags: kevinsogo\u000aDate Added: 7-06-2016\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef is creating a map for a certain real-time strategy video game. In this game, a map is a 2D rectangle of dimensions N × M tiles. Initially, the tile at row i and column j has a height of Hi,j. Heights are always integers. N × M i j Hi,j i,j Before creating the map, Chef first wants to make the heights of all the tiles equal. But he can only change height values using the equalize tool. The equalize tool is rectangular in shape, with dimensions K × L, and upon application, it replaces the height values of all the affected cells by their median. The equalize tool cannot be rotated. For example, in the following 5 × 9 grid of heights: equalize K × L median 5 × 9 9 8 8 8 7 7 7 8 7\u000a1 1 1 4 4 5 2 4 4\u000a2 3 1 2 1 2 1 1 9\u000a3 2 8 8 9 9 7 7 7\u000a7 7 7 7 7 7 8 8 8 9 8 8 8 7 7 7 8 7\u000a1 1 1 4 4 5 2 4 4\u000a2 3 1 2 1 2 1 1 9\u000a3 2 8 8 9 9 7 7 7\u000a7 7 7 7 7 7 8 8 8 Suppose the dimensions of the equalize tool is 3 × 7, and we apply it in the middle 3 × 7 region. The median of the values in that region is 3, so after application, the grid becomes: 3 × 7 3 × 7 3 9 8 8 8 7 7 7 8 7\u000a1 3 3 3 3 3 3 3 4\u000a2 3 3 3 3 3 3 3 9\u000a3 3 3 3 3 3 3 3 7\u000a7 7 7 7 7 7 8 8 8 9 8 8 8 7 7 7 8 7\u000a1 3 3 3 3 3 3 3 4\u000a2 3 3 3 3 3 3 3 9\u000a3 3 3 3 3 3 3 3 7\u000a7 7 7 7 7 7 8 8 8 Note that K and L are odd integers, so that the median is always an integer. K L Chef wants to make all height values equal by repeatedly applying the equalize tool. Furthermore, he also wants the final (common) height to be as large as possible. What is the maximum final (common) height that he can obtain? Furthermore, you have to answer Q queries, where each query denotes a different set of values for K and L. Q K L Input The first line of input contains three integers, N, M, Q. N M Q The following N lines describe the height values. Each line contains M integers. The jth value in the ith line contains Hi,j. N M jth th ith th Hi,j i,j The following Q lines describe the queries. The jth line contains two integers, Kj and Lj. Q jth th Kj j Lj j Output For each query, output a single integer, the maximum final (common) height that Chef can obtain, assuming the size of the equalize tool is Kj × Lj. Kj × Lj j j Constraints 3 \u2264 N, M \u2264 1000\u000a1 \u2264 Q \u2264 25\u000a0 \u2264 Hi,j \u2264 107\u000a3 \u2264 Kj \u2264 N\u000a3 \u2264 Lj \u2264 M\u000aKj and Lj are odd. 3 \u2264 N, M \u2264 1000 3 N M 1000 1 \u2264 Q \u2264 25 1 Q 25 0 \u2264 Hi,j \u2264 107 0 Hi,j i,j 107 7 3 \u2264 Kj \u2264 N 3 Kj j N 3 \u2264 Lj \u2264 M 3 Lj j M Kj and Lj are odd. Kj j Lj j Example Input:\u000a3 7 3\u000a8 5 5 5 8 6 8\u000a8 9 5 5 5 9 8\u000a8 6 8 5 5 5 8\u000a3 3\u000a3 5\u000a3 7\u000a\u000aOutput:\u000a8\u000a5\u000a6 Input: 3 7 3\u000a8 5 5 5 8 6 8\u000a8 9 5 5 5 9 8\u000a8 6 8 5 5 5 8\u000a3 3\u000a3 5\u000a3 7 Output: 8\u000a5\u000a6 Explanation In the first query, Chef can obtain a final height of 8 by first applying the equalizer on the leftmost 3 × 3 region: 8 3 × 3 8 8 8 5 8 6 8\u000a8 8 8 5 5 9 8\u000a8 8 8 5 5 5 8 8 8 8 5 8 6 8\u000a8 8 8 5 5 9 8\u000a8 8 8 5 5 5 8 then the rightmost 3 × 3 region: 3 × 3 8 8 8 5 8 8 8\u000a8 8 8 5 8 8 8\u000a8 8 8 5 8 8 8 8 8 8 5 8 8 8\u000a8 8 8 5 8 8 8\u000a8 8 8 5 8 8 8 and then finally the middlemost 3 × 3 region: 3 × 3 8 8 8 8 8 8 8\u000a8 8 8 8 8 8 8\u000a8 8 8 8 8 8 8 8 8 8 8 8 8 8\u000a8 8 8 8 8 8 8\u000a8 8 8 8 8 8 8 It can be shown that this is the largest final height that can be obtained.  Author: kevinsogo\u000aTags: kevinsogo\u000aDate Added: 7-06-2016\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kevinsogo\u000aTags: kevinsogo\u000aDate Added: 7-06-2016\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kevinsogo Author: kevinsogo kevinsogo Tags: kevinsogo Tags: kevinsogo kevinsogo Date Added: 7-06-2016 Date Added: 7-06-2016 Time Limit: 3 sec Time Limit: 3 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V kevinsogo
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/EQUALIZE
+p13
+sS'statement'
+p14
+(lp15
+V All submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef is creating a map for a certain real-time strategy video game. In this game, a map is a 2D rectangle of dimensions N × M tiles. Initially, the tile at row i and column j has a height of Hi,j. Heights are always integers.
+p18
+aVBefore creating the map, Chef first wants to make the heights of all the tiles equal. But he can only change height values using the equalize tool. The equalize tool is rectangular in shape, with dimensions K × L, and upon application, it replaces the height values of all the affected cells by their median. The equalize tool cannot be rotated. For example, in the following 5 × 9 grid of heights:
+p19
+aV9 8 8 8 7 7 7 8 7
+p20
+aV1 1 1 4 4 5 2 4 4
+p21
+aV2 3 1 2 1 2 1 1 9
+p22
+aV3 2 8 8 9 9 7 7 7
+p23
+aV7 7 7 7 7 7 8 8 8
+p24
+aVSuppose the dimensions of the equalize tool is 3 × 7, and we apply it in the middle 3 × 7 region. The median of the values in that region is 3, so after application, the grid becomes:
+p25
+aV9 8 8 8 7 7 7 8 7
+p26
+aV1 3 3 3 3 3 3 3 4
+p27
+aV2 3 3 3 3 3 3 3 9
+p28
+aV3 3 3 3 3 3 3 3 7
+p29
+aV7 7 7 7 7 7 8 8 8
+p30
+aVNote that K and L are odd integers, so that the median is always an integer.
+p31
+aVChef wants to make all height values equal by repeatedly applying the equalize tool. Furthermore, he also wants the final (common) height to be as large as possible. What is the maximum final (common) height that he can obtain?
+p32
+aVFurthermore, you have to answer Q queries, where each query denotes a different set of values for K and L.
+p33
+asS'input'
+p34
+(lp35
+VInput
+p36
+aVThe first line of input contains three integers, N, M, Q.
+p37
+aVThe following N lines describe the height values. Each line contains M integers. The jth value in the ith line contains Hi,j.
+p38
+aVThe following Q lines describe the queries. The jth line contains two integers, Kj and Lj.
+p39
+aVOutput
+p40
+aVFor each query, output a single integer, the maximum final (common) height that Chef can obtain, assuming the size of the equalize tool is Kj × Lj.
+p41
+asS'constraints'
+p42
+(lp43
+VConstraints
+p44
+aV3 \u2264 N, M \u2264 1000
+p45
+aV1 \u2264 Q \u2264 25
+p46
+aV0 \u2264 Hi,j \u2264 107
+p47
+aV3 \u2264 Kj \u2264 N
+p48
+aV3 \u2264 Lj \u2264 M
+p49
+aVKj and Lj are odd.
+p50
+asS'id'
+p51
+c__builtin__
+id
+p52
+sS'name'
+p53
+VEQUALIZE
+p54
+sb.
