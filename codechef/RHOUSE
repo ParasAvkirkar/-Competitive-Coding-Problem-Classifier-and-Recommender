@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 3 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aThere is a city where people are fond of visiting restaurants. In fact, any building in this town is either a house or a restaurant. There are N buildings in the city and they are conveniently numerated by integer numbers from 1 to N. To move from some building to others there are M two-way roads. Each road connects two buildings. It is possible that there are several roads that connect the same pair of buildings, but there won't be a road that connects a building to itself. Chef wants to make the ways to his restaurants more interesting. To do that he is going to decorate some roads. Each road has its own integer cost of decorating. Some costs may be negative. If the cost is negative Chef will get some reward for decorating this road. Now Chef doesn't have much money so he wants to decorate roads in such a way that from each house, at least one restaurant is reachable using only decorated roads. The total cost of decorated roads should be minimal. So, your task is to help him to calculate the minimal cost of any satisfactory subset. It might be negative if Chef's rewards for decorating some roads are greater than his spent money.\u000aInput\u000aThere first line of input contains an integer T - the number of test cases.\u000aThen T test cases follow. For each test case there will be integers N and M - the number of buildings and the number of roads.\u000aThen a string of N letter follows. I-th symbol of this string is "R" if the corresponding building is a restaurant and "H" if it is a house.\u000aThen there are M lines. Each line consists of three integers - Xi Yi Zi. They describe a road that connects buildings Xi and Yi with the cost of decorating equal to Zi.\u000aOutput\u000aFor each test case output the minimal cost of any satisfactory subset of roads.\u000aConstraints\u000a2<=N<=100000\u000a1<=M<=400000\u000a-20000<=Zi<=20000\u000aSum over all N in a single input file will not exceed 200000.\u000aSum over all M in a single input file will not exceed 400000.\u000aIt is guaranteed that you can reach every building from any other building.\u000aThere is at least one resturant in the city.\u000aExample\u000aInput:\u000a\u000a3\u000a3 5\u000aHHR\u000a1 2 3\u000a1 2 5\u000a1 3 10\u000a3 2 -1\u000a3 1 7\u000a2 2\u000aRR\u000a1 2 1\u000a2 1 2\u000a3 3\u000aHRR\u000a1 2 1\u000a1 3 2\u000a2 3 3\u000a\u000aOutput:\u000a2\u000a0\u000a1\u000aAuthor: xcwgf666\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/RHOUSE\u000aTags: easy jan12 xcwgf666\u000aDate Added: 11-11-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aThere is a city where people are fond of visiting restaurants. In fact, any building in this town is either a house or a restaurant. There are N buildings in the city and they are conveniently numerated by integer numbers from 1 to N. To move from some building to others there are M two-way roads. Each road connects two buildings. It is possible that there are several roads that connect the same pair of buildings, but there won't be a road that connects a building to itself. Chef wants to make the ways to his restaurants more interesting. To do that he is going to decorate some roads. Each road has its own integer cost of decorating. Some costs may be negative. If the cost is negative Chef will get some reward for decorating this road. Now Chef doesn't have much money so he wants to decorate roads in such a way that from each house, at least one restaurant is reachable using only decorated roads. The total cost of decorated roads should be minimal. So, your task is to help him to calculate the minimal cost of any satisfactory subset. It might be negative if Chef's rewards for decorating some roads are greater than his spent money.\u000aInput\u000aThere first line of input contains an integer T - the number of test cases.\u000aThen T test cases follow. For each test case there will be integers N and M - the number of buildings and the number of roads.\u000aThen a string of N letter follows. I-th symbol of this string is "R" if the corresponding building is a restaurant and "H" if it is a house.\u000aThen there are M lines. Each line consists of three integers - Xi Yi Zi. They describe a road that connects buildings Xi and Yi with the cost of decorating equal to Zi.\u000aOutput\u000aFor each test case output the minimal cost of any satisfactory subset of roads.\u000aConstraints\u000a2<=N<=100000\u000a1<=M<=400000\u000a-20000<=Zi<=20000\u000aSum over all N in a single input file will not exceed 200000.\u000aSum over all M in a single input file will not exceed 400000.\u000aIt is guaranteed that you can reach every building from any other building.\u000aThere is at least one resturant in the city.\u000aExample\u000aInput:\u000a\u000a3\u000a3 5\u000aHHR\u000a1 2 3\u000a1 2 5\u000a1 3 10\u000a3 2 -1\u000a3 1 7\u000a2 2\u000aRR\u000a1 2 1\u000a2 1 2\u000a3 3\u000aHRR\u000a1 2 1\u000a1 3 2\u000a2 3 3\u000a\u000aOutput:\u000a2\u000a0\u000a1\u000aAuthor: xcwgf666\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/RHOUSE\u000aTags: easy jan12 xcwgf666\u000aDate Added: 11-11-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. There is a city where people are fond of visiting restaurants. In fact, any building in this town is either a house or a restaurant. There are N buildings in the city and they are conveniently numerated by integer numbers from 1 to N. To move from some building to others there are M two-way roads. Each road connects two buildings. It is possible that there are several roads that connect the same pair of buildings, but there won't be a road that connects a building to itself. Chef wants to make the ways to his restaurants more interesting. To do that he is going to decorate some roads. Each road has its own integer cost of decorating. Some costs may be negative. If the cost is negative Chef will get some reward for decorating this road. Now Chef doesn't have much money so he wants to decorate roads in such a way that from each house, at least one restaurant is reachable using only decorated roads. The total cost of decorated roads should be minimal. So, your task is to help him to calculate the minimal cost of any satisfactory subset. It might be negative if Chef's rewards for decorating some roads are greater than his spent money. Input  There first line of input contains an integer T - the number of test cases.\u000aThen T test cases follow. For each test case there will be integers N and M - the number of buildings and the number of roads.\u000aThen a string of N letter follows. I-th symbol of this string is "R" if the corresponding building is a restaurant and "H" if it is a house.\u000aThen there are M lines. Each line consists of three integers - Xi Yi Zi. They describe a road that connects buildings Xi and Yi with the cost of decorating equal to Zi.    i i i i i i Output  For each test case output the minimal cost of any satisfactory subset of roads. Constraints   i     Example Input:\u000a\u000a3\u000a3 5\u000aHHR\u000a1 2 3\u000a1 2 5\u000a1 3 10\u000a3 2 -1\u000a3 1 7\u000a2 2\u000aRR\u000a1 2 1\u000a2 1 2\u000a3 3\u000aHRR\u000a1 2 1\u000a1 3 2\u000a2 3 3\u000a\u000aOutput:\u000a2\u000a0\u000a1 Input: Output:   Author: xcwgf666\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/RHOUSE\u000aTags: easy jan12 xcwgf666\u000aDate Added: 11-11-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: xcwgf666\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/RHOUSE\u000aTags: easy jan12 xcwgf666\u000aDate Added: 11-11-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: xcwgf666 Author: xcwgf666 xcwgf666 Tester: laycurse Tester: laycurse laycurse Editorial: http://discuss.codechef.com/problems/RHOUSE Editorial: http://discuss.codechef.com/problems/RHOUSE http://discuss.codechef.com/problems/RHOUSE Tags: easy jan12 xcwgf666 Tags: easy jan12 xcwgf666 easy jan12 xcwgf666 Date Added: 11-11-2011 Date Added: 11-11-2011 Time Limit: 3 sec Time Limit: 3 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy jan12 xcwgf666
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/RHOUSE
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVThere is a city where people are fond of visiting restaurants. In fact, any building in this town is either a house or a restaurant. There are N buildings in the city and they are conveniently numerated by integer numbers from 1 to N. To move from some building to others there are M two-way roads. Each road connects two buildings. It is possible that there are several roads that connect the same pair of buildings, but there won't be a road that connects a building to itself. Chef wants to make the ways to his restaurants more interesting. To do that he is going to decorate some roads. Each road has its own integer cost of decorating. Some costs may be negative. If the cost is negative Chef will get some reward for decorating this road. Now Chef doesn't have much money so he wants to decorate roads in such a way that from each house, at least one restaurant is reachable using only decorated roads. The total cost of decorated roads should be minimal. So, your task is to help him to calculate the minimal cost of any satisfactory subset. It might be negative if Chef's rewards for decorating some roads are greater than his spent money.
+p17
+asS'input'
+p18
+(lp19
+VInput
+p20
+aVThere first line of input contains an integer T - the number of test cases.
+p21
+aVThen T test cases follow. For each test case there will be integers N and M - the number of buildings and the number of roads.
+p22
+aVThen a string of N letter follows. I-th symbol of this string is "R" if the corresponding building is a restaurant and "H" if it is a house.
+p23
+aVThen there are M lines. Each line consists of three integers - Xi Yi Zi. They describe a road that connects buildings Xi and Yi with the cost of decorating equal to Zi.
+p24
+aVOutput
+p25
+aVFor each test case output the minimal cost of any satisfactory subset of roads.
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aV2<=N<=100000
+p30
+aV1<=M<=400000
+p31
+aV-20000<=Zi<=20000
+p32
+aVSum over all N in a single input file will not exceed 200000.
+p33
+aVSum over all M in a single input file will not exceed 400000.
+p34
+aVIt is guaranteed that you can reach every building from any other building.
+p35
+aVThere is at least one resturant in the city.
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VRHOUSE
+p40
+sb.

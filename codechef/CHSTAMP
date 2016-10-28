@@ -1,0 +1,95 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef has a collection of N postage stamps. Each stamp belongs to some type, which are enumerated as positive integers. More valuable stamps have a higher enumerated type. So, type 1 is the least valuable type of stamps, type 2 is a bit more valuable, and so on.\u000aChef often communicates with other philatelists via a stamp exchange website called P-bay. On any particular day, P-bay lists several offers, each of which is represented as an unordered pair {A, B}, allowing its users to exchange stamps of type A with an equal number of stamps of type B. Chef can use such an offer to put up any number of stamps of enumerated type A on the website and get the same number of stamps of type B in return, or vice-versa (of course, he must have enough stamps of the corresponding type). Assume that any number of stamps Chef wants are always available on the site's exchange market. Each offer is open during only one day: Chef can't use it after this day, but he can use it several times during this day. If there are some offers which are active during a given day, Chef can use them in any order.\u000aChef is interested in making his collection as valuable as possible. Help him to find maximum possible value of his collection after going through (accepting or declining) all the offers. Value of Chef's collection is equal to the sum of type enumerations of all stamps in the collection.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two integers N and M denoting number of stamps in Chef's collection and number of offers, respectively.\u000aNext line contains N integers denoting the enumerated types of stamps in Chef's collection.\u000aThe ith of the following M lines contains three integers \u2014 Ti, Ai and Bi \u2014 denoting that on day Ti, there is an offer about exchanging stamps of types Ai and Bi.\u000aOutput\u000aFor each test case, output a single line containing maximum possible value of Chef's collection after all offers.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 2*105\u000a1 \u2264 M \u2264 5*104\u000aTypes are enumerated with integers from 1 to 5*104\u000a1 \u2264 Ti \u2264 5*104\u000aSubtasks\u000aSubtask 1: (33 points)\u000a1 \u2264 M \u2264 1000\u000aTypes are enumerated with integers from 1 to 1000\u000a1 \u2264 Ti \u2264 1000\u000aSubtask 2: (67 points)\u000aOriginal constraints\u000aExample\u000aInput:\u000a\u000a1\u000a3 4\u000a1 3 5\u000a1 4 3\u000a1 1 3\u000a2 6 22\u000a3 5 8\u000a\u000aOutput:\u000a\u000a16\u000aExplanation\u000aExample case 1. Chef can use 2nd offer to exchange the stamp of type 1 with an stamp of type 3. After that he can use 1st offer to exchange his 2 stamps of type 3 with 2 stamps of type 4. Finally, on 3rd day Chef uses the offer to exchange the stamp of type 5 with an stamp of type 8. After this transaction, value of his collection becomes 4 + 4 + 8 = 16.\u000aAuthor: eartemov\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/CHSTAMP\u000aTags: connected eartemov easy-medium graph nov15\u000aDate Added: 28-07-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef has a collection of N postage stamps. Each stamp belongs to some type, which are enumerated as positive integers. More valuable stamps have a higher enumerated type. So, type 1 is the least valuable type of stamps, type 2 is a bit more valuable, and so on.\u000aChef often communicates with other philatelists via a stamp exchange website called P-bay. On any particular day, P-bay lists several offers, each of which is represented as an unordered pair {A, B}, allowing its users to exchange stamps of type A with an equal number of stamps of type B. Chef can use such an offer to put up any number of stamps of enumerated type A on the website and get the same number of stamps of type B in return, or vice-versa (of course, he must have enough stamps of the corresponding type). Assume that any number of stamps Chef wants are always available on the site's exchange market. Each offer is open during only one day: Chef can't use it after this day, but he can use it several times during this day. If there are some offers which are active during a given day, Chef can use them in any order.\u000aChef is interested in making his collection as valuable as possible. Help him to find maximum possible value of his collection after going through (accepting or declining) all the offers. Value of Chef's collection is equal to the sum of type enumerations of all stamps in the collection.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two integers N and M denoting number of stamps in Chef's collection and number of offers, respectively.\u000aNext line contains N integers denoting the enumerated types of stamps in Chef's collection.\u000aThe ith of the following M lines contains three integers \u2014 Ti, Ai and Bi \u2014 denoting that on day Ti, there is an offer about exchanging stamps of types Ai and Bi.\u000aOutput\u000aFor each test case, output a single line containing maximum possible value of Chef's collection after all offers.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 2*105\u000a1 \u2264 M \u2264 5*104\u000aTypes are enumerated with integers from 1 to 5*104\u000a1 \u2264 Ti \u2264 5*104\u000aSubtasks\u000aSubtask 1: (33 points)\u000a1 \u2264 M \u2264 1000\u000aTypes are enumerated with integers from 1 to 1000\u000a1 \u2264 Ti \u2264 1000\u000aSubtask 2: (67 points)\u000aOriginal constraints\u000aExample\u000aInput:\u000a\u000a1\u000a3 4\u000a1 3 5\u000a1 4 3\u000a1 1 3\u000a2 6 22\u000a3 5 8\u000a\u000aOutput:\u000a\u000a16\u000aExplanation\u000aExample case 1. Chef can use 2nd offer to exchange the stamp of type 1 with an stamp of type 3. After that he can use 1st offer to exchange his 2 stamps of type 3 with 2 stamps of type 4. Finally, on 3rd day Chef uses the offer to exchange the stamp of type 5 with an stamp of type 8. After this transaction, value of his collection becomes 4 + 4 + 8 = 16.\u000aAuthor: eartemov\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/CHSTAMP\u000aTags: connected eartemov easy-medium graph nov15\u000aDate Added: 28-07-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef has a collection of N postage stamps. Each stamp belongs to some type, which are enumerated as positive integers. More valuable stamps have a higher enumerated type. So, type 1 is the least valuable type of stamps, type 2 is a bit more valuable, and so on. N 1 2 Chef often communicates with other philatelists via a stamp exchange website called P-bay. On any particular day, P-bay lists several offers, each of which is represented as an unordered pair {A, B}, allowing its users to exchange stamps of type A with an equal number of stamps of type B. Chef can use such an offer to put up any number of stamps of enumerated type A on the website and get the same number of stamps of type B in return, or vice-versa (of course, he must have enough stamps of the corresponding type). Assume that any number of stamps Chef wants are always available on the site's exchange market. Each offer is open during only one day: Chef can't use it after this day, but he can use it several times during this day. If there are some offers which are active during a given day, Chef can use them in any order. A B A B A B Chef is interested in making his collection as valuable as possible. Help him to find maximum possible value of his collection after going through (accepting or declining) all the offers. Value of Chef's collection is equal to the sum of type enumerations of all stamps in the collection. Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains two integers N and M denoting number of stamps in Chef's collection and number of offers, respectively. N M Next line contains N integers denoting the enumerated types of stamps in Chef's collection. N The ith of the following M lines contains three integers \u2014 Ti, Ai and Bi \u2014 denoting that on day Ti, there is an offer about exchanging stamps of types Ai and Bi. ith th M Ti i Ai i Bi i Ti i Ai i Bi i Output For each test case, output a single line containing maximum possible value of Chef's collection after all offers. Constraints 1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 2*105\u000a1 \u2264 M \u2264 5*104\u000aTypes are enumerated with integers from 1 to 5*104\u000a1 \u2264 Ti \u2264 5*104 1 \u2264 T \u2264 10 1 T 10 1 \u2264 N \u2264 2*105 1 N 2*105 5 1 \u2264 M \u2264 5*104 1 M 5*104 4 Types are enumerated with integers from 1 to 5*104 1 5*104 4 1 \u2264 Ti \u2264 5*104 1 Ti i 5*104 4 Subtasks Subtask 1: (33 points) Subtask 1: (33 points) 1 \u2264 M \u2264 1000\u000aTypes are enumerated with integers from 1 to 1000\u000a1 \u2264 Ti \u2264 1000 1 \u2264 M \u2264 1000 1 M 1000 Types are enumerated with integers from 1 to 1000 1 1000 1 \u2264 Ti \u2264 1000 1 Ti i 1000 Subtask 2: (67 points) Subtask 2: (67 points) Original constraints Original constraints Example Input:\u000a\u000a1\u000a3 4\u000a1 3 5\u000a1 4 3\u000a1 1 3\u000a2 6 22\u000a3 5 8\u000a\u000aOutput:\u000a\u000a16 Input: Output: Explanation Example case 1. Chef can use 2nd offer to exchange the stamp of type 1 with an stamp of type 3. After that he can use 1st offer to exchange his 2 stamps of type 3 with 2 stamps of type 4. Finally, on 3rd day Chef uses the offer to exchange the stamp of type 5 with an stamp of type 8. After this transaction, value of his collection becomes 4 + 4 + 8 = 16. Example case 1. 2nd nd 1 3 1st st 3 4 3rd rd 5 8 4 + 4 + 8 = 16  Author: eartemov\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/CHSTAMP\u000aTags: connected eartemov easy-medium graph nov15\u000aDate Added: 28-07-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: eartemov\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/CHSTAMP\u000aTags: connected eartemov easy-medium graph nov15\u000aDate Added: 28-07-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: eartemov Author: eartemov eartemov Tester: iscsi Tester: iscsi iscsi Editorial: http://discuss.codechef.com/problems/CHSTAMP Editorial: http://discuss.codechef.com/problems/CHSTAMP http://discuss.codechef.com/problems/CHSTAMP Tags: connected eartemov easy-medium graph nov15 Tags: connected eartemov easy-medium graph nov15 connected eartemov easy-medium graph nov15 Date Added: 28-07-2015 Date Added: 28-07-2015 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V connected eartemov easy-medium graph nov15
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHSTAMP
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef has a collection of N postage stamps. Each stamp belongs to some type, which are enumerated as positive integers. More valuable stamps have a higher enumerated type. So, type 1 is the least valuable type of stamps, type 2 is a bit more valuable, and so on.
+p18
+aVChef often communicates with other philatelists via a stamp exchange website called P-bay. On any particular day, P-bay lists several offers, each of which is represented as an unordered pair {A, B}, allowing its users to exchange stamps of type A with an equal number of stamps of type B. Chef can use such an offer to put up any number of stamps of enumerated type A on the website and get the same number of stamps of type B in return, or vice-versa (of course, he must have enough stamps of the corresponding type). Assume that any number of stamps Chef wants are always available on the site's exchange market. Each offer is open during only one day: Chef can't use it after this day, but he can use it several times during this day. If there are some offers which are active during a given day, Chef can use them in any order.
+p19
+aVChef is interested in making his collection as valuable as possible. Help him to find maximum possible value of his collection after going through (accepting or declining) all the offers. Value of Chef's collection is equal to the sum of type enumerations of all stamps in the collection.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVThe first line of each test case contains two integers N and M denoting number of stamps in Chef's collection and number of offers, respectively.
+p25
+aVNext line contains N integers denoting the enumerated types of stamps in Chef's collection.
+p26
+aVThe ith of the following M lines contains three integers \u2014 Ti, Ai and Bi \u2014 denoting that on day Ti, there is an offer about exchanging stamps of types Ai and Bi.
+p27
+aVOutput
+p28
+aVFor each test case, output a single line containing maximum possible value of Chef's collection after all offers.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 T \u2264 10
+p33
+aV1 \u2264 N \u2264 2*105
+p34
+aV1 \u2264 M \u2264 5*104
+p35
+aVTypes are enumerated with integers from 1 to 5*104
+p36
+aV1 \u2264 Ti \u2264 5*104
+p37
+aVSubtasks
+p38
+aVSubtask 1: (33 points)
+p39
+aV1 \u2264 M \u2264 1000
+p40
+aVTypes are enumerated with integers from 1 to 1000
+p41
+aV1 \u2264 Ti \u2264 1000
+p42
+aVSubtask 2: (67 points)
+p43
+aVOriginal constraints
+p44
+asS'id'
+p45
+c__builtin__
+id
+p46
+sS'name'
+p47
+VCHSTAMP
+p48
+sb.

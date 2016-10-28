@@ -1,0 +1,82 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese as well.\u000aChef likes arrays a lot. Today, he found an array A consisting of N positive integers.\u000aLet L denote the sorted (in non-increasing order) list of size N*(N+1)/2 containing the sums of all possible contiguous subarrays of A. Chef is interested in finding the first K elements from the list L. Can you help him in accomplishing this task?\u000aInput\u000aThere is only a single test case per input file.\u000aThe first line of input contains two space separated integer numbers N and K denoting the size of the array and the number of the maximal sums you need to find.\u000aThe following line contains N space separated integer numbers denoting the array A.\u000aOutput\u000aOutput K space separated integers where the ith integer denotes the ith element of L.\u000aConstraints\u000a1 \u2264 N \u2264 105\u000a\u000a1 \u2264 K \u2264 min(N*(N+1)/2, 105)\u000a\u000a1 \u2264 Ai \u2264 109\u000aSubtasks\u000aSubtask 1 (47 pts) : 1 \u2264 N \u2264 1000, 1 \u2264 K \u2264 min{N*(N+1)/2, 105}\u000aSubtask 2 (53 pts) : 1 \u2264 N \u2264 105, 1 \u2264 K \u2264 min{N*(N+1)/2, 105}\u000aExample\u000aInput 1\u000a3 4\u000a1 3 4\u000a\u000aOutput 1\u000a8 7 4 4\u000a\u000aInput 2\u000a3 3\u000a10 2 7\u000a\u000aOutput 2\u000a19 12 10\u000aExplanation\u000aTest 1:\u000a\u000a\u000aThe first 4 elements of it are [8, 7, 4, 4].\u000aAuthor: ma5termind\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/KSUM\u000aTags: data data-structure greedy implementation ltime35 ma5termind sorting\u000aDate Added: 12-03-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese as well.\u000aChef likes arrays a lot. Today, he found an array A consisting of N positive integers.\u000aLet L denote the sorted (in non-increasing order) list of size N*(N+1)/2 containing the sums of all possible contiguous subarrays of A. Chef is interested in finding the first K elements from the list L. Can you help him in accomplishing this task?\u000aInput\u000aThere is only a single test case per input file.\u000aThe first line of input contains two space separated integer numbers N and K denoting the size of the array and the number of the maximal sums you need to find.\u000aThe following line contains N space separated integer numbers denoting the array A.\u000aOutput\u000aOutput K space separated integers where the ith integer denotes the ith element of L.\u000aConstraints\u000a1 \u2264 N \u2264 105\u000a\u000a1 \u2264 K \u2264 min(N*(N+1)/2, 105)\u000a\u000a1 \u2264 Ai \u2264 109\u000aSubtasks\u000aSubtask 1 (47 pts) : 1 \u2264 N \u2264 1000, 1 \u2264 K \u2264 min{N*(N+1)/2, 105}\u000aSubtask 2 (53 pts) : 1 \u2264 N \u2264 105, 1 \u2264 K \u2264 min{N*(N+1)/2, 105}\u000aExample\u000aInput 1\u000a3 4\u000a1 3 4\u000a\u000aOutput 1\u000a8 7 4 4\u000a\u000aInput 2\u000a3 3\u000a10 2 7\u000a\u000aOutput 2\u000a19 12 10\u000aExplanation\u000aTest 1:\u000a\u000a\u000aThe first 4 elements of it are [8, 7, 4, 4].\u000aAuthor: ma5termind\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/KSUM\u000aTags: data data-structure greedy implementation ltime35 ma5termind sorting\u000aDate Added: 12-03-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese , Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef likes arrays a lot. Today, he found an array A consisting of N positive integers. A N Let L denote the sorted (in non-increasing order) list of size N*(N+1)/2 containing the sums of all possible contiguous subarrays of A. Chef is interested in finding the first K elements from the list L. Can you help him in accomplishing this task? L N*(N+1)/2 A K L Input There is only a single test case per input file. The first line of input contains two space separated integer numbers N and K denoting the size of the array and the number of the maximal sums you need to find. N K The following line contains N space separated integer numbers denoting the array A. N A Output Output K space separated integers where the ith integer denotes the ith element of L. K ith th ith th L Constraints 1 \u2264 N \u2264 105\u000a\u000a1 \u2264 K \u2264 min(N*(N+1)/2, 105)\u000a\u000a1 \u2264 Ai \u2264 109 1 \u2264 N \u2264 105 1 \u2264 N \u2264 105 5   1 \u2264 K \u2264 min(N*(N+1)/2, 105) 1 \u2264 K \u2264 min(N*(N+1)/2, 105) 5   1 \u2264 Ai \u2264 109 1 \u2264 Ai \u2264 109 i 9  Subtasks Subtask 1 (47 pts) : 1 \u2264 N \u2264 1000, 1 \u2264 K \u2264 min{N*(N+1)/2, 105}\u000aSubtask 2 (53 pts) : 1 \u2264 N \u2264 105, 1 \u2264 K \u2264 min{N*(N+1)/2, 105} Subtask 1 (47 pts) : 1 \u2264 N \u2264 1000, 1 \u2264 K \u2264 min{N*(N+1)/2, 105} 1 \u2264 N \u2264 1000, 1 \u2264 K \u2264 min{N*(N+1)/2, 105} 5  Subtask 2 (53 pts) : 1 \u2264 N \u2264 105, 1 \u2264 K \u2264 min{N*(N+1)/2, 105} 1 \u2264 N \u2264 105, 1 \u2264 K \u2264 min{N*(N+1)/2, 105} 5 5  Example Input 1\u000a3 4\u000a1 3 4\u000a\u000aOutput 1\u000a8 7 4 4\u000a\u000aInput 2\u000a3 3\u000a10 2 7\u000a\u000aOutput 2\u000a19 12 10 Input 1 3 4\u000a1 3 4 Output 1 8 7 4 4 Input 2 3 3\u000a10 2 7 Output 2 19 12 10 Explanation Test 1: Test 1:     The first 4 elements of it are [8, 7, 4, 4]. 4 [8, 7, 4, 4]  Author: ma5termind\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/KSUM\u000aTags: data data-structure greedy implementation ltime35 ma5termind sorting\u000aDate Added: 12-03-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/KSUM\u000aTags: data data-structure greedy implementation ltime35 ma5termind sorting\u000aDate Added: 12-03-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind Author: ma5termind ma5termind Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/KSUM Editorial: http://discuss.codechef.com/problems/KSUM http://discuss.codechef.com/problems/KSUM Tags: data data-structure greedy implementation ltime35 ma5termind sorting Tags: data data-structure greedy implementation ltime35 ma5termind sorting data data-structure greedy implementation ltime35 ma5termind sorting Date Added: 12-03-2016 Date Added: 12-03-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V data data-structure greedy implementation ltime35 ma5termind sorting
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/KSUM
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese , Russian and Vietnamese as well.
+p17
+aVChef likes arrays a lot. Today, he found an array A consisting of N positive integers.
+p18
+aVLet L denote the sorted (in non-increasing order) list of size N*(N+1)/2 containing the sums of all possible contiguous subarrays of A. Chef is interested in finding the first K elements from the list L. Can you help him in accomplishing this task?
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVThere is only a single test case per input file.
+p23
+aVThe first line of input contains two space separated integer numbers N and K denoting the size of the array and the number of the maximal sums you need to find.
+p24
+aVThe following line contains N space separated integer numbers denoting the array A.
+p25
+aVOutput
+p26
+aVOutput K space separated integers where the ith integer denotes the ith element of L.
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV1 \u2264 N \u2264 105
+p31
+aV
+p32
+aV1 \u2264 K \u2264 min(N*(N+1)/2, 105)
+p33
+ag32
+aV1 \u2264 Ai \u2264 109
+p34
+aVSubtasks
+p35
+aVSubtask 1 (47 pts) : 1 \u2264 N \u2264 1000, 1 \u2264 K \u2264 min{N*(N+1)/2, 105}
+p36
+aVSubtask 2 (53 pts) : 1 \u2264 N \u2264 105, 1 \u2264 K \u2264 min{N*(N+1)/2, 105}
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'name'
+p40
+VKSUM
+p41
+sb.

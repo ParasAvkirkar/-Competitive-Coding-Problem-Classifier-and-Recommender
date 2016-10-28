@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aAs part of his daily job, Chef has to solve problems involving sets. Till now, Chef has been using inefficient methods to solve his set related problem, wasting a lot of his precious time. He has agreed to pay you a lot of money for solving the following problem for him efficiently.\u000aFirst, Chef needs to perform Q operations on a set. Each operation is either:\u000a1. Add a number to the set (if this number is NOT already present in the set).\u000a2. Erase a number from the set (if this number exists in the set).\u000aThen, he needs to find the sum of all elements of the set after performing these Q queries. Your job is to find this sum for him quickly.\u000aInput\u000aThe first line of input contains four integers \u2014 Q, S1, A, B. S1 is the first number in the operations. A and B are special constants explained later.\u000aEvery operation Si is represented by a single integer. If Si is odd, then it represents the first operation, otherwise the second type, and in both of them the integer you have to add/delete equals [Si / 2], where [] is the greatest integer (or floor) function.\u000aSi = (A*Si-1 + B) mod 232 when i > 1.\u000aNote: In this problem, the time limit is very tight. Using built-in data structures, such as set/unordered_set in C++ or TreeSet/HashSet in Java, may lead to a Time Limit Exceed verdict.\u000aOutput\u000aOutput a single line containing a single integer \u2014 sum of elements in the set after Q queries.\u000aConstraints\u000a1 \u2264 Q \u2264 107\u000a1 \u2264 S1, A, B \u2264 109\u000aExample\u000aInput:\u000a5 1 1 1\u000a\u000aOutput:\u000a3\u000a\u000a\u000aInput:\u000a10000000 777777777 777777777 777777777\u000a\u000aOutput:\u000a5362358669068782\u000aExplanation:\u000aThe sequence {Si} is 1, 2, 3, 4, 5:\u000aOperation 1, 1 mod 2 = 1, add number [1 / 2] = 0 to set, sum is 0.\u000aOperation 2, 2 mod 2 = 0, erase number [2 / 2] = 1 from set, 1 is not in set, so nothing happens, sum is 0.\u000aOperation 3, 3 mod 2 = 1, add number [3 / 2] = 1 to set, sum is 1.\u000aOperation 4, 4 mod 2 = 0, erase number [4 / 2] = 2 from set, 2 is not in set, so nothing happens, sum is 1.\u000aOperation 5, 5 mod 2 = 1, add number [5 / 2] = 2 to set, sum is 3.\u000aAuthor: mgch\u000aEditorial: http://discuss.codechef.com/problems/CHEFQUE\u000aTags: bitset cook65 easy-medium hashing mgch\u000aDate Added: 9-12-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aAs part of his daily job, Chef has to solve problems involving sets. Till now, Chef has been using inefficient methods to solve his set related problem, wasting a lot of his precious time. He has agreed to pay you a lot of money for solving the following problem for him efficiently.\u000aFirst, Chef needs to perform Q operations on a set. Each operation is either:\u000a1. Add a number to the set (if this number is NOT already present in the set).\u000a2. Erase a number from the set (if this number exists in the set).\u000aThen, he needs to find the sum of all elements of the set after performing these Q queries. Your job is to find this sum for him quickly.\u000aInput\u000aThe first line of input contains four integers \u2014 Q, S1, A, B. S1 is the first number in the operations. A and B are special constants explained later.\u000aEvery operation Si is represented by a single integer. If Si is odd, then it represents the first operation, otherwise the second type, and in both of them the integer you have to add/delete equals [Si / 2], where [] is the greatest integer (or floor) function.\u000aSi = (A*Si-1 + B) mod 232 when i > 1.\u000aNote: In this problem, the time limit is very tight. Using built-in data structures, such as set/unordered_set in C++ or TreeSet/HashSet in Java, may lead to a Time Limit Exceed verdict.\u000aOutput\u000aOutput a single line containing a single integer \u2014 sum of elements in the set after Q queries.\u000aConstraints\u000a1 \u2264 Q \u2264 107\u000a1 \u2264 S1, A, B \u2264 109\u000aExample\u000aInput:\u000a5 1 1 1\u000a\u000aOutput:\u000a3\u000a\u000a\u000aInput:\u000a10000000 777777777 777777777 777777777\u000a\u000aOutput:\u000a5362358669068782\u000aExplanation:\u000aThe sequence {Si} is 1, 2, 3, 4, 5:\u000aOperation 1, 1 mod 2 = 1, add number [1 / 2] = 0 to set, sum is 0.\u000aOperation 2, 2 mod 2 = 0, erase number [2 / 2] = 1 from set, 1 is not in set, so nothing happens, sum is 0.\u000aOperation 3, 3 mod 2 = 1, add number [3 / 2] = 1 to set, sum is 1.\u000aOperation 4, 4 mod 2 = 0, erase number [4 / 2] = 2 from set, 2 is not in set, so nothing happens, sum is 1.\u000aOperation 5, 5 mod 2 = 1, add number [5 / 2] = 2 to set, sum is 3.\u000aAuthor: mgch\u000aEditorial: http://discuss.codechef.com/problems/CHEFQUE\u000aTags: bitset cook65 easy-medium hashing mgch\u000aDate Added: 9-12-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese As part of his daily job, Chef has to solve problems involving sets. Till now, Chef has been using inefficient methods to solve his set related problem, wasting a lot of his precious time. He has agreed to pay you a lot of money for solving the following problem for him efficiently. First, Chef needs to perform Q operations on a set. Each operation is either: Q 1. Add a number to the set (if this number is NOT already present in the set).\u000a2. Erase a number from the set (if this number exists in the set).\u000aThen, he needs to find the sum of all elements of the set after performing these Q queries. Your job is to find this sum for him quickly.\u000aInput\u000aThe first line of input contains four integers \u2014 Q, S1, A, B. S1 is the first number in the operations. A and B are special constants explained later.\u000aEvery operation Si is represented by a single integer. If Si is odd, then it represents the first operation, otherwise the second type, and in both of them the integer you have to add/delete equals [Si / 2], where [] is the greatest integer (or floor) function.\u000aSi = (A*Si-1 + B) mod 232 when i > 1.\u000aNote: In this problem, the time limit is very tight. Using built-in data structures, such as set/unordered_set in C++ or TreeSet/HashSet in Java, may lead to a Time Limit Exceed verdict.\u000aOutput\u000aOutput a single line containing a single integer \u2014 sum of elements in the set after Q queries.\u000aConstraints\u000a1 \u2264 Q \u2264 107\u000a1 \u2264 S1, A, B \u2264 109\u000aExample\u000aInput:\u000a5 1 1 1\u000a\u000aOutput:\u000a3\u000a\u000a\u000aInput:\u000a10000000 777777777 777777777 777777777\u000a\u000aOutput:\u000a5362358669068782\u000aExplanation:\u000aThe sequence {Si} is 1, 2, 3, 4, 5:\u000aOperation 1, 1 mod 2 = 1, add number [1 / 2] = 0 to set, sum is 0.\u000aOperation 2, 2 mod 2 = 0, erase number [2 / 2] = 1 from set, 1 is not in set, so nothing happens, sum is 0.\u000aOperation 3, 3 mod 2 = 1, add number [3 / 2] = 1 to set, sum is 1.\u000aOperation 4, 4 mod 2 = 0, erase number [4 / 2] = 2 from set, 2 is not in set, so nothing happens, sum is 1.\u000aOperation 5, 5 mod 2 = 1, add number [5 / 2] = 2 to set, sum is 3. 1. Add a number to the set (if this number is NOT already present in the set). 2. Erase a number from the set (if this number exists in the set).  Then, he needs to find the sum of all elements of the set after performing these Q queries. Your job is to find this sum for him quickly. Q Input Q S1 1 A B S1 1 A B Every operation Si is represented by a single integer. If Si is odd, then it represents the first operation, otherwise the second type, and in both of them the integer you have to add/delete equals [Si / 2], where [] is the greatest integer (or floor) function. Si i Si i Si i Si = (A*Si-1 + B) mod 232 when i > 1. Si i A Si-1 i-1 B 232 32 i Note: In this problem, the time limit is very tight. Using built-in data structures, such as set/unordered_set in C++ or TreeSet/HashSet in Java, may lead to a Time Limit Exceed verdict. Note: Output Q Constraints 1 \u2264 Q \u2264 107\u000a1 \u2264 S1, A, B \u2264 109 1 \u2264 Q \u2264 107 Q 7 1 \u2264 S1, A, B \u2264 109 S1, A, B 1 9  Example Input:\u000a5 1 1 1\u000a\u000aOutput:\u000a3\u000a\u000a\u000aInput:\u000a10000000 777777777 777777777 777777777\u000a\u000aOutput:\u000a5362358669068782 Input: 5 1 1 1 Output: 3 Input: 10000000 777777777 777777777 777777777 Output: 5362358669068782 Explanation: The sequence {Si} is 1, 2, 3, 4, 5: i Operation 1, 1 mod 2 = 1, add number [1 / 2] = 0 to set, sum is 0. Operation 2, 2 mod 2 = 0, erase number [2 / 2] = 1 from set, 1 is not in set, so nothing happens, sum is 0. Operation 3, 3 mod 2 = 1, add number [3 / 2] = 1 to set, sum is 1. Operation 4, 4 mod 2 = 0, erase number [4 / 2] = 2 from set, 2 is not in set, so nothing happens, sum is 1. Operation 5, 5 mod 2 = 1, add number [5 / 2] = 2 to set, sum is 3.  Author: mgch\u000aEditorial: http://discuss.codechef.com/problems/CHEFQUE\u000aTags: bitset cook65 easy-medium hashing mgch\u000aDate Added: 9-12-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: mgch\u000aEditorial: http://discuss.codechef.com/problems/CHEFQUE\u000aTags: bitset cook65 easy-medium hashing mgch\u000aDate Added: 9-12-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: mgch Author: mgch mgch Editorial: http://discuss.codechef.com/problems/CHEFQUE Editorial: http://discuss.codechef.com/problems/CHEFQUE http://discuss.codechef.com/problems/CHEFQUE Tags: bitset cook65 easy-medium hashing mgch Tags: bitset cook65 easy-medium hashing mgch bitset cook65 easy-medium hashing mgch Date Added: 9-12-2015 Date Added: 9-12-2015 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V bitset cook65 easy-medium hashing mgch
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFQUE
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVAs part of his daily job, Chef has to solve problems involving sets. Till now, Chef has been using inefficient methods to solve his set related problem, wasting a lot of his precious time. He has agreed to pay you a lot of money for solving the following problem for him efficiently.
+p18
+aVFirst, Chef needs to perform Q operations on a set. Each operation is either:
+p19
+aV1. Add a number to the set (if this number is NOT already present in the set).
+p20
+aV2. Erase a number from the set (if this number exists in the set).
+p21
+aVThen, he needs to find the sum of all elements of the set after performing these Q queries. Your job is to find this sum for him quickly.
+p22
+asS'input'
+p23
+(lp24
+VInput
+p25
+aVThe first line of input contains four integers \u2014 Q, S1, A, B. S1 is the first number in the operations. A and B are special constants explained later.
+p26
+aVEvery operation Si is represented by a single integer. If Si is odd, then it represents the first operation, otherwise the second type, and in both of them the integer you have to add/delete equals [Si / 2], where [] is the greatest integer (or floor) function.
+p27
+aVSi = (A*Si-1 + B) mod 232 when i > 1.
+p28
+aVNote: In this problem, the time limit is very tight. Using built-in data structures, such as set/unordered_set in C++ or TreeSet/HashSet in Java, may lead to a Time Limit Exceed verdict.
+p29
+aVOutput
+p30
+aVOutput a single line containing a single integer \u2014 sum of elements in the set after Q queries.
+p31
+asS'constraints'
+p32
+(lp33
+VConstraints
+p34
+aV1 \u2264 Q \u2264 107
+p35
+aV1 \u2264 S1, A, B \u2264 109
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VCHEFQUE
+p40
+sb.

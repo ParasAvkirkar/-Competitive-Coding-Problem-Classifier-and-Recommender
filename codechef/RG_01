@@ -1,0 +1,69 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 3 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aProblem Statement\u000aGiven a weighted and undirected graph G = (V, E), let us define the score of an edge as its weight, and the score of a path as the minimum of the scores of its edges. For each pair of vertices (u, v), let us define a best path as a path with the maximal score, that starts at u and ends at v. Your task is to find out the score of a best path over all pairs of distinct vertices (u, v) given the description of the graph G.\u000aInput\u000aThe first line contains V, the number of vertices, and E, the number of edges in the graph. The graph will be weighted, undirected, simple (no self loops and no parallel edges), and connected. Each of the next E lines contains three non-negative integers u, v, and w, denoting that there is an edge (u, v) in the graph with a score of w. u and v are guaranteed to be distinct, and no edge will repeat in the input.\u000aOutput\u000aOutput a total of V lines each containing V integers. The vth integer on the uth line should be 0 if u = v, or the score of a best path that starts at vertex u and ends at vertex v.\u000aConstraints\u000a2 \u2264 V \u2264 1000\u000aV - 1 \u2264 E \u2264 V(V - 1)/2\u000a0 \u2264 u, v \u2264 V - 1\u000a0 \u2264 w \u2264 10^8\u000aExample\u000aInput:\u000a3 3\u000a0 1 1\u000a1 2 2\u000a0 2 3\u000a\u000aOutput:\u000a0 2 3\u000a2 0 2\u000a3 2 0\u000a Warning\u000a Large Input/Output. Use faster Input/Output techniques.\u000aAuthor: rahulakaneo\u000aTester: gamabunta\u000aEditorial: http://discuss.codechef.com/problems/RG_01\u000aTags: easy june11 rahulakaneo re_01\u000aDate Added: 10-04-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aProblem Statement\u000aGiven a weighted and undirected graph G = (V, E), let us define the score of an edge as its weight, and the score of a path as the minimum of the scores of its edges. For each pair of vertices (u, v), let us define a best path as a path with the maximal score, that starts at u and ends at v. Your task is to find out the score of a best path over all pairs of distinct vertices (u, v) given the description of the graph G.\u000aInput\u000aThe first line contains V, the number of vertices, and E, the number of edges in the graph. The graph will be weighted, undirected, simple (no self loops and no parallel edges), and connected. Each of the next E lines contains three non-negative integers u, v, and w, denoting that there is an edge (u, v) in the graph with a score of w. u and v are guaranteed to be distinct, and no edge will repeat in the input.\u000aOutput\u000aOutput a total of V lines each containing V integers. The vth integer on the uth line should be 0 if u = v, or the score of a best path that starts at vertex u and ends at vertex v.\u000aConstraints\u000a2 \u2264 V \u2264 1000\u000aV - 1 \u2264 E \u2264 V(V - 1)/2\u000a0 \u2264 u, v \u2264 V - 1\u000a0 \u2264 w \u2264 10^8\u000aExample\u000aInput:\u000a3 3\u000a0 1 1\u000a1 2 2\u000a0 2 3\u000a\u000aOutput:\u000a0 2 3\u000a2 0 2\u000a3 2 0\u000a Warning\u000a Large Input/Output. Use faster Input/Output techniques.\u000aAuthor: rahulakaneo\u000aTester: gamabunta\u000aEditorial: http://discuss.codechef.com/problems/RG_01\u000aTags: easy june11 rahulakaneo re_01\u000aDate Added: 10-04-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available.  Problem Statement Input  The first line contains V, the number of vertices, and E, the number of edges in the graph. The graph will be weighted, undirected, simple (no self loops and no parallel edges), and connected. Each of the next E lines contains three non-negative integers u, v, and w, denoting that there is an edge (u, v) in the graph with a score of w. u and v are guaranteed to be distinct, and no edge will repeat in the input. Output  Output a total of V lines each containing V integers. The vth integer on the uth line should be 0 if u = v, or the score of a best path that starts at vertex u and ends at vertex v. Constraints    Example Input:\u000a3 3\u000a0 1 1\u000a1 2 2\u000a0 2 3\u000a\u000aOutput:\u000a0 2 3\u000a2 0 2\u000a3 2 0\u000a Warning\u000a Large Input/Output. Use faster Input/Output techniques. Input: Output:  Warning   Author: rahulakaneo\u000aTester: gamabunta\u000aEditorial: http://discuss.codechef.com/problems/RG_01\u000aTags: easy june11 rahulakaneo re_01\u000aDate Added: 10-04-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: rahulakaneo\u000aTester: gamabunta\u000aEditorial: http://discuss.codechef.com/problems/RG_01\u000aTags: easy june11 rahulakaneo re_01\u000aDate Added: 10-04-2011\u000aTime Limit: 3 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: rahulakaneo Author: rahulakaneo rahulakaneo Tester: gamabunta Tester: gamabunta gamabunta Editorial: http://discuss.codechef.com/problems/RG_01 Editorial: http://discuss.codechef.com/problems/RG_01 http://discuss.codechef.com/problems/RG_01 Tags: easy june11 rahulakaneo re_01 Tags: easy june11 rahulakaneo re_01 easy june11 rahulakaneo re_01 Date Added: 10-04-2011 Date Added: 10-04-2011 Time Limit: 3 sec Time Limit: 3 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy june11 rahulakaneo re_01
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/RG_01
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVProblem Statement
+p17
+aVGiven a weighted and undirected graph G = (V, E), let us define the score of an edge as its weight, and the score of a path as the minimum of the scores of its edges. For each pair of vertices (u, v), let us define a best path as a path with the maximal score, that starts at u and ends at v. Your task is to find out the score of a best path over all pairs of distinct vertices (u, v) given the description of the graph G.
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVThe first line contains V, the number of vertices, and E, the number of edges in the graph. The graph will be weighted, undirected, simple (no self loops and no parallel edges), and connected. Each of the next E lines contains three non-negative integers u, v, and w, denoting that there is an edge (u, v) in the graph with a score of w. u and v are guaranteed to be distinct, and no edge will repeat in the input.
+p22
+aVOutput
+p23
+aVOutput a total of V lines each containing V integers. The vth integer on the uth line should be 0 if u = v, or the score of a best path that starts at vertex u and ends at vertex v.
+p24
+asS'constraints'
+p25
+(lp26
+VConstraints
+p27
+aV2 \u2264 V \u2264 1000
+p28
+aVV - 1 \u2264 E \u2264 V(V - 1)/2
+p29
+aV0 \u2264 u, v \u2264 V - 1
+p30
+aV0 \u2264 w \u2264 10^8
+p31
+asS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VRG_01
+p35
+sb.

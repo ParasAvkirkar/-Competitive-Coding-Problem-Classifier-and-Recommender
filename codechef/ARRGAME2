@@ -1,0 +1,93 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aProblem Statement\u000aLittle Chef doesn't love math anymore. He loves Aleksandra.\u000aSashen'ka is nice. They spend all the time together. Even their birthdays they are celebrating together, because they were born on the same day :)\u000aAnd now, this day is coming...\u000aChef know that most of all Sasha loves numbers, that's why he bought N positive numbers to a girl.\u000aFrom her side, Sasha as all girls, thought that if she likes something, then all people like that too. And bought to a boy N numbers too. xD\u000aAfter all greeting young people decide to play a game with their gifts. The game will be continued for N turns, in each turn the following will be done:\u000aChef randomly choose some number x from his gift.\u000aSasha randomly choose some number y form her gift.\u000aIf xy > yx then girl will kiss fellow.\u000aNumbers x,y will be discarded from gifts.\u000aNow chef is wondering what is the expected number of times he will be kissed by Sasha ?\u000a  Input\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the number of numbers in each gift. The second line contains N space-separated integers A1, A2, ..., AN denoting the numbers Sasha gave to Chef. Next line describe B1, B2, ..., BN numbers boy gave to girl in the same way.\u000a  Output\u000aFor each test case, output a single line containing answer for corresponding test. Your answer will be considered as correct if it will have absolute error not more then 10-6.\u000a  Constraints\u000a1 \u2264 T \u2264 5\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 109\u000a1 \u2264 Bi \u2264 109\u000a  Example\u000aInput\u000a3\u000a1\u000a3\u000a4\u000a2\u000a2 3\u000a1 4\u000a2\u000a2 4\u000a2 2\u000a\u000aOutput:\u000a1.000000\u000a1.500000\u000a0.000000\u000a  Explanation\u000aExample case 1. Game will have only 1 turn. Chef will choose 3, while Sasha will choose 4. Since 34>43 girl will kiss boy. Hence answer is 1.\u000aAuthor: ballon_ziq\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/ARRGAME2\u000aTags: ballon_ziq easy oct13 probability sorting\u000aDate Added: 2-08-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aProblem Statement\u000aLittle Chef doesn't love math anymore. He loves Aleksandra.\u000aSashen'ka is nice. They spend all the time together. Even their birthdays they are celebrating together, because they were born on the same day :)\u000aAnd now, this day is coming...\u000aChef know that most of all Sasha loves numbers, that's why he bought N positive numbers to a girl.\u000aFrom her side, Sasha as all girls, thought that if she likes something, then all people like that too. And bought to a boy N numbers too. xD\u000aAfter all greeting young people decide to play a game with their gifts. The game will be continued for N turns, in each turn the following will be done:\u000aChef randomly choose some number x from his gift.\u000aSasha randomly choose some number y form her gift.\u000aIf xy > yx then girl will kiss fellow.\u000aNumbers x,y will be discarded from gifts.\u000aNow chef is wondering what is the expected number of times he will be kissed by Sasha ?\u000a  Input\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the number of numbers in each gift. The second line contains N space-separated integers A1, A2, ..., AN denoting the numbers Sasha gave to Chef. Next line describe B1, B2, ..., BN numbers boy gave to girl in the same way.\u000a  Output\u000aFor each test case, output a single line containing answer for corresponding test. Your answer will be considered as correct if it will have absolute error not more then 10-6.\u000a  Constraints\u000a1 \u2264 T \u2264 5\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 109\u000a1 \u2264 Bi \u2264 109\u000a  Example\u000aInput\u000a3\u000a1\u000a3\u000a4\u000a2\u000a2 3\u000a1 4\u000a2\u000a2 4\u000a2 2\u000a\u000aOutput:\u000a1.000000\u000a1.500000\u000a0.000000\u000a  Explanation\u000aExample case 1. Game will have only 1 turn. Chef will choose 3, while Sasha will choose 4. Since 34>43 girl will kiss boy. Hence answer is 1.\u000aAuthor: ballon_ziq\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/ARRGAME2\u000aTags: ballon_ziq easy oct13 probability sorting\u000aDate Added: 2-08-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese here here Problem Statement Little Chef doesn't love math anymore. He loves Aleksandra. Sashen'ka is nice. They spend all the time together. Even their birthdays they are celebrating together, because they were born on the same day :) And now, this day is coming... Chef know that most of all Sasha loves numbers, that's why he bought N positive numbers to a girl.\u000aFrom her side, Sasha as all girls, thought that if she likes something, then all people like that too. And bought to a boy N numbers too. xD\u000aAfter all greeting young people decide to play a game with their gifts. The game will be continued for N turns, in each turn the following will be done: N  N  N Chef randomly choose some number x from his gift. x Sasha randomly choose some number y form her gift. y If xy > yx then girl will kiss fellow. xy > yx y x Numbers x,y will be discarded from gifts. x,y Now chef is wondering what is the expected number of times he will be kissed by Sasha ?   Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a single integer N denoting the number of numbers in each gift. The second line contains N space-separated integers A1, A2, ..., AN denoting the numbers Sasha gave to Chef. Next line describe B1, B2, ..., BN numbers boy gave to girl in the same way. N N A1 1 A2 2 AN N B1 1 B2 2 BN N   Output For each test case, output a single line containing answer for corresponding test. Your answer will be considered as correct if it will have absolute error not more then 10-6. 10-6 -6   Constraints 1 \u2264 T \u2264 5 1 T 5 1 \u2264 N \u2264 105 1 N 105 5 1 \u2264 Ai \u2264 109 1 Ai i 109 9 1 \u2264 Bi \u2264 109 1 Bi i 109 9   Example Input\u000a3\u000a1\u000a3\u000a4\u000a2\u000a2 3\u000a1 4\u000a2\u000a2 4\u000a2 2\u000a\u000aOutput:\u000a1.000000\u000a1.500000\u000a0.000000 Input Output:   Explanation Example case 1. Game will have only 1 turn. Chef will choose 3, while Sasha will choose 4. Since 34>43 girl will kiss boy. Hence answer is 1. Example case 1. 4 3  Author: ballon_ziq\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/ARRGAME2\u000aTags: ballon_ziq easy oct13 probability sorting\u000aDate Added: 2-08-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ballon_ziq\u000aTester: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/ARRGAME2\u000aTags: ballon_ziq easy oct13 probability sorting\u000aDate Added: 2-08-2013\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ballon_ziq Author: ballon_ziq ballon_ziq Tester: shangjingbo Tester: shangjingbo shangjingbo Editorial: http://discuss.codechef.com/problems/ARRGAME2 Editorial: http://discuss.codechef.com/problems/ARRGAME2 http://discuss.codechef.com/problems/ARRGAME2 Tags: ballon_ziq easy oct13 probability sorting Tags: ballon_ziq easy oct13 probability sorting ballon_ziq easy oct13 probability sorting Date Added: 2-08-2013 Date Added: 2-08-2013 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V ballon_ziq easy oct13 probability sorting
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/ARRGAME2
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese here
+p17
+aVProblem Statement
+p18
+aVLittle Chef doesn't love math anymore. He loves Aleksandra.
+p19
+aVSashen'ka is nice. They spend all the time together. Even their birthdays they are celebrating together, because they were born on the same day :)
+p20
+aVAnd now, this day is coming...
+p21
+aVChef know that most of all Sasha loves numbers, that's why he bought N positive numbers to a girl.
+p22
+aVFrom her side, Sasha as all girls, thought that if she likes something, then all people like that too. And bought to a boy N numbers too. xD
+p23
+aVAfter all greeting young people decide to play a game with their gifts. The game will be continued for N turns, in each turn the following will be done:
+p24
+aVChef randomly choose some number x from his gift.
+p25
+aVSasha randomly choose some number y form her gift.
+p26
+aVIf xy > yx then girl will kiss fellow.
+p27
+aVNumbers x,y will be discarded from gifts.
+p28
+aVNow chef is wondering what is the expected number of times he will be kissed by Sasha ?
+p29
+asS'input'
+p30
+(lp31
+VInput
+p32
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p33
+aVThe first line of each test case contains a single integer N denoting the number of numbers in each gift. The second line contains N space-separated integers A1, A2, ..., AN denoting the numbers Sasha gave to Chef. Next line describe B1, B2, ..., BN numbers boy gave to girl in the same way.
+p34
+aVOutput
+p35
+aVFor each test case, output a single line containing answer for corresponding test. Your answer will be considered as correct if it will have absolute error not more then 10-6.
+p36
+asS'constraints'
+p37
+(lp38
+VConstraints
+p39
+aV1 \u2264 T \u2264 5
+p40
+aV1 \u2264 N \u2264 105
+p41
+aV1 \u2264 Ai \u2264 109
+p42
+aV1 \u2264 Bi \u2264 109
+p43
+asS'id'
+p44
+c__builtin__
+id
+p45
+sS'name'
+p46
+VARRGAME2
+p47
+sb.

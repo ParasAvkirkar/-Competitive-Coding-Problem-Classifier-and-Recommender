@@ -1,0 +1,83 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aToday, puppy Tuzik is going to a new dog cinema. He has already left his home and just realised that he forgot his dog-collar! This is a real problem because the city is filled with catchers looking for stray dogs.\u000aA city where Tuzik lives in can be considered as an infinite grid, where each cell has exactly four neighbouring cells: those sharing a common side with the cell. Such a property of the city leads to the fact, that the distance between cells (xA, yA) and (xB, yB) equals |xA - xB| + |yA - yB|.\u000aInitially, the puppy started at the cell with coordinates (0, 0). There are N dog-catchers located at the cells with the coordinates (xi, yi), where 1 \u2264 i \u2264 N. Tuzik's path can be described as a string S of M characters, each of which belongs to the set {'D', 'U', 'L', 'R'} (corresponding to it moving down, up, left, and right, respectively). To estimate his level of safety, Tuzik wants to know the sum of the distances from each cell on his path to all the dog-catchers. You don't need to output this sum for the staring cell of the path (i.e. the cell with the coordinates (0, 0)).\u000aInput\u000aThe first line of the input contains two integers N and M.\u000aThe following N lines contain two integers xi and yi each, describing coordinates of the dog-catchers.\u000aThe last line of the input contains string S of M characters on the set {'D', 'U', 'L', 'R'}.\u000a'D' - decrease y by 1\u000a'U' - increase y by 1\u000a'L' - decrease x by 1\u000a'R' - increase x by 1\u000aOutput\u000aOutput M lines: for each cell of the path (except the starting cell), output the required sum of the distances.\u000aConstraints\u000a1 \u2264 N \u2264 3 \u2715 105\u000a1 \u2264 M \u2264 3 \u2715 105\u000a-106 \u2264 xi, yi \u2264 106\u000aExample\u000aInput:\u000a2 3\u000a1 2\u000a0 1\u000aRDL\u000a\u000aOutput:\u000a4\u000a6\u000a6\u000aExplanation\u000aInitially Tuzik stays at cell (0, 0). Let's consider his path:\u000aMove 'R' to the cell (1, 0). Distance to the catcher (1, 2) equals 2, distance to the catcher (0, 1) equals 2, so the total distance equals 4\u000aMove 'D' to the cell (1, -1). Distance to the catcher (1, 2) equals 3, distance to the catcher (0, 1) equals 3, so the total distance equals 6\u000aMove 'L' to the cell (0, -1). Distance to the catcher (1, 2) equals 4, distance to the catcher (0, 1) equals 2, so the total distance equals 6\u000aAuthor: pavel1996\u000aTester: kostya_by\u000aEditorial: http://discuss.codechef.com/problems/PPCTS\u000aTags: cook67 geometry implementation maths pavel1996 sorting\u000aDate Added: 24-01-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aToday, puppy Tuzik is going to a new dog cinema. He has already left his home and just realised that he forgot his dog-collar! This is a real problem because the city is filled with catchers looking for stray dogs.\u000aA city where Tuzik lives in can be considered as an infinite grid, where each cell has exactly four neighbouring cells: those sharing a common side with the cell. Such a property of the city leads to the fact, that the distance between cells (xA, yA) and (xB, yB) equals |xA - xB| + |yA - yB|.\u000aInitially, the puppy started at the cell with coordinates (0, 0). There are N dog-catchers located at the cells with the coordinates (xi, yi), where 1 \u2264 i \u2264 N. Tuzik's path can be described as a string S of M characters, each of which belongs to the set {'D', 'U', 'L', 'R'} (corresponding to it moving down, up, left, and right, respectively). To estimate his level of safety, Tuzik wants to know the sum of the distances from each cell on his path to all the dog-catchers. You don't need to output this sum for the staring cell of the path (i.e. the cell with the coordinates (0, 0)).\u000aInput\u000aThe first line of the input contains two integers N and M.\u000aThe following N lines contain two integers xi and yi each, describing coordinates of the dog-catchers.\u000aThe last line of the input contains string S of M characters on the set {'D', 'U', 'L', 'R'}.\u000a'D' - decrease y by 1\u000a'U' - increase y by 1\u000a'L' - decrease x by 1\u000a'R' - increase x by 1\u000aOutput\u000aOutput M lines: for each cell of the path (except the starting cell), output the required sum of the distances.\u000aConstraints\u000a1 \u2264 N \u2264 3 \u2715 105\u000a1 \u2264 M \u2264 3 \u2715 105\u000a-106 \u2264 xi, yi \u2264 106\u000aExample\u000aInput:\u000a2 3\u000a1 2\u000a0 1\u000aRDL\u000a\u000aOutput:\u000a4\u000a6\u000a6\u000aExplanation\u000aInitially Tuzik stays at cell (0, 0). Let's consider his path:\u000aMove 'R' to the cell (1, 0). Distance to the catcher (1, 2) equals 2, distance to the catcher (0, 1) equals 2, so the total distance equals 4\u000aMove 'D' to the cell (1, -1). Distance to the catcher (1, 2) equals 3, distance to the catcher (0, 1) equals 3, so the total distance equals 6\u000aMove 'L' to the cell (0, -1). Distance to the catcher (1, 2) equals 4, distance to the catcher (0, 1) equals 2, so the total distance equals 6\u000aAuthor: pavel1996\u000aTester: kostya_by\u000aEditorial: http://discuss.codechef.com/problems/PPCTS\u000aTags: cook67 geometry implementation maths pavel1996 sorting\u000aDate Added: 24-01-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Today, puppy Tuzik is going to a new dog cinema. He has already left his home and just realised that he forgot his dog-collar! This is a real problem because the city is filled with catchers looking for stray dogs. A city where Tuzik lives in can be considered as an infinite grid, where each cell has exactly four neighbouring cells: those sharing a common side with the cell. Such a property of the city leads to the fact, that the distance between cells (xA, yA) and (xB, yB) equals |xA - xB| + |yA - yB|. four (xA, yA) A A (xB, yB) B B |xA - xB| + |yA - yB| A B A B Initially, the puppy started at the cell with coordinates (0, 0). There are N dog-catchers located at the cells with the coordinates (xi, yi), where 1 \u2264 i \u2264 N. Tuzik's path can be described as a string S of M characters, each of which belongs to the set {'D', 'U', 'L', 'R'} (corresponding to it moving down, up, left, and right, respectively). To estimate his level of safety, Tuzik wants to know the sum of the distances from each cell on his path to all the dog-catchers. You don't need to output this sum for the staring cell of the path (i.e. the cell with the coordinates (0, 0)). (0, 0) N (xi, yi) i i 1 \u2264 i \u2264 N S M {'D', 'U', 'L', 'R'} (0, 0) Input The first line of the input contains two integers N and M. N M The following N lines contain two integers xi and yi each, describing coordinates of the dog-catchers. N xi and yi i i The last line of the input contains string S of M characters on the set {'D', 'U', 'L', 'R'}. S M {'D', 'U', 'L', 'R'} 'D' - decrease y by 1\u000a'U' - increase y by 1\u000a'L' - decrease x by 1\u000a'R' - increase x by 1 'D' - decrease y by 1 y 'U' - increase y by 1 y 'L' - decrease x by 1 x 'R' - increase x by 1 x Output Output M lines: for each cell of the path (except the starting cell), output the required sum of the distances. M except the starting cell Constraints 1 \u2264 N \u2264 3 \u2715 105\u000a1 \u2264 M \u2264 3 \u2715 105\u000a-106 \u2264 xi, yi \u2264 106 1 \u2264 N \u2264 3 \u2715 105 1 N 3 \u2715 105 5 1 \u2264 M \u2264 3 \u2715 105 1 M 3 \u2715 105 5 -106 \u2264 xi, yi \u2264 106 -106 6 xi, yi i i 106 6 Example Input:\u000a2 3\u000a1 2\u000a0 1\u000aRDL\u000a\u000aOutput:\u000a4\u000a6\u000a6 Input: Output: Explanation Initially Tuzik stays at cell (0, 0). Let's consider his path: (0, 0) Move 'R' to the cell (1, 0). Distance to the catcher (1, 2) equals 2, distance to the catcher (0, 1) equals 2, so the total distance equals 4\u000aMove 'D' to the cell (1, -1). Distance to the catcher (1, 2) equals 3, distance to the catcher (0, 1) equals 3, so the total distance equals 6\u000aMove 'L' to the cell (0, -1). Distance to the catcher (1, 2) equals 4, distance to the catcher (0, 1) equals 2, so the total distance equals 6 Move 'R' to the cell (1, 0). Distance to the catcher (1, 2) equals 2, distance to the catcher (0, 1) equals 2, so the total distance equals 4 'R' (1, 2) (0, 1) Move 'D' to the cell (1, -1). Distance to the catcher (1, 2) equals 3, distance to the catcher (0, 1) equals 3, so the total distance equals 6 'D' (1, 2) (0, 1) Move 'L' to the cell (0, -1). Distance to the catcher (1, 2) equals 4, distance to the catcher (0, 1) equals 2, so the total distance equals 6 'L' (1, 2) (0, 1)   Author: pavel1996\u000aTester: kostya_by\u000aEditorial: http://discuss.codechef.com/problems/PPCTS\u000aTags: cook67 geometry implementation maths pavel1996 sorting\u000aDate Added: 24-01-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: pavel1996\u000aTester: kostya_by\u000aEditorial: http://discuss.codechef.com/problems/PPCTS\u000aTags: cook67 geometry implementation maths pavel1996 sorting\u000aDate Added: 24-01-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: pavel1996 Author: pavel1996 pavel1996 Tester: kostya_by Tester: kostya_by kostya_by Editorial: http://discuss.codechef.com/problems/PPCTS Editorial: http://discuss.codechef.com/problems/PPCTS http://discuss.codechef.com/problems/PPCTS Tags: cook67 geometry implementation maths pavel1996 sorting Tags: cook67 geometry implementation maths pavel1996 sorting cook67 geometry implementation maths pavel1996 sorting Date Added: 24-01-2016 Date Added: 24-01-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook67 geometry implementation maths pavel1996 sorting
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/PPCTS
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVToday, puppy Tuzik is going to a new dog cinema. He has already left his home and just realised that he forgot his dog-collar! This is a real problem because the city is filled with catchers looking for stray dogs.
+p18
+aVA city where Tuzik lives in can be considered as an infinite grid, where each cell has exactly four neighbouring cells: those sharing a common side with the cell. Such a property of the city leads to the fact, that the distance between cells (xA, yA) and (xB, yB) equals |xA - xB| + |yA - yB|.
+p19
+aVInitially, the puppy started at the cell with coordinates (0, 0). There are N dog-catchers located at the cells with the coordinates (xi, yi), where 1 \u2264 i \u2264 N. Tuzik's path can be described as a string S of M characters, each of which belongs to the set {'D', 'U', 'L', 'R'} (corresponding to it moving down, up, left, and right, respectively). To estimate his level of safety, Tuzik wants to know the sum of the distances from each cell on his path to all the dog-catchers. You don't need to output this sum for the staring cell of the path (i.e. the cell with the coordinates (0, 0)).
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains two integers N and M.
+p24
+aVThe following N lines contain two integers xi and yi each, describing coordinates of the dog-catchers.
+p25
+aVThe last line of the input contains string S of M characters on the set {'D', 'U', 'L', 'R'}.
+p26
+aV'D' - decrease y by 1
+p27
+aV'U' - increase y by 1
+p28
+aV'L' - decrease x by 1
+p29
+aV'R' - increase x by 1
+p30
+aVOutput
+p31
+aVOutput M lines: for each cell of the path (except the starting cell), output the required sum of the distances.
+p32
+asS'constraints'
+p33
+(lp34
+VConstraints
+p35
+aV1 \u2264 N \u2264 3 \u2715 105
+p36
+aV1 \u2264 M \u2264 3 \u2715 105
+p37
+aV-106 \u2264 xi, yi \u2264 106
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'name'
+p41
+VPPCTS
+p42
+sb.

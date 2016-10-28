@@ -1,0 +1,131 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2.5 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aThe Chef once decided to prepare some nice dishes on his birthday. There are N items kept on his shelf linearly from position 1 to N. Taste of the i-th item is denoted by a integer Ai.\u000aHe wants to make Q dishes. A dish will be made using some ingredients in the continuous range AL, AL + 1, , , AR (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aThe Chef once decided to prepare some nice dishes on his birthday. There are N items kept on his shelf linearly from position 1 to N. Taste of the i-th item is denoted by a integer Ai.\u000aHe wants to make Q dishes. A dish will be made using some ingredients in the continuous range AL, AL + 1, , , AR (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste.\u000aChef wants help of his assistant Rupsa to find out sum and product of qualities of the dishes. As product of the qualities of the dishes could be very large, print it modulo 109 + 7. Also, you are given an integer K and you are assured that for each dish, the size of continuous range of the ingredients (i.e. R - L + 1) will always lie between K and 2 * K, both inclusive.\u000aMethod of generation of Array A\u000aYou are given non-negative integer parameters a, b, c, d, e, f, r, s, t, m, A[1]\u000afor x = 2 to N:\u000a if(t^x mod s  <= r)        // Here t^x signifies "t to the power of x"\u000a  A[x] = (a*A[x-1]^2 + b*A[x-1] + c) mod m\u000a else\u000a  A[x] = (d*A[x-1]^2 + e*A[x-1] + f) mod m\u000aMethod of generation of range of ingredients for Q dishes\u000aYou are given non-negative integer parameters L1, La, Lc, Lm, D1, Da, Dc, Dm\u000afor i = 1 to Q:\u000a L1 = (La * L1 + Lc) mod Lm;\u000a D1 = (Da * D1 + Dc) mod Dm; \u000a L = L1 + 1;\u000a R = min(L + K - 1 + D1, N);\u000aInput\u000aThe first line contains three integers N, K and Q.\u000aThe second line contains the integers a, b, c, d, e, f, r, s, t, m, and A[1].\u000aThen third line contains the integers L1, La, Lc, Lm, D1, Da, Dc, and Dm\u000aOutput\u000aOutput two space separated integers:\u000aThe sum of qualities of the dishes.\u000aThe product of qualities of the dishes modulo 109+7.\u000aConstraints\u000a1 \u2264 N, Q \u2264 107\u000a1 \u2264 K \u2264 N\u000a0 \u2264 a, b, c, d, e, f, r, s, t, m, A[1] \u2264 109+7\u000a1 \u2264 Lm \u2264 N - K + 1\u000a1 \u2264 Dm \u2264 K + 1\u000a1 \u2264 La, Lc \u2264 Lm\u000a1 \u2264 Da, Dc \u2264 Dm\u000a1 \u2264 L1 \u2264 N\u000a1 \u2264 D1 \u2264 K\u000aSub tasks\u000aSubtask #1: 1 \u2264 N, Q \u2264 1000 (10 points)\u000aSubtask #2: 1 \u2264 Q \u2264 104 (20 points)\u000aSubtask #3: original constraints (70 points)\u000aExample\u000aInput:\u000a4 2 1\u000a1 1 1 1 1 1 1 1 1 100 1 \u000a1 1 1 3 1 1 1 2\u000a\u000aOutput:\u000a13 13\u000aExplanation\u000aThe array A comes out to be {1, 3, 13, 83} and the first dish has L = 3 and R = 4. The minimum in this range is 13, thus the sum and product both are 13 and hence the answer.\u000aNote\u000aMultiplier for C# and Java have been reduced to 1.5 instead of 2.\u000aAuthor: abhra73\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/CHEFCK\u000aTags: abhra73 easy-medium may15 range-queries sliding-range\u000aDate Added: 11-03-2015\u000aTime Limit: 2.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aThe Chef once decided to prepare some nice dishes on his birthday. There are N items kept on his shelf linearly from position 1 to N. Taste of the i-th item is denoted by a integer Ai.\u000aHe wants to make Q dishes. A dish will be made using some ingredients in the continuous range AL, AL + 1, , , AR (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aThe Chef once decided to prepare some nice dishes on his birthday. There are N items kept on his shelf linearly from position 1 to N. Taste of the i-th item is denoted by a integer Ai.\u000aHe wants to make Q dishes. A dish will be made using some ingredients in the continuous range AL, AL + 1, , , AR (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste.\u000aChef wants help of his assistant Rupsa to find out sum and product of qualities of the dishes. As product of the qualities of the dishes could be very large, print it modulo 109 + 7. Also, you are given an integer K and you are assured that for each dish, the size of continuous range of the ingredients (i.e. R - L + 1) will always lie between K and 2 * K, both inclusive.\u000aMethod of generation of Array A\u000aYou are given non-negative integer parameters a, b, c, d, e, f, r, s, t, m, A[1]\u000afor x = 2 to N:\u000a if(t^x mod s  <= r)        // Here t^x signifies "t to the power of x"\u000a  A[x] = (a*A[x-1]^2 + b*A[x-1] + c) mod m\u000a else\u000a  A[x] = (d*A[x-1]^2 + e*A[x-1] + f) mod m\u000aMethod of generation of range of ingredients for Q dishes\u000aYou are given non-negative integer parameters L1, La, Lc, Lm, D1, Da, Dc, Dm\u000afor i = 1 to Q:\u000a L1 = (La * L1 + Lc) mod Lm;\u000a D1 = (Da * D1 + Dc) mod Dm; \u000a L = L1 + 1;\u000a R = min(L + K - 1 + D1, N);\u000aInput\u000aThe first line contains three integers N, K and Q.\u000aThe second line contains the integers a, b, c, d, e, f, r, s, t, m, and A[1].\u000aThen third line contains the integers L1, La, Lc, Lm, D1, Da, Dc, and Dm\u000aOutput\u000aOutput two space separated integers:\u000aThe sum of qualities of the dishes.\u000aThe product of qualities of the dishes modulo 109+7.\u000aConstraints\u000a1 \u2264 N, Q \u2264 107\u000a1 \u2264 K \u2264 N\u000a0 \u2264 a, b, c, d, e, f, r, s, t, m, A[1] \u2264 109+7\u000a1 \u2264 Lm \u2264 N - K + 1\u000a1 \u2264 Dm \u2264 K + 1\u000a1 \u2264 La, Lc \u2264 Lm\u000a1 \u2264 Da, Dc \u2264 Dm\u000a1 \u2264 L1 \u2264 N\u000a1 \u2264 D1 \u2264 K\u000aSub tasks\u000aSubtask #1: 1 \u2264 N, Q \u2264 1000 (10 points)\u000aSubtask #2: 1 \u2264 Q \u2264 104 (20 points)\u000aSubtask #3: original constraints (70 points)\u000aExample\u000aInput:\u000a4 2 1\u000a1 1 1 1 1 1 1 1 1 100 1 \u000a1 1 1 3 1 1 1 2\u000a\u000aOutput:\u000a13 13\u000aExplanation\u000aThe array A comes out to be {1, 3, 13, 83} and the first dish has L = 3 and R = 4. The minimum in this range is 13, thus the sum and product both are 13 and hence the answer.\u000aNote\u000aMultiplier for C# and Java have been reduced to 1.5 instead of 2.\u000aAuthor: abhra73\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/CHEFCK\u000aTags: abhra73 easy-medium may15 range-queries sliding-range\u000aDate Added: 11-03-2015\u000aTime Limit: 2.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. The Chef once decided to prepare some nice dishes on his birthday. There are N items kept on his shelf linearly from position 1 to N. Taste of the i-th item is denoted by a integer Ai. N 1 N Ai i He wants to make Q dishes. A dish will be made using some ingredients in the continuous range AL, AL + 1, , , AR (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste. Q AL, AL + 1, , , AR L L + 1 R Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian The Chef once decided to prepare some nice dishes on his birthday. There are N items kept on his shelf linearly from position 1 to N. Taste of the i-th item is denoted by a integer Ai. N 1 N Ai i He wants to make Q dishes. A dish will be made using some ingredients in the continuous range AL, AL + 1, , , AR (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste. Q AL, AL + 1, , , AR L L + 1 R Chef wants help of his assistant Rupsa to find out sum and product of qualities of the dishes. As product of the qualities of the dishes could be very large, print it modulo 109 + 7. Also, you are given an integer K and you are assured that for each dish, the size of continuous range of the ingredients (i.e. R - L + 1) will always lie between K and 2 * K, both inclusive. 109 + 7 9 K R - L + 1 K 2 * K Method of generation of Array A\u000aYou are given non-negative integer parameters a, b, c, d, e, f, r, s, t, m, A[1] Method of generation of Array A Method of generation of Array A  a, b, c, d, e, f, r, s, t, m, A[1] for x = 2 to N:\u000a if(t^x mod s  <= r)        // Here t^x signifies "t to the power of x"\u000a  A[x] = (a*A[x-1]^2 + b*A[x-1] + c) mod m\u000a else\u000a  A[x] = (d*A[x-1]^2 + e*A[x-1] + f) mod m for x = 2 to N:\u000a if(t^x mod s  <= r)        // Here t^x signifies "t to the power of x"\u000a  A[x] = (a*A[x-1]^2 + b*A[x-1] + c) mod m\u000a else\u000a  A[x] = (d*A[x-1]^2 + e*A[x-1] + f) mod m Method of generation of range of ingredients for Q dishes\u000aYou are given non-negative integer parameters L1, La, Lc, Lm, D1, Da, Dc, Dm Method of generation of range of ingredients for Q dishes  L1, La, Lc, Lm, D1, Da, Dc, Dm for i = 1 to Q:\u000a L1 = (La * L1 + Lc) mod Lm;\u000a D1 = (Da * D1 + Dc) mod Dm; \u000a L = L1 + 1;\u000a R = min(L + K - 1 + D1, N); for i = 1 to Q:\u000a L1 = (La * L1 + Lc) mod Lm;\u000a D1 = (Da * D1 + Dc) mod Dm; \u000a L = L1 + 1;\u000a R = min(L + K - 1 + D1, N); Input The first line contains three integers N, K and Q.\u000aThe second line contains the integers a, b, c, d, e, f, r, s, t, m, and A[1].\u000aThen third line contains the integers L1, La, Lc, Lm, D1, Da, Dc, and Dm The first line contains three integers N, K and Q. N K Q The second line contains the integers a, b, c, d, e, f, r, s, t, m, and A[1]. a, b, c, d, e, f, r, s, t, m, A[1] Then third line contains the integers L1, La, Lc, Lm, D1, Da, Dc, and Dm L1, La, Lc, Lm, D1, Da, Dc, Dm Output Output two space separated integers: The sum of qualities of the dishes.\u000aThe product of qualities of the dishes modulo 109+7. The sum of qualities of the dishes. The product of qualities of the dishes modulo 109+7. 109+7 9 Constraints 1 \u2264 N, Q \u2264 107\u000a1 \u2264 K \u2264 N\u000a0 \u2264 a, b, c, d, e, f, r, s, t, m, A[1] \u2264 109+7\u000a1 \u2264 Lm \u2264 N - K + 1\u000a1 \u2264 Dm \u2264 K + 1\u000a1 \u2264 La, Lc \u2264 Lm\u000a1 \u2264 Da, Dc \u2264 Dm\u000a1 \u2264 L1 \u2264 N\u000a1 \u2264 D1 \u2264 K 1 \u2264 N, Q \u2264 107 1 \u2264 N, Q \u2264 107 7 1 \u2264 K \u2264 N 1 \u2264 K \u2264 N 0 \u2264 a, b, c, d, e, f, r, s, t, m, A[1] \u2264 109+7 0 \u2264 a, b, c, d, e, f, r, s, t, m, A[1] \u2264 109+7 9 1 \u2264 Lm \u2264 N - K + 1 1 \u2264 Lm \u2264 N - K + 1 1 \u2264 Dm \u2264 K + 1 1 \u2264 Dm \u2264 K + 1 1 \u2264 La, Lc \u2264 Lm 1 \u2264 La, Lc \u2264 Lm 1 \u2264 Da, Dc \u2264 Dm 1 \u2264 Da, Dc \u2264 Dm 1 \u2264 L1 \u2264 N 1 \u2264 L1 \u2264 N 1 \u2264 D1 \u2264 K 1 \u2264 D1 \u2264 K Sub tasks Subtask #1: 1 \u2264 N, Q \u2264 1000 (10 points)\u000aSubtask #2: 1 \u2264 Q \u2264 104 (20 points)\u000aSubtask #3: original constraints (70 points) Subtask #1: 1 \u2264 N, Q \u2264 1000 (10 points) 1 \u2264 N, Q \u2264 1000 Subtask #2: 1 \u2264 Q \u2264 104 (20 points) 1 \u2264 Q \u2264 104 4 Subtask #3: original constraints (70 points) Example Input:\u000a4 2 1\u000a1 1 1 1 1 1 1 1 1 100 1 \u000a1 1 1 3 1 1 1 2\u000a\u000aOutput:\u000a13 13 Input: Output: Explanation The array A comes out to be {1, 3, 13, 83} and the first dish has L = 3 and R = 4. The minimum in this range is 13, thus the sum and product both are 13 and hence the answer. The array A comes out to be {1, 3, 13, 83} and the first dish has L = 3 and R = 4. The minimum in this range is 13, thus the sum and product both are 13 and hence the answer. A {1, 3, 13, 83} L = 3 R = 4 13 13 Note Multiplier for C# and Java have been reduced to 1.5 instead of 2.  Author: abhra73\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/CHEFCK\u000aTags: abhra73 easy-medium may15 range-queries sliding-range\u000aDate Added: 11-03-2015\u000aTime Limit: 2.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: abhra73\u000aTester: kevinsogo\u000aEditorial: http://discuss.codechef.com/problems/CHEFCK\u000aTags: abhra73 easy-medium may15 range-queries sliding-range\u000aDate Added: 11-03-2015\u000aTime Limit: 2.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: abhra73 Author: abhra73 abhra73 Tester: kevinsogo Tester: kevinsogo kevinsogo Editorial: http://discuss.codechef.com/problems/CHEFCK Editorial: http://discuss.codechef.com/problems/CHEFCK http://discuss.codechef.com/problems/CHEFCK Tags: abhra73 easy-medium may15 range-queries sliding-range Tags: abhra73 easy-medium may15 range-queries sliding-range abhra73 easy-medium may15 range-queries sliding-range Date Added: 11-03-2015 Date Added: 11-03-2015 Time Limit: 2.5 sec Time Limit: 2.5 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V abhra73 easy-medium may15 range-queries sliding-range
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFCK
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVThe Chef once decided to prepare some nice dishes on his birthday. There are N items kept on his shelf linearly from position 1 to N. Taste of the i-th item is denoted by a integer Ai.
+p17
+aVHe wants to make Q dishes. A dish will be made using some ingredients in the continuous range AL, AL + 1, , , AR (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste.
+p18
+aVRead problems statements in Mandarin Chinese and Russian.
+p19
+aVThe Chef once decided to prepare some nice dishes on his birthday. There are N items kept on his shelf linearly from position 1 to N. Taste of the i-th item is denoted by a integer Ai.
+p20
+aVHe wants to make Q dishes. A dish will be made using some ingredients in the continuous range AL, AL + 1, , , AR (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste.
+p21
+aVChef wants help of his assistant Rupsa to find out sum and product of qualities of the dishes. As product of the qualities of the dishes could be very large, print it modulo 109 + 7. Also, you are given an integer K and you are assured that for each dish, the size of continuous range of the ingredients (i.e. R - L + 1) will always lie between K and 2 * K, both inclusive.
+p22
+aVMethod of generation of Array A
+p23
+aVYou are given non-negative integer parameters a, b, c, d, e, f, r, s, t, m, A[1]
+p24
+aVfor x = 2 to N:
+p25
+aVif(t^x mod s  <= r)        // Here t^x signifies "t to the power of x"
+p26
+aVA[x] = (a*A[x-1]^2 + b*A[x-1] + c) mod m
+p27
+aVelse
+p28
+aVA[x] = (d*A[x-1]^2 + e*A[x-1] + f) mod m
+p29
+aVMethod of generation of range of ingredients for Q dishes
+p30
+aVYou are given non-negative integer parameters L1, La, Lc, Lm, D1, Da, Dc, Dm
+p31
+aVfor i = 1 to Q:
+p32
+aVL1 = (La * L1 + Lc) mod Lm;
+p33
+aVD1 = (Da * D1 + Dc) mod Dm;
+p34
+aVL = L1 + 1;
+p35
+aVR = min(L + K - 1 + D1, N);
+p36
+asS'input'
+p37
+(lp38
+VInput
+p39
+aVThe first line contains three integers N, K and Q.
+p40
+aVThe second line contains the integers a, b, c, d, e, f, r, s, t, m, and A[1].
+p41
+aVThen third line contains the integers L1, La, Lc, Lm, D1, Da, Dc, and Dm
+p42
+aVOutput
+p43
+aVOutput two space separated integers:
+p44
+aVThe sum of qualities of the dishes.
+p45
+aVThe product of qualities of the dishes modulo 109+7.
+p46
+asS'constraints'
+p47
+(lp48
+VConstraints
+p49
+aV1 \u2264 N, Q \u2264 107
+p50
+aV1 \u2264 K \u2264 N
+p51
+aV0 \u2264 a, b, c, d, e, f, r, s, t, m, A[1] \u2264 109+7
+p52
+aV1 \u2264 Lm \u2264 N - K + 1
+p53
+aV1 \u2264 Dm \u2264 K + 1
+p54
+aV1 \u2264 La, Lc \u2264 Lm
+p55
+aV1 \u2264 Da, Dc \u2264 Dm
+p56
+aV1 \u2264 L1 \u2264 N
+p57
+aV1 \u2264 D1 \u2264 K
+p58
+aVSub tasks
+p59
+aVSubtask #1: 1 \u2264 N, Q \u2264 1000 (10 points)
+p60
+aVSubtask #2: 1 \u2264 Q \u2264 104 (20 points)
+p61
+aVSubtask #3: original constraints (70 points)
+p62
+asS'id'
+p63
+c__builtin__
+id
+p64
+sS'name'
+p65
+VCHEFCK
+p66
+sb.

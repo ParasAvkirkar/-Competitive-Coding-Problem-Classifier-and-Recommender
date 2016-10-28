@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef has a square matrix A. He would like to choose a consecutive sub-matrix of A such that value of bitwise XOR of all elements in it is maximal.\u000aEach sub-matrix can be defined by four numbers (x1,y1,x2,y2), with the meaning that the submatrix contains an element A[i][j] iff x1 \u2264 i \u2264 x2 and y1 \u2264 j \u2264 y2.\u000aYou can read more about bitwise XOR operation here.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the size of the matrix A.\u000aThe following N lines contain N space-separated integers, denoting values of elements in given matrix. The j-th element in the i-th line denotes the value of A[i][j].\u000aOutput\u000aFor each test case, output a single line containing the maximal bitwise XOR a submatrix of A\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 70\u000a1 \u2264 Ai,j \u2264 109\u000aSubtask 1 (40 points): 1 \u2264 N \u2264 20\u000aSubtask 2 (60 points): 1 \u2264 N \u2264 70\u000aExample\u000aInput:\u000a1\u000a3\u000a1 4 3\u000a1 8 6\u000a1 2 3\u000a\u000aOutput:\u000a15\u000aExplanation\u000aChef can pick the following submatrix in order to make the XOR of elements equal to 15:\u000a1 4 3\u000a1 8 6\u000a1 2 3\u000aThis submatrix can be defined by x1 = 1, y1 = 1, x2 = 3, y2 = 2.\u000aAuthor: furko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFAXR\u000aTags: bit easy furko ltime25 matrix xor\u000aDate Added: 14-06-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef has a square matrix A. He would like to choose a consecutive sub-matrix of A such that value of bitwise XOR of all elements in it is maximal.\u000aEach sub-matrix can be defined by four numbers (x1,y1,x2,y2), with the meaning that the submatrix contains an element A[i][j] iff x1 \u2264 i \u2264 x2 and y1 \u2264 j \u2264 y2.\u000aYou can read more about bitwise XOR operation here.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the size of the matrix A.\u000aThe following N lines contain N space-separated integers, denoting values of elements in given matrix. The j-th element in the i-th line denotes the value of A[i][j].\u000aOutput\u000aFor each test case, output a single line containing the maximal bitwise XOR a submatrix of A\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 70\u000a1 \u2264 Ai,j \u2264 109\u000aSubtask 1 (40 points): 1 \u2264 N \u2264 20\u000aSubtask 2 (60 points): 1 \u2264 N \u2264 70\u000aExample\u000aInput:\u000a1\u000a3\u000a1 4 3\u000a1 8 6\u000a1 2 3\u000a\u000aOutput:\u000a15\u000aExplanation\u000aChef can pick the following submatrix in order to make the XOR of elements equal to 15:\u000a1 4 3\u000a1 8 6\u000a1 2 3\u000aThis submatrix can be defined by x1 = 1, y1 = 1, x2 = 3, y2 = 2.\u000aAuthor: furko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFAXR\u000aTags: bit easy furko ltime25 matrix xor\u000aDate Added: 14-06-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Chef has a square matrix A. He would like to choose a consecutive sub-matrix of A such that value of bitwise XOR of all elements in it is maximal. A A bitwise XOR Each sub-matrix can be defined by four numbers (x1,y1,x2,y2), with the meaning that the submatrix contains an element A[i][j] iff x1 \u2264 i \u2264 x2 and y1 \u2264 j \u2264 y2. (x1,y1,x2,y2) 1 1 2 2 A[i][j] x1 \u2264 i \u2264 x2 and y1 \u2264 j \u2264 y2 1 2 1 2 You can read more about bitwise XOR operation here. bitwise XOR here Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a single integer N denoting the size of the matrix A. N A The following N lines contain N space-separated integers, denoting values of elements in given matrix. The j-th element in the i-th line denotes the value of A[i][j]. N N j i A[i][j] Output For each test case, output a single line containing the maximal bitwise XOR a submatrix of A bitwise XOR A Constraints  1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 70\u000a1 \u2264 Ai,j \u2264 109\u000aSubtask 1 (40 points): 1 \u2264 N \u2264 20\u000aSubtask 2 (60 points): 1 \u2264 N \u2264 70 1 \u2264 T \u2264 10 1 T 10 1 \u2264 N \u2264 70 1 N 70 1 \u2264 Ai,j \u2264 109 1 Ai,j i,j 109 9 Subtask 1 (40 points): 1 \u2264 N \u2264 20 1 N 20 Subtask 2 (60 points): 1 \u2264 N \u2264 70 1 N 70  Example Input:\u000a1\u000a3\u000a1 4 3\u000a1 8 6\u000a1 2 3\u000a\u000aOutput:\u000a15 Input: 1\u000a3\u000a1 4 3\u000a1 8 6\u000a1 2 3 Output: 15 Explanation Chef can pick the following submatrix in order to make the XOR of elements equal to 15: 15 1 4 3\u000a1 8 6\u000a1 2 3 1 4 3\u000a1 8 6\u000a1 2 3 1 4 1 8 1 2 This submatrix can be defined by x1 = 1, y1 = 1, x2 = 3, y2 = 2. x1 = 1 1 y1 = 1 1 x2 = 3 2 y2 = 2  Author: furko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFAXR\u000aTags: bit easy furko ltime25 matrix xor\u000aDate Added: 14-06-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: furko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHEFAXR\u000aTags: bit easy furko ltime25 matrix xor\u000aDate Added: 14-06-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: furko Author: furko furko Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/CHEFAXR Editorial: http://discuss.codechef.com/problems/CHEFAXR http://discuss.codechef.com/problems/CHEFAXR Tags: bit easy furko ltime25 matrix xor Tags: bit easy furko ltime25 matrix xor bit easy furko ltime25 matrix xor Date Added: 14-06-2015 Date Added: 14-06-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V bit easy furko ltime25 matrix xor
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFAXR
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVChef has a square matrix A. He would like to choose a consecutive sub-matrix of A such that value of bitwise XOR of all elements in it is maximal.
+p18
+aVEach sub-matrix can be defined by four numbers (x1,y1,x2,y2), with the meaning that the submatrix contains an element A[i][j] iff x1 \u2264 i \u2264 x2 and y1 \u2264 j \u2264 y2.
+p19
+aVYou can read more about bitwise XOR operation here.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVThe first line of each test case contains a single integer N denoting the size of the matrix A.
+p25
+aVThe following N lines contain N space-separated integers, denoting values of elements in given matrix. The j-th element in the i-th line denotes the value of A[i][j].
+p26
+aVOutput
+p27
+aVFor each test case, output a single line containing the maximal bitwise XOR a submatrix of A
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 T \u2264 10
+p32
+aV1 \u2264 N \u2264 70
+p33
+aV1 \u2264 Ai,j \u2264 109
+p34
+aVSubtask 1 (40 points): 1 \u2264 N \u2264 20
+p35
+aVSubtask 2 (60 points): 1 \u2264 N \u2264 70
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VCHEFAXR
+p40
+sb.

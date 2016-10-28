@@ -1,0 +1,97 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aChef Ash and Chef Elsh invented a new hash function! Their hash function will map a binary string consisting of characters 'A' and 'E' into an integer called the hash value of the string.\u000aThe pseudocode of the hash function is as below. hash(S) is the hash value of a binary string S. |S| denotes the length of S.\u000afunction hash(S):\u000a result = number of characters 'A' in S\u000a if |S| > 1:\u000a  (S1, S2) = split(S)\u000a  result = result + max(hash(S1), hash(S2))\u000a end if\u000a return result\u000aend function\u000aThe function split in the above pseudocode takes a binary string S as the parameter and returns a pair of binary strings (S1, S2) such that:\u000a|S1| <= |S2|.\u000aThe difference of |S1| and |S2| is at most 1.\u000aThe concatenation of S1 and S2 (in that order) is S.\u000aFor example, split("AAAEE") returns ("AA", "AEE"), whereas split("AEAEAE") returns ("AEA", "EAE").\u000aYou doubt that this hash function have good distribution of different hash values. So, you wonder how many different binary strings consisting of A 'A' characters and E 'E' characters that have hash value of V.\u000aInput\u000aThe first line contains a single integer T, the number of test cases. T test cases follow. Each testcase consists of a single line consisting of three integers A, E, and V.\u000aOutput\u000aFor each test case, output a single line consisting the number of different binary strings satisfying the rule, modulo 1000000007.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a0 \u2264 A \u2264 50\u000a0 \u2264 E \u2264 50\u000a0 \u2264 V \u2264 1000\u000aExample\u000aInput:\u000a4\u000a0 0 0\u000a1 0 1\u000a3 2 6\u000a4 2 8\u000a\u000aOutput:\u000a1\u000a1\u000a3\u000a4\u000aExplanation\u000aFor the last test case, the solutions are:\u000aAAEAAE\u000aAEAAAE\u000aAAEAEA\u000aAEAAEA\u000aAuthor: fushar\u000aTester: gamabunta\u000aEditorial: http://discuss.codechef.com/problems/AEHASH\u000aTags: easy fushar july11\u000aDate Added: 11-06-2011\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aChef Ash and Chef Elsh invented a new hash function! Their hash function will map a binary string consisting of characters 'A' and 'E' into an integer called the hash value of the string.\u000aThe pseudocode of the hash function is as below. hash(S) is the hash value of a binary string S. |S| denotes the length of S.\u000afunction hash(S):\u000a result = number of characters 'A' in S\u000a if |S| > 1:\u000a  (S1, S2) = split(S)\u000a  result = result + max(hash(S1), hash(S2))\u000a end if\u000a return result\u000aend function\u000aThe function split in the above pseudocode takes a binary string S as the parameter and returns a pair of binary strings (S1, S2) such that:\u000a|S1| <= |S2|.\u000aThe difference of |S1| and |S2| is at most 1.\u000aThe concatenation of S1 and S2 (in that order) is S.\u000aFor example, split("AAAEE") returns ("AA", "AEE"), whereas split("AEAEAE") returns ("AEA", "EAE").\u000aYou doubt that this hash function have good distribution of different hash values. So, you wonder how many different binary strings consisting of A 'A' characters and E 'E' characters that have hash value of V.\u000aInput\u000aThe first line contains a single integer T, the number of test cases. T test cases follow. Each testcase consists of a single line consisting of three integers A, E, and V.\u000aOutput\u000aFor each test case, output a single line consisting the number of different binary strings satisfying the rule, modulo 1000000007.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a0 \u2264 A \u2264 50\u000a0 \u2264 E \u2264 50\u000a0 \u2264 V \u2264 1000\u000aExample\u000aInput:\u000a4\u000a0 0 0\u000a1 0 1\u000a3 2 6\u000a4 2 8\u000a\u000aOutput:\u000a1\u000a1\u000a3\u000a4\u000aExplanation\u000aFor the last test case, the solutions are:\u000aAAEAAE\u000aAEAAAE\u000aAAEAEA\u000aAEAAEA\u000aAuthor: fushar\u000aTester: gamabunta\u000aEditorial: http://discuss.codechef.com/problems/AEHASH\u000aTags: easy fushar july11\u000aDate Added: 11-06-2011\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Chef Ash and Chef Elsh invented a new hash function! Their hash function will map a binary string consisting of characters 'A' and 'E' into an integer called the hash value of the string. The pseudocode of the hash function is as below. hash(S) is the hash value of a binary string S. |S| denotes the length of S.  function hash(S):\u000a result = number of characters 'A' in S\u000a if |S| > 1:\u000a  (S1, S2) = split(S)\u000a  result = result + max(hash(S1), hash(S2))\u000a end if\u000a return result\u000aend function  The function split in the above pseudocode takes a binary string S as the parameter and returns a pair of binary strings (S1, S2) such that:  |S1| <= |S2|.\u000aThe difference of |S1| and |S2| is at most 1.\u000aThe concatenation of S1 and S2 (in that order) is S. |S1| <= |S2|. The difference of |S1| and |S2| is at most 1. The concatenation of S1 and S2 (in that order) is S.  For example, split("AAAEE") returns ("AA", "AEE"), whereas split("AEAEAE") returns ("AEA", "EAE"). You doubt that this hash function have good distribution of different hash values. So, you wonder how many different binary strings consisting of A 'A' characters and E 'E' characters that have hash value of V. Input The first line contains a single integer T, the number of test cases. T test cases follow. Each testcase consists of a single line consisting of three integers A, E, and V. Output For each test case, output a single line consisting the number of different binary strings satisfying the rule, modulo 1000000007. Constraints 1 \u2264 T \u2264 1000\u000a0 \u2264 A \u2264 50\u000a0 \u2264 E \u2264 50\u000a0 \u2264 V \u2264 1000 1 \u2264 T \u2264 1000 0 \u2264 A \u2264 50 0 \u2264 E \u2264 50 0 \u2264 V \u2264 1000 Example Input:\u000a4\u000a0 0 0\u000a1 0 1\u000a3 2 6\u000a4 2 8\u000a\u000aOutput:\u000a1\u000a1\u000a3\u000a4 Input: Output: Explanation AAEAAE\u000aAEAAAE\u000aAAEAEA\u000aAEAAEA AAEAAE AEAAAE AAEAEA AEAAEA  Author: fushar\u000aTester: gamabunta\u000aEditorial: http://discuss.codechef.com/problems/AEHASH\u000aTags: easy fushar july11\u000aDate Added: 11-06-2011\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: fushar\u000aTester: gamabunta\u000aEditorial: http://discuss.codechef.com/problems/AEHASH\u000aTags: easy fushar july11\u000aDate Added: 11-06-2011\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: fushar Author: fushar fushar Tester: gamabunta Tester: gamabunta gamabunta Editorial: http://discuss.codechef.com/problems/AEHASH Editorial: http://discuss.codechef.com/problems/AEHASH http://discuss.codechef.com/problems/AEHASH Tags: easy fushar july11 Tags: easy fushar july11 easy fushar july11 Date Added: 11-06-2011 Date Added: 11-06-2011 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy fushar july11
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/AEHASH
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVChef Ash and Chef Elsh invented a new hash function! Their hash function will map a binary string consisting of characters 'A' and 'E' into an integer called the hash value of the string.
+p17
+aVThe pseudocode of the hash function is as below. hash(S) is the hash value of a binary string S. |S| denotes the length of S.
+p18
+aVfunction hash(S):
+p19
+aVresult = number of characters 'A' in S
+p20
+aVif |S| > 1:
+p21
+aV(S1, S2) = split(S)
+p22
+aVresult = result + max(hash(S1), hash(S2))
+p23
+aVend if
+p24
+aVreturn result
+p25
+aVend function
+p26
+aVThe function split in the above pseudocode takes a binary string S as the parameter and returns a pair of binary strings (S1, S2) such that:
+p27
+aV|S1| <= |S2|.
+p28
+aVThe difference of |S1| and |S2| is at most 1.
+p29
+aVThe concatenation of S1 and S2 (in that order) is S.
+p30
+aVFor example, split("AAAEE") returns ("AA", "AEE"), whereas split("AEAEAE") returns ("AEA", "EAE").
+p31
+aVYou doubt that this hash function have good distribution of different hash values. So, you wonder how many different binary strings consisting of A 'A' characters and E 'E' characters that have hash value of V.
+p32
+asS'input'
+p33
+(lp34
+VInput
+p35
+aVThe first line contains a single integer T, the number of test cases. T test cases follow. Each testcase consists of a single line consisting of three integers A, E, and V.
+p36
+aVOutput
+p37
+aVFor each test case, output a single line consisting the number of different binary strings satisfying the rule, modulo 1000000007.
+p38
+asS'constraints'
+p39
+(lp40
+VConstraints
+p41
+aV1 \u2264 T \u2264 1000
+p42
+aV0 \u2264 A \u2264 50
+p43
+aV0 \u2264 E \u2264 50
+p44
+aV0 \u2264 V \u2264 1000
+p45
+asS'id'
+p46
+c__builtin__
+id
+p47
+sS'name'
+p48
+VAEHASH
+p49
+sb.

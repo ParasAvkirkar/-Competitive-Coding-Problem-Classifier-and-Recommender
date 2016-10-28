@@ -1,0 +1,133 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aToday is Chef's birthday. His mom decided to surprise him with a truly fantastic gift: his favourite binary string B. But, unfortunately, all the stocks of binary string B have been sold out, and only a binary string A (A \u2260 B) is available in the market.\u000aShe purchases the string A and tries to convert it to string B by applying any of following three operations zero or more times.\u000aAND Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.\u000aresult = Ai & Aj\u000a\u000aAi = result & Ai\u000a\u000aAj = result & Aj\u000aOR Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.\u000aresult = Ai | Aj\u000a\u000aAi = result | Ai\u000a\u000aAj = result | Aj\u000aXOR Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.\u000aresult = Ai ^ Aj\u000a\u000aAi = result ^ Ai\u000a\u000aAj = result ^ Aj\u000aChef's mom is eagerly waiting to surprise him with his favourite gift and therefore, she wants to convert string A to string B as fast as possible. Can you please help her by telling her the minimum number of operations she will require? If it is impossible to do so, then let Chef's mom know about it.\u000aInput\u000aFirst line of input contains a single integer T denoting the number of test cases. T test cases follow.\u000aFirst line of each test case, will contain binary string A.\u000aSecond line of each test case, will contain binary string B.\u000aOutput\u000aFor each test case, Print "Lucky Chef" (without quotes) in first line and minimum number of operations required to convert string A to sting B in second line if conversion is possible. Print "Unlucky Chef" (without quotes) in a new line otherwise.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a\u000a1 \u2264 |A| \u2264 106\u000a\u000a1 \u2264 |B| \u2264 106\u000a\u000aA != B\u000a\u000a|A| = |B|\u000a\u000asum of |A| over all test cases does not exceed 106\u000a\u000asum of |B| over all test cases does not exceed 106\u000aSubtasks\u000aSubtask #1 (40 points) : Sum of |A| & |B| over all test cases does not exceed 103\u000a\u000aSubtask #2 (60 points) : Sum of |A| & |B| over all test cases does not exceed 106\u000aExample\u000aInput\u000a2\u000a101\u000a010\u000a1111\u000a1010\u000aOutput\u000aLucky Chef\u000a2\u000aUnlucky Chef\u000aExplanation\u000aExample case 1.\u000aApplying XOR operation with indices i = 1 and j = 2. Resulting string will be 011.\u000aThen, Applying AND operation with indices i = 1 and j = 3. Resulting string will be 010.\u000a\u000aExample case 2.\u000aIt is impossible to convert string A to string B.\u000aAuthor: ma5termind\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/BINOP\u000aTags: binay-ops easy june16 ma5termind\u000aDate Added: 5-01-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aToday is Chef's birthday. His mom decided to surprise him with a truly fantastic gift: his favourite binary string B. But, unfortunately, all the stocks of binary string B have been sold out, and only a binary string A (A \u2260 B) is available in the market.\u000aShe purchases the string A and tries to convert it to string B by applying any of following three operations zero or more times.\u000aAND Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.\u000aresult = Ai & Aj\u000a\u000aAi = result & Ai\u000a\u000aAj = result & Aj\u000aOR Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.\u000aresult = Ai | Aj\u000a\u000aAi = result | Ai\u000a\u000aAj = result | Aj\u000aXOR Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.\u000aresult = Ai ^ Aj\u000a\u000aAi = result ^ Ai\u000a\u000aAj = result ^ Aj\u000aChef's mom is eagerly waiting to surprise him with his favourite gift and therefore, she wants to convert string A to string B as fast as possible. Can you please help her by telling her the minimum number of operations she will require? If it is impossible to do so, then let Chef's mom know about it.\u000aInput\u000aFirst line of input contains a single integer T denoting the number of test cases. T test cases follow.\u000aFirst line of each test case, will contain binary string A.\u000aSecond line of each test case, will contain binary string B.\u000aOutput\u000aFor each test case, Print "Lucky Chef" (without quotes) in first line and minimum number of operations required to convert string A to sting B in second line if conversion is possible. Print "Unlucky Chef" (without quotes) in a new line otherwise.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a\u000a1 \u2264 |A| \u2264 106\u000a\u000a1 \u2264 |B| \u2264 106\u000a\u000aA != B\u000a\u000a|A| = |B|\u000a\u000asum of |A| over all test cases does not exceed 106\u000a\u000asum of |B| over all test cases does not exceed 106\u000aSubtasks\u000aSubtask #1 (40 points) : Sum of |A| & |B| over all test cases does not exceed 103\u000a\u000aSubtask #2 (60 points) : Sum of |A| & |B| over all test cases does not exceed 106\u000aExample\u000aInput\u000a2\u000a101\u000a010\u000a1111\u000a1010\u000aOutput\u000aLucky Chef\u000a2\u000aUnlucky Chef\u000aExplanation\u000aExample case 1.\u000aApplying XOR operation with indices i = 1 and j = 2. Resulting string will be 011.\u000aThen, Applying AND operation with indices i = 1 and j = 3. Resulting string will be 010.\u000a\u000aExample case 2.\u000aIt is impossible to convert string A to string B.\u000aAuthor: ma5termind\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/BINOP\u000aTags: binay-ops easy june16 ma5termind\u000aDate Added: 5-01-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Today is Chef's birthday. His mom decided to surprise him with a truly fantastic gift: his favourite binary string B. But, unfortunately, all the stocks of binary string B have been sold out, and only a binary string A (A \u2260 B) is available in the market. B B A (A \u2260 B) She purchases the string A and tries to convert it to string B by applying any of following three operations zero or more times. A B AND Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations. AND Operation:  i j i != j result = Ai & Aj\u000a\u000aAi = result & Ai\u000a\u000aAj = result & Aj result = Ai & Aj result = Ai & Aj i j   Ai = result & Ai Ai = result & Ai i i   Aj = result & Aj Aj = result & Aj j j  OR Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations. OR Operation:  i j i != j result = Ai | Aj\u000a\u000aAi = result | Ai\u000a\u000aAj = result | Aj result = Ai | Aj result = Ai | Aj i j   Ai = result | Ai Ai = result | Ai i i   Aj = result | Aj Aj = result | Aj j j  XOR Operation:\u000aShe will choose a pair of indices i and j such that i != j and perform following sequence of operations. XOR Operation:  i j i != j result = Ai ^ Aj\u000a\u000aAi = result ^ Ai\u000a\u000aAj = result ^ Aj result = Ai ^ Aj result = Ai ^ Aj i j   Ai = result ^ Ai Ai = result ^ Ai i i   Aj = result ^ Aj Aj = result ^ Aj j j  Chef's mom is eagerly waiting to surprise him with his favourite gift and therefore, she wants to convert string A to string B as fast as possible. Can you please help her by telling her the minimum number of operations she will require? If it is impossible to do so, then let Chef's mom know about it. A B Input First line of input contains a single integer T denoting the number of test cases. T test cases follow. T T First line of each test case, will contain binary string A. A Second line of each test case, will contain binary string B. B Output For each test case, Print "Lucky Chef" (without quotes) in first line and minimum number of operations required to convert string A to sting B in second line if conversion is possible. Print "Unlucky Chef" (without quotes) in a new line otherwise. A B Constraints 1 \u2264 T \u2264 105\u000a\u000a1 \u2264 |A| \u2264 106\u000a\u000a1 \u2264 |B| \u2264 106\u000a\u000aA != B\u000a\u000a|A| = |B|\u000a\u000asum of |A| over all test cases does not exceed 106\u000a\u000asum of |B| over all test cases does not exceed 106 1 \u2264 T \u2264 105 1 \u2264 T \u2264 105 5   1 \u2264 |A| \u2264 106 1 \u2264 |A| \u2264 106 6   1 \u2264 |B| \u2264 106 1 \u2264 |B| \u2264 106 6   A != B A != B   |A| = |B| |A| = |B|   sum of |A| over all test cases does not exceed 106 sum of |A| over all test cases does not exceed 106 6   sum of |B| over all test cases does not exceed 106 sum of |B| over all test cases does not exceed 106 6  Subtasks Subtask #1 (40 points) : Sum of |A| & |B| over all test cases does not exceed 103\u000a\u000aSubtask #2 (60 points) : Sum of |A| & |B| over all test cases does not exceed 106 Subtask #1 (40 points) : Sum of |A| & |B| over all test cases does not exceed 103 Subtask #1 (40 points) : Sum of |A| & |B| over all test cases does not exceed 103 3   Subtask #2 (60 points) : Sum of |A| & |B| over all test cases does not exceed 106 Subtask #2 (60 points) : Sum of |A| & |B| over all test cases does not exceed 106 6  Example Input\u000a2\u000a101\u000a010\u000a1111\u000a1010\u000aOutput\u000aLucky Chef\u000a2\u000aUnlucky Chef Input Output Explanation Example case 1. Example case 1. Applying XOR operation with indices i = 1 and j = 2. Resulting string will be 011.\u000aThen, Applying AND operation with indices i = 1 and j = 3. Resulting string will be 010. Applying XOR operation with indices i = 1 and j = 2. Resulting string will be 011. Then, Applying AND operation with indices i = 1 and j = 3. Resulting string will be 010.   Example case 2. Example case 2. It is impossible to convert string A to string B. It is impossible to convert string A to string B.  Author: ma5termind\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/BINOP\u000aTags: binay-ops easy june16 ma5termind\u000aDate Added: 5-01-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind\u000aTester: iscsi\u000aEditorial: http://discuss.codechef.com/problems/BINOP\u000aTags: binay-ops easy june16 ma5termind\u000aDate Added: 5-01-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind Author: ma5termind ma5termind Tester: iscsi Tester: iscsi iscsi Editorial: http://discuss.codechef.com/problems/BINOP Editorial: http://discuss.codechef.com/problems/BINOP http://discuss.codechef.com/problems/BINOP Tags: binay-ops easy june16 ma5termind Tags: binay-ops easy june16 ma5termind binay-ops easy june16 ma5termind Date Added: 5-01-2016 Date Added: 5-01-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V binay-ops easy june16 ma5termind
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/BINOP
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVToday is Chef's birthday. His mom decided to surprise him with a truly fantastic gift: his favourite binary string B. But, unfortunately, all the stocks of binary string B have been sold out, and only a binary string A (A \u2260 B) is available in the market.
+p18
+aVShe purchases the string A and tries to convert it to string B by applying any of following three operations zero or more times.
+p19
+aVAND Operation:
+p20
+aVShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.
+p21
+aVresult = Ai & Aj
+p22
+aV
+p23
+aVAi = result & Ai
+p24
+ag23
+aVAj = result & Aj
+p25
+aVOR Operation:
+p26
+aVShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.
+p27
+aVresult = Ai | Aj
+p28
+ag23
+aVAi = result | Ai
+p29
+ag23
+aVAj = result | Aj
+p30
+aVXOR Operation:
+p31
+aVShe will choose a pair of indices i and j such that i != j and perform following sequence of operations.
+p32
+aVresult = Ai ^ Aj
+p33
+ag23
+aVAi = result ^ Ai
+p34
+ag23
+aVAj = result ^ Aj
+p35
+aVChef's mom is eagerly waiting to surprise him with his favourite gift and therefore, she wants to convert string A to string B as fast as possible. Can you please help her by telling her the minimum number of operations she will require? If it is impossible to do so, then let Chef's mom know about it.
+p36
+asS'input'
+p37
+(lp38
+VInput
+p39
+aVFirst line of input contains a single integer T denoting the number of test cases. T test cases follow.
+p40
+aVFirst line of each test case, will contain binary string A.
+p41
+aVSecond line of each test case, will contain binary string B.
+p42
+aVOutput
+p43
+aVFor each test case, Print "Lucky Chef" (without quotes) in first line and minimum number of operations required to convert string A to sting B in second line if conversion is possible. Print "Unlucky Chef" (without quotes) in a new line otherwise.
+p44
+asS'constraints'
+p45
+(lp46
+VConstraints
+p47
+aV1 \u2264 T \u2264 105
+p48
+ag23
+aV1 \u2264 |A| \u2264 106
+p49
+ag23
+aV1 \u2264 |B| \u2264 106
+p50
+ag23
+aVA != B
+p51
+ag23
+aV|A| = |B|
+p52
+ag23
+aVsum of |A| over all test cases does not exceed 106
+p53
+ag23
+aVsum of |B| over all test cases does not exceed 106
+p54
+aVSubtasks
+p55
+aVSubtask #1 (40 points) : Sum of |A| & |B| over all test cases does not exceed 103
+p56
+ag23
+aVSubtask #2 (60 points) : Sum of |A| & |B| over all test cases does not exceed 106
+p57
+asS'id'
+p58
+c__builtin__
+id
+p59
+sS'name'
+p60
+VBINOP
+p61
+sb.

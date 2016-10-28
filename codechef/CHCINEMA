@@ -1,0 +1,100 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aProbably everyone has experienced an awkward situation due to shared armrests between seats in cinemas. A highly accomplished cinema manager named "Chef" decided to solve this problem.\u000aWhen a customer wants to buy a ticket, the clerk at the ticket window asks the visitor if they need the armrests, and if so, which of them: left, right, or both. We know that out of the audience expected to show up, L of them only need the left armrest, R of them need just the right one, Z need none and B need both. Your task is to calculate the maximum number of people that can attend the show. In the cinema hall there are N rows with M seats each. There is only one armrest between two adjacent seats. Seats at the beginning and at the end of the row have two armrests\u000aInput\u000aInput begins with an integer T: the number of test cases.\u000aEach test case consists of a single line with 6 space-separated integers: N, M, Z, L, R, B.\u000aOutput\u000aFor each test case, output a line containing the answer for the task.\u000aConstraints and Subtasks\u000a1 \u2264 T \u2264 105\u000a\u000aSubtask 1 : 10 points\u000a1 \u2264 N, M \u2264 3\u000a0 \u2264 Z, L, R, B \u2264 3\u000a\u000aSubtask 2 : 20 points\u000a1 \u2264 N, M \u2264 30\u000a0 \u2264 Z, L, R \u2264 30\u000a0 \u2264 B \u2264 109\u000a\u000aSubtask 3 : 30 points\u000a1 \u2264 N, M \u2264 106\u000a0 \u2264 Z, L, R \u2264 106\u000a0 \u2264 B \u2264 1016\u000a\u000aSubtask 4 : 40 points\u000a1 \u2264 N, M \u2264 108\u000a0 \u2264 Z, L, R, B \u2264 1016\u000aExample\u000aInput:\u000a2\u000a2 2 3 2 1 1\u000a3 3 1 2 0 9\u000a\u000aOutput:\u000a4\u000a8\u000aExplanation\u000a'L' - needs left\u000a'R - needs right\u000a'Z' - doesn't need any\u000a'B' - needs both\u000a'-' - empty place\u000aExample case 1.\u000aZZ\u000aZB\u000aExample case 2.\u000aLLB\u000aBZB\u000aB-B\u000aAuthor: omelyanenko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHCINEMA\u000aTags: binary-search dec15 easy greedy omelyanenko\u000aDate Added: 29-07-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aProbably everyone has experienced an awkward situation due to shared armrests between seats in cinemas. A highly accomplished cinema manager named "Chef" decided to solve this problem.\u000aWhen a customer wants to buy a ticket, the clerk at the ticket window asks the visitor if they need the armrests, and if so, which of them: left, right, or both. We know that out of the audience expected to show up, L of them only need the left armrest, R of them need just the right one, Z need none and B need both. Your task is to calculate the maximum number of people that can attend the show. In the cinema hall there are N rows with M seats each. There is only one armrest between two adjacent seats. Seats at the beginning and at the end of the row have two armrests\u000aInput\u000aInput begins with an integer T: the number of test cases.\u000aEach test case consists of a single line with 6 space-separated integers: N, M, Z, L, R, B.\u000aOutput\u000aFor each test case, output a line containing the answer for the task.\u000aConstraints and Subtasks\u000a1 \u2264 T \u2264 105\u000a\u000aSubtask 1 : 10 points\u000a1 \u2264 N, M \u2264 3\u000a0 \u2264 Z, L, R, B \u2264 3\u000a\u000aSubtask 2 : 20 points\u000a1 \u2264 N, M \u2264 30\u000a0 \u2264 Z, L, R \u2264 30\u000a0 \u2264 B \u2264 109\u000a\u000aSubtask 3 : 30 points\u000a1 \u2264 N, M \u2264 106\u000a0 \u2264 Z, L, R \u2264 106\u000a0 \u2264 B \u2264 1016\u000a\u000aSubtask 4 : 40 points\u000a1 \u2264 N, M \u2264 108\u000a0 \u2264 Z, L, R, B \u2264 1016\u000aExample\u000aInput:\u000a2\u000a2 2 3 2 1 1\u000a3 3 1 2 0 9\u000a\u000aOutput:\u000a4\u000a8\u000aExplanation\u000a'L' - needs left\u000a'R - needs right\u000a'Z' - doesn't need any\u000a'B' - needs both\u000a'-' - empty place\u000aExample case 1.\u000aZZ\u000aZB\u000aExample case 2.\u000aLLB\u000aBZB\u000aB-B\u000aAuthor: omelyanenko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHCINEMA\u000aTags: binary-search dec15 easy greedy omelyanenko\u000aDate Added: 29-07-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Probably everyone has experienced an awkward situation due to shared armrests between seats in cinemas. A highly accomplished cinema manager named "Chef" decided to solve this problem. When a customer wants to buy a ticket, the clerk at the ticket window asks the visitor if they need the armrests, and if so, which of them: left, right, or both. We know that out of the audience expected to show up, L of them only need the left armrest, R of them need just the right one, Z need none and B need both. Your task is to calculate the maximum number of people that can attend the show. In the cinema hall there are N rows with M seats each. There is only one armrest between two adjacent seats. Seats at the beginning and at the end of the row have two armrests L R Z B N M  Input Input begins with an integer T: the number of test cases.\u000aEach test case consists of a single line with 6 space-separated integers: N, M, Z, L, R, B.  N M Z L R B Output For each test case, output a line containing the answer for the task. Constraints and Subtasks 1 \u2264 T \u2264 105\u000a\u000aSubtask 1 : 10 points\u000a1 \u2264 N, M \u2264 3\u000a0 \u2264 Z, L, R, B \u2264 3\u000a\u000aSubtask 2 : 20 points\u000a1 \u2264 N, M \u2264 30\u000a0 \u2264 Z, L, R \u2264 30\u000a0 \u2264 B \u2264 109\u000a\u000aSubtask 3 : 30 points\u000a1 \u2264 N, M \u2264 106\u000a0 \u2264 Z, L, R \u2264 106\u000a0 \u2264 B \u2264 1016\u000a\u000aSubtask 4 : 40 points\u000a1 \u2264 N, M \u2264 108\u000a0 \u2264 Z, L, R, B \u2264 1016 1 \u2264 T \u2264 105 1 T 105 5  Subtask 1 : 10 points 1 \u2264 N, M \u2264 3 1 N, M 3 0 \u2264 Z, L, R, B \u2264 3 0 Z L R B 3  Subtask 2 : 20 points 1 \u2264 N, M \u2264 30 1 N, M 30 0 \u2264 Z, L, R \u2264 30 0 Z L R 30 0 \u2264 B \u2264 109 0 B 109 9  Subtask 3 : 30 points 1 \u2264 N, M \u2264 106 1 N, M 106 6 0 \u2264 Z, L, R \u2264 106 0 Z L R 106 6 0 \u2264 B \u2264 1016 0 B 1016 16  Subtask 4 : 40 points 1 \u2264 N, M \u2264 108 1 N, M 108 8 0 \u2264 Z, L, R, B \u2264 1016 0 Z L R B 1016 16 Example Input:\u000a2\u000a2 2 3 2 1 1\u000a3 3 1 2 0 9\u000a\u000aOutput:\u000a4\u000a8 Input: 2\u000a2 2 3 2 1 1\u000a3 3 1 2 0 9 Output: 4\u000a8 Explanation      Example case 1.\u000aZZ\u000aZB\u000aExample case 2.\u000aLLB\u000aBZB\u000aB-B Example case 1.  ZZ\u000aZB   Example case 2.  LLB\u000aBZB\u000aB-B     Author: omelyanenko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHCINEMA\u000aTags: binary-search dec15 easy greedy omelyanenko\u000aDate Added: 29-07-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: omelyanenko\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHCINEMA\u000aTags: binary-search dec15 easy greedy omelyanenko\u000aDate Added: 29-07-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: omelyanenko Author: omelyanenko omelyanenko Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/CHCINEMA Editorial: http://discuss.codechef.com/problems/CHCINEMA http://discuss.codechef.com/problems/CHCINEMA Tags: binary-search dec15 easy greedy omelyanenko Tags: binary-search dec15 easy greedy omelyanenko binary-search dec15 easy greedy omelyanenko Date Added: 29-07-2015 Date Added: 29-07-2015 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V binary-search dec15 easy greedy omelyanenko
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHCINEMA
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVProbably everyone has experienced an awkward situation due to shared armrests between seats in cinemas. A highly accomplished cinema manager named "Chef" decided to solve this problem.
+p18
+aVWhen a customer wants to buy a ticket, the clerk at the ticket window asks the visitor if they need the armrests, and if so, which of them: left, right, or both. We know that out of the audience expected to show up, L of them only need the left armrest, R of them need just the right one, Z need none and B need both. Your task is to calculate the maximum number of people that can attend the show. In the cinema hall there are N rows with M seats each. There is only one armrest between two adjacent seats. Seats at the beginning and at the end of the row have two armrests
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVInput begins with an integer T: the number of test cases.
+p23
+aVEach test case consists of a single line with 6 space-separated integers: N, M, Z, L, R, B.
+p24
+aVOutput
+p25
+aVFor each test case, output a line containing the answer for the task.
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints and Subtasks
+p29
+aV1 \u2264 T \u2264 105
+p30
+aV
+p31
+aVSubtask 1 : 10 points
+p32
+aV1 \u2264 N, M \u2264 3
+p33
+aV0 \u2264 Z, L, R, B \u2264 3
+p34
+ag31
+aVSubtask 2 : 20 points
+p35
+aV1 \u2264 N, M \u2264 30
+p36
+aV0 \u2264 Z, L, R \u2264 30
+p37
+aV0 \u2264 B \u2264 109
+p38
+ag31
+aVSubtask 3 : 30 points
+p39
+aV1 \u2264 N, M \u2264 106
+p40
+aV0 \u2264 Z, L, R \u2264 106
+p41
+aV0 \u2264 B \u2264 1016
+p42
+ag31
+aVSubtask 4 : 40 points
+p43
+aV1 \u2264 N, M \u2264 108
+p44
+aV0 \u2264 Z, L, R, B \u2264 1016
+p45
+asS'id'
+p46
+c__builtin__
+id
+p47
+sS'name'
+p48
+VCHCINEMA
+p49
+sb.

@@ -1,0 +1,67 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aSereja has undirected graph, which consists of n vertexes and m edges. Sereja can delete edges from the graph. Now Sereja is interested in one question : is it possible to delete edges in the graph so that the degree of each vertex in the graph will be equal 1?\u000aPlease, help Sereja.\u000aInput\u000aFirst line contains integer T. T testcases follow. The first line of each testcase contains integers n and m. Following m lines contain descriptions of the edges of the graph, each line contains two numbers \u2014 indexes of the vertexes, which are connected with edge. There can be multiple edges in the graph, but can not be any loops.\u000aOutput\u000aFor each test case print "YES", if you can remove the edges so that the degrees of all vertexes will be equal to 1, and "NO" otherwise. Print the words without quotation marks.\u000aConstraints\u000a1 <= T <= 10\u000a1 <= n, m <= 100\u000aExample\u000aInput:\u000a3\u000a2 2\u000a1 2\u000a1 2\u000a3 2\u000a1 2\u000a2 3\u000a4 6\u000a1 2\u000a1 3\u000a1 4\u000a2 3\u000a2 4\u000a3 4\u000a\u000aOutput:\u000aYES\u000aNO\u000aYES\u000a  Author: sereja\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/SEAGRP\u000aTags: jan14 matching medium sereja\u000aDate Added: 9-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aSereja has undirected graph, which consists of n vertexes and m edges. Sereja can delete edges from the graph. Now Sereja is interested in one question : is it possible to delete edges in the graph so that the degree of each vertex in the graph will be equal 1?\u000aPlease, help Sereja.\u000aInput\u000aFirst line contains integer T. T testcases follow. The first line of each testcase contains integers n and m. Following m lines contain descriptions of the edges of the graph, each line contains two numbers \u2014 indexes of the vertexes, which are connected with edge. There can be multiple edges in the graph, but can not be any loops.\u000aOutput\u000aFor each test case print "YES", if you can remove the edges so that the degrees of all vertexes will be equal to 1, and "NO" otherwise. Print the words without quotation marks.\u000aConstraints\u000a1 <= T <= 10\u000a1 <= n, m <= 100\u000aExample\u000aInput:\u000a3\u000a2 2\u000a1 2\u000a1 2\u000a3 2\u000a1 2\u000a2 3\u000a4 6\u000a1 2\u000a1 3\u000a1 4\u000a2 3\u000a2 4\u000a3 4\u000a\u000aOutput:\u000aYES\u000aNO\u000aYES\u000a  Author: sereja\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/SEAGRP\u000aTags: jan14 matching medium sereja\u000aDate Added: 9-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Sereja has undirected graph, which consists of n vertexes and m edges. Sereja can delete edges from the graph. Now Sereja is interested in one question : is it possible to delete edges in the graph so that the degree of each vertex in the graph will be equal 1? n m 1 Please, help Sereja. Input First line contains integer T. T testcases follow. The first line of each testcase contains integers n and m. Following m lines contain descriptions of the edges of the graph, each line contains two numbers \u2014 indexes of the vertexes, which are connected with edge. There can be multiple edges in the graph, but can not be any loops. T T n m m Output For each test case print "YES", if you can remove the edges so that the degrees of all vertexes will be equal to 1, and "NO" otherwise. Print the words without quotation marks. "YES" 1 "NO" Constraints 1 <= T <= 10\u000a1 <= n, m <= 100 1 <= T <= 10 1 T 10 1 <= n, m <= 100 1 n, m 100 Example Input:\u000a3\u000a2 2\u000a1 2\u000a1 2\u000a3 2\u000a1 2\u000a2 3\u000a4 6\u000a1 2\u000a1 3\u000a1 4\u000a2 3\u000a2 4\u000a3 4\u000a\u000aOutput:\u000aYES\u000aNO\u000aYES Input: Output:    Author: sereja\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/SEAGRP\u000aTags: jan14 matching medium sereja\u000aDate Added: 9-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja\u000aTester: gerald\u000aEditorial: http://discuss.codechef.com/problems/SEAGRP\u000aTags: jan14 matching medium sereja\u000aDate Added: 9-06-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja Author: sereja sereja Tester: gerald Tester: gerald gerald Editorial: http://discuss.codechef.com/problems/SEAGRP Editorial: http://discuss.codechef.com/problems/SEAGRP http://discuss.codechef.com/problems/SEAGRP Tags: jan14 matching medium sereja Tags: jan14 matching medium sereja jan14 matching medium sereja Date Added: 9-06-2013 Date Added: 9-06-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V jan14 matching medium sereja
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/SEAGRP
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVSereja has undirected graph, which consists of n vertexes and m edges. Sereja can delete edges from the graph. Now Sereja is interested in one question : is it possible to delete edges in the graph so that the degree of each vertex in the graph will be equal 1?
+p18
+aVPlease, help Sereja.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVFirst line contains integer T. T testcases follow. The first line of each testcase contains integers n and m. Following m lines contain descriptions of the edges of the graph, each line contains two numbers \u2014 indexes of the vertexes, which are connected with edge. There can be multiple edges in the graph, but can not be any loops.
+p23
+aVOutput
+p24
+aVFor each test case print "YES", if you can remove the edges so that the degrees of all vertexes will be equal to 1, and "NO" otherwise. Print the words without quotation marks.
+p25
+asS'constraints'
+p26
+(lp27
+VConstraints
+p28
+aV1 <= T <= 10
+p29
+aV1 <= n, m <= 100
+p30
+asS'id'
+p31
+c__builtin__
+id
+p32
+sS'name'
+p33
+VSEAGRP
+p34
+sb.

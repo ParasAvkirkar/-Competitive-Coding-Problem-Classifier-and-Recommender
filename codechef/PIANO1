@@ -1,0 +1,93 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aRecently, Chef got obsessed with piano. He is a just a rookie in this stuff and can not move his fingers from one key to other fast enough. He discovered that the best way to train finger speed is to play scales.\u000aThere are different kinds of scales which are divided on the basis of their interval patterns. For instance, major scale is defined by pattern T-T-S-T-T-T-S, where \u2018T\u2019 stands for a whole tone whereas \u2018S\u2019 stands for a semitone. Two semitones make one tone. To understand how they are being played, please refer to the below image of piano\u2019s octave \u2013 two consecutive keys differ by one semitone.\u000aIf we start playing from first key (note C), then we\u2019ll play all white keys in a row (notes C-D-E-F-G-A-B-C \u2013 as you can see C and D differ for a tone as in pattern, and E and F differ for a semitone).\u000aThis pattern could be played some number of times (in cycle).\u000aEach time Chef takes some type of a scale and plays using some number of octaves. Sometimes Chef can make up some scales, so please don\u2019t blame him if you find some scale that does not exist in real world.\u000aFormally, you have a set of 12 keys (i.e. one octave) and you have N such sets in a row. So in total, you have 12*N keys. You also have a pattern that consists of letters 'T' and 'S', where 'T' means move forward for two keys (from key x to key x + 2, and 'S' means move forward for one key (from key x to key x + 1).\u000aNow, you can start playing from any of the 12*N keys. In one play, you can repeat the pattern as many times as you want, but you cannot go outside the keyboard.\u000aRepeating pattern means that if, for example, you have pattern STTST, you can play STTST as well as STTSTSTTST, as well as STTSTSTTSTSTTST, as well as any number of repeating. For this pattern, if you choose to repeat it once, if you start at some key x, you'll press keys: x (letter 'S')-> x + 1 (letter 'T')-> x + 3 (letter 'T')-> x + 5 (letter 'S') -> x + 6 (letter 'T')-> x + 8. Also 1 \u2264 x, x + 8 \u2264 12*N so as to avoid going off the keyboard.\u000aYou are asked to calculate number of different plays that can be performed. Two plays differ if and only if they start at different keys or patterns are repeated different number of times.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aFirst line of each test case contains scale\u2019s pattern \u2013 string s consisting of letters \u2018T\u2019 and \u2018S\u2019 only.\u000aSecond line contains one integer N \u2013 number of octaves he\u2019ll be using.\u000aOutput\u000aFor each test case output a single number in a line corresponding to number of different scales he\u2019ll play. \u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 |S| \u2264 100\u000a1 \u2264 n \u2264 7\u000aSubtasks\u000aSubtask 1: T < 10 4, N = 1\u000aSubtask 2: No additional constraints.\u000aExample\u000aInput:\u000a2 \u000aTTTT\u000a1\u000aTTSTTTS\u000a3\u000a\u000aOutput:\u000a4\u000a36\u000aExplanation\u000aExample case 1. In the first case there is only one octave and Chef can play scale (not in cycle each time) starting with notes C, C#, D, D# - four together.\u000aAuthor: witalij_hq\u000aEditorial: http://discuss.codechef.com/problems/PIANO1\u000aTags: april15 loops simple witalij_hq\u000aDate Added: 24-02-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aRecently, Chef got obsessed with piano. He is a just a rookie in this stuff and can not move his fingers from one key to other fast enough. He discovered that the best way to train finger speed is to play scales.\u000aThere are different kinds of scales which are divided on the basis of their interval patterns. For instance, major scale is defined by pattern T-T-S-T-T-T-S, where \u2018T\u2019 stands for a whole tone whereas \u2018S\u2019 stands for a semitone. Two semitones make one tone. To understand how they are being played, please refer to the below image of piano\u2019s octave \u2013 two consecutive keys differ by one semitone.\u000aIf we start playing from first key (note C), then we\u2019ll play all white keys in a row (notes C-D-E-F-G-A-B-C \u2013 as you can see C and D differ for a tone as in pattern, and E and F differ for a semitone).\u000aThis pattern could be played some number of times (in cycle).\u000aEach time Chef takes some type of a scale and plays using some number of octaves. Sometimes Chef can make up some scales, so please don\u2019t blame him if you find some scale that does not exist in real world.\u000aFormally, you have a set of 12 keys (i.e. one octave) and you have N such sets in a row. So in total, you have 12*N keys. You also have a pattern that consists of letters 'T' and 'S', where 'T' means move forward for two keys (from key x to key x + 2, and 'S' means move forward for one key (from key x to key x + 1).\u000aNow, you can start playing from any of the 12*N keys. In one play, you can repeat the pattern as many times as you want, but you cannot go outside the keyboard.\u000aRepeating pattern means that if, for example, you have pattern STTST, you can play STTST as well as STTSTSTTST, as well as STTSTSTTSTSTTST, as well as any number of repeating. For this pattern, if you choose to repeat it once, if you start at some key x, you'll press keys: x (letter 'S')-> x + 1 (letter 'T')-> x + 3 (letter 'T')-> x + 5 (letter 'S') -> x + 6 (letter 'T')-> x + 8. Also 1 \u2264 x, x + 8 \u2264 12*N so as to avoid going off the keyboard.\u000aYou are asked to calculate number of different plays that can be performed. Two plays differ if and only if they start at different keys or patterns are repeated different number of times.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aFirst line of each test case contains scale\u2019s pattern \u2013 string s consisting of letters \u2018T\u2019 and \u2018S\u2019 only.\u000aSecond line contains one integer N \u2013 number of octaves he\u2019ll be using.\u000aOutput\u000aFor each test case output a single number in a line corresponding to number of different scales he\u2019ll play. \u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 |S| \u2264 100\u000a1 \u2264 n \u2264 7\u000aSubtasks\u000aSubtask 1: T < 10 4, N = 1\u000aSubtask 2: No additional constraints.\u000aExample\u000aInput:\u000a2 \u000aTTTT\u000a1\u000aTTSTTTS\u000a3\u000a\u000aOutput:\u000a4\u000a36\u000aExplanation\u000aExample case 1. In the first case there is only one octave and Chef can play scale (not in cycle each time) starting with notes C, C#, D, D# - four together.\u000aAuthor: witalij_hq\u000aEditorial: http://discuss.codechef.com/problems/PIANO1\u000aTags: april15 loops simple witalij_hq\u000aDate Added: 24-02-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Recently, Chef got obsessed with piano. He is a just a rookie in this stuff and can not move his fingers from one key to other fast enough. He discovered that the best way to train finger speed is to play scales. There are different kinds of scales which are divided on the basis of their interval patterns. For instance, major scale is defined by pattern T-T-S-T-T-T-S, where \u2018T\u2019 stands for a whole tone whereas \u2018S\u2019 stands for a semitone. Two semitones make one tone. To understand how they are being played, please refer to the below image of piano\u2019s octave \u2013 two consecutive keys differ by one semitone. T-T-S-T-T-T-S \u2018T\u2019 \u2018S\u2019 If we start playing from first key (note C), then we\u2019ll play all white keys in a row (notes C-D-E-F-G-A-B-C \u2013 as you can see C and D differ for a tone as in pattern, and E and F differ for a semitone). C C-D-E-F-G-A-B-C C D E F This pattern could be played some number of times (in cycle).   Each time Chef takes some type of a scale and plays using some number of octaves. Sometimes Chef can make up some scales, so please don\u2019t blame him if you find some scale that does not exist in real world. Formally, you have a set of 12 keys (i.e. one octave) and you have N such sets in a row. So in total, you have 12*N keys. You also have a pattern that consists of letters 'T' and 'S', where 'T' means move forward for two keys (from key x to key x + 2, and 'S' means move forward for one key (from key x to key x + 1). Formally 12 N 12*N 'T' 'S' 'T' x x + 2 'S' x x + 1 Now, you can start playing from any of the 12*N keys. In one play, you can repeat the pattern as many times as you want, but you cannot go outside the keyboard. 12*N Repeating pattern means that if, for example, you have pattern STTST, you can play STTST as well as STTSTSTTST, as well as STTSTSTTSTSTTST, as well as any number of repeating. For this pattern, if you choose to repeat it once, if you start at some key x, you'll press keys: x (letter 'S')-> x + 1 (letter 'T')-> x + 3 (letter 'T')-> x + 5 (letter 'S') -> x + 6 (letter 'T')-> x + 8. Also 1 \u2264 x, x + 8 \u2264 12*N so as to avoid going off the keyboard. STTST STTST STTSTSTTST STTSTSTTSTSTTST x x (letter 'S')-> x + 1 (letter 'T')-> x + 3 (letter 'T')-> x + 5 (letter 'S') -> x + 6 (letter 'T')-> x + 8 1 \u2264 x, x + 8 \u2264 12*N You are asked to calculate number of different plays that can be performed. Two plays differ if and only if they start at different keys or patterns are repeated different number of times. Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aFirst line of each test case contains scale\u2019s pattern \u2013 string s consisting of letters \u2018T\u2019 and \u2018S\u2019 only.\u000aSecond line contains one integer N \u2013 number of octaves he\u2019ll be using. T T  s \u2018T\u2019 \u2018S\u2019  N Output For each test case output a single number in a line corresponding to number of different scales he\u2019ll play.  Constraints 1 \u2264 T \u2264 105\u000a1 \u2264 |S| \u2264 100\u000a1 \u2264 n \u2264 7 1 \u2264 T \u2264 105 1 T 105 5 1 \u2264 |S| \u2264 100 1 |S| 100 1 \u2264 n \u2264 7 1 n 7 Subtasks Subtask 1: T < 10 4, N = 1 T < 10 4, N = 1 4 Subtask 2: No additional constraints. Example Input:\u000a2 \u000aTTTT\u000a1\u000aTTSTTTS\u000a3\u000a\u000aOutput:\u000a4\u000a36 Input: Output: Explanation Example case 1. In the first case there is only one octave and Chef can play scale (not in cycle each time) starting with notes C, C#, D, D# - four together. Example case 1. C, C#, D, D#  Author: witalij_hq\u000aEditorial: http://discuss.codechef.com/problems/PIANO1\u000aTags: april15 loops simple witalij_hq\u000aDate Added: 24-02-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq\u000aEditorial: http://discuss.codechef.com/problems/PIANO1\u000aTags: april15 loops simple witalij_hq\u000aDate Added: 24-02-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq Author: witalij_hq witalij_hq Editorial: http://discuss.codechef.com/problems/PIANO1 Editorial: http://discuss.codechef.com/problems/PIANO1 http://discuss.codechef.com/problems/PIANO1 Tags: april15 loops simple witalij_hq Tags: april15 loops simple witalij_hq april15 loops simple witalij_hq Date Added: 24-02-2015 Date Added: 24-02-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V april15 loops simple witalij_hq
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/PIANO1
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVRecently, Chef got obsessed with piano. He is a just a rookie in this stuff and can not move his fingers from one key to other fast enough. He discovered that the best way to train finger speed is to play scales.
+p18
+aVThere are different kinds of scales which are divided on the basis of their interval patterns. For instance, major scale is defined by pattern T-T-S-T-T-T-S, where \u2018T\u2019 stands for a whole tone whereas \u2018S\u2019 stands for a semitone. Two semitones make one tone. To understand how they are being played, please refer to the below image of piano\u2019s octave \u2013 two consecutive keys differ by one semitone.
+p19
+aVIf we start playing from first key (note C), then we\u2019ll play all white keys in a row (notes C-D-E-F-G-A-B-C \u2013 as you can see C and D differ for a tone as in pattern, and E and F differ for a semitone).
+p20
+aVThis pattern could be played some number of times (in cycle).
+p21
+aVEach time Chef takes some type of a scale and plays using some number of octaves. Sometimes Chef can make up some scales, so please don\u2019t blame him if you find some scale that does not exist in real world.
+p22
+aVFormally, you have a set of 12 keys (i.e. one octave) and you have N such sets in a row. So in total, you have 12*N keys. You also have a pattern that consists of letters 'T' and 'S', where 'T' means move forward for two keys (from key x to key x + 2, and 'S' means move forward for one key (from key x to key x + 1).
+p23
+aVNow, you can start playing from any of the 12*N keys. In one play, you can repeat the pattern as many times as you want, but you cannot go outside the keyboard.
+p24
+aVRepeating pattern means that if, for example, you have pattern STTST, you can play STTST as well as STTSTSTTST, as well as STTSTSTTSTSTTST, as well as any number of repeating. For this pattern, if you choose to repeat it once, if you start at some key x, you'll press keys: x (letter 'S')-> x + 1 (letter 'T')-> x + 3 (letter 'T')-> x + 5 (letter 'S') -> x + 6 (letter 'T')-> x + 8. Also 1 \u2264 x, x + 8 \u2264 12*N so as to avoid going off the keyboard.
+p25
+aVYou are asked to calculate number of different plays that can be performed. Two plays differ if and only if they start at different keys or patterns are repeated different number of times.
+p26
+asS'input'
+p27
+(lp28
+VInput
+p29
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p30
+aVFirst line of each test case contains scale\u2019s pattern \u2013 string s consisting of letters \u2018T\u2019 and \u2018S\u2019 only.
+p31
+aVSecond line contains one integer N \u2013 number of octaves he\u2019ll be using.
+p32
+aVOutput
+p33
+aVFor each test case output a single number in a line corresponding to number of different scales he\u2019ll play.
+p34
+asS'constraints'
+p35
+(lp36
+VConstraints
+p37
+aV1 \u2264 T \u2264 105
+p38
+aV1 \u2264 |S| \u2264 100
+p39
+aV1 \u2264 n \u2264 7
+p40
+aVSubtasks
+p41
+aVSubtask 1: T < 10 4, N = 1
+p42
+aVSubtask 2: No additional constraints.
+p43
+asS'id'
+p44
+c__builtin__
+id
+p45
+sS'name'
+p46
+VPIANO1
+p47
+sb.

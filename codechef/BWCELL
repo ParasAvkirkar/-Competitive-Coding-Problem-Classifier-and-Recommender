@@ -1,0 +1,77 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese\u000aChef and his best friend Aleksa are into mathematical games these days. Today, they have some ( \u2265 0 ) black cells represented as B, and a white cell represented as W, lying randomly in a straight line. They have decided to play with these cells. In a move, a player chooses some ( > 0 ) black cells lying on any one side of the white cell and remove them. It should be noted that a player is not allowed to choose black cells from both side of the given white cell. Both the players alternate their moves, and play optimally. The player who is unable to move in his respective turn will lose the game.\u000aAleksa, being a girl, has a habit of playing first. But Chef is fairly smart himself, and will not play the game if he is going to lose it. Therefore, he wants to know the winner beforehand. Can you tell him who is going to win the game for the given configuration of cells?\u000aInput\u000aFirst line of input contains a single integer T denoting the number of test cases. First and the only line of each test case contains a string S consisting of the characters 'B' and 'W', denoting black and white cells, respectively.\u000aOutput\u000aFor each test case, output "Chef" if chef wins the game for the given configuration. Else print "Aleksa". (quotes for clarity only).\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 |S| \u2264 10000\u000aS contains exactly 1 white cell.\u000aScoring\u000aSubtask 1: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10 : ( 30 pts )\u000aSubtask 2: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 100 : ( 30 pts )\u000aSubtask 3: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10000 : ( 40 pts )\u000aExample\u000aInput\u000a3\u000aW\u000aBW\u000aBWBB\u000a\u000aOutput\u000aChef\u000aAleksa\u000aAleksa\u000aExplanation\u000aTest 1 : Aleksa cannot make a move in her first turn as there is no black cell in the given configuration.\u000aTest 2 : Aleksa can remove 1 black cell lying on the left of white cell in her turn. But then, Chef cannot make a move in his turn as there will be no black cells left.\u000aTest 3 : Figure out yourself.\u000aAuthor: ma5termind\u000aTester: pushkarmishra\u000aEditorial: http://discuss.codechef.com/problems/BWCELL\u000aTags: ma5termind\u000aDate Added: 4-11-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese\u000aChef and his best friend Aleksa are into mathematical games these days. Today, they have some ( \u2265 0 ) black cells represented as B, and a white cell represented as W, lying randomly in a straight line. They have decided to play with these cells. In a move, a player chooses some ( > 0 ) black cells lying on any one side of the white cell and remove them. It should be noted that a player is not allowed to choose black cells from both side of the given white cell. Both the players alternate their moves, and play optimally. The player who is unable to move in his respective turn will lose the game.\u000aAleksa, being a girl, has a habit of playing first. But Chef is fairly smart himself, and will not play the game if he is going to lose it. Therefore, he wants to know the winner beforehand. Can you tell him who is going to win the game for the given configuration of cells?\u000aInput\u000aFirst line of input contains a single integer T denoting the number of test cases. First and the only line of each test case contains a string S consisting of the characters 'B' and 'W', denoting black and white cells, respectively.\u000aOutput\u000aFor each test case, output "Chef" if chef wins the game for the given configuration. Else print "Aleksa". (quotes for clarity only).\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 |S| \u2264 10000\u000aS contains exactly 1 white cell.\u000aScoring\u000aSubtask 1: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10 : ( 30 pts )\u000aSubtask 2: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 100 : ( 30 pts )\u000aSubtask 3: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10000 : ( 40 pts )\u000aExample\u000aInput\u000a3\u000aW\u000aBW\u000aBWBB\u000a\u000aOutput\u000aChef\u000aAleksa\u000aAleksa\u000aExplanation\u000aTest 1 : Aleksa cannot make a move in her first turn as there is no black cell in the given configuration.\u000aTest 2 : Aleksa can remove 1 black cell lying on the left of white cell in her turn. But then, Chef cannot make a move in his turn as there will be no black cells left.\u000aTest 3 : Figure out yourself.\u000aAuthor: ma5termind\u000aTester: pushkarmishra\u000aEditorial: http://discuss.codechef.com/problems/BWCELL\u000aTags: ma5termind\u000aDate Added: 4-11-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese , Russian and Vietnamese Mandarin Chinese Russian Vietnamese Chef and his best friend Aleksa are into mathematical games these days. Today, they have some ( \u2265 0 ) black cells represented as B, and a white cell represented as W, lying randomly in a straight line. They have decided to play with these cells. In a move, a player chooses some ( > 0 ) black cells lying on any one side of the white cell and remove them. It should be noted that a player is not allowed to choose black cells from both side of the given white cell. Both the players alternate their moves, and play optimally. The player who is unable to move in his respective turn will lose the game. ( \u2265 0 ) B W ( > 0 ) Aleksa, being a girl, has a habit of playing first. But Chef is fairly smart himself, and will not play the game if he is going to lose it. Therefore, he wants to know the winner beforehand. Can you tell him who is going to win the game for the given configuration of cells? Input First line of input contains a single integer T denoting the number of test cases. First and the only line of each test case contains a string S consisting of the characters 'B' and 'W', denoting black and white cells, respectively. T S 'B' 'W' Output For each test case, output "Chef" if chef wins the game for the given configuration. Else print "Aleksa". (quotes for clarity only). "Chef" "Aleksa" Constraints 1 \u2264 T \u2264 10\u000a1 \u2264 |S| \u2264 10000\u000aS contains exactly 1 white cell. 1 \u2264 T \u2264 10 1 \u2264 T \u2264 10 1 \u2264 |S| \u2264 10000 1 \u2264 |S| \u2264 10000 S contains exactly 1 white cell. S contains exactly 1 white cell. Scoring Subtask 1: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10 : ( 30 pts )\u000aSubtask 2: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 100 : ( 30 pts )\u000aSubtask 3: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10000 : ( 40 pts ) Subtask 1: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10 : ( 30 pts ) Subtask 1: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10 : ( 30 pts ) Subtask 2: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 100 : ( 30 pts ) Subtask 2: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 100 : ( 30 pts ) Subtask 3: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10000 : ( 40 pts ) Subtask 3: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10000 : ( 40 pts ) Example Input\u000a3\u000aW\u000aBW\u000aBWBB\u000a\u000aOutput\u000aChef\u000aAleksa\u000aAleksa Input Output Explanation Test 1 : Aleksa cannot make a move in her first turn as there is no black cell in the given configuration.\u000aTest 2 : Aleksa can remove 1 black cell lying on the left of white cell in her turn. But then, Chef cannot make a move in his turn as there will be no black cells left.\u000aTest 3 : Figure out yourself. Test 1 : Aleksa cannot make a move in her first turn as there is no black cell in the given configuration. Test 1 : Test 2 : Aleksa can remove 1 black cell lying on the left of white cell in her turn. But then, Chef cannot make a move in his turn as there will be no black cells left. Test 2 : Test 3 : Figure out yourself. Test 3 :  Author: ma5termind\u000aTester: pushkarmishra\u000aEditorial: http://discuss.codechef.com/problems/BWCELL\u000aTags: ma5termind\u000aDate Added: 4-11-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind\u000aTester: pushkarmishra\u000aEditorial: http://discuss.codechef.com/problems/BWCELL\u000aTags: ma5termind\u000aDate Added: 4-11-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind Author: ma5termind ma5termind Tester: pushkarmishra Tester: pushkarmishra pushkarmishra Editorial: http://discuss.codechef.com/problems/BWCELL Editorial: http://discuss.codechef.com/problems/BWCELL http://discuss.codechef.com/problems/BWCELL Tags: ma5termind Tags: ma5termind ma5termind Date Added: 4-11-2015 Date Added: 4-11-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V ma5termind
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/BWCELL
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese , Russian and Vietnamese
+p17
+aVChef and his best friend Aleksa are into mathematical games these days. Today, they have some ( \u2265 0 ) black cells represented as B, and a white cell represented as W, lying randomly in a straight line. They have decided to play with these cells. In a move, a player chooses some ( > 0 ) black cells lying on any one side of the white cell and remove them. It should be noted that a player is not allowed to choose black cells from both side of the given white cell. Both the players alternate their moves, and play optimally. The player who is unable to move in his respective turn will lose the game.
+p18
+aVAleksa, being a girl, has a habit of playing first. But Chef is fairly smart himself, and will not play the game if he is going to lose it. Therefore, he wants to know the winner beforehand. Can you tell him who is going to win the game for the given configuration of cells?
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVFirst line of input contains a single integer T denoting the number of test cases. First and the only line of each test case contains a string S consisting of the characters 'B' and 'W', denoting black and white cells, respectively.
+p23
+aVOutput
+p24
+aVFor each test case, output "Chef" if chef wins the game for the given configuration. Else print "Aleksa". (quotes for clarity only).
+p25
+asS'constraints'
+p26
+(lp27
+VConstraints
+p28
+aV1 \u2264 T \u2264 10
+p29
+aV1 \u2264 |S| \u2264 10000
+p30
+aVS contains exactly 1 white cell.
+p31
+aVScoring
+p32
+aVSubtask 1: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10 : ( 30 pts )
+p33
+aVSubtask 2: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 100 : ( 30 pts )
+p34
+aVSubtask 3: 1 \u2264 T \u2264 10, 1 \u2264 |S| \u2264 10000 : ( 40 pts )
+p35
+asS'id'
+p36
+c__builtin__
+id
+p37
+sS'name'
+p38
+VBWCELL
+p39
+sb.

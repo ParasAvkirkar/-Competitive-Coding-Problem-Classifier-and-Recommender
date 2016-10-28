@@ -1,0 +1,96 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aThe Baratheons have been ruling in the Seven Kingdoms for many years. They have seen a lot: prosperity and hunger, tranquility and rebellions, live and death. But nevertheless, they still hold the throne.\u000aKing Joffrey Baratheon's reign is running now. As a wise man, he honors the history of his family. So, he commanded to build up two monuments, that will remind about some historical periods of the Baratheons.\u000aFormally, the Baratheons have been ruling for N years. Every year is described by an integer Ai, the level of prosperity in i-th year. If i-th year was a great year, then Ai might be a positive integer. Otherwise, if i-th year was a horrible year, then Ai might be a negative integer.\u000aEach historical period can be described as two integers S and F, the start and the finish of the period respectively. Of course, S is not greater than F for each period, that we consider in this task.\u000aYou are to pick two historical periods, but there are some rules:\u000aTwo periods shouldn't have common years. I.e. a period [1, 5] has no common years with a period [6, 7];\u000aThe first period should start earlier than the second one. I.e. a period [1, 5] starts earlier than [6, 7];\u000aTwo periods shouldn't be too close to each other. There must be at least K years between the finish of the first period and the start of the second period. I.e. periods [1, 5] and [10, 10] can be chosen in case K equals to 4, while they can't in case K equals to 5.\u000aThe sum of the levels of prosperity in chosen years should be as big as possible.\u000aAfterwards, you should report the sum of the levels of prosperity in chosen years to your King. Make everything right, otherwise King Joffrey won't be merciful!\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains two integers N and K denoting the length of the Baratheons' reign and the minimal amount of years between two chosen periods.\u000a\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the levels of prosperity in corresponding years.\u000a  Output\u000aFor each test case, output a single line containing the required integer.\u000a  Constraints\u000a1 \u2264 T \u2264 5;\u000a2 \u2264 N \u2264 105;\u000a0 \u2264 K \u2264 105;\u000a-109 \u2264 Ai \u2264 109 for every 1 \u2264 i \u2264 N;\u000aK + 2 \u2264 N\u000a  Example\u000aInput:\u000a3\u000a5 3\u000a-1 1 2 3 -1\u000a8 3\u000a5 5 -1 -2 3 -1 2 -2\u000a6 0\u000a5 -1 5 0 -1 9\u000a\u000aOutput:\u000a-2\u000a12\u000a18\u000a  Explanation\u000aThere are T = 3 test cases the input.\u000aThe first test case: N equals to 5, K equals to 3, A[] equals to {-1, 1, 2, 3, -1}. There is the only option: we have to choose [1, 1] and [5, 5] periods.\u000aThe second test case: N equals to 8, K equals to 3, A[] equals to {5, 5, -1, -2, 3, -1, 2, -2}. It is optimal to choose [1, 2] and [7, 7] periods. That is the only optimal choice that you can make.\u000aThe second test case: N equals to 6, K equals to 0, A[] equals to {5, -1, 5, 0, -1, 9}. It is optimal to choose [1, 3] and [6, 6] periods. But that is not the only optimal choice that you can make.\u000aAuthor: kostya_by\u000aTester: white_king\u000aEditorial: http://discuss.codechef.com/problems/REIGN\u000aTags: dec13 easy kostya_by\u000aDate Added: 6-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aThe Baratheons have been ruling in the Seven Kingdoms for many years. They have seen a lot: prosperity and hunger, tranquility and rebellions, live and death. But nevertheless, they still hold the throne.\u000aKing Joffrey Baratheon's reign is running now. As a wise man, he honors the history of his family. So, he commanded to build up two monuments, that will remind about some historical periods of the Baratheons.\u000aFormally, the Baratheons have been ruling for N years. Every year is described by an integer Ai, the level of prosperity in i-th year. If i-th year was a great year, then Ai might be a positive integer. Otherwise, if i-th year was a horrible year, then Ai might be a negative integer.\u000aEach historical period can be described as two integers S and F, the start and the finish of the period respectively. Of course, S is not greater than F for each period, that we consider in this task.\u000aYou are to pick two historical periods, but there are some rules:\u000aTwo periods shouldn't have common years. I.e. a period [1, 5] has no common years with a period [6, 7];\u000aThe first period should start earlier than the second one. I.e. a period [1, 5] starts earlier than [6, 7];\u000aTwo periods shouldn't be too close to each other. There must be at least K years between the finish of the first period and the start of the second period. I.e. periods [1, 5] and [10, 10] can be chosen in case K equals to 4, while they can't in case K equals to 5.\u000aThe sum of the levels of prosperity in chosen years should be as big as possible.\u000aAfterwards, you should report the sum of the levels of prosperity in chosen years to your King. Make everything right, otherwise King Joffrey won't be merciful!\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains two integers N and K denoting the length of the Baratheons' reign and the minimal amount of years between two chosen periods.\u000a\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the levels of prosperity in corresponding years.\u000a  Output\u000aFor each test case, output a single line containing the required integer.\u000a  Constraints\u000a1 \u2264 T \u2264 5;\u000a2 \u2264 N \u2264 105;\u000a0 \u2264 K \u2264 105;\u000a-109 \u2264 Ai \u2264 109 for every 1 \u2264 i \u2264 N;\u000aK + 2 \u2264 N\u000a  Example\u000aInput:\u000a3\u000a5 3\u000a-1 1 2 3 -1\u000a8 3\u000a5 5 -1 -2 3 -1 2 -2\u000a6 0\u000a5 -1 5 0 -1 9\u000a\u000aOutput:\u000a-2\u000a12\u000a18\u000a  Explanation\u000aThere are T = 3 test cases the input.\u000aThe first test case: N equals to 5, K equals to 3, A[] equals to {-1, 1, 2, 3, -1}. There is the only option: we have to choose [1, 1] and [5, 5] periods.\u000aThe second test case: N equals to 8, K equals to 3, A[] equals to {5, 5, -1, -2, 3, -1, 2, -2}. It is optimal to choose [1, 2] and [7, 7] periods. That is the only optimal choice that you can make.\u000aThe second test case: N equals to 6, K equals to 0, A[] equals to {5, -1, 5, 0, -1, 9}. It is optimal to choose [1, 3] and [6, 6] periods. But that is not the only optimal choice that you can make.\u000aAuthor: kostya_by\u000aTester: white_king\u000aEditorial: http://discuss.codechef.com/problems/REIGN\u000aTags: dec13 easy kostya_by\u000aDate Added: 6-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian The Baratheons have been ruling in the Seven Kingdoms for many years. They have seen a lot: prosperity and hunger, tranquility and rebellions, live and death. But nevertheless, they still hold the throne. King Joffrey Baratheon's reign is running now. As a wise man, he honors the history of his family. So, he commanded to build up two monuments, that will remind about some historical periods of the Baratheons. two Formally, the Baratheons have been ruling for N years. Every year is described by an integer Ai, the level of prosperity in i-th year. If i-th year was a great year, then Ai might be a positive integer. Otherwise, if i-th year was a horrible year, then Ai might be a negative integer. N Ai i i i Ai i i Ai i Each historical period can be described as two integers S and F, the start and the finish of the period respectively. Of course, S is not greater than F for each period, that we consider in this task. S F S F You are to pick two historical periods, but there are some rules: Two periods shouldn't have common years. I.e. a period [1, 5] has no common years with a period [6, 7];\u000aThe first period should start earlier than the second one. I.e. a period [1, 5] starts earlier than [6, 7];\u000aTwo periods shouldn't be too close to each other. There must be at least K years between the finish of the first period and the start of the second period. I.e. periods [1, 5] and [10, 10] can be chosen in case K equals to 4, while they can't in case K equals to 5.\u000aThe sum of the levels of prosperity in chosen years should be as big as possible. Two periods shouldn't have common years. I.e. a period [1, 5] has no common years with a period [6, 7]; The first period should start earlier than the second one. I.e. a period [1, 5] starts earlier than [6, 7]; Two periods shouldn't be too close to each other. There must be at least K years between the finish of the first period and the start of the second period. I.e. periods [1, 5] and [10, 10] can be chosen in case K equals to 4, while they can't in case K equals to 5. K K K The sum of the levels of prosperity in chosen years should be as big as possible. Afterwards, you should report the sum of the levels of prosperity in chosen years to your King. Make everything right, otherwise King Joffrey won't be merciful! Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains two integers N and K denoting the length of the Baratheons' reign and the minimal amount of years between two chosen periods.\u000a\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the levels of prosperity in corresponding years. T T   N K   N A1 1 A2 2 AN N   Output For each test case, output a single line containing the required integer.   Constraints 1 \u2264 T \u2264 5;\u000a2 \u2264 N \u2264 105;\u000a0 \u2264 K \u2264 105;\u000a-109 \u2264 Ai \u2264 109 for every 1 \u2264 i \u2264 N;\u000aK + 2 \u2264 N 1 \u2264 T \u2264 5; T 2 \u2264 N \u2264 105; N 5 0 \u2264 K \u2264 105; K 5 -109 \u2264 Ai \u2264 109 for every 1 \u2264 i \u2264 N; 9 Ai i 9 i N K + 2 \u2264 N K N   Example Input:\u000a3\u000a5 3\u000a-1 1 2 3 -1\u000a8 3\u000a5 5 -1 -2 3 -1 2 -2\u000a6 0\u000a5 -1 5 0 -1 9\u000a\u000aOutput:\u000a-2\u000a12\u000a18 Input: Output:   Explanation There are T = 3 test cases the input. T The first test case: N equals to 5, K equals to 3, A[] equals to {-1, 1, 2, 3, -1}. There is the only option: we have to choose [1, 1] and [5, 5] periods. N K The second test case: N equals to 8, K equals to 3, A[] equals to {5, 5, -1, -2, 3, -1, 2, -2}. It is optimal to choose [1, 2] and [7, 7] periods. That is the only optimal choice that you can make. N K The second test case: N equals to 6, K equals to 0, A[] equals to {5, -1, 5, 0, -1, 9}. It is optimal to choose [1, 3] and [6, 6] periods. But that is not the only optimal choice that you can make. N K  Author: kostya_by\u000aTester: white_king\u000aEditorial: http://discuss.codechef.com/problems/REIGN\u000aTags: dec13 easy kostya_by\u000aDate Added: 6-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kostya_by\u000aTester: white_king\u000aEditorial: http://discuss.codechef.com/problems/REIGN\u000aTags: dec13 easy kostya_by\u000aDate Added: 6-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kostya_by Author: kostya_by kostya_by Tester: white_king Tester: white_king white_king Editorial: http://discuss.codechef.com/problems/REIGN Editorial: http://discuss.codechef.com/problems/REIGN http://discuss.codechef.com/problems/REIGN Tags: dec13 easy kostya_by Tags: dec13 easy kostya_by dec13 easy kostya_by Date Added: 6-11-2013 Date Added: 6-11-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V dec13 easy kostya_by
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/REIGN
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVThe Baratheons have been ruling in the Seven Kingdoms for many years. They have seen a lot: prosperity and hunger, tranquility and rebellions, live and death. But nevertheless, they still hold the throne.
+p18
+aVKing Joffrey Baratheon's reign is running now. As a wise man, he honors the history of his family. So, he commanded to build up two monuments, that will remind about some historical periods of the Baratheons.
+p19
+aVFormally, the Baratheons have been ruling for N years. Every year is described by an integer Ai, the level of prosperity in i-th year. If i-th year was a great year, then Ai might be a positive integer. Otherwise, if i-th year was a horrible year, then Ai might be a negative integer.
+p20
+aVEach historical period can be described as two integers S and F, the start and the finish of the period respectively. Of course, S is not greater than F for each period, that we consider in this task.
+p21
+aVYou are to pick two historical periods, but there are some rules:
+p22
+aVTwo periods shouldn't have common years. I.e. a period [1, 5] has no common years with a period [6, 7];
+p23
+aVThe first period should start earlier than the second one. I.e. a period [1, 5] starts earlier than [6, 7];
+p24
+aVTwo periods shouldn't be too close to each other. There must be at least K years between the finish of the first period and the start of the second period. I.e. periods [1, 5] and [10, 10] can be chosen in case K equals to 4, while they can't in case K equals to 5.
+p25
+aVThe sum of the levels of prosperity in chosen years should be as big as possible.
+p26
+aVAfterwards, you should report the sum of the levels of prosperity in chosen years to your King. Make everything right, otherwise King Joffrey won't be merciful!
+p27
+asS'input'
+p28
+(lp29
+VInput
+p30
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p31
+aV
+p32
+aVThe first line of each test case contains two integers N and K denoting the length of the Baratheons' reign and the minimal amount of years between two chosen periods.
+p33
+ag32
+aVThe second line contains N space-separated integers A1, A2, ..., AN denoting the levels of prosperity in corresponding years.
+p34
+aVOutput
+p35
+aVFor each test case, output a single line containing the required integer.
+p36
+asS'constraints'
+p37
+(lp38
+VConstraints
+p39
+aV1 \u2264 T \u2264 5;
+p40
+aV2 \u2264 N \u2264 105;
+p41
+aV0 \u2264 K \u2264 105;
+p42
+aV-109 \u2264 Ai \u2264 109 for every 1 \u2264 i \u2264 N;
+p43
+aVK + 2 \u2264 N
+p44
+asS'id'
+p45
+c__builtin__
+id
+p46
+sS'name'
+p47
+VREIGN
+p48
+sb.

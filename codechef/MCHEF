@@ -1,0 +1,91 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1.5 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef loves to prepare delicious dishes. He has prepared N dishes numbered from 1 to N for this year's MasterChef contest. He has presented all the N dishes to a panel of judges. Judging panel consists of M judges numbered from 1 to M. Rating for each dish was decided by voting from all the judges. Rating for the dishes has been given by a 1-indexed array A where Ai denotes rating of the ith dish.\u000aSome dishes prepared by chef are extraordinary delicious, but unfortunately, some are not. Chef has been given a chance to improve the total rating of his dishes. By total rating of dishes, we mean the sum of the ratings of his dishes. Each of the M judges has administrative power to remove some (zero or more) dishes from a specified range. The ith judge takes Ci rupees for removing each dish of Chef's choice from the dishes numbered from Li to Ri (both inclusive). Once a dish is removed by any of the M judges it will not be considered for calculating total rating of the dishes. Chef has spent a large portion of his money preparing mouth watering dishes and has only K rupees left for now. Now chef is worried about maximizing total rating of his dishes by dropping some of the N dishes.\u000aPlease Help chef by finding the maximum total rating he can achieve such that the total expenditure does not exceed his budget of K rupees.\u000aInput\u000aFirst line of input contains a single integer T denoting the number of test cases.\u000aFirst line of each test case contains three space separated integers N, K and M denoting the number of dishes prepared by chef, chef's budget, and number of judges in judging panel respectively.\u000aNext line of each test case contains N space separated integers where ith integer denotes the rating received by the ith dish.\u000aNext M lines of each test case contain three space separated integers each: L, R and C, where the integers in the ith line denotes the value of Li, Ri and Ci respectively.\u000aOutput\u000aFor each test case, print a single integer in a line corresponding to the answer.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 N,M \u2264 105\u000a1 \u2264 K \u2264 500\u000a1 \u2264 Li \u2264 Ri \u2264 N\u000a1 \u2264 Ci \u2264 200\u000a-109 \u2264 Ai \u2264 109\u000aSum of N and M over all test cases does not exceed 5*105\u000aSubtasks :\u000aSubtask 1 : Sum of all N's across the test cases in a file does not exceed 5000. Sum of all M's is also at most 5000. (33 points).\u000aSubtask 2 : Sum of all N's across the test cases in a file does not exceed 5*105. Sum of all M's is also at most 5*105. ( 67 points ).\u000aExample\u000ainput\u000a1\u000a5 10 5\u000a10 -2 -5 7 -10\u000a1 1 5\u000a2 4 10\u000a4 4 12\u000a3 4 10\u000a1 5 15\u000a\u000aoutput\u000a5\u000aExplanation\u000aChef can drop dish numbered 3rd with rating -5 by paying 10 rupees to the 4th judge, and get the maximum possible total rating of 5.\u000aAuthor: ma5termind\u000aTester: mugurelionut\u000aEditorial: http://discuss.codechef.com/problems/MCHEF\u000aTags: data-structure dynamic-prog easy-medium july15 ma5termind\u000aDate Added: 2-04-2015\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef loves to prepare delicious dishes. He has prepared N dishes numbered from 1 to N for this year's MasterChef contest. He has presented all the N dishes to a panel of judges. Judging panel consists of M judges numbered from 1 to M. Rating for each dish was decided by voting from all the judges. Rating for the dishes has been given by a 1-indexed array A where Ai denotes rating of the ith dish.\u000aSome dishes prepared by chef are extraordinary delicious, but unfortunately, some are not. Chef has been given a chance to improve the total rating of his dishes. By total rating of dishes, we mean the sum of the ratings of his dishes. Each of the M judges has administrative power to remove some (zero or more) dishes from a specified range. The ith judge takes Ci rupees for removing each dish of Chef's choice from the dishes numbered from Li to Ri (both inclusive). Once a dish is removed by any of the M judges it will not be considered for calculating total rating of the dishes. Chef has spent a large portion of his money preparing mouth watering dishes and has only K rupees left for now. Now chef is worried about maximizing total rating of his dishes by dropping some of the N dishes.\u000aPlease Help chef by finding the maximum total rating he can achieve such that the total expenditure does not exceed his budget of K rupees.\u000aInput\u000aFirst line of input contains a single integer T denoting the number of test cases.\u000aFirst line of each test case contains three space separated integers N, K and M denoting the number of dishes prepared by chef, chef's budget, and number of judges in judging panel respectively.\u000aNext line of each test case contains N space separated integers where ith integer denotes the rating received by the ith dish.\u000aNext M lines of each test case contain three space separated integers each: L, R and C, where the integers in the ith line denotes the value of Li, Ri and Ci respectively.\u000aOutput\u000aFor each test case, print a single integer in a line corresponding to the answer.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 N,M \u2264 105\u000a1 \u2264 K \u2264 500\u000a1 \u2264 Li \u2264 Ri \u2264 N\u000a1 \u2264 Ci \u2264 200\u000a-109 \u2264 Ai \u2264 109\u000aSum of N and M over all test cases does not exceed 5*105\u000aSubtasks :\u000aSubtask 1 : Sum of all N's across the test cases in a file does not exceed 5000. Sum of all M's is also at most 5000. (33 points).\u000aSubtask 2 : Sum of all N's across the test cases in a file does not exceed 5*105. Sum of all M's is also at most 5*105. ( 67 points ).\u000aExample\u000ainput\u000a1\u000a5 10 5\u000a10 -2 -5 7 -10\u000a1 1 5\u000a2 4 10\u000a4 4 12\u000a3 4 10\u000a1 5 15\u000a\u000aoutput\u000a5\u000aExplanation\u000aChef can drop dish numbered 3rd with rating -5 by paying 10 rupees to the 4th judge, and get the maximum possible total rating of 5.\u000aAuthor: ma5termind\u000aTester: mugurelionut\u000aEditorial: http://discuss.codechef.com/problems/MCHEF\u000aTags: data-structure dynamic-prog easy-medium july15 ma5termind\u000aDate Added: 2-04-2015\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Chef loves to prepare delicious dishes. He has prepared N dishes numbered from 1 to N for this year's MasterChef contest. He has presented all the N dishes to a panel of judges. Judging panel consists of M judges numbered from 1 to M. Rating for each dish was decided by voting from all the judges. Rating for the dishes has been given by a 1-indexed array A where Ai denotes rating of the ith dish. N 1 N N M 1 M 1 A Ai i ith th Some dishes prepared by chef are extraordinary delicious, but unfortunately, some are not. Chef has been given a chance to improve the total rating of his dishes. By total rating of dishes, we mean the sum of the ratings of his dishes. Each of the M judges has administrative power to remove some (zero or more) dishes from a specified range. The ith judge takes Ci rupees for removing each dish of Chef's choice from the dishes numbered from Li to Ri (both inclusive). Once a dish is removed by any of the M judges it will not be considered for calculating total rating of the dishes. Chef has spent a large portion of his money preparing mouth watering dishes and has only K rupees left for now. Now chef is worried about maximizing total rating of his dishes by dropping some of the N dishes. M ith th Ci i Li i Ri i M K N Please Help chef by finding the maximum total rating he can achieve such that the total expenditure does not exceed his budget of K rupees. K Input First line of input contains a single integer T denoting the number of test cases.\u000aFirst line of each test case contains three space separated integers N, K and M denoting the number of dishes prepared by chef, chef's budget, and number of judges in judging panel respectively.\u000aNext line of each test case contains N space separated integers where ith integer denotes the rating received by the ith dish.\u000aNext M lines of each test case contain three space separated integers each: L, R and C, where the integers in the ith line denotes the value of Li, Ri and Ci respectively. First line of input contains a single integer T denoting the number of test cases. T First line of each test case contains three space separated integers N, K and M denoting the number of dishes prepared by chef, chef's budget, and number of judges in judging panel respectively. N K M Next line of each test case contains N space separated integers where ith integer denotes the rating received by the ith dish. N ith th ith th Next M lines of each test case contain three space separated integers each: L, R and C, where the integers in the ith line denotes the value of Li, Ri and Ci respectively. M L R C ith th Li i Ri i Ci i Output For each test case, print a single integer in a line corresponding to the answer. Constraints 1 \u2264 T \u2264 105\u000a1 \u2264 N,M \u2264 105\u000a1 \u2264 K \u2264 500\u000a1 \u2264 Li \u2264 Ri \u2264 N\u000a1 \u2264 Ci \u2264 200\u000a-109 \u2264 Ai \u2264 109\u000aSum of N and M over all test cases does not exceed 5*105 1 \u2264 T \u2264 105 1 \u2264 T \u2264 105 5 1 \u2264 N,M \u2264 105 1 \u2264 N,M \u2264 105 5 1 \u2264 K \u2264 500 1 \u2264 K \u2264 500 1 \u2264 Li \u2264 Ri \u2264 N 1 \u2264 Li \u2264 Ri \u2264 N i i 1 \u2264 Ci \u2264 200 1 \u2264 Ci \u2264 200 i -109 \u2264 Ai \u2264 109 -109 \u2264 Ai \u2264 109 9 i 9 Sum of N and M over all test cases does not exceed 5*105 N M 5*105 5 Subtasks : Subtask 1 : Sum of all N's across the test cases in a file does not exceed 5000. Sum of all M's is also at most 5000. (33 points).\u000aSubtask 2 : Sum of all N's across the test cases in a file does not exceed 5*105. Sum of all M's is also at most 5*105. ( 67 points ). Subtask 1 : Sum of all N's across the test cases in a file does not exceed 5000. Sum of all M's is also at most 5000. (33 points). Subtask 1 : N 5000 M 5000 (33 points) Subtask 2 : Sum of all N's across the test cases in a file does not exceed 5*105. Sum of all M's is also at most 5*105. ( 67 points ). Subtask 2 : N 5*105 5 M 5*105 5 ( 67 points ) Example input input 1\u000a5 10 5\u000a10 -2 -5 7 -10\u000a1 1 5\u000a2 4 10\u000a4 4 12\u000a3 4 10\u000a1 5 15\u000a\u000aoutput\u000a5 output Explanation Chef can drop dish numbered 3rd with rating -5 by paying 10 rupees to the 4th judge, and get the maximum possible total rating of 5. Chef can drop dish numbered 3rd with rating -5 by paying 10 rupees to the 4th judge, and get the maximum possible total rating of 5. rd th  Author: ma5termind\u000aTester: mugurelionut\u000aEditorial: http://discuss.codechef.com/problems/MCHEF\u000aTags: data-structure dynamic-prog easy-medium july15 ma5termind\u000aDate Added: 2-04-2015\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind\u000aTester: mugurelionut\u000aEditorial: http://discuss.codechef.com/problems/MCHEF\u000aTags: data-structure dynamic-prog easy-medium july15 ma5termind\u000aDate Added: 2-04-2015\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind Author: ma5termind ma5termind Tester: mugurelionut Tester: mugurelionut mugurelionut Editorial: http://discuss.codechef.com/problems/MCHEF Editorial: http://discuss.codechef.com/problems/MCHEF http://discuss.codechef.com/problems/MCHEF Tags: data-structure dynamic-prog easy-medium july15 ma5termind Tags: data-structure dynamic-prog easy-medium july15 ma5termind data-structure dynamic-prog easy-medium july15 ma5termind Date Added: 2-04-2015 Date Added: 2-04-2015 Time Limit: 1.5 sec Time Limit: 1.5 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V data-structure dynamic-prog easy-medium july15 ma5termind
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/MCHEF
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVChef loves to prepare delicious dishes. He has prepared N dishes numbered from 1 to N for this year's MasterChef contest. He has presented all the N dishes to a panel of judges. Judging panel consists of M judges numbered from 1 to M. Rating for each dish was decided by voting from all the judges. Rating for the dishes has been given by a 1-indexed array A where Ai denotes rating of the ith dish.
+p18
+aVSome dishes prepared by chef are extraordinary delicious, but unfortunately, some are not. Chef has been given a chance to improve the total rating of his dishes. By total rating of dishes, we mean the sum of the ratings of his dishes. Each of the M judges has administrative power to remove some (zero or more) dishes from a specified range. The ith judge takes Ci rupees for removing each dish of Chef's choice from the dishes numbered from Li to Ri (both inclusive). Once a dish is removed by any of the M judges it will not be considered for calculating total rating of the dishes. Chef has spent a large portion of his money preparing mouth watering dishes and has only K rupees left for now. Now chef is worried about maximizing total rating of his dishes by dropping some of the N dishes.
+p19
+aVPlease Help chef by finding the maximum total rating he can achieve such that the total expenditure does not exceed his budget of K rupees.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVFirst line of input contains a single integer T denoting the number of test cases.
+p24
+aVFirst line of each test case contains three space separated integers N, K and M denoting the number of dishes prepared by chef, chef's budget, and number of judges in judging panel respectively.
+p25
+aVNext line of each test case contains N space separated integers where ith integer denotes the rating received by the ith dish.
+p26
+aVNext M lines of each test case contain three space separated integers each: L, R and C, where the integers in the ith line denotes the value of Li, Ri and Ci respectively.
+p27
+aVOutput
+p28
+aVFor each test case, print a single integer in a line corresponding to the answer.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 T \u2264 105
+p33
+aV1 \u2264 N,M \u2264 105
+p34
+aV1 \u2264 K \u2264 500
+p35
+aV1 \u2264 Li \u2264 Ri \u2264 N
+p36
+aV1 \u2264 Ci \u2264 200
+p37
+aV-109 \u2264 Ai \u2264 109
+p38
+aVSum of N and M over all test cases does not exceed 5*105
+p39
+aVSubtasks :
+p40
+aVSubtask 1 : Sum of all N's across the test cases in a file does not exceed 5000. Sum of all M's is also at most 5000. (33 points).
+p41
+aVSubtask 2 : Sum of all N's across the test cases in a file does not exceed 5*105. Sum of all M's is also at most 5*105. ( 67 points ).
+p42
+asS'id'
+p43
+c__builtin__
+id
+p44
+sS'name'
+p45
+VMCHEF
+p46
+sb.

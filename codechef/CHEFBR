@@ -1,0 +1,95 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef loves brackets. So much so, that rather than just use plain brackets like (), {}, or [], he has invented his own notation that allows him to use many more types of brackets.\u000aEach type of bracket is designated by an integer. A negative integer -x represents an opening bracket of type x; while a positive integer x represents a closing bracket of type x. Any sequence of such integers is then called a bracket-pair sequence.\u000aA balanced bracket-pair sequence can be defined recursively as follows:\u000aThe empty sequence is a balanced bracket-pair sequence.\u000aIf S is a balanced bracket-pair sequence, then -x S x is a balanced bracket-pair sequence for any positive integer x.\u000aIf S and T are balanced bracket-pair sequences, then S T is a balanced bracket-pair sequence.\u000aFor example, "-1 -2 2 -3 -4 4 3 1" is a balanced bracket-pair sequence, but "-1 -2 1 2" is not.\u000aChef has a bracket-pair sequence (which may or may not be balanced) consisting of N integers. There are 2N ways to form a subsequence of his sequence. He wants to know how many of these subsequences are balanced.\u000aHelp him to calculate this number, modulo 109+7.\u000aInput\u000aThe first line contains a single integer N denoting the number of brackets in his sequence.\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the types of brackets. A negative number means an opening bracket; a positive number means a closing bracket.\u000aOutput\u000aIn a single line print the required answer.\u000aConstraints\u000a1 \u2264 N \u2264 100\u000a-109 \u2264 Ai \u2264 109\u000aAi \u2260 0\u000aIt is not guaranteed that each opening bracket has a closing bracket of same type and vice-versa.\u000aSubtasks\u000aSubtask N \u2264 10 Points: 10\u000aSubtask N \u2264 20 Points: 15\u000aSubtask N \u2264 100 Points: 75\u000aExample\u000aInput:\u000a11\u000a-1 -2 9 2 -3 -4 3 4 8 8 1 \u000a\u000aOutput:\u000a12\u000aAuthor: berezin\u000aTester: xiaodao\u000aEditorial: http://discuss.codechef.com/problems/CHEFBR\u000aTags: berezin dec14 dp easy\u000aDate Added: 20-03-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef loves brackets. So much so, that rather than just use plain brackets like (), {}, or [], he has invented his own notation that allows him to use many more types of brackets.\u000aEach type of bracket is designated by an integer. A negative integer -x represents an opening bracket of type x; while a positive integer x represents a closing bracket of type x. Any sequence of such integers is then called a bracket-pair sequence.\u000aA balanced bracket-pair sequence can be defined recursively as follows:\u000aThe empty sequence is a balanced bracket-pair sequence.\u000aIf S is a balanced bracket-pair sequence, then -x S x is a balanced bracket-pair sequence for any positive integer x.\u000aIf S and T are balanced bracket-pair sequences, then S T is a balanced bracket-pair sequence.\u000aFor example, "-1 -2 2 -3 -4 4 3 1" is a balanced bracket-pair sequence, but "-1 -2 1 2" is not.\u000aChef has a bracket-pair sequence (which may or may not be balanced) consisting of N integers. There are 2N ways to form a subsequence of his sequence. He wants to know how many of these subsequences are balanced.\u000aHelp him to calculate this number, modulo 109+7.\u000aInput\u000aThe first line contains a single integer N denoting the number of brackets in his sequence.\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the types of brackets. A negative number means an opening bracket; a positive number means a closing bracket.\u000aOutput\u000aIn a single line print the required answer.\u000aConstraints\u000a1 \u2264 N \u2264 100\u000a-109 \u2264 Ai \u2264 109\u000aAi \u2260 0\u000aIt is not guaranteed that each opening bracket has a closing bracket of same type and vice-versa.\u000aSubtasks\u000aSubtask N \u2264 10 Points: 10\u000aSubtask N \u2264 20 Points: 15\u000aSubtask N \u2264 100 Points: 75\u000aExample\u000aInput:\u000a11\u000a-1 -2 9 2 -3 -4 3 4 8 8 1 \u000a\u000aOutput:\u000a12\u000aAuthor: berezin\u000aTester: xiaodao\u000aEditorial: http://discuss.codechef.com/problems/CHEFBR\u000aTags: berezin dec14 dp easy\u000aDate Added: 20-03-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Chef loves brackets. So much so, that rather than just use plain brackets like (), {}, or [], he has invented his own notation that allows him to use many more types of brackets. Each type of bracket is designated by an integer. A negative integer -x represents an opening bracket of type x; while a positive integer x represents a closing bracket of type x. Any sequence of such integers is then called a bracket-pair sequence. -x x x x bracket-pair sequence A balanced bracket-pair sequence can be defined recursively as follows: balanced The empty sequence is a balanced bracket-pair sequence.\u000aIf S is a balanced bracket-pair sequence, then -x S x is a balanced bracket-pair sequence for any positive integer x.\u000aIf S and T are balanced bracket-pair sequences, then S T is a balanced bracket-pair sequence. The empty sequence is a balanced bracket-pair sequence. If S is a balanced bracket-pair sequence, then -x S x is a balanced bracket-pair sequence for any positive integer x. S -x S x x If S and T are balanced bracket-pair sequences, then S T is a balanced bracket-pair sequence. S T S T For example, "-1 -2 2 -3 -4 4 3 1" is a balanced bracket-pair sequence, but "-1 -2 1 2" is not. Chef has a bracket-pair sequence (which may or may not be balanced) consisting of N integers. There are 2N ways to form a subsequence of his sequence. He wants to know how many of these subsequences are balanced. N N N subsequence Help him to calculate this number, modulo 109+7. 109+7 9 Input The first line contains a single integer N denoting the number of brackets in his sequence. N The second line contains N space-separated integers A1, A2, ..., AN denoting the types of brackets. A negative number means an opening bracket; a positive number means a closing bracket. N A1 1 A2 2 AN N Output In a single line print the required answer. Constraints 1 \u2264 N \u2264 100\u000a-109 \u2264 Ai \u2264 109\u000aAi \u2260 0\u000aIt is not guaranteed that each opening bracket has a closing bracket of same type and vice-versa. 1 \u2264 N \u2264 100 1 N 100 -109 \u2264 Ai \u2264 109 -109 9 Ai i 109 9 Ai \u2260 0 Ai i It is not guaranteed that each opening bracket has a closing bracket of same type and vice-versa. not Subtasks Subtask N \u2264 10 Points: 10\u000aSubtask N \u2264 20 Points: 15\u000aSubtask N \u2264 100 Points: 75 Subtask N \u2264 10 Points: 10 N 10 Subtask N \u2264 20 Points: 15 N 20 Subtask N \u2264 100 Points: 75 N 100 Example Input:\u000a11\u000a-1 -2 9 2 -3 -4 3 4 8 8 1 \u000a\u000aOutput:\u000a12 Input: Output:  Author: berezin\u000aTester: xiaodao\u000aEditorial: http://discuss.codechef.com/problems/CHEFBR\u000aTags: berezin dec14 dp easy\u000aDate Added: 20-03-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin\u000aTester: xiaodao\u000aEditorial: http://discuss.codechef.com/problems/CHEFBR\u000aTags: berezin dec14 dp easy\u000aDate Added: 20-03-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin Author: berezin berezin Tester: xiaodao Tester: xiaodao xiaodao Editorial: http://discuss.codechef.com/problems/CHEFBR Editorial: http://discuss.codechef.com/problems/CHEFBR http://discuss.codechef.com/problems/CHEFBR Tags: berezin dec14 dp easy Tags: berezin dec14 dp easy berezin dec14 dp easy Date Added: 20-03-2014 Date Added: 20-03-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V berezin dec14 dp easy
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFBR
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVChef loves brackets. So much so, that rather than just use plain brackets like (), {}, or [], he has invented his own notation that allows him to use many more types of brackets.
+p18
+aVEach type of bracket is designated by an integer. A negative integer -x represents an opening bracket of type x; while a positive integer x represents a closing bracket of type x. Any sequence of such integers is then called a bracket-pair sequence.
+p19
+aVA balanced bracket-pair sequence can be defined recursively as follows:
+p20
+aVThe empty sequence is a balanced bracket-pair sequence.
+p21
+aVIf S is a balanced bracket-pair sequence, then -x S x is a balanced bracket-pair sequence for any positive integer x.
+p22
+aVIf S and T are balanced bracket-pair sequences, then S T is a balanced bracket-pair sequence.
+p23
+aVFor example, "-1 -2 2 -3 -4 4 3 1" is a balanced bracket-pair sequence, but "-1 -2 1 2" is not.
+p24
+aVChef has a bracket-pair sequence (which may or may not be balanced) consisting of N integers. There are 2N ways to form a subsequence of his sequence. He wants to know how many of these subsequences are balanced.
+p25
+aVHelp him to calculate this number, modulo 109+7.
+p26
+asS'input'
+p27
+(lp28
+VInput
+p29
+aVThe first line contains a single integer N denoting the number of brackets in his sequence.
+p30
+aVThe second line contains N space-separated integers A1, A2, ..., AN denoting the types of brackets. A negative number means an opening bracket; a positive number means a closing bracket.
+p31
+aVOutput
+p32
+aVIn a single line print the required answer.
+p33
+asS'constraints'
+p34
+(lp35
+VConstraints
+p36
+aV1 \u2264 N \u2264 100
+p37
+aV-109 \u2264 Ai \u2264 109
+p38
+aVAi \u2260 0
+p39
+aVIt is not guaranteed that each opening bracket has a closing bracket of same type and vice-versa.
+p40
+aVSubtasks
+p41
+aVSubtask N \u2264 10 Points: 10
+p42
+aVSubtask N \u2264 20 Points: 15
+p43
+aVSubtask N \u2264 100 Points: 75
+p44
+asS'id'
+p45
+c__builtin__
+id
+p46
+sS'name'
+p47
+VCHEFBR
+p48
+sb.

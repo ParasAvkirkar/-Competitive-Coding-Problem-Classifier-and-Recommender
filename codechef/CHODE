@@ -1,0 +1,90 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aOnce upon a time chef decided to learn encodings. And, obviously, he started with the easiest one (well, actually the easiest after Caesar cypher) \u2013 substitution cypher.\u000a\u000a\u000aBut very soon Chef got bored with encoding/decoding, so he started thinking how to hack this cypher.\u000aHe already knows some algorithm, which is not always correct,\u000abut it\u2019s sufficient for now. Here is its description.\u000a\u000aImagine we know frequency sequence of English letters (this means, that letters are sorted by their frequency of appearing in English texts, in ascending order).\u000aAnd let\u2019s find frequency sequence of cyphered letters (if some of them appear equal number of times, then first in frequency sequence will be lower letter between them).\u000aNow, using this two frequency sequences we can recover plain text. Just substitute cyphered letter with origin one, if they are at same positions in sequences.\u000a\u000aNow, Chef has frequency sequence of English letters and cypher text. And he asks you to recover plain text. Please, help him.\u000aInput\u000aIn first line number T is given - number of test cases. Then T test cases follow. Each test case consists of two lines - frequency sequence and encrypted text.\u000aOutput\u000aFor each test case you should output decrypted with the given frequency sequence text. Please note, that the case of letters should be preserved.\u000aConstraints\u000a1 \u2264 T \u2264 1000;\u000aLength of frequency sequence is always 26;\u000a1 \u2264 length of the text \u2264 150000;\u000a1 \u2264 sum lengths of all texts \u2264 150000.\u000aFrequency sequence consists of all lowercase English letters. Text consists of any characters.\u000aExample\u000aInput:\u000a3\u000aqwrtyuipasdfgjkzxcvbnmheol\u000adummy!\u000abfgjklmopqrstuwxzhvnicdyea\u000aabcd b efgd hbi!\u000aqwrtyuipasdfgjkzxcvbnmheol\u000aDummy!\u000a\u000aOutput:\u000ahello!\u000ahave a nice day!\u000aHello!\u000aAuthor: witalij_hq\u000aTester: white_king\u000aEditorial: http://discuss.codechef.com/problems/CHODE\u000aTags: cakewalk dec13 programming witalij_hq\u000aDate Added: 6-10-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aOnce upon a time chef decided to learn encodings. And, obviously, he started with the easiest one (well, actually the easiest after Caesar cypher) \u2013 substitution cypher.\u000a\u000a\u000aBut very soon Chef got bored with encoding/decoding, so he started thinking how to hack this cypher.\u000aHe already knows some algorithm, which is not always correct,\u000abut it\u2019s sufficient for now. Here is its description.\u000a\u000aImagine we know frequency sequence of English letters (this means, that letters are sorted by their frequency of appearing in English texts, in ascending order).\u000aAnd let\u2019s find frequency sequence of cyphered letters (if some of them appear equal number of times, then first in frequency sequence will be lower letter between them).\u000aNow, using this two frequency sequences we can recover plain text. Just substitute cyphered letter with origin one, if they are at same positions in sequences.\u000a\u000aNow, Chef has frequency sequence of English letters and cypher text. And he asks you to recover plain text. Please, help him.\u000aInput\u000aIn first line number T is given - number of test cases. Then T test cases follow. Each test case consists of two lines - frequency sequence and encrypted text.\u000aOutput\u000aFor each test case you should output decrypted with the given frequency sequence text. Please note, that the case of letters should be preserved.\u000aConstraints\u000a1 \u2264 T \u2264 1000;\u000aLength of frequency sequence is always 26;\u000a1 \u2264 length of the text \u2264 150000;\u000a1 \u2264 sum lengths of all texts \u2264 150000.\u000aFrequency sequence consists of all lowercase English letters. Text consists of any characters.\u000aExample\u000aInput:\u000a3\u000aqwrtyuipasdfgjkzxcvbnmheol\u000adummy!\u000abfgjklmopqrstuwxzhvnicdyea\u000aabcd b efgd hbi!\u000aqwrtyuipasdfgjkzxcvbnmheol\u000aDummy!\u000a\u000aOutput:\u000ahello!\u000ahave a nice day!\u000aHello!\u000aAuthor: witalij_hq\u000aTester: white_king\u000aEditorial: http://discuss.codechef.com/problems/CHODE\u000aTags: cakewalk dec13 programming witalij_hq\u000aDate Added: 6-10-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Once upon a time chef decided to learn encodings. And, obviously, he started with the easiest one (well, actually the easiest after Caesar cypher) \u2013 substitution cypher.\u000a\u000a\u000aBut very soon Chef got bored with encoding/decoding, so he started thinking how to hack this cypher.\u000aHe already knows some algorithm, which is not always correct,\u000abut it\u2019s sufficient for now. Here is its description.        Imagine we know frequency sequence of English letters (this means, that letters are sorted by their frequency of appearing in English texts, in ascending order).\u000aAnd let\u2019s find frequency sequence of cyphered letters (if some of them appear equal number of times, then first in frequency sequence will be lower letter between them).\u000aNow, using this two frequency sequences we can recover plain text. Just substitute cyphered letter with origin one, if they are at same positions in sequences.     Now, Chef has frequency sequence of English letters and cypher text. And he asks you to recover plain text. Please, help him.  Input In first line number T is given - number of test cases. Then T test cases follow. Each test case consists of two lines - frequency sequence and encrypted text. T T Output For each test case you should output decrypted with the given frequency sequence text. Please note, that the case of letters should be preserved. Constraints  1 \u2264 T \u2264 1000;\u000aLength of frequency sequence is always 26;\u000a1 \u2264 length of the text \u2264 150000;\u000a1 \u2264 sum lengths of all texts \u2264 150000.\u000aFrequency sequence consists of all lowercase English letters. Text consists of any characters. 1 \u2264 T \u2264 1000; 1 T 1000 Length of frequency sequence is always 26; 1 \u2264 length of the text \u2264 150000; 1 150000 1 \u2264 sum lengths of all texts \u2264 150000. 1 150000 Frequency sequence consists of all lowercase English letters. Text consists of any characters.  Example Input:\u000a3\u000aqwrtyuipasdfgjkzxcvbnmheol\u000adummy!\u000abfgjklmopqrstuwxzhvnicdyea\u000aabcd b efgd hbi!\u000aqwrtyuipasdfgjkzxcvbnmheol\u000aDummy!\u000a\u000aOutput:\u000ahello!\u000ahave a nice day!\u000aHello! Input: Output:  Author: witalij_hq\u000aTester: white_king\u000aEditorial: http://discuss.codechef.com/problems/CHODE\u000aTags: cakewalk dec13 programming witalij_hq\u000aDate Added: 6-10-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq\u000aTester: white_king\u000aEditorial: http://discuss.codechef.com/problems/CHODE\u000aTags: cakewalk dec13 programming witalij_hq\u000aDate Added: 6-10-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq Author: witalij_hq witalij_hq Tester: white_king Tester: white_king white_king Editorial: http://discuss.codechef.com/problems/CHODE Editorial: http://discuss.codechef.com/problems/CHODE http://discuss.codechef.com/problems/CHODE Tags: cakewalk dec13 programming witalij_hq Tags: cakewalk dec13 programming witalij_hq cakewalk dec13 programming witalij_hq Date Added: 6-10-2013 Date Added: 6-10-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cakewalk dec13 programming witalij_hq
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHODE
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVOnce upon a time chef decided to learn encodings. And, obviously, he started with the easiest one (well, actually the easiest after Caesar cypher) \u2013 substitution cypher.
+p18
+aV
+p19
+ag19
+aVBut very soon Chef got bored with encoding/decoding, so he started thinking how to hack this cypher.
+p20
+aVHe already knows some algorithm, which is not always correct,
+p21
+aVbut it\u2019s sufficient for now. Here is its description.
+p22
+ag19
+aVImagine we know frequency sequence of English letters (this means, that letters are sorted by their frequency of appearing in English texts, in ascending order).
+p23
+aVAnd let\u2019s find frequency sequence of cyphered letters (if some of them appear equal number of times, then first in frequency sequence will be lower letter between them).
+p24
+aVNow, using this two frequency sequences we can recover plain text. Just substitute cyphered letter with origin one, if they are at same positions in sequences.
+p25
+ag19
+aVNow, Chef has frequency sequence of English letters and cypher text. And he asks you to recover plain text. Please, help him.
+p26
+asS'input'
+p27
+(lp28
+VInput
+p29
+aVIn first line number T is given - number of test cases. Then T test cases follow. Each test case consists of two lines - frequency sequence and encrypted text.
+p30
+aVOutput
+p31
+aVFor each test case you should output decrypted with the given frequency sequence text. Please note, that the case of letters should be preserved.
+p32
+asS'constraints'
+p33
+(lp34
+VConstraints
+p35
+aV1 \u2264 T \u2264 1000;
+p36
+aVLength of frequency sequence is always 26;
+p37
+aV1 \u2264 length of the text \u2264 150000;
+p38
+aV1 \u2264 sum lengths of all texts \u2264 150000.
+p39
+aVFrequency sequence consists of all lowercase English letters. Text consists of any characters.
+p40
+asS'id'
+p41
+c__builtin__
+id
+p42
+sS'name'
+p43
+VCHODE
+p44
+sb.

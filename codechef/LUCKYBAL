@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aA Little Elephant from the Zoo of Lviv likes lucky strings, i.e., the strings that consist only of the lucky digits 4 and 7.\u000aThe Little Elephant calls some string T of the length M balanced if there exists at least one integer X (1 \u2264 X \u2264 M) such that the number of digits 4 in the substring T[1, X - 1] is equal to the number of digits 7 in the substring T[X, M]. For example, the string S = 7477447 is balanced since S[1, 4] = 7477 has 1 digit 4 and S[5, 7] = 447 has 1 digit 7. On the other hand, one can verify that the string S = 7 is not balanced.\u000aThe Little Elephant has the string S of the length N. He wants to know the number of such pairs of integers (L; R) that 1 \u2264 L \u2264 R \u2264 N and the substring S[L, R] is balanced. Help him to find this number.\u000aNotes.\u000aLet S be some lucky string. Then\u000a|S| denotes the length of the string S;\u000aS[i] (1 \u2264 i \u2264 |S|) denotes the ith character of S (the numeration of characters starts from 1);\u000aS[L, R] (1 \u2264 L \u2264 R \u2264 |S|) denotes the string with the following sequence of characters: S[L], S[L + 1], ..., S[R], and is called a substring of S. For L > R we mean by S[L, R] an empty string.\u000aInput\u000aThe first line of the input file contains a single integer T, the number of test cases. Each of the following T lines contains one string, the string S for the corresponding test case. The input file does not contain any whitespaces.\u000aOutput\u000aFor each test case output a single line containing the answer for this test case.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 |S| \u2264 100000\u000aS consists only of the lucky digits 4 and 7.\u000aExample\u000aInput:\u000a4\u000a47\u000a74\u000a477\u000a4747477\u000a\u000aOutput:\u000a2\u000a2\u000a3\u000a23\u000aExplanation\u000aIn the first test case balance substrings are S[1, 1] = 4 and S[1, 2] = 47.\u000aIn the second test case balance substrings are S[2, 2] = 4 and S[1, 2] = 74.\u000aUnfortunately, we can't provide you with the explanations of the third and the fourth test cases. You should figure it out by yourself. Please, don't ask about this in comments.\u000aAuthor: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKYBAL\u000aTags: cook22 easy witua\u000aDate Added: 1-03-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aA Little Elephant from the Zoo of Lviv likes lucky strings, i.e., the strings that consist only of the lucky digits 4 and 7.\u000aThe Little Elephant calls some string T of the length M balanced if there exists at least one integer X (1 \u2264 X \u2264 M) such that the number of digits 4 in the substring T[1, X - 1] is equal to the number of digits 7 in the substring T[X, M]. For example, the string S = 7477447 is balanced since S[1, 4] = 7477 has 1 digit 4 and S[5, 7] = 447 has 1 digit 7. On the other hand, one can verify that the string S = 7 is not balanced.\u000aThe Little Elephant has the string S of the length N. He wants to know the number of such pairs of integers (L; R) that 1 \u2264 L \u2264 R \u2264 N and the substring S[L, R] is balanced. Help him to find this number.\u000aNotes.\u000aLet S be some lucky string. Then\u000a|S| denotes the length of the string S;\u000aS[i] (1 \u2264 i \u2264 |S|) denotes the ith character of S (the numeration of characters starts from 1);\u000aS[L, R] (1 \u2264 L \u2264 R \u2264 |S|) denotes the string with the following sequence of characters: S[L], S[L + 1], ..., S[R], and is called a substring of S. For L > R we mean by S[L, R] an empty string.\u000aInput\u000aThe first line of the input file contains a single integer T, the number of test cases. Each of the following T lines contains one string, the string S for the corresponding test case. The input file does not contain any whitespaces.\u000aOutput\u000aFor each test case output a single line containing the answer for this test case.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 |S| \u2264 100000\u000aS consists only of the lucky digits 4 and 7.\u000aExample\u000aInput:\u000a4\u000a47\u000a74\u000a477\u000a4747477\u000a\u000aOutput:\u000a2\u000a2\u000a3\u000a23\u000aExplanation\u000aIn the first test case balance substrings are S[1, 1] = 4 and S[1, 2] = 47.\u000aIn the second test case balance substrings are S[2, 2] = 4 and S[1, 2] = 74.\u000aUnfortunately, we can't provide you with the explanations of the third and the fourth test cases. You should figure it out by yourself. Please, don't ask about this in comments.\u000aAuthor: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKYBAL\u000aTags: cook22 easy witua\u000aDate Added: 1-03-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. A Little Elephant from the Zoo of Lviv likes lucky strings, i.e., the strings that consist only of the lucky digits 4 and 7. lucky strings 4 7 The Little Elephant calls some string T of the length M balanced if there exists at least one integer X (1 \u2264 X \u2264 M) such that the number of digits 4 in the substring T[1, X - 1] is equal to the number of digits 7 in the substring T[X, M]. For example, the string S = 7477447 is balanced since S[1, 4] = 7477 has 1 digit 4 and S[5, 7] = 447 has 1 digit 7. On the other hand, one can verify that the string S = 7 is not balanced. T M balanced X 1 \u2264 X \u2264 M 4 T[1, X - 1] 7 T[X, M] S = 7477447 S[1, 4] = 7477 4 S[5, 7] = 447 7 S = 7 The Little Elephant has the string S of the length N. He wants to know the number of such pairs of integers (L; R) that 1 \u2264 L \u2264 R \u2264 N and the substring S[L, R] is balanced. Help him to find this number. S N (L; R) 1 \u2264 L \u2264 R \u2264 N S[L, R] Notes. Notes. S |S| denotes the length of the string S;\u000aS[i] (1 \u2264 i \u2264 |S|) denotes the ith character of S (the numeration of characters starts from 1);\u000aS[L, R] (1 \u2264 L \u2264 R \u2264 |S|) denotes the string with the following sequence of characters: S[L], S[L + 1], ..., S[R], and is called a substring of S. For L > R we mean by S[L, R] an empty string. |S| denotes the length of the string S; |S| S S[i] (1 \u2264 i \u2264 |S|) denotes the ith character of S (the numeration of characters starts from 1); S[i] 1 \u2264 i \u2264 |S| i th S 1 S[L, R] (1 \u2264 L \u2264 R \u2264 |S|) denotes the string with the following sequence of characters: S[L], S[L + 1], ..., S[R], and is called a substring of S. For L > R we mean by S[L, R] an empty string. S[L, R] 1 \u2264 L \u2264 R \u2264 |S| S[L], S[L + 1], ..., S[R] substring S L > R S[L, R] Input The first line of the input file contains a single integer T, the number of test cases. Each of the following T lines contains one string, the string S for the corresponding test case. The input file does not contain any whitespaces. T T S Output Constraints 1 \u2264 T \u2264 10 T 1 \u2264 |S| \u2264 100000 |S| S consists only of the lucky digits 4 and 7. S 4 7 Example Input:\u000a4\u000a47\u000a74\u000a477\u000a4747477\u000a\u000aOutput:\u000a2\u000a2\u000a3\u000a23 Input: Output: Explanation  In the first test case balance substrings are S[1, 1] = 4 and S[1, 2] = 47. S[1, 1] = 4 S[1, 2] = 47 In the second test case balance substrings are S[2, 2] = 4 and S[1, 2] = 74. S[2, 2] = 4 S[1, 2] = 74 Unfortunately, we can't provide you with the explanations of the third and the fourth test cases. You should figure it out by yourself. Please, don't ask about this in comments. Unfortunately, we can't provide you with the explanations of the third and the fourth test cases. You should figure it out by yourself. Please, don't ask about this in comments.  Author: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKYBAL\u000aTags: cook22 easy witua\u000aDate Added: 1-03-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua\u000aTester: anton_lunyov\u000aEditorial: http://discuss.codechef.com/problems/LUCKYBAL\u000aTags: cook22 easy witua\u000aDate Added: 1-03-2012\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witua Author: witua witua Tester: anton_lunyov Tester: anton_lunyov anton_lunyov Editorial: http://discuss.codechef.com/problems/LUCKYBAL Editorial: http://discuss.codechef.com/problems/LUCKYBAL http://discuss.codechef.com/problems/LUCKYBAL Tags: cook22 easy witua Tags: cook22 easy witua cook22 easy witua Date Added: 1-03-2012 Date Added: 1-03-2012 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook22 easy witua
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LUCKYBAL
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVA Little Elephant from the Zoo of Lviv likes lucky strings, i.e., the strings that consist only of the lucky digits 4 and 7.
+p17
+aVThe Little Elephant calls some string T of the length M balanced if there exists at least one integer X (1 \u2264 X \u2264 M) such that the number of digits 4 in the substring T[1, X - 1] is equal to the number of digits 7 in the substring T[X, M]. For example, the string S = 7477447 is balanced since S[1, 4] = 7477 has 1 digit 4 and S[5, 7] = 447 has 1 digit 7. On the other hand, one can verify that the string S = 7 is not balanced.
+p18
+aVThe Little Elephant has the string S of the length N. He wants to know the number of such pairs of integers (L; R) that 1 \u2264 L \u2264 R \u2264 N and the substring S[L, R] is balanced. Help him to find this number.
+p19
+aVNotes.
+p20
+aVLet S be some lucky string. Then
+p21
+aV|S| denotes the length of the string S;
+p22
+aVS[i] (1 \u2264 i \u2264 |S|) denotes the ith character of S (the numeration of characters starts from 1);
+p23
+aVS[L, R] (1 \u2264 L \u2264 R \u2264 |S|) denotes the string with the following sequence of characters: S[L], S[L + 1], ..., S[R], and is called a substring of S. For L > R we mean by S[L, R] an empty string.
+p24
+asS'input'
+p25
+(lp26
+VInput
+p27
+aVThe first line of the input file contains a single integer T, the number of test cases. Each of the following T lines contains one string, the string S for the corresponding test case. The input file does not contain any whitespaces.
+p28
+aVOutput
+p29
+aVFor each test case output a single line containing the answer for this test case.
+p30
+asS'constraints'
+p31
+(lp32
+VConstraints
+p33
+aV1 \u2264 T \u2264 10
+p34
+aV1 \u2264 |S| \u2264 100000
+p35
+aVS consists only of the lucky digits 4 and 7.
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VLUCKYBAL
+p40
+sb.

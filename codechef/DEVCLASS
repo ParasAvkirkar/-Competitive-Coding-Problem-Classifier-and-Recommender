@@ -1,0 +1,109 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aDevu is a class teacher of a class of n students. One day, in the morning prayer of the school, all the students of his class were standing in a line. You are given information of their arrangement by a string s. The string s consists of only letters 'B' and 'G', where 'B' represents a boy and 'G' represents a girl.\u000aDevu wants inter-gender interaction among his class should to be maximum. So he does not like seeing two or more boys/girls standing nearby (i.e. continuous) in the line. e.g. he does not like the arrangements BBG and GBB, but he likes BG, GBG etc.\u000aNow by seeing the initial arrangement s of students, Devu may get furious and now he wants to change this arrangement into a likable arrangement. For achieving that, he can swap positions of any two students (not necessary continuous). Let the cost of swapping people from position i with position j (i \u2260 j) be c(i, j). You are provided an integer variable type, then the cost of the the swap will be defined by c(i, j) = |j \u2212 i|type.\u000aPlease help Devu in finding minimum cost of swaps needed to convert the current arrangement into a likable one.\u000aInput\u000aThe first line of input contains an integer T, denoting the number of test cases. Then T test cases are follow.\u000aThe first line of each test case contains an integer type, denoting the type of the cost function. Then the next line contains string s of length n, denoting the initial arrangement s of students.\u000aNote that the integer n is not given explicitly in input.\u000aOutput\u000aFor each test case, print a single line containing the answer of the test case, that is, the minimum cost to convert the current arrangement into a likable one. If it is not possible to convert the current arrangement into a likable one, then print -1 instead of the minimum cost.\u000aConstraints and Subtasks\u000aSubtask 1: 25 points\u000a1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 0\u000aSum of n over all the test cases in one test file does not exceed 106.\u000aSubtask 2: 25 points\u000a1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 1\u000aSum of n over all the test cases in one test file does not exceed 106.\u000aSubtask 3: 25 points\u000a1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 2\u000aSum of n over all the test cases in one test file does not exceed 106.\u000aSubtask 4: 25 points\u000a1 \u2264 T \u2264 102\u000a1 \u2264 n \u2264 103\u000atype can be 0, 1 or 2, that is type \u2208 {0, 1, 2}.\u000aExample\u000aInput:\u000a8\u000a0\u000aBB\u000a0\u000aBG\u000a0\u000aBBGG\u000a1\u000aBGG\u000a1\u000aBGGB\u000a1\u000aBBBGG\u000a2\u000aBBGG\u000a2\u000aBGB\u000a\u000aOutput:\u000a-1\u000a0\u000a1\u000a1\u000a1\u000a3\u000a1\u000a0\u000aExplanation\u000aNote type of the first 3 test cases is 0. So c(i, j) = 1. Hence we just have to count minimum number of swaps needed.\u000aExample case 1. There is no way to make sure that both the boys does not stand nearby. So answer is -1.\u000aExample case 2. Arrangement is already valid. No swap is needed. So answer is 0.\u000aExample case 3. Swap boy at position 1 with girl at position 2. After swap the arrangement will be BGBG which is a valid arrangement. So answer is 1.\u000aNow type of the next 3 test cases is 1. So c(i, j) = |j \u2212 i|, that is, the absolute value of the difference between i and j.\u000aExample case 4. Swap boy at position 0 with girl at position 1. After swap the arrangement will be GBG which is a valid arrangement. So answer is |1 - 0| = 1.\u000aExample case 5. Swap boy at position 0 with girl at position 1. After swap the arrangement will be GBGB which is a valid arrangement. So answer is |1 - 0| = 1.\u000aExample case 6. Swap boy at position 1 with girl at position 4. After swap the arrangement will be BGBGB which is a valid arrangement. So answer is |4 - 1| = 3.\u000aThen type of the last 2 test cases is 2. So c(i, j) = (j \u2212 i)2\u000aExample case 7. Swap boy at position 1 with girl at position 2. After swap the arrangement will be BGBG which is a valid arrangement. So answer is (2 - 1)2 = 1.\u000aExample case 8. Arrangement is already valid. No swap is needed. So answer is 0.\u000aAuthor: admin2\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/DEVCLASS\u000aTags: ad-hoc admin2 easy greedy march15\u000aDate Added: 23-12-2014\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aDevu is a class teacher of a class of n students. One day, in the morning prayer of the school, all the students of his class were standing in a line. You are given information of their arrangement by a string s. The string s consists of only letters 'B' and 'G', where 'B' represents a boy and 'G' represents a girl.\u000aDevu wants inter-gender interaction among his class should to be maximum. So he does not like seeing two or more boys/girls standing nearby (i.e. continuous) in the line. e.g. he does not like the arrangements BBG and GBB, but he likes BG, GBG etc.\u000aNow by seeing the initial arrangement s of students, Devu may get furious and now he wants to change this arrangement into a likable arrangement. For achieving that, he can swap positions of any two students (not necessary continuous). Let the cost of swapping people from position i with position j (i \u2260 j) be c(i, j). You are provided an integer variable type, then the cost of the the swap will be defined by c(i, j) = |j \u2212 i|type.\u000aPlease help Devu in finding minimum cost of swaps needed to convert the current arrangement into a likable one.\u000aInput\u000aThe first line of input contains an integer T, denoting the number of test cases. Then T test cases are follow.\u000aThe first line of each test case contains an integer type, denoting the type of the cost function. Then the next line contains string s of length n, denoting the initial arrangement s of students.\u000aNote that the integer n is not given explicitly in input.\u000aOutput\u000aFor each test case, print a single line containing the answer of the test case, that is, the minimum cost to convert the current arrangement into a likable one. If it is not possible to convert the current arrangement into a likable one, then print -1 instead of the minimum cost.\u000aConstraints and Subtasks\u000aSubtask 1: 25 points\u000a1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 0\u000aSum of n over all the test cases in one test file does not exceed 106.\u000aSubtask 2: 25 points\u000a1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 1\u000aSum of n over all the test cases in one test file does not exceed 106.\u000aSubtask 3: 25 points\u000a1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 2\u000aSum of n over all the test cases in one test file does not exceed 106.\u000aSubtask 4: 25 points\u000a1 \u2264 T \u2264 102\u000a1 \u2264 n \u2264 103\u000atype can be 0, 1 or 2, that is type \u2208 {0, 1, 2}.\u000aExample\u000aInput:\u000a8\u000a0\u000aBB\u000a0\u000aBG\u000a0\u000aBBGG\u000a1\u000aBGG\u000a1\u000aBGGB\u000a1\u000aBBBGG\u000a2\u000aBBGG\u000a2\u000aBGB\u000a\u000aOutput:\u000a-1\u000a0\u000a1\u000a1\u000a1\u000a3\u000a1\u000a0\u000aExplanation\u000aNote type of the first 3 test cases is 0. So c(i, j) = 1. Hence we just have to count minimum number of swaps needed.\u000aExample case 1. There is no way to make sure that both the boys does not stand nearby. So answer is -1.\u000aExample case 2. Arrangement is already valid. No swap is needed. So answer is 0.\u000aExample case 3. Swap boy at position 1 with girl at position 2. After swap the arrangement will be BGBG which is a valid arrangement. So answer is 1.\u000aNow type of the next 3 test cases is 1. So c(i, j) = |j \u2212 i|, that is, the absolute value of the difference between i and j.\u000aExample case 4. Swap boy at position 0 with girl at position 1. After swap the arrangement will be GBG which is a valid arrangement. So answer is |1 - 0| = 1.\u000aExample case 5. Swap boy at position 0 with girl at position 1. After swap the arrangement will be GBGB which is a valid arrangement. So answer is |1 - 0| = 1.\u000aExample case 6. Swap boy at position 1 with girl at position 4. After swap the arrangement will be BGBGB which is a valid arrangement. So answer is |4 - 1| = 3.\u000aThen type of the last 2 test cases is 2. So c(i, j) = (j \u2212 i)2\u000aExample case 7. Swap boy at position 1 with girl at position 2. After swap the arrangement will be BGBG which is a valid arrangement. So answer is (2 - 1)2 = 1.\u000aExample case 8. Arrangement is already valid. No swap is needed. So answer is 0.\u000aAuthor: admin2\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/DEVCLASS\u000aTags: ad-hoc admin2 easy greedy march15\u000aDate Added: 23-12-2014\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Devu is a class teacher of a class of n students. One day, in the morning prayer of the school, all the students of his class were standing in a line. You are given information of their arrangement by a string s. The string s consists of only letters 'B' and 'G', where 'B' represents a boy and 'G' represents a girl. n s s 'B' 'G' 'B' 'G' Devu wants inter-gender interaction among his class should to be maximum. So he does not like seeing two or more boys/girls standing nearby (i.e. continuous) in the line. e.g. he does not like the arrangements BBG and GBB, but he likes BG, GBG etc. BBG GBB BG GBG Now by seeing the initial arrangement s of students, Devu may get furious and now he wants to change this arrangement into a likable arrangement. For achieving that, he can swap positions of any two students (not necessary continuous). Let the cost of swapping people from position i with position j (i \u2260 j) be c(i, j). You are provided an integer variable type, then the cost of the the swap will be defined by c(i, j) = |j \u2212 i|type. s i j i \u2260 j c(i, j) type c(i, j) = |j \u2212 i|type type Please help Devu in finding minimum cost of swaps needed to convert the current arrangement into a likable one. Input The first line of input contains an integer T, denoting the number of test cases. Then T test cases are follow. T T The first line of each test case contains an integer type, denoting the type of the cost function. Then the next line contains string s of length n, denoting the initial arrangement s of students. type s n s Note that the integer n is not given explicitly in input. n Output For each test case, print a single line containing the answer of the test case, that is, the minimum cost to convert the current arrangement into a likable one. If it is not possible to convert the current arrangement into a likable one, then print -1 instead of the minimum cost. -1 Constraints and Subtasks Subtask 1: 25 points Subtask 1: 25 points 1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 0\u000aSum of n over all the test cases in one test file does not exceed 106. 1 \u2264 T \u2264 105 1 \u2264 T \u2264 105 5 1 \u2264 n \u2264 105 1 \u2264 n \u2264 105 5 type = 0 type = 0 Sum of n over all the test cases in one test file does not exceed 106. n 106. 6  Subtask 2: 25 points Subtask 2: 25 points 1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 1\u000aSum of n over all the test cases in one test file does not exceed 106. 1 \u2264 T \u2264 105 1 \u2264 T \u2264 105 5 1 \u2264 n \u2264 105 1 \u2264 n \u2264 105 5 type = 1 type = 1 Sum of n over all the test cases in one test file does not exceed 106. n 106. 6  Subtask 3: 25 points Subtask 3: 25 points 1 \u2264 T \u2264 105\u000a1 \u2264 n \u2264 105\u000atype = 2\u000aSum of n over all the test cases in one test file does not exceed 106. 1 \u2264 T \u2264 105 1 \u2264 T \u2264 105 5 1 \u2264 n \u2264 105 1 \u2264 n \u2264 105 5 type = 2 type = 2 Sum of n over all the test cases in one test file does not exceed 106. n 106. 6  Subtask 4: 25 points Subtask 4: 25 points 1 \u2264 T \u2264 102\u000a1 \u2264 n \u2264 103\u000atype can be 0, 1 or 2, that is type \u2208 {0, 1, 2}. 1 \u2264 T \u2264 102 1 \u2264 T \u2264 102 2 1 \u2264 n \u2264 103 1 \u2264 n \u2264 103 3 type can be 0, 1 or 2, that is type \u2208 {0, 1, 2}. type 0 1 2 type \u2208 {0, 1, 2} Example Input:\u000a8\u000a0\u000aBB\u000a0\u000aBG\u000a0\u000aBBGG\u000a1\u000aBGG\u000a1\u000aBGGB\u000a1\u000aBBBGG\u000a2\u000aBBGG\u000a2\u000aBGB\u000a\u000aOutput:\u000a-1\u000a0\u000a1\u000a1\u000a1\u000a3\u000a1\u000a0 Input: Output: Explanation Note type of the first 3 test cases is 0. So c(i, j) = 1. Hence we just have to count minimum number of swaps needed. type 3 0 c(i, j) = 1 Example case 1. There is no way to make sure that both the boys does not stand nearby. So answer is -1. Example case 1. -1 Example case 2. Arrangement is already valid. No swap is needed. So answer is 0. Example case 2. 0 Example case 3. Swap boy at position 1 with girl at position 2. After swap the arrangement will be BGBG which is a valid arrangement. So answer is 1. Example case 3. 1 2 BGBG 1 Now type of the next 3 test cases is 1. So c(i, j) = |j \u2212 i|, that is, the absolute value of the difference between i and j. type 3 1 c(i, j) = |j \u2212 i| i j Example case 4. Swap boy at position 0 with girl at position 1. After swap the arrangement will be GBG which is a valid arrangement. So answer is |1 - 0| = 1. Example case 4. 0 1 GBG |1 - 0| = 1 Example case 5. Swap boy at position 0 with girl at position 1. After swap the arrangement will be GBGB which is a valid arrangement. So answer is |1 - 0| = 1. Example case 5. 0 1 GBGB |1 - 0| = 1 Example case 6. Swap boy at position 1 with girl at position 4. After swap the arrangement will be BGBGB which is a valid arrangement. So answer is |4 - 1| = 3. Example case 6. 1 4 BGBGB |4 - 1| = 3 Then type of the last 2 test cases is 2. So c(i, j) = (j \u2212 i)2 type 2 2 c(i, j) = (j \u2212 i)2 2 Example case 7. Swap boy at position 1 with girl at position 2. After swap the arrangement will be BGBG which is a valid arrangement. So answer is (2 - 1)2 = 1. Example case 7. 1 2 BGBG (2 - 1)2 = 1 2 Example case 8. Arrangement is already valid. No swap is needed. So answer is 0. Example case 8. 0  Author: admin2\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/DEVCLASS\u000aTags: ad-hoc admin2 easy greedy march15\u000aDate Added: 23-12-2014\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: admin2\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/DEVCLASS\u000aTags: ad-hoc admin2 easy greedy march15\u000aDate Added: 23-12-2014\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: admin2 Author: admin2 admin2 Tester: laycurse Tester: laycurse laycurse Editorial: http://discuss.codechef.com/problems/DEVCLASS Editorial: http://discuss.codechef.com/problems/DEVCLASS http://discuss.codechef.com/problems/DEVCLASS Tags: ad-hoc admin2 easy greedy march15 Tags: ad-hoc admin2 easy greedy march15 ad-hoc admin2 easy greedy march15 Date Added: 23-12-2014 Date Added: 23-12-2014 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V ad-hoc admin2 easy greedy march15
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/DEVCLASS
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVDevu is a class teacher of a class of n students. One day, in the morning prayer of the school, all the students of his class were standing in a line. You are given information of their arrangement by a string s. The string s consists of only letters 'B' and 'G', where 'B' represents a boy and 'G' represents a girl.
+p18
+aVDevu wants inter-gender interaction among his class should to be maximum. So he does not like seeing two or more boys/girls standing nearby (i.e. continuous) in the line. e.g. he does not like the arrangements BBG and GBB, but he likes BG, GBG etc.
+p19
+aVNow by seeing the initial arrangement s of students, Devu may get furious and now he wants to change this arrangement into a likable arrangement. For achieving that, he can swap positions of any two students (not necessary continuous). Let the cost of swapping people from position i with position j (i \u2260 j) be c(i, j). You are provided an integer variable type, then the cost of the the swap will be defined by c(i, j) = |j \u2212 i|type.
+p20
+aVPlease help Devu in finding minimum cost of swaps needed to convert the current arrangement into a likable one.
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVThe first line of input contains an integer T, denoting the number of test cases. Then T test cases are follow.
+p25
+aVThe first line of each test case contains an integer type, denoting the type of the cost function. Then the next line contains string s of length n, denoting the initial arrangement s of students.
+p26
+aVNote that the integer n is not given explicitly in input.
+p27
+aVOutput
+p28
+aVFor each test case, print a single line containing the answer of the test case, that is, the minimum cost to convert the current arrangement into a likable one. If it is not possible to convert the current arrangement into a likable one, then print -1 instead of the minimum cost.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints and Subtasks
+p32
+aVSubtask 1: 25 points
+p33
+aV1 \u2264 T \u2264 105
+p34
+aV1 \u2264 n \u2264 105
+p35
+aVtype = 0
+p36
+aVSum of n over all the test cases in one test file does not exceed 106.
+p37
+aVSubtask 2: 25 points
+p38
+aV1 \u2264 T \u2264 105
+p39
+aV1 \u2264 n \u2264 105
+p40
+aVtype = 1
+p41
+aVSum of n over all the test cases in one test file does not exceed 106.
+p42
+aVSubtask 3: 25 points
+p43
+aV1 \u2264 T \u2264 105
+p44
+aV1 \u2264 n \u2264 105
+p45
+aVtype = 2
+p46
+aVSum of n over all the test cases in one test file does not exceed 106.
+p47
+aVSubtask 4: 25 points
+p48
+aV1 \u2264 T \u2264 102
+p49
+aV1 \u2264 n \u2264 103
+p50
+aVtype can be 0, 1 or 2, that is type \u2208 {0, 1, 2}.
+p51
+asS'id'
+p52
+c__builtin__
+id
+p53
+sS'name'
+p54
+VDEVCLASS
+p55
+sb.

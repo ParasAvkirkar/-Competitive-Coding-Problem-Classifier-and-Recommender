@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 - 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef doesn't love math anymore. He loves Sasha. Sashen'ka is cute.\u000aChef goes on a date with her. Flowers are boring, while numbers are not. He knows that most of all this girl loves numbers, that's why he is going to bring ribbon with numbers L, L+1, L+2, ..., R written on it.\u000aSasha thinks that numbers with prime number of divisors are special. That's why she is going to kiss boy for each such number he will bring.\u000aNow Chef wonder how many times he will be kissed by Sashen'ka ?\u000a  Input\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two number L, R.\u000a  Output\u000aFor each test case, output a single line containing answer for corresponding test case.\u000a  Constraints\u000a1 \u2264 T \u2264 5\u000a1 \u2264 L \u2264 R \u2264 1012\u000a0 \u2264 R-L \u2264 106\u000a  Example\u000aInput:\u000a1\u000a1 10\u000a\u000aOutput:\u000a6\u000a  Explanation\u000aExample case 1. Numbers 2,3,4,5,7,9 are special.\u000aAuthor: ballon_ziq\u000aEditorial: http://discuss.codechef.com/problems/PRETNUM\u000aTags: ballon_ziq easy nov13 prime-factor sieve\u000aDate Added: 15-08-2013\u000aTime Limit: 1 - 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef doesn't love math anymore. He loves Sasha. Sashen'ka is cute.\u000aChef goes on a date with her. Flowers are boring, while numbers are not. He knows that most of all this girl loves numbers, that's why he is going to bring ribbon with numbers L, L+1, L+2, ..., R written on it.\u000aSasha thinks that numbers with prime number of divisors are special. That's why she is going to kiss boy for each such number he will bring.\u000aNow Chef wonder how many times he will be kissed by Sashen'ka ?\u000a  Input\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two number L, R.\u000a  Output\u000aFor each test case, output a single line containing answer for corresponding test case.\u000a  Constraints\u000a1 \u2264 T \u2264 5\u000a1 \u2264 L \u2264 R \u2264 1012\u000a0 \u2264 R-L \u2264 106\u000a  Example\u000aInput:\u000a1\u000a1 10\u000a\u000aOutput:\u000a6\u000a  Explanation\u000aExample case 1. Numbers 2,3,4,5,7,9 are special.\u000aAuthor: ballon_ziq\u000aEditorial: http://discuss.codechef.com/problems/PRETNUM\u000aTags: ballon_ziq easy nov13 prime-factor sieve\u000aDate Added: 15-08-2013\u000aTime Limit: 1 - 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Chef doesn't love math anymore. He loves Sasha. Sashen'ka is cute. Chef goes on a date with her. Flowers are boring, while numbers are not. He knows that most of all this girl loves numbers, that's why he is going to bring ribbon with numbers L, L+1, L+2, ..., R written on it. L, L+1, L+2, ..., R Sasha thinks that numbers with prime number of divisors are special. That's why she is going to kiss boy for each such number he will bring. Now Chef wonder how many times he will be kissed by Sashen'ka ?   Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two number L, R. T T  L, R   Output For each test case, output a single line containing answer for corresponding test case.   Constraints 1 \u2264 T \u2264 5\u000a1 \u2264 L \u2264 R \u2264 1012\u000a0 \u2264 R-L \u2264 106 1 \u2264 T \u2264 5 1 T 5 1 \u2264 L \u2264 R \u2264 1012 1 L R 1012 12 0 \u2264 R-L \u2264 106 0 R-L 106 6   Example Input:\u000a1\u000a1 10\u000a\u000aOutput:\u000a6 Input: Output:   Explanation Example case 1. Numbers 2,3,4,5,7,9 are special. Example case 1.  Author: ballon_ziq\u000aEditorial: http://discuss.codechef.com/problems/PRETNUM\u000aTags: ballon_ziq easy nov13 prime-factor sieve\u000aDate Added: 15-08-2013\u000aTime Limit: 1 - 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ballon_ziq\u000aEditorial: http://discuss.codechef.com/problems/PRETNUM\u000aTags: ballon_ziq easy nov13 prime-factor sieve\u000aDate Added: 15-08-2013\u000aTime Limit: 1 - 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ballon_ziq Author: ballon_ziq ballon_ziq Editorial: http://discuss.codechef.com/problems/PRETNUM Editorial: http://discuss.codechef.com/problems/PRETNUM http://discuss.codechef.com/problems/PRETNUM Tags: ballon_ziq easy nov13 prime-factor sieve Tags: ballon_ziq easy nov13 prime-factor sieve ballon_ziq easy nov13 prime-factor sieve Date Added: 15-08-2013 Date Added: 15-08-2013 Time Limit: 1 - 2 sec Time Limit: 1 - 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V ballon_ziq easy nov13 prime-factor sieve
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/PRETNUM
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVChef doesn't love math anymore. He loves Sasha. Sashen'ka is cute.
+p18
+aVChef goes on a date with her. Flowers are boring, while numbers are not. He knows that most of all this girl loves numbers, that's why he is going to bring ribbon with numbers L, L+1, L+2, ..., R written on it.
+p19
+aVSasha thinks that numbers with prime number of divisors are special. That's why she is going to kiss boy for each such number he will bring.
+p20
+aVNow Chef wonder how many times he will be kissed by Sashen'ka ?
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p25
+aVThe first line of each test case contains two number L, R.
+p26
+aVOutput
+p27
+aVFor each test case, output a single line containing answer for corresponding test case.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 T \u2264 5
+p32
+aV1 \u2264 L \u2264 R \u2264 1012
+p33
+aV0 \u2264 R-L \u2264 106
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VPRETNUM
+p38
+sb.

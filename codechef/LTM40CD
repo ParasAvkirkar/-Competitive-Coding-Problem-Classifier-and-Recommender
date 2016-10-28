@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1.5 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef likes problems on geometry a lot. Please help him to solve one such problem.\u000aFind all possible triangles with integer sides which has the radius of inscribed circle (also known as incircle) equal to R.\u000aTwo triangles are said to be different if they have at least one different side lengths. Formally, let there be two triangles T1, T2. Let a, b, c denote the sides of triangle T1, such that a \u2264 b \u2264 c. Similarly, Let d, e, f denote the sides of triangle T2, such that d \u2264 e \u2264 f. Then T1 will said to be different from T2 if either a \u2260 d, or b \u2260 e or c \u2260 f.\u000aInput\u000aThere is a single test case per test file.\u000aThe only line of input contains an integer R.\u000aOutput\u000aOutput in first line single number - number of triangles satisfying statement.\u000aOrder the sides of triangles in non-decreasing order. Output all triangles in non-decreasing order, i.e. order first by smallest sides, otherwise by second smallest sides, if first and second sides equal, then by third.\u000aConstraints\u000a1 \u2264 R \u2264 100\u000aSubtasks\u000aSubtask #1: (20 points) 1 \u2264 R \u2264 3\u000aSubtask #2: (30 points) 1 \u2264 R \u2264 20\u000aSubtask #3: (50 points) Original constraints\u000aExample\u000aInput:\u000a2\u000a\u000aOutput:\u000a5\u000a5 12 13\u000a6 8 10\u000a6 25 29\u000a7 15 20\u000a9 10 17\u000aAuthor: mgch\u000aTester: xcwgf666\u000aTags: adhoc easy geometry ltime40 math mgch\u000aDate Added: 12-09-2016\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef likes problems on geometry a lot. Please help him to solve one such problem.\u000aFind all possible triangles with integer sides which has the radius of inscribed circle (also known as incircle) equal to R.\u000aTwo triangles are said to be different if they have at least one different side lengths. Formally, let there be two triangles T1, T2. Let a, b, c denote the sides of triangle T1, such that a \u2264 b \u2264 c. Similarly, Let d, e, f denote the sides of triangle T2, such that d \u2264 e \u2264 f. Then T1 will said to be different from T2 if either a \u2260 d, or b \u2260 e or c \u2260 f.\u000aInput\u000aThere is a single test case per test file.\u000aThe only line of input contains an integer R.\u000aOutput\u000aOutput in first line single number - number of triangles satisfying statement.\u000aOrder the sides of triangles in non-decreasing order. Output all triangles in non-decreasing order, i.e. order first by smallest sides, otherwise by second smallest sides, if first and second sides equal, then by third.\u000aConstraints\u000a1 \u2264 R \u2264 100\u000aSubtasks\u000aSubtask #1: (20 points) 1 \u2264 R \u2264 3\u000aSubtask #2: (30 points) 1 \u2264 R \u2264 20\u000aSubtask #3: (50 points) Original constraints\u000aExample\u000aInput:\u000a2\u000a\u000aOutput:\u000a5\u000a5 12 13\u000a6 8 10\u000a6 25 29\u000a7 15 20\u000a9 10 17\u000aAuthor: mgch\u000aTester: xcwgf666\u000aTags: adhoc easy geometry ltime40 math mgch\u000aDate Added: 12-09-2016\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef likes problems on geometry a lot. Please help him to solve one such problem. Find all possible triangles with integer sides which has the radius of inscribed circle (also known as incircle) equal to R. inscribed circle (also known as incircle) R Two triangles are said to be different if they have at least one different side lengths. Formally, let there be two triangles T1, T2. Let a, b, c denote the sides of triangle T1, such that a \u2264 b \u2264 c. Similarly, Let d, e, f denote the sides of triangle T2, such that d \u2264 e \u2264 f. Then T1 will said to be different from T2 if either a \u2260 d, or b \u2260 e or c \u2260 f. T1 1 T2 2 a, b, c T1 1 a \u2264 b \u2264 c d, e, f T2 2 d \u2264 e \u2264 f T1 1 T2 2 a \u2260 d b \u2260 e c \u2260 f Input There is a single test case per test file. The only line of input contains an integer R. R Output Output in first line single number - number of triangles satisfying statement. Order the sides of triangles in non-decreasing order. Output all triangles in non-decreasing order, i.e. order first by smallest sides, otherwise by second smallest sides, if first and second sides equal, then by third. Constraints 1 \u2264 R \u2264 100 1 \u2264 R \u2264 100 R Subtasks Subtask #1: (20 points) 1 \u2264 R \u2264 3\u000aSubtask #2: (30 points) 1 \u2264 R \u2264 20\u000aSubtask #3: (50 points) Original constraints Subtask #1: (20 points) 1 \u2264 R \u2264 3 Subtask #1: (20 points) R Subtask #2: (30 points) 1 \u2264 R \u2264 20 Subtask #2: (30 points) R Subtask #3: (50 points) Original constraints Subtask #3: (50 points) Example Input:\u000a2\u000a\u000aOutput:\u000a5\u000a5 12 13\u000a6 8 10\u000a6 25 29\u000a7 15 20\u000a9 10 17 Input: 2 Output: 5\u000a5 12 13\u000a6 8 10\u000a6 25 29\u000a7 15 20\u000a9 10 17  Author: mgch\u000aTester: xcwgf666\u000aTags: adhoc easy geometry ltime40 math mgch\u000aDate Added: 12-09-2016\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: mgch\u000aTester: xcwgf666\u000aTags: adhoc easy geometry ltime40 math mgch\u000aDate Added: 12-09-2016\u000aTime Limit: 1.5 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: mgch Author: mgch mgch Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Tags: adhoc easy geometry ltime40 math mgch Tags: adhoc easy geometry ltime40 math mgch adhoc easy geometry ltime40 math mgch Date Added: 12-09-2016 Date Added: 12-09-2016 Time Limit: 1.5 sec Time Limit: 1.5 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V adhoc easy geometry ltime40 math mgch
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LTM40CD
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef likes problems on geometry a lot. Please help him to solve one such problem.
+p18
+aVFind all possible triangles with integer sides which has the radius of inscribed circle (also known as incircle) equal to R.
+p19
+aVTwo triangles are said to be different if they have at least one different side lengths. Formally, let there be two triangles T1, T2. Let a, b, c denote the sides of triangle T1, such that a \u2264 b \u2264 c. Similarly, Let d, e, f denote the sides of triangle T2, such that d \u2264 e \u2264 f. Then T1 will said to be different from T2 if either a \u2260 d, or b \u2260 e or c \u2260 f.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThere is a single test case per test file.
+p24
+aVThe only line of input contains an integer R.
+p25
+aVOutput
+p26
+aVOutput in first line single number - number of triangles satisfying statement.
+p27
+aVOrder the sides of triangles in non-decreasing order. Output all triangles in non-decreasing order, i.e. order first by smallest sides, otherwise by second smallest sides, if first and second sides equal, then by third.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 R \u2264 100
+p32
+aVSubtasks
+p33
+aVSubtask #1: (20 points) 1 \u2264 R \u2264 3
+p34
+aVSubtask #2: (30 points) 1 \u2264 R \u2264 20
+p35
+aVSubtask #3: (50 points) Original constraints
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VLTM40CD
+p40
+sb.

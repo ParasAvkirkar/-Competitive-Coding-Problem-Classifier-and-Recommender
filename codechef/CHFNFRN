@@ -1,0 +1,93 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef invited N of his friends in his birthday party. All the friends are numbered from 1 to N. Some of the friends might know each other. You are given this information by M pairs each of form (ai, bi), denoting that the persons ai and bi know each other.\u000aChef wants all of his guests to seat at the two tables set up for dinner. He wants that all the people sitting at a table must know each other, otherwise they will feel awkward with mutual eating habits. Chef is okay if a table is not occupied by any person. Chef is worried whether all the guests can seat at the dinner tables in the desired way.\u000aPlease help Chef fast to identify whether his worry is real or not!! The delicacies at the table are getting cold.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two space-separated integers N and M, denoting the number of Chef's friends and the number of pairs representing information whether two person know each other or not.\u000aThe next M lines contain two space-separated integers ai and bi, denoting that persons ai and bi know each other.\u000aOutput\u000aFor each test case, output a single line containing word "YES" (without quotes) if Chef can divide all of his friends into two groups that in each group all the people know each other and "NO" (without quotes) otherwise.\u000aConstraints\u000a1 \u2264 T \u2264 103\u000a1 \u2264 N \u2264 103\u000a0 \u2264 M \u2264 106\u000a1 \u2264 ai, bi \u2264 N\u000aThe sum of N over all test cases in a single test file does not exceed 104\u000aThe sum of M over all test cases in a single test file does not exceed 106\u000aSubtasks\u000aSubtask #1 (30 pts)\u000a1 \u2264 N \u2264 10\u000a\u000aSubtask #2 (70 pts)\u000aOriginal constraints\u000aExample\u000aInput:\u000a3\u000a3 2\u000a1 2\u000a2 3\u000a4 3\u000a1 2\u000a2 3\u000a2 4\u000a6 7\u000a1 2\u000a1 3\u000a2 3\u000a2 4\u000a4 5\u000a4 6\u000a5 6\u000a\u000aOutput:\u000aYES\u000aNO\u000aYES\u000aExplanation\u000aExample case 1.\u000aTable 1: Person 1. Table 2: Persons 2 and 3.\u000aExample case 2.\u000aAll guests can't have a seat according to the rule.\u000aExample case 3.\u000aTable 1: Persons 1, 2, 3. Table 2: Persons 4, 5, 6.\u000aAuthor: antoniuk1\u000aTester: dpraveen\u000aTags: antoniuk1 bipartiteness easy sept16 two-coloring\u000aDate Added: 23-03-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aChef invited N of his friends in his birthday party. All the friends are numbered from 1 to N. Some of the friends might know each other. You are given this information by M pairs each of form (ai, bi), denoting that the persons ai and bi know each other.\u000aChef wants all of his guests to seat at the two tables set up for dinner. He wants that all the people sitting at a table must know each other, otherwise they will feel awkward with mutual eating habits. Chef is okay if a table is not occupied by any person. Chef is worried whether all the guests can seat at the dinner tables in the desired way.\u000aPlease help Chef fast to identify whether his worry is real or not!! The delicacies at the table are getting cold.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains two space-separated integers N and M, denoting the number of Chef's friends and the number of pairs representing information whether two person know each other or not.\u000aThe next M lines contain two space-separated integers ai and bi, denoting that persons ai and bi know each other.\u000aOutput\u000aFor each test case, output a single line containing word "YES" (without quotes) if Chef can divide all of his friends into two groups that in each group all the people know each other and "NO" (without quotes) otherwise.\u000aConstraints\u000a1 \u2264 T \u2264 103\u000a1 \u2264 N \u2264 103\u000a0 \u2264 M \u2264 106\u000a1 \u2264 ai, bi \u2264 N\u000aThe sum of N over all test cases in a single test file does not exceed 104\u000aThe sum of M over all test cases in a single test file does not exceed 106\u000aSubtasks\u000aSubtask #1 (30 pts)\u000a1 \u2264 N \u2264 10\u000a\u000aSubtask #2 (70 pts)\u000aOriginal constraints\u000aExample\u000aInput:\u000a3\u000a3 2\u000a1 2\u000a2 3\u000a4 3\u000a1 2\u000a2 3\u000a2 4\u000a6 7\u000a1 2\u000a1 3\u000a2 3\u000a2 4\u000a4 5\u000a4 6\u000a5 6\u000a\u000aOutput:\u000aYES\u000aNO\u000aYES\u000aExplanation\u000aExample case 1.\u000aTable 1: Person 1. Table 2: Persons 2 and 3.\u000aExample case 2.\u000aAll guests can't have a seat according to the rule.\u000aExample case 3.\u000aTable 1: Persons 1, 2, 3. Table 2: Persons 4, 5, 6.\u000aAuthor: antoniuk1\u000aTester: dpraveen\u000aTags: antoniuk1 bipartiteness easy sept16 two-coloring\u000aDate Added: 23-03-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Chef invited N of his friends in his birthday party. All the friends are numbered from 1 to N. Some of the friends might know each other. You are given this information by M pairs each of form (ai, bi), denoting that the persons ai and bi know each other. N 1 N M ai i bi i ai i bi i Chef wants all of his guests to seat at the two tables set up for dinner. He wants that all the people sitting at a table must know each other, otherwise they will feel awkward with mutual eating habits. Chef is okay if a table is not occupied by any person. Chef is worried whether all the guests can seat at the dinner tables in the desired way. Please help Chef fast to identify whether his worry is real or not!! The delicacies at the table are getting cold. Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains two space-separated integers N and M, denoting the number of Chef's friends and the number of pairs representing information whether two person know each other or not. N M The next M lines contain two space-separated integers ai and bi, denoting that persons ai and bi know each other. M ai i bi i ai i bi i Output For each test case, output a single line containing word "YES" (without quotes) if Chef can divide all of his friends into two groups that in each group all the people know each other and "NO" (without quotes) otherwise. "YES" "NO" Constraints 1 \u2264 T \u2264 103\u000a1 \u2264 N \u2264 103\u000a0 \u2264 M \u2264 106\u000a1 \u2264 ai, bi \u2264 N\u000aThe sum of N over all test cases in a single test file does not exceed 104\u000aThe sum of M over all test cases in a single test file does not exceed 106 1 \u2264 T \u2264 103 1 T 103 3 1 \u2264 N \u2264 103 1 N 103 3 0 \u2264 M \u2264 106 0 M 106 6 1 \u2264 ai, bi \u2264 N 1 ai, bi i i N The sum of N over all test cases in a single test file does not exceed 104 N 104 4 The sum of M over all test cases in a single test file does not exceed 106 M 106 6 Subtasks Subtask #1 (30 pts) 1 \u2264 N \u2264 10 1 \u2264 N \u2264 10 1 N 10  Subtask #2 (70 pts) Original constraints Original constraints Example Input:\u000a3\u000a3 2\u000a1 2\u000a2 3\u000a4 3\u000a1 2\u000a2 3\u000a2 4\u000a6 7\u000a1 2\u000a1 3\u000a2 3\u000a2 4\u000a4 5\u000a4 6\u000a5 6\u000a\u000aOutput:\u000aYES\u000aNO\u000aYES Input: 3\u000a3 2\u000a1 2\u000a2 3\u000a4 3\u000a1 2\u000a2 3\u000a2 4\u000a6 7\u000a1 2\u000a1 3\u000a2 3\u000a2 4\u000a4 5\u000a4 6\u000a5 6 Output: YES\u000aNO\u000aYES Explanation Example case 1. Example case 1. Table 1: Person 1. Table 2: Persons 2 and 3.  Example case 2. Example case 2. All guests can't have a seat according to the rule.  Example case 3. Example case 3. Table 1: Persons 1, 2, 3. Table 2: Persons 4, 5, 6.   Author: antoniuk1\u000aTester: dpraveen\u000aTags: antoniuk1 bipartiteness easy sept16 two-coloring\u000aDate Added: 23-03-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: antoniuk1\u000aTester: dpraveen\u000aTags: antoniuk1 bipartiteness easy sept16 two-coloring\u000aDate Added: 23-03-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: antoniuk1 Author: antoniuk1 antoniuk1 Tester: dpraveen Tester: dpraveen dpraveen Tags: antoniuk1 bipartiteness easy sept16 two-coloring Tags: antoniuk1 bipartiteness easy sept16 two-coloring antoniuk1 bipartiteness easy sept16 two-coloring Date Added: 23-03-2015 Date Added: 23-03-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V antoniuk1 bipartiteness easy sept16 two-coloring
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHFNFRN
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVChef invited N of his friends in his birthday party. All the friends are numbered from 1 to N. Some of the friends might know each other. You are given this information by M pairs each of form (ai, bi), denoting that the persons ai and bi know each other.
+p18
+aVChef wants all of his guests to seat at the two tables set up for dinner. He wants that all the people sitting at a table must know each other, otherwise they will feel awkward with mutual eating habits. Chef is okay if a table is not occupied by any person. Chef is worried whether all the guests can seat at the dinner tables in the desired way.
+p19
+aVPlease help Chef fast to identify whether his worry is real or not!! The delicacies at the table are getting cold.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVThe first line of each test case contains two space-separated integers N and M, denoting the number of Chef's friends and the number of pairs representing information whether two person know each other or not.
+p25
+aVThe next M lines contain two space-separated integers ai and bi, denoting that persons ai and bi know each other.
+p26
+aVOutput
+p27
+aVFor each test case, output a single line containing word "YES" (without quotes) if Chef can divide all of his friends into two groups that in each group all the people know each other and "NO" (without quotes) otherwise.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 T \u2264 103
+p32
+aV1 \u2264 N \u2264 103
+p33
+aV0 \u2264 M \u2264 106
+p34
+aV1 \u2264 ai, bi \u2264 N
+p35
+aVThe sum of N over all test cases in a single test file does not exceed 104
+p36
+aVThe sum of M over all test cases in a single test file does not exceed 106
+p37
+aVSubtasks
+p38
+aVSubtask #1 (30 pts)
+p39
+aV1 \u2264 N \u2264 10
+p40
+aV
+p41
+aVSubtask #2 (70 pts)
+p42
+aVOriginal constraints
+p43
+asS'id'
+p44
+c__builtin__
+id
+p45
+sS'name'
+p46
+VCHFNFRN
+p47
+sb.
