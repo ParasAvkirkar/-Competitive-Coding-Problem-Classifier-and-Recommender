@@ -12,8 +12,8 @@ import requests
 import dryscrape
 
 
-def getCodechefProblem(problemUrl):
-	driver = webdriver.Chrome()
+def getCodechefProblem(problemUrl, driver):
+	#driver = webdriver.Chrome()
 	#Get problem Name
 	problemName = ''
 	for c in problemUrl:
@@ -27,6 +27,8 @@ def getCodechefProblem(problemUrl):
 	try:
 		problemText = ''
 		#divProblem = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "problem-page-complete")))
+		# wait = WebDriverWait(driver, 10)
+		# wait.until(EC.presence_of_element_located((By.ID, "problem-page-complete")))
 
 		divProblem = driver.find_element_by_id('problem-page-complete')					
 		#print(str(divProblem))
@@ -45,15 +47,12 @@ def getCodechefProblem(problemUrl):
 		prob = Problem(problemName, problemName, problemTags, problemText)
 		# print(problemText)
 		# print(prob)
-		
-		count = count + 1
+	except Exception as e:
+		print('element not found')
+		print(e)
+		prob = None
+	else:
+		pass
+	finally:
+		pass
 		return prob
-		except Exception as e:
-			print('element not found')
-			print(e)
-			return None
-		else:
-			pass
-		finally:
-			pass
-			driver.quit()

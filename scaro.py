@@ -8,14 +8,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
+from CodechefProblemPage import getCodechefProblem
+
 import requests
 import dryscrape
 
 
 
 codechefUrl = 'https://www.codechef.com'
-codechefProblemUrl = 'https://www.codechef.com/problems/'
-section = 'easy'
+codechefProblemUrl = 'https://www.codechef.com/problems'
+section = '/easy'
 
 
 response = requests.get(codechefProblemUrl + section)
@@ -43,48 +45,19 @@ for row in problemRows:
 				# firefox_capabilities['marionette'] = True
 
 				# driver = webdriver.Firefox(capabilities=firefox_capabilities)
-				# driver = webdriver.Chrome()
+				# drsiver = webdriver.Chrome()
 				# driver.set_window_size(1120, 550)
 
-				driver.get(codechefUrl + a['href'])
-				print('reach problem page '+a['href'])
-				
-				try:
-					problemText = ''
-					#divProblem = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "problem-page-complete")))
-
-					divProblem = driver.find_element_by_id('problem-page-complete')					
-					#print(str(divProblem))
-					
-					print('problem content got')
-					all_children_by_xpath = divProblem.find_elements_by_xpath(".//*")
-					
-					for child in all_children_by_xpath:
-						problemText = problemText + ' ' + child.text
-					
-					allHrefTags = driver.find_elements_by_tag_name('a')
-					problemTags = ''
-					for hrefTag in allHrefTags:
-						if 'tag' in hrefTag.get_attribute('href'):
-							problemTags = problemTags + ' ' + hrefTag.text
-
-					print('count ' + str(count))
-					
-					prob = Problem(problemName, codechefUrl + a['href'], problemTags, problemText)
-					# print(problemText)
-					# print(prob)
-					problemCollections.append(prob)
-					count = count + 1
-				except Exception as e:
-					print('element not found')
-					print(e)
+				print('inside loop ' + codechefUrl + a['href'])
+				prob = getCodechefProblem(codechefUrl + a['href'], driver)
+				if prob == None:
+					print('issue')
 				else:
-					pass
-				finally:
-					pass
-					#driver.quit()
-				
+					print('not issue ' + str(count))
+				count = count + 1
+				problemCollections.append(prob)
 
+				
 driver.quit()				
 for problem in problemCollections:
 	print(problem)
