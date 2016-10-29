@@ -2,106 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a176f7d5-8d12-46d4-903e-f209314a01f8" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\ADMAG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\ASTRGAME" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\ASTRING" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\BINOP" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\BIPIN3" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\BWCELL" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CAKEDOOM" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CAOS2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEARMY" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFAXR" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFBM" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFBR" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFELEC" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFHACK" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFIHG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFMATH" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFQUE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFSOC2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFSPL" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFSQUA" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFTET" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHFANS" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHFNFRN" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHODE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\COLARR" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\COLLIDE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\DEVCLASS" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\DEVJERRY" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\DIVMAC" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\DRGHTS" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\EGRCAKE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\FORESTGA" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\FRNDMTNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\GAMEAAM" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\KGOOD" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\KSPHERES" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\KSUM" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\LEBAMBOO" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\LECARDS" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\LEEXAMS" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\LEXOPAL" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\LOWSUM" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\LUCKY1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\MAXPR" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\MCHEF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\NEWSCH" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\ORACLCS" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\PIANO1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\PRETNUM" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\QMAXTRIX" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\REIGN" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\STDYTAB" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\STRQ" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\STRSUB" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\TIMEASR" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\TREEGAME" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\TUZGMBR" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\UGLYF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\WSTRING" afterPath="" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\ABROADS" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/ABROADS" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFCRUN" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/CHEFCRUN" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\FSTSQ" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/FSTSQ" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\NDUNGEON" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/NDUNGEON" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\AEHASH" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/AEHASH" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\ANKGAME" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/ANKGAME" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\BOGOSORT" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/BOGOSORT" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\BYTEISLE" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/BYTEISLE" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHCINEMA" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/CHCINEMA" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFARC" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/CHEFARC" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHEFFILT" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/CHEFFILT" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHSGMNTS" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/CHSGMNTS" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CHSTAMP" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/CHSTAMP" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\CUBE" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/CUBE" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\DEFACING" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/DEFACING" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\DEVLDISC" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/DEVLDISC" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\DIAMOND" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/DIAMOND" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\EZNO" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/EZNO" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\FENWITER" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/FENWITER" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\FIBQ" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/FIBQ" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\GERALD05" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/GERALD05" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\GOODNUMB" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/GOODNUMB" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\KOL1502" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/KOL1502" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\KOL1504" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/KOL1504" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\KOL1509" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/KOL1509" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\LEMAGIC" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/LEMAGIC" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\LUCKY2" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/LUCKY2" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\PPCTS" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/PPCTS" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\RECRECOV" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/RECRECOV" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\RECTLOVE" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/RECTLOVE" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\RESCALC" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/RESCALC" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\RG_01" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/RG_01" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\RHOUSE" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/RHOUSE" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\RRGAME" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/RRGAME" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\SEATL" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/SEATL" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\SEATRSF" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/SEATRSF" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\SEATSTR2" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/SEATSTR2" />
-      <change type="MODIFICATION" beforePath="C:\Users\Pranay\PycharmProjects\FYP\Data Extraction\Codechef\codechef\STROPR" afterPath="$PROJECT_DIR$/Data Extraction/Codechef/codechef/STROPR" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data Extraction/SPOJ/SpojProblemPage.py" afterPath="$PROJECT_DIR$/Data Extraction/SPOJ/SpojProblemPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data Extraction/SPOJ/scrapeSpojProblem.py" afterPath="$PROJECT_DIR$/Data Extraction/SPOJ/scrapeSpojProblem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data Extraction/SPOJ/spojProblem.py" afterPath="$PROJECT_DIR$/Data Extraction/SPOJ/spojProblem.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -468,6 +369,13 @@
       <option name="number" value="Default" />
       <updated>1477719345312</updated>
     </task>
+    <task id="LOCAL-00001" summary="small changes">
+      <created>1477732379131</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1477732379131</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -476,6 +384,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -496,6 +405,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
