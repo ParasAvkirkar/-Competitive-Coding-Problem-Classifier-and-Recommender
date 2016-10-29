@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput Print exactly one line for each test case. The line should contain the sentence "The safest point is (P, Q)." where P and Qare the coordinates of the point in the room that has the maximum distance from the nearest hole, rounded to the nearest number with exactly one digit after the decimal point (0.05 rounds up to 0.1). The safest point is (P, Q). P Q P Q 
+p6
+asS'description'
+p7
+V One of the traps we will encounter in the Pyramid is located in the Large Room. A lot of small holes are drilled into the floor. They look completely harmless at the first sight. But when activated, they start to throw out very hot java, uh ... pardon, lava. Unfortunately, all known paths to the Center Room (where the Sarcophagus is) contain a trigger that activates the trap. The ACM were not able to avoid that. But they have carefully monitored the positions of all the holes. So it is important to find the place in the Large Room that has the maximal distance from all the holes. This place is the safest in the entire room and the archaeologist has to hide there. Input The input consists of T test cases. The number of them (T) is given on the first line of the input file. Each test case begins with a line containing three integers X, Y, M separated by space. The numbers satisfy conditions: 1 <= X,Y <=10000, 1 <= M <= 1000. The numbers X and Yindicate the dimensions of the Large Room which has a rectangular shape. The number M stands for the number of holes. Then exactly M lines follow, each containing two integer numbers Ui and Vi (0 <= Ui <= X, 0 <= Vi <= Y) indicating the coordinates of one hole. There may be several holes at the same position. T T X Y M 1 <= X,Y <=10000 1 <= M <= 1000 X Y M M Ui i Vi i 0 <= Ui <= X i 0 <= Vi <= Y i Output Print exactly one line for each test case. The line should contain the sentence "The safest point is (P, Q)." where P and Qare the coordinates of the point in the room that has the maximum distance from the nearest hole, rounded to the nearest number with exactly one digit after the decimal point (0.05 rounds up to 0.1). The safest point is (P, Q). P Q P Q Example Sample Input:\u000a3\u000a1000 50 1\u000a10 10\u000a100 100 4\u000a10 10\u000a10 90\u000a90 10\u000a90 90\u000a3000 3000 4\u000a1200 85\u000a63 2500\u000a2700 2650 \u000a2990 100\u000a\u000aSample output:\u000aThe safest point is (1000.0, 50.0).\u000aThe safest point is (50.0, 50.0).\u000aThe safest point is (1433.0, 1669.8).
+p8
+sS'tags'
+p9
+S''
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/RUNAWAY
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V13s
+p20
+sS'statement'
+p21
+(lp22
+V One of the traps we will encounter in the Pyramid is located in the Large Room. A lot of small holes are drilled into the floor. They look completely harmless at the first sight. But when activated, they start to throw out very hot java, uh ... pardon, lava. Unfortunately, all known paths to the Center Room (where the Sarcophagus is) contain a trigger that activates the trap. The ACM were not able to avoid that. But they have carefully monitored the positions of all the holes. So it is important to find the place in the Large Room that has the maximal distance from all the holes. This place is the safest in the entire room and the archaeologist has to hide there. 
+p23
+asS'sourcelimit'
+p24
+VACM Central European Programming Contest, Prague 1999
+p25
+sS'date'
+p26
+V2004-06-06
+p27
+sS'input'
+p28
+(lp29
+VInput The input consists of T test cases. The number of them (T) is given on the first line of the input file. Each test case begins with a line containing three integers X, Y, M separated by space. The numbers satisfy conditions: 1 <= X,Y <=10000, 1 <= M <= 1000. The numbers X and Yindicate the dimensions of the Large Room which has a rectangular shape. The number M stands for the number of holes. Then exactly M lines follow, each containing two integer numbers Ui and Vi (0 <= Ui <= X, 0 <= Vi <= Y) indicating the coordinates of one hole. There may be several holes at the same position. T T X Y M 1 <= X,Y <=10000 1 <= M <= 1000 X Y M M Ui i Vi i 0 <= Ui <= X i 0 <= Vi <= Y i 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VRUNAWAY
+p35
+sb.

@@ -1,0 +1,102 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef has N simple polygons (non self intersecting polygons) in which no two of them intersect with each other. For any two polygons P1, P2, either P1 lies inside P2 or vice versa.\u000aChef wants you to count number of polygons lying strictly inside each of the polygons.\u000aInput\u000aFirst line of the input contains an integer T denoting the number of test cases. First line of each test case contains a single integer N denoting the number of polygons.\u000aThe description of N polygons is as follows:\u000aThe first line contains an integer Mi denoting the number of vertices in the ith polygon\u000aThe second line contains Mi pairs of integers Xi, j, Yi, j representing coordinates of vertices of ith polygon in clockwise or counterclockwise order\u000aOutput\u000aFor each test case, output a single line containing N space-separated integers such that ith of them represents number of polygons lying inside the ith polygon.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a2 \u2264 N \u2264 105\u000a3 \u2264 Mi \u2264 105\u000aThe sum of Mi (or total amount of given points) over all test cases in one test file does not exceed 2*105\u000aAbsolute value of each coordinate doesn't exceed 109\u000a\u000a\u000aSubtask 1: (10 points)\u000aT \u2264 6\u000a2 \u2264 N \u2264 10\u000a3 \u2264 Mi \u2264 10\u000aAbsolute value of each coordinate doesn't exceed 30\u000a\u000aSubtask 2: (20 points)\u000aAll polygons are convex polygons .\u000a\u000aSubtask 3: (70 points)\u000aOriginal constraints\u000aExample\u000aInput:\u000a1\u000a3\u000a6\u000a-2 2 -1 1 2 2 2 -1 1 -2 -2 -2\u000a3\u000a-1 -1 1 -1 1 1\u000a4\u000a3 3 -3 3 -3 -3 3 -3\u000aOutput:\u000a1 0 2\u000aExplanation\u000aIn the picture the first polygon is marked in green, second - in red and third in blue color.\u000aAuthor: antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/CHPLGNS\u000aTags: antoniuk1 cakewalk geometry june15 sorting\u000aDate Added: 27-02-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef has N simple polygons (non self intersecting polygons) in which no two of them intersect with each other. For any two polygons P1, P2, either P1 lies inside P2 or vice versa.\u000aChef wants you to count number of polygons lying strictly inside each of the polygons.\u000aInput\u000aFirst line of the input contains an integer T denoting the number of test cases. First line of each test case contains a single integer N denoting the number of polygons.\u000aThe description of N polygons is as follows:\u000aThe first line contains an integer Mi denoting the number of vertices in the ith polygon\u000aThe second line contains Mi pairs of integers Xi, j, Yi, j representing coordinates of vertices of ith polygon in clockwise or counterclockwise order\u000aOutput\u000aFor each test case, output a single line containing N space-separated integers such that ith of them represents number of polygons lying inside the ith polygon.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a2 \u2264 N \u2264 105\u000a3 \u2264 Mi \u2264 105\u000aThe sum of Mi (or total amount of given points) over all test cases in one test file does not exceed 2*105\u000aAbsolute value of each coordinate doesn't exceed 109\u000a\u000a\u000aSubtask 1: (10 points)\u000aT \u2264 6\u000a2 \u2264 N \u2264 10\u000a3 \u2264 Mi \u2264 10\u000aAbsolute value of each coordinate doesn't exceed 30\u000a\u000aSubtask 2: (20 points)\u000aAll polygons are convex polygons .\u000a\u000aSubtask 3: (70 points)\u000aOriginal constraints\u000aExample\u000aInput:\u000a1\u000a3\u000a6\u000a-2 2 -1 1 2 2 2 -1 1 -2 -2 -2\u000a3\u000a-1 -1 1 -1 1 1\u000a4\u000a3 3 -3 3 -3 -3 3 -3\u000aOutput:\u000a1 0 2\u000aExplanation\u000aIn the picture the first polygon is marked in green, second - in red and third in blue color.\u000aAuthor: antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/CHPLGNS\u000aTags: antoniuk1 cakewalk geometry june15 sorting\u000aDate Added: 27-02-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Chef has N simple polygons (non self intersecting polygons) in which no two of them intersect with each other. For any two polygons P1, P2, either P1 lies inside P2 or vice versa. N simple polygons P1, P2 1 2 P1 1 P2 2 Chef wants you to count number of polygons lying strictly inside each of the polygons. Input First line of the input contains an integer T denoting the number of test cases. First line of each test case contains a single integer N denoting the number of polygons. T N The description of N polygons is as follows: N The first line contains an integer Mi denoting the number of vertices in the ith polygon\u000aThe second line contains Mi pairs of integers Xi, j, Yi, j representing coordinates of vertices of ith polygon in clockwise or counterclockwise order The first line contains an integer Mi denoting the number of vertices in the ith polygon Mi i ith th The second line contains Mi pairs of integers Xi, j, Yi, j representing coordinates of vertices of ith polygon in clockwise or counterclockwise order Mi i Xi, j, Yi, j i, j i, j ith th  Output For each test case, output a single line containing N space-separated integers such that ith of them represents number of polygons lying inside the ith polygon. N ith th ith th Constraints 1 \u2264 T \u2264 105\u000a2 \u2264 N \u2264 105\u000a3 \u2264 Mi \u2264 105\u000aThe sum of Mi (or total amount of given points) over all test cases in one test file does not exceed 2*105\u000aAbsolute value of each coordinate doesn't exceed 109 1 \u2264 T \u2264 105 1 T 105 5  2 \u2264 N \u2264 105 2 N 105 5  3 \u2264 Mi \u2264 105 3 Mi i 105 5 The sum of Mi (or total amount of given points) over all test cases in one test file does not exceed 2*105 Mi i 2*105 5 Absolute value of each coordinate doesn't exceed 109 109 9 Subtask 1: (10 points)   Subtask 1: (10 points)  T \u2264 6\u000a2 \u2264 N \u2264 10\u000a3 \u2264 Mi \u2264 10\u000aAbsolute value of each coordinate doesn't exceed 30 T \u2264 6 T 6 2 \u2264 N \u2264 10 2 N 10 3 \u2264 Mi \u2264 10 3 Mi i 10 Absolute value of each coordinate doesn't exceed 30 30 Subtask 2: (20 points)  Subtask 2: (20 points) All polygons are convex polygons . All polygons are convex polygons . convex polygons Subtask 3: (70 points)  Subtask 3: (70 points) Original constraints Original constraints  Example Input:\u000a1\u000a3\u000a6\u000a-2 2 -1 1 2 2 2 -1 1 -2 -2 -2\u000a3\u000a-1 -1 1 -1 1 1\u000a4\u000a3 3 -3 3 -3 -3 3 -3\u000aOutput:\u000a1 0 2 Input: Output: Explanation In the picture the first polygon is marked in green, second - in red and third in blue color. green red blue    Author: antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/CHPLGNS\u000aTags: antoniuk1 cakewalk geometry june15 sorting\u000aDate Added: 27-02-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/CHPLGNS\u000aTags: antoniuk1 cakewalk geometry june15 sorting\u000aDate Added: 27-02-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: antoniuk1 Author: antoniuk1 antoniuk1 Editorial: http://discuss.codechef.com/problems/CHPLGNS Editorial: http://discuss.codechef.com/problems/CHPLGNS http://discuss.codechef.com/problems/CHPLGNS Tags: antoniuk1 cakewalk geometry june15 sorting Tags: antoniuk1 cakewalk geometry june15 sorting antoniuk1 cakewalk geometry june15 sorting Date Added: 27-02-2015 Date Added: 27-02-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V antoniuk1 cakewalk geometry june15 sorting
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHPLGNS
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVChef has N simple polygons (non self intersecting polygons) in which no two of them intersect with each other. For any two polygons P1, P2, either P1 lies inside P2 or vice versa.
+p18
+aVChef wants you to count number of polygons lying strictly inside each of the polygons.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVFirst line of the input contains an integer T denoting the number of test cases. First line of each test case contains a single integer N denoting the number of polygons.
+p23
+aVThe description of N polygons is as follows:
+p24
+aVThe first line contains an integer Mi denoting the number of vertices in the ith polygon
+p25
+aVThe second line contains Mi pairs of integers Xi, j, Yi, j representing coordinates of vertices of ith polygon in clockwise or counterclockwise order
+p26
+aVOutput
+p27
+aVFor each test case, output a single line containing N space-separated integers such that ith of them represents number of polygons lying inside the ith polygon.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 T \u2264 105
+p32
+aV2 \u2264 N \u2264 105
+p33
+aV3 \u2264 Mi \u2264 105
+p34
+aVThe sum of Mi (or total amount of given points) over all test cases in one test file does not exceed 2*105
+p35
+aVAbsolute value of each coordinate doesn't exceed 109
+p36
+aV
+p37
+ag37
+aVSubtask 1: (10 points)
+p38
+aVT \u2264 6
+p39
+aV2 \u2264 N \u2264 10
+p40
+aV3 \u2264 Mi \u2264 10
+p41
+aVAbsolute value of each coordinate doesn't exceed 30
+p42
+ag37
+aVSubtask 2: (20 points)
+p43
+aVAll polygons are convex polygons .
+p44
+ag37
+aVSubtask 3: (70 points)
+p45
+aVOriginal constraints
+p46
+asS'id'
+p47
+c__builtin__
+id
+p48
+sS'name'
+p49
+VCHPLGNS
+p50
+sb.

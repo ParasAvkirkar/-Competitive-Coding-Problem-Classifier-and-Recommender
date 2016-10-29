@@ -1,0 +1,81 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aHave you ever implemented a program adding two big integers that cannot be represented by the primitive data type of your programming language? The algorithm is just simulation of the column addition method that we have been taught in elementary school. Sometimes we forget the carry and the result is incorrect.\u000aIn this problem, you need to evaluate the expected value of the number of times we have non-zero carry when adding two non-negative integers that contain at most N digits each. Note that we are adding the numbers in their base 10 representation.\u000aFor example, the following table shows the number of carries when adding some pairs of numbers:\u000aA B Number of carries\u000a20 4 0\u000a111 119 1\u000a123 923 1\u000a1235 98765 5\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test case has a single line containing an integer N.\u000aOutput\u000aFor each test case, output a single line containing the required expected value.\u000aYour answer will be accepted if the error is less than 10 -6.\u000aConstraints\u000a1 \u2264 T \u2264 100,000(105)\u000a1 \u2264 N \u2264 100,000(105)\u000aExample\u000aInput:\u000a3\u000a1\u000a2\u000a3\u000a\u000aOutput:\u000a0.45\u000a0.945\u000a1.4445\u000aExplanation\u000aExample case 1.\u000aWe have 10*10 = 100 cases of adding two 1-digit number.\u000aThe carry appears when adding 1 and 9, 2 and 9, 3 and 9 ... and so on,\u000athere are 45 cases in total and in each case, the carry appears exactly once.\u000aAuthor: tuananh93\u000aTester: keshav_57\u000aEditorial: http://discuss.codechef.com/problems/TAAPLUSB\u000aTags: cook36 easy maths probability tsaplusb tuananh93\u000aDate Added: 15-05-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aHave you ever implemented a program adding two big integers that cannot be represented by the primitive data type of your programming language? The algorithm is just simulation of the column addition method that we have been taught in elementary school. Sometimes we forget the carry and the result is incorrect.\u000aIn this problem, you need to evaluate the expected value of the number of times we have non-zero carry when adding two non-negative integers that contain at most N digits each. Note that we are adding the numbers in their base 10 representation.\u000aFor example, the following table shows the number of carries when adding some pairs of numbers:\u000aA B Number of carries\u000a20 4 0\u000a111 119 1\u000a123 923 1\u000a1235 98765 5\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test case has a single line containing an integer N.\u000aOutput\u000aFor each test case, output a single line containing the required expected value.\u000aYour answer will be accepted if the error is less than 10 -6.\u000aConstraints\u000a1 \u2264 T \u2264 100,000(105)\u000a1 \u2264 N \u2264 100,000(105)\u000aExample\u000aInput:\u000a3\u000a1\u000a2\u000a3\u000a\u000aOutput:\u000a0.45\u000a0.945\u000a1.4445\u000aExplanation\u000aExample case 1.\u000aWe have 10*10 = 100 cases of adding two 1-digit number.\u000aThe carry appears when adding 1 and 9, 2 and 9, 3 and 9 ... and so on,\u000athere are 45 cases in total and in each case, the carry appears exactly once.\u000aAuthor: tuananh93\u000aTester: keshav_57\u000aEditorial: http://discuss.codechef.com/problems/TAAPLUSB\u000aTags: cook36 easy maths probability tsaplusb tuananh93\u000aDate Added: 15-05-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Have you ever implemented a program adding two big integers that cannot be represented by the primitive data type of your programming language? The algorithm is just simulation of the column addition method that we have been taught in elementary school. Sometimes we forget the carry and the result is incorrect. In this problem, you need to evaluate the expected value of the number of times we have non-zero carry when adding two non-negative integers that contain at most N digits each. Note that we are adding the numbers in their base 10 representation. at most N base 10 For example, the following table shows the number of carries when adding some pairs of numbers: A B Number of carries\u000a20 4 0\u000a111 119 1\u000a123 923 1\u000a1235 98765 5 A B Number of carries\u000a20 4 0\u000a111 119 1\u000a123 923 1\u000a1235 98765 5 A B Number of carries A A B B Number of carries Number of carries 20 4 0 20 4 0 111 119 1 111 119 1 123 923 1 123 923 1 1235 98765 5 1235 98765 5 Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aEach test case has a single line containing an integer N. T T  N Output For each test case, output a single line containing the required expected value.\u000aYour answer will be accepted if the error is less than 10 -6.  -6 Constraints 1 \u2264 T \u2264 100,000(105)\u000a1 \u2264 N \u2264 100,000(105) 1 \u2264 T \u2264 100,000(105) 1 T 100,000(105) 5 1 \u2264 N \u2264 100,000(105) 1 N 100,000(105) 5 Example Input:\u000a3\u000a1\u000a2\u000a3\u000a\u000aOutput:\u000a0.45\u000a0.945\u000a1.4445 Input: Output: Explanation Example case 1.\u000aWe have 10*10 = 100 cases of adding two 1-digit number.\u000aThe carry appears when adding 1 and 9, 2 and 9, 3 and 9 ... and so on,\u000athere are 45 cases in total and in each case, the carry appears exactly once. Example case 1.     Author: tuananh93\u000aTester: keshav_57\u000aEditorial: http://discuss.codechef.com/problems/TAAPLUSB\u000aTags: cook36 easy maths probability tsaplusb tuananh93\u000aDate Added: 15-05-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: tuananh93\u000aTester: keshav_57\u000aEditorial: http://discuss.codechef.com/problems/TAAPLUSB\u000aTags: cook36 easy maths probability tsaplusb tuananh93\u000aDate Added: 15-05-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: tuananh93 Author: tuananh93 tuananh93 Tester: keshav_57 Tester: keshav_57 keshav_57 Editorial: http://discuss.codechef.com/problems/TAAPLUSB Editorial: http://discuss.codechef.com/problems/TAAPLUSB http://discuss.codechef.com/problems/TAAPLUSB Tags: cook36 easy maths probability tsaplusb tuananh93 Tags: cook36 easy maths probability tsaplusb tuananh93 cook36 easy maths probability tsaplusb tuananh93 Date Added: 15-05-2013 Date Added: 15-05-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook36 easy maths probability tsaplusb tuananh93
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/TAAPLUSB
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVHave you ever implemented a program adding two big integers that cannot be represented by the primitive data type of your programming language? The algorithm is just simulation of the column addition method that we have been taught in elementary school. Sometimes we forget the carry and the result is incorrect.
+p17
+aVIn this problem, you need to evaluate the expected value of the number of times we have non-zero carry when adding two non-negative integers that contain at most N digits each. Note that we are adding the numbers in their base 10 representation.
+p18
+aVFor example, the following table shows the number of carries when adding some pairs of numbers:
+p19
+aVA B Number of carries
+p20
+aV20 4 0
+p21
+aV111 119 1
+p22
+aV123 923 1
+p23
+aV1235 98765 5
+p24
+asS'input'
+p25
+(lp26
+VInput
+p27
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p28
+aVEach test case has a single line containing an integer N.
+p29
+aVOutput
+p30
+aVFor each test case, output a single line containing the required expected value.
+p31
+aVYour answer will be accepted if the error is less than 10 -6.
+p32
+asS'constraints'
+p33
+(lp34
+VConstraints
+p35
+aV1 \u2264 T \u2264 100,000(105)
+p36
+aV1 \u2264 N \u2264 100,000(105)
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'name'
+p40
+VTAAPLUSB
+p41
+sb.

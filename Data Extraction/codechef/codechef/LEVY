@@ -1,0 +1,69 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aProblem Statement\u000aLevy's conjecture, named after Hyman Levy, states that all odd integers greater than 5 can be represented as the sum of an odd prime number and an even semiprime. To put it algebraically, 2n + 1 = p + 2q always has a solution in primes p and q (not necessary to be distinct) for n > 2. (Source: Wikipedia)\u000aIn this problem, given a positive integer N (not necessary to be odd integer greater than 5). Your task is to calculate how many distinct ordered pairs (p, q) such that N = p + 2q, where p and q are primes.\u000aInput\u000aThe first line of input contains an integer T, denoting the number of test cases. Then T test cases follow.\u000aEach test case consists of exactly one line containing an integer N.\u000aConstraints\u000a1 \u2264 T \u2264 100000 (105)\u000a1 \u2264 N \u2264 10000 (104)\u000aOutput\u000aFor each test case, output the number of ordered pairs (p, q) of primes such that N = p + 2q.\u000aExample\u000aInput:\u000a3\u000a2\u000a7\u000a11\u000a\u000aOutput:\u000a0\u000a1\u000a2\u000aExplanation\u000aCase #1: There are no ordered pairs (p, q) such that p + 2q = 2.\u000aCase #2: There is only one ordered pair (p, q) = (3, 2) such that p + 2q = 7.\u000aCase #3: There are two ordered pairs (p, q) = (7, 2), (5, 3) such that p + 2q = 11.\u000aAuthor: kaushik_iska\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/LEVY\u000aTags: april13 kaushik_iska sieve simple\u000aDate Added: 7-03-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aProblem Statement\u000aLevy's conjecture, named after Hyman Levy, states that all odd integers greater than 5 can be represented as the sum of an odd prime number and an even semiprime. To put it algebraically, 2n + 1 = p + 2q always has a solution in primes p and q (not necessary to be distinct) for n > 2. (Source: Wikipedia)\u000aIn this problem, given a positive integer N (not necessary to be odd integer greater than 5). Your task is to calculate how many distinct ordered pairs (p, q) such that N = p + 2q, where p and q are primes.\u000aInput\u000aThe first line of input contains an integer T, denoting the number of test cases. Then T test cases follow.\u000aEach test case consists of exactly one line containing an integer N.\u000aConstraints\u000a1 \u2264 T \u2264 100000 (105)\u000a1 \u2264 N \u2264 10000 (104)\u000aOutput\u000aFor each test case, output the number of ordered pairs (p, q) of primes such that N = p + 2q.\u000aExample\u000aInput:\u000a3\u000a2\u000a7\u000a11\u000a\u000aOutput:\u000a0\u000a1\u000a2\u000aExplanation\u000aCase #1: There are no ordered pairs (p, q) such that p + 2q = 2.\u000aCase #2: There is only one ordered pair (p, q) = (3, 2) such that p + 2q = 7.\u000aCase #3: There are two ordered pairs (p, q) = (7, 2), (5, 3) such that p + 2q = 11.\u000aAuthor: kaushik_iska\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/LEVY\u000aTags: april13 kaushik_iska sieve simple\u000aDate Added: 7-03-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Problem Statement Levy's conjecture, named after Hyman Levy, states that all odd integers greater than 5 can be represented as the sum of an odd prime number and an even semiprime. To put it algebraically, 2n + 1 = p + 2q always has a solution in primes p and q (not necessary to be distinct) for n > 2. (Source: Wikipedia) Levy's conjecture Hyman Levy 5 2n + 1 = p + 2q p q n > 2 (Source: Wikipedia) Wikipedia In this problem, given a positive integer N (not necessary to be odd integer greater than 5). Your task is to calculate how many distinct ordered pairs (p, q) such that N = p + 2q, where p and q are primes. N 5 (p, q) N = p + 2q p q Input The first line of input contains an integer T, denoting the number of test cases. Then T test cases follow. T T Each test case consists of exactly one line containing an integer N. N Constraints 1 \u2264 T \u2264 100000 (105)\u000a1 \u2264 N \u2264 10000 (104) 1 \u2264 T \u2264 100000 (105) 1 T 100000 (105) 5 1 \u2264 N \u2264 10000 (104) 1 N 10000 (104) 4 Output For each test case, output the number of ordered pairs (p, q) of primes such that N = p + 2q. (p, q) N = p + 2q Example Input:\u000a3\u000a2\u000a7\u000a11\u000a\u000aOutput:\u000a0\u000a1\u000a2 Input: Output: Explanation Case #1: There are no ordered pairs (p, q) such that p + 2q = 2. Case #1: (p, q) p + 2q = 2 Case #2: There is only one ordered pair (p, q) = (3, 2) such that p + 2q = 7. Case #2: (p, q) = (3, 2) p + 2q = 7 Case #3: There are two ordered pairs (p, q) = (7, 2), (5, 3) such that p + 2q = 11. Case #3: (p, q) = (7, 2), (5, 3) p + 2q = 11  Author: kaushik_iska\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/LEVY\u000aTags: april13 kaushik_iska sieve simple\u000aDate Added: 7-03-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kaushik_iska\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/LEVY\u000aTags: april13 kaushik_iska sieve simple\u000aDate Added: 7-03-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kaushik_iska Author: kaushik_iska kaushik_iska Tester: laycurse Tester: laycurse laycurse Editorial: http://discuss.codechef.com/problems/LEVY Editorial: http://discuss.codechef.com/problems/LEVY http://discuss.codechef.com/problems/LEVY Tags: april13 kaushik_iska sieve simple Tags: april13 kaushik_iska sieve simple april13 kaushik_iska sieve simple Date Added: 7-03-2013 Date Added: 7-03-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V april13 kaushik_iska sieve simple
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LEVY
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVProblem Statement
+p17
+aVLevy's conjecture, named after Hyman Levy, states that all odd integers greater than 5 can be represented as the sum of an odd prime number and an even semiprime. To put it algebraically, 2n + 1 = p + 2q always has a solution in primes p and q (not necessary to be distinct) for n > 2. (Source: Wikipedia)
+p18
+aVIn this problem, given a positive integer N (not necessary to be odd integer greater than 5). Your task is to calculate how many distinct ordered pairs (p, q) such that N = p + 2q, where p and q are primes.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVThe first line of input contains an integer T, denoting the number of test cases. Then T test cases follow.
+p23
+aVEach test case consists of exactly one line containing an integer N.
+p24
+asS'constraints'
+p25
+(lp26
+VConstraints
+p27
+aV1 \u2264 T \u2264 100000 (105)
+p28
+aV1 \u2264 N \u2264 10000 (104)
+p29
+aVOutput
+p30
+aVFor each test case, output the number of ordered pairs (p, q) of primes such that N = p + 2q.
+p31
+asS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VLEVY
+p35
+sb.

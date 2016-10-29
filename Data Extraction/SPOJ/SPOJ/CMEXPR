@@ -1,0 +1,76 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput Print a single line for every expression. The line must contain the same expression with unneeded parentheses removed. You must remove as many parentheses as possible without changing the semantics of the expression. The semantics of the expression is considered the same if and only if any of the following conditions hold: The ordering of operations remains the same. That means "(a+b)+c" is the same as "a+b+c", and "a+(b/c)" is the same as "a+b/c".
+p6
+aVThe order of some operations is swapped but the result remains unchanged with respect to the addition and multiplication associativity. That means "a+(b+c)" and "(a+b)+c" are the same. We can also combine addition with subtraction and multiplication with division, if the subtraction or division is the second operation. For example, "a+(b-c)" is the same as "a+b-c". The ordering of operations remains the same. That means "(a+b)+c" is the same as "a+b+c", and "a+(b/c)" is the same as "a+b/c".
+p7
+aVThe order of some operations is swapped but the result remains unchanged with respect to the addition and multiplication associativity. That means "a+(b+c)" and "(a+b)+c" are the same. We can also combine addition with subtraction and multiplication with division, if the subtraction or division is the second operation. For example, "a+(b-c)" is the same as "a+b-c". The ordering of operations remains the same. That means "(a+b)+c" is the same as "a+b+c", and "a+(b/c)" is the same as "a+b/c". a b c a b c a b c a b c The order of some operations is swapped but the result remains unchanged with respect to the addition and multiplication associativity. That means "a+(b+c)" and "(a+b)+c" are the same. We can also combine addition with subtraction and multiplication with division, if the subtraction or division is the second operation. For example, "a+(b-c)" is the same as "a+b-c". a b c a b c a b c a b c You cannot use any other laws, namely you cannot swap left and right operands and you cannot replace "a-(b-c)" with "a-b+c". a b c a b c 
+p8
+asS'description'
+p9
+V The most important activity of ACM is the GSM network. As the mobile phone operator, ACM must build its own transmitting stations. It is very important to compute the exact behaviour of electro-magnetic waves. Unfortunately, prediction of electro-magnetic fields is a very complex task and the formulas describing them are very long and hard-to-read. For example, Maxwell's Equations describing the basic laws of electrical engineering are really tough. ACM has designed its own computer system that can make some field computations and produce results in the form of mathematic expressions. Unfortunately, by generating the expression in several steps, there are always some unneeded parentheses inside the expression. Your task is to take these partial results and make them "nice" by removing all unnecessary parentheses. Input There is a single positive integer T on the first line of input (equal to about 10000). It stands for the number of expressions to follow. Each expression consists of a single line containing only lowercase letters, operators (+, -, *, /) and parentheses (( and )). The letters are variables that can have any value, operators and parentheses have their usual meaning. Multiplication and division have higher priority then subtraction and addition. All operations with the same priority are computed from left to right (operators are left-associative). There are no spaces inside the expressions. No input line contains more than 250 characters. T + - * / ( )  Output Print a single line for every expression. The line must contain the same expression with unneeded parentheses removed. You must remove as many parentheses as possible without changing the semantics of the expression. The semantics of the expression is considered the same if and only if any of the following conditions hold: The ordering of operations remains the same. That means "(a+b)+c" is the same as "a+b+c", and "a+(b/c)" is the same as "a+b/c".\u000aThe order of some operations is swapped but the result remains unchanged with respect to the addition and multiplication associativity. That means "a+(b+c)" and "(a+b)+c" are the same. We can also combine addition with subtraction and multiplication with division, if the subtraction or division is the second operation. For example, "a+(b-c)" is the same as "a+b-c". The ordering of operations remains the same. That means "(a+b)+c" is the same as "a+b+c", and "a+(b/c)" is the same as "a+b/c".\u000aThe order of some operations is swapped but the result remains unchanged with respect to the addition and multiplication associativity. That means "a+(b+c)" and "(a+b)+c" are the same. We can also combine addition with subtraction and multiplication with division, if the subtraction or division is the second operation. For example, "a+(b-c)" is the same as "a+b-c". The ordering of operations remains the same. That means "(a+b)+c" is the same as "a+b+c", and "a+(b/c)" is the same as "a+b/c". a b c a b c a b c a b c The order of some operations is swapped but the result remains unchanged with respect to the addition and multiplication associativity. That means "a+(b+c)" and "(a+b)+c" are the same. We can also combine addition with subtraction and multiplication with division, if the subtraction or division is the second operation. For example, "a+(b-c)" is the same as "a+b-c". a b c a b c a b c a b c You cannot use any other laws, namely you cannot swap left and right operands and you cannot replace "a-(b-c)" with "a-b+c". a b c a b c Example Sample Input: 8\u000a(a+(b*c))\u000a((a+b)*c)\u000a(a*(b*c))\u000a(a*(b/c)*d)\u000a((a/(b/c))/d)\u000a((x))\u000a(a+b)-(c-d)-(e/f)\u000a(a+b)+(c-d)-(e+f) 8\u000a(a+(b*c))\u000a((a+b)*c)\u000a(a*(b*c))\u000a(a*(b/c)*d)\u000a((a/(b/c))/d)\u000a((x))\u000a(a+b)-(c-d)-(e/f)\u000a(a+b)+(c-d)-(e+f) Sample Output: a+b*c\u000a(a+b)*c\u000aa*b*c\u000aa*b/c*d\u000aa/(b/c)/d\u000ax\u000aa+b-(c-d)-e/f\u000aa+b+c-d-(e+f) a+b*c\u000a(a+b)*c\u000aa*b*c\u000aa*b/c*d\u000aa/(b/c)/d\u000ax\u000aa+b-(c-d)-e/f\u000aa+b+c-d-(e+f)
+p10
+sS'tags'
+p11
+S''
+p12
+sS'url'
+p13
+Vhttp://www.spoj.com/problems/CMEXPR
+p14
+sS'addedBy'
+p15
+Vadrian
+p16
+sS'memorylimit'
+p17
+V1536MB
+p18
+sS'cluster'
+p19
+VCube (Intel G860)
+p20
+sS'timelimit'
+p21
+V5s
+p22
+sS'statement'
+p23
+(lp24
+V The most important activity of ACM is the GSM network. As the mobile phone operator, ACM must build its own transmitting stations. It is very important to compute the exact behaviour of electro-magnetic waves. Unfortunately, prediction of electro-magnetic fields is a very complex task and the formulas describing them are very long and hard-to-read. For example, Maxwell's Equations describing the basic laws of electrical engineering are really tough. ACM has designed its own computer system that can make some field computations and produce results in the form of mathematic expressions. Unfortunately, by generating the expression in several steps, there are always some unneeded parentheses inside the expression. Your task is to take these partial results and make them "nice" by removing all unnecessary parentheses. 
+p25
+asS'sourcelimit'
+p26
+VACM Central European Programming Contest, Prague 2000
+p27
+sS'date'
+p28
+V2004-05-09
+p29
+sS'input'
+p30
+(lp31
+VInput There is a single positive integer T on the first line of input (equal to about 10000). It stands for the number of expressions to follow. Each expression consists of a single line containing only lowercase letters, operators (+, -, *, /) and parentheses (( and )). The letters are variables that can have any value, operators and parentheses have their usual meaning. Multiplication and division have higher priority then subtraction and addition. All operations with the same priority are computed from left to right (operators are left-associative). There are no spaces inside the expressions. No input line contains more than 250 characters. T + - * / ( )  
+p32
+asS'constraints'
+p33
+g31
+sS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VCMEXPR
+p37
+sb.

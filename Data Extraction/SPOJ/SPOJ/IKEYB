@@ -1,0 +1,511 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput Find an optimal keyboard for each test case. Optimal keyboard is such that has the lowest "price" for typing average text. The price is determined as the sum of the prices of each letter. The price of a letter is a product of the letter frequency (Fi) and its position on the key. The order of letters cannot be changed, they must be grouped in the given order. price F i i If there are more solutions with the same price, we will try to maximise the number of letters assigned to the last key, then to the one before the last one etc. More formally, you are to find a sequence P1, P2, ... PL representing the position of every letter on a particular key. The sequence must meet following conditions: P 1 P 2 P L L P1 = 1
+p6
+aVfor each i>1, either Pi = Pi-1+1 or Pi = 1
+p7
+aVthere are at most K numbers Pi such that Pi = 1
+p8
+aVthe sum of products SP = Sum[i=1..l] Fi.Pi is minimal
+p9
+aVfor any other sequence Q meeting these criteria and with the same sum SQ = SP, there exists such M, 1 <= M <= L that for any J, M<J <= L, PJ = QJ, and PM>QM. P1 = 1
+p10
+aVfor each i>1, either Pi = Pi-1+1 or Pi = 1
+p11
+aVthere are at most K numbers Pi such that Pi = 1
+p12
+aVthe sum of products SP = Sum[i=1..l] Fi.Pi is minimal
+p13
+aVfor any other sequence Q meeting these criteria and with the same sum SQ = SP, there exists such M, 1 <= M <= L that for any J, M<J <= L, PJ = QJ, and PM>QM. P1 = 1 P 1 for each i>1, either Pi = Pi-1+1 or Pi = 1 i P i i P i-1 i P i i there are at most K numbers Pi such that Pi = 1 K P i i P i i the sum of products SP = Sum[i=1..l] Fi.Pi is minimal S P P F i i P i i for any other sequence Q meeting these criteria and with the same sum SQ = SP, there exists such M, 1 <= M <= L that for any J, M<J <= L, PJ = QJ, and PM>QM. Q S Q Q S P P M M L J M J L P J J Q J J P M M Q M M The output for every test case must start with a single line saying Keypad #I:, where I is a sequential order of the test case, starting with 1. Then there must be exactly K lines, each representing one letter, in the same order that was used in input. Each line must contain the character representing the key, a colon, one space and a list of letters assigned to that particular key. Letters are not separated from each other. Keypad # I : I K Print one blank line after each test case, including the last one. 
+p14
+asS'description'
+p15
+V Most of you have probably tried to type an SMS message on the keypad of a cellular phone. It is sometimes very annoying to write longer messages, because one key must be usually pressed several times to produce a single letter. It is due to a low number of keys on the keypad. Typical phone has twelve keys only (and maybe some other control keys that are not used for typing). Moreover, only eight keys are used for typing 26 letters of an English alphabet. The standard assignment of letters on the keypad is shown in the left picture:  1\u000a  2\u000aabc 3\u000adef\u000a4\u000aghi 5\u000ajkl 6\u000amno\u000a7\u000apqrs 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a         1\u000a  2\u000aabcd 3\u000aefg\u000a4\u000ahijk 5\u000alm 6\u000anopq\u000a7\u000ars 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabc 3\u000adef\u000a4\u000aghi 5\u000ajkl 6\u000amno\u000a7\u000apqrs 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a         1\u000a  2\u000aabcd 3\u000aefg\u000a4\u000ahijk 5\u000alm 6\u000anopq\u000a7\u000ars 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabc 3\u000adef\u000a4\u000aghi 5\u000ajkl 6\u000amno\u000a7\u000apqrs 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a         1\u000a  2\u000aabcd 3\u000aefg\u000a4\u000ahijk 5\u000alm 6\u000anopq\u000a7\u000ars 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabc 3\u000adef\u000a4\u000aghi 5\u000ajkl 6\u000amno\u000a7\u000apqrs 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabc 3\u000adef\u000a4\u000aghi 5\u000ajkl 6\u000amno\u000a7\u000apqrs 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabc 3\u000adef\u000a4\u000aghi 5\u000ajkl 6\u000amno\u000a7\u000apqrs 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabc 3\u000adef 1\u000a   2\u000aabc  3\u000adef  4\u000aghi 5\u000ajkl 6\u000amno 4\u000aghi  5\u000ajkl  6\u000amno  7\u000apqrs 8\u000atuv 9\u000awxyz 7\u000apqrs  8\u000atuv  9\u000awxyz  *\u000a  0\u000aspace #\u000a  *\u000a   0\u000aspace  space #\u000a          1\u000a  2\u000aabcd 3\u000aefg\u000a4\u000ahijk 5\u000alm 6\u000anopq\u000a7\u000ars 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabcd 3\u000aefg\u000a4\u000ahijk 5\u000alm 6\u000anopq\u000a7\u000ars 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabcd 3\u000aefg\u000a4\u000ahijk 5\u000alm 6\u000anopq\u000a7\u000ars 8\u000atuv 9\u000awxyz\u000a*\u000a  0\u000aspace #\u000a  1\u000a  2\u000aabcd 3\u000aefg 1\u000a   2\u000aabcd  3\u000aefg  4\u000ahijk 5\u000alm 6\u000anopq 4\u000ahijk  5\u000alm  6\u000anopq  7\u000ars 8\u000atuv 9\u000awxyz 7\u000ars  8\u000atuv  9\u000awxyz  *\u000a  0\u000aspace #\u000a  *\u000a   0\u000aspace  space #\u000a   There are 3 or 4 letters assigned to each key. If you want the first letter of any group, you press that key once. If you want the second letter, you have to press the key twice. For other letters, the key must be pressed three or four times. The authors of the keyboard did not try to optimise the layout for minimal number of keystrokes. Instead, they preferred the even distribution of letters among the keys. Unfortunately, some letters are more frequent than others. Some of these frequent letters are placed on the third or even fourth place on the standard keyboard. For example, S is a very common letter in an English alphabet, and we need four keystrokes to type it. If the assignment of characters was like in the right picture, the keyboard would be much more comfortable for typing average English texts. S ACM have decided to put an optimised version of the keyboard on its new cellular phone. Now they need a computer program that will find an optimal layout for the given letter frequency. We need to preserve alphabetical order of letters, because the user would be confused if the letters were mixed. But we can assign any number of letters to a single key.  Input There is a single positive integer T on the first line of input (equal to about 2000). It stands for the number of test cases to follow. Each test case begins with a line containing two integers K, L (1 <= K <= L <= 90) separated by a single space. K is the number of keys, L is the number of letters to be mapped onto those keys. Then there are two lines. The first one contains exactly K characters each representing a name of one key. The second line contains exactly L characters representing names of letters of an alphabet. Keys and letters are represented by digits, letters (which are case-sensitive), or any punctuation characters (ASCII code between 33 and 126 inclusively). No two keys have the same character, no two letters are the same. However, the name of a letter can be used also as a name for a key. T K L K L K L K L After those two lines, there are exactly L lines each containing exactly one positive integer F1, F2, ... FL. These numbers determine the frequency of every letter, starting with the first one and continuing with the others sequentially. The higher number means the more common letter. No frequency will be higher than 100000. L F 1 F 2 F L L  Output Find an optimal keyboard for each test case. Optimal keyboard is such that has the lowest "price" for typing average text. The price is determined as the sum of the prices of each letter. The price of a letter is a product of the letter frequency (Fi) and its position on the key. The order of letters cannot be changed, they must be grouped in the given order. price F i i If there are more solutions with the same price, we will try to maximise the number of letters assigned to the last key, then to the one before the last one etc. More formally, you are to find a sequence P1, P2, ... PL representing the position of every letter on a particular key. The sequence must meet following conditions: P 1 P 2 P L L P1 = 1\u000afor each i>1, either Pi = Pi-1+1 or Pi = 1\u000athere are at most K numbers Pi such that Pi = 1\u000athe sum of products SP = Sum[i=1..l] Fi.Pi is minimal\u000afor any other sequence Q meeting these criteria and with the same sum SQ = SP, there exists such M, 1 <= M <= L that for any J, M<J <= L, PJ = QJ, and PM>QM. P1 = 1\u000afor each i>1, either Pi = Pi-1+1 or Pi = 1\u000athere are at most K numbers Pi such that Pi = 1\u000athe sum of products SP = Sum[i=1..l] Fi.Pi is minimal\u000afor any other sequence Q meeting these criteria and with the same sum SQ = SP, there exists such M, 1 <= M <= L that for any J, M<J <= L, PJ = QJ, and PM>QM. P1 = 1 P 1 for each i>1, either Pi = Pi-1+1 or Pi = 1 i P i i P i-1 i P i i there are at most K numbers Pi such that Pi = 1 K P i i P i i the sum of products SP = Sum[i=1..l] Fi.Pi is minimal S P P F i i P i i for any other sequence Q meeting these criteria and with the same sum SQ = SP, there exists such M, 1 <= M <= L that for any J, M<J <= L, PJ = QJ, and PM>QM. Q S Q Q S P P M M L J M J L P J J Q J J P M M Q M M The output for every test case must start with a single line saying Keypad #I:, where I is a sequential order of the test case, starting with 1. Then there must be exactly K lines, each representing one letter, in the same order that was used in input. Each line must contain the character representing the key, a colon, one space and a list of letters assigned to that particular key. Letters are not separated from each other. Keypad # I : I K Print one blank line after each test case, including the last one. Example Sample Input: 1\u000a8 26\u000a23456789\u000aABCDEFGHIJKLMNOPQRSTUVWXYZ\u000a3371\u000a589\u000a1575\u000a1614\u000a6212\u000a971\u000a773\u000a1904\u000a2989\u000a123\u000a209\u000a1588\u000a1513\u000a2996\u000a3269\u000a1080\u000a121\u000a2726\u000a3083\u000a4368\u000a1334\u000a518\u000a752\u000a427\u000a733\u000a871 1\u000a8 26\u000a23456789\u000aABCDEFGHIJKLMNOPQRSTUVWXYZ\u000a3371\u000a589\u000a1575\u000a1614\u000a6212\u000a971\u000a773\u000a1904\u000a2989\u000a123\u000a209\u000a1588\u000a1513\u000a2996\u000a3269\u000a1080\u000a121\u000a2726\u000a3083\u000a4368\u000a1334\u000a518\u000a752\u000a427\u000a733\u000a871 Sample Output: Keypad #1:\u000a2: ABCD\u000a3: EFG\u000a4: HIJK\u000a5: LM\u000a6: NOPQ\u000a7: RS\u000a8: TUV\u000a9: WXYZ Keypad #1:\u000a2: ABCD\u000a3: EFG\u000a4: HIJK\u000a5: LM\u000a6: NOPQ\u000a7: RS\u000a8: TUV\u000a9: WXYZ Warning: large Input/Output data, be careful with certain languages
+p16
+sS'tags'
+p17
+S''
+p18
+sS'url'
+p19
+Vhttp://www.spoj.com/problems/IKEYB
+p20
+sS'addedBy'
+p21
+Vadrian
+p22
+sS'memorylimit'
+p23
+V1536MB
+p24
+sS'cluster'
+p25
+VCube (Intel G860)
+p26
+sS'timelimit'
+p27
+V5s
+p28
+sS'statement'
+p29
+(lp30
+V Most of you have probably tried to type an SMS message on the keypad of a cellular phone. It is sometimes very annoying to write longer messages, because one key must be usually pressed several times to produce a single letter. It is due to a low number of keys on the keypad. Typical phone has twelve keys only (and maybe some other control keys that are not used for typing). Moreover, only eight keys are used for typing 26 letters of an English alphabet. The standard assignment of letters on the keypad is shown in the left picture:  1
+p31
+aV  2
+p32
+aVabc 3
+p33
+aVdef
+p34
+aV4
+p35
+aVghi 5
+p36
+aVjkl 6
+p37
+aVmno
+p38
+aV7
+p39
+aVpqrs 8
+p40
+aVtuv 9
+p41
+aVwxyz
+p42
+aV*
+p43
+aV  0
+p44
+aVspace #
+p45
+aV         1
+p46
+aV  2
+p47
+aVabcd 3
+p48
+aVefg
+p49
+ag35
+aVhijk 5
+p50
+aVlm 6
+p51
+aVnopq
+p52
+ag39
+aVrs 8
+p53
+aVtuv 9
+p54
+aVwxyz
+p55
+ag43
+aV  0
+p56
+aVspace #
+p57
+aV  1
+p58
+aV  2
+p59
+aVabc 3
+p60
+aVdef
+p61
+ag35
+aVghi 5
+p62
+aVjkl 6
+p63
+aVmno
+p64
+ag39
+aVpqrs 8
+p65
+aVtuv 9
+p66
+aVwxyz
+p67
+ag43
+aV  0
+p68
+aVspace #
+p69
+aV         1
+p70
+aV  2
+p71
+aVabcd 3
+p72
+aVefg
+p73
+ag35
+aVhijk 5
+p74
+aVlm 6
+p75
+aVnopq
+p76
+ag39
+aVrs 8
+p77
+aVtuv 9
+p78
+aVwxyz
+p79
+ag43
+aV  0
+p80
+aVspace #
+p81
+aV  1
+p82
+aV  2
+p83
+aVabc 3
+p84
+aVdef
+p85
+ag35
+aVghi 5
+p86
+aVjkl 6
+p87
+aVmno
+p88
+ag39
+aVpqrs 8
+p89
+aVtuv 9
+p90
+aVwxyz
+p91
+ag43
+aV  0
+p92
+aVspace #
+p93
+aV         1
+p94
+aV  2
+p95
+aVabcd 3
+p96
+aVefg
+p97
+ag35
+aVhijk 5
+p98
+aVlm 6
+p99
+aVnopq
+p100
+ag39
+aVrs 8
+p101
+aVtuv 9
+p102
+aVwxyz
+p103
+ag43
+aV  0
+p104
+aVspace #
+p105
+aV  1
+p106
+aV  2
+p107
+aVabc 3
+p108
+aVdef
+p109
+ag35
+aVghi 5
+p110
+aVjkl 6
+p111
+aVmno
+p112
+ag39
+aVpqrs 8
+p113
+aVtuv 9
+p114
+aVwxyz
+p115
+ag43
+aV  0
+p116
+aVspace #
+p117
+aV  1
+p118
+aV  2
+p119
+aVabc 3
+p120
+aVdef
+p121
+ag35
+aVghi 5
+p122
+aVjkl 6
+p123
+aVmno
+p124
+ag39
+aVpqrs 8
+p125
+aVtuv 9
+p126
+aVwxyz
+p127
+ag43
+aV  0
+p128
+aVspace #
+p129
+aV  1
+p130
+aV  2
+p131
+aVabc 3
+p132
+aVdef
+p133
+ag35
+aVghi 5
+p134
+aVjkl 6
+p135
+aVmno
+p136
+ag39
+aVpqrs 8
+p137
+aVtuv 9
+p138
+aVwxyz
+p139
+ag43
+aV  0
+p140
+aVspace #
+p141
+aV  1
+p142
+aV  2
+p143
+aVabc 3
+p144
+aVdef 1
+p145
+aV   2
+p146
+aVabc  3
+p147
+aVdef  4
+p148
+aVghi 5
+p149
+aVjkl 6
+p150
+aVmno 4
+p151
+aVghi  5
+p152
+aVjkl  6
+p153
+aVmno  7
+p154
+aVpqrs 8
+p155
+aVtuv 9
+p156
+aVwxyz 7
+p157
+aVpqrs  8
+p158
+aVtuv  9
+p159
+aVwxyz  *
+p160
+aV  0
+p161
+aVspace #
+p162
+aV  *
+p163
+aV   0
+p164
+aVspace  space #
+p165
+aV          1
+p166
+aV  2
+p167
+aVabcd 3
+p168
+aVefg
+p169
+ag35
+aVhijk 5
+p170
+aVlm 6
+p171
+aVnopq
+p172
+ag39
+aVrs 8
+p173
+aVtuv 9
+p174
+aVwxyz
+p175
+ag43
+aV  0
+p176
+aVspace #
+p177
+aV  1
+p178
+aV  2
+p179
+aVabcd 3
+p180
+aVefg
+p181
+ag35
+aVhijk 5
+p182
+aVlm 6
+p183
+aVnopq
+p184
+ag39
+aVrs 8
+p185
+aVtuv 9
+p186
+aVwxyz
+p187
+ag43
+aV  0
+p188
+aVspace #
+p189
+aV  1
+p190
+aV  2
+p191
+aVabcd 3
+p192
+aVefg
+p193
+ag35
+aVhijk 5
+p194
+aVlm 6
+p195
+aVnopq
+p196
+ag39
+aVrs 8
+p197
+aVtuv 9
+p198
+aVwxyz
+p199
+ag43
+aV  0
+p200
+aVspace #
+p201
+aV  1
+p202
+aV  2
+p203
+aVabcd 3
+p204
+aVefg 1
+p205
+aV   2
+p206
+aVabcd  3
+p207
+aVefg  4
+p208
+aVhijk 5
+p209
+aVlm 6
+p210
+aVnopq 4
+p211
+aVhijk  5
+p212
+aVlm  6
+p213
+aVnopq  7
+p214
+aVrs 8
+p215
+aVtuv 9
+p216
+aVwxyz 7
+p217
+aVrs  8
+p218
+aVtuv  9
+p219
+aVwxyz  *
+p220
+aV  0
+p221
+aVspace #
+p222
+aV  *
+p223
+aV   0
+p224
+aVspace  space #
+p225
+aV   There are 3 or 4 letters assigned to each key. If you want the first letter of any group, you press that key once. If you want the second letter, you have to press the key twice. For other letters, the key must be pressed three or four times. The authors of the keyboard did not try to optimise the layout for minimal number of keystrokes. Instead, they preferred the even distribution of letters among the keys. Unfortunately, some letters are more frequent than others. Some of these frequent letters are placed on the third or even fourth place on the standard keyboard. For example, S is a very common letter in an English alphabet, and we need four keystrokes to type it. If the assignment of characters was like in the right picture, the keyboard would be much more comfortable for typing average English texts. S ACM have decided to put an optimised version of the keyboard on its new cellular phone. Now they need a computer program that will find an optimal layout for the given letter frequency. We need to preserve alphabetical order of letters, because the user would be confused if the letters were mixed. But we can assign any number of letters to a single key.  
+p226
+asS'sourcelimit'
+p227
+VACM Central European Programming Contest, Prague 2000
+p228
+sS'date'
+p229
+V2004-05-09
+p230
+sS'input'
+p231
+(lp232
+VInput There is a single positive integer T on the first line of input (equal to about 2000). It stands for the number of test cases to follow. Each test case begins with a line containing two integers K, L (1 <= K <= L <= 90) separated by a single space. K is the number of keys, L is the number of letters to be mapped onto those keys. Then there are two lines. The first one contains exactly K characters each representing a name of one key. The second line contains exactly L characters representing names of letters of an alphabet. Keys and letters are represented by digits, letters (which are case-sensitive), or any punctuation characters (ASCII code between 33 and 126 inclusively). No two keys have the same character, no two letters are the same. However, the name of a letter can be used also as a name for a key. T K L K L K L K L After those two lines, there are exactly L lines each containing exactly one positive integer F1, F2, ... FL. These numbers determine the frequency of every letter, starting with the first one and continuing with the others sequentially. The higher number means the more common letter. No frequency will be higher than 100000. L F 1 F 2 F L L  
+p233
+asS'constraints'
+p234
+g232
+sS'id'
+p235
+c__builtin__
+id
+p236
+sS'name'
+p237
+VIKEYB
+p238
+sb.

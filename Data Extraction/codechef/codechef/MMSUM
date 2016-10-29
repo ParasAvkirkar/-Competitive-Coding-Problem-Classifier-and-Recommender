@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aYou're given an array of N integer numbers.\u000aThe maximal sum of the array is the maximal sum of the elements of a nonempty consecutive subarray of this array. For example, the maximal sum of the array [1, -2, 3, -2, 5] is 6 because the sum of the subarray [3, -2, 5] is 6 and it is impossible to achieve greater subarray sum.\u000aNow you're allowed to remove no more than one element from the given array. What is the maximal possible maximal sum of the resulting array you can achieve by doing so?\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the number of elements in the given array.\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.\u000aOutput\u000aFor each test case, output a single line containing the maximal possible maximal sum of the array obtained by removing no more than one integer from the initial array.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a2 \u2264 N \u2264 105\u000a-109 \u2264 Ai \u2264 109\u000aExample\u000aInput:\u000a2\u000a5\u000a1 -2 3 -2 5\u000a2\u000a-1 -2\u000a\u000aOutput:\u000a8\u000a-1\u000aExplanation\u000aExample case 1. As shown in the statement, the maximal sum of the initial array is 6, but if you remove the fourth element (i.e. -2), then the array [1, -2, 3, 5] will have subarray [3, 5] and the value of the maximal sum will be equal to 8.\u000aAuthor: xcwgf666\u000aTester: kevinsogo,xcwgf666,antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/MMSUM\u000aTags: maxsum medium snckql16 xcwgf666\u000aDate Added: 25-05-2016\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aYou're given an array of N integer numbers.\u000aThe maximal sum of the array is the maximal sum of the elements of a nonempty consecutive subarray of this array. For example, the maximal sum of the array [1, -2, 3, -2, 5] is 6 because the sum of the subarray [3, -2, 5] is 6 and it is impossible to achieve greater subarray sum.\u000aNow you're allowed to remove no more than one element from the given array. What is the maximal possible maximal sum of the resulting array you can achieve by doing so?\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a single integer N denoting the number of elements in the given array.\u000aThe second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.\u000aOutput\u000aFor each test case, output a single line containing the maximal possible maximal sum of the array obtained by removing no more than one integer from the initial array.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a2 \u2264 N \u2264 105\u000a-109 \u2264 Ai \u2264 109\u000aExample\u000aInput:\u000a2\u000a5\u000a1 -2 3 -2 5\u000a2\u000a-1 -2\u000a\u000aOutput:\u000a8\u000a-1\u000aExplanation\u000aExample case 1. As shown in the statement, the maximal sum of the initial array is 6, but if you remove the fourth element (i.e. -2), then the array [1, -2, 3, 5] will have subarray [3, 5] and the value of the maximal sum will be equal to 8.\u000aAuthor: xcwgf666\u000aTester: kevinsogo,xcwgf666,antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/MMSUM\u000aTags: maxsum medium snckql16 xcwgf666\u000aDate Added: 25-05-2016\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese You're given an array of N integer numbers. N The maximal sum of the array is the maximal sum of the elements of a nonempty consecutive subarray of this array. For example, the maximal sum of the array [1, -2, 3, -2, 5] is 6 because the sum of the subarray [3, -2, 5] is 6 and it is impossible to achieve greater subarray sum. maximal sum nonempty [1, -2, 3, -2, 5] 6 [3, -2, 5] 6 Now you're allowed to remove no more than one element from the given array. What is the maximal possible maximal sum of the resulting array you can achieve by doing so? no more than one Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T The first line of each test case contains a single integer N denoting the number of elements in the given array. N The second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array. N A1 1 A2 2 AN N Output For each test case, output a single line containing the maximal possible maximal sum of the array obtained by removing no more than one integer from the initial array. Constraints  1 \u2264 T \u2264 10\u000a2 \u2264 N \u2264 105\u000a-109 \u2264 Ai \u2264 109 1 \u2264 T \u2264 10 1 T 10 2 \u2264 N \u2264 105 2 N 105 5 -109 \u2264 Ai \u2264 109 -109 9 Ai i 109 9 Example Input:\u000a2\u000a5\u000a1 -2 3 -2 5\u000a2\u000a-1 -2\u000a\u000aOutput:\u000a8\u000a-1 Input: 2\u000a5\u000a1 -2 3 -2 5\u000a2\u000a-1 -2 Output: 8\u000a-1 Explanation  Example case 1. As shown in the statement, the maximal sum of the initial array is 6, but if you remove the fourth element (i.e. -2), then the array [1, -2, 3, 5] will have subarray [3, 5] and the value of the maximal sum will be equal to 8. Example case 1. 6 -2 [1, -2, 3, 5] [3, 5] 8  Author: xcwgf666\u000aTester: kevinsogo,xcwgf666,antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/MMSUM\u000aTags: maxsum medium snckql16 xcwgf666\u000aDate Added: 25-05-2016\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: xcwgf666\u000aTester: kevinsogo,xcwgf666,antoniuk1\u000aEditorial: http://discuss.codechef.com/problems/MMSUM\u000aTags: maxsum medium snckql16 xcwgf666\u000aDate Added: 25-05-2016\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: xcwgf666 Author: xcwgf666 xcwgf666 Tester: kevinsogo,xcwgf666,antoniuk1 Tester: kevinsogo,xcwgf666,antoniuk1 kevinsogo,xcwgf666,antoniuk1 Editorial: http://discuss.codechef.com/problems/MMSUM Editorial: http://discuss.codechef.com/problems/MMSUM http://discuss.codechef.com/problems/MMSUM Tags: maxsum medium snckql16 xcwgf666 Tags: maxsum medium snckql16 xcwgf666 maxsum medium snckql16 xcwgf666 Date Added: 25-05-2016 Date Added: 25-05-2016 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V maxsum medium snckql16 xcwgf666
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/MMSUM
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVYou're given an array of N integer numbers.
+p18
+aVThe maximal sum of the array is the maximal sum of the elements of a nonempty consecutive subarray of this array. For example, the maximal sum of the array [1, -2, 3, -2, 5] is 6 because the sum of the subarray [3, -2, 5] is 6 and it is impossible to achieve greater subarray sum.
+p19
+aVNow you're allowed to remove no more than one element from the given array. What is the maximal possible maximal sum of the resulting array you can achieve by doing so?
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVThe first line of each test case contains a single integer N denoting the number of elements in the given array.
+p25
+aVThe second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.
+p26
+aVOutput
+p27
+aVFor each test case, output a single line containing the maximal possible maximal sum of the array obtained by removing no more than one integer from the initial array.
+p28
+asS'constraints'
+p29
+(lp30
+VConstraints
+p31
+aV1 \u2264 T \u2264 10
+p32
+aV2 \u2264 N \u2264 105
+p33
+aV-109 \u2264 Ai \u2264 109
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VMMSUM
+p38
+sb.

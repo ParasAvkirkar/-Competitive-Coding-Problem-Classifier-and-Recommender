@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput For each case, print one line containing the minimum amount of money to be paid each day by ACM for the travel costs of its volunteers. 
+p6
+asS'description'
+p7
+V In the age of television, not many people attend theater performances. Antique Comedians of Malidinesia are aware of this fact. They want to propagate theater and, most of all, Antique Comedies. They have printed invitation cards with all the necessary information and with the programme. A lot of students were hired to distribute these invitations among the people. Each student volunteer has assigned exactly one bus stop and he or she stays there the whole day and gives invitation to people travelling by bus. A special course was taken where students learned how to influence people and what is the difference between influencing and robbery. The transport system is very special: all lines are unidirectional and connect exactly two stops. Buses leave the originating stop with passangers each half an hour. After reaching the destination stop they return empty to the originating stop, where they wait until the next full half an hour, e.g. X:00 or X:30, where 'X' denotes the hour. The fee for transport between two stops is given by special tables and is payable on the spot. The lines are planned in such a way, that each round trip (i.e. a journey starting and finishing at the same stop) passes through a Central Checkpoint Stop (CCS) where each passenger has to pass a thorough check including body scan. Central Checkpoint Stop All the ACM student members leave the CCS each morning. Each volunteer is to move to one predetermined stop to invite passengers. There are as many volunteers as stops. At the end of the day, all students travel back to CCS. You are to write a computer program that helps ACM to minimize the amount of money to pay every day for the transport of their employees. Input The input consists of N cases. The first line of the input contains only positive integer N. Then follow the cases. Each case begins with a line containing exactly two integers P and Q, 1 <= P,Q <= 1000000. P is the number of stops including CCS and Q the number of bus lines. Then there are Q lines, each describing one bus line. Each of the lines contains exactly three numbers - the originating stop, the destination stop and the price. The CCS is designated by number 1. Prices are positive integers the sum of which is smaller than 1000000000. You can also assume it is always possible to get from any stop to any other stop. N N P Q 1 <= P,Q <= 1000000 P Q Q 1 1000000000 Output For each case, print one line containing the minimum amount of money to be paid each day by ACM for the travel costs of its volunteers. Example Sample input:\u000a\u000a2\u000a2 2\u000a1 2 13\u000a2 1 33\u000a4 6\u000a1 2 10\u000a2 1 60\u000a1 3 20\u000a3 4 10\u000a2 4 5\u000a4 1 50\u000a\u000aSample output:\u000a\u000a46\u000a210 Warning: large Input/Output data, be careful with certain languages
+p8
+sS'tags'
+p9
+V #bfs
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/INCARDS
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V0.559s
+p20
+sS'statement'
+p21
+(lp22
+V In the age of television, not many people attend theater performances. Antique Comedians of Malidinesia are aware of this fact. They want to propagate theater and, most of all, Antique Comedies. They have printed invitation cards with all the necessary information and with the programme. A lot of students were hired to distribute these invitations among the people. Each student volunteer has assigned exactly one bus stop and he or she stays there the whole day and gives invitation to people travelling by bus. A special course was taken where students learned how to influence people and what is the difference between influencing and robbery. The transport system is very special: all lines are unidirectional and connect exactly two stops. Buses leave the originating stop with passangers each half an hour. After reaching the destination stop they return empty to the originating stop, where they wait until the next full half an hour, e.g. X:00 or X:30, where 'X' denotes the hour. The fee for transport between two stops is given by special tables and is payable on the spot. The lines are planned in such a way, that each round trip (i.e. a journey starting and finishing at the same stop) passes through a Central Checkpoint Stop (CCS) where each passenger has to pass a thorough check including body scan. Central Checkpoint Stop All the ACM student members leave the CCS each morning. Each volunteer is to move to one predetermined stop to invite passengers. There are as many volunteers as stops. At the end of the day, all students travel back to CCS. You are to write a computer program that helps ACM to minimize the amount of money to pay every day for the transport of their employees. 
+p23
+asS'sourcelimit'
+p24
+VACM Central European Programming Contest, Prague 1998
+p25
+sS'date'
+p26
+V2004-06-06
+p27
+sS'input'
+p28
+(lp29
+VInput The input consists of N cases. The first line of the input contains only positive integer N. Then follow the cases. Each case begins with a line containing exactly two integers P and Q, 1 <= P,Q <= 1000000. P is the number of stops including CCS and Q the number of bus lines. Then there are Q lines, each describing one bus line. Each of the lines contains exactly three numbers - the originating stop, the destination stop and the price. The CCS is designated by number 1. Prices are positive integers the sum of which is smaller than 1000000000. You can also assume it is always possible to get from any stop to any other stop. N N P Q 1 <= P,Q <= 1000000 P Q Q 1 1000000000 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VINCARDS
+p35
+sb.

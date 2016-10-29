@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000a  Chef loves to play games. Now he plays very interesting game called "Segment". At the beginning Chef has segment [0, X] and no points on it. On each step Chef chooses the subsegment of maximal length possible such as it contains no points on it. If there are more than one such subsegment Chef chooses the one with the minimal left coordinate. Once Chef chosed the subsegment he put the point in it's middle and the step is over.\u000aHelp Chef to define the coordinate of the point he will put on the K-th step.\u000a  Input\u000aThe first line contains integer T - number of test cases.\u000aEach of next T lines contains two integers X and K.\u000a  Output\u000aFor each test case in a single line print single double number - the coordinate of the K-th point Chef will put. Answer will be considered as correct if absolute difference between the answer and correct answer is less or equal 10^(-6).\u000a  Constraints\u000a1 \u2264 T \u2264 10^5\u000a1 \u2264 X \u2264 10^9\u000a1 \u2264 K \u2264 10^12\u000aSubtasks\u000aSubtask 1: T \u2264 10; X, K \u2264 20. Points: 15\u000aSubtask 2: T \u2264 10; X \u2264 10^6, K \u2264 2*10^5. Points: 25\u000aSubtask 3: T \u2264 10^5; X \u2264 10^9, K \u2264 10^12. Points: 60\u000a  Example\u000aInput:\u000a4\u000a10 1\u000a10 2\u000a10 3\u000a1000000000 1234567\u000aOutput:\u000a5.0000\u000a2.5000\u000a7.5000\u000a177375316.6198730500000000\u000a  Explanation\u000aYou can see the points coordinates for the third sample from first two samples.\u000aAuthor: berezin\u000aEditorial: http://discuss.codechef.com/problems/CHEFSEG\u000aTags: ad-hoc berezin nov14 simple\u000aDate Added: 12-03-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000a  Chef loves to play games. Now he plays very interesting game called "Segment". At the beginning Chef has segment [0, X] and no points on it. On each step Chef chooses the subsegment of maximal length possible such as it contains no points on it. If there are more than one such subsegment Chef chooses the one with the minimal left coordinate. Once Chef chosed the subsegment he put the point in it's middle and the step is over.\u000aHelp Chef to define the coordinate of the point he will put on the K-th step.\u000a  Input\u000aThe first line contains integer T - number of test cases.\u000aEach of next T lines contains two integers X and K.\u000a  Output\u000aFor each test case in a single line print single double number - the coordinate of the K-th point Chef will put. Answer will be considered as correct if absolute difference between the answer and correct answer is less or equal 10^(-6).\u000a  Constraints\u000a1 \u2264 T \u2264 10^5\u000a1 \u2264 X \u2264 10^9\u000a1 \u2264 K \u2264 10^12\u000aSubtasks\u000aSubtask 1: T \u2264 10; X, K \u2264 20. Points: 15\u000aSubtask 2: T \u2264 10; X \u2264 10^6, K \u2264 2*10^5. Points: 25\u000aSubtask 3: T \u2264 10^5; X \u2264 10^9, K \u2264 10^12. Points: 60\u000a  Example\u000aInput:\u000a4\u000a10 1\u000a10 2\u000a10 3\u000a1000000000 1234567\u000aOutput:\u000a5.0000\u000a2.5000\u000a7.5000\u000a177375316.6198730500000000\u000a  Explanation\u000aYou can see the points coordinates for the third sample from first two samples.\u000aAuthor: berezin\u000aEditorial: http://discuss.codechef.com/problems/CHEFSEG\u000aTags: ad-hoc berezin nov14 simple\u000aDate Added: 12-03-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian   Chef loves to play games. Now he plays very interesting game called "Segment". At the beginning Chef has segment [0, X] and no points on it. On each step Chef chooses the subsegment of maximal length possible such as it contains no points on it. If there are more than one such subsegment Chef chooses the one with the minimal left coordinate. Once Chef chosed the subsegment he put the point in it's middle and the step is over. [0, X] no Help Chef to define the coordinate of the point he will put on the K-th step. K   Input The first line contains integer T - number of test cases.\u000aEach of next T lines contains two integers X and K. The first line contains integer T - number of test cases. T Each of next T lines contains two integers X and K. T X K   Output For each test case in a single line print single double number - the coordinate of the K-th point Chef will put. Answer will be considered as correct if absolute difference between the answer and correct answer is less or equal 10^(-6). For each test case in a single line print single double number - the coordinate of the K-th point Chef will put. Answer will be considered as correct if absolute difference between the answer and correct answer is less or equal 10^(-6). K 10^(-6)   Constraints 1 \u2264 T \u2264 10^5\u000a1 \u2264 X \u2264 10^9\u000a1 \u2264 K \u2264 10^12 1 \u2264 T \u2264 10^5 1 T 10^5 1 \u2264 X \u2264 10^9 1 X 10^9 1 \u2264 K \u2264 10^12 1 K 10^12 Subtasks Subtask 1: T \u2264 10; X, K \u2264 20. Points: 15\u000aSubtask 2: T \u2264 10; X \u2264 10^6, K \u2264 2*10^5. Points: 25\u000aSubtask 3: T \u2264 10^5; X \u2264 10^9, K \u2264 10^12. Points: 60 Subtask 1: T \u2264 10; X, K \u2264 20. Points: 15 1 T 10 X, K 20 15 Subtask 2: T \u2264 10; X \u2264 10^6, K \u2264 2*10^5. Points: 25 2 T 10 X 10^6 K 2*10^5 25 Subtask 3: T \u2264 10^5; X \u2264 10^9, K \u2264 10^12. Points: 60 3 T 10^5 10^9 K 10^12 60   Example Input:\u000a4\u000a10 1\u000a10 2\u000a10 3\u000a1000000000 1234567\u000aOutput:\u000a5.0000\u000a2.5000\u000a7.5000\u000a177375316.6198730500000000 Input: Output:   Explanation You can see the points coordinates for the third sample from first two samples.  Author: berezin\u000aEditorial: http://discuss.codechef.com/problems/CHEFSEG\u000aTags: ad-hoc berezin nov14 simple\u000aDate Added: 12-03-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin\u000aEditorial: http://discuss.codechef.com/problems/CHEFSEG\u000aTags: ad-hoc berezin nov14 simple\u000aDate Added: 12-03-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: berezin Author: berezin berezin Editorial: http://discuss.codechef.com/problems/CHEFSEG Editorial: http://discuss.codechef.com/problems/CHEFSEG http://discuss.codechef.com/problems/CHEFSEG Tags: ad-hoc berezin nov14 simple Tags: ad-hoc berezin nov14 simple ad-hoc berezin nov14 simple Date Added: 12-03-2014 Date Added: 12-03-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V ad-hoc berezin nov14 simple
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHEFSEG
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVChef loves to play games. Now he plays very interesting game called "Segment". At the beginning Chef has segment [0, X] and no points on it. On each step Chef chooses the subsegment of maximal length possible such as it contains no points on it. If there are more than one such subsegment Chef chooses the one with the minimal left coordinate. Once Chef chosed the subsegment he put the point in it's middle and the step is over.
+p18
+aVHelp Chef to define the coordinate of the point he will put on the K-th step.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVThe first line contains integer T - number of test cases.
+p23
+aVEach of next T lines contains two integers X and K.
+p24
+aVOutput
+p25
+aVFor each test case in a single line print single double number - the coordinate of the K-th point Chef will put. Answer will be considered as correct if absolute difference between the answer and correct answer is less or equal 10^(-6).
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aV1 \u2264 T \u2264 10^5
+p30
+aV1 \u2264 X \u2264 10^9
+p31
+aV1 \u2264 K \u2264 10^12
+p32
+aVSubtasks
+p33
+aVSubtask 1: T \u2264 10; X, K \u2264 20. Points: 15
+p34
+aVSubtask 2: T \u2264 10; X \u2264 10^6, K \u2264 2*10^5. Points: 25
+p35
+aVSubtask 3: T \u2264 10^5; X \u2264 10^9, K \u2264 10^12. Points: 60
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VCHEFSEG
+p40
+sb.

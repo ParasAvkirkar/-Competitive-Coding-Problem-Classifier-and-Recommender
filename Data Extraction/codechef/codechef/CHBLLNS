@@ -1,0 +1,83 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aToday a plane was hijacked by a maniac. All the passengers of the flight are taken as hostage. Chef is also one of them.\u000aHe invited one of the passengers to play a game with him. If he loses the game, he will release all the passengers, otherwise he will kill all of them. A high risk affair it is.\u000aChef volunteered for this tough task. He was blindfolded by Hijacker. Hijacker brought a big black bag from his pockets. The contents of the bag is not visible. He tells Chef that the bag contains R red, G green and B blue colored balloons.\u000aHijacker now asked Chef to take out some balloons from the box such that there are at least K balloons of the same color and hand him over. If the taken out balloons does not contain at least K balloons of the same color, then the hijacker will shoot everybody. Chef is very scared and wants to leave this game as soon as possible, so he will draw the minimum number of balloons so as to save the passengers. Can you please help scared Chef to find out the minimum number of balloons he should take out.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a three space-separated integers R, G and B.\u000aThe second line contains only one integer K.\u000aOutput\u000aFor each test case, output a single line containing one integer - the minimum number of balloons Chef need to take out from the bag.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a1 \u2264 R, G, B \u2264 109\u000a1 \u2264 K \u2264 max{R, G, B}\u000aSubtasks\u000aSubtask 1 (44 points): 1 \u2264 R, G, B \u2264 10\u000aSubtask 2 (56 points): No additional constraints\u000aExample\u000aInput:\u000a2\u000a3 3 3\u000a1\u000a3 3 3\u000a2\u000a\u000aOutput:\u000a1\u000a4\u000aExplanation\u000aExample case 2. In the worst-case scenario first three balloons will be of the three different colors and only after fourth balloon Chef will have two balloons of the same color. So, Chef might need to fetch 4 balloons\u000aAuthor: antoniuk1\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHBLLNS\u000aTags: antoniuk1 april16 simple\u000aDate Added: 13-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.\u000aToday a plane was hijacked by a maniac. All the passengers of the flight are taken as hostage. Chef is also one of them.\u000aHe invited one of the passengers to play a game with him. If he loses the game, he will release all the passengers, otherwise he will kill all of them. A high risk affair it is.\u000aChef volunteered for this tough task. He was blindfolded by Hijacker. Hijacker brought a big black bag from his pockets. The contents of the bag is not visible. He tells Chef that the bag contains R red, G green and B blue colored balloons.\u000aHijacker now asked Chef to take out some balloons from the box such that there are at least K balloons of the same color and hand him over. If the taken out balloons does not contain at least K balloons of the same color, then the hijacker will shoot everybody. Chef is very scared and wants to leave this game as soon as possible, so he will draw the minimum number of balloons so as to save the passengers. Can you please help scared Chef to find out the minimum number of balloons he should take out.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a three space-separated integers R, G and B.\u000aThe second line contains only one integer K.\u000aOutput\u000aFor each test case, output a single line containing one integer - the minimum number of balloons Chef need to take out from the bag.\u000aConstraints\u000a1 \u2264 T \u2264 1000\u000a1 \u2264 R, G, B \u2264 109\u000a1 \u2264 K \u2264 max{R, G, B}\u000aSubtasks\u000aSubtask 1 (44 points): 1 \u2264 R, G, B \u2264 10\u000aSubtask 2 (56 points): No additional constraints\u000aExample\u000aInput:\u000a2\u000a3 3 3\u000a1\u000a3 3 3\u000a2\u000a\u000aOutput:\u000a1\u000a4\u000aExplanation\u000aExample case 2. In the worst-case scenario first three balloons will be of the three different colors and only after fourth balloon Chef will have two balloons of the same color. So, Chef might need to fetch 4 balloons\u000aAuthor: antoniuk1\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHBLLNS\u000aTags: antoniuk1 april16 simple\u000aDate Added: 13-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. Mandarin Chinese Russian Vietnamese Today a plane was hijacked by a maniac. All the passengers of the flight are taken as hostage. Chef is also one of them. He invited one of the passengers to play a game with him. If he loses the game, he will release all the passengers, otherwise he will kill all of them. A high risk affair it is. Chef volunteered for this tough task. He was blindfolded by Hijacker. Hijacker brought a big black bag from his pockets. The contents of the bag is not visible. He tells Chef that the bag contains R red, G green and B blue colored balloons. R G B Hijacker now asked Chef to take out some balloons from the box such that there are at least K balloons of the same color and hand him over. If the taken out balloons does not contain at least K balloons of the same color, then the hijacker will shoot everybody. Chef is very scared and wants to leave this game as soon as possible, so he will draw the minimum number of balloons so as to save the passengers. Can you please help scared Chef to find out the minimum number of balloons he should take out. K K Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aThe first line of each test case contains a three space-separated integers R, G and B.\u000aThe second line contains only one integer K. T T  R G B  K Output For each test case, output a single line containing one integer - the minimum number of balloons Chef need to take out from the bag. Constraints 1 \u2264 T \u2264 1000\u000a1 \u2264 R, G, B \u2264 109\u000a1 \u2264 K \u2264 max{R, G, B} 1 \u2264 T \u2264 1000 1 T 1000 1 \u2264 R, G, B \u2264 109 1 R, G, B 109 9 1 \u2264 K \u2264 max{R, G, B} 1 K max{R, G, B} R G B Subtasks Subtask 1 (44 points): 1 \u2264 R, G, B \u2264 10\u000aSubtask 2 (56 points): No additional constraints Subtask 1 (44 points): 1 \u2264 R, G, B \u2264 10 Subtask 1 (44 points): 1 \u2264 R, G, B \u2264 10 R G B Subtask 2 (56 points): No additional constraints Subtask 2 (56 points): Example Input:\u000a2\u000a3 3 3\u000a1\u000a3 3 3\u000a2\u000a\u000aOutput:\u000a1\u000a4 Input: Output: Explanation Example case 2. In the worst-case scenario first three balloons will be of the three different colors and only after fourth balloon Chef will have two balloons of the same color. So, Chef might need to fetch 4 balloons Example case 2.  Author: antoniuk1\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHBLLNS\u000aTags: antoniuk1 april16 simple\u000aDate Added: 13-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: antoniuk1\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/CHBLLNS\u000aTags: antoniuk1 april16 simple\u000aDate Added: 13-02-2016\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: antoniuk1 Author: antoniuk1 antoniuk1 Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/CHBLLNS Editorial: http://discuss.codechef.com/problems/CHBLLNS http://discuss.codechef.com/problems/CHBLLNS Tags: antoniuk1 april16 simple Tags: antoniuk1 april16 simple antoniuk1 april16 simple Date Added: 13-02-2016 Date Added: 13-02-2016 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V antoniuk1 april16 simple
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CHBLLNS
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+p17
+aVToday a plane was hijacked by a maniac. All the passengers of the flight are taken as hostage. Chef is also one of them.
+p18
+aVHe invited one of the passengers to play a game with him. If he loses the game, he will release all the passengers, otherwise he will kill all of them. A high risk affair it is.
+p19
+aVChef volunteered for this tough task. He was blindfolded by Hijacker. Hijacker brought a big black bag from his pockets. The contents of the bag is not visible. He tells Chef that the bag contains R red, G green and B blue colored balloons.
+p20
+aVHijacker now asked Chef to take out some balloons from the box such that there are at least K balloons of the same color and hand him over. If the taken out balloons does not contain at least K balloons of the same color, then the hijacker will shoot everybody. Chef is very scared and wants to leave this game as soon as possible, so he will draw the minimum number of balloons so as to save the passengers. Can you please help scared Chef to find out the minimum number of balloons he should take out.
+p21
+asS'input'
+p22
+(lp23
+VInput
+p24
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p25
+aVThe first line of each test case contains a three space-separated integers R, G and B.
+p26
+aVThe second line contains only one integer K.
+p27
+aVOutput
+p28
+aVFor each test case, output a single line containing one integer - the minimum number of balloons Chef need to take out from the bag.
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 T \u2264 1000
+p33
+aV1 \u2264 R, G, B \u2264 109
+p34
+aV1 \u2264 K \u2264 max{R, G, B}
+p35
+aVSubtasks
+p36
+aVSubtask 1 (44 points): 1 \u2264 R, G, B \u2264 10
+p37
+aVSubtask 2 (56 points): No additional constraints
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'name'
+p41
+VCHBLLNS
+p42
+sb.

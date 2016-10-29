@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput For each case, print exactly one line containing only one integer - the reversed sum of two reversed numbers. Omit any leading zeros in the output. 
+p6
+asS'description'
+p7
+V The Antique Comedians of Malidinesia prefer comedies to tragedies. Unfortunately, most of the ancient plays are tragedies. Therefore the dramatic advisor of ACM has decided to transfigure some tragedies into comedies. Obviously, this work is very hard because the basic sense of the play must be kept intact, although all the things change to their opposites. For example the numbers: if any number appears in the tragedy, it must be converted to its reversed form before being accepted into the comedy play. Reversed number is a number written in arabic numerals but the order of digits is reversed. The first digit becomes last and vice versa. For example, if the main hero had 1245 strawberries in the tragedy, he has 5421 of them now. Note that all the leading zeros are omitted. That means if the number ends with a zero, the zero is lost by reversing (e.g. 1200 gives 21). Also note that the reversed number never has any trailing zeros. ACM needs to calculate with reversed numbers. Your task is to add two reversed numbers and output their reversed sum. Of course, the result is not unique because any particular number is a reversed form of several numbers (e.g. 21 could be 12, 120 or 1200 before reversing). Thus we must assume that no zeros were lost by reversing (e.g. assume that the original number was 12). Input The input consists of N cases (equal to about 10000). The first line of the input contains only positive integer N. Then follow the cases. Each case consists of exactly one line with two positive integers separated by space. These are the reversed numbers you are to add. N N Output For each case, print exactly one line containing only one integer - the reversed sum of two reversed numbers. Omit any leading zeros in the output. Example Sample input: \u000a\u000a3\u000a24 1\u000a4358 754\u000a305 794\u000a\u000aSample output:\u000a\u000a34\u000a1998\u000a1
+p8
+sS'tags'
+p9
+V #simple-math #ad-hoc-1
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/ADDREV
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V5s
+p20
+sS'statement'
+p21
+(lp22
+V The Antique Comedians of Malidinesia prefer comedies to tragedies. Unfortunately, most of the ancient plays are tragedies. Therefore the dramatic advisor of ACM has decided to transfigure some tragedies into comedies. Obviously, this work is very hard because the basic sense of the play must be kept intact, although all the things change to their opposites. For example the numbers: if any number appears in the tragedy, it must be converted to its reversed form before being accepted into the comedy play. Reversed number is a number written in arabic numerals but the order of digits is reversed. The first digit becomes last and vice versa. For example, if the main hero had 1245 strawberries in the tragedy, he has 5421 of them now. Note that all the leading zeros are omitted. That means if the number ends with a zero, the zero is lost by reversing (e.g. 1200 gives 21). Also note that the reversed number never has any trailing zeros. ACM needs to calculate with reversed numbers. Your task is to add two reversed numbers and output their reversed sum. Of course, the result is not unique because any particular number is a reversed form of several numbers (e.g. 21 could be 12, 120 or 1200 before reversing). Thus we must assume that no zeros were lost by reversing (e.g. assume that the original number was 12). 
+p23
+asS'sourcelimit'
+p24
+VACM Central European Programming Contest, Prague 1998
+p25
+sS'date'
+p26
+V2004-06-06
+p27
+sS'input'
+p28
+(lp29
+VInput The input consists of N cases (equal to about 10000). The first line of the input contains only positive integer N. Then follow the cases. Each case consists of exactly one line with two positive integers separated by space. These are the reversed numbers you are to add. N N 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VADDREV
+p35
+sb.

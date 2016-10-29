@@ -1,0 +1,75 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aAlok-nath is man of equality. He needs your help to divide his \u201csanskars\u201d evenly amongst all his followers. By doing this, Alok-nath can create equality amongst his followers and he'll be called a true \u201csanskari\u201d.\u000aAlok-nath has N sanskars, and K followers. Each sanskar is given a numerical value which shows its intensity.\u000aYour task is to determine whether it is possible to allocate all the sanskars to followers in such a way that the sum of intensities of the sanskars allocated to each follower is equal. Note : A sanskar can be allocated to only one of the followers.\u000aInput\u000aThe first line of the input contains an integer T, denoting the number of test cases. Then T test cases follow. The first line of each case contains two integers N and K, with N denoting the number of sanskars and K denoting the number of followers. In the next line are N space separated integers denoting the intensities of each sanskar.\u000aOutput\u000aFor each test case, output "yes" if it is possible to divide his sanskars equally amongst his followers; otherwise output "no" (without quotes).\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 21\u000a1 \u2264 K \u2264 8\u000aSubtask #1 (20 points) : 0 \u2264 intensity of sanskar \u2264 10^5\u000aSubtask #2 (80 points) : 0 \u2264 intensity of sanskar \u2264 10^10\u000aExample\u000aInput:\u000a2\u000a5 3\u000a1 2 4 5 6\u000a5 3\u000a1 2 4 5 7\u000a\u000aOutput:\u000ayes\u000ano\u000aExplanation\u000aIn the first case, sanskars can be allocated as follows, each follower receiving a total intensity of 6: {1,5}, {2,4}, {6}.\u000aAuthor: jay_adm\u000aTester: shiplu\u000aEditorial: http://discuss.codechef.com/problems/SANSKAR\u000aTags: bit dec14 dp easy jay_adm\u000aDate Added: 21-02-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aAlok-nath is man of equality. He needs your help to divide his \u201csanskars\u201d evenly amongst all his followers. By doing this, Alok-nath can create equality amongst his followers and he'll be called a true \u201csanskari\u201d.\u000aAlok-nath has N sanskars, and K followers. Each sanskar is given a numerical value which shows its intensity.\u000aYour task is to determine whether it is possible to allocate all the sanskars to followers in such a way that the sum of intensities of the sanskars allocated to each follower is equal. Note : A sanskar can be allocated to only one of the followers.\u000aInput\u000aThe first line of the input contains an integer T, denoting the number of test cases. Then T test cases follow. The first line of each case contains two integers N and K, with N denoting the number of sanskars and K denoting the number of followers. In the next line are N space separated integers denoting the intensities of each sanskar.\u000aOutput\u000aFor each test case, output "yes" if it is possible to divide his sanskars equally amongst his followers; otherwise output "no" (without quotes).\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 21\u000a1 \u2264 K \u2264 8\u000aSubtask #1 (20 points) : 0 \u2264 intensity of sanskar \u2264 10^5\u000aSubtask #2 (80 points) : 0 \u2264 intensity of sanskar \u2264 10^10\u000aExample\u000aInput:\u000a2\u000a5 3\u000a1 2 4 5 6\u000a5 3\u000a1 2 4 5 7\u000a\u000aOutput:\u000ayes\u000ano\u000aExplanation\u000aIn the first case, sanskars can be allocated as follows, each follower receiving a total intensity of 6: {1,5}, {2,4}, {6}.\u000aAuthor: jay_adm\u000aTester: shiplu\u000aEditorial: http://discuss.codechef.com/problems/SANSKAR\u000aTags: bit dec14 dp easy jay_adm\u000aDate Added: 21-02-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Alok-nath is man of equality. He needs your help to divide his \u201csanskars\u201d evenly amongst all his followers. By doing this, Alok-nath can create equality amongst his followers and he'll be called a true \u201csanskari\u201d. Alok-nath has N sanskars, and K followers. Each sanskar is given a numerical value which shows its intensity. N K Your task is to determine whether it is possible to allocate all the sanskars to followers in such a way that the sum of intensities of the sanskars allocated to each follower is equal. Note : A sanskar can be allocated to only one of the followers. Note : Input The first line of the input contains an integer T, denoting the number of test cases. Then T test cases follow. The first line of each case contains two integers N and K, with N denoting the number of sanskars and K denoting the number of followers. In the next line are N space separated integers denoting the intensities of each sanskar. T T N K N K N Output For each test case, output "yes" if it is possible to divide his sanskars equally amongst his followers; otherwise output "no" (without quotes). Constraints 1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 21\u000a1 \u2264 K \u2264 8\u000aSubtask #1 (20 points) : 0 \u2264 intensity of sanskar \u2264 10^5\u000aSubtask #2 (80 points) : 0 \u2264 intensity of sanskar \u2264 10^10 1 \u2264 T \u2264 10 1 T 10 1 \u2264 N \u2264 21 1 N 21 1 \u2264 K \u2264 8 1 K 8 Subtask #1 (20 points) : 0 \u2264 intensity of sanskar \u2264 10^5 0 intensity of sanskar 10^5 Subtask #2 (80 points) : 0 \u2264 intensity of sanskar \u2264 10^10 0 intensity of sanskar 10^10 Example Input:\u000a2\u000a5 3\u000a1 2 4 5 6\u000a5 3\u000a1 2 4 5 7\u000a\u000aOutput:\u000ayes\u000ano Input: Output: Explanation In the first case, sanskars can be allocated as follows, each follower receiving a total intensity of 6: {1,5}, {2,4}, {6}.  Author: jay_adm\u000aTester: shiplu\u000aEditorial: http://discuss.codechef.com/problems/SANSKAR\u000aTags: bit dec14 dp easy jay_adm\u000aDate Added: 21-02-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: jay_adm\u000aTester: shiplu\u000aEditorial: http://discuss.codechef.com/problems/SANSKAR\u000aTags: bit dec14 dp easy jay_adm\u000aDate Added: 21-02-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: jay_adm Author: jay_adm jay_adm Tester: shiplu Tester: shiplu shiplu Editorial: http://discuss.codechef.com/problems/SANSKAR Editorial: http://discuss.codechef.com/problems/SANSKAR http://discuss.codechef.com/problems/SANSKAR Tags: bit dec14 dp easy jay_adm Tags: bit dec14 dp easy jay_adm bit dec14 dp easy jay_adm Date Added: 21-02-2014 Date Added: 21-02-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V bit dec14 dp easy jay_adm
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/SANSKAR
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVAlok-nath is man of equality. He needs your help to divide his \u201csanskars\u201d evenly amongst all his followers. By doing this, Alok-nath can create equality amongst his followers and he'll be called a true \u201csanskari\u201d.
+p18
+aVAlok-nath has N sanskars, and K followers. Each sanskar is given a numerical value which shows its intensity.
+p19
+aVYour task is to determine whether it is possible to allocate all the sanskars to followers in such a way that the sum of intensities of the sanskars allocated to each follower is equal. Note : A sanskar can be allocated to only one of the followers.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T, denoting the number of test cases. Then T test cases follow. The first line of each case contains two integers N and K, with N denoting the number of sanskars and K denoting the number of followers. In the next line are N space separated integers denoting the intensities of each sanskar.
+p24
+aVOutput
+p25
+aVFor each test case, output "yes" if it is possible to divide his sanskars equally amongst his followers; otherwise output "no" (without quotes).
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aV1 \u2264 T \u2264 10
+p30
+aV1 \u2264 N \u2264 21
+p31
+aV1 \u2264 K \u2264 8
+p32
+aVSubtask #1 (20 points) : 0 \u2264 intensity of sanskar \u2264 10^5
+p33
+aVSubtask #2 (80 points) : 0 \u2264 intensity of sanskar \u2264 10^10
+p34
+asS'id'
+p35
+c__builtin__
+id
+p36
+sS'name'
+p37
+VSANSKAR
+p38
+sb.

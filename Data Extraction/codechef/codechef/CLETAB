@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aHaku has been newly hired by Chef to clean tables at his restaurant. So whenever a customer wants a table, Haku must clean it.\u000aBut Haku happens to be a lazy boy. So in the morning, when the restaurant is opened, all the tables are dirty from night before.\u000aThe customer don't leave the table unless they are politely requested to do so. And customers can order meal later again. So if they were already having a table, they can be served on the same table [Haku doesn't have to clean :)]. But if they don't have a table then they must be given some table [Haku must clean :(]\u000aThe restaurant has N tables. When a customer requires a table, he/she can occupy any unoccupied table. However if all tables are occupied, then Haku is free to ask politely any customer to leave his/her table. And the freed table can be given to the waiting customer.\u000aNow Chef has the psychic ability to tell the order of customer meal requests for the entire day. Given this list, help Haku find the minimum number of times he has to clean the tables.\u000aInput\u000aFirst line contains integer T, number of test cases.\u000aFirst line of each test case contains 2 integers N, number of tables and M, number of customer orders. Followed by M integers on next line, which is the order in which customers ask for meal. Customers are referenced by integer C.\u000aOutput\u000aFor each test case output the minimum number of times Haku must clean the table(s).\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 200\u000a1 \u2264 M \u2264 400\u000a1 \u2264 C \u2264 400\u000aExample\u000aInput:\u000a4\u000a2 4\u000a1 2 3 4\u000a3 2\u000a4 1\u000a3 6\u000a1 2 1 3 4 1\u000a3 5\u000a1 2 1 3 4\u000a\u000aOutput:\u000a4\u000a2\u000a4\u000a4\u000aExplanation\u000aExample case 1. In the starting all tables i.e. 2 tables are unoccupied. When customer 1 asks for table, he can be given any of the 2 tables. Haku has to clean either of the table. Next customer 2 can occupy the other free table. Haku must clean second time. When customer 3 comes Haku can ask either customer 1 or 2 to leave. Suppose he asks customer 1 to leave. Then he has to clean table for the third time. When customer 4 comes, Haku can ask customer 2 or 3 to leave. In either case Haku will have to clean the table for the fourth time. Phew!!\u000aExample case 4. Suppose the tables are listed as [-, -, -]. A possible optimal order of allocating tables can be [1, -, -] -> [1, 2, -] -> [1, 2, -] -> [1, 2, 3] -> [4, 2, 3]. So Haku will have to clean table for order no. 1, 2, 4 and 5. That is 4 times.\u000aAuthor: vinayak garg\u000aEditorial: http://discuss.codechef.com/problems/CLETAB\u000aTags: aug14 greedy simple vinayak garg\u000aDate Added: 3-07-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aHaku has been newly hired by Chef to clean tables at his restaurant. So whenever a customer wants a table, Haku must clean it.\u000aBut Haku happens to be a lazy boy. So in the morning, when the restaurant is opened, all the tables are dirty from night before.\u000aThe customer don't leave the table unless they are politely requested to do so. And customers can order meal later again. So if they were already having a table, they can be served on the same table [Haku doesn't have to clean :)]. But if they don't have a table then they must be given some table [Haku must clean :(]\u000aThe restaurant has N tables. When a customer requires a table, he/she can occupy any unoccupied table. However if all tables are occupied, then Haku is free to ask politely any customer to leave his/her table. And the freed table can be given to the waiting customer.\u000aNow Chef has the psychic ability to tell the order of customer meal requests for the entire day. Given this list, help Haku find the minimum number of times he has to clean the tables.\u000aInput\u000aFirst line contains integer T, number of test cases.\u000aFirst line of each test case contains 2 integers N, number of tables and M, number of customer orders. Followed by M integers on next line, which is the order in which customers ask for meal. Customers are referenced by integer C.\u000aOutput\u000aFor each test case output the minimum number of times Haku must clean the table(s).\u000aConstraints\u000a1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 200\u000a1 \u2264 M \u2264 400\u000a1 \u2264 C \u2264 400\u000aExample\u000aInput:\u000a4\u000a2 4\u000a1 2 3 4\u000a3 2\u000a4 1\u000a3 6\u000a1 2 1 3 4 1\u000a3 5\u000a1 2 1 3 4\u000a\u000aOutput:\u000a4\u000a2\u000a4\u000a4\u000aExplanation\u000aExample case 1. In the starting all tables i.e. 2 tables are unoccupied. When customer 1 asks for table, he can be given any of the 2 tables. Haku has to clean either of the table. Next customer 2 can occupy the other free table. Haku must clean second time. When customer 3 comes Haku can ask either customer 1 or 2 to leave. Suppose he asks customer 1 to leave. Then he has to clean table for the third time. When customer 4 comes, Haku can ask customer 2 or 3 to leave. In either case Haku will have to clean the table for the fourth time. Phew!!\u000aExample case 4. Suppose the tables are listed as [-, -, -]. A possible optimal order of allocating tables can be [1, -, -] -> [1, 2, -] -> [1, 2, -] -> [1, 2, 3] -> [4, 2, 3]. So Haku will have to clean table for order no. 1, 2, 4 and 5. That is 4 times.\u000aAuthor: vinayak garg\u000aEditorial: http://discuss.codechef.com/problems/CLETAB\u000aTags: aug14 greedy simple vinayak garg\u000aDate Added: 3-07-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Haku has been newly hired by Chef to clean tables at his restaurant. So whenever a customer wants a table, Haku must clean it. But Haku happens to be a lazy boy. So in the morning, when the restaurant is opened, all the tables are dirty from night before. The customer don't leave the table unless they are politely requested to do so. And customers can order meal later again. So if they were already having a table, they can be served on the same table [Haku doesn't have to clean :)]. But if they don't have a table then they must be given some table [Haku must clean :(] The restaurant has N tables. When a customer requires a table, he/she can occupy any unoccupied table. However if all tables are occupied, then Haku is free to ask politely any customer to leave his/her table. And the freed table can be given to the waiting customer. N Now Chef has the psychic ability to tell the order of customer meal requests for the entire day. Given this list, help Haku find the minimum number of times he has to clean the tables. Input First line contains integer T, number of test cases.\u000aFirst line of each test case contains 2 integers N, number of tables and M, number of customer orders. Followed by M integers on next line, which is the order in which customers ask for meal. Customers are referenced by integer C. T  N M M C Output For each test case output the minimum number of times Haku must clean the table(s). Constraints 1 \u2264 T \u2264 100\u000a1 \u2264 N \u2264 200\u000a1 \u2264 M \u2264 400\u000a1 \u2264 C \u2264 400 1 \u2264 T \u2264 100 T 1 \u2264 N \u2264 200 N 1 \u2264 M \u2264 400 M 1 \u2264 C \u2264 400 C Example Input:\u000a4\u000a2 4\u000a1 2 3 4\u000a3 2\u000a4 1\u000a3 6\u000a1 2 1 3 4 1\u000a3 5\u000a1 2 1 3 4\u000a\u000aOutput:\u000a4\u000a2\u000a4\u000a4 Input: Output: Explanation Example case 1. In the starting all tables i.e. 2 tables are unoccupied. When customer 1 asks for table, he can be given any of the 2 tables. Haku has to clean either of the table. Next customer 2 can occupy the other free table. Haku must clean second time. When customer 3 comes Haku can ask either customer 1 or 2 to leave. Suppose he asks customer 1 to leave. Then he has to clean table for the third time. When customer 4 comes, Haku can ask customer 2 or 3 to leave. In either case Haku will have to clean the table for the fourth time. Phew!! Example case 1. Example case 4. Suppose the tables are listed as [-, -, -]. A possible optimal order of allocating tables can be [1, -, -] -> [1, 2, -] -> [1, 2, -] -> [1, 2, 3] -> [4, 2, 3]. So Haku will have to clean table for order no. 1, 2, 4 and 5. That is 4 times. Example case 4.  Author: vinayak garg\u000aEditorial: http://discuss.codechef.com/problems/CLETAB\u000aTags: aug14 greedy simple vinayak garg\u000aDate Added: 3-07-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: vinayak garg\u000aEditorial: http://discuss.codechef.com/problems/CLETAB\u000aTags: aug14 greedy simple vinayak garg\u000aDate Added: 3-07-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: vinayak garg Author: vinayak garg vinayak garg Editorial: http://discuss.codechef.com/problems/CLETAB Editorial: http://discuss.codechef.com/problems/CLETAB http://discuss.codechef.com/problems/CLETAB Tags: aug14 greedy simple vinayak garg Tags: aug14 greedy simple vinayak garg aug14 greedy simple vinayak garg Date Added: 3-07-2014 Date Added: 3-07-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V aug14 greedy simple vinayak garg
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/CLETAB
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVHaku has been newly hired by Chef to clean tables at his restaurant. So whenever a customer wants a table, Haku must clean it.
+p18
+aVBut Haku happens to be a lazy boy. So in the morning, when the restaurant is opened, all the tables are dirty from night before.
+p19
+aVThe customer don't leave the table unless they are politely requested to do so. And customers can order meal later again. So if they were already having a table, they can be served on the same table [Haku doesn't have to clean :)]. But if they don't have a table then they must be given some table [Haku must clean :(]
+p20
+aVThe restaurant has N tables. When a customer requires a table, he/she can occupy any unoccupied table. However if all tables are occupied, then Haku is free to ask politely any customer to leave his/her table. And the freed table can be given to the waiting customer.
+p21
+aVNow Chef has the psychic ability to tell the order of customer meal requests for the entire day. Given this list, help Haku find the minimum number of times he has to clean the tables.
+p22
+asS'input'
+p23
+(lp24
+VInput
+p25
+aVFirst line contains integer T, number of test cases.
+p26
+aVFirst line of each test case contains 2 integers N, number of tables and M, number of customer orders. Followed by M integers on next line, which is the order in which customers ask for meal. Customers are referenced by integer C.
+p27
+aVOutput
+p28
+aVFor each test case output the minimum number of times Haku must clean the table(s).
+p29
+asS'constraints'
+p30
+(lp31
+VConstraints
+p32
+aV1 \u2264 T \u2264 100
+p33
+aV1 \u2264 N \u2264 200
+p34
+aV1 \u2264 M \u2264 400
+p35
+aV1 \u2264 C \u2264 400
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VCLETAB
+p40
+sb.

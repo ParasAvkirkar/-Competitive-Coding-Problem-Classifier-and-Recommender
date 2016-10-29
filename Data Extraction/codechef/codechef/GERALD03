@@ -1,0 +1,87 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aRead problems statements in Russian here\u000aProblem Statement\u000aChef has a sequence of N segments: [L1, R1], [L2, R2], ..., [LN, RN]. He wants to transform the first segment to the last one (with index N). His plan is to do this big deal with a number of transformations: firstly he will transform\u000athe first segment to the second one, then to the third one, then to the fourth one, and so on till N-th one.\u000a\u000aChef can use operation of a single type: shift one segment border by one unit. So, if he has segment [L, R], he can transform it into one of the following segments: [L + 1, R] (we will denote such operation with string L+), [L, R + 1] (will be denoted as R+), [L - 1, R] (L-), [L, R - 1] (R-). Chef doesn't like empty segments, therefore he cannot use any operation that makes a segment empty (L = R).\u000a\u000aChef really wants to transform his segment as fast as possible. Please, help him. Find the sequence with minimal number of operations that transforms his segment. If there are multiple such sequences pick the lexicographically minimal one.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains a single integer N denoting the number of segments Chef has. \u000aThe following N lines contain pairs of integers. The i-th line contains integers Li, Ri, denoting i-th Chef's segment.\u000aOutput\u000aFor each test case print an answer - two lines. The first line should contain the minimal number of operations. The second line should contain the sequence of operations\u000awithout any whitespaces.\u000aConstraints\u000a1 \u2264 T, N \u2264 1000.\u000a-1000 \u2264 Li < Ri \u2264 1000.\u000aThe total sum of N values for all test cases doesn't exceed 1000.\u000aExample\u000aInput:\u000a4\u000a3\u000a-1 0\u000a0 1\u000a3 5\u000a1\u000a0 1\u000a3\u000a-2 -1\u000a-2 -1\u000a-2 0\u000a4\u000a4 6\u000a3 5\u000a-1 1\u000a1 2\u000a\u000aOutput:\u000a9\u000aR+L+R+L+R+L+R+L+R+\u000a0\u000a\u000a1\u000aR+\u000a13\u000aL-R-L-L-L-L-R-R-R-R-L+R+L+\u000aAuthor: gerald\u000aTester: rustinpiece\u000aEditorial: http://discuss.codechef.com/problems/GERALD03\u000aTags: cook41 easy gerald greedy\u000aDate Added: 13-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese here\u000aRead problems statements in Russian here\u000aProblem Statement\u000aChef has a sequence of N segments: [L1, R1], [L2, R2], ..., [LN, RN]. He wants to transform the first segment to the last one (with index N). His plan is to do this big deal with a number of transformations: firstly he will transform\u000athe first segment to the second one, then to the third one, then to the fourth one, and so on till N-th one.\u000a\u000aChef can use operation of a single type: shift one segment border by one unit. So, if he has segment [L, R], he can transform it into one of the following segments: [L + 1, R] (we will denote such operation with string L+), [L, R + 1] (will be denoted as R+), [L - 1, R] (L-), [L, R - 1] (R-). Chef doesn't like empty segments, therefore he cannot use any operation that makes a segment empty (L = R).\u000a\u000aChef really wants to transform his segment as fast as possible. Please, help him. Find the sequence with minimal number of operations that transforms his segment. If there are multiple such sequences pick the lexicographically minimal one.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains a single integer N denoting the number of segments Chef has. \u000aThe following N lines contain pairs of integers. The i-th line contains integers Li, Ri, denoting i-th Chef's segment.\u000aOutput\u000aFor each test case print an answer - two lines. The first line should contain the minimal number of operations. The second line should contain the sequence of operations\u000awithout any whitespaces.\u000aConstraints\u000a1 \u2264 T, N \u2264 1000.\u000a-1000 \u2264 Li < Ri \u2264 1000.\u000aThe total sum of N values for all test cases doesn't exceed 1000.\u000aExample\u000aInput:\u000a4\u000a3\u000a-1 0\u000a0 1\u000a3 5\u000a1\u000a0 1\u000a3\u000a-2 -1\u000a-2 -1\u000a-2 0\u000a4\u000a4 6\u000a3 5\u000a-1 1\u000a1 2\u000a\u000aOutput:\u000a9\u000aR+L+R+L+R+L+R+L+R+\u000a0\u000a\u000a1\u000aR+\u000a13\u000aL-R-L-L-L-L-R-R-R-R-L+R+L+\u000aAuthor: gerald\u000aTester: rustinpiece\u000aEditorial: http://discuss.codechef.com/problems/GERALD03\u000aTags: cook41 easy gerald greedy\u000aDate Added: 13-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese here here Read problems statements in Russian here here Problem Statement Chef has a sequence of N segments: [L1, R1], [L2, R2], ..., [LN, RN]. He wants to transform the first segment to the last one (with index N). His plan is to do this big deal with a number of transformations: firstly he will transform\u000athe first segment to the second one, then to the third one, then to the fourth one, and so on till N-th one.\u000a\u000aChef can use operation of a single type: shift one segment border by one unit. So, if he has segment [L, R], he can transform it into one of the following segments: [L + 1, R] (we will denote such operation with string L+), [L, R + 1] (will be denoted as R+), [L - 1, R] (L-), [L, R - 1] (R-). Chef doesn't like empty segments, therefore he cannot use any operation that makes a segment empty (L = R).\u000a\u000aChef really wants to transform his segment as fast as possible. Please, help him. Find the sequence with minimal number of operations that transforms his segment. If there are multiple such sequences pick the lexicographically minimal one. N L1 1 R1 1 L2 2 R2 2 LN N RN N N  N   L R L + 1 R L R + 1 L - 1 R L R - 1 L = R   Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000a\u000aThe first line of each test case contains a single integer N denoting the number of segments Chef has. \u000aThe following N lines contain pairs of integers. The i-th line contains integers Li, Ri, denoting i-th Chef's segment. T T   N  N i Li i Ri i i Output For each test case print an answer - two lines. The first line should contain the minimal number of operations. The second line should contain the sequence of operations\u000awithout any whitespaces.  Constraints 1 \u2264 T, N \u2264 1000.\u000a-1000 \u2264 Li < Ri \u2264 1000. 1 \u2264 T, N \u2264 1000. 1 T N 1000 -1000 \u2264 Li < Ri \u2264 1000. -1000 Li i Ri i 1000 The total sum of N values for all test cases doesn't exceed 1000. N Example Input:\u000a4\u000a3\u000a-1 0\u000a0 1\u000a3 5\u000a1\u000a0 1\u000a3\u000a-2 -1\u000a-2 -1\u000a-2 0\u000a4\u000a4 6\u000a3 5\u000a-1 1\u000a1 2\u000a\u000aOutput:\u000a9\u000aR+L+R+L+R+L+R+L+R+\u000a0\u000a\u000a1\u000aR+\u000a13\u000aL-R-L-L-L-L-R-R-R-R-L+R+L+ Input: Output:  Author: gerald\u000aTester: rustinpiece\u000aEditorial: http://discuss.codechef.com/problems/GERALD03\u000aTags: cook41 easy gerald greedy\u000aDate Added: 13-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: gerald\u000aTester: rustinpiece\u000aEditorial: http://discuss.codechef.com/problems/GERALD03\u000aTags: cook41 easy gerald greedy\u000aDate Added: 13-11-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: gerald Author: gerald gerald Tester: rustinpiece Tester: rustinpiece rustinpiece Editorial: http://discuss.codechef.com/problems/GERALD03 Editorial: http://discuss.codechef.com/problems/GERALD03 http://discuss.codechef.com/problems/GERALD03 Tags: cook41 easy gerald greedy Tags: cook41 easy gerald greedy cook41 easy gerald greedy Date Added: 13-11-2013 Date Added: 13-11-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook41 easy gerald greedy
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/GERALD03
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese here
+p17
+aVRead problems statements in Russian here
+p18
+aVProblem Statement
+p19
+aVChef has a sequence of N segments: [L1, R1], [L2, R2], ..., [LN, RN]. He wants to transform the first segment to the last one (with index N). His plan is to do this big deal with a number of transformations: firstly he will transform
+p20
+aVthe first segment to the second one, then to the third one, then to the fourth one, and so on till N-th one.
+p21
+aV
+p22
+aVChef can use operation of a single type: shift one segment border by one unit. So, if he has segment [L, R], he can transform it into one of the following segments: [L + 1, R] (we will denote such operation with string L+), [L, R + 1] (will be denoted as R+), [L - 1, R] (L-), [L, R - 1] (R-). Chef doesn't like empty segments, therefore he cannot use any operation that makes a segment empty (L = R).
+p23
+ag22
+aVChef really wants to transform his segment as fast as possible. Please, help him. Find the sequence with minimal number of operations that transforms his segment. If there are multiple such sequences pick the lexicographically minimal one.
+p24
+asS'input'
+p25
+(lp26
+VInput
+p27
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p28
+ag22
+aVThe first line of each test case contains a single integer N denoting the number of segments Chef has.
+p29
+aVThe following N lines contain pairs of integers. The i-th line contains integers Li, Ri, denoting i-th Chef's segment.
+p30
+aVOutput
+p31
+aVFor each test case print an answer - two lines. The first line should contain the minimal number of operations. The second line should contain the sequence of operations
+p32
+aVwithout any whitespaces.
+p33
+asS'constraints'
+p34
+(lp35
+VConstraints
+p36
+aV1 \u2264 T, N \u2264 1000.
+p37
+aV-1000 \u2264 Li < Ri \u2264 1000.
+p38
+aVThe total sum of N values for all test cases doesn't exceed 1000.
+p39
+asS'id'
+p40
+c__builtin__
+id
+p41
+sS'name'
+p42
+VGERALD03
+p43
+sb.

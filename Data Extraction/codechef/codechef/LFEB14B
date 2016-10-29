@@ -1,0 +1,69 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aSereja have an array that consist of n integers a[1], a[2], ..., a[n]. Now Sereja want to delete some(possible none, but not all) elements from the array, such that arithmetical mean of all remaining numbers will as big as possible.\u000aHelp Sereja, find number of ways to delete numbers.\u000aInput\u000aFirst line contain integer T - number of testcases. T tests follow. First line of each testcase contain integer n. Next line contain n integers a[1], a[2], ..., a[n].\u000a  Output\u000aFor each testcase print the answer modulo 10^9+7.\u000a  Constraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 n \u2264 10^5\u000a1 \u2264 a[i] \u2264 10^5\u000a  Example\u000aInput:\u000a2\u000a1\u000a1\u000a4\u000a1 2 1 2\u000a\u000aOutput:\u000a1\u000a3\u000a  Note\u000aTest #0-1(25 points) n \u2264 20\u000aTest #2(25 points) n \u2264 1000\u000aTest #3-4(50 points) n \u2264 100000\u000aAuthor: sereja\u000aEditorial: http://discuss.codechef.com/problems/LFEB14B\u000aTags: cakewalk implementation ltime09 maths sereja\u000aDate Added: 9-02-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aSereja have an array that consist of n integers a[1], a[2], ..., a[n]. Now Sereja want to delete some(possible none, but not all) elements from the array, such that arithmetical mean of all remaining numbers will as big as possible.\u000aHelp Sereja, find number of ways to delete numbers.\u000aInput\u000aFirst line contain integer T - number of testcases. T tests follow. First line of each testcase contain integer n. Next line contain n integers a[1], a[2], ..., a[n].\u000a  Output\u000aFor each testcase print the answer modulo 10^9+7.\u000a  Constraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 n \u2264 10^5\u000a1 \u2264 a[i] \u2264 10^5\u000a  Example\u000aInput:\u000a2\u000a1\u000a1\u000a4\u000a1 2 1 2\u000a\u000aOutput:\u000a1\u000a3\u000a  Note\u000aTest #0-1(25 points) n \u2264 20\u000aTest #2(25 points) n \u2264 1000\u000aTest #3-4(50 points) n \u2264 100000\u000aAuthor: sereja\u000aEditorial: http://discuss.codechef.com/problems/LFEB14B\u000aTags: cakewalk implementation ltime09 maths sereja\u000aDate Added: 9-02-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Sereja have an array that consist of n integers a[1], a[2], ..., a[n]. Now Sereja want to delete some(possible none, but not all) elements from the array, such that arithmetical mean of all remaining numbers will as big as possible. n a[1], a[2], ..., a[n] Help Sereja, find number of ways to delete numbers. Input First line contain integer T - number of testcases. T tests follow. First line of each testcase contain integer n. Next line contain n integers a[1], a[2], ..., a[n]. T T n n a[1], a[2], ..., a[n]   Output For each testcase print the answer modulo 10^9+7. 10^9+7   Constraints 1 \u2264 T \u2264 10 1 T 10 1 \u2264 n \u2264 10^5 1 n 10^5 1 \u2264 a[i] \u2264 10^5 1 a[i] 10^5   Example Input:\u000a2\u000a1\u000a1\u000a4\u000a1 2 1 2\u000a\u000aOutput:\u000a1\u000a3 Input: Output:   Note Test #0-1(25 points) n \u2264 20 Test #0-1(25 points) n \u2264 Test #2(25 points) n \u2264 1000 Test #2(25 points) n \u2264 Test #3-4(50 points) n \u2264 100000 Test #3-4(50 points) n \u2264  Author: sereja\u000aEditorial: http://discuss.codechef.com/problems/LFEB14B\u000aTags: cakewalk implementation ltime09 maths sereja\u000aDate Added: 9-02-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja\u000aEditorial: http://discuss.codechef.com/problems/LFEB14B\u000aTags: cakewalk implementation ltime09 maths sereja\u000aDate Added: 9-02-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: sereja Author: sereja sereja Editorial: http://discuss.codechef.com/problems/LFEB14B Editorial: http://discuss.codechef.com/problems/LFEB14B http://discuss.codechef.com/problems/LFEB14B Tags: cakewalk implementation ltime09 maths sereja Tags: cakewalk implementation ltime09 maths sereja cakewalk implementation ltime09 maths sereja Date Added: 9-02-2014 Date Added: 9-02-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cakewalk implementation ltime09 maths sereja
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/LFEB14B
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVSereja have an array that consist of n integers a[1], a[2], ..., a[n]. Now Sereja want to delete some(possible none, but not all) elements from the array, such that arithmetical mean of all remaining numbers will as big as possible.
+p18
+aVHelp Sereja, find number of ways to delete numbers.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVFirst line contain integer T - number of testcases. T tests follow. First line of each testcase contain integer n. Next line contain n integers a[1], a[2], ..., a[n].
+p23
+aVOutput
+p24
+aVFor each testcase print the answer modulo 10^9+7.
+p25
+asS'constraints'
+p26
+(lp27
+VConstraints
+p28
+aV1 \u2264 T \u2264 10
+p29
+aV1 \u2264 n \u2264 10^5
+p30
+aV1 \u2264 a[i] \u2264 10^5
+p31
+asS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VLFEB14B
+p35
+sb.

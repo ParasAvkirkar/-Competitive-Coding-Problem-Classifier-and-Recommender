@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput Your program must print exactly one line of output for each test case. The line must contain the sentence "Maximum rope length is X." where Xis the length of the longest path between any two free blocks, measured in blocks. Maximum rope length is X. X X 
+p6
+asS'description'
+p7
+V The northern part of the Pyramid contains a very large and complicated labyrinth. The labyrinth is divided into square blocks, each of them either filled by rock, or free. There is also a little hook on the floor in the center of every free block. The ACM have found that two of the hooks must be connected by a rope that runs through the hooks in every block on the path between the connected ones. When the rope is fastened, a secret door opens. The problem is that we do not know which hooks to connect. That means also that the neccessary length of the rope is unknown. Your task is to determine the maximum length of the rope we could need for a given labyrinth. Input The input consists of T test cases. The number of them (T) is given on the first line of the input file. Each test case begins with a line containing two integers C and R (3 <= C,R <= 1000) indicating the number of columns and rows. Then exactly R lines follow, each containing C characters. These characters specify the labyrinth. Each of them is either a hash mark (#) or a period (.). Hash marks represent rocks, periods are free blocks. It is possible to walk between neighbouring blocks only, where neighbouring blocks are blocks sharing a common side. We cannot walk diagonally and we cannot step out of the labyrinth. T T C R 3 <= C,R <= 1000 R C # . The labyrinth is designed in such a way that there is exactly one path between any two free blocks. Consequently, if we find the proper hooks to connect, it is easy to find the right path connecting them. Output Your program must print exactly one line of output for each test case. The line must contain the sentence "Maximum rope length is X." where Xis the length of the longest path between any two free blocks, measured in blocks. Maximum rope length is X. X X Example Sample Input:\u000a2\u000a3 3\u000a###\u000a#.#\u000a###\u000a7 6\u000a#######\u000a#.#.###\u000a#.#.###\u000a#.#.#.#\u000a#.....#\u000a#######\u000a\u000aSample output:\u000aMaximum rope length is 0.\u000aMaximum rope length is 8. Sample Input: Sample output: Warning: large Input/Output data, be careful with certain languages
+p8
+sS'tags'
+p9
+V #dfs
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/LABYR1
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V5s
+p20
+sS'statement'
+p21
+(lp22
+V The northern part of the Pyramid contains a very large and complicated labyrinth. The labyrinth is divided into square blocks, each of them either filled by rock, or free. There is also a little hook on the floor in the center of every free block. The ACM have found that two of the hooks must be connected by a rope that runs through the hooks in every block on the path between the connected ones. When the rope is fastened, a secret door opens. The problem is that we do not know which hooks to connect. That means also that the neccessary length of the rope is unknown. Your task is to determine the maximum length of the rope we could need for a given labyrinth. 
+p23
+asS'sourcelimit'
+p24
+VACM Central European Programming Contest, Prague 1999
+p25
+sS'date'
+p26
+V2004-06-06
+p27
+sS'input'
+p28
+(lp29
+VInput The input consists of T test cases. The number of them (T) is given on the first line of the input file. Each test case begins with a line containing two integers C and R (3 <= C,R <= 1000) indicating the number of columns and rows. Then exactly R lines follow, each containing C characters. These characters specify the labyrinth. Each of them is either a hash mark (#) or a period (.). Hash marks represent rocks, periods are free blocks. It is possible to walk between neighbouring blocks only, where neighbouring blocks are blocks sharing a common side. We cannot walk diagonally and we cannot step out of the labyrinth. T T C R 3 <= C,R <= 1000 R C # . The labyrinth is designed in such a way that there is exactly one path between any two free blocks. Consequently, if we find the proper hooks to connect, it is easy to find the right path connecting them. 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VLABYR1
+p35
+sb.

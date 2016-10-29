@@ -1,0 +1,81 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 2 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aOh, no! Chef\u2019s in trouble. He\u2019s got himself stuck in a cave (we don\u2019t know how) and is looking for a way out. The bigger problem is that he needs to get his tractor out of the cave (don't ask why Chef owns a tractor!). He currently faces a large block of height N cells and length N cells, and needs to get his tractor across this block. The block is made up of vertical columns of soil, each of which is one cell long. Each column has a continuous vertical gap, with the ith column having its gap from the lith cell to the hith cell (starting from the bottom, 0-indexing). That is, in the ith column, there is no soil from the lith cell to the hith cell (both inclusive). Chef can build additional gaps by clearing some cells of soil. His tractor has height H, and therefore, he needs to build a horizontal corridor of height H passing through all the columns. That is, some consecutive H rows must have no soil. Please see the figures in the example and explanation sections for more details.\u000aChef is able to clear one cell of soil by spending one unit of energy. Chef is smart, and will figure out a way to build the horizontal corridor while spending the minimum possible amount of energy. To estimate how many of his tasty dishes he will still be able to cook for you tonight, find out what is the minimum possible energy he needs to spend.\u000aInput\u000aFirst line of input contains one integer T - number of test cases. T test cases follow.\u000aEach test case starts with two integers N and H \u2013 size of the cave and height of the tractor, respectively. In each of the next N lines are two integers li and hi, respectively indicating lowest and highest number of cell for the gap in the ith column.\u000aOutput\u000aOne integer \u2013 minimum energy required.\u000aConstraints\u000a1 \u2264 T \u2264 103\u000a1 \u2264 N \u2264 106\u000a1 \u2264 sum of N over all test cases \u2264 106\u000a1 \u2264 H \u2264 N\u000a0 \u2264 li \u2264 hi < N\u000aSubtasks\u000aSubtask 1 (25 points): T \u2264 100, N \u2264 100\u000aSubtask 2 (75 points): No additional constraints\u000aExample\u000aInput:\u000a2\u000a4 3\u000a1 2\u000a1 2\u000a1 2\u000a1 2\u000a5 2\u000a2 3\u000a1 2\u000a2 3\u000a1 2\u000a2 3\u000a\u000aOutput:\u000a4\u000a2\u000aExplanation\u000aIn the second case, the figure describes the initial map, where white cells denote empty cells and brown cells denote soil cells.\u000aWhen we removed soil in two cells as the following figure, then we can make a corridor of height 2, adn this is the optimal way to make a corridor.\u000aAuthor: witalij_hq\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/WOUT\u000aTags: aug15 dp easy prefix-sum subarray witalij_hq\u000aDate Added: 22-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aOh, no! Chef\u2019s in trouble. He\u2019s got himself stuck in a cave (we don\u2019t know how) and is looking for a way out. The bigger problem is that he needs to get his tractor out of the cave (don't ask why Chef owns a tractor!). He currently faces a large block of height N cells and length N cells, and needs to get his tractor across this block. The block is made up of vertical columns of soil, each of which is one cell long. Each column has a continuous vertical gap, with the ith column having its gap from the lith cell to the hith cell (starting from the bottom, 0-indexing). That is, in the ith column, there is no soil from the lith cell to the hith cell (both inclusive). Chef can build additional gaps by clearing some cells of soil. His tractor has height H, and therefore, he needs to build a horizontal corridor of height H passing through all the columns. That is, some consecutive H rows must have no soil. Please see the figures in the example and explanation sections for more details.\u000aChef is able to clear one cell of soil by spending one unit of energy. Chef is smart, and will figure out a way to build the horizontal corridor while spending the minimum possible amount of energy. To estimate how many of his tasty dishes he will still be able to cook for you tonight, find out what is the minimum possible energy he needs to spend.\u000aInput\u000aFirst line of input contains one integer T - number of test cases. T test cases follow.\u000aEach test case starts with two integers N and H \u2013 size of the cave and height of the tractor, respectively. In each of the next N lines are two integers li and hi, respectively indicating lowest and highest number of cell for the gap in the ith column.\u000aOutput\u000aOne integer \u2013 minimum energy required.\u000aConstraints\u000a1 \u2264 T \u2264 103\u000a1 \u2264 N \u2264 106\u000a1 \u2264 sum of N over all test cases \u2264 106\u000a1 \u2264 H \u2264 N\u000a0 \u2264 li \u2264 hi < N\u000aSubtasks\u000aSubtask 1 (25 points): T \u2264 100, N \u2264 100\u000aSubtask 2 (75 points): No additional constraints\u000aExample\u000aInput:\u000a2\u000a4 3\u000a1 2\u000a1 2\u000a1 2\u000a1 2\u000a5 2\u000a2 3\u000a1 2\u000a2 3\u000a1 2\u000a2 3\u000a\u000aOutput:\u000a4\u000a2\u000aExplanation\u000aIn the second case, the figure describes the initial map, where white cells denote empty cells and brown cells denote soil cells.\u000aWhen we removed soil in two cells as the following figure, then we can make a corridor of height 2, adn this is the optimal way to make a corridor.\u000aAuthor: witalij_hq\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/WOUT\u000aTags: aug15 dp easy prefix-sum subarray witalij_hq\u000aDate Added: 22-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Oh, no! Chef\u2019s in trouble. He\u2019s got himself stuck in a cave (we don\u2019t know how) and is looking for a way out. The bigger problem is that he needs to get his tractor out of the cave (don't ask why Chef owns a tractor!). He currently faces a large block of height N cells and length N cells, and needs to get his tractor across this block. The block is made up of vertical columns of soil, each of which is one cell long. Each column has a continuous vertical gap, with the ith column having its gap from the lith cell to the hith cell (starting from the bottom, 0-indexing). That is, in the ith column, there is no soil from the lith cell to the hith cell (both inclusive). Chef can build additional gaps by clearing some cells of soil. His tractor has height H, and therefore, he needs to build a horizontal corridor of height H passing through all the columns. That is, some consecutive H rows must have no soil. Please see the figures in the example and explanation sections for more details. N N i th li i th hi i th i th li i th hi i th H H H Chef is able to clear one cell of soil by spending one unit of energy. Chef is smart, and will figure out a way to build the horizontal corridor while spending the minimum possible amount of energy. To estimate how many of his tasty dishes he will still be able to cook for you tonight, find out what is the minimum possible energy he needs to spend. Input First line of input contains one integer T - number of test cases. T test cases follow. T T Each test case starts with two integers N and H \u2013 size of the cave and height of the tractor, respectively. In each of the next N lines are two integers li and hi, respectively indicating lowest and highest number of cell for the gap in the ith column. N H N li i hi i i th Output One integer \u2013 minimum energy required. Constraints 1 \u2264 T \u2264 103\u000a1 \u2264 N \u2264 106\u000a1 \u2264 sum of N over all test cases \u2264 106\u000a1 \u2264 H \u2264 N\u000a0 \u2264 li \u2264 hi < N 1 \u2264 T \u2264 103 1 T 103 3 1 \u2264 N \u2264 106 1 N 106 6 1 \u2264 sum of N over all test cases \u2264 106 1 N 106 6 1 \u2264 H \u2264 N 1 H N 0 \u2264 li \u2264 hi < N 0 li i hi i N Subtasks Subtask 1 (25 points): T \u2264 100, N \u2264 100 T \u2264 100, N \u2264 100 Subtask 2 (75 points): No additional constraints Example Input:\u000a2\u000a4 3\u000a1 2\u000a1 2\u000a1 2\u000a1 2\u000a5 2\u000a2 3\u000a1 2\u000a2 3\u000a1 2\u000a2 3\u000a\u000aOutput:\u000a4\u000a2 Input: Output: Explanation In the second case, the figure describes the initial map, where white cells denote empty cells and brown cells denote soil cells.   When we removed soil in two cells as the following figure, then we can make a corridor of height 2, adn this is the optimal way to make a corridor.    Author: witalij_hq\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/WOUT\u000aTags: aug15 dp easy prefix-sum subarray witalij_hq\u000aDate Added: 22-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/WOUT\u000aTags: aug15 dp easy prefix-sum subarray witalij_hq\u000aDate Added: 22-02-2015\u000aTime Limit: 2 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: witalij_hq Author: witalij_hq witalij_hq Tester: laycurse Tester: laycurse laycurse Editorial: http://discuss.codechef.com/problems/WOUT Editorial: http://discuss.codechef.com/problems/WOUT http://discuss.codechef.com/problems/WOUT Tags: aug15 dp easy prefix-sum subarray witalij_hq Tags: aug15 dp easy prefix-sum subarray witalij_hq aug15 dp easy prefix-sum subarray witalij_hq Date Added: 22-02-2015 Date Added: 22-02-2015 Time Limit: 2 sec Time Limit: 2 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V aug15 dp easy prefix-sum subarray witalij_hq
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/WOUT
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVOh, no! Chef\u2019s in trouble. He\u2019s got himself stuck in a cave (we don\u2019t know how) and is looking for a way out. The bigger problem is that he needs to get his tractor out of the cave (don't ask why Chef owns a tractor!). He currently faces a large block of height N cells and length N cells, and needs to get his tractor across this block. The block is made up of vertical columns of soil, each of which is one cell long. Each column has a continuous vertical gap, with the ith column having its gap from the lith cell to the hith cell (starting from the bottom, 0-indexing). That is, in the ith column, there is no soil from the lith cell to the hith cell (both inclusive). Chef can build additional gaps by clearing some cells of soil. His tractor has height H, and therefore, he needs to build a horizontal corridor of height H passing through all the columns. That is, some consecutive H rows must have no soil. Please see the figures in the example and explanation sections for more details.
+p18
+aVChef is able to clear one cell of soil by spending one unit of energy. Chef is smart, and will figure out a way to build the horizontal corridor while spending the minimum possible amount of energy. To estimate how many of his tasty dishes he will still be able to cook for you tonight, find out what is the minimum possible energy he needs to spend.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVFirst line of input contains one integer T - number of test cases. T test cases follow.
+p23
+aVEach test case starts with two integers N and H \u2013 size of the cave and height of the tractor, respectively. In each of the next N lines are two integers li and hi, respectively indicating lowest and highest number of cell for the gap in the ith column.
+p24
+aVOutput
+p25
+aVOne integer \u2013 minimum energy required.
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aV1 \u2264 T \u2264 103
+p30
+aV1 \u2264 N \u2264 106
+p31
+aV1 \u2264 sum of N over all test cases \u2264 106
+p32
+aV1 \u2264 H \u2264 N
+p33
+aV0 \u2264 li \u2264 hi < N
+p34
+aVSubtasks
+p35
+aVSubtask 1 (25 points): T \u2264 100, N \u2264 100
+p36
+aVSubtask 2 (75 points): No additional constraints
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'name'
+p40
+VWOUT
+p41
+sb.

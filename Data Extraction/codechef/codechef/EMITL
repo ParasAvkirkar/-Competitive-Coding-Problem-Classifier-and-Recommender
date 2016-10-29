@@ -1,0 +1,69 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian\u000aYou are given a string S constisting of uppercase Latin letters. Is it possible to reorder the characters in this string to get a string with prefix "LTIME" and suffix "EMITL"?\u000aWe remind you that a prefix of a string is any substring which contains its first character, while a suffix of a string is substring containing its last character.\u000aInput\u000aThe first line contains a single integer T, denoting the number of testcases. The descriptions of T test cases follow.\u000aThe first and only line of the test case description has one non-empty string S consisting of uppercase Latin letters only.\u000aOutput\u000aFor each testcase output a single line containing the string "YES" (without quotes) if it's possible to reorder the characters to get the required prefix and suffix, or "NO" (without quotes) otherwise.\u000aConstraints\u000aSubtask 1 (23 points) : 1 \u2264 T \u2264 100, 1 \u2264 |S| \u2264 9\u000aSubtask 2 (77 points) : 1 \u2264 T \u2264 1000, 1 \u2264 |S| \u2264 100\u000aExample\u000aInput:\u000a3\u000aLTIMEAZAZAITLME\u000aLLLTTTIIIMMMEEEAHA\u000aLTIMEM\u000a\u000aOutput:\u000aYES\u000aYES\u000aNO\u000aExplanation\u000aTest case 1: we can permute the last 5 letters and get LTIMEAZAZAEMITL\u000aTest case 2: we have 3 copies of each of the letters 'L', 'T', 'I', 'M', 'E' so we can leave 5 of them in the beginning and move 5 of them to the end.\u000aTest case 3: we have only one letter 'L' so we can't make necessary prefix and suffix at the same time.\u000aAuthor: pavel1996\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/EMITL\u000aTags: ad-hoc cakewalk implementation ltime29 pavel1996 string\u000aDate Added: 26-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian\u000aYou are given a string S constisting of uppercase Latin letters. Is it possible to reorder the characters in this string to get a string with prefix "LTIME" and suffix "EMITL"?\u000aWe remind you that a prefix of a string is any substring which contains its first character, while a suffix of a string is substring containing its last character.\u000aInput\u000aThe first line contains a single integer T, denoting the number of testcases. The descriptions of T test cases follow.\u000aThe first and only line of the test case description has one non-empty string S consisting of uppercase Latin letters only.\u000aOutput\u000aFor each testcase output a single line containing the string "YES" (without quotes) if it's possible to reorder the characters to get the required prefix and suffix, or "NO" (without quotes) otherwise.\u000aConstraints\u000aSubtask 1 (23 points) : 1 \u2264 T \u2264 100, 1 \u2264 |S| \u2264 9\u000aSubtask 2 (77 points) : 1 \u2264 T \u2264 1000, 1 \u2264 |S| \u2264 100\u000aExample\u000aInput:\u000a3\u000aLTIMEAZAZAITLME\u000aLLLTTTIIIMMMEEEAHA\u000aLTIMEM\u000a\u000aOutput:\u000aYES\u000aYES\u000aNO\u000aExplanation\u000aTest case 1: we can permute the last 5 letters and get LTIMEAZAZAEMITL\u000aTest case 2: we have 3 copies of each of the letters 'L', 'T', 'I', 'M', 'E' so we can leave 5 of them in the beginning and move 5 of them to the end.\u000aTest case 3: we have only one letter 'L' so we can't make necessary prefix and suffix at the same time.\u000aAuthor: pavel1996\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/EMITL\u000aTags: ad-hoc cakewalk implementation ltime29 pavel1996 string\u000aDate Added: 26-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian Mandarin Chinese Russian You are given a string S constisting of uppercase Latin letters. Is it possible to reorder the characters in this string to get a string with prefix "LTIME" and suffix "EMITL"? S LTIME EMITL We remind you that a prefix of a string is any substring which contains its first character, while a suffix of a string is substring containing its last character. We remind you that a prefix of a string is any substring which contains its first character, while a suffix of a string is substring containing its last character. prefix suffix Input The first line contains a single integer T, denoting the number of testcases. The descriptions of T test cases follow. T T The first and only line of the test case description has one non-empty string S consisting of uppercase Latin letters only. S Output For each testcase output a single line containing the string "YES" (without quotes) if it's possible to reorder the characters to get the required prefix and suffix, or "NO" (without quotes) otherwise. "YES" "NO" Constraints Subtask 1 (23 points) : 1 \u2264 T \u2264 100, 1 \u2264 |S| \u2264 9\u000aSubtask 2 (77 points) : 1 \u2264 T \u2264 1000, 1 \u2264 |S| \u2264 100 Subtask 1 (23 points) : 1 \u2264 T \u2264 100, 1 \u2264 |S| \u2264 9 1 T 100 1 |S| 9 Subtask 2 (77 points) : 1 \u2264 T \u2264 1000, 1 \u2264 |S| \u2264 100 1 T 1000 1 |S| 100  Example Input:\u000a3\u000aLTIMEAZAZAITLME\u000aLLLTTTIIIMMMEEEAHA\u000aLTIMEM\u000a\u000aOutput:\u000aYES\u000aYES\u000aNO Input: 3\u000aLTIMEAZAZAITLME\u000aLLLTTTIIIMMMEEEAHA\u000aLTIMEM Output: YES\u000aYES\u000aNO Explanation Test case 1: we can permute the last 5 letters and get LTIMEAZAZAEMITL Test case 1 Test case 2: we have 3 copies of each of the letters 'L', 'T', 'I', 'M', 'E' so we can leave 5 of them in the beginning and move 5 of them to the end. Test case 2 Test case 3: we have only one letter 'L' so we can't make necessary prefix and suffix at the same time. Test case 3  Author: pavel1996\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/EMITL\u000aTags: ad-hoc cakewalk implementation ltime29 pavel1996 string\u000aDate Added: 26-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: pavel1996\u000aTester: xcwgf666\u000aEditorial: http://discuss.codechef.com/problems/EMITL\u000aTags: ad-hoc cakewalk implementation ltime29 pavel1996 string\u000aDate Added: 26-09-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: pavel1996 Author: pavel1996 pavel1996 Tester: xcwgf666 Tester: xcwgf666 xcwgf666 Editorial: http://discuss.codechef.com/problems/EMITL Editorial: http://discuss.codechef.com/problems/EMITL http://discuss.codechef.com/problems/EMITL Tags: ad-hoc cakewalk implementation ltime29 pavel1996 string Tags: ad-hoc cakewalk implementation ltime29 pavel1996 string ad-hoc cakewalk implementation ltime29 pavel1996 string Date Added: 26-09-2015 Date Added: 26-09-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V ad-hoc cakewalk implementation ltime29 pavel1996 string
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/EMITL
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian
+p17
+aVYou are given a string S constisting of uppercase Latin letters. Is it possible to reorder the characters in this string to get a string with prefix "LTIME" and suffix "EMITL"?
+p18
+aVWe remind you that a prefix of a string is any substring which contains its first character, while a suffix of a string is substring containing its last character.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVThe first line contains a single integer T, denoting the number of testcases. The descriptions of T test cases follow.
+p23
+aVThe first and only line of the test case description has one non-empty string S consisting of uppercase Latin letters only.
+p24
+aVOutput
+p25
+aVFor each testcase output a single line containing the string "YES" (without quotes) if it's possible to reorder the characters to get the required prefix and suffix, or "NO" (without quotes) otherwise.
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aVSubtask 1 (23 points) : 1 \u2264 T \u2264 100, 1 \u2264 |S| \u2264 9
+p30
+aVSubtask 2 (77 points) : 1 \u2264 T \u2264 1000, 1 \u2264 |S| \u2264 100
+p31
+asS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VEMITL
+p35
+sb.

@@ -1,0 +1,79 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aChef Datta likes betting in Indian Premier League very much.\u000aHe has 10000 rupees. Today the match is between team A and team B. The winning probability of team A is PA, and hence winning probability of team B is PB = 1 \u2212 PA.\u000a\u000aDatta is free to bet any integral amount of money on any of the two teams as long as the total amount of money bet is at most 10000 rupees.\u000aHelp him know the expected amount of money he will eventually have if today he places his bet(s) optimally.\u000aRules of the game:\u000aIf team X with winning probability PX actually wins and someone bets M rupees on this team, he will gain (2*(1\u2212PX)) * M rupees.\u000aIf team X with winning probability PX actually loses and someone bets N rupees on this team, he will just lose N rupees.\u000aInput\u000aFirst line contains single integer T, the number of testcases. Then T lines follow, each line contains PA the probability that team A wins.\u000aOutput\u000aFor each test case output single line containing the expected amount of money Datta will eventually have today if he places his bet(s) optimally. Your answer will be accepted if the absolute error is less than 10\u22126.\u000aConstraints\u000a1 \u2264 T \u2264 100001 (105+1)\u000a0.0 \u2264 PA \u2264 1.0\u000aPA has at most 5 digits after the decimal point.\u000aExample\u000aInput:\u000a1\u000a0.510\u000a\u000aOutput:\u000a10098\u000a\u000aExample bet:\u000aLook at the following situation:\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000aIf chef Datta bets 6,000 on team A and 4,000 on team B, the expected amount of money he will have after the bet is settled is 10,018. Apparently that is not the best he can do ;)\u000aAuthor: mkagenius\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/PREDICT\u000aTags: easy june13 mkagenius probability\u000aDate Added: 22-04-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aChef Datta likes betting in Indian Premier League very much.\u000aHe has 10000 rupees. Today the match is between team A and team B. The winning probability of team A is PA, and hence winning probability of team B is PB = 1 \u2212 PA.\u000a\u000aDatta is free to bet any integral amount of money on any of the two teams as long as the total amount of money bet is at most 10000 rupees.\u000aHelp him know the expected amount of money he will eventually have if today he places his bet(s) optimally.\u000aRules of the game:\u000aIf team X with winning probability PX actually wins and someone bets M rupees on this team, he will gain (2*(1\u2212PX)) * M rupees.\u000aIf team X with winning probability PX actually loses and someone bets N rupees on this team, he will just lose N rupees.\u000aInput\u000aFirst line contains single integer T, the number of testcases. Then T lines follow, each line contains PA the probability that team A wins.\u000aOutput\u000aFor each test case output single line containing the expected amount of money Datta will eventually have today if he places his bet(s) optimally. Your answer will be accepted if the absolute error is less than 10\u22126.\u000aConstraints\u000a1 \u2264 T \u2264 100001 (105+1)\u000a0.0 \u2264 PA \u2264 1.0\u000aPA has at most 5 digits after the decimal point.\u000aExample\u000aInput:\u000a1\u000a0.510\u000a\u000aOutput:\u000a10098\u000a\u000aExample bet:\u000aLook at the following situation:\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000aIf chef Datta bets 6,000 on team A and 4,000 on team B, the expected amount of money he will have after the bet is settled is 10,018. Apparently that is not the best he can do ;)\u000aAuthor: mkagenius\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/PREDICT\u000aTags: easy june13 mkagenius probability\u000aDate Added: 22-04-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Chef Datta likes betting in Indian Premier League very much. He has 10000 rupees. Today the match is between team A and team B. The winning probability of team A is PA, and hence winning probability of team B is PB = 1 \u2212 PA.\u000a\u000aDatta is free to bet any integral amount of money on any of the two teams as long as the total amount of money bet is at most 10000 rupees.\u000aHelp him know the expected amount of money he will eventually have if today he places his bet(s) optimally. 10000 team A team B team A PA A team B PB = 1 \u2212 PA B A   10000   Rules of the game: If team X with winning probability PX actually wins and someone bets M rupees on this team, he will gain (2*(1\u2212PX)) * M rupees. team X PX X M (2*(1\u2212PX)) * M X If team X with winning probability PX actually loses and someone bets N rupees on this team, he will just lose N rupees. team X PX X N N Input First line contains single integer T, the number of testcases. Then T lines follow, each line contains PA the probability that team A wins. T T PA A team A Output For each test case output single line containing the expected amount of money Datta will eventually have today if he places his bet(s) optimally. Your answer will be accepted if the absolute error is less than 10\u22126. 10\u22126 \u22126 Constraints 1 \u2264 T \u2264 100001 (105+1)\u000a0.0 \u2264 PA \u2264 1.0\u000aPA has at most 5 digits after the decimal point. 1 \u2264 T \u2264 100001 (105+1) 1 T 100001 (105+1) 5 0.0 \u2264 PA \u2264 1.0 0.0 PA A 1.0 PA has at most 5 digits after the decimal point. PA A 5 Example Input:\u000a1\u000a0.510\u000a\u000aOutput:\u000a10098 Input: Output:   Example bet: Look at the following situation:\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000aIf chef Datta bets 6,000 on team A and 4,000 on team B, the expected amount of money he will have after the bet is settled is 10,018. Apparently that is not the best he can do ;)            6,000 team A 4,000 team B 10,018 ;)  Author: mkagenius\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/PREDICT\u000aTags: easy june13 mkagenius probability\u000aDate Added: 22-04-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: mkagenius\u000aTester: tuananh93\u000aEditorial: http://discuss.codechef.com/problems/PREDICT\u000aTags: easy june13 mkagenius probability\u000aDate Added: 22-04-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: mkagenius Author: mkagenius mkagenius Tester: tuananh93 Tester: tuananh93 tuananh93 Editorial: http://discuss.codechef.com/problems/PREDICT Editorial: http://discuss.codechef.com/problems/PREDICT http://discuss.codechef.com/problems/PREDICT Tags: easy june13 mkagenius probability Tags: easy june13 mkagenius probability easy june13 mkagenius probability Date Added: 22-04-2013 Date Added: 22-04-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V easy june13 mkagenius probability
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/PREDICT
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVChef Datta likes betting in Indian Premier League very much.
+p17
+aVHe has 10000 rupees. Today the match is between team A and team B. The winning probability of team A is PA, and hence winning probability of team B is PB = 1 \u2212 PA.
+p18
+aV
+p19
+aVDatta is free to bet any integral amount of money on any of the two teams as long as the total amount of money bet is at most 10000 rupees.
+p20
+aVHelp him know the expected amount of money he will eventually have if today he places his bet(s) optimally.
+p21
+aVRules of the game:
+p22
+aVIf team X with winning probability PX actually wins and someone bets M rupees on this team, he will gain (2*(1\u2212PX)) * M rupees.
+p23
+aVIf team X with winning probability PX actually loses and someone bets N rupees on this team, he will just lose N rupees.
+p24
+asS'input'
+p25
+(lp26
+VInput
+p27
+aVFirst line contains single integer T, the number of testcases. Then T lines follow, each line contains PA the probability that team A wins.
+p28
+aVOutput
+p29
+aVFor each test case output single line containing the expected amount of money Datta will eventually have today if he places his bet(s) optimally. Your answer will be accepted if the absolute error is less than 10\u22126.
+p30
+asS'constraints'
+p31
+(lp32
+VConstraints
+p33
+aV1 \u2264 T \u2264 100001 (105+1)
+p34
+aV0.0 \u2264 PA \u2264 1.0
+p35
+aVPA has at most 5 digits after the decimal point.
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'name'
+p39
+VPREDICT
+p40
+sb.

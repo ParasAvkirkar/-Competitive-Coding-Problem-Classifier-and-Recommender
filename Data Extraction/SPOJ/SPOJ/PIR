@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput For each test output a real number - the volume, printed accurate to four digits after decimal point. 
+p6
+asS'description'
+p7
+V Recently in Farland, a country in Asia, the famous scientist Mr. Log Archeo discovered ancient pyramids. But unlike those in Egypt and Central America, they have a triangular (not rectangular) foundation. That is, they are tetrahedrons in the mathematical sense. In order to find out some important facts about the early society of the country (it is widely believed that the pyramid sizes are closely connected with Farland's ancient calendar), Mr. Archeo needs to know the volume of the pyramids. Unluckily, he has reliable data about their edge lengths only. Please, help him! Input t [number of tests to follow] In each of the next t lines six positive integer numbers not exceeding 1000 separated by spaces (each number is one of the edge lengths of the pyramid ABCD). The order of the edges is the following: AB, AC, AD, BC, BD, CD. Output For each test output a real number - the volume, printed accurate to four digits after decimal point. Example Input:\u000a2\u000a1 1 1 1 1 1\u000a1000 1000 1000 3 4 5\u000a\u000aOutput:\u000a0.1179\u000a1999.9937 Input: Output:
+p8
+sS'tags'
+p9
+V #geometry
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/PIR
+p12
+sS'addedBy'
+p13
+VAdam Dzedzej
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V0.143s
+p20
+sS'statement'
+p21
+(lp22
+V Recently in Farland, a country in Asia, the famous scientist Mr. Log Archeo discovered ancient pyramids. But unlike those in Egypt and Central America, they have a triangular (not rectangular) foundation. That is, they are tetrahedrons in the mathematical sense. In order to find out some important facts about the early society of the country (it is widely believed that the pyramid sizes are closely connected with Farland's ancient calendar), Mr. Archeo needs to know the volume of the pyramids. Unluckily, he has reliable data about their edge lengths only. Please, help him! 
+p23
+asS'sourcelimit'
+p24
+VACM ICPC 2002-2003 NEERC, Northern Subregion
+p25
+sS'date'
+p26
+V2004-05-14
+p27
+sS'input'
+p28
+(lp29
+VInput t [number of tests to follow] In each of the next t lines six positive integer numbers not exceeding 1000 separated by spaces (each number is one of the edge lengths of the pyramid ABCD). The order of the edges is the following: AB, AC, AD, BC, BD, CD. 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VPIR
+p35
+sb.

@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput For each test case, output the number k of moves which could have led from the first to the second position (output 0 if you don't know a solution, even though such a solution exists for certain). In the next k lines, print the determined sequence of moves. Each move should be given in a seperate line, using the format: old_column old_row new_column to describe the change of coordinates of a pawn (assume board orientation as in the exemplary figures). old_column old_row new_column Scoring The score of your program is the total of scores awarded for individual test cases. For each test case for which you find a solution in k moves you will receive k points. 
+p6
+asS'description'
+p7
+V Imagine a game played on an n x n chessboard by two players sitting at opposite ends, one having n white pawns, the other - n black pawns. Pawns are arranged in the row closest to the player. Moves are made in turn by both players and resemble those in chess: in a single move, a player can move exactly one pawn, either a square forward (if the square it is moving onto is free), or on the bias, one square forward and one square to the left or right (if the square it is moving onto is occupied by an enemy's pawn, which is considered beaten and removed from the game). n x n   Pawns may never be moved backwards or off the board, and if a pawn reaches the final line it just has to stay there. The game ends if a player can't make a move. The winner is then the player who... oh, it doesn't matter really (possibly the players have a fight with beer bottles, and the one who isn't knocked out, wins). Your task is different - seeing snapshots of a game at two moments of time, try to reenact a sequence of moves that may have led from the first situation to the second. Input The first line of input contains a single positive integer t<=25, the number of test cases. t test cases (of successively increasing size) follow. Each test case begins with an integer n (2<=n<=26) denoting the size of the board. Then, the snapshot of the earlier situation is given, followed by a snapshot of the later situation. Each snapshot is a sequence of n lines of n characters, corresponding to the squares of a chessboard oriented as in the figure above. Character '.' - denotes an empty square, 'W' - a square with a white pawn, 'B' - a square with a black pawn. Assume that it is black's turn to move after the earlier position (though black needn't have necessarily started the game as such). Output For each test case, output the number k of moves which could have led from the first to the second position (output 0 if you don't know a solution, even though such a solution exists for certain). In the next k lines, print the determined sequence of moves. Each move should be given in a seperate line, using the format: old_column old_row new_column to describe the change of coordinates of a pawn (assume board orientation as in the exemplary figures). old_column old_row new_column Scoring The score of your program is the total of scores awarded for individual test cases. For each test case for which you find a solution in k moves you will receive k points. Example For the sample input: 1\u000a6\u000a\u000a....W.\u000a.WWW.W\u000aB.B...\u000a......\u000a......\u000aB..BBB\u000a\u000a......\u000a.BWW..\u000a.....W\u000a......\u000a.....B\u000aB..BB. a program outputting: 5\u000aA 3 B\u000aF 2 F\u000aC 3 D\u000aE 1 D\u000aF 6 F will receive 5 points.
+p8
+sS'tags'
+p9
+S''
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/PAWNS
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V21s
+p20
+sS'statement'
+p21
+(lp22
+V Imagine a game played on an n x n chessboard by two players sitting at opposite ends, one having n white pawns, the other - n black pawns. Pawns are arranged in the row closest to the player. Moves are made in turn by both players and resemble those in chess: in a single move, a player can move exactly one pawn, either a square forward (if the square it is moving onto is free), or on the bias, one square forward and one square to the left or right (if the square it is moving onto is occupied by an enemy's pawn, which is considered beaten and removed from the game). n x n   Pawns may never be moved backwards or off the board, and if a pawn reaches the final line it just has to stay there. The game ends if a player can't make a move. The winner is then the player who... oh, it doesn't matter really (possibly the players have a fight with beer bottles, and the one who isn't knocked out, wins). Your task is different - seeing snapshots of a game at two moments of time, try to reenact a sequence of moves that may have led from the first situation to the second. 
+p23
+asS'sourcelimit'
+p24
+VDASM Programming League 2004 (problemset 1)
+p25
+sS'date'
+p26
+V2004-10-10
+p27
+sS'input'
+p28
+(lp29
+VInput The first line of input contains a single positive integer t<=25, the number of test cases. t test cases (of successively increasing size) follow. Each test case begins with an integer n (2<=n<=26) denoting the size of the board. Then, the snapshot of the earlier situation is given, followed by a snapshot of the later situation. Each snapshot is a sequence of n lines of n characters, corresponding to the squares of a chessboard oriented as in the figure above. Character '.' - denotes an empty square, 'W' - a square with a white pawn, 'B' - a square with a black pawn. Assume that it is black's turn to move after the earlier position (though black needn't have necessarily started the game as such). 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VPAWNS
+p35
+sb.

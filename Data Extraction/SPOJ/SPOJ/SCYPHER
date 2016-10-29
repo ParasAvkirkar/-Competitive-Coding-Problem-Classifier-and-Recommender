@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput For each case, print exactly one line. If it is possible to decrypt the message uniquely, print the decrypted message. Otherwise, print the sentence 'Message cannot be decrypted.'. Message cannot be decrypted. 
+p6
+asS'description'
+p7
+V Antique Comedians of Malidinesia would like to play a new discovered comedy of Aristofanes. Putting it on a stage should be a big surprise for the audience so all the preparations must be kept absolutely secret. The ACM director suspects one of his competitors of reading his correspondece. To prevent other companies from revealing his secret, he decided to use a substitution cipher in all the letters mentioning the new play. Substitution cipher is defined by a substitution table assigning each character of the substitution alphabet another character of the same alphabet. The assignment is a bijection (to each character exactly one character is assigned -- not neccessary different). The director is afraid of disclosing the substitution table and therefore he changes it frequently. After each change he chooses a few words from a dictionary by random, encrypts them and sends them together with an encrypted message. The plain (i.e. non-encrypted) words are sent by a secure channel, not by mail. The recipient of the message can then compare plain and encrypted words and create a new substitution table. Unfortunately, one of the ACM cipher specialists have found that this system is sometimes insecure. Some messages can be decrypted by the rival company even without knowing the plain words. The reason is that when the director chooses the words from the dictionary and encrypts them, he never changes their order (the words in the dictionary are lexicographically sorted). String a1a2 ... ap is lexicografically smaller than b1b2 ... bq if there exists an integer i, i <= p, i <= q, such that aj=bj for each j, 1 <= j < i and ai < bi. a1a2 ... ap 1 2 p b1b2 ... bq 1 2 q i i <= p, i <= q aj=bj j j j, 1 <= j < i ai < bi i i The director is interested in which of his messages could be read by the rival company. You are to write a program to determine that. Input The input consists of N cases (equal to about 1000). The first line of the input contains only positive integer N. Then follow the cases. The first line of each case contains only two positive integers A, 1 <= A <= 26, and K, separated by space. A determines the size of the substitution alphabet (the substitution alphabet consists of the first A lowercase letters of the english alphabet (a--z) and K is the number of encrypted words. The plain words contain only the letters of the substitution alphabet. The plain message can contain any symbol, but only the letters of the substitution alphabet are encrypted. Then follow K lines, each containing exactly one encrypted word. At the next line is encrypted message. N N A 1 <= A <= 26 K A A K K Output For each case, print exactly one line. If it is possible to decrypt the message uniquely, print the decrypted message. Otherwise, print the sentence 'Message cannot be decrypted.'. Message cannot be decrypted. Example Sample input:\u000a\u000a2\u000a5 6\u000acebdbac\u000acac\u000aecd\u000adca\u000aaba\u000abac\u000acedab\u000a4 4\u000acca\u000acad\u000aaac\u000abca\u000abdac\u000a\u000aSample output:\u000a\u000aabcde\u000aMessage cannot be decrypted. Warning: large Input/Output data, be careful with certain languages
+p8
+sS'tags'
+p9
+S''
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/SCYPHER
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V5s
+p20
+sS'statement'
+p21
+(lp22
+V Antique Comedians of Malidinesia would like to play a new discovered comedy of Aristofanes. Putting it on a stage should be a big surprise for the audience so all the preparations must be kept absolutely secret. The ACM director suspects one of his competitors of reading his correspondece. To prevent other companies from revealing his secret, he decided to use a substitution cipher in all the letters mentioning the new play. Substitution cipher is defined by a substitution table assigning each character of the substitution alphabet another character of the same alphabet. The assignment is a bijection (to each character exactly one character is assigned -- not neccessary different). The director is afraid of disclosing the substitution table and therefore he changes it frequently. After each change he chooses a few words from a dictionary by random, encrypts them and sends them together with an encrypted message. The plain (i.e. non-encrypted) words are sent by a secure channel, not by mail. The recipient of the message can then compare plain and encrypted words and create a new substitution table. Unfortunately, one of the ACM cipher specialists have found that this system is sometimes insecure. Some messages can be decrypted by the rival company even without knowing the plain words. The reason is that when the director chooses the words from the dictionary and encrypts them, he never changes their order (the words in the dictionary are lexicographically sorted). String a1a2 ... ap is lexicografically smaller than b1b2 ... bq if there exists an integer i, i <= p, i <= q, such that aj=bj for each j, 1 <= j < i and ai < bi. a1a2 ... ap 1 2 p b1b2 ... bq 1 2 q i i <= p, i <= q aj=bj j j j, 1 <= j < i ai < bi i i The director is interested in which of his messages could be read by the rival company. You are to write a program to determine that. 
+p23
+asS'sourcelimit'
+p24
+VACM Central European Programming Contest, Prague 1998
+p25
+sS'date'
+p26
+V2004-06-06
+p27
+sS'input'
+p28
+(lp29
+VInput The input consists of N cases (equal to about 1000). The first line of the input contains only positive integer N. Then follow the cases. The first line of each case contains only two positive integers A, 1 <= A <= 26, and K, separated by space. A determines the size of the substitution alphabet (the substitution alphabet consists of the first A lowercase letters of the english alphabet (a--z) and K is the number of encrypted words. The plain words contain only the letters of the substitution alphabet. The plain message can contain any symbol, but only the letters of the substitution alphabet are encrypted. Then follow K lines, each containing exactly one encrypted word. At the next line is encrypted message. N N A 1 <= A <= 26 K A A K K 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VSCYPHER
+p35
+sb.

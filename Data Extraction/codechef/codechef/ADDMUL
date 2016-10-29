@@ -1,0 +1,130 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aYou are given a one dimensional integer array A of length N. You need to maintain the array under Q queries of the following four types. Assume 1-based indexing and M = 109 + 7.\u000aQuery 1 : 1 x y v\u000a\u000aThis implies adding v to array A to all the indices from x to y, i.e.,\u000afor (i = x; i <= y; i++) \u000a Ai += v;\u000a Ai %= M; \u000a  Query 2 : 2 x y v\u000aThis implies multiplying the scalar v with the array A for all the indices from x to y, i.e.,\u000afor (i = x; i <= y; i++) \u000a        Ai *= v\u000a        Ai %= M\u000a  Query 3 : 3 x y v\u000aThis implies initializing the array A at all the indices from x to y with the value v, i.e.,\u000afor (i = x; i <= y; i++) \u000a Ai = v \u000a  Query 4 : 4 x y\u000a\u000aThis is a report query which needs to find the sum of the values in A from x to y, i.e.,\u000asum = 0;\u000afor (i = x; i <= y; i++)\u000a sum += Ai\u000a sum %= M\u000aOutput sum.\u000a  Note: a%b represents the remainder of a when divided by b.\u000aInput\u000aFirst line contains two space separated integers N, Q.\u000aNext line contains N space separated integers denoting the array A.\u000aNext Q lines contain queries which can be of any of the above four types.\u000aOutput\u000aFor each query of type 4, output a single integer corresponding to the answer in a single line.\u000aConstraints\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Q \u2264 105\u000a1 \u2264 Initial value of Ai \u2264 109\u000a1 \u2264 v \u2264 109\u000aSubtasks\u000aSubtask 1: Queries are of type 1, 3 and 4. Points - 5.\u000aSubtask 2: Queries are of type 2, 3 and 4. Points - 5.\u000aSubtask 3: Queries are of type 1, 2 and 4. Points - 30.\u000aSubtask 4: All the queries are present. Points - 60.\u000aExample\u000aInput:\u000a4 4\u000a1 2 3 4\u000a4 1 4\u000a1 1 3 10\u000a2 2 4 2\u000a4 1 4\u000a\u000aOutput:\u000a10\u000a69\u000aExplanation\u000aInitial A : [1, 2, 3, 4]\u000aResult of first query : 1 + 2 + 3 + 4 = 10\u000aA after second query: [ 11, 12, 13, 4]\u000aA after third query : [ 11, 24, 26, 8]\u000aResult of fourth query : 11 + 24 + 26 + 8 = 69\u000aAuthor: devuy11\u000aTester: mugurelionut\u000aEditorial: http://discuss.codechef.com/problems/ADDMUL\u000aTags: devuy11 july15 lazypropagation medium segment-tree\u000aDate Added: 6-05-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aYou are given a one dimensional integer array A of length N. You need to maintain the array under Q queries of the following four types. Assume 1-based indexing and M = 109 + 7.\u000aQuery 1 : 1 x y v\u000a\u000aThis implies adding v to array A to all the indices from x to y, i.e.,\u000afor (i = x; i <= y; i++) \u000a Ai += v;\u000a Ai %= M; \u000a  Query 2 : 2 x y v\u000aThis implies multiplying the scalar v with the array A for all the indices from x to y, i.e.,\u000afor (i = x; i <= y; i++) \u000a        Ai *= v\u000a        Ai %= M\u000a  Query 3 : 3 x y v\u000aThis implies initializing the array A at all the indices from x to y with the value v, i.e.,\u000afor (i = x; i <= y; i++) \u000a Ai = v \u000a  Query 4 : 4 x y\u000a\u000aThis is a report query which needs to find the sum of the values in A from x to y, i.e.,\u000asum = 0;\u000afor (i = x; i <= y; i++)\u000a sum += Ai\u000a sum %= M\u000aOutput sum.\u000a  Note: a%b represents the remainder of a when divided by b.\u000aInput\u000aFirst line contains two space separated integers N, Q.\u000aNext line contains N space separated integers denoting the array A.\u000aNext Q lines contain queries which can be of any of the above four types.\u000aOutput\u000aFor each query of type 4, output a single integer corresponding to the answer in a single line.\u000aConstraints\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Q \u2264 105\u000a1 \u2264 Initial value of Ai \u2264 109\u000a1 \u2264 v \u2264 109\u000aSubtasks\u000aSubtask 1: Queries are of type 1, 3 and 4. Points - 5.\u000aSubtask 2: Queries are of type 2, 3 and 4. Points - 5.\u000aSubtask 3: Queries are of type 1, 2 and 4. Points - 30.\u000aSubtask 4: All the queries are present. Points - 60.\u000aExample\u000aInput:\u000a4 4\u000a1 2 3 4\u000a4 1 4\u000a1 1 3 10\u000a2 2 4 2\u000a4 1 4\u000a\u000aOutput:\u000a10\u000a69\u000aExplanation\u000aInitial A : [1, 2, 3, 4]\u000aResult of first query : 1 + 2 + 3 + 4 = 10\u000aA after second query: [ 11, 12, 13, 4]\u000aA after third query : [ 11, 24, 26, 8]\u000aResult of fourth query : 11 + 24 + 26 + 8 = 69\u000aAuthor: devuy11\u000aTester: mugurelionut\u000aEditorial: http://discuss.codechef.com/problems/ADDMUL\u000aTags: devuy11 july15 lazypropagation medium segment-tree\u000aDate Added: 6-05-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian You are given a one dimensional integer array A of length N. You need to maintain the array under Q queries of the following four types. Assume 1-based indexing and M = 109 + 7. A N Q 9 Query 1 : 1 x y v\u000a\u000aThis implies adding v to array A to all the indices from x to y, i.e., Query 1   A   for (i = x; i <= y; i++) \u000a Ai += v;\u000a Ai %= M;  A i A i   Query 2 : 2 x y v\u000aThis implies multiplying the scalar v with the array A for all the indices from x to y, i.e., Query 2  A   for (i = x; i <= y; i++) \u000a        Ai *= v\u000a        Ai %= M A i A i   Query 3 : 3 x y v\u000aThis implies initializing the array A at all the indices from x to y with the value v, i.e., Query 3  A   for (i = x; i <= y; i++) \u000a Ai = v  A i   Query 4 : 4 x y\u000a\u000aThis is a report query which needs to find the sum of the values in A from x to y, i.e., Query 4   A   sum = 0;\u000afor (i = x; i <= y; i++)\u000a sum += Ai\u000a sum %= M\u000aOutput sum. A i   Note: a%b represents the remainder of a when divided by b. Note: Input First line contains two space separated integers N, Q.\u000aNext line contains N space separated integers denoting the array A.\u000aNext Q lines contain queries which can be of any of the above four types. First line contains two space separated integers N, Q. N Q Next line contains N space separated integers denoting the array A. N A Next Q lines contain queries which can be of any of the above four types. Q Output For each query of type 4, output a single integer corresponding to the answer in a single line. For each query of type 4, output a single integer corresponding to the answer in a single line. Constraints 1 \u2264 N \u2264 105\u000a1 \u2264 Q \u2264 105\u000a1 \u2264 Initial value of Ai \u2264 109\u000a1 \u2264 v \u2264 109 1 \u2264 N \u2264 105 N 5 1 \u2264 Q \u2264 105 Q 5 1 \u2264 Initial value of Ai \u2264 109 A i 9 1 \u2264 v \u2264 109 v 9 Subtasks Subtask 1: Queries are of type 1, 3 and 4. Points - 5.\u000aSubtask 2: Queries are of type 2, 3 and 4. Points - 5.\u000aSubtask 3: Queries are of type 1, 2 and 4. Points - 30.\u000aSubtask 4: All the queries are present. Points - 60. Subtask 1: Queries are of type 1, 3 and 4. Points - 5. Subtask 1 Points - 5 Subtask 2: Queries are of type 2, 3 and 4. Points - 5. Subtask 2 Points - 5 Subtask 3: Queries are of type 1, 2 and 4. Points - 30. Subtask 3 Points - 30 Subtask 4: All the queries are present. Points - 60. Subtask 4 Points - 60 Example Input:\u000a4 4\u000a1 2 3 4\u000a4 1 4\u000a1 1 3 10\u000a2 2 4 2\u000a4 1 4\u000a\u000aOutput:\u000a10\u000a69 Input: Output: Explanation Initial A : [1, 2, 3, 4]\u000aResult of first query : 1 + 2 + 3 + 4 = 10\u000aA after second query: [ 11, 12, 13, 4]\u000aA after third query : [ 11, 24, 26, 8]\u000aResult of fourth query : 11 + 24 + 26 + 8 = 69 A   A  A   Author: devuy11\u000aTester: mugurelionut\u000aEditorial: http://discuss.codechef.com/problems/ADDMUL\u000aTags: devuy11 july15 lazypropagation medium segment-tree\u000aDate Added: 6-05-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: devuy11\u000aTester: mugurelionut\u000aEditorial: http://discuss.codechef.com/problems/ADDMUL\u000aTags: devuy11 july15 lazypropagation medium segment-tree\u000aDate Added: 6-05-2014\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: devuy11 Author: devuy11 devuy11 Tester: mugurelionut Tester: mugurelionut mugurelionut Editorial: http://discuss.codechef.com/problems/ADDMUL Editorial: http://discuss.codechef.com/problems/ADDMUL http://discuss.codechef.com/problems/ADDMUL Tags: devuy11 july15 lazypropagation medium segment-tree Tags: devuy11 july15 lazypropagation medium segment-tree devuy11 july15 lazypropagation medium segment-tree Date Added: 6-05-2014 Date Added: 6-05-2014 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V devuy11 july15 lazypropagation medium segment-tree
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/ADDMUL
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVYou are given a one dimensional integer array A of length N. You need to maintain the array under Q queries of the following four types. Assume 1-based indexing and M = 109 + 7.
+p18
+aVQuery 1 : 1 x y v
+p19
+aV
+p20
+aVThis implies adding v to array A to all the indices from x to y, i.e.,
+p21
+aVfor (i = x; i <= y; i++)
+p22
+aVAi += v;
+p23
+aVAi %= M;
+p24
+aVQuery 2 : 2 x y v
+p25
+aVThis implies multiplying the scalar v with the array A for all the indices from x to y, i.e.,
+p26
+aVfor (i = x; i <= y; i++)
+p27
+aVAi *= v
+p28
+aVAi %= M
+p29
+aVQuery 3 : 3 x y v
+p30
+aVThis implies initializing the array A at all the indices from x to y with the value v, i.e.,
+p31
+aVfor (i = x; i <= y; i++)
+p32
+aVAi = v
+p33
+aVQuery 4 : 4 x y
+p34
+ag20
+aVThis is a report query which needs to find the sum of the values in A from x to y, i.e.,
+p35
+aVsum = 0;
+p36
+aVfor (i = x; i <= y; i++)
+p37
+aVsum += Ai
+p38
+aVsum %= M
+p39
+aVOutput sum.
+p40
+aVNote: a%b represents the remainder of a when divided by b.
+p41
+asS'input'
+p42
+(lp43
+VInput
+p44
+aVFirst line contains two space separated integers N, Q.
+p45
+aVNext line contains N space separated integers denoting the array A.
+p46
+aVNext Q lines contain queries which can be of any of the above four types.
+p47
+aVOutput
+p48
+aVFor each query of type 4, output a single integer corresponding to the answer in a single line.
+p49
+asS'constraints'
+p50
+(lp51
+VConstraints
+p52
+aV1 \u2264 N \u2264 105
+p53
+aV1 \u2264 Q \u2264 105
+p54
+aV1 \u2264 Initial value of Ai \u2264 109
+p55
+aV1 \u2264 v \u2264 109
+p56
+aVSubtasks
+p57
+aVSubtask 1: Queries are of type 1, 3 and 4. Points - 5.
+p58
+aVSubtask 2: Queries are of type 2, 3 and 4. Points - 5.
+p59
+aVSubtask 3: Queries are of type 1, 2 and 4. Points - 30.
+p60
+aVSubtask 4: All the queries are present. Points - 60.
+p61
+asS'id'
+p62
+c__builtin__
+id
+p63
+sS'name'
+p64
+VADDMUL
+p65
+sb.

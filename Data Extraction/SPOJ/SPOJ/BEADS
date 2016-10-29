@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput For each case, print exactly one line containing only one integer -- number of the bead which is the first at the worst possible disjoining, i.e. such i, that the string A[i] is lexicographically smallest among all the n possible disjoinings of a necklace. If there are more than one solution, print the one with the lowest i. i A[i] n i 
+p6
+asS'description'
+p7
+V Once upon a time there was a famous actress. As you may expect, she played mostly Antique Comedies most of all. All the people loved her. But she was not interested in the crowds. Her big hobby were beads of any kind. Many bead makers were working for her and they manufactured new necklaces and bracelets every day. One day she called her main Inspector of Bead Makers (IBM) and told him she wanted a very long and special necklace. Inspector of Bead Makers IBM The necklace should be made of glass beads of different sizes connected to each other but without any thread running through the beads, so that means the beads can be disconnected at any point. The actress chose the succession of beads she wants to have and the IBM promised to make the necklace. But then he realized a problem. The joint between two neighbouring beads is not very robust so it is possible that the necklace will get torn by its own weight. The situation becomes even worse when the necklace is disjoined. Moreover, the point of disconnection is very important. If there are small beads at the beginning, the possibility of tearing is much higher than if there were large beads. IBM wants to test the robustness of a necklace so he needs a program that will be able to determine the worst possible point of disjoining the beads. The description of the necklace is a string A = a1a2 ... am specifying sizes of the particular beads, where the last character am is considered to precede character a1 in circular fashion. A = a1a2 ... am 1 2 m am m a1 1 The disjoint point i is said to be worse than the disjoint point j if and only if the string aiai+1 ... ana1 ... ai-1 is lexicografically smaller than the string ajaj+1 ... ana1 ... aj-1. String a1a2 ... an is lexicografically smaller than the string b1b2 ... bn if and only if there exists an integer i, i <= n, so that aj=bj, for each j, 1 <= j < i and ai < bi. i j aiai+1 ... ana1 ... ai-1 i i+1 n 1 i-1 ajaj+1 ... ana1 ... aj-1 j j+1 n 1 j-1 a1a2 ... an 1 2 n b1b2 ... bn 1 2 n i, i <= n aj=bj j j j, 1 <= j < i ai < bi i i Input The input consists of N cases. The first line of the input contains only positive integer N. Then follow the cases. Each case consists of exactly one line containing necklace description. Maximal length of each description is 10000 characters. Each bead is represented by a lower-case character of the english alphabet (a--z), where a < b ... z. N N a < b ... z Output For each case, print exactly one line containing only one integer -- number of the bead which is the first at the worst possible disjoining, i.e. such i, that the string A[i] is lexicographically smallest among all the n possible disjoinings of a necklace. If there are more than one solution, print the one with the lowest i. i A[i] n i Example Sample input:\u000a\u000a4\u000ahelloworld\u000aamandamanda\u000adontcallmebfu\u000aaaabaaa\u000a\u000aSample output:\u000a\u000a10\u000a11\u000a6\u000a5
+p8
+sS'tags'
+p9
+S''
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/BEADS
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V0.5s
+p20
+sS'statement'
+p21
+(lp22
+V Once upon a time there was a famous actress. As you may expect, she played mostly Antique Comedies most of all. All the people loved her. But she was not interested in the crowds. Her big hobby were beads of any kind. Many bead makers were working for her and they manufactured new necklaces and bracelets every day. One day she called her main Inspector of Bead Makers (IBM) and told him she wanted a very long and special necklace. Inspector of Bead Makers IBM The necklace should be made of glass beads of different sizes connected to each other but without any thread running through the beads, so that means the beads can be disconnected at any point. The actress chose the succession of beads she wants to have and the IBM promised to make the necklace. But then he realized a problem. The joint between two neighbouring beads is not very robust so it is possible that the necklace will get torn by its own weight. The situation becomes even worse when the necklace is disjoined. Moreover, the point of disconnection is very important. If there are small beads at the beginning, the possibility of tearing is much higher than if there were large beads. IBM wants to test the robustness of a necklace so he needs a program that will be able to determine the worst possible point of disjoining the beads. The description of the necklace is a string A = a1a2 ... am specifying sizes of the particular beads, where the last character am is considered to precede character a1 in circular fashion. A = a1a2 ... am 1 2 m am m a1 1 The disjoint point i is said to be worse than the disjoint point j if and only if the string aiai+1 ... ana1 ... ai-1 is lexicografically smaller than the string ajaj+1 ... ana1 ... aj-1. String a1a2 ... an is lexicografically smaller than the string b1b2 ... bn if and only if there exists an integer i, i <= n, so that aj=bj, for each j, 1 <= j < i and ai < bi. i j aiai+1 ... ana1 ... ai-1 i i+1 n 1 i-1 ajaj+1 ... ana1 ... aj-1 j j+1 n 1 j-1 a1a2 ... an 1 2 n b1b2 ... bn 1 2 n i, i <= n aj=bj j j j, 1 <= j < i ai < bi i i 
+p23
+asS'sourcelimit'
+p24
+VACM Central European Programming Contest, Prague 1998
+p25
+sS'date'
+p26
+V2004-06-06
+p27
+sS'input'
+p28
+(lp29
+VInput The input consists of N cases. The first line of the input contains only positive integer N. Then follow the cases. Each case consists of exactly one line containing necklace description. Maximal length of each description is 10000 characters. Each bead is represented by a lower-case character of the english alphabet (a--z), where a < b ... z. N N a < b ... z 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VBEADS
+p35
+sb.

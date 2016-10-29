@@ -1,0 +1,94 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput For each case, print one of the following sentences: 'Ecological balance will develop.' - if after sufficiently long time the population of both hares and foxes approaches the reference count with an arbitrary a priori given precision, i.e. lim hy=0 and lim fy=0.
+p6
+aV'Hares will die out while foxes will overgrow.' - if after sufficiently long time the population of hares resp. foxes falls under resp. exceeds any a priori given threshold, i.e. lim hy=-infinity and lim fy=+infinity.
+p7
+aV'Hares will overgrow while foxes will die out.' - if after sufficiently long time the population of foxes resp. hares falls under resp. exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=-infinity.
+p8
+aV'Both hares and foxes will die out.' - if after sufficiently long time the population of both hares and foxes falls under any a priori given threshold, i.e. lim hy=-infinity and lim fy=-infinity.
+p9
+aV'Both hares and foxes will overgrow.' - if after sufficiently long time the population of both hares and foxes exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=+infinity.
+p10
+aV'Chaos will develop.' - if none of the above mentioned description fits. 'Ecological balance will develop.' - if after sufficiently long time the population of both hares and foxes approaches the reference count with an arbitrary a priori given precision, i.e. lim hy=0 and lim fy=0.
+p11
+aV'Hares will die out while foxes will overgrow.' - if after sufficiently long time the population of hares resp. foxes falls under resp. exceeds any a priori given threshold, i.e. lim hy=-infinity and lim fy=+infinity.
+p12
+aV'Hares will overgrow while foxes will die out.' - if after sufficiently long time the population of foxes resp. hares falls under resp. exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=-infinity.
+p13
+aV'Both hares and foxes will die out.' - if after sufficiently long time the population of both hares and foxes falls under any a priori given threshold, i.e. lim hy=-infinity and lim fy=-infinity.
+p14
+aV'Both hares and foxes will overgrow.' - if after sufficiently long time the population of both hares and foxes exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=+infinity.
+p15
+aV'Chaos will develop.' - if none of the above mentioned description fits. 'Ecological balance will develop.' - if after sufficiently long time the population of both hares and foxes approaches the reference count with an arbitrary a priori given precision, i.e. lim hy=0 and lim fy=0. Ecological balance will develop. lim hy=0 y lim fy=0 y 'Hares will die out while foxes will overgrow.' - if after sufficiently long time the population of hares resp. foxes falls under resp. exceeds any a priori given threshold, i.e. lim hy=-infinity and lim fy=+infinity. Hares will die out while foxes will overgrow. lim hy=-infinity y lim fy=+infinity y 'Hares will overgrow while foxes will die out.' - if after sufficiently long time the population of foxes resp. hares falls under resp. exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=-infinity. Hares will overgrow while foxes will die out. lim hy=+infinity y lim fy=-infinity y 'Both hares and foxes will die out.' - if after sufficiently long time the population of both hares and foxes falls under any a priori given threshold, i.e. lim hy=-infinity and lim fy=-infinity. Both hares and foxes will die out. lim hy=-infinity y lim fy=-infinity y 'Both hares and foxes will overgrow.' - if after sufficiently long time the population of both hares and foxes exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=+infinity. Both hares and foxes will overgrow. lim hy=+infinity y lim fy=+infinity y 'Chaos will develop.' - if none of the above mentioned description fits. Chaos will develop. 
+p16
+asS'description'
+p17
+V The Antique Comedians of Malidinesia play an interesting comedy where many animals occur. Because they want their plays to be as true as possible, a specialist studies the behaviour of various animals. Recently, he is interested in a binary dynamic ecological system hares-foxes (SHF). As a part of this project, you are asked to design and implement intelligent automatic target evaluation simulator (IATES) for this system. The behaviour of the SHF follows so called standard model, described by the following set of difference equations. standard model hy+1 = a.hy - b.fy\u000afy+1 = c.fy + d.hy y+1 y y  y+1 y y where hy resp. fy represent the difference of the number of hares resp. foxes in year y and the reference count determined at the beginning of the experiment. The units of hy and fy are unknown. Therefore, hy and fy are to be treated as real numbers. Your task is to write a program to determine the long term evolution of SHF. y y y y y y y Input The input consists of N cases (equal to about 5000). The first line of the input contains only positive integer N. Then follow the cases. Each case consists of six real numbers a, b, c, d, h1998 and f1998, written in this order on three lines, two numbers per line, separated by one or more spaces. The numbers are given in the classical format, i.e. optional sign, sequence of digits, optional dot and optional sequence of digits. The text form of a number does not exceed 10 characters. Each case is followed by one empty line. N N a, b, c, d, h1998 1998 f1998 1998 Output For each case, print one of the following sentences: 'Ecological balance will develop.' - if after sufficiently long time the population of both hares and foxes approaches the reference count with an arbitrary a priori given precision, i.e. lim hy=0 and lim fy=0.\u000a'Hares will die out while foxes will overgrow.' - if after sufficiently long time the population of hares resp. foxes falls under resp. exceeds any a priori given threshold, i.e. lim hy=-infinity and lim fy=+infinity.\u000a'Hares will overgrow while foxes will die out.' - if after sufficiently long time the population of foxes resp. hares falls under resp. exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=-infinity.\u000a'Both hares and foxes will die out.' - if after sufficiently long time the population of both hares and foxes falls under any a priori given threshold, i.e. lim hy=-infinity and lim fy=-infinity.\u000a'Both hares and foxes will overgrow.' - if after sufficiently long time the population of both hares and foxes exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=+infinity.\u000a'Chaos will develop.' - if none of the above mentioned description fits. 'Ecological balance will develop.' - if after sufficiently long time the population of both hares and foxes approaches the reference count with an arbitrary a priori given precision, i.e. lim hy=0 and lim fy=0.\u000a'Hares will die out while foxes will overgrow.' - if after sufficiently long time the population of hares resp. foxes falls under resp. exceeds any a priori given threshold, i.e. lim hy=-infinity and lim fy=+infinity.\u000a'Hares will overgrow while foxes will die out.' - if after sufficiently long time the population of foxes resp. hares falls under resp. exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=-infinity.\u000a'Both hares and foxes will die out.' - if after sufficiently long time the population of both hares and foxes falls under any a priori given threshold, i.e. lim hy=-infinity and lim fy=-infinity.\u000a'Both hares and foxes will overgrow.' - if after sufficiently long time the population of both hares and foxes exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=+infinity.\u000a'Chaos will develop.' - if none of the above mentioned description fits. 'Ecological balance will develop.' - if after sufficiently long time the population of both hares and foxes approaches the reference count with an arbitrary a priori given precision, i.e. lim hy=0 and lim fy=0. Ecological balance will develop. lim hy=0 y lim fy=0 y 'Hares will die out while foxes will overgrow.' - if after sufficiently long time the population of hares resp. foxes falls under resp. exceeds any a priori given threshold, i.e. lim hy=-infinity and lim fy=+infinity. Hares will die out while foxes will overgrow. lim hy=-infinity y lim fy=+infinity y 'Hares will overgrow while foxes will die out.' - if after sufficiently long time the population of foxes resp. hares falls under resp. exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=-infinity. Hares will overgrow while foxes will die out. lim hy=+infinity y lim fy=-infinity y 'Both hares and foxes will die out.' - if after sufficiently long time the population of both hares and foxes falls under any a priori given threshold, i.e. lim hy=-infinity and lim fy=-infinity. Both hares and foxes will die out. lim hy=-infinity y lim fy=-infinity y 'Both hares and foxes will overgrow.' - if after sufficiently long time the population of both hares and foxes exceeds any a priori given threshold, i.e. lim hy=+infinity and lim fy=+infinity. Both hares and foxes will overgrow. lim hy=+infinity y lim fy=+infinity y 'Chaos will develop.' - if none of the above mentioned description fits. Chaos will develop. Example Sample input:\u000a\u000a2\u000a2 0.5\u000a0.5 0.6\u000a2 3\u000a\u000a0.1 1 \u000a2 0.1\u000a1 1\u000a\u000aSample output:\u000a\u000aBoth hares and foxes will overgrow.\u000aHares will die out while foxes will overgrow.
+p18
+sS'tags'
+p19
+S''
+p20
+sS'url'
+p21
+Vhttp://www.spoj.com/problems/HAREFOX
+p22
+sS'addedBy'
+p23
+Vadrian
+p24
+sS'memorylimit'
+p25
+V1536MB
+p26
+sS'cluster'
+p27
+VCube (Intel G860)
+p28
+sS'timelimit'
+p29
+V5s
+p30
+sS'statement'
+p31
+(lp32
+V The Antique Comedians of Malidinesia play an interesting comedy where many animals occur. Because they want their plays to be as true as possible, a specialist studies the behaviour of various animals. Recently, he is interested in a binary dynamic ecological system hares-foxes (SHF). As a part of this project, you are asked to design and implement intelligent automatic target evaluation simulator (IATES) for this system. The behaviour of the SHF follows so called standard model, described by the following set of difference equations. standard model hy+1 = a.hy - b.fy
+p33
+aVfy+1 = c.fy + d.hy y+1 y y  y+1 y y where hy resp. fy represent the difference of the number of hares resp. foxes in year y and the reference count determined at the beginning of the experiment. The units of hy and fy are unknown. Therefore, hy and fy are to be treated as real numbers. Your task is to write a program to determine the long term evolution of SHF. y y y y y y y 
+p34
+asS'sourcelimit'
+p35
+VACM Central European Programming Contest, Prague 1998
+p36
+sS'date'
+p37
+V2004-06-06
+p38
+sS'input'
+p39
+(lp40
+VInput The input consists of N cases (equal to about 5000). The first line of the input contains only positive integer N. Then follow the cases. Each case consists of six real numbers a, b, c, d, h1998 and f1998, written in this order on three lines, two numbers per line, separated by one or more spaces. The numbers are given in the classical format, i.e. optional sign, sequence of digits, optional dot and optional sequence of digits. The text form of a number does not exceed 10 characters. Each case is followed by one empty line. N N a, b, c, d, h1998 1998 f1998 1998 
+p41
+asS'constraints'
+p42
+g40
+sS'id'
+p43
+c__builtin__
+id
+p44
+sS'name'
+p45
+VHAREFOX
+p46
+sb.

@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VBF ICK WSPC
+p3
+sS'output'
+p4
+(lp5
+VOutput The logical value of: 'B is a substring of A'. 
+p6
+asS'description'
+p7
+V Given two binary strings, A (of length 10) and B (of length 5), output 1 if B is a substring of A and 0 otherwise. Please note, that the solution may only be submitted in the following languages: Brainf**k, Whitespace and Intercal. Please note, that the solution may only be submitted in the following languages: Brainf**k, Whitespace and Intercal. Please note, that the solution may only be submitted in the following languages: Brainf**k, Whitespace and Intercal. Input 24 lines consisting of pairs of binary strings A and B separated by a single space. Output The logical value of: 'B is a substring of A'. Example First two lines of input:\u000a\u000a1010110010 10110\u000a1110111011 10011     First two lines of output:\u000a1\u000a0   
+p8
+sS'tags'
+p9
+S''
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/SBSTR1
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V0.979s
+p20
+sS'statement'
+p21
+(lp22
+V Given two binary strings, A (of length 10) and B (of length 5), output 1 if B is a substring of A and 0 otherwise. Please note, that the solution may only be submitted in the following languages: Brainf**k, Whitespace and Intercal. Please note, that the solution may only be submitted in the following languages: Brainf**k, Whitespace and Intercal. Please note, that the solution may only be submitted in the following languages: Brainf**k, Whitespace and Intercal. 
+p23
+asS'sourcelimit'
+p24
+V50000B
+p25
+sS'date'
+p26
+V2004-05-01
+p27
+sS'input'
+p28
+(lp29
+VInput 24 lines consisting of pairs of binary strings A and B separated by a single space. 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VSBSTR1
+p35
+sb.

@@ -1,0 +1,84 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput [sorted list of accounts with the number of repeated accounts]
+p6
+aV[empty line]
+p7
+aV[other results]    
+p8
+asS'description'
+p9
+V In one of the internet banks thousands of operations are being performed every day. Since certain customers do business more actively than others, some of the bank accounts occur many times in the list of operations. Your task is to sort the bank account numbers in ascending order. If an account appears twice or more in the list, write the number of repetitions just after the account number. The format of accounts is as follows: 2 control digits, an 8-digit code of the bank, 16 digits identifying the owner (written in groups of four digits), for example (at the end of each line there is exactly one space): 2 8 16 30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142   Banks are real-time institutions and they need FAST solutions. If you feel you can meet the challenge within a very stringent time limit, go ahead! A well designed sorting algorithm in a fast language is likely to succeed. Banks are real-time institutions and they need FAST solutions. If you feel you can meet the challenge within a very stringent time limit, go ahead! Input t [the number of tests <= 5]\u000an [the number of accounts<= 100 000]\u000a[list of accounts]\u000a[empty line]\u000a[next test cases]  t 5  n 100 000    Output [sorted list of accounts with the number of repeated accounts]\u000a[empty line]\u000a[other results]    Example Input:\u000a2\u000a6\u000a03 10103538 2222 1233 6160 0142 \u000a03 10103538 2222 1233 6160 0141 \u000a30 10103538 2222 1233 6160 0141 \u000a30 10103538 2222 1233 6160 0142 \u000a30 10103538 2222 1233 6160 0141 \u000a30 10103538 2222 1233 6160 0142 \u000a\u000a5\u000a30 10103538 2222 1233 6160 0144 \u000a30 10103538 2222 1233 6160 0142 \u000a30 10103538 2222 1233 6160 0145 \u000a30 10103538 2222 1233 6160 0146 \u000a30 10103538 2222 1233 6160 0143 \u000a\u000aOutput:\u000a03 10103538 2222 1233 6160 0141 1\u000a03 10103538 2222 1233 6160 0142 1\u000a30 10103538 2222 1233 6160 0141 2\u000a30 10103538 2222 1233 6160 0142 2\u000a\u000a30 10103538 2222 1233 6160 0142 1\u000a30 10103538 2222 1233 6160 0143 1\u000a30 10103538 2222 1233 6160 0144 1\u000a30 10103538 2222 1233 6160 0145 1\u000a30 10103538 2222 1233 6160 0146 1 Input: Output:
+p10
+sS'tags'
+p11
+V #sorting #ad-hoc-1
+p12
+sS'url'
+p13
+Vhttp://www.spoj.com/problems/SBANK
+p14
+sS'addedBy'
+p15
+Vmima
+p16
+sS'memorylimit'
+p17
+V1536MB
+p18
+sS'cluster'
+p19
+VCube (Intel G860)
+p20
+sS'timelimit'
+p21
+V7s
+p22
+sS'statement'
+p23
+(lp24
+V In one of the internet banks thousands of operations are being performed every day. Since certain customers do business more actively than others, some of the bank accounts occur many times in the list of operations. Your task is to sort the bank account numbers in ascending order. If an account appears twice or more in the list, write the number of repetitions just after the account number. The format of accounts is as follows: 2 control digits, an 8-digit code of the bank, 16 digits identifying the owner (written in groups of four digits), for example (at the end of each line there is exactly one space): 2 8 16 30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142  30 10103538 2222 1233 6160 0142   Banks are real-time institutions and they need FAST solutions. If you feel you can meet the challenge within a very stringent time limit, go ahead! A well designed sorting algorithm in a fast language is likely to succeed. Banks are real-time institutions and they need FAST solutions. If you feel you can meet the challenge within a very stringent time limit, go ahead! 
+p25
+asS'sourcelimit'
+p26
+V-
+p27
+sS'date'
+p28
+V2004-06-01
+p29
+sS'input'
+p30
+(lp31
+VInput t [the number of tests <= 5]
+p32
+aVn [the number of accounts<= 100 000]
+p33
+aV[list of accounts]
+p34
+aV[empty line]
+p35
+aV[next test cases]  t 5  n 100 000    
+p36
+asS'constraints'
+p37
+g31
+sS'id'
+p38
+c__builtin__
+id
+p39
+sS'name'
+p40
+VSBANK
+p41
+sb.

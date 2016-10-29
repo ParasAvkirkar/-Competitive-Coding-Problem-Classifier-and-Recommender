@@ -1,0 +1,99 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aSridhar was a seasoned traveler. He liked to visit new places. More than all he was a meticulous planner. This time he was planning to visit Europe. He wrote down his travel itinerary like as follows:\u000a\u000aIf he wanted to visit Madrid, Paris, Munich, Warsaw and Kiev in this order, he would write it down like as:\u000aMadrid Paris 100$\u000aParis Munich 200$\u000aMunich Warsaw 150$\u000aWarsaw Kiev 120$\u000aMore formally, if he wanted to go from A to B directly and the price is C dollars, then he would write\u000aA B C$\u000aon a card.\u000aEach move was written on a different card. Sridhar was a great planner, so he would never visit the same place twice. Just before starting his journey, the cards got shuffled. Help Sridhar figure out the actual order of the cards and the total cost of his journey.\u000aInput\u000aThe first line of the input contains an integer T, the number of test cases. T test cases follow. Each case contains an integer N, the number of cities Sridhar is planning to visit. N-1 lines follow. Each line is of the form\u000aAi Bi Ci$\u000awhere the i-th line refers to the i-th card after getting shuffled.\u000aOutput\u000aFor each case the output contains N lines, the first N-1 lines should contain the N-1 cards in their proper original order, the N-th line should contain the total cost of the travel.\u000aSee Example for detailed format.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 5000\u000a1 \u2264 length of Ai \u2264 50\u000a1 \u2264 length of Bi \u2264 50\u000a1 \u2264 Ci \u2264 1000\u000aAi, Bi will contain only lowercase and uppercase latin characters, no two cities will have same names.\u000aThe names of cities are case-sensitive. So "warsaw" and "Warsaw" should be considered as different cities.\u000aExample\u000aInput\u000a1\u000a5\u000aWarsaw Kiev 120$\u000aMadrid Paris 100$\u000aMunich Warsaw 150$\u000aParis Munich 200$\u000a\u000aOutput\u000aMadrid Paris 100$\u000aParis Munich 200$\u000aMunich Warsaw 150$\u000aWarsaw Kiev 120$\u000a570$\u000aAuthor: kaushik_iska\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/TOURMAP\u000aTags: graph hash-map kaushik_iska nov12 simple\u000aDate Added: 3-10-2012\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aSridhar was a seasoned traveler. He liked to visit new places. More than all he was a meticulous planner. This time he was planning to visit Europe. He wrote down his travel itinerary like as follows:\u000a\u000aIf he wanted to visit Madrid, Paris, Munich, Warsaw and Kiev in this order, he would write it down like as:\u000aMadrid Paris 100$\u000aParis Munich 200$\u000aMunich Warsaw 150$\u000aWarsaw Kiev 120$\u000aMore formally, if he wanted to go from A to B directly and the price is C dollars, then he would write\u000aA B C$\u000aon a card.\u000aEach move was written on a different card. Sridhar was a great planner, so he would never visit the same place twice. Just before starting his journey, the cards got shuffled. Help Sridhar figure out the actual order of the cards and the total cost of his journey.\u000aInput\u000aThe first line of the input contains an integer T, the number of test cases. T test cases follow. Each case contains an integer N, the number of cities Sridhar is planning to visit. N-1 lines follow. Each line is of the form\u000aAi Bi Ci$\u000awhere the i-th line refers to the i-th card after getting shuffled.\u000aOutput\u000aFor each case the output contains N lines, the first N-1 lines should contain the N-1 cards in their proper original order, the N-th line should contain the total cost of the travel.\u000aSee Example for detailed format.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 5000\u000a1 \u2264 length of Ai \u2264 50\u000a1 \u2264 length of Bi \u2264 50\u000a1 \u2264 Ci \u2264 1000\u000aAi, Bi will contain only lowercase and uppercase latin characters, no two cities will have same names.\u000aThe names of cities are case-sensitive. So "warsaw" and "Warsaw" should be considered as different cities.\u000aExample\u000aInput\u000a1\u000a5\u000aWarsaw Kiev 120$\u000aMadrid Paris 100$\u000aMunich Warsaw 150$\u000aParis Munich 200$\u000a\u000aOutput\u000aMadrid Paris 100$\u000aParis Munich 200$\u000aMunich Warsaw 150$\u000aWarsaw Kiev 120$\u000a570$\u000aAuthor: kaushik_iska\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/TOURMAP\u000aTags: graph hash-map kaushik_iska nov12 simple\u000aDate Added: 3-10-2012\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Sridhar was a seasoned traveler. He liked to visit new places. More than all he was a meticulous planner. This time he was planning to visit Europe. He wrote down his travel itinerary like as follows:\u000a\u000aIf he wanted to visit Madrid, Paris, Munich, Warsaw and Kiev in this order, he would write it down like as:   Madrid Paris 100$\u000aParis Munich 200$\u000aMunich Warsaw 150$\u000aWarsaw Kiev 120$ More formally, if he wanted to go from A to B directly and the price is C dollars, then he would write A B C A B C$ on a card.\u000aEach move was written on a different card. Sridhar was a great planner, so he would never visit the same place twice. Just before starting his journey, the cards got shuffled. Help Sridhar figure out the actual order of the cards and the total cost of his journey.  Input The first line of the input contains an integer T, the number of test cases. T test cases follow. Each case contains an integer N, the number of cities Sridhar is planning to visit. N-1 lines follow. Each line is of the form T T N N-1 Ai Bi Ci$ i i i where the i-th line refers to the i-th card after getting shuffled. i-th i-th  Output  For each case the output contains N lines, the first N-1 lines should contain the N-1 cards in their proper original order, the N-th line should contain the total cost of the travel.\u000aSee Example for detailed format. N N-1 N-1 N-th   Constraints  1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 5000\u000a1 \u2264 length of Ai \u2264 50\u000a1 \u2264 length of Bi \u2264 50\u000a1 \u2264 Ci \u2264 1000\u000aAi, Bi will contain only lowercase and uppercase latin characters, no two cities will have same names.\u000aThe names of cities are case-sensitive. So "warsaw" and "Warsaw" should be considered as different cities. T  N  length of Ai i  length of Bi i  Ci i  Ai i Bi i lowercase and uppercase latin characters, no two cities will have same names  Example Input\u000a1\u000a5\u000aWarsaw Kiev 120$\u000aMadrid Paris 100$\u000aMunich Warsaw 150$\u000aParis Munich 200$\u000a\u000aOutput\u000aMadrid Paris 100$\u000aParis Munich 200$\u000aMunich Warsaw 150$\u000aWarsaw Kiev 120$\u000a570$ Input Output  Author: kaushik_iska\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/TOURMAP\u000aTags: graph hash-map kaushik_iska nov12 simple\u000aDate Added: 3-10-2012\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kaushik_iska\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/TOURMAP\u000aTags: graph hash-map kaushik_iska nov12 simple\u000aDate Added: 3-10-2012\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: kaushik_iska Author: kaushik_iska kaushik_iska Tester: laycurse Tester: laycurse laycurse Editorial: http://discuss.codechef.com/problems/TOURMAP Editorial: http://discuss.codechef.com/problems/TOURMAP http://discuss.codechef.com/problems/TOURMAP Tags: graph hash-map kaushik_iska nov12 simple Tags: graph hash-map kaushik_iska nov12 simple graph hash-map kaushik_iska nov12 simple Date Added: 3-10-2012 Date Added: 3-10-2012 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V graph hash-map kaushik_iska nov12 simple
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/TOURMAP
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVSridhar was a seasoned traveler. He liked to visit new places. More than all he was a meticulous planner. This time he was planning to visit Europe. He wrote down his travel itinerary like as follows:
+p17
+aV
+p18
+aVIf he wanted to visit Madrid, Paris, Munich, Warsaw and Kiev in this order, he would write it down like as:
+p19
+aVMadrid Paris 100$
+p20
+aVParis Munich 200$
+p21
+aVMunich Warsaw 150$
+p22
+aVWarsaw Kiev 120$
+p23
+aVMore formally, if he wanted to go from A to B directly and the price is C dollars, then he would write
+p24
+aVA B C$
+p25
+aVon a card.
+p26
+aVEach move was written on a different card. Sridhar was a great planner, so he would never visit the same place twice. Just before starting his journey, the cards got shuffled. Help Sridhar figure out the actual order of the cards and the total cost of his journey.
+p27
+asS'input'
+p28
+(lp29
+VInput
+p30
+aVThe first line of the input contains an integer T, the number of test cases. T test cases follow. Each case contains an integer N, the number of cities Sridhar is planning to visit. N-1 lines follow. Each line is of the form
+p31
+aVAi Bi Ci$
+p32
+aVwhere the i-th line refers to the i-th card after getting shuffled.
+p33
+aVOutput
+p34
+aVFor each case the output contains N lines, the first N-1 lines should contain the N-1 cards in their proper original order, the N-th line should contain the total cost of the travel.
+p35
+aVSee Example for detailed format.
+p36
+asS'constraints'
+p37
+(lp38
+VConstraints
+p39
+aV1 \u2264 T \u2264 10
+p40
+aV1 \u2264 N \u2264 5000
+p41
+aV1 \u2264 length of Ai \u2264 50
+p42
+aV1 \u2264 length of Bi \u2264 50
+p43
+aV1 \u2264 Ci \u2264 1000
+p44
+aVAi, Bi will contain only lowercase and uppercase latin characters, no two cities will have same names.
+p45
+aVThe names of cities are case-sensitive. So "warsaw" and "Warsaw" should be considered as different cities.
+p46
+asS'id'
+p47
+c__builtin__
+id
+p48
+sS'name'
+p49
+VTOURMAP
+p50
+sb.

@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput For each test case, output n lines consisting of three floating point numbers, corresponding to the x y z coordinates of successive points. Scoring The score of your program is the total of scores awarded for individual test cases. For each test case you will receive n*d points, where d denotes the minimum distance between the closest pair of points in the solution output by your program. If you place some of the points further than 10-5 from the surface of the sphere, your solution will be regarded as incorrect. -5 
+p6
+asS'description'
+p7
+V Imagine a number of identically charged weightless dimensionless particles placed on the surface of a ball. They will instantly reach a state of equilibrium (a stable state of minimum energy), becoming distributed fairly evenly all round the sphere. You probably won't be surprised to hear that Byteland has a sadly distorted electrostatic field, and the energy of the system is not governed by ordinary laws. Instead, it is inversely proportional to the distance between the closest pair of charges on the sphere. Please help the charges find positions in which they will feel as comfortable as possible. Charges should be regarded as points in 3D space, located on the surface of the unitary sphere (with center (0,0,0) and a radius of 1). Input An integer t denoting the number of test cases (t<=10), followed by t test cases, each consisting of a line with a single integer n - the number of points on the sphere (2<=n<=1000). Output For each test case, output n lines consisting of three floating point numbers, corresponding to the x y z coordinates of successive points. Scoring The score of your program is the total of scores awarded for individual test cases. For each test case you will receive n*d points, where d denotes the minimum distance between the closest pair of points in the solution output by your program. If you place some of the points further than 10-5 from the surface of the sphere, your solution will be regarded as incorrect. -5 Example For the sample input:\u000a1\u000a2\u000a\u000aa program outputting:\u000a0.0 0.0 1.0\u000a0.0 1.0 0.0\u000a\u000awill receive 2.828 points.        
+p8
+sS'tags'
+p9
+V #geometry
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/PSPHERE
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V5s
+p20
+sS'statement'
+p21
+(lp22
+V Imagine a number of identically charged weightless dimensionless particles placed on the surface of a ball. They will instantly reach a state of equilibrium (a stable state of minimum energy), becoming distributed fairly evenly all round the sphere. You probably won't be surprised to hear that Byteland has a sadly distorted electrostatic field, and the energy of the system is not governed by ordinary laws. Instead, it is inversely proportional to the distance between the closest pair of charges on the sphere. Please help the charges find positions in which they will feel as comfortable as possible. Charges should be regarded as points in 3D space, located on the surface of the unitary sphere (with center (0,0,0) and a radius of 1). 
+p23
+asS'sourcelimit'
+p24
+VDASM Programming League 2004 (problemset 1)
+p25
+sS'date'
+p26
+V2004-10-09
+p27
+sS'input'
+p28
+(lp29
+VInput An integer t denoting the number of test cases (t<=10), followed by t test cases, each consisting of a line with a single integer n - the number of points on the sphere (2<=n<=1000). 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VPSPHERE
+p35
+sb.

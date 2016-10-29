@@ -1,0 +1,109 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef likes to play games a lot. Gravity Guy is one such interesting game.\u000a"Gravity Guy is an arcade side-scrolling game in which the player controls Gravity Guy by tapping the screen to switch gravity. The objective in this game is to run as far as possible while avoiding being trapped by obstacles, falling, or flying off the screen. If hit by obstacles, the game is over."\u000aChef is so addicted to this game that each night he dreams of himself being in the game as Gravity Guy. He has two lanes in front of him represented by two strings of equal length named as L1 and L2. Each of the two lanes consists of some clean blocks represented by '.' and some dirty blocks represented by '#'.\u000aChef can start running from the beginning of any of the two lanes and cannot step over any dirty block ( '#' ) encountered during his journey. He has to complete his journey by reaching the end block of any of the two lanes.\u000aChef can use the following jumps to reach his destination. Considering chef is at xth block of some lane.\u000aHe can jump to x+1th block of the same lane.\u000aHe can switch gravity quickly and jump to xth block of the other lane.\u000aHe can switch gravity and jump to x+1th block of the other lane.\u000aYou have to tell him whether he can reach his destination or not. If it is possible for him to reach his destination, then Chef is interested in knowing the minimum number of gravity switches required to reach the destination.\u000aInput\u000aFirst line of input contains a single integer T denoting the number of test cases. Each test case consists of 2 lines. First line of each test case contains a string denoting lane L1. Second line of each test case contains a string denoting lane L2.\u000aOutput\u000aFor each test case, print "Yes" (without quotes) in the first line if Chef is able to reach the destination followed by a line containing an integer denoting minimum number of gravity switches required to reach to the destination. Print a single line containing the word "No" (without quotes) otherwise.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 |L1| \u2264 2 × 105, where |S| denotes the length of string S\u000a|L1| = |L2|\u000aSubtasks\u000aSubtask 1 (25 points)\u000aSum of |L1| over all test cases in one file it at most 200.\u000aOnly "Yes"/"No" response will be evaluated.\u000a\u000aSubtask 2 (25 points)\u000aSum of |L1| over all test cases in one file it at most 200.\u000a\u000aSubtask 3 (25 points)\u000aSum of |L1| over all test cases in one file it at most 106.\u000aOnly "Yes"/"No" response will be evaluated.\u000a\u000aSubtask 4 (25 points)\u000aSum of |L1| over all test cases in one file it at most 106.\u000aExample\u000aInput:\u000a3\u000a#...#\u000a.###.\u000a#.#.#.\u000a.#.#.#\u000a#...\u000a#...\u000a\u000aOutput:\u000aYes\u000a2\u000aYes\u000a5\u000aNo\u000aExplanation\u000aTest 1: Chef will start his journey from L2, switch from L2 to L1 and finally land up at last block of L2 by switching from L1 to L2. Therefore, he requires total 2 gravity switches to reach the destination.\u000aTest 3: Chef cannot start his journey as starting block of both the lanes L1 & L2 are dirty and he cannot step over them.\u000a\u000aIn Subtask 1 and Subtask 3, only "Yes"/"No" response will be evaluated. Thus, for example, the output\u000aYes\u000a1\u000aYes\u000a8\u000aNo\u000ais considered as a correct output for the example input.\u000aAuthor: ma5termind\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/GRGUY\u000aTags: aug15 dp greedy ma5termind simple\u000aDate Added: 1-04-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian.\u000aChef likes to play games a lot. Gravity Guy is one such interesting game.\u000a"Gravity Guy is an arcade side-scrolling game in which the player controls Gravity Guy by tapping the screen to switch gravity. The objective in this game is to run as far as possible while avoiding being trapped by obstacles, falling, or flying off the screen. If hit by obstacles, the game is over."\u000aChef is so addicted to this game that each night he dreams of himself being in the game as Gravity Guy. He has two lanes in front of him represented by two strings of equal length named as L1 and L2. Each of the two lanes consists of some clean blocks represented by '.' and some dirty blocks represented by '#'.\u000aChef can start running from the beginning of any of the two lanes and cannot step over any dirty block ( '#' ) encountered during his journey. He has to complete his journey by reaching the end block of any of the two lanes.\u000aChef can use the following jumps to reach his destination. Considering chef is at xth block of some lane.\u000aHe can jump to x+1th block of the same lane.\u000aHe can switch gravity quickly and jump to xth block of the other lane.\u000aHe can switch gravity and jump to x+1th block of the other lane.\u000aYou have to tell him whether he can reach his destination or not. If it is possible for him to reach his destination, then Chef is interested in knowing the minimum number of gravity switches required to reach the destination.\u000aInput\u000aFirst line of input contains a single integer T denoting the number of test cases. Each test case consists of 2 lines. First line of each test case contains a string denoting lane L1. Second line of each test case contains a string denoting lane L2.\u000aOutput\u000aFor each test case, print "Yes" (without quotes) in the first line if Chef is able to reach the destination followed by a line containing an integer denoting minimum number of gravity switches required to reach to the destination. Print a single line containing the word "No" (without quotes) otherwise.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 |L1| \u2264 2 × 105, where |S| denotes the length of string S\u000a|L1| = |L2|\u000aSubtasks\u000aSubtask 1 (25 points)\u000aSum of |L1| over all test cases in one file it at most 200.\u000aOnly "Yes"/"No" response will be evaluated.\u000a\u000aSubtask 2 (25 points)\u000aSum of |L1| over all test cases in one file it at most 200.\u000a\u000aSubtask 3 (25 points)\u000aSum of |L1| over all test cases in one file it at most 106.\u000aOnly "Yes"/"No" response will be evaluated.\u000a\u000aSubtask 4 (25 points)\u000aSum of |L1| over all test cases in one file it at most 106.\u000aExample\u000aInput:\u000a3\u000a#...#\u000a.###.\u000a#.#.#.\u000a.#.#.#\u000a#...\u000a#...\u000a\u000aOutput:\u000aYes\u000a2\u000aYes\u000a5\u000aNo\u000aExplanation\u000aTest 1: Chef will start his journey from L2, switch from L2 to L1 and finally land up at last block of L2 by switching from L1 to L2. Therefore, he requires total 2 gravity switches to reach the destination.\u000aTest 3: Chef cannot start his journey as starting block of both the lanes L1 & L2 are dirty and he cannot step over them.\u000a\u000aIn Subtask 1 and Subtask 3, only "Yes"/"No" response will be evaluated. Thus, for example, the output\u000aYes\u000a1\u000aYes\u000a8\u000aNo\u000ais considered as a correct output for the example input.\u000aAuthor: ma5termind\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/GRGUY\u000aTags: aug15 dp greedy ma5termind simple\u000aDate Added: 1-04-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian. Mandarin Chinese Russian Chef likes to play games a lot. Gravity Guy is one such interesting game. "Gravity Guy is an arcade side-scrolling game in which the player controls Gravity Guy by tapping the screen to switch gravity. The objective in this game is to run as far as possible while avoiding being trapped by obstacles, falling, or flying off the screen. If hit by obstacles, the game is over." Gravity Guy is an arcade side-scrolling game in which the player controls Gravity Guy by tapping the screen to switch gravity. The objective in this game is to run as far as possible while avoiding being trapped by obstacles, falling, or flying off the screen. If hit by obstacles, the game is over. Chef is so addicted to this game that each night he dreams of himself being in the game as Gravity Guy. He has two lanes in front of him represented by two strings of equal length named as L1 and L2. Each of the two lanes consists of some clean blocks represented by '.' and some dirty blocks represented by '#'. L1 1 L2 2 '.' '#' Chef can start running from the beginning of any of the two lanes and cannot step over any dirty block ( '#' ) encountered during his journey. He has to complete his journey by reaching the end block of any of the two lanes. ( '#' ) Chef can use the following jumps to reach his destination. Considering chef is at xth block of some lane. xth th He can jump to x+1th block of the same lane.\u000aHe can switch gravity quickly and jump to xth block of the other lane.\u000aHe can switch gravity and jump to x+1th block of the other lane. He can jump to x+1th block of the same lane. x+1th th He can switch gravity quickly and jump to xth block of the other lane. xth th He can switch gravity and jump to x+1th block of the other lane. x+1th th You have to tell him whether he can reach his destination or not. If it is possible for him to reach his destination, then Chef is interested in knowing the minimum number of gravity switches required to reach the destination. Input First line of input contains a single integer T denoting the number of test cases. Each test case consists of 2 lines. First line of each test case contains a string denoting lane L1. Second line of each test case contains a string denoting lane L2. T 2 L1 1 L2 2 Output For each test case, print "Yes" (without quotes) in the first line if Chef is able to reach the destination followed by a line containing an integer denoting minimum number of gravity switches required to reach to the destination. Print a single line containing the word "No" (without quotes) otherwise. "Yes" "No" Constraints 1 \u2264 T \u2264 105\u000a1 \u2264 |L1| \u2264 2 × 105, where |S| denotes the length of string S\u000a|L1| = |L2| 1 \u2264 T \u2264 105 1 \u2264 T \u2264 105 5 1 \u2264 |L1| \u2264 2 × 105, where |S| denotes the length of string S 1 \u2264 |L1| \u2264 2 × 105 1 5 |S| S |L1| = |L2| |L1| = |L2| 1 2 Subtasks Subtask 1 (25 points) Subtask 1 (25 points) Sum of |L1| over all test cases in one file it at most 200.\u000aOnly "Yes"/"No" response will be evaluated. Sum of |L1| over all test cases in one file it at most 200. |L1| 1 200 Only "Yes"/"No" response will be evaluated.   Subtask 2 (25 points) Subtask 2 (25 points) Sum of |L1| over all test cases in one file it at most 200. Sum of |L1| over all test cases in one file it at most 200. |L1| 1 200   Subtask 3 (25 points) Subtask 3 (25 points) Sum of |L1| over all test cases in one file it at most 106.\u000aOnly "Yes"/"No" response will be evaluated. Sum of |L1| over all test cases in one file it at most 106. |L1| 1 106 6 Only "Yes"/"No" response will be evaluated.   Subtask 4 (25 points) Subtask 4 (25 points) Sum of |L1| over all test cases in one file it at most 106. Sum of |L1| over all test cases in one file it at most 106. |L1| 1 106 6 Example Input:\u000a3\u000a#...#\u000a.###.\u000a#.#.#.\u000a.#.#.#\u000a#...\u000a#...\u000a\u000aOutput:\u000aYes\u000a2\u000aYes\u000a5\u000aNo Input: Output: Explanation Test 1: Chef will start his journey from L2, switch from L2 to L1 and finally land up at last block of L2 by switching from L1 to L2. Therefore, he requires total 2 gravity switches to reach the destination.\u000aTest 3: Chef cannot start his journey as starting block of both the lanes L1 & L2 are dirty and he cannot step over them. Test 1: Chef will start his journey from L2, switch from L2 to L1 and finally land up at last block of L2 by switching from L1 to L2. Therefore, he requires total 2 gravity switches to reach the destination. Test 1: L2 2 L2 2 L1 1 L2 2 L1 1 L2 2 Test 3: Chef cannot start his journey as starting block of both the lanes L1 & L2 are dirty and he cannot step over them. Test 3: L1 & L2 1 2   In Subtask 1 and Subtask 3, only "Yes"/"No" response will be evaluated. Thus, for example, the output Yes\u000a1\u000aYes\u000a8\u000aNo is considered as a correct output for the example input.  Author: ma5termind\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/GRGUY\u000aTags: aug15 dp greedy ma5termind simple\u000aDate Added: 1-04-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind\u000aTester: laycurse\u000aEditorial: http://discuss.codechef.com/problems/GRGUY\u000aTags: aug15 dp greedy ma5termind simple\u000aDate Added: 1-04-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: ma5termind Author: ma5termind ma5termind Tester: laycurse Tester: laycurse laycurse Editorial: http://discuss.codechef.com/problems/GRGUY Editorial: http://discuss.codechef.com/problems/GRGUY http://discuss.codechef.com/problems/GRGUY Tags: aug15 dp greedy ma5termind simple Tags: aug15 dp greedy ma5termind simple aug15 dp greedy ma5termind simple Date Added: 1-04-2015 Date Added: 1-04-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V aug15 dp greedy ma5termind simple
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/GRGUY
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian.
+p17
+aVChef likes to play games a lot. Gravity Guy is one such interesting game.
+p18
+aV"Gravity Guy is an arcade side-scrolling game in which the player controls Gravity Guy by tapping the screen to switch gravity. The objective in this game is to run as far as possible while avoiding being trapped by obstacles, falling, or flying off the screen. If hit by obstacles, the game is over."
+p19
+aVChef is so addicted to this game that each night he dreams of himself being in the game as Gravity Guy. He has two lanes in front of him represented by two strings of equal length named as L1 and L2. Each of the two lanes consists of some clean blocks represented by '.' and some dirty blocks represented by '#'.
+p20
+aVChef can start running from the beginning of any of the two lanes and cannot step over any dirty block ( '#' ) encountered during his journey. He has to complete his journey by reaching the end block of any of the two lanes.
+p21
+aVChef can use the following jumps to reach his destination. Considering chef is at xth block of some lane.
+p22
+aVHe can jump to x+1th block of the same lane.
+p23
+aVHe can switch gravity quickly and jump to xth block of the other lane.
+p24
+aVHe can switch gravity and jump to x+1th block of the other lane.
+p25
+aVYou have to tell him whether he can reach his destination or not. If it is possible for him to reach his destination, then Chef is interested in knowing the minimum number of gravity switches required to reach the destination.
+p26
+asS'input'
+p27
+(lp28
+VInput
+p29
+aVFirst line of input contains a single integer T denoting the number of test cases. Each test case consists of 2 lines. First line of each test case contains a string denoting lane L1. Second line of each test case contains a string denoting lane L2.
+p30
+aVOutput
+p31
+aVFor each test case, print "Yes" (without quotes) in the first line if Chef is able to reach the destination followed by a line containing an integer denoting minimum number of gravity switches required to reach to the destination. Print a single line containing the word "No" (without quotes) otherwise.
+p32
+asS'constraints'
+p33
+(lp34
+VConstraints
+p35
+aV1 \u2264 T \u2264 105
+p36
+aV1 \u2264 |L1| \u2264 2 × 105, where |S| denotes the length of string S
+p37
+aV|L1| = |L2|
+p38
+aVSubtasks
+p39
+aVSubtask 1 (25 points)
+p40
+aVSum of |L1| over all test cases in one file it at most 200.
+p41
+aVOnly "Yes"/"No" response will be evaluated.
+p42
+aV
+p43
+aVSubtask 2 (25 points)
+p44
+aVSum of |L1| over all test cases in one file it at most 200.
+p45
+ag43
+aVSubtask 3 (25 points)
+p46
+aVSum of |L1| over all test cases in one file it at most 106.
+p47
+aVOnly "Yes"/"No" response will be evaluated.
+p48
+ag43
+aVSubtask 4 (25 points)
+p49
+aVSum of |L1| over all test cases in one file it at most 106.
+p50
+asS'id'
+p51
+c__builtin__
+id
+p52
+sS'name'
+p53
+VGRGUY
+p54
+sb.

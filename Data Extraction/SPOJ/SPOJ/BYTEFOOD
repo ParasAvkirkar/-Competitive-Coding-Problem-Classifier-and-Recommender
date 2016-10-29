@@ -1,0 +1,88 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput Process all test cases. The correct output for the i-th test case takes the following form:
+p6
+aVi [the number of the test case, in the input order]
+p7
+aVs m [s is the number of the target shop and m > 0 is the number of minutes spent in it].
+p8
+aVAt the end of the series of moves you should always write a line conisting of two zeros ('0 0').
+p9
+aV
+p10
+aVAll the output data should be integers. i  i  s m s m    Scoring The score of your program is the total amount of food that Johnny bought (summed over all the testcases in which he managed to come back home before the deadline). 
+p11
+asS'description'
+p12
+V Fanatics from the BBFO blew up all the food factories in the Bytelandian capital! Hurry up! There is still some food left in shops. Some shops are located in the centre, others in the suburbs, so Johnny has to decide which of them are worth visiting. Some shops can be very big and have plenty of food in them, others may be so small that food dissappears from them at an alarming rate... So? Help Johnny buy as much food as possible.\u000a\u000aThere are n open shops, each of them located at position (xi,yi), for i=1,...,n, where 0 <= xi,yi <= 250. The distances between shops are measured using the Manhattan metric (i.e. as sums of absolute values of differences of x and y coordinates). Besides, every shop is characterized by a linear time function describing how much food is left in the shop at the moment:   n xi i yi i i n xi i yi i  fi = max{0, ai - bi * time} fi i max ai i bi i time  where 0 <= ai <= 1000000, 0 <= bi <= 1000, while time is the time (in minutes) that has elapsed from the moment Johnny left the house (assume that Johnny does not live in the same place as any shop). If Johnny decides to stay in a shop, he can buy at most bi units of food per minute. Otherwise, he can move along the ortogonal system of streets of the city at a constant speed of unit distance per minute. Johnny only ever changes the action he is performing at the full minute. Because his family is slowly beginning to starve, he should be back at home not later than m minutes after he left. Since there are thousands of starving families in the capital, Johnny can't spent more that 1 <= ci <= 10 minutes in a shop. Moreover, he will never go into the same shop twice for fear of being lynched... ai i bi i time bi i m ci i Input The first line of input contains a single positive integer t <= 1000, the number of test cases. Each test case begins with the number of shops in the city 1 <= n <= 1000 and the deadline 1 <= m <= 5000. Then the following n lines consist of four integers xi yi ai bi ci each, describing the position and the parameters of the function for food availability of the i-th shop. At the end of every test case comes a line with two integersp q (between 0 and 250), corresponding to the x and y coordinates of the position of Johnny's house.\u000a\u000aAll the input data are integers. t n m n xi yi ai bi ci i i i i i i p q   Output Process all test cases. The correct output for the i-th test case takes the following form:\u000ai [the number of the test case, in the input order]\u000as m [s is the number of the target shop and m > 0 is the number of minutes spent in it].\u000aAt the end of the series of moves you should always write a line conisting of two zeros ('0 0').\u000a\u000aAll the output data should be integers. i  i  s m s m    Scoring The score of your program is the total amount of food that Johnny bought (summed over all the testcases in which he managed to come back home before the deadline). Example  Input\u000a4\u000a2 20\u000a0 0 100 5 5\u000a10 0 200 10 10\u000a5 0\u000a2 20\u000a0 0 180 15 10\u000a10 0 200 20 10\u000a5 0\u000a4 101\u000a0 0 1000 20 5\u000a20 0 200 1 5\u000a0 20 5000 200 5\u000a20 20 300 5 10\u000a10 10\u000a1 15\u000a1 0 10 1 5\u000a5 0\u000a\u000aOutput\u000a1\u000a2 10\u000a0 0\u000a2\u000a1 10\u000a0 0\u000a3\u000a3 5\u000a4 10\u000a2 1\u000a0 0\u000a4\u000a1 5\u000a0 0\u000a\u000aScore\u000aScore = 1261 Input Output Score 
+p13
+sS'tags'
+p14
+S''
+p15
+sS'url'
+p16
+Vhttp://www.spoj.com/problems/BYTEFOOD
+p17
+sS'addedBy'
+p18
+Vmima
+p19
+sS'memorylimit'
+p20
+V1536MB
+p21
+sS'cluster'
+p22
+VCube (Intel G860)
+p23
+sS'timelimit'
+p24
+V17s
+p25
+sS'statement'
+p26
+(lp27
+V Fanatics from the BBFO blew up all the food factories in the Bytelandian capital! Hurry up! There is still some food left in shops. Some shops are located in the centre, others in the suburbs, so Johnny has to decide which of them are worth visiting. Some shops can be very big and have plenty of food in them, others may be so small that food dissappears from them at an alarming rate... So? Help Johnny buy as much food as possible.
+p28
+ag10
+aVThere are n open shops, each of them located at position (xi,yi), for i=1,...,n, where 0 <= xi,yi <= 250. The distances between shops are measured using the Manhattan metric (i.e. as sums of absolute values of differences of x and y coordinates). Besides, every shop is characterized by a linear time function describing how much food is left in the shop at the moment:   n xi i yi i i n xi i yi i  fi = max{0, ai - bi * time} fi i max ai i bi i time  where 0 <= ai <= 1000000, 0 <= bi <= 1000, while time is the time (in minutes) that has elapsed from the moment Johnny left the house (assume that Johnny does not live in the same place as any shop). If Johnny decides to stay in a shop, he can buy at most bi units of food per minute. Otherwise, he can move along the ortogonal system of streets of the city at a constant speed of unit distance per minute. Johnny only ever changes the action he is performing at the full minute. Because his family is slowly beginning to starve, he should be back at home not later than m minutes after he left. Since there are thousands of starving families in the capital, Johnny can't spent more that 1 <= ci <= 10 minutes in a shop. Moreover, he will never go into the same shop twice for fear of being lynched... ai i bi i time bi i m ci i 
+p29
+asS'sourcelimit'
+p30
+V-
+p31
+sS'date'
+p32
+V2004-06-09
+p33
+sS'input'
+p34
+(lp35
+VInput The first line of input contains a single positive integer t <= 1000, the number of test cases. Each test case begins with the number of shops in the city 1 <= n <= 1000 and the deadline 1 <= m <= 5000. Then the following n lines consist of four integers xi yi ai bi ci each, describing the position and the parameters of the function for food availability of the i-th shop. At the end of every test case comes a line with two integersp q (between 0 and 250), corresponding to the x and y coordinates of the position of Johnny's house.
+p36
+ag10
+aVAll the input data are integers. t n m n xi yi ai bi ci i i i i i i p q   
+p37
+asS'constraints'
+p38
+g35
+sS'id'
+p39
+c__builtin__
+id
+p40
+sS'name'
+p41
+VBYTEFOOD
+p42
+sb.

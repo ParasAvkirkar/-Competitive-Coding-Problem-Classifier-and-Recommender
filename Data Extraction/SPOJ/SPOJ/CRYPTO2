@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VBF
+p3
+sS'output'
+p4
+(lp5
+VOutput The decrypted value. 
+p6
+asS'description'
+p7
+V Encouraged by his last successful exploit, the Bytelandian fanatic cryptographer impudently encrypted a three-digit number by subtracting 1 from it. This time he has really overstepped the mark! Soldier, go and beat him, for Burger King & Country! Oh, and remember your good manners, use Brainf**k (no other language is allowed). really Input An encrypted 3-digit positive integer. Output The decrypted value. Example Input:\u000a699\u000aOutput:\u000a700 699 Output: 700
+p8
+sS'tags'
+p9
+S''
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/CRYPTO2
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V0.200s
+p20
+sS'statement'
+p21
+(lp22
+V Encouraged by his last successful exploit, the Bytelandian fanatic cryptographer impudently encrypted a three-digit number by subtracting 1 from it. This time he has really overstepped the mark! Soldier, go and beat him, for Burger King & Country! Oh, and remember your good manners, use Brainf**k (no other language is allowed). really 
+p23
+asS'sourcelimit'
+p24
+VSometimes the simplest language is the most pleasing.
+p25
+sS'date'
+p26
+V2004-05-28
+p27
+sS'input'
+p28
+(lp29
+VInput An encrypted 3-digit positive integer. 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VCRYPTO2
+p35
+sb.

@@ -1,0 +1,73 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aThe Chef is given a sequence of N integers A1, A2, ..., AN. He has to process Q queries on the above sequence. Each query is represented by three integers:\u000aL R K => report cardinality of { i : K divides Ai, L \u2264 i \u2264 R }. In other words, how many integers in the subsequence starting at Lth element and ending at Rth element are divisible by K.\u000aInput\u000aThe first line of the input contains two space separated integer N and Q.\u000aThe following line contains N space separated integers giving the sequence A1, A2, ..., AN.\u000aThen there will be Q lines each containing three space separated integers L R K, representing a query.\u000a  Output\u000aFor each query output the result in one line.\u000aConstraints\u000a1 \u2264 N, Q \u2264 100000 (105)\u000a1 \u2264 Ai \u2264 100000 (105)\u000a1 \u2264 L \u2264 R \u2264 N\u000a1 \u2264 K \u2264 100000 (105)\u000a  Example\u000aInput:\u000a8 5\u000a3 5 1 4 6 9 12 6\u000a3 6 2\u000a3 6 4\u000a4 8 3\u000a2 6 7\u000a8 8 6\u000a\u000aOutput:\u000a2\u000a1\u000a4\u000a0\u000a1\u000aAuthor: rustinpiece\u000aTester: Rubanenko\u000aEditorial: http://discuss.codechef.com/problems/DIVQUERY\u000aTags: cook37 medium offline-process rustinpiece\u000aDate Added: 10-08-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aThe Chef is given a sequence of N integers A1, A2, ..., AN. He has to process Q queries on the above sequence. Each query is represented by three integers:\u000aL R K => report cardinality of { i : K divides Ai, L \u2264 i \u2264 R }. In other words, how many integers in the subsequence starting at Lth element and ending at Rth element are divisible by K.\u000aInput\u000aThe first line of the input contains two space separated integer N and Q.\u000aThe following line contains N space separated integers giving the sequence A1, A2, ..., AN.\u000aThen there will be Q lines each containing three space separated integers L R K, representing a query.\u000a  Output\u000aFor each query output the result in one line.\u000aConstraints\u000a1 \u2264 N, Q \u2264 100000 (105)\u000a1 \u2264 Ai \u2264 100000 (105)\u000a1 \u2264 L \u2264 R \u2264 N\u000a1 \u2264 K \u2264 100000 (105)\u000a  Example\u000aInput:\u000a8 5\u000a3 5 1 4 6 9 12 6\u000a3 6 2\u000a3 6 4\u000a4 8 3\u000a2 6 7\u000a8 8 6\u000a\u000aOutput:\u000a2\u000a1\u000a4\u000a0\u000a1\u000aAuthor: rustinpiece\u000aTester: Rubanenko\u000aEditorial: http://discuss.codechef.com/problems/DIVQUERY\u000aTags: cook37 medium offline-process rustinpiece\u000aDate Added: 10-08-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. The Chef is given a sequence of N integers A1, A2, ..., AN. He has to process Q queries on the above sequence. Each query is represented by three integers: N A1, A2, ..., AN 1 2 N Q L R K => report cardinality of { i : K divides Ai, L \u2264 i \u2264 R }. In other words, how many integers in the subsequence starting at Lth element and ending at Rth element are divisible by K. L R K => report cardinality of { i : K divides Ai, L \u2264 i \u2264 R }. In other words, how many integers in the subsequence starting at Lth element and ending at Rth element are divisible by K. L R K { i : K Ai i L i R } L th R th K Input The first line of the input contains two space separated integer N and Q.\u000aThe following line contains N space separated integers giving the sequence A1, A2, ..., AN.\u000aThen there will be Q lines each containing three space separated integers L R K, representing a query. N Q  N A1, A2, ..., AN 1 2 N  Q L R K   Output For each query output the result in one line. Constraints 1 \u2264 N, Q \u2264 100000 (105)\u000a1 \u2264 Ai \u2264 100000 (105)\u000a1 \u2264 L \u2264 R \u2264 N\u000a1 \u2264 K \u2264 100000 (105) 1 \u2264 N, Q \u2264 100000 (105) 1 N, Q 100000 (105) 5 1 \u2264 Ai \u2264 100000 (105) 1 Ai i 100000 (105) 5 1 \u2264 L \u2264 R \u2264 N 1 L R N 1 \u2264 K \u2264 100000 (105) 1 K 100000 (105) 5   Example Input:\u000a8 5\u000a3 5 1 4 6 9 12 6\u000a3 6 2\u000a3 6 4\u000a4 8 3\u000a2 6 7\u000a8 8 6\u000a\u000aOutput:\u000a2\u000a1\u000a4\u000a0\u000a1 Input: Output:  Author: rustinpiece\u000aTester: Rubanenko\u000aEditorial: http://discuss.codechef.com/problems/DIVQUERY\u000aTags: cook37 medium offline-process rustinpiece\u000aDate Added: 10-08-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: rustinpiece\u000aTester: Rubanenko\u000aEditorial: http://discuss.codechef.com/problems/DIVQUERY\u000aTags: cook37 medium offline-process rustinpiece\u000aDate Added: 10-08-2013\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: rustinpiece Author: rustinpiece rustinpiece Tester: Rubanenko Tester: Rubanenko Rubanenko Editorial: http://discuss.codechef.com/problems/DIVQUERY Editorial: http://discuss.codechef.com/problems/DIVQUERY http://discuss.codechef.com/problems/DIVQUERY Tags: cook37 medium offline-process rustinpiece Tags: cook37 medium offline-process rustinpiece cook37 medium offline-process rustinpiece Date Added: 10-08-2013 Date Added: 10-08-2013 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook37 medium offline-process rustinpiece
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/DIVQUERY
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVThe Chef is given a sequence of N integers A1, A2, ..., AN. He has to process Q queries on the above sequence. Each query is represented by three integers:
+p17
+aVL R K => report cardinality of { i : K divides Ai, L \u2264 i \u2264 R }. In other words, how many integers in the subsequence starting at Lth element and ending at Rth element are divisible by K.
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVThe first line of the input contains two space separated integer N and Q.
+p22
+aVThe following line contains N space separated integers giving the sequence A1, A2, ..., AN.
+p23
+aVThen there will be Q lines each containing three space separated integers L R K, representing a query.
+p24
+aVOutput
+p25
+aVFor each query output the result in one line.
+p26
+asS'constraints'
+p27
+(lp28
+VConstraints
+p29
+aV1 \u2264 N, Q \u2264 100000 (105)
+p30
+aV1 \u2264 Ai \u2264 100000 (105)
+p31
+aV1 \u2264 L \u2264 R \u2264 N
+p32
+aV1 \u2264 K \u2264 100000 (105)
+p33
+asS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VDIVQUERY
+p37
+sb.

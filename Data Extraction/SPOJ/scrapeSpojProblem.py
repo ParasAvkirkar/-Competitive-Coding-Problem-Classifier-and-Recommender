@@ -1,6 +1,5 @@
 from SpojProblemPage import getSpojProblem
 from selenium import webdriver
-from problems import Problem
 from bs4 import BeautifulSoup
 from lxml import html
 from selenium.webdriver.common.by import By
@@ -11,18 +10,27 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import requests
 import time
-
-from problems import Problem
+import pickle
 
 current_progress = {'section':0, 'problem_no':0}
 spojUrl = 'http://www.spoj.com'
 spojProblemUrl = 'http://www.spoj.com/problems'
-#sections = ['classical', 'challenge', 'partial', 'tutorial', 'riddle', 'basics']
-sections = ['classical']
+sections = ['classical', 'challenge', 'partial', 'tutorial', 'riddle', 'basics']
+# sections = ['classical']
 
-countProblems = 0
-driver = webdriver.Chrome()
-for section in sections:
+try:
+	with open('current_progress.pickle', 'r+b') as f:
+		current_progress = pickle.load(f)
+		print 'Resuming Progress from problem '+sections[current_progress['section']]+' and problem no '+str(current_progress['problem_no'])
+except Exception as e:
+	print e
+	print 'Starting problem collection'
+
+sec_count = current_progress['section']
+
+
+driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+for section in sections[sec_count:]:
 	driver.get(spojProblemUrl + '/' + section)
 	print(spojProblemUrl + '/' + section)
 	# print(driver.text)
@@ -32,23 +40,35 @@ for section in sections:
 	#WebDriverWait(driver, 10).until(EC.presence_of_element_located(driver.find_element_by_name('td')))
 	#time.sleep(10)
 	tdTags = driver.find_elements_by_tag_name('td')
-
-	for tdTag in tdTags:
-		wait = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, "a")))
+	count = current_progress['problem_no']
+	for tdTag in tdTags[count:]:
+		wait = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "a")))
 		aTags = tdTag.find_elements_by_tag_name('a')
 		for aTag in aTags:
 			if aTag is not None:
 				if aTag.get_attribute('href') is not None and '/problems/' in aTag.get_attribute('href'):
 					try:
-					    # print "Page is ready!"
+						# print "Page is ready!"
 						prob = getSpojProblem(aTag.get_attribute('href'))
-						countProblems = countProblems + 1
+						count = count + 1
 						if(prob is None):
-							print('not successfull ' + str(countProblems))
+							print('not successfull ' + str(count))
 						else:
-							print('successfull ' + str(countProblems))
+							print('successfull ' + str(count))
+							with open('SPOJ/'+prob.name, 'w+b') as f:
+								pickle.dump(prob, f)
+								# f.write(p.__str__())
+								# f.write(str(p.id)+'\t'+p.name+'\t'+p.url+'\t'+p.tags+'\t')#+p.description.encode('utf-8'))
+								# f.write(p.description.encode('utf-8'))
+							count+=1
+							with open('current_progress.pickle', 'w+b') as f:
+								pickle.dump({'section':sec_count, 'problem_no':count}, f)
 					except Exception as e:
-					    print "exception in global scraping loop"
-					    print(e)
+						print "exception in global scraping loop"
+						print(e)
+	sec_count += 1
+	count = 0
+	with open('current_progress.pickle', 'w+b') as f:
+		pickle.dump({'section':sec_count, 'problem_no':0}, f)
 
 driver.quit()

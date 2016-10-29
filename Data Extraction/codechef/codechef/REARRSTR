@@ -1,0 +1,73 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aToday is Devu's birthday. He has obtained few colored balloons from his friends. You are given this information by a string s consisting of lower case English Latin letters. Each letter (from 'a' to 'z') denotes a color. e.g. if s = "aab", then it means that he has received two balloons of color 'a' whereas one balloon of color 'b'.\u000aNow, Devu wants to decorate the cake by arranging all the balloons linearly from left to right on the cake such that no same colored balloons are nearby/ adjacent to each other.\u000aNow Devu wonders whether it is possible to do so or not? Please help him in this. If it is not possible to do so, print -1. Otherwise, print any one of arrangements of the balloons on the cake. If there are more than one possible ways of doing so, you can print any one of them.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aFirst line of each test case will contain string s\u000aOutput\u000aPrint a single line corresponding to the answer of the problem.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 size of string s \u2264 105\u000aSum of size of string s over all test cases will be less than or equal to \u2264 106\u000aExample\u000aInput:\u000a3\u000aaab\u000aab\u000aaa\u000aOutput:\u000aaba\u000aab\u000a-1\u000aExplanation\u000aExample case 1. He can arrange the balloons in the order given by the following string "aba".\u000aExample case 2. He can arrange the balloons in the order given by the following string "ab"\u000aExample case 3. There is no valid way of decorating cakes with balloon in the desired way. So we print -1.\u000aAuthor: admin2\u000aEditorial: http://discuss.codechef.com/problems/REARRSTR\u000aTags: admin2 cook58 easy greedy\u000aDate Added: 12-05-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aToday is Devu's birthday. He has obtained few colored balloons from his friends. You are given this information by a string s consisting of lower case English Latin letters. Each letter (from 'a' to 'z') denotes a color. e.g. if s = "aab", then it means that he has received two balloons of color 'a' whereas one balloon of color 'b'.\u000aNow, Devu wants to decorate the cake by arranging all the balloons linearly from left to right on the cake such that no same colored balloons are nearby/ adjacent to each other.\u000aNow Devu wonders whether it is possible to do so or not? Please help him in this. If it is not possible to do so, print -1. Otherwise, print any one of arrangements of the balloons on the cake. If there are more than one possible ways of doing so, you can print any one of them.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aFirst line of each test case will contain string s\u000aOutput\u000aPrint a single line corresponding to the answer of the problem.\u000aConstraints\u000a1 \u2264 T \u2264 105\u000a1 \u2264 size of string s \u2264 105\u000aSum of size of string s over all test cases will be less than or equal to \u2264 106\u000aExample\u000aInput:\u000a3\u000aaab\u000aab\u000aaa\u000aOutput:\u000aaba\u000aab\u000a-1\u000aExplanation\u000aExample case 1. He can arrange the balloons in the order given by the following string "aba".\u000aExample case 2. He can arrange the balloons in the order given by the following string "ab"\u000aExample case 3. There is no valid way of decorating cakes with balloon in the desired way. So we print -1.\u000aAuthor: admin2\u000aEditorial: http://discuss.codechef.com/problems/REARRSTR\u000aTags: admin2 cook58 easy greedy\u000aDate Added: 12-05-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian as well. Mandarin Chinese Russian Today is Devu's birthday. He has obtained few colored balloons from his friends. You are given this information by a string s consisting of lower case English Latin letters. Each letter (from 'a' to 'z') denotes a color. e.g. if s = "aab", then it means that he has received two balloons of color 'a' whereas one balloon of color 'b'. s Now, Devu wants to decorate the cake by arranging all the balloons linearly from left to right on the cake such that no same colored balloons are nearby/ adjacent to each other. Now Devu wonders whether it is possible to do so or not? Please help him in this. If it is not possible to do so, print -1. Otherwise, print any one of arrangements of the balloons on the cake. If there are more than one possible ways of doing so, you can print any one of them. Input The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.\u000aFirst line of each test case will contain string s The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows. T T First line of each test case will contain string s s Output Print a single line corresponding to the answer of the problem. Constraints 1 \u2264 T \u2264 105\u000a1 \u2264 size of string s \u2264 105\u000aSum of size of string s over all test cases will be less than or equal to \u2264 106 1 \u2264 T \u2264 105 1 T 105 5 1 \u2264 size of string s \u2264 105 1 s \u2264 105 5 Sum of size of string s over all test cases will be less than or equal to \u2264 106 s 6 Example Input:\u000a3\u000aaab\u000aab\u000aaa\u000aOutput:\u000aaba\u000aab\u000a-1 Input: Output: Explanation Example case 1. He can arrange the balloons in the order given by the following string "aba". Example case 1. Example case 2. He can arrange the balloons in the order given by the following string "ab" Example case 2. Example case 3. There is no valid way of decorating cakes with balloon in the desired way. So we print -1. Example case 3.  Author: admin2\u000aEditorial: http://discuss.codechef.com/problems/REARRSTR\u000aTags: admin2 cook58 easy greedy\u000aDate Added: 12-05-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: admin2\u000aEditorial: http://discuss.codechef.com/problems/REARRSTR\u000aTags: admin2 cook58 easy greedy\u000aDate Added: 12-05-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: admin2 Author: admin2 admin2 Editorial: http://discuss.codechef.com/problems/REARRSTR Editorial: http://discuss.codechef.com/problems/REARRSTR http://discuss.codechef.com/problems/REARRSTR Tags: admin2 cook58 easy greedy Tags: admin2 cook58 easy greedy admin2 cook58 easy greedy Date Added: 12-05-2015 Date Added: 12-05-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V admin2 cook58 easy greedy
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/REARRSTR
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian as well.
+p17
+aVToday is Devu's birthday. He has obtained few colored balloons from his friends. You are given this information by a string s consisting of lower case English Latin letters. Each letter (from 'a' to 'z') denotes a color. e.g. if s = "aab", then it means that he has received two balloons of color 'a' whereas one balloon of color 'b'.
+p18
+aVNow, Devu wants to decorate the cake by arranging all the balloons linearly from left to right on the cake such that no same colored balloons are nearby/ adjacent to each other.
+p19
+aVNow Devu wonders whether it is possible to do so or not? Please help him in this. If it is not possible to do so, print -1. Otherwise, print any one of arrangements of the balloons on the cake. If there are more than one possible ways of doing so, you can print any one of them.
+p20
+asS'input'
+p21
+(lp22
+VInput
+p23
+aVThe first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+p24
+aVFirst line of each test case will contain string s
+p25
+aVOutput
+p26
+aVPrint a single line corresponding to the answer of the problem.
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV1 \u2264 T \u2264 105
+p31
+aV1 \u2264 size of string s \u2264 105
+p32
+aVSum of size of string s over all test cases will be less than or equal to \u2264 106
+p33
+asS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VREARRSTR
+p37
+sb.

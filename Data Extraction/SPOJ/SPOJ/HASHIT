@@ -1,0 +1,102 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput For every test case you have to create a new table, insert or delete keys, and write to the output:
+p6
+aVthe number of keys in the table [first line]
+p7
+aVindex:key [sorted by indices]   
+p8
+asS'description'
+p9
+V Your task is to calculate the result of the hashing process in a table of 101 elements, containing keys that are strings of length at most 15 letters (ASCII codes 'A',...,'z'). Implement the following operations: A z find the index of the element defined by the key (ignore, if no such element),\u000ainsert a new key into the table (ignore insertion of the key that already exists),\u000adelete a key from the table (without moving the others), by marking the position in table as empty (ignore non-existing keys in the table) find the index of the element defined by the key (ignore, if no such element),\u000ainsert a new key into the table (ignore insertion of the key that already exists),\u000adelete a key from the table (without moving the others), by marking the position in table as empty (ignore non-existing keys in the table) find the index of the element defined by the key (ignore, if no such element), insert a new key into the table (ignore insertion of the key that already exists), delete a key from the table (without moving the others), by marking the position in table as empty (ignore non-existing keys in the table) empty When performing find, insert and delete operations define the following function:\u000ainteger Hash(string key),\u000awhich for a string key=a1...an returns the value:\u000aHash(key)=h(key) mod 101, where\u000ah(key)=19 *(ASCII(a1)*1+...+ASCII(an)*n).\u000aResolve collisions using the open addressing method, i.e. try to insert the key into the table at the first free position: (Hash(key)+j2+23*j) mod 101, for j=1,...,19. After examining of at least 20 table entries, we assume that the insert operation cannot be performed.  integer Hash(string key)  key a 1 an n  Hash key h key  h key a 1 an n n  Hash key j 2 j j Input t [the number of test cases <= 100]\u000an1 [the number of operations (one per line)[<= 1000]\u000aADD:string\u000a[or]\u000aDEL:string [other test cases, without empty lines betwee series]  t  n 1    Output For every test case you have to create a new table, insert or delete keys, and write to the output:\u000athe number of keys in the table [first line]\u000aindex:key [sorted by indices]   Example Input:\u000a1\u000a11\u000aADD:marsz\u000aADD:marsz\u000aADD:Dabrowski\u000aADD:z\u000aADD:ziemii\u000aADD:wloskiej\u000aADD:do\u000aADD:Polski\u000aDEL:od\u000aDEL:do\u000aDEL:wloskiej\u000a\u000a\u000aOutput:\u000a5\u000a34:Dabrowski\u000a46:Polski\u000a63:marsz\u000a76:ziemii\u000a96:z
+p10
+sS'tags'
+p11
+V #hash-table #hashing
+p12
+sS'url'
+p13
+Vhttp://www.spoj.com/problems/HASHIT
+p14
+sS'addedBy'
+p15
+Vmima
+p16
+sS'memorylimit'
+p17
+V1536MB
+p18
+sS'cluster'
+p19
+VCube (Intel G860)
+p20
+sS'timelimit'
+p21
+V3s
+p22
+sS'statement'
+p23
+(lp24
+V Your task is to calculate the result of the hashing process in a table of 101 elements, containing keys that are strings of length at most 15 letters (ASCII codes 'A',...,'z'). Implement the following operations: A z find the index of the element defined by the key (ignore, if no such element),
+p25
+aVinsert a new key into the table (ignore insertion of the key that already exists),
+p26
+aVdelete a key from the table (without moving the others), by marking the position in table as empty (ignore non-existing keys in the table) find the index of the element defined by the key (ignore, if no such element),
+p27
+aVinsert a new key into the table (ignore insertion of the key that already exists),
+p28
+aVdelete a key from the table (without moving the others), by marking the position in table as empty (ignore non-existing keys in the table) find the index of the element defined by the key (ignore, if no such element), insert a new key into the table (ignore insertion of the key that already exists), delete a key from the table (without moving the others), by marking the position in table as empty (ignore non-existing keys in the table) empty When performing find, insert and delete operations define the following function:
+p29
+aVinteger Hash(string key),
+p30
+aVwhich for a string key=a1...an returns the value:
+p31
+aVHash(key)=h(key) mod 101, where
+p32
+aVh(key)=19 *(ASCII(a1)*1+...+ASCII(an)*n).
+p33
+aVResolve collisions using the open addressing method, i.e. try to insert the key into the table at the first free position: (Hash(key)+j2+23*j) mod 101, for j=1,...,19. After examining of at least 20 table entries, we assume that the insert operation cannot be performed.  integer Hash(string key)  key a 1 an n  Hash key h key  h key a 1 an n n  Hash key j 2 j j 
+p34
+asS'sourcelimit'
+p35
+V-
+p36
+sS'date'
+p37
+V2004-06-01
+p38
+sS'input'
+p39
+(lp40
+VInput t [the number of test cases <= 100]
+p41
+aVn1 [the number of operations (one per line)[<= 1000]
+p42
+aVADD:string
+p43
+aV[or]
+p44
+aVDEL:string [other test cases, without empty lines betwee series]  t  n 1    
+p45
+asS'constraints'
+p46
+g40
+sS'id'
+p47
+c__builtin__
+id
+p48
+sS'name'
+p49
+VHASHIT
+p50
+sb.

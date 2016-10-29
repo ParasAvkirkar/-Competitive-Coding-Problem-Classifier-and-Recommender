@@ -1,0 +1,73 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese\u000aPrincess Rupsa came across a very interesting game. In the game, you have to face against a number army consisting of N distinct integers A1, A2, , , AN. In one move, you can shoot one magic bullet aiming at an alive enemy number, say X. The magic bullet will kill X and it will also kill X + 1 and X - 1 if they are alive when the bullet is shot. Game ends when the entire number army is killed.\u000aPrincess Rupsa wants to find out the minimum and maximum number of moves that can be played in the game. But since she has recently found her true love and is in hurry to meet him, you must help her to solve the problem as fast as possible.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases.\u000aThe first line of each test case contains a single integer N.\u000aThe second line contains N space-separated integers denoting A1 to AN.\u000aOutput\u000aFor each test case, output a single line containing two space separated integer denoting the minimum and maximum number of moves required respectively.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 106\u000aExample\u000aInput:\u000a1\u000a3\u000a1 2 3\u000a\u000aOutput:\u000a1 2\u000aExplanation\u000aFor minimum moves, you could aim for 2, killing 1, 2 and 3 in the same move.\u000aFor maximum moves, you could aim for 1, killing 1 and 2 in the first move and then aim for 3 in the second move.\u000aAuthor: abhra73\u000aEditorial: http://discuss.codechef.com/problems/RNUM\u000aTags: abhra73 ad-hoc snck151b\u000aDate Added: 16-05-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese , Russian and Vietnamese\u000aPrincess Rupsa came across a very interesting game. In the game, you have to face against a number army consisting of N distinct integers A1, A2, , , AN. In one move, you can shoot one magic bullet aiming at an alive enemy number, say X. The magic bullet will kill X and it will also kill X + 1 and X - 1 if they are alive when the bullet is shot. Game ends when the entire number army is killed.\u000aPrincess Rupsa wants to find out the minimum and maximum number of moves that can be played in the game. But since she has recently found her true love and is in hurry to meet him, you must help her to solve the problem as fast as possible.\u000aInput\u000aThe first line of the input contains an integer T denoting the number of test cases.\u000aThe first line of each test case contains a single integer N.\u000aThe second line contains N space-separated integers denoting A1 to AN.\u000aOutput\u000aFor each test case, output a single line containing two space separated integer denoting the minimum and maximum number of moves required respectively.\u000aConstraints\u000a1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 106\u000aExample\u000aInput:\u000a1\u000a3\u000a1 2 3\u000a\u000aOutput:\u000a1 2\u000aExplanation\u000aFor minimum moves, you could aim for 2, killing 1, 2 and 3 in the same move.\u000aFor maximum moves, you could aim for 1, killing 1 and 2 in the first move and then aim for 3 in the second move.\u000aAuthor: abhra73\u000aEditorial: http://discuss.codechef.com/problems/RNUM\u000aTags: abhra73 ad-hoc snck151b\u000aDate Added: 16-05-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese , Russian and Vietnamese Mandarin Chinese Russian Vietnamese Princess Rupsa came across a very interesting game. In the game, you have to face against a number army consisting of N distinct integers A1, A2, , , AN. In one move, you can shoot one magic bullet aiming at an alive enemy number, say X. The magic bullet will kill X and it will also kill X + 1 and X - 1 if they are alive when the bullet is shot. Game ends when the entire number army is killed. N A1, A2, , , AN 1 2 N X X X + 1 X - 1 Princess Rupsa wants to find out the minimum and maximum number of moves that can be played in the game. But since she has recently found her true love and is in hurry to meet him, you must help her to solve the problem as fast as possible. Input The first line of the input contains an integer T denoting the number of test cases.\u000aThe first line of each test case contains a single integer N.\u000aThe second line contains N space-separated integers denoting A1 to AN. The first line of the input contains an integer T denoting the number of test cases. T The first line of each test case contains a single integer N. N The second line contains N space-separated integers denoting A1 to AN. N A1 1 AN N Output For each test case, output a single line containing two space separated integer denoting the minimum and maximum number of moves required respectively. For each test case, output a single line containing two space separated integer denoting the minimum and maximum number of moves required respectively. Constraints 1 \u2264 T \u2264 10\u000a1 \u2264 N \u2264 105\u000a1 \u2264 Ai \u2264 106 1 \u2264 T \u2264 10 1 \u2264 T \u2264 10 1 \u2264 N \u2264 105 1 \u2264 N \u2264 105 5 1 \u2264 Ai \u2264 106 1 \u2264 Ai \u2264 106 i 6 Example Input:\u000a1\u000a3\u000a1 2 3\u000a\u000aOutput:\u000a1 2 Input: Output: Explanation For minimum moves, you could aim for 2, killing 1, 2 and 3 in the same move.\u000aFor maximum moves, you could aim for 1, killing 1 and 2 in the first move and then aim for 3 in the second move. For minimum moves, you could aim for 2, killing 1, 2 and 3 in the same move. 2 1 2 3 For maximum moves, you could aim for 1, killing 1 and 2 in the first move and then aim for 3 in the second move. 1 1 2 3  Author: abhra73\u000aEditorial: http://discuss.codechef.com/problems/RNUM\u000aTags: abhra73 ad-hoc snck151b\u000aDate Added: 16-05-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: abhra73\u000aEditorial: http://discuss.codechef.com/problems/RNUM\u000aTags: abhra73 ad-hoc snck151b\u000aDate Added: 16-05-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: abhra73 Author: abhra73 abhra73 Editorial: http://discuss.codechef.com/problems/RNUM Editorial: http://discuss.codechef.com/problems/RNUM http://discuss.codechef.com/problems/RNUM Tags: abhra73 ad-hoc snck151b Tags: abhra73 ad-hoc snck151b abhra73 ad-hoc snck151b Date Added: 16-05-2015 Date Added: 16-05-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V abhra73 ad-hoc snck151b
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/RNUM
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese , Russian and Vietnamese
+p17
+aVPrincess Rupsa came across a very interesting game. In the game, you have to face against a number army consisting of N distinct integers A1, A2, , , AN. In one move, you can shoot one magic bullet aiming at an alive enemy number, say X. The magic bullet will kill X and it will also kill X + 1 and X - 1 if they are alive when the bullet is shot. Game ends when the entire number army is killed.
+p18
+aVPrincess Rupsa wants to find out the minimum and maximum number of moves that can be played in the game. But since she has recently found her true love and is in hurry to meet him, you must help her to solve the problem as fast as possible.
+p19
+asS'input'
+p20
+(lp21
+VInput
+p22
+aVThe first line of the input contains an integer T denoting the number of test cases.
+p23
+aVThe first line of each test case contains a single integer N.
+p24
+aVThe second line contains N space-separated integers denoting A1 to AN.
+p25
+aVOutput
+p26
+aVFor each test case, output a single line containing two space separated integer denoting the minimum and maximum number of moves required respectively.
+p27
+asS'constraints'
+p28
+(lp29
+VConstraints
+p30
+aV1 \u2264 T \u2264 10
+p31
+aV1 \u2264 N \u2264 105
+p32
+aV1 \u2264 Ai \u2264 106
+p33
+asS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VRNUM
+p37
+sb.

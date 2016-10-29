@@ -1,0 +1,72 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6
+p3
+sS'output'
+p4
+(lp5
+VOutput For every test case print all prime numbers p such that m <= p <= n, one number per line, test cases separated by an empty line. 
+p6
+asS'description'
+p7
+V Peter wants to generate some prime numbers for his cryptosystem. Help him! Your task is to generate all prime numbers between two given numbers! Input The input begins with the number t of test cases in a single line (t<=10). In each of the next t lines there are two numbers m and n (1 <= m <= n <= 1000000000, n-m<=100000) separated by a space. Output For every test case print all prime numbers p such that m <= p <= n, one number per line, test cases separated by an empty line. Example Input:\u000a2\u000a1 10\u000a3 5\u000a\u000aOutput:\u000a2\u000a3\u000a5\u000a7\u000a\u000a3\u000a5 Input: Output: Warning: large Input/Output data, be careful with certain languages (though most should be OK if the algorithm is well designed) Information PRINT
+p8
+sS'tags'
+p9
+V #number-theory
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/PRIME1
+p12
+sS'addedBy'
+p13
+VAdam Dzedzej
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V6s
+p20
+sS'statement'
+p21
+(lp22
+V Peter wants to generate some prime numbers for his cryptosystem. Help him! Your task is to generate all prime numbers between two given numbers! 
+p23
+asS'sourcelimit'
+p24
+V50000B
+p25
+sS'date'
+p26
+V2004-05-01
+p27
+sS'input'
+p28
+(lp29
+VInput The input begins with the number t of test cases in a single line (t<=10). In each of the next t lines there are two numbers m and n (1 <= m <= n <= 1000000000, n-m<=100000) separated by a space. 
+p30
+asS'constraints'
+p31
+g29
+sS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VPRIME1
+p35
+sb.

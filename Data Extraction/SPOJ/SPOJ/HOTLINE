@@ -1,0 +1,118 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput For each dialogue, your program must output the line Dialogue #D:, where D is the sequence number of dialogue, starting with 1. Then print exactly three lines for every question: the first line repeats the question, the second line contains the answer, and the third line is empty. Print nothing for statements. After each dialogue, print the same line with an exclamation mark that was in the input. Then print one extra empty line. Empty line contains a new-line character only. Dialogue # D : D The answer must be properly formated to be accepted by a TTS module. Only the statements appearing in the input before the answer are used for the corresponding reply. If there is any contradiction among statements, the reply is always I am abroad.. If the question and statements consider the special subject "you", it must be replaced with "I" in the answer. If the question considers special subject "I", it must be replaced with "you" in the answer. The verb must always match the subject of the sentence. The exact form of the correct answer depends on the type of question. I am abroad. you I I you  1. does subject predicate [object] ? If there is any positive statement about the mentioned subject (or generic subject "everybody"), predicate and object, the answer is:
+p6
+aVyes, _subject _predicate[s] [ _object] . everybody  yes, subject predicate s object . If there is any negative statement about the mentioned subject (or generic subject "nobody"), predicate and object, the answer is:
+p7
+aVno, _subject _don't|doesn't _predicate [ _object] . nobody  no, subject don't doesn't predicate object . Otherwise, the answer is: maybe. maybe. Subject in the answer is always the same subject as the subject of the question.  2. who predicates [object] ? If there is a positive statement considering any subject, the specified predicate and object, the answer is:
+p8
+aVsubject _predicate[s] [ _object] .  subject predicate s object . If two or more subjects match the activity, replace the subject in the answer with enumeration of all such subjects, in the same order as the corresponding statements have appeared in the input. Subjects are separated with comma and space, last two subjects are separated with the word "and". If "everybody" belongs to the group of enumerated subjects, do not enumerate subjects, and print "everybody" only. If the enumeration contains at least two subjects, the predicate matches the plural subject (i.e. verb is without trailing "s"), otherwise it matches the only subject.
+p9
+aVsubject1 , _subject2 _and _subject3 predicate [ _object] . and everybody everybody s  subject1 , subject2 and subject3 predicate object . If there is a negative statement considering the generic subject "nobody", the specified predicate and object, the answer is:
+p10
+aVnobody _predicates [ _object] .  nobody predicate s object . Otherwise, the answer is: I don't know. I don't know.  3. what does subject do ? If there are one or more sentences (both positive and negative) considering the specified subject (or a generic subject "everybody" or "nobody"), all verbs and objects from such sentences must be included in a reply in the same order as the corresponding sentences have appeared in the input. No verb-object pair can be included more than once (the eventual second appearance must be skipped). The verb-object pairs are separated by a comma followed by a space, the last verb is separated by a comma and the word "and". Please note the comma is printed here although there was no comma when separating the subjects in the previous type of answer (see above). The negative answers have the same form as the statements, that means the verb "don't" or "doesn't" is used:
+p11
+aVsubject [ _don't|doesn't] _predicate1[s] [ _object1] ,
+p12
+aV[ _don't|doesn't] _predicate2[s] [ _object2] ,
+p13
+aV_and [ _don't|doesn't] _predicate3[s] [ _object3] .
+p14
+aVsubject [ _don't|doesn't] _predicate1[s] [ _object1] ,
+p15
+aV_and [ _don't|doesn't] _predicate2[s] [ _object2] .
+p16
+aVsubject [ _don't|doesn't] _predicate[s] [ _object] . everybody nobody and don't doesn't  subject don't doesn't predicate1 s object1 ,  don't doesn't predicate2 s object2 ,  and don't doesn't predicate3 s object3 .  subject don't doesn't predicate1 s object1 ,  and don't doesn't predicate2 s object2 .  subject don't doesn't predicate s object . Otherwise, the answer is: I don't know. I don't know. 
+p17
+asS'description'
+p18
+V Every customer sometimes needs help with new and unusual products. Therefore, hotline service is very important for every company. We need a single phone number where the customer can always find a friendly voice ready to help with anything. On the other hand, many people are needed to serve as hotline operators, and human resources are always very expensive. Moreover, it is not easy to pretend "friendly voice" at 4am and explain to a drunken man that you are really unable to give him the number to House of Parliament. It was also found that some of the questions repeat very often and it is very annoying to answer them again and again. ACM is a modern company, wanting to solve its hotline problem. They want to decrease the number of human operators by creating a complex software system that would be able to answer most common questions. The customer's voice is analysed by a special Voice Recognition Module (VRM) and converted to a plain text. The text is then taken by an Artificial Automatic Adaptive Answering Algorithm (AAAAA). The most common questions are recognised and answered automatically. The replies are then converted to a sound by Text-to-Speech Module (TTS). You are to write the AAAAA module. Because your algorithm should be adaptive, it has no explicit knowledge base. But it must be able to listen to sentences in English and remember the mentioned facts. Whenever the question is asked about such a fact, the system has to answer it properly. The VRM and TTS modules are already implemented, so the input and output of AAAAA will be in the text form.  Input There is a single positive integer T on the first line of input. It stands for the number of dialogues to follow. Each dialogue consists of zero or more lines, each of them containing one sentence: either statement or question. The statement ends with a dot character (.), the question ends with a question mark (?). No statement will appear more than once, however the questions can be repeated. There is one extra line after each dialogue. That line ends with an exclamation mark (!). T . ? ! Sentences can contain words, spaces and punctuation characters (such as commas, colons, semicolons etc.). All words contain only letters of English alphabet and are case-sensitive. That means the same word is always written the same way, usually in lowercase. Acronyms, names and some other words can begin with capital letters. For simplicity, all sentences begin with a lowercase letter. Only if the first word should be written with a capital, the sentence begins with a capital letter. There are no unneeded spaces between words. No line will have more than 100 characters. There will be at most 100 statements per each test case.  Statements Each statement has one of the following two forms ( _ denotes a space):\u000asubject _predicate[s] [ _object] .\u000asubject _don't|doesn't _predicate [ _object] .  subject predicate s object .  subject don't doesn't predicate object . The square brackets mark an optional part, the vertical line two possible variants. Subject is a single word, noun or pronoun in singular. Predicate is a verb (single word) denoting some activity. Object can be any text. Object does not contain any dots. Any pair "verb + object" determines unique activity. The same verb with different objects makes different independent activities, i.e. the different and independent meaning of the sentence. Sentence without any object can be considered as sentence with an empty object. The verb without an object has different and independent meaning than the same verb with any non-empty object. The first variant of sentence denotes a positive statement. The word "predicate[s]" means verb that matches the subject of the sentence. If the subject is "I" or "you", the verb has the same form as the infinitive. With any other subject, the letter "s" is appended on the end of the verb. Assume there are no irregular verbs. predicate s I you s The second variant is a negative statement. Verb "don't" or "doesn't" must also match the subject. The form "don't" is used with either "I" or "you", "doesn't" is used in any other case. don't doesn't don't I you doesn't A special generic subject "everybody" can be used. It means the activity holds for any subject. Other special subject is "nobody". Such sentence also holds for any subject, but its meaning is negative. Both of these generic subjects can be used with the first variant only (without "doesn't"). The sentence "nobody likes something" is exactly equal to "everybody doesn't like something", except the latter form will never occur in the input. everybody nobody doesn't nobody likes something everybody doesn't like something  Questions Each question has one of the following three forms: 1.\u000ado|does _subject _predicate [ _object] ?\u000a2.\u000awho _predicates [ _object] ?\u000a3.\u000awhat _do|does _subject do ? 1.\u000ado|does _subject _predicate [ _object] ?\u000a2.\u000awho _predicates [ _object] ?\u000a3.\u000awhat _do|does _subject do ? 1. do|does _subject _predicate [ _object] ? do does subject predicate ? 2. who _predicates [ _object] ? who predicate s object ? 3. what _do|does _subject do ? what do does subject do ? The word "do|does" always matches the subject ("do I?", "do you?", "does any other subject?"). In the second type of question, predicate always matches the word "who", i.e. the "s" is always appended. Generic subjects cannot be used in questions. do does do I? do you? does who s  Output For each dialogue, your program must output the line Dialogue #D:, where D is the sequence number of dialogue, starting with 1. Then print exactly three lines for every question: the first line repeats the question, the second line contains the answer, and the third line is empty. Print nothing for statements. After each dialogue, print the same line with an exclamation mark that was in the input. Then print one extra empty line. Empty line contains a new-line character only. Dialogue # D : D The answer must be properly formated to be accepted by a TTS module. Only the statements appearing in the input before the answer are used for the corresponding reply. If there is any contradiction among statements, the reply is always I am abroad.. If the question and statements consider the special subject "you", it must be replaced with "I" in the answer. If the question considers special subject "I", it must be replaced with "you" in the answer. The verb must always match the subject of the sentence. The exact form of the correct answer depends on the type of question. I am abroad. you I I you  1. does subject predicate [object] ? If there is any positive statement about the mentioned subject (or generic subject "everybody"), predicate and object, the answer is:\u000ayes, _subject _predicate[s] [ _object] . everybody  yes, subject predicate s object . If there is any negative statement about the mentioned subject (or generic subject "nobody"), predicate and object, the answer is:\u000ano, _subject _don't|doesn't _predicate [ _object] . nobody  no, subject don't doesn't predicate object . Otherwise, the answer is: maybe. maybe. Subject in the answer is always the same subject as the subject of the question.  2. who predicates [object] ? If there is a positive statement considering any subject, the specified predicate and object, the answer is:\u000asubject _predicate[s] [ _object] .  subject predicate s object . If two or more subjects match the activity, replace the subject in the answer with enumeration of all such subjects, in the same order as the corresponding statements have appeared in the input. Subjects are separated with comma and space, last two subjects are separated with the word "and". If "everybody" belongs to the group of enumerated subjects, do not enumerate subjects, and print "everybody" only. If the enumeration contains at least two subjects, the predicate matches the plural subject (i.e. verb is without trailing "s"), otherwise it matches the only subject.\u000asubject1 , _subject2 _and _subject3 predicate [ _object] . and everybody everybody s  subject1 , subject2 and subject3 predicate object . If there is a negative statement considering the generic subject "nobody", the specified predicate and object, the answer is:\u000anobody _predicates [ _object] .  nobody predicate s object . Otherwise, the answer is: I don't know. I don't know.  3. what does subject do ? If there are one or more sentences (both positive and negative) considering the specified subject (or a generic subject "everybody" or "nobody"), all verbs and objects from such sentences must be included in a reply in the same order as the corresponding sentences have appeared in the input. No verb-object pair can be included more than once (the eventual second appearance must be skipped). The verb-object pairs are separated by a comma followed by a space, the last verb is separated by a comma and the word "and". Please note the comma is printed here although there was no comma when separating the subjects in the previous type of answer (see above). The negative answers have the same form as the statements, that means the verb "don't" or "doesn't" is used:\u000asubject [ _don't|doesn't] _predicate1[s] [ _object1] ,\u000a[ _don't|doesn't] _predicate2[s] [ _object2] ,\u000a_and [ _don't|doesn't] _predicate3[s] [ _object3] .\u000asubject [ _don't|doesn't] _predicate1[s] [ _object1] ,\u000a_and [ _don't|doesn't] _predicate2[s] [ _object2] .\u000asubject [ _don't|doesn't] _predicate[s] [ _object] . everybody nobody and don't doesn't  subject don't doesn't predicate1 s object1 ,  don't doesn't predicate2 s object2 ,  and don't doesn't predicate3 s object3 .  subject don't doesn't predicate1 s object1 ,  and don't doesn't predicate2 s object2 .  subject don't doesn't predicate s object . Otherwise, the answer is: I don't know. I don't know. Example Sample Input: 1\u000aI like hotdogs.\u000anobody likes to work.\u000aeverybody smiles.\u000awhat do I do?\u000awho smiles?\u000awhat do you do?\u000adoes Joe smile?\u000ado I like to work?\u000aeverybody hurts sometimes.\u000awho walks there?\u000aMichal walks there.\u000awho walks there?\u000awhat does Michal do?\u000ado you understand?\u000anobody walks there.\u000ado you understand now?\u000abye! 1\u000aI like hotdogs.\u000anobody likes to work.\u000aeverybody smiles.\u000awhat do I do?\u000awho smiles?\u000awhat do you do?\u000adoes Joe smile?\u000ado I like to work?\u000aeverybody hurts sometimes.\u000awho walks there?\u000aMichal walks there.\u000awho walks there?\u000awhat does Michal do?\u000ado you understand?\u000anobody walks there.\u000ado you understand now?\u000abye! Sample Output: Dialogue #1:\u000awhat do I do?\u000ayou like hotdogs, don't like to work, and smile.\u000a\u000awho smiles?\u000aeverybody smiles.\u000a\u000awhat do you do?\u000aI don't like to work, and smile.\u000a\u000adoes Joe smile?\u000ayes, Joe smiles.\u000a\u000ado I like to work?\u000ano, you don't like to work.\u000a\u000awho walks there?\u000aI don't know.\u000a\u000awho walks there?\u000aMichal walks there.\u000a\u000awhat does Michal do?\u000aMichal doesn't like to work, smiles, hurts sometimes, and walks there.\u000a\u000ado you understand?\u000amaybe.\u000a\u000ado you understand now?\u000aI am abroad.\u000a\u000abye! Dialogue #1:\u000awhat do I do?\u000ayou like hotdogs, don't like to work, and smile.\u000a\u000awho smiles?\u000aeverybody smiles.\u000a\u000awhat do you do?\u000aI don't like to work, and smile.\u000a\u000adoes Joe smile?\u000ayes, Joe smiles.\u000a\u000ado I like to work?\u000ano, you don't like to work.\u000a\u000awho walks there?\u000aI don't know.\u000a\u000awho walks there?\u000aMichal walks there.\u000a\u000awhat does Michal do?\u000aMichal doesn't like to work, smiles, hurts sometimes, and walks there.\u000a\u000ado you understand?\u000amaybe.\u000a\u000ado you understand now?\u000aI am abroad.\u000a\u000abye!
+p19
+sS'tags'
+p20
+S''
+p21
+sS'url'
+p22
+Vhttp://www.spoj.com/problems/HOTLINE
+p23
+sS'addedBy'
+p24
+Vadrian
+p25
+sS'memorylimit'
+p26
+V1536MB
+p27
+sS'cluster'
+p28
+VCube (Intel G860)
+p29
+sS'timelimit'
+p30
+V2s
+p31
+sS'statement'
+p32
+(lp33
+V Every customer sometimes needs help with new and unusual products. Therefore, hotline service is very important for every company. We need a single phone number where the customer can always find a friendly voice ready to help with anything. On the other hand, many people are needed to serve as hotline operators, and human resources are always very expensive. Moreover, it is not easy to pretend "friendly voice" at 4am and explain to a drunken man that you are really unable to give him the number to House of Parliament. It was also found that some of the questions repeat very often and it is very annoying to answer them again and again. ACM is a modern company, wanting to solve its hotline problem. They want to decrease the number of human operators by creating a complex software system that would be able to answer most common questions. The customer's voice is analysed by a special Voice Recognition Module (VRM) and converted to a plain text. The text is then taken by an Artificial Automatic Adaptive Answering Algorithm (AAAAA). The most common questions are recognised and answered automatically. The replies are then converted to a sound by Text-to-Speech Module (TTS). You are to write the AAAAA module. Because your algorithm should be adaptive, it has no explicit knowledge base. But it must be able to listen to sentences in English and remember the mentioned facts. Whenever the question is asked about such a fact, the system has to answer it properly. The VRM and TTS modules are already implemented, so the input and output of AAAAA will be in the text form.  
+p34
+asS'sourcelimit'
+p35
+VACM Central European Programming Contest, Prague 2000
+p36
+sS'date'
+p37
+V2004-05-09
+p38
+sS'input'
+p39
+(lp40
+VInput There is a single positive integer T on the first line of input. It stands for the number of dialogues to follow. Each dialogue consists of zero or more lines, each of them containing one sentence: either statement or question. The statement ends with a dot character (.), the question ends with a question mark (?). No statement will appear more than once, however the questions can be repeated. There is one extra line after each dialogue. That line ends with an exclamation mark (!). T . ? ! Sentences can contain words, spaces and punctuation characters (such as commas, colons, semicolons etc.). All words contain only letters of English alphabet and are case-sensitive. That means the same word is always written the same way, usually in lowercase. Acronyms, names and some other words can begin with capital letters. For simplicity, all sentences begin with a lowercase letter. Only if the first word should be written with a capital, the sentence begins with a capital letter. There are no unneeded spaces between words. No line will have more than 100 characters. There will be at most 100 statements per each test case.  Statements Each statement has one of the following two forms ( _ denotes a space):
+p41
+aVsubject _predicate[s] [ _object] .
+p42
+aVsubject _don't|doesn't _predicate [ _object] .  subject predicate s object .  subject don't doesn't predicate object . The square brackets mark an optional part, the vertical line two possible variants. Subject is a single word, noun or pronoun in singular. Predicate is a verb (single word) denoting some activity. Object can be any text. Object does not contain any dots. Any pair "verb + object" determines unique activity. The same verb with different objects makes different independent activities, i.e. the different and independent meaning of the sentence. Sentence without any object can be considered as sentence with an empty object. The verb without an object has different and independent meaning than the same verb with any non-empty object. The first variant of sentence denotes a positive statement. The word "predicate[s]" means verb that matches the subject of the sentence. If the subject is "I" or "you", the verb has the same form as the infinitive. With any other subject, the letter "s" is appended on the end of the verb. Assume there are no irregular verbs. predicate s I you s The second variant is a negative statement. Verb "don't" or "doesn't" must also match the subject. The form "don't" is used with either "I" or "you", "doesn't" is used in any other case. don't doesn't don't I you doesn't A special generic subject "everybody" can be used. It means the activity holds for any subject. Other special subject is "nobody". Such sentence also holds for any subject, but its meaning is negative. Both of these generic subjects can be used with the first variant only (without "doesn't"). The sentence "nobody likes something" is exactly equal to "everybody doesn't like something", except the latter form will never occur in the input. everybody nobody doesn't nobody likes something everybody doesn't like something  Questions Each question has one of the following three forms: 1.
+p43
+aVdo|does _subject _predicate [ _object] ?
+p44
+aV2.
+p45
+aVwho _predicates [ _object] ?
+p46
+aV3.
+p47
+aVwhat _do|does _subject do ? 1.
+p48
+aVdo|does _subject _predicate [ _object] ?
+p49
+aV2.
+p50
+aVwho _predicates [ _object] ?
+p51
+aV3.
+p52
+aVwhat _do|does _subject do ? 1. do|does _subject _predicate [ _object] ? do does subject predicate ? 2. who _predicates [ _object] ? who predicate s object ? 3. what _do|does _subject do ? what do does subject do ? The word "do|does" always matches the subject ("do I?", "do you?", "does any other subject?"). In the second type of question, predicate always matches the word "who", i.e. the "s" is always appended. Generic subjects cannot be used in questions. do does do I? do you? does who s  
+p53
+asS'constraints'
+p54
+g40
+sS'id'
+p55
+c__builtin__
+id
+p56
+sS'name'
+p57
+VHOTLINE
+p58
+sb.

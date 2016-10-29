@@ -1,0 +1,69 @@
+(iproblems
+Problem
+p0
+(dp1
+S'time_limit'
+p2
+(lp3
+VTime Limit: 1 sec
+p4
+asS'source_limit'
+p5
+(lp6
+VSource Limit: 50000 Bytes
+p7
+asS'description'
+p8
+V All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aGiven n words w[1..n], which originate from the same stem (e.g. grace, graceful, disgraceful, gracefully), we are interested in the original stem. To simplify the problem, we define the stem as the longest consecutive substring that occurs in all the n words. If there are ties, we will choose the smallest one in the alphabetical (lexicographic) order.\u000aInput\u000aThe first line contains an integer T denoting the total number of test cases.\u000aIn each test cases, the first line contains an integer n denoting the number of words. In the second line, n words w[1..n] consisting of lower case characters are given as a single space-spearated list.\u000aOutput\u000aFor each test case, output the stem in a new line.\u000aConstraints\u000a1 <= T <= 10\u000a1 <= n <= 10\u000a1 <= |w[i]| <= 20\u000aExample\u000aInput:\u000a1\u000a4\u000agrace graceful disgraceful gracefully\u000aOutput:\u000agrace\u000aExplanation\u000aThe stem is grace.\u000aAuthor: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/STEM\u000aTags: cook63 easy hashmaps shangjingbo strings\u000aDate Added: 9-10-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC\u000aSUBMIT All submissions for this problem are available.\u000aRead problems statements in Mandarin Chinese and Russian as well.\u000aGiven n words w[1..n], which originate from the same stem (e.g. grace, graceful, disgraceful, gracefully), we are interested in the original stem. To simplify the problem, we define the stem as the longest consecutive substring that occurs in all the n words. If there are ties, we will choose the smallest one in the alphabetical (lexicographic) order.\u000aInput\u000aThe first line contains an integer T denoting the total number of test cases.\u000aIn each test cases, the first line contains an integer n denoting the number of words. In the second line, n words w[1..n] consisting of lower case characters are given as a single space-spearated list.\u000aOutput\u000aFor each test case, output the stem in a new line.\u000aConstraints\u000a1 <= T <= 10\u000a1 <= n <= 10\u000a1 <= |w[i]| <= 20\u000aExample\u000aInput:\u000a1\u000a4\u000agrace graceful disgraceful gracefully\u000aOutput:\u000agrace\u000aExplanation\u000aThe stem is grace.\u000aAuthor: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/STEM\u000aTags: cook63 easy hashmaps shangjingbo strings\u000aDate Added: 9-10-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC All submissions for this problem are available. Read problems statements in Mandarin Chinese and Russian as well. Mandarin Chinese Russian Given n words w[1..n], which originate from the same stem (e.g. grace, graceful, disgraceful, gracefully), we are interested in the original stem. To simplify the problem, we define the stem as the longest consecutive substring that occurs in all the n words. If there are ties, we will choose the smallest one in the alphabetical (lexicographic) order. n w 1 n n Input The first line contains an integer T denoting the total number of test cases. T In each test cases, the first line contains an integer n denoting the number of words. In the second line, n words w[1..n] consisting of lower case characters are given as a single space-spearated list. n n w 1 n Output For each test case, output the stem in a new line. Constraints 1 <= T <= 10\u000a1 <= n <= 10\u000a1 <= |w[i]| <= 20 1 <= T <= 10 1 T 10 1 <= n <= 10 1 n 10 1 <= |w[i]| <= 20 1 w i 20 Example Input:\u000a1\u000a4\u000agrace graceful disgraceful gracefully\u000aOutput:\u000agrace Input: Output: Explanation The stem is grace.  Author: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/STEM\u000aTags: cook63 easy hashmaps shangjingbo strings\u000aDate Added: 9-10-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: shangjingbo\u000aEditorial: http://discuss.codechef.com/problems/STEM\u000aTags: cook63 easy hashmaps shangjingbo strings\u000aDate Added: 9-10-2015\u000aTime Limit: 1 sec\u000aSource Limit: 50000 Bytes\u000aLanguages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Author: shangjingbo Author: shangjingbo shangjingbo Editorial: http://discuss.codechef.com/problems/STEM Editorial: http://discuss.codechef.com/problems/STEM http://discuss.codechef.com/problems/STEM Tags: cook63 easy hashmaps shangjingbo strings Tags: cook63 easy hashmaps shangjingbo strings cook63 easy hashmaps shangjingbo strings Date Added: 9-10-2015 Date Added: 9-10-2015 Time Limit: 1 sec Time Limit: 1 sec Source Limit: 50000 Bytes Source Limit: 50000 Bytes Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC Languages: ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC SUBMIT  SUBMIT SUBMIT SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS SUCCESSFUL SUBMISSIONS  
+p9
+sS'tags'
+p10
+V cook63 easy hashmaps shangjingbo strings
+p11
+sS'url'
+p12
+Vhttps://www.codechef.com/problems/STEM
+p13
+sS'statement'
+p14
+(lp15
+VAll submissions for this problem are available.
+p16
+aVRead problems statements in Mandarin Chinese and Russian as well.
+p17
+aVGiven n words w[1..n], which originate from the same stem (e.g. grace, graceful, disgraceful, gracefully), we are interested in the original stem. To simplify the problem, we define the stem as the longest consecutive substring that occurs in all the n words. If there are ties, we will choose the smallest one in the alphabetical (lexicographic) order.
+p18
+asS'input'
+p19
+(lp20
+VInput
+p21
+aVThe first line contains an integer T denoting the total number of test cases.
+p22
+aVIn each test cases, the first line contains an integer n denoting the number of words. In the second line, n words w[1..n] consisting of lower case characters are given as a single space-spearated list.
+p23
+aVOutput
+p24
+aVFor each test case, output the stem in a new line.
+p25
+asS'constraints'
+p26
+(lp27
+VConstraints
+p28
+aV1 <= T <= 10
+p29
+aV1 <= n <= 10
+p30
+aV1 <= |w[i]| <= 20
+p31
+asS'id'
+p32
+c__builtin__
+id
+p33
+sS'name'
+p34
+VSTEM
+p35
+sb.

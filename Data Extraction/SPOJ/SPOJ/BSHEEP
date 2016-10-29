@@ -1,0 +1,100 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput o [length of circumference, rounded to 2 decimal places]
+p6
+aVp1 p2 ... pk
+p7
+aV[the sheep that are standing in the corners of the fence; the first one should be positioned bottommost and as far to the left as possible, the others ought to be written in anticlockwise order; ignore all sheep standing in the same place but the first to appear in the input file; the number of sheep should be the smallest possible]
+p8
+aV[empty line]
+p9
+aV[next solutions]      
+p10
+asS'description'
+p11
+V At the beginning of spring all the sheep move to the higher pastures in the mountains. If there are thousands of them, it is well worthwhile gathering them together in one place. But sheep don't like to leave their grass-lands. Help the shepherd and build him a fence which would surround all the sheep. The fence should have the smallest possible length! Assume that sheep are negligibly small and that they are not moving. Sometimes a few sheep are standing in the same place. If there is only one sheep, it is probably dying, so no fence is needed at all... Input t [the number of tests <= 100]\u000a[empty line]\u000an [the number of sheep <= 100000]\u000ax1 y1 [coordinates of the first sheep]\u000a...\u000axn yn\u000a[integer coordinates from -10000 to 10000]\u000a[empty line]\u000a[other lists of sheep]\u000a\u000aText grouped in [ ] does not appear in the input file. Assume that sheep are numbered in the input order.     x 1 y 1   xn n yn n      Output o [length of circumference, rounded to 2 decimal places]\u000ap1 p2 ... pk\u000a[the sheep that are standing in the corners of the fence; the first one should be positioned bottommost and as far to the left as possible, the others ought to be written in anticlockwise order; ignore all sheep standing in the same place but the first to appear in the input file; the number of sheep should be the smallest possible]\u000a[empty line]\u000a[next solutions]      Example Input:\u000a8\u000a\u000a5\u000a0 0\u000a0 5\u000a10 5\u000a3 3\u000a10 0\u000a\u000a1\u000a0 0\u000a\u000a3\u000a0 0\u000a1 0\u000a2 0\u000a\u000a4\u000a0 0\u000a0 0\u000a0 1\u000a1 0\u000a\u000a3\u000a0 0\u000a0 1\u000a1 0\u000a\u000a6\u000a0 0\u000a-1 -1\u000a1 1\u000a2 2\u000a3 3\u000a4 4\u000a\u000a2\u000a10 0\u000a0 0\u000a\u000a7\u000a-3 -4\u000a2 -3\u000a4 3\u000a-4 2\u000a0 5\u000a2 -3\u000a-1 4\u000a\u000aOutput:\u000a30.00\u000a1 5 3 2\u000a\u000a0.00\u000a1\u000a\u000a4.00\u000a1 3\u000a\u000a3.41\u000a1 4 3\u000a\u000a3.41\u000a1 3 2\u000a\u000a14.14\u000a2 6\u000a\u000a20.00\u000a2 1\u000a\u000a26.98\u000a1 2 3 5 4 Warning: large Input/Output data, be careful with certain languages
+p12
+sS'tags'
+p13
+V #convex-hull
+p14
+sS'url'
+p15
+Vhttp://www.spoj.com/problems/BSHEEP
+p16
+sS'addedBy'
+p17
+Vmima
+p18
+sS'memorylimit'
+p19
+V1536MB
+p20
+sS'cluster'
+p21
+VCube (Intel G860)
+p22
+sS'timelimit'
+p23
+V7s
+p24
+sS'statement'
+p25
+(lp26
+V At the beginning of spring all the sheep move to the higher pastures in the mountains. If there are thousands of them, it is well worthwhile gathering them together in one place. But sheep don't like to leave their grass-lands. Help the shepherd and build him a fence which would surround all the sheep. The fence should have the smallest possible length! Assume that sheep are negligibly small and that they are not moving. Sometimes a few sheep are standing in the same place. If there is only one sheep, it is probably dying, so no fence is needed at all... 
+p27
+asS'sourcelimit'
+p28
+V-
+p29
+sS'date'
+p30
+V2004-06-01
+p31
+sS'input'
+p32
+(lp33
+VInput t [the number of tests <= 100]
+p34
+aV[empty line]
+p35
+aVn [the number of sheep <= 100000]
+p36
+aVx1 y1 [coordinates of the first sheep]
+p37
+aV...
+p38
+aVxn yn
+p39
+aV[integer coordinates from -10000 to 10000]
+p40
+aV[empty line]
+p41
+aV[other lists of sheep]
+p42
+aV
+p43
+aVText grouped in [ ] does not appear in the input file. Assume that sheep are numbered in the input order.     x 1 y 1   xn n yn n      
+p44
+asS'constraints'
+p45
+g33
+sS'id'
+p46
+c__builtin__
+id
+p47
+sS'name'
+p48
+VBSHEEP
+p49
+sb.

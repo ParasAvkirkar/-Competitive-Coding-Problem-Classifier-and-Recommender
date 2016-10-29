@@ -12,8 +12,9 @@ sections = ['easy', 'medium', 'hard']
 try:
 	with open('current_progress.pickle', 'r+b') as f:
 		current_progress = pickle.load(f)
-		print 'Resuming Progress from problem '+str(current_progress['problem_no'])+' '
+		print 'Resuming Progress from problem '+sections[current_progress['section']]+' and problem no '+str(current_progress['problem_no'])
 except Exception as e:
+	print e
 	print 'Starting problem collection'
 
 sec_count = current_progress['section']
@@ -40,5 +41,6 @@ for section in sections[sec_count:]:
 						with open('current_progress.pickle', 'w+b') as f:
 							pickle.dump({'section':sec_count, 'problem_no':count}, f)
 	sec_count += 1
+	count = 0
 	with open('current_progress.pickle', 'w+b') as f:
-		pickle.dump({'section':sec_count, 'problem_no':count}, f)
+		pickle.dump({'section':sec_count, 'problem_no':0}, f)
