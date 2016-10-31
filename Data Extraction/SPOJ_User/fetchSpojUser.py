@@ -1,5 +1,4 @@
 from selenium import webdriver
-from user import User
 from bs4 import BeautifulSoup
 
 from selenium.webdriver.common.by import By
