@@ -8,12 +8,17 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import requests
+from spojUser import SpojUser
+import pickle
 
 
-def fetch_user(uname, driver):
+
+def fetch_user(userLink, driver):
 	
-	baseUrl = "http://www.spoj.com/users/"
-	userLink = baseUrl + uname
+	# baseUrl = "http://www.spoj.com/users/"
+	# userLink = baseUrl + uname
+	uname = userLink.split('/')[4]
+	print uname
 
 	driver.get(userLink)
 	print('reach user page '+ userLink)
@@ -49,7 +54,8 @@ def fetch_user(uname, driver):
 				temp = p.text.split("#")[1]
 				rank = temp.split()[0]
 				rating = temp.split("(")[1].split()[0]
-				print rank , " ", rating
+				print rank
+				print rating
 				break
 			except Exception as e:
 				rank = ""		
@@ -77,6 +83,15 @@ def fetch_user(uname, driver):
 
 		except Exception as e:
 			print "probs does not exist"
+
+
+		user = SpojUser(userLink, uname, name, country, probs, rating, rank)
+		with open('users/' + uname, 'w+b') as f:
+			pickle.dump(user, f)
+
+		# with open('users/' + uname, 'r+b') as f2:
+		# 	n = pickle.load(f2)
+		# 	print n.name
 		
 
 		
@@ -90,9 +105,30 @@ def fetch_user(uname, driver):
 		pass
 
 driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-# fetch_user('anudeep2011', driver)
-# fetch_user('sherlock_holms', driver)
-fetch_user('gerrob', driver)
-# fetch_user('paragpachpute', driver)
-# fetch_user('pranay0007', driver)
+
+count = 0
+
+try:
+	with open('curr_progress', 'r+b') as f:
+		count = pickle.load(f)
+		print count
+except Exception as e:
+	# print e
+	count = 0		
+
+
+i = 0
+f = open('users_urls.txt', 'r')
+for ulink in f:
+	if count == i:
+		ulink = ulink.split('\n')[0]
+		fetch_user(ulink, driver)
+		
+		count += 1
+		with open('curr_progress', 'w+b') as f:
+			pickle.dump(count, f)
+
+	i += 1	
+	# print i, " ", count
+
 driver.close()
