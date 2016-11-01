@@ -11,7 +11,8 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import requests
 
 
-driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+#driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+driver = webdriver.Chrome()
 def getSpojProblem(problemUrl):
 	
 	#driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
