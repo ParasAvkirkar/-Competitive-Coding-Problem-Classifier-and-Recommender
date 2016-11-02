@@ -58,7 +58,7 @@ def fetch_user(userLink):
 
 if __name__ == '__main__':
 	#driver = webdriver.Chrome()
-	with open('supuserList.txt') as listF:
+	with open('texts/supuserList.txt') as listF:
 		userHandles = listF.read().splitlines()
 		count = 0
 		print('till here')

@@ -22,9 +22,9 @@ if __name__ == '__main__':
 	count = 0
 	for i in range(31, 148):
 		nextPageUrl = mainUrl + str(i)
-		with open('track.txt', 'w') as t:
+		with open('texts/track.txt', 'w') as t:
 			t.write(nextPageUrl + '\n')
-			with open('supuserList.txt', 'a') as f:
+			with open('texts/supuserList.txt', 'a') as f:
 				driver.get(nextPageUrl)
 				print(nextPageUrl)
 				#dataTable = driver.find_element_by_class_name('datatable ratingsDatatable')
