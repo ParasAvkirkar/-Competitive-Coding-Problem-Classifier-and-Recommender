@@ -35,18 +35,18 @@ def getCodeforcesProblem(problemUrl,problemId):
 		problemStatement = problemStatementTag.text
 		
 		print(problemId)
-		print(problemName)
-		print(problemUrl)
-		print(problemTags)
-		#print(problemStatement)
-		print(timelimit)
-		print(memorylimit)
+		# print(problemName)
+		# print(problemUrl)
+		# print(problemTags)
+		# print(problemStatement)
+		# print(timelimit)
+		# print(memorylimit)
 
 		problem = CodeforcesProblem(problemId, problemName, problemUrl, problemTags, problemStatement, timelimit, memorylimit)
 		return problem
 	except Exception as e:
-			print('ERROR')
-			print(e)
-			with open('codeforces/error', 'a') as f:
-				f.write(problemName+'\n')
-			return None
+		print('ERROR')
+		print(e)
+		with open('codeforces/error', 'a') as f:
+			f.write(problemName+'\n')
+		return None
