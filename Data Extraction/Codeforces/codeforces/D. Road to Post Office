@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Road to Post Office\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVasiliy has a car and he wants to get from home to the post office. The distance which he needs to pass equals to d kilometers.\u000aVasiliy's car is not new \u2014 it breaks after driven every k kilometers and Vasiliy needs t seconds to repair it. After repairing his car Vasiliy can drive again (but after k kilometers it will break again, and so on). In the beginning of the trip the car is just from repair station.\u000aTo drive one kilometer on car Vasiliy spends a seconds, to walk one kilometer on foot he needs b seconds (a\u2009<\u2009b).\u000aYour task is to find minimal time after which Vasiliy will be able to reach the post office. Consider that in every moment of time Vasiliy can left his car and start to go on foot.\u000aInput\u000aThe first line contains 5 positive integers d,\u2009k,\u2009a,\u2009b,\u2009t (1\u2009\u2264\u2009d\u2009\u2264\u20091012; 1\u2009\u2264\u2009k,\u2009a,\u2009b,\u2009t\u2009\u2264\u2009106; a\u2009<\u2009b), where:\u000ad \u2014 the distance from home to the post office;\u000ak \u2014 the distance, which car is able to drive before breaking;\u000aa \u2014 the time, which Vasiliy spends to drive 1 kilometer on his car;\u000ab \u2014 the time, which Vasiliy spends to walk 1 kilometer on foot;\u000at \u2014 the time, which Vasiliy spends to repair his car.\u000aOutput\u000aPrint the minimal time after which Vasiliy will be able to reach the post office.\u000aExamples\u000ainput\u000a5 2 1 4 10\u000aoutput\u000a14\u000ainput\u000a5 2 1 4 5\u000aoutput\u000a13\u000aNote\u000aIn the first example Vasiliy needs to drive the first 2 kilometers on the car (in 2 seconds) and then to walk on foot 3 kilometers (in 12 seconds). So the answer equals to 14 seconds.\u000aIn the second example Vasiliy needs to drive the first 2 kilometers on the car (in 2 seconds), then repair his car (in 5 seconds) and drive 2 kilometers more on the car (in 2 seconds). After that he needs to walk on foot 1 kilometer (in 4 seconds). So the answer equals to 13 seconds.
+p3
+sS'problemStatement'
+p4
+VD. Road to Post Office\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVasiliy has a car and he wants to get from home to the post office. The distance which he needs to pass equals to d kilometers.\u000aVasiliy's car is not new \u2014 it breaks after driven every k kilometers and Vasiliy needs t seconds to repair it. After repairing his car Vasiliy can drive again (but after k kilometers it will break again, and so on). In the beginning of the trip the car is just from repair station.\u000aTo drive one kilometer on car Vasiliy spends a seconds, to walk one kilometer on foot he needs b seconds (a\u2009<\u2009b).\u000aYour task is to find minimal time after which Vasiliy will be able to reach the post office. Consider that in every moment of time Vasiliy can left his car and start to go on foot.\u000aInput\u000aThe first line contains 5 positive integers d,\u2009k,\u2009a,\u2009b,\u2009t (1\u2009\u2264\u2009d\u2009\u2264\u20091012; 1\u2009\u2264\u2009k,\u2009a,\u2009b,\u2009t\u2009\u2264\u2009106; a\u2009<\u2009b), where:\u000ad \u2014 the distance from home to the post office;\u000ak \u2014 the distance, which car is able to drive before breaking;\u000aa \u2014 the time, which Vasiliy spends to drive 1 kilometer on his car;\u000ab \u2014 the time, which Vasiliy spends to walk 1 kilometer on foot;\u000at \u2014 the time, which Vasiliy spends to repair his car.\u000aOutput\u000aPrint the minimal time after which Vasiliy will be able to reach the post office.\u000aExamples\u000ainput\u000a5 2 1 4 10\u000aoutput\u000a14\u000ainput\u000a5 2 1 4 5\u000aoutput\u000a13\u000aNote\u000aIn the first example Vasiliy needs to drive the first 2 kilometers on the car (in 2 seconds) and then to walk on foot 3 kilometers (in 12 seconds). So the answer equals to 14 seconds.\u000aIn the second example Vasiliy needs to drive the first 2 kilometers on the car (in 2 seconds), then repair his car (in 5 seconds) and drive 2 kilometers more on the car (in 2 seconds). After that he needs to walk on foot 1 kilometer (in 4 seconds). So the answer equals to 13 seconds.
+p5
+sS'name'
+p6
+VD. Road to Post Office
+p7
+sS'tags'
+p8
+Vmath 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/702/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V702/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

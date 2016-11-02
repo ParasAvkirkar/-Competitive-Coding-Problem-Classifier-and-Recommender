@@ -1,0 +1,108 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Ant Man\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aScott Lang is at war with Darren Cross. There are n chairs in a hall where they are, numbered with 1,\u20092,\u2009...,\u2009n from left to right. The i-th chair is located at coordinate xi. Scott is on chair number s and Cross is on chair number e. Scott can jump to all other chairs (not only neighboring chairs). He wants to start at his position (chair number s), visit each chair exactly once and end up on chair number e with Cross.\u000aAs we all know, Scott can shrink or grow big (grow big only to his normal size), so at any moment of time he can be either small or large (normal). The thing is, he can only shrink or grow big while being on a chair (not in the air while jumping to another chair). Jumping takes time, but shrinking and growing big takes no time. Jumping from chair number i to chair number j takes |xi\u2009-\u2009xj| seconds. Also, jumping off a chair and landing on a chair takes extra amount of time.\u000aIf Scott wants to jump to a chair on his left, he can only be small, and if he wants to jump to a chair on his right he should be large.\u000aJumping off the i-th chair takes:\u000aci extra seconds if he's small.\u000adi extra seconds otherwise (he's large).\u000aAlso, landing on i-th chair takes:\u000abi extra seconds if he's small.\u000aai extra seconds otherwise (he's large).\u000aIn simpler words, jumping from i-th chair to j-th chair takes exactly:\u000a|xi\u2009-\u2009xj|\u2009+\u2009ci\u2009+\u2009bj seconds if j\u2009<\u2009i.\u000a|xi\u2009-\u2009xj|\u2009+\u2009di\u2009+\u2009aj seconds otherwise (j\u2009>\u2009i).\u000aGiven values of x, a, b, c, d find the minimum time Scott can get to Cross, assuming he wants to visit each chair exactly once.\u000aInput\u000aThe first line of the input contains three integers n,\u2009s and e (2\u2009\u2264\u2009n\u2009\u2264\u20095000,\u20091\u2009\u2264\u2009s,\u2009e\u2009\u2264\u2009n,\u2009s\u2009\u2260\u2009e) \u2014 the total number of chairs, starting and ending positions of Scott.\u000aThe second line contains n integers x1,\u2009x2,\u2009...,\u2009xn (1\u2009\u2264\u2009x1\u2009<\u2009x2\u2009<\u2009...\u2009<\u2009xn\u2009\u2264\u2009109).\u000aThe third line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009a1,\u2009a2,\u2009...,\u2009an\u2009\u2264\u2009109).\u000aThe fourth line contains n integers b1,\u2009b2,\u2009...,\u2009bn (1\u2009\u2264\u2009b1,\u2009b2,\u2009...,\u2009bn\u2009\u2264\u2009109).\u000aThe fifth line contains n integers c1,\u2009c2,\u2009...,\u2009cn (1\u2009\u2264\u2009c1,\u2009c2,\u2009...,\u2009cn\u2009\u2264\u2009109).\u000aThe sixth line contains n integers d1,\u2009d2,\u2009...,\u2009dn (1\u2009\u2264\u2009d1,\u2009d2,\u2009...,\u2009dn\u2009\u2264\u2009109).\u000aOutput\u000aPrint the minimum amount of time Scott needs to get to the Cross while visiting each chair exactly once.\u000aExample\u000ainput\u000a7 4 3\u000a8 11 12 16 17 18 20\u000a17 16 20 2 20 5 13\u000a17 8 8 16 12 15 13\u000a12 4 16 4 15 7 6\u000a8 14 2 11 17 12 8\u000aoutput\u000a139\u000aNote\u000aIn the sample testcase, an optimal solution would be . Spent time would be 17\u2009+\u200924\u2009+\u200923\u2009+\u200920\u2009+\u200933\u2009+\u200922\u2009=\u2009139.
+p3
+sS'problemStatement'
+p4
+VB. Ant Man\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aScott Lang is at war with Darren Cross. There are n chairs in a hall where they are, numbered with 1,\u20092,\u2009...,\u2009n from left to right. The i-th chair is located at coordinate xi. Scott is on chair number s and Cross is on chair number e. Scott can jump to all other chairs (not only neighboring chairs). He wants to start at his position (chair number s), visit each chair exactly once and end up on chair number e with Cross.\u000aAs we all know, Scott can shrink or grow big (grow big only to his normal size), so at any moment of time he can be either small or large (normal). The thing is, he can only shrink or grow big while being on a chair (not in the air while jumping to another chair). Jumping takes time, but shrinking and growing big takes no time. Jumping from chair number i to chair number j takes |xi\u2009-\u2009xj| seconds. Also, jumping off a chair and landing on a chair takes extra amount of time.\u000aIf Scott wants to jump to a chair on his left, he can only be small, and if he wants to jump to a chair on his right he should be large.\u000aJumping off the i-th chair takes:\u000aci extra seconds if he's small.\u000adi extra seconds otherwise (he's large).\u000aAlso, landing on i-th chair takes:\u000abi extra seconds if he's small.\u000aai extra seconds otherwise (he's large).\u000aIn simpler words, jumping from i-th chair to j-th chair takes exactly:\u000a|xi\u2009-\u2009xj|\u2009+\u2009ci\u2009+\u2009bj seconds if j\u2009<\u2009i.\u000a|xi\u2009-\u2009xj|\u2009+\u2009di\u2009+\u2009aj seconds otherwise (j\u2009>\u2009i).\u000aGiven values of x, a, b, c, d find the minimum time Scott can get to Cross, assuming he wants to visit each chair exactly once.\u000aInput\u000aThe first line of the input contains three integers n,\u2009s and e (2\u2009\u2264\u2009n\u2009\u2264\u20095000,\u20091\u2009\u2264\u2009s,\u2009e\u2009\u2264\u2009n,\u2009s\u2009\u2260\u2009e) \u2014 the total number of chairs, starting and ending positions of Scott.\u000aThe second line contains n integers x1,\u2009x2,\u2009...,\u2009xn (1\u2009\u2264\u2009x1\u2009<\u2009x2\u2009<\u2009...\u2009<\u2009xn\u2009\u2264\u2009109).\u000aThe third line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009a1,\u2009a2,\u2009...,\u2009an\u2009\u2264\u2009109).\u000aThe fourth line contains n integers b1,\u2009b2,\u2009...,\u2009bn (1\u2009\u2264\u2009b1,\u2009b2,\u2009...,\u2009bn\u2009\u2264\u2009109).\u000aThe fifth line contains n integers c1,\u2009c2,\u2009...,\u2009cn (1\u2009\u2264\u2009c1,\u2009c2,\u2009...,\u2009cn\u2009\u2264\u2009109).\u000aThe sixth line contains n integers d1,\u2009d2,\u2009...,\u2009dn (1\u2009\u2264\u2009d1,\u2009d2,\u2009...,\u2009dn\u2009\u2264\u2009109).\u000aOutput\u000aPrint the minimum amount of time Scott needs to get to the Cross while visiting each chair exactly once.\u000aExample\u000ainput\u000a7 4 3\u000a8 11 12 16 17 18 20\u000a17 16 20 2 20 5 13\u000a17 8 8 16 12 15 13\u000a12 4 16 4 15 7 6\u000a8 14 2 11 17 12 8\u000aoutput\u000a139\u000aNote\u000aIn the sample testcase, an optimal solution would be . Spent time would be 17\u2009+\u200924\u2009+\u200923\u2009+\u200920\u2009+\u200933\u2009+\u200922\u2009=\u2009139.
+p5
+sS'name'
+p6
+VB. Ant Man
+p7
+sS'tags'
+p8
+Vdp graphs greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/704/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint the minimum amount of time Scott needs to get to the Cross while visiting each chair exactly once.
+p19
+asS'statement'
+p20
+(lp21
+VB. Ant Man
+p22
+aVtime limit per test4 seconds
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVScott Lang is at war with Darren Cross. There are n chairs in a hall where they are, numbered with 1,\u20092,\u2009...,\u2009n from left to right. The i-th chair is located at coordinate xi. Scott is on chair number s and Cross is on chair number e. Scott can jump to all other chairs (not only neighboring chairs). He wants to start at his position (chair number s), visit each chair exactly once and end up on chair number e with Cross.
+p27
+aVAs we all know, Scott can shrink or grow big (grow big only to his normal size), so at any moment of time he can be either small or large (normal). The thing is, he can only shrink or grow big while being on a chair (not in the air while jumping to another chair). Jumping takes time, but shrinking and growing big takes no time. Jumping from chair number i to chair number j takes |xi\u2009-\u2009xj| seconds. Also, jumping off a chair and landing on a chair takes extra amount of time.
+p28
+aVIf Scott wants to jump to a chair on his left, he can only be small, and if he wants to jump to a chair on his right he should be large.
+p29
+aVJumping off the i-th chair takes:
+p30
+aVci extra seconds if he's small.
+p31
+aVdi extra seconds otherwise (he's large).
+p32
+aVAlso, landing on i-th chair takes:
+p33
+aVbi extra seconds if he's small.
+p34
+aVai extra seconds otherwise (he's large).
+p35
+aVIn simpler words, jumping from i-th chair to j-th chair takes exactly:
+p36
+aV|xi\u2009-\u2009xj|\u2009+\u2009ci\u2009+\u2009bj seconds if j\u2009<\u2009i.
+p37
+aV|xi\u2009-\u2009xj|\u2009+\u2009di\u2009+\u2009aj seconds otherwise (j\u2009>\u2009i).
+p38
+aVGiven values of x, a, b, c, d find the minimum time Scott can get to Cross, assuming he wants to visit each chair exactly once.
+p39
+asS'problemId'
+p40
+V704/B
+p41
+sS'input'
+p42
+(lp43
+VInput
+p44
+aVThe first line of the input contains three integers n,\u2009s and e (2\u2009\u2264\u2009n\u2009\u2264\u20095000,\u20091\u2009\u2264\u2009s,\u2009e\u2009\u2264\u2009n,\u2009s\u2009\u2260\u2009e) \u2014 the total number of chairs, starting and ending positions of Scott.
+p45
+aVThe second line contains n integers x1,\u2009x2,\u2009...,\u2009xn (1\u2009\u2264\u2009x1\u2009<\u2009x2\u2009<\u2009...\u2009<\u2009xn\u2009\u2264\u2009109).
+p46
+aVThe third line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009a1,\u2009a2,\u2009...,\u2009an\u2009\u2264\u2009109).
+p47
+aVThe fourth line contains n integers b1,\u2009b2,\u2009...,\u2009bn (1\u2009\u2264\u2009b1,\u2009b2,\u2009...,\u2009bn\u2009\u2264\u2009109).
+p48
+aVThe fifth line contains n integers c1,\u2009c2,\u2009...,\u2009cn (1\u2009\u2264\u2009c1,\u2009c2,\u2009...,\u2009cn\u2009\u2264\u2009109).
+p49
+aVThe sixth line contains n integers d1,\u2009d2,\u2009...,\u2009dn (1\u2009\u2264\u2009d1,\u2009d2,\u2009...,\u2009dn\u2009\u2264\u2009109).
+p50
+asS'id'
+p51
+c__builtin__
+id
+p52
+sS'constraints'
+p53
+g43
+sb.

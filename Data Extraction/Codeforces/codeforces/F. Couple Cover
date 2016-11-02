@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Couple Cover\u000atime limit per test3 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aCouple Cover, a wildly popular luck-based game, is about to begin! Two players must work together to construct a rectangle. A bag with n balls, each with an integer written on it, is placed on the table. The first player reaches in and grabs a ball randomly (all balls have equal probability of being chosen) \u2014 the number written on this ball is the rectangle's width in meters. This ball is not returned to the bag, and the second player reaches into the bag and grabs another ball \u2014 the number written on this ball is the rectangle's height in meters. If the area of the rectangle is greater than or equal some threshold p square meters, the players win. Otherwise, they lose.\u000aThe organizers of the game are trying to select an appropriate value for p so that the probability of a couple winning is not too high and not too low, but they are slow at counting, so they have hired you to answer some questions for them. You are given a list of the numbers written on the balls, the organizers would like to know how many winning pairs of balls exist for different values of p. Note that two pairs are different if either the first or the second ball is different between the two in pair, and two different balls with the same number are considered different.\u000aInput\u000aThe input begins with a single positive integer n in its own line (1\u2009\u2264\u2009n\u2009\u2264\u2009106).\u000aThe second line contains n positive integers \u2014 the i-th number in this line is equal to ai (1\u2009\u2264\u2009ai\u2009\u2264\u20093·106), the number written on the i-th ball.\u000aThe next line contains an integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009106), the number of questions you are being asked.\u000aThen, the following line contains m positive integers \u2014 the j-th number in this line is equal to the value of p (1\u2009\u2264\u2009p\u2009\u2264\u20093·106) in the j-th question you are being asked.\u000aOutput\u000aFor each question, print the number of winning pairs of balls that exist for the given value of p in the separate line.\u000aExamples\u000ainput\u000a5\u000a4 2 6 1 3\u000a4\u000a1 3 5 8\u000aoutput\u000a20\u000a18\u000a14\u000a10\u000ainput\u000a2\u000a5 6\u000a2\u000a30 31\u000aoutput\u000a2\u000a0
+p3
+sS'problemStatement'
+p4
+VF. Couple Cover\u000atime limit per test3 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aCouple Cover, a wildly popular luck-based game, is about to begin! Two players must work together to construct a rectangle. A bag with n balls, each with an integer written on it, is placed on the table. The first player reaches in and grabs a ball randomly (all balls have equal probability of being chosen) \u2014 the number written on this ball is the rectangle's width in meters. This ball is not returned to the bag, and the second player reaches into the bag and grabs another ball \u2014 the number written on this ball is the rectangle's height in meters. If the area of the rectangle is greater than or equal some threshold p square meters, the players win. Otherwise, they lose.\u000aThe organizers of the game are trying to select an appropriate value for p so that the probability of a couple winning is not too high and not too low, but they are slow at counting, so they have hired you to answer some questions for them. You are given a list of the numbers written on the balls, the organizers would like to know how many winning pairs of balls exist for different values of p. Note that two pairs are different if either the first or the second ball is different between the two in pair, and two different balls with the same number are considered different.\u000aInput\u000aThe input begins with a single positive integer n in its own line (1\u2009\u2264\u2009n\u2009\u2264\u2009106).\u000aThe second line contains n positive integers \u2014 the i-th number in this line is equal to ai (1\u2009\u2264\u2009ai\u2009\u2264\u20093·106), the number written on the i-th ball.\u000aThe next line contains an integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009106), the number of questions you are being asked.\u000aThen, the following line contains m positive integers \u2014 the j-th number in this line is equal to the value of p (1\u2009\u2264\u2009p\u2009\u2264\u20093·106) in the j-th question you are being asked.\u000aOutput\u000aFor each question, print the number of winning pairs of balls that exist for the given value of p in the separate line.\u000aExamples\u000ainput\u000a5\u000a4 2 6 1 3\u000a4\u000a1 3 5 8\u000aoutput\u000a20\u000a18\u000a14\u000a10\u000ainput\u000a2\u000a5 6\u000a2\u000a30 31\u000aoutput\u000a2\u000a0
+p5
+sS'name'
+p6
+VF. Couple Cover
+p7
+sS'tags'
+p8
+Vbrute force dp number theory 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/691/F
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'problemId'
+p16
+V691/F
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Spider Man\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPeter Parker wants to play a game with Dr. Octopus. The game is about cycles. Cycle is a sequence of vertices, such that first one is connected with the second, second is connected with third and so on, while the last one is connected with the first one again. Cycle may consist of a single isolated vertex.\u000aInitially there are k cycles, i-th of them consisting of exactly vi vertices. Players play alternatively. Peter goes first. On each turn a player must choose a cycle with at least 2 vertices (for example, x vertices) among all available cycles and replace it by two cycles with p and x\u2009-\u2009p vertices where 1\u2009\u2264\u2009p\u2009<\u2009x is chosen by the player. The player who cannot make a move loses the game (and his life!).\u000aPeter wants to test some configurations of initial cycle sets before he actually plays with Dr. Octopus. Initially he has an empty set. In the i-th test he adds a cycle with ai vertices to the set (this is actually a multiset because it can contain two or more identical cycles). After each test, Peter wants to know that if the players begin the game with the current set of cycles, who wins?\u000aPeter is pretty good at math, but now he asks you to help.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of tests Peter is about to make.\u000aThe second line contains n space separated integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109), i-th of them stands for the number of vertices in the cycle added before the i-th test.\u000aOutput\u000aPrint the result of all tests in order they are performed. Print 1 if the player who moves first wins or 2 otherwise.\u000aExamples\u000ainput\u000a3\u000a1 2 3\u000aoutput\u000a2\u000a1\u000a1\u000ainput\u000a5\u000a1 1 5 1 1\u000aoutput\u000a2\u000a2\u000a2\u000a2\u000a2\u000aNote\u000aIn the first sample test:\u000aIn Peter's first test, there's only one cycle with 1 vertex. First player cannot make a move and loses.\u000aIn his second test, there's one cycle with 1 vertex and one with 2. No one can make a move on the cycle with 1 vertex. First player can replace the second cycle with two cycles of 1 vertex and second player can't make any move and loses.\u000aIn his third test, cycles have 1, 2 and 3 vertices. Like last test, no one can make a move on the first cycle. First player can replace the third cycle with one cycle with size 1 and one with size 2. Now cycles have 1, 1, 2, 2 vertices. Second player's only move is to replace a cycle of size 2 with 2 cycles of size 1. And cycles are 1, 1, 1, 1, 2. First player replaces the last cycle with 2 cycles with size 1 and wins.\u000aIn the second sample test:\u000aHaving cycles of size 1 is like not having them (because no one can make a move on them).\u000aIn Peter's third test: There a cycle of size 5 (others don't matter). First player has two options: replace it with cycles of sizes 1 and 4 or 2 and 3.\u000aIf he replaces it with cycles of sizes 1 and 4: Only second cycle matters. Second player will replace it with 2 cycles of sizes 2. First player's only option to replace one of them with two cycles of size 1. Second player does the same thing with the other cycle. First player can't make any move and loses.\u000aIf he replaces it with cycles of sizes 2 and 3: Second player will replace the cycle of size 3 with two of sizes 1 and 2. Now only cycles with more than one vertex are two cycles of size 2. As shown in previous case, with 2 cycles of size 2 second player wins.\u000aSo, either way first player loses.
+p3
+sS'problemStatement'
+p4
+VB. Spider Man\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPeter Parker wants to play a game with Dr. Octopus. The game is about cycles. Cycle is a sequence of vertices, such that first one is connected with the second, second is connected with third and so on, while the last one is connected with the first one again. Cycle may consist of a single isolated vertex.\u000aInitially there are k cycles, i-th of them consisting of exactly vi vertices. Players play alternatively. Peter goes first. On each turn a player must choose a cycle with at least 2 vertices (for example, x vertices) among all available cycles and replace it by two cycles with p and x\u2009-\u2009p vertices where 1\u2009\u2264\u2009p\u2009<\u2009x is chosen by the player. The player who cannot make a move loses the game (and his life!).\u000aPeter wants to test some configurations of initial cycle sets before he actually plays with Dr. Octopus. Initially he has an empty set. In the i-th test he adds a cycle with ai vertices to the set (this is actually a multiset because it can contain two or more identical cycles). After each test, Peter wants to know that if the players begin the game with the current set of cycles, who wins?\u000aPeter is pretty good at math, but now he asks you to help.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of tests Peter is about to make.\u000aThe second line contains n space separated integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109), i-th of them stands for the number of vertices in the cycle added before the i-th test.\u000aOutput\u000aPrint the result of all tests in order they are performed. Print 1 if the player who moves first wins or 2 otherwise.\u000aExamples\u000ainput\u000a3\u000a1 2 3\u000aoutput\u000a2\u000a1\u000a1\u000ainput\u000a5\u000a1 1 5 1 1\u000aoutput\u000a2\u000a2\u000a2\u000a2\u000a2\u000aNote\u000aIn the first sample test:\u000aIn Peter's first test, there's only one cycle with 1 vertex. First player cannot make a move and loses.\u000aIn his second test, there's one cycle with 1 vertex and one with 2. No one can make a move on the cycle with 1 vertex. First player can replace the second cycle with two cycles of 1 vertex and second player can't make any move and loses.\u000aIn his third test, cycles have 1, 2 and 3 vertices. Like last test, no one can make a move on the first cycle. First player can replace the third cycle with one cycle with size 1 and one with size 2. Now cycles have 1, 1, 2, 2 vertices. Second player's only move is to replace a cycle of size 2 with 2 cycles of size 1. And cycles are 1, 1, 1, 1, 2. First player replaces the last cycle with 2 cycles with size 1 and wins.\u000aIn the second sample test:\u000aHaving cycles of size 1 is like not having them (because no one can make a move on them).\u000aIn Peter's third test: There a cycle of size 5 (others don't matter). First player has two options: replace it with cycles of sizes 1 and 4 or 2 and 3.\u000aIf he replaces it with cycles of sizes 1 and 4: Only second cycle matters. Second player will replace it with 2 cycles of sizes 2. First player's only option to replace one of them with two cycles of size 1. Second player does the same thing with the other cycle. First player can't make any move and loses.\u000aIf he replaces it with cycles of sizes 2 and 3: Second player will replace the cycle of size 3 with two of sizes 1 and 2. Now only cycles with more than one vertex are two cycles of size 2. As shown in previous case, with 2 cycles of size 2 second player wins.\u000aSo, either way first player loses.
+p5
+sS'name'
+p6
+VB. Spider Man
+p7
+sS'tags'
+p8
+Vgames 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/705/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V705/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

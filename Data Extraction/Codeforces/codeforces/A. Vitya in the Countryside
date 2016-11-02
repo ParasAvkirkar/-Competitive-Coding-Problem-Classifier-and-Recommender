@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Vitya in the Countryside\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aEvery summer Vitya comes to visit his grandmother in the countryside. This summer, he got a huge wart. Every grandma knows that one should treat warts when the moon goes down. Thus, Vitya has to catch the moment when the moon is down.\u000aMoon cycle lasts 30 days. The size of the visible part of the moon (in Vitya's units) for each day is 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, and then cycle repeats, thus after the second 1 again goes 0.\u000aAs there is no internet in the countryside, Vitya has been watching the moon for n consecutive days and for each of these days he wrote down the size of the visible part of the moon. Help him find out whether the moon will be up or down next day, or this cannot be determined by the data he has.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u200992) \u2014 the number of consecutive days Vitya was watching the size of the visible part of the moon.\u000aThe second line contains n integers ai (0\u2009\u2264\u2009ai\u2009\u2264\u200915) \u2014 Vitya's records.\u000aIt's guaranteed that the input data is consistent.\u000aOutput\u000aIf Vitya can be sure that the size of visible part of the moon on day n\u2009+\u20091 will be less than the size of the visible part on day n, then print "DOWN" at the only line of the output. If he might be sure that the size of the visible part will increase, then print "UP". If it's impossible to determine what exactly will happen with the moon, print -1.\u000aExamples\u000ainput\u000a5\u000a3 4 5 6 7\u000aoutput\u000aUP\u000ainput\u000a7\u000a12 13 14 15 14 13 12\u000aoutput\u000aDOWN\u000ainput\u000a1\u000a8\u000aoutput\u000a-1\u000aNote\u000aIn the first sample, the size of the moon on the next day will be equal to 8, thus the answer is "UP".\u000aIn the second sample, the size of the moon on the next day will be 11, thus the answer is "DOWN".\u000aIn the third sample, there is no way to determine whether the size of the moon on the next day will be 7 or 9, thus the answer is -1.
+p3
+sS'problemStatement'
+p4
+VA. Vitya in the Countryside\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aEvery summer Vitya comes to visit his grandmother in the countryside. This summer, he got a huge wart. Every grandma knows that one should treat warts when the moon goes down. Thus, Vitya has to catch the moment when the moon is down.\u000aMoon cycle lasts 30 days. The size of the visible part of the moon (in Vitya's units) for each day is 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, and then cycle repeats, thus after the second 1 again goes 0.\u000aAs there is no internet in the countryside, Vitya has been watching the moon for n consecutive days and for each of these days he wrote down the size of the visible part of the moon. Help him find out whether the moon will be up or down next day, or this cannot be determined by the data he has.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u200992) \u2014 the number of consecutive days Vitya was watching the size of the visible part of the moon.\u000aThe second line contains n integers ai (0\u2009\u2264\u2009ai\u2009\u2264\u200915) \u2014 Vitya's records.\u000aIt's guaranteed that the input data is consistent.\u000aOutput\u000aIf Vitya can be sure that the size of visible part of the moon on day n\u2009+\u20091 will be less than the size of the visible part on day n, then print "DOWN" at the only line of the output. If he might be sure that the size of the visible part will increase, then print "UP". If it's impossible to determine what exactly will happen with the moon, print -1.\u000aExamples\u000ainput\u000a5\u000a3 4 5 6 7\u000aoutput\u000aUP\u000ainput\u000a7\u000a12 13 14 15 14 13 12\u000aoutput\u000aDOWN\u000ainput\u000a1\u000a8\u000aoutput\u000a-1\u000aNote\u000aIn the first sample, the size of the moon on the next day will be equal to 8, thus the answer is "UP".\u000aIn the second sample, the size of the moon on the next day will be 11, thus the answer is "DOWN".\u000aIn the third sample, there is no way to determine whether the size of the moon on the next day will be 7 or 9, thus the answer is -1.
+p5
+sS'name'
+p6
+VA. Vitya in the Countryside
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/719/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V719/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

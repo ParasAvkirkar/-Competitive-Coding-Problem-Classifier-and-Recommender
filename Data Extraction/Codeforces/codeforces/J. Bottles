@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VJ. Bottles\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aNick has n bottles of soda left after his birthday. Each bottle is described by two values: remaining amount of soda ai and bottle volume bi (ai\u2009\u2264\u2009bi).\u000aNick has decided to pour all remaining soda into minimal number of bottles, moreover he has to do it as soon as possible. Nick spends x seconds to pour x units of soda from one bottle to another.\u000aNick asks you to help him to determine k \u2014 the minimal number of bottles to store all remaining soda and t \u2014 the minimal time to pour soda into k bottles. A bottle can't store more soda than its volume. All remaining soda should be saved.\u000aInput\u000aThe first line contains positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of bottles.\u000aThe second line contains n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009100), where ai is the amount of soda remaining in the i-th bottle.\u000aThe third line contains n positive integers b1,\u2009b2,\u2009...,\u2009bn (1\u2009\u2264\u2009bi\u2009\u2264\u2009100), where bi is the volume of the i-th bottle.\u000aIt is guaranteed that ai\u2009\u2264\u2009bi for any i.\u000aOutput\u000aThe only line should contain two integers k and t, where k is the minimal number of bottles that can store all the soda and t is the minimal time to pour the soda into k bottles.\u000aExamples\u000ainput\u000a4\u000a3 3 4 3\u000a4 7 6 5\u000aoutput\u000a2 6\u000ainput\u000a2\u000a1 1\u000a100 100\u000aoutput\u000a1 1\u000ainput\u000a5\u000a10 30 5 6 24\u000a10 41 7 8 24\u000aoutput\u000a3 11\u000aNote\u000aIn the first example Nick can pour soda from the first bottle to the second bottle. It will take 3 seconds. After it the second bottle will contain 3\u2009+\u20093\u2009=\u20096 units of soda. Then he can pour soda from the fourth bottle to the second bottle and to the third bottle: one unit to the second and two units to the third. It will take 1\u2009+\u20092\u2009=\u20093 seconds. So, all the soda will be in two bottles and he will spend 3\u2009+\u20093\u2009=\u20096 seconds to do it.
+p3
+sS'problemStatement'
+p4
+VJ. Bottles\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aNick has n bottles of soda left after his birthday. Each bottle is described by two values: remaining amount of soda ai and bottle volume bi (ai\u2009\u2264\u2009bi).\u000aNick has decided to pour all remaining soda into minimal number of bottles, moreover he has to do it as soon as possible. Nick spends x seconds to pour x units of soda from one bottle to another.\u000aNick asks you to help him to determine k \u2014 the minimal number of bottles to store all remaining soda and t \u2014 the minimal time to pour soda into k bottles. A bottle can't store more soda than its volume. All remaining soda should be saved.\u000aInput\u000aThe first line contains positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of bottles.\u000aThe second line contains n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009100), where ai is the amount of soda remaining in the i-th bottle.\u000aThe third line contains n positive integers b1,\u2009b2,\u2009...,\u2009bn (1\u2009\u2264\u2009bi\u2009\u2264\u2009100), where bi is the volume of the i-th bottle.\u000aIt is guaranteed that ai\u2009\u2264\u2009bi for any i.\u000aOutput\u000aThe only line should contain two integers k and t, where k is the minimal number of bottles that can store all the soda and t is the minimal time to pour the soda into k bottles.\u000aExamples\u000ainput\u000a4\u000a3 3 4 3\u000a4 7 6 5\u000aoutput\u000a2 6\u000ainput\u000a2\u000a1 1\u000a100 100\u000aoutput\u000a1 1\u000ainput\u000a5\u000a10 30 5 6 24\u000a10 41 7 8 24\u000aoutput\u000a3 11\u000aNote\u000aIn the first example Nick can pour soda from the first bottle to the second bottle. It will take 3 seconds. After it the second bottle will contain 3\u2009+\u20093\u2009=\u20096 units of soda. Then he can pour soda from the fourth bottle to the second bottle and to the third bottle: one unit to the second and two units to the third. It will take 1\u2009+\u20092\u2009=\u20093 seconds. So, all the soda will be in two bottles and he will spend 3\u2009+\u20093\u2009=\u20096 seconds to do it.
+p5
+sS'name'
+p6
+VJ. Bottles
+p7
+sS'tags'
+p8
+Vdp 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/J
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V730/J
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

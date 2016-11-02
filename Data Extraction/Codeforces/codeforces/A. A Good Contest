@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. A Good Contest\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aCodeforces user' handle color depends on his rating \u2014 it is red if his rating is greater or equal to 2400; it is orange if his rating is less than 2400 but greater or equal to 2200, etc. Each time participant takes part in a rated contest, his rating is changed depending on his performance.\u000aAnton wants the color of his handle to become red. He considers his performance in the rated contest to be good if he outscored some participant, whose handle was colored red before the contest and his rating has increased after it.\u000aAnton has written a program that analyses contest results and determines whether he performed good or not. Are you able to do the same?\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of participants Anton has outscored in this contest .\u000aThe next n lines describe participants results: the i-th of them consists of a participant handle namei and two integers beforei and afteri (\u2009-\u20094000\u2009\u2264\u2009beforei,\u2009afteri\u2009\u2264\u20094000) \u2014 participant's rating before and after the contest, respectively. Each handle is a non-empty string, consisting of no more than 10 characters, which might be lowercase and uppercase English letters, digits, characters «_» and «-» characters.\u000aIt is guaranteed that all handles are distinct.\u000aOutput\u000aPrint «YES» (quotes for clarity), if Anton has performed good in the contest and «NO» (quotes for clarity) otherwise.\u000aExamples\u000ainput\u000a3\u000aBurunduk1 2526 2537\u000aBudAlNik 2084 2214\u000asubscriber 2833 2749\u000aoutput\u000aYES\u000ainput\u000a3\u000aApplejack 2400 2400\u000aFluttershy 2390 2431\u000aPinkie_Pie -2500 -2450\u000aoutput\u000aNO\u000aNote\u000aIn the first sample, Anton has outscored user with handle Burunduk1, whose handle was colored red before the contest and his rating has increased after the contest.\u000aIn the second sample, Applejack's rating has not increased after the contest, while both Fluttershy's and Pinkie_Pie's handles were not colored red before the contest.
+p3
+sS'problemStatement'
+p4
+VA. A Good Contest\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aCodeforces user' handle color depends on his rating \u2014 it is red if his rating is greater or equal to 2400; it is orange if his rating is less than 2400 but greater or equal to 2200, etc. Each time participant takes part in a rated contest, his rating is changed depending on his performance.\u000aAnton wants the color of his handle to become red. He considers his performance in the rated contest to be good if he outscored some participant, whose handle was colored red before the contest and his rating has increased after it.\u000aAnton has written a program that analyses contest results and determines whether he performed good or not. Are you able to do the same?\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of participants Anton has outscored in this contest .\u000aThe next n lines describe participants results: the i-th of them consists of a participant handle namei and two integers beforei and afteri (\u2009-\u20094000\u2009\u2264\u2009beforei,\u2009afteri\u2009\u2264\u20094000) \u2014 participant's rating before and after the contest, respectively. Each handle is a non-empty string, consisting of no more than 10 characters, which might be lowercase and uppercase English letters, digits, characters «_» and «-» characters.\u000aIt is guaranteed that all handles are distinct.\u000aOutput\u000aPrint «YES» (quotes for clarity), if Anton has performed good in the contest and «NO» (quotes for clarity) otherwise.\u000aExamples\u000ainput\u000a3\u000aBurunduk1 2526 2537\u000aBudAlNik 2084 2214\u000asubscriber 2833 2749\u000aoutput\u000aYES\u000ainput\u000a3\u000aApplejack 2400 2400\u000aFluttershy 2390 2431\u000aPinkie_Pie -2500 -2450\u000aoutput\u000aNO\u000aNote\u000aIn the first sample, Anton has outscored user with handle Burunduk1, whose handle was colored red before the contest and his rating has increased after the contest.\u000aIn the second sample, Applejack's rating has not increased after the contest, while both Fluttershy's and Pinkie_Pie's handles were not colored red before the contest.
+p5
+sS'name'
+p6
+VA. A Good Contest
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/681/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V681/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

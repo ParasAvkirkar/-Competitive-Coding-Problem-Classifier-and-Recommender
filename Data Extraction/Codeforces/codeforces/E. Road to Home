@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Road to Home\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOnce Danil the student was returning home from tram stop lately by straight road of length L. The stop is located at the point x\u2009=\u20090, but the Danil's home \u2014 at the point x\u2009=\u2009L. Danil goes from x\u2009=\u20090 to x\u2009=\u2009L with a constant speed and does not change direction of movement.\u000aThere are n street lights at the road, each of which lights some continuous segment of the road. All of the n lightened segments do not share common points.\u000aDanil loves to sing, thus he wants to sing his favourite song over and over again during his walk. As soon as non-lightened segments of the road scare him, he sings only when he goes through the lightened segments.\u000aDanil passes distance p while performing his favourite song once. Danil can't start another performance if the segment passed while performing is not fully lightened. Moreover, if Danil has taken a pause between two performances, he is not performing while not having passed a segment of length at least t. Formally,\u000aDanil can start single performance at a point x only if every point of segment [x,\u2009x\u2009+\u2009p] is lightened;\u000aIf Danil has finished performing at a point x\u2009+\u2009p, then the next performance can be started only at a point y such that y\u2009=\u2009x\u2009+\u2009p or y\u2009\u2265\u2009x\u2009+\u2009p\u2009+\u2009t satisfying the statement under the point 1.\u000aBlue half-circles denote performances. Please note that just after Danil has taken a pause in performing, he has not sang for a path of length of at least t.\u000aDetermine how many times Danil can perform his favourite song during his walk from x\u2009=\u20090 to x\u2009=\u2009L.\u000aPlease note that Danil does not break a single performance, thus, started singing another time, he finishes singing when having a segment of length of p passed from the performance start point.\u000aInput\u000aThe first line of the input contains four integers L, n, p and t (1\u2009\u2264\u2009L\u2009\u2264\u2009109, 0\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 1\u2009\u2264\u2009p\u2009\u2264\u2009109, 1\u2009\u2264\u2009t\u2009\u2264\u2009109) \u2014 the length of the Danil's path, the number of street lights at the road, the distance Danil passes while doing single performance and the minimum distance of pause respectively.\u000aThe next n lines describe segments lightened by street lights. i-th of them contains two integers li,\u2009ri (0\u2009\u2264\u2009li\u2009<\u2009ri\u2009\u2264\u2009L) \u2014 the endpoints of the segment lightened by i-th street light. It is guaranteed that no two segments are intersecting, nesting, or touching each other. The segments are given in the order from left to right.\u000aOutput\u000aPrint the only integer \u2014 the maximum number of performances of Danil's favourite song on the path from x\u2009=\u20090 to x\u2009=\u2009L.\u000aExamples\u000ainput\u000a17 2 2 6\u000a0 9\u000a13 17\u000aoutput\u000a5\u000ainput\u000a12 2 2 2\u000a0 5\u000a6 11\u000aoutput\u000a4\u000ainput\u000a12 2 2 4\u000a0 5\u000a6 11\u000aoutput\u000a3\u000aNote\u000aThe first sample case is just about corresponding to the picture from the statement.
+p3
+sS'problemStatement'
+p4
+VE. Road to Home\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOnce Danil the student was returning home from tram stop lately by straight road of length L. The stop is located at the point x\u2009=\u20090, but the Danil's home \u2014 at the point x\u2009=\u2009L. Danil goes from x\u2009=\u20090 to x\u2009=\u2009L with a constant speed and does not change direction of movement.\u000aThere are n street lights at the road, each of which lights some continuous segment of the road. All of the n lightened segments do not share common points.\u000aDanil loves to sing, thus he wants to sing his favourite song over and over again during his walk. As soon as non-lightened segments of the road scare him, he sings only when he goes through the lightened segments.\u000aDanil passes distance p while performing his favourite song once. Danil can't start another performance if the segment passed while performing is not fully lightened. Moreover, if Danil has taken a pause between two performances, he is not performing while not having passed a segment of length at least t. Formally,\u000aDanil can start single performance at a point x only if every point of segment [x,\u2009x\u2009+\u2009p] is lightened;\u000aIf Danil has finished performing at a point x\u2009+\u2009p, then the next performance can be started only at a point y such that y\u2009=\u2009x\u2009+\u2009p or y\u2009\u2265\u2009x\u2009+\u2009p\u2009+\u2009t satisfying the statement under the point 1.\u000aBlue half-circles denote performances. Please note that just after Danil has taken a pause in performing, he has not sang for a path of length of at least t.\u000aDetermine how many times Danil can perform his favourite song during his walk from x\u2009=\u20090 to x\u2009=\u2009L.\u000aPlease note that Danil does not break a single performance, thus, started singing another time, he finishes singing when having a segment of length of p passed from the performance start point.\u000aInput\u000aThe first line of the input contains four integers L, n, p and t (1\u2009\u2264\u2009L\u2009\u2264\u2009109, 0\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 1\u2009\u2264\u2009p\u2009\u2264\u2009109, 1\u2009\u2264\u2009t\u2009\u2264\u2009109) \u2014 the length of the Danil's path, the number of street lights at the road, the distance Danil passes while doing single performance and the minimum distance of pause respectively.\u000aThe next n lines describe segments lightened by street lights. i-th of them contains two integers li,\u2009ri (0\u2009\u2264\u2009li\u2009<\u2009ri\u2009\u2264\u2009L) \u2014 the endpoints of the segment lightened by i-th street light. It is guaranteed that no two segments are intersecting, nesting, or touching each other. The segments are given in the order from left to right.\u000aOutput\u000aPrint the only integer \u2014 the maximum number of performances of Danil's favourite song on the path from x\u2009=\u20090 to x\u2009=\u2009L.\u000aExamples\u000ainput\u000a17 2 2 6\u000a0 9\u000a13 17\u000aoutput\u000a5\u000ainput\u000a12 2 2 2\u000a0 5\u000a6 11\u000aoutput\u000a4\u000ainput\u000a12 2 2 4\u000a0 5\u000a6 11\u000aoutput\u000a3\u000aNote\u000aThe first sample case is just about corresponding to the picture from the statement.
+p5
+sS'name'
+p6
+VE. Road to Home
+p7
+sS'tags'
+p8
+Vbinary search dp 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/721/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V721/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

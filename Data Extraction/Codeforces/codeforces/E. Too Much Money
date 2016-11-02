@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Too Much Money\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlfred wants to buy a toy moose that costs c dollars. The store doesn\u2019t give change, so he must give the store exactly c dollars, no more and no less. He has n coins. To make c dollars from his coins, he follows the following algorithm: let S be the set of coins being used. S is initially empty. Alfred repeatedly adds to S the highest-valued coin he has such that the total value of the coins in S after adding the coin doesn\u2019t exceed c. If there is no such coin, and the value of the coins in S is still less than c, he gives up and goes home. Note that Alfred never removes a coin from S after adding it.\u000aAs a programmer, you might be aware that Alfred\u2019s algorithm can fail even when there is a set of coins with value exactly c. For example, if Alfred has one coin worth $3, one coin worth $4, and two coins worth $5, and the moose costs $12, then Alfred will add both of the $5 coins to S and then give up, since adding any other coin would cause the value of the coins in S to exceed $12. Of course, Alfred could instead combine one $3 coin, one $4 coin, and one $5 coin to reach the total.\u000aBob tried to convince Alfred that his algorithm was flawed, but Alfred didn\u2019t believe him. Now Bob wants to give Alfred some coins (in addition to those that Alfred already has) such that Alfred\u2019s algorithm fails. Bob can give Alfred any number of coins of any denomination (subject to the constraint that each coin must be worth a positive integer number of dollars). There can be multiple coins of a single denomination. He would like to minimize the total value of the coins he gives Alfred. Please find this minimum value. If there is no solution, print "Greed is good". You can assume that the answer, if it exists, is positive. In other words, Alfred's algorithm will work if Bob doesn't give him any coins.\u000aInput\u000aThe first line contains c (1\u2009\u2264\u2009c\u2009\u2264\u2009200\u2009000) \u2014 the price Alfred wants to pay. The second line contains n (1\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000) \u2014 the number of coins Alfred initially has. Then n lines follow, each containing a single integer x (1\u2009\u2264\u2009x\u2009\u2264\u2009c) representing the value of one of Alfred's coins.\u000aOutput\u000aIf there is a solution, print the minimum possible total value of the coins in a solution. Otherwise, print "Greed is good" (without quotes).\u000aExamples\u000ainput\u000a12\u000a3\u000a5\u000a3\u000a4\u000aoutput\u000a5\u000ainput\u000a50\u000a8\u000a1\u000a2\u000a4\u000a8\u000a16\u000a37\u000a37\u000a37\u000aoutput\u000aGreed is good\u000aNote\u000aIn the first sample, Bob should give Alfred a single coin worth $5. This creates the situation described in the problem statement.\u000aIn the second sample, there is no set of coins that will cause Alfred's algorithm to fail.
+p3
+sS'problemStatement'
+p4
+VE. Too Much Money\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlfred wants to buy a toy moose that costs c dollars. The store doesn\u2019t give change, so he must give the store exactly c dollars, no more and no less. He has n coins. To make c dollars from his coins, he follows the following algorithm: let S be the set of coins being used. S is initially empty. Alfred repeatedly adds to S the highest-valued coin he has such that the total value of the coins in S after adding the coin doesn\u2019t exceed c. If there is no such coin, and the value of the coins in S is still less than c, he gives up and goes home. Note that Alfred never removes a coin from S after adding it.\u000aAs a programmer, you might be aware that Alfred\u2019s algorithm can fail even when there is a set of coins with value exactly c. For example, if Alfred has one coin worth $3, one coin worth $4, and two coins worth $5, and the moose costs $12, then Alfred will add both of the $5 coins to S and then give up, since adding any other coin would cause the value of the coins in S to exceed $12. Of course, Alfred could instead combine one $3 coin, one $4 coin, and one $5 coin to reach the total.\u000aBob tried to convince Alfred that his algorithm was flawed, but Alfred didn\u2019t believe him. Now Bob wants to give Alfred some coins (in addition to those that Alfred already has) such that Alfred\u2019s algorithm fails. Bob can give Alfred any number of coins of any denomination (subject to the constraint that each coin must be worth a positive integer number of dollars). There can be multiple coins of a single denomination. He would like to minimize the total value of the coins he gives Alfred. Please find this minimum value. If there is no solution, print "Greed is good". You can assume that the answer, if it exists, is positive. In other words, Alfred's algorithm will work if Bob doesn't give him any coins.\u000aInput\u000aThe first line contains c (1\u2009\u2264\u2009c\u2009\u2264\u2009200\u2009000) \u2014 the price Alfred wants to pay. The second line contains n (1\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000) \u2014 the number of coins Alfred initially has. Then n lines follow, each containing a single integer x (1\u2009\u2264\u2009x\u2009\u2264\u2009c) representing the value of one of Alfred's coins.\u000aOutput\u000aIf there is a solution, print the minimum possible total value of the coins in a solution. Otherwise, print "Greed is good" (without quotes).\u000aExamples\u000ainput\u000a12\u000a3\u000a5\u000a3\u000a4\u000aoutput\u000a5\u000ainput\u000a50\u000a8\u000a1\u000a2\u000a4\u000a8\u000a16\u000a37\u000a37\u000a37\u000aoutput\u000aGreed is good\u000aNote\u000aIn the first sample, Bob should give Alfred a single coin worth $5. This creates the situation described in the problem statement.\u000aIn the second sample, there is no set of coins that will cause Alfred's algorithm to fail.
+p5
+sS'name'
+p6
+VE. Too Much Money
+p7
+sS'tags'
+p8
+Vbrute force 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/725/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V725/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

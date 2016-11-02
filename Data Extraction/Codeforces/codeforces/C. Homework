@@ -1,0 +1,90 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Homework\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aToday Peter has got an additional homework for tomorrow. The teacher has given three integers to him: n, m and k, and asked him to mark one or more squares on a square grid of size n\u2009×\u2009m.\u000aThe marked squares must form a connected figure, and there must be exactly k triples of marked squares that form an L-shaped tromino \u2014 all three squares are inside a 2\u2009×\u20092 square.\u000aThe set of squares forms a connected figure if it is possible to get from any square to any other one if you are allowed to move from a square to any adjacent by a common side square.\u000aPeter cannot fulfill the task, so he asks you for help. Help him to create such figure.\u000aInput\u000aInput data contains one or more test cases. The first line contains the number of test cases t (1\u2009\u2264\u2009t\u2009\u2264\u2009100).\u000aEach of the following t test cases is described by a line that contains three integers: n, m and k (3\u2009\u2264\u2009n,\u2009m, n\u2009×\u2009m\u2009\u2264\u2009105, 0\u2009\u2264\u2009k\u2009\u2264\u2009109).\u000aThe sum of values of n\u2009×\u2009m for all tests in one input data doesn't exceed 105.\u000aOutput\u000aFor each test case print the answer.\u000aIf it is possible to create such figure, print n lines, m characters each, use asterisk '*' to denote the marked square, and dot '.' to denote the unmarked one.\u000aIf there is no solution, print -1.\u000aPrint empty line between test cases.\u000aExample\u000ainput\u000a3\u000a3 3 4\u000a3 3 5\u000a3 3 3\u000aoutput\u000a.*.\u000a***\u000a.*.\u000a\u000a**.\u000a**.\u000a*..\u000a\u000a.*.\u000a***\u000a*..
+p3
+sS'problemStatement'
+p4
+VC. Homework\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aToday Peter has got an additional homework for tomorrow. The teacher has given three integers to him: n, m and k, and asked him to mark one or more squares on a square grid of size n\u2009×\u2009m.\u000aThe marked squares must form a connected figure, and there must be exactly k triples of marked squares that form an L-shaped tromino \u2014 all three squares are inside a 2\u2009×\u20092 square.\u000aThe set of squares forms a connected figure if it is possible to get from any square to any other one if you are allowed to move from a square to any adjacent by a common side square.\u000aPeter cannot fulfill the task, so he asks you for help. Help him to create such figure.\u000aInput\u000aInput data contains one or more test cases. The first line contains the number of test cases t (1\u2009\u2264\u2009t\u2009\u2264\u2009100).\u000aEach of the following t test cases is described by a line that contains three integers: n, m and k (3\u2009\u2264\u2009n,\u2009m, n\u2009×\u2009m\u2009\u2264\u2009105, 0\u2009\u2264\u2009k\u2009\u2264\u2009109).\u000aThe sum of values of n\u2009×\u2009m for all tests in one input data doesn't exceed 105.\u000aOutput\u000aFor each test case print the answer.\u000aIf it is possible to create such figure, print n lines, m characters each, use asterisk '*' to denote the marked square, and dot '.' to denote the unmarked one.\u000aIf there is no solution, print -1.\u000aPrint empty line between test cases.\u000aExample\u000ainput\u000a3\u000a3 3 4\u000a3 3 5\u000a3 3 3\u000aoutput\u000a.*.\u000a***\u000a.*.\u000a\u000a**.\u000a**.\u000a*..\u000a\u000a.*.\u000a***\u000a*..
+p5
+sS'name'
+p6
+VC. Homework
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/720/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVFor each test case print the answer.
+p19
+aVIf it is possible to create such figure, print n lines, m characters each, use asterisk '*' to denote the marked square, and dot '.' to denote the unmarked one.
+p20
+aVIf there is no solution, print -1.
+p21
+aVPrint empty line between test cases.
+p22
+asS'statement'
+p23
+(lp24
+VC. Homework
+p25
+aVtime limit per test3 seconds
+p26
+aVmemory limit per test256 megabytes
+p27
+aVinputstandard input
+p28
+aVoutputstandard output
+p29
+aVToday Peter has got an additional homework for tomorrow. The teacher has given three integers to him: n, m and k, and asked him to mark one or more squares on a square grid of size n\u2009×\u2009m.
+p30
+aVThe marked squares must form a connected figure, and there must be exactly k triples of marked squares that form an L-shaped tromino \u2014 all three squares are inside a 2\u2009×\u20092 square.
+p31
+aVThe set of squares forms a connected figure if it is possible to get from any square to any other one if you are allowed to move from a square to any adjacent by a common side square.
+p32
+aVPeter cannot fulfill the task, so he asks you for help. Help him to create such figure.
+p33
+asS'problemId'
+p34
+V720/C
+p35
+sS'input'
+p36
+(lp37
+VInput
+p38
+aVInput data contains one or more test cases. The first line contains the number of test cases t (1\u2009\u2264\u2009t\u2009\u2264\u2009100).
+p39
+aVEach of the following t test cases is described by a line that contains three integers: n, m and k (3\u2009\u2264\u2009n,\u2009m, n\u2009×\u2009m\u2009\u2264\u2009105, 0\u2009\u2264\u2009k\u2009\u2264\u2009109).
+p40
+aVThe sum of values of n\u2009×\u2009m for all tests in one input data doesn't exceed 105.
+p41
+asS'id'
+p42
+c__builtin__
+id
+p43
+sS'constraints'
+p44
+g37
+sb.

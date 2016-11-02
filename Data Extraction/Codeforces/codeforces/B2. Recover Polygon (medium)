@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB2. Recover Polygon (medium)\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aNow that Heidi has made sure her Zombie Contamination level checker works, it's time to strike! This time, the zombie lair is a strictly convex polygon on the lattice. Each vertex of the polygon occupies a point on the lattice. For each cell of the lattice, Heidi knows the level of Zombie Contamination \u2013 the number of corners of the cell that are inside or on the border of the lair.\u000aGiven this information, Heidi wants to know the exact shape of the lair to rain destruction on the zombies. Help her!\u000aInput\u000aThe input contains multiple test cases.\u000aThe first line of each test case contains one integer N, the size of the lattice grid (5\u2009\u2264\u2009N\u2009\u2264\u2009500). The next N lines each contain N characters, describing the level of Zombie Contamination of each cell in the lattice. Every character of every line is a digit between 0 and 4.\u000aCells are given in the same order as they are shown in the picture above: rows go in the decreasing value of y coordinate, and in one row cells go in the order of increasing x coordinate. This means that the first row corresponds to cells with coordinates (1,\u2009N),\u2009...,\u2009(N,\u2009N) and the last row corresponds to cells with coordinates (1,\u20091),\u2009...,\u2009(N,\u20091).\u000aThe last line of the file contains a zero. This line should not be treated as a test case. The sum of the N values for all tests in one file will not exceed 5000.\u000aOutput\u000aFor each test case, give the following output:\u000aThe first line of the output should contain one integer V, the number of vertices of the polygon that is the secret lair. The next V lines each should contain two integers, denoting the vertices of the polygon in the clockwise order, starting from the lexicographically smallest vertex.\u000aExamples\u000ainput\u000a8\u000a00000000\u000a00000110\u000a00012210\u000a01234200\u000a02444200\u000a01223200\u000a00001100\u000a00000000\u000a5\u000a00000\u000a01210\u000a02420\u000a01210\u000a00000\u000a7\u000a0000000\u000a0122100\u000a0134200\u000a0013200\u000a0002200\u000a0001100\u000a0000000\u000a0\u000aoutput\u000a4\u000a2 3\u000a2 4\u000a6 6\u000a5 2\u000a4\u000a2 2\u000a2 3\u000a3 3\u000a3 2\u000a3\u000a2 5\u000a4 5\u000a4 2\u000aNote\u000aIt is guaranteed that the solution always exists and is unique. It is guaranteed that in the correct solution the coordinates of the polygon vertices are between 2 and N\u2009-\u20092. A vertex (x1,\u2009y1) is lexicographically smaller than vertex (x2,\u2009y2) if x1\u2009<\u2009x2 or .
+p3
+sS'problemStatement'
+p4
+VB2. Recover Polygon (medium)\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aNow that Heidi has made sure her Zombie Contamination level checker works, it's time to strike! This time, the zombie lair is a strictly convex polygon on the lattice. Each vertex of the polygon occupies a point on the lattice. For each cell of the lattice, Heidi knows the level of Zombie Contamination \u2013 the number of corners of the cell that are inside or on the border of the lair.\u000aGiven this information, Heidi wants to know the exact shape of the lair to rain destruction on the zombies. Help her!\u000aInput\u000aThe input contains multiple test cases.\u000aThe first line of each test case contains one integer N, the size of the lattice grid (5\u2009\u2264\u2009N\u2009\u2264\u2009500). The next N lines each contain N characters, describing the level of Zombie Contamination of each cell in the lattice. Every character of every line is a digit between 0 and 4.\u000aCells are given in the same order as they are shown in the picture above: rows go in the decreasing value of y coordinate, and in one row cells go in the order of increasing x coordinate. This means that the first row corresponds to cells with coordinates (1,\u2009N),\u2009...,\u2009(N,\u2009N) and the last row corresponds to cells with coordinates (1,\u20091),\u2009...,\u2009(N,\u20091).\u000aThe last line of the file contains a zero. This line should not be treated as a test case. The sum of the N values for all tests in one file will not exceed 5000.\u000aOutput\u000aFor each test case, give the following output:\u000aThe first line of the output should contain one integer V, the number of vertices of the polygon that is the secret lair. The next V lines each should contain two integers, denoting the vertices of the polygon in the clockwise order, starting from the lexicographically smallest vertex.\u000aExamples\u000ainput\u000a8\u000a00000000\u000a00000110\u000a00012210\u000a01234200\u000a02444200\u000a01223200\u000a00001100\u000a00000000\u000a5\u000a00000\u000a01210\u000a02420\u000a01210\u000a00000\u000a7\u000a0000000\u000a0122100\u000a0134200\u000a0013200\u000a0002200\u000a0001100\u000a0000000\u000a0\u000aoutput\u000a4\u000a2 3\u000a2 4\u000a6 6\u000a5 2\u000a4\u000a2 2\u000a2 3\u000a3 3\u000a3 2\u000a3\u000a2 5\u000a4 5\u000a4 2\u000aNote\u000aIt is guaranteed that the solution always exists and is unique. It is guaranteed that in the correct solution the coordinates of the polygon vertices are between 2 and N\u2009-\u20092. A vertex (x1,\u2009y1) is lexicographically smaller than vertex (x2,\u2009y2) if x1\u2009<\u2009x2 or .
+p5
+sS'name'
+p6
+VB2. Recover Polygon (medium)
+p7
+sS'tags'
+p8
+Vgeometry 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/690/B2
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'problemId'
+p16
+V690/B2
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

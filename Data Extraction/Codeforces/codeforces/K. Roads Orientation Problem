@@ -1,0 +1,96 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VK. Roads Orientation Problem\u000atime limit per test5 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aBerland consists of n cities and m bidirectional roads connecting pairs of cities. There is no road connecting a city to itself, and between any pair of cities there is no more than one road. It is possible to reach any city from any other moving along roads.\u000aCurrently Mr. President is in the city s and his destination is the city t. He plans to move along roads from s to t (s\u2009\u2260\u2009t).\u000aThat's why Ministry of Fools and Roads has difficult days. The minister is afraid that Mr. President could get into a traffic jam or get lost. Who knows what else can happen!\u000aTo be sure that everything goes as planned, the minister decided to temporarily make all roads one-way. So each road will be oriented in one of two possible directions. The following conditions must be satisfied:\u000aThere should be no cycles along roads after orientation.\u000aThe city s should be the only such city that all its roads are oriented out (i.e. there are no ingoing roads to the city s and the city s is the only such city).\u000aThe city t should be the only such city that all its roads are oriented in (i.e. there are no outgoing roads from the city t and the city t is the only such city).\u000aHelp the minister solve his problem. Write a program to find any such orientation of all roads or report that no solution exists.\u000aInput\u000aEach test in this problem contains one or more test cases to solve. The first line of the input contains positive number T \u2014 the number of cases to solve.\u000aEach case starts with a line containing four integers n, m, s and t (2\u2009\u2264\u2009n\u2009\u2264\u20094·105, 1\u2009\u2264\u2009m\u2009\u2264\u2009106, 1\u2009\u2264\u2009s,\u2009t\u2009\u2264\u2009n, s\u2009\u2260\u2009t) \u2014 the number of cities, the number of roads and indices of departure and destination cities. The cities are numbered from 1 to n.\u000aThe following m lines contain roads, one road per line. Each road is given as two integer numbers xj, yj (1\u2009\u2264\u2009xj,\u2009yj\u2009\u2264\u2009n, xj\u2009\u2260\u2009yj), which means that the j-th road connects cities xj and yj. There is at most one road between any pair of cities. It is possible to reach any city from any other moving along roads.\u000aThe sum of values n over all cases in a test doesn't exceed 4·105. The sum of values m over all cases in a test doesn't exceed 106.\u000aOutput\u000aFor each case print "Yes" if the answer exists. In the following m lines print roads in the required directions. You can print roads in arbitrary order. If there are multiple answers, print any of them.\u000aPrint the only line "No" if there is no answer for a case.\u000aExample\u000ainput\u000a2\u000a4 4 1 2\u000a1 2\u000a2 3\u000a3 4\u000a4 1\u000a3 2 1 3\u000a3 1\u000a2 3\u000aoutput\u000aYes\u000a1 2\u000a3 2\u000a4 3\u000a1 4\u000aNo
+p3
+sS'problemStatement'
+p4
+VK. Roads Orientation Problem\u000atime limit per test5 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aBerland consists of n cities and m bidirectional roads connecting pairs of cities. There is no road connecting a city to itself, and between any pair of cities there is no more than one road. It is possible to reach any city from any other moving along roads.\u000aCurrently Mr. President is in the city s and his destination is the city t. He plans to move along roads from s to t (s\u2009\u2260\u2009t).\u000aThat's why Ministry of Fools and Roads has difficult days. The minister is afraid that Mr. President could get into a traffic jam or get lost. Who knows what else can happen!\u000aTo be sure that everything goes as planned, the minister decided to temporarily make all roads one-way. So each road will be oriented in one of two possible directions. The following conditions must be satisfied:\u000aThere should be no cycles along roads after orientation.\u000aThe city s should be the only such city that all its roads are oriented out (i.e. there are no ingoing roads to the city s and the city s is the only such city).\u000aThe city t should be the only such city that all its roads are oriented in (i.e. there are no outgoing roads from the city t and the city t is the only such city).\u000aHelp the minister solve his problem. Write a program to find any such orientation of all roads or report that no solution exists.\u000aInput\u000aEach test in this problem contains one or more test cases to solve. The first line of the input contains positive number T \u2014 the number of cases to solve.\u000aEach case starts with a line containing four integers n, m, s and t (2\u2009\u2264\u2009n\u2009\u2264\u20094·105, 1\u2009\u2264\u2009m\u2009\u2264\u2009106, 1\u2009\u2264\u2009s,\u2009t\u2009\u2264\u2009n, s\u2009\u2260\u2009t) \u2014 the number of cities, the number of roads and indices of departure and destination cities. The cities are numbered from 1 to n.\u000aThe following m lines contain roads, one road per line. Each road is given as two integer numbers xj, yj (1\u2009\u2264\u2009xj,\u2009yj\u2009\u2264\u2009n, xj\u2009\u2260\u2009yj), which means that the j-th road connects cities xj and yj. There is at most one road between any pair of cities. It is possible to reach any city from any other moving along roads.\u000aThe sum of values n over all cases in a test doesn't exceed 4·105. The sum of values m over all cases in a test doesn't exceed 106.\u000aOutput\u000aFor each case print "Yes" if the answer exists. In the following m lines print roads in the required directions. You can print roads in arbitrary order. If there are multiple answers, print any of them.\u000aPrint the only line "No" if there is no answer for a case.\u000aExample\u000ainput\u000a2\u000a4 4 1 2\u000a1 2\u000a2 3\u000a3 4\u000a4 1\u000a3 2 1 3\u000a3 1\u000a2 3\u000aoutput\u000aYes\u000a1 2\u000a3 2\u000a4 3\u000a1 4\u000aNo
+p5
+sS'name'
+p6
+VK. Roads Orientation Problem
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/K
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V5 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVFor each case print "Yes" if the answer exists. In the following m lines print roads in the required directions. You can print roads in arbitrary order. If there are multiple answers, print any of them.
+p19
+aVPrint the only line "No" if there is no answer for a case.
+p20
+asS'statement'
+p21
+(lp22
+VK. Roads Orientation Problem
+p23
+aVtime limit per test5 seconds
+p24
+aVmemory limit per test512 megabytes
+p25
+aVinputstandard input
+p26
+aVoutputstandard output
+p27
+aVBerland consists of n cities and m bidirectional roads connecting pairs of cities. There is no road connecting a city to itself, and between any pair of cities there is no more than one road. It is possible to reach any city from any other moving along roads.
+p28
+aVCurrently Mr. President is in the city s and his destination is the city t. He plans to move along roads from s to t (s\u2009\u2260\u2009t).
+p29
+aVThat's why Ministry of Fools and Roads has difficult days. The minister is afraid that Mr. President could get into a traffic jam or get lost. Who knows what else can happen!
+p30
+aVTo be sure that everything goes as planned, the minister decided to temporarily make all roads one-way. So each road will be oriented in one of two possible directions. The following conditions must be satisfied:
+p31
+aVThere should be no cycles along roads after orientation.
+p32
+aVThe city s should be the only such city that all its roads are oriented out (i.e. there are no ingoing roads to the city s and the city s is the only such city).
+p33
+aVThe city t should be the only such city that all its roads are oriented in (i.e. there are no outgoing roads from the city t and the city t is the only such city).
+p34
+aVHelp the minister solve his problem. Write a program to find any such orientation of all roads or report that no solution exists.
+p35
+asS'problemId'
+p36
+V730/K
+p37
+sS'input'
+p38
+(lp39
+VInput
+p40
+aVEach test in this problem contains one or more test cases to solve. The first line of the input contains positive number T \u2014 the number of cases to solve.
+p41
+aVEach case starts with a line containing four integers n, m, s and t (2\u2009\u2264\u2009n\u2009\u2264\u20094·105, 1\u2009\u2264\u2009m\u2009\u2264\u2009106, 1\u2009\u2264\u2009s,\u2009t\u2009\u2264\u2009n, s\u2009\u2260\u2009t) \u2014 the number of cities, the number of roads and indices of departure and destination cities. The cities are numbered from 1 to n.
+p42
+aVThe following m lines contain roads, one road per line. Each road is given as two integer numbers xj, yj (1\u2009\u2264\u2009xj,\u2009yj\u2009\u2264\u2009n, xj\u2009\u2260\u2009yj), which means that the j-th road connects cities xj and yj. There is at most one road between any pair of cities. It is possible to reach any city from any other moving along roads.
+p43
+aVThe sum of values n over all cases in a test doesn't exceed 4·105. The sum of values m over all cases in a test doesn't exceed 106.
+p44
+asS'id'
+p45
+c__builtin__
+id
+p46
+sS'constraints'
+p47
+g39
+sb.

@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Coprime Permutation\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aTwo positive integers are coprime if and only if they don't have a common divisor greater than 1.\u000aSome bear doesn't want to tell Radewoosh how to solve some algorithmic problem. So, Radewoosh is going to break into that bear's safe with solutions. To pass through the door, he must enter a permutation of numbers 1 through n. The door opens if and only if an entered permutation p1,\u2009p2,\u2009...,\u2009pn satisfies:\u000aIn other words, two different elements are coprime if and only if their indices are coprime.\u000aSome elements of a permutation may be already fixed. In how many ways can Radewoosh fill the remaining gaps so that the door will open? Print the answer modulo 109\u2009+\u20097.\u000aInput\u000aThe first line of the input contains one integer n (2\u2009\u2264\u2009n\u2009\u2264\u20091\u2009000\u2009000).\u000aThe second line contains n integers p1,\u2009p2,\u2009...,\u2009pn (0\u2009\u2264\u2009pi\u2009\u2264\u2009n) where pi\u2009=\u20090 means a gap to fill, and pi\u2009\u2265\u20091 means a fixed number.\u000aIt's guaranteed that if i\u2009\u2260\u2009j and pi,\u2009pj\u2009\u2265\u20091 then pi\u2009\u2260\u2009pj.\u000aOutput\u000aPrint the number of ways to fill the gaps modulo 109\u2009+\u20097 (i.e. modulo 1000000007).\u000aExamples\u000ainput\u000a4\u000a0 0 0 0\u000aoutput\u000a4\u000ainput\u000a5\u000a0 0 1 2 0\u000aoutput\u000a2\u000ainput\u000a6\u000a0 0 1 2 0 0\u000aoutput\u000a0\u000ainput\u000a5\u000a5 3 4 2 1\u000aoutput\u000a0\u000aNote\u000aIn the first sample test, none of four element is fixed. There are four permutations satisfying the given conditions: (1,2,3,4), (1,4,3,2), (3,2,1,4), (3,4,1,2).\u000aIn the second sample test, there must be p3\u2009=\u20091 and p4\u2009=\u20092. The two permutations satisfying the conditions are: (3,4,1,2,5), (5,4,1,2,3).
+p3
+sS'problemStatement'
+p4
+VF. Coprime Permutation\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aTwo positive integers are coprime if and only if they don't have a common divisor greater than 1.\u000aSome bear doesn't want to tell Radewoosh how to solve some algorithmic problem. So, Radewoosh is going to break into that bear's safe with solutions. To pass through the door, he must enter a permutation of numbers 1 through n. The door opens if and only if an entered permutation p1,\u2009p2,\u2009...,\u2009pn satisfies:\u000aIn other words, two different elements are coprime if and only if their indices are coprime.\u000aSome elements of a permutation may be already fixed. In how many ways can Radewoosh fill the remaining gaps so that the door will open? Print the answer modulo 109\u2009+\u20097.\u000aInput\u000aThe first line of the input contains one integer n (2\u2009\u2264\u2009n\u2009\u2264\u20091\u2009000\u2009000).\u000aThe second line contains n integers p1,\u2009p2,\u2009...,\u2009pn (0\u2009\u2264\u2009pi\u2009\u2264\u2009n) where pi\u2009=\u20090 means a gap to fill, and pi\u2009\u2265\u20091 means a fixed number.\u000aIt's guaranteed that if i\u2009\u2260\u2009j and pi,\u2009pj\u2009\u2265\u20091 then pi\u2009\u2260\u2009pj.\u000aOutput\u000aPrint the number of ways to fill the gaps modulo 109\u2009+\u20097 (i.e. modulo 1000000007).\u000aExamples\u000ainput\u000a4\u000a0 0 0 0\u000aoutput\u000a4\u000ainput\u000a5\u000a0 0 1 2 0\u000aoutput\u000a2\u000ainput\u000a6\u000a0 0 1 2 0 0\u000aoutput\u000a0\u000ainput\u000a5\u000a5 3 4 2 1\u000aoutput\u000a0\u000aNote\u000aIn the first sample test, none of four element is fixed. There are four permutations satisfying the given conditions: (1,2,3,4), (1,4,3,2), (3,2,1,4), (3,4,1,2).\u000aIn the second sample test, there must be p3\u2009=\u20091 and p4\u2009=\u20092. The two permutations satisfying the conditions are: (3,4,1,2,5), (5,4,1,2,3).
+p5
+sS'name'
+p6
+VF. Coprime Permutation
+p7
+sS'tags'
+p8
+Vcombinatorics number theory 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/698/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V698/F
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

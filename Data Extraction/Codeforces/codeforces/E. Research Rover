@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Research Rover\u000atime limit per test2.5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aUnfortunately, the formal description of the task turned out to be too long, so here is the legend.\u000aResearch rover finally reached the surface of Mars and is ready to complete its mission. Unfortunately, due to the mistake in the navigation system design, the rover is located in the wrong place.\u000aThe rover will operate on the grid consisting of n rows and m columns. We will define as (r,\u2009c) the cell located in the row r and column c. From each cell the rover is able to move to any cell that share a side with the current one.\u000aThe rover is currently located at cell (1,\u20091) and has to move to the cell (n,\u2009m). It will randomly follow some shortest path between these two cells. Each possible way is chosen equiprobably.\u000aThe cargo section of the rover contains the battery required to conduct the research. Initially, the battery charge is equal to s units of energy.\u000aSome of the cells contain anomaly. Each time the rover gets to the cell with anomaly, the battery looses half of its charge rounded down. Formally, if the charge was equal to x before the rover gets to the cell with anomaly, the charge will change to .\u000aWhile the rover picks a random shortest path to proceed, compute the expected value of the battery charge after it reaches cell (n,\u2009m). If the cells (1,\u20091) and (n,\u2009m) contain anomaly, they also affect the charge of the battery.\u000aInput\u000aThe first line of the input contains four integers n, m, k and s (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100\u2009000, 0\u2009\u2264\u2009k\u2009\u2264\u20092000, 1\u2009\u2264\u2009s\u2009\u2264\u20091\u2009000\u2009000) \u2014 the number of rows and columns of the field, the number of cells with anomaly and the initial charge of the battery respectively.\u000aThe follow k lines containing two integers ri and ci (1\u2009\u2264\u2009ri\u2009\u2264\u2009n, 1\u2009\u2264\u2009ci\u2009\u2264\u2009m) \u2014 coordinates of the cells, containing anomaly. It's guaranteed that each cell appears in this list no more than once.\u000aOutput\u000aThe answer can always be represented as an irreducible fraction . Print the only integer P·Q\u2009-\u20091 modulo 109\u2009+\u20097.\u000aExamples\u000ainput\u000a3 3 2 11\u000a2 1\u000a2 3\u000aoutput\u000a333333342\u000ainput\u000a4 5 3 17\u000a1 2\u000a3 3\u000a4 1\u000aoutput\u000a514285727\u000ainput\u000a1 6 2 15\u000a1 1\u000a1 5\u000aoutput\u000a4\u000aNote\u000aIn the first sample, the rover picks one of the following six routes:\u000a, after passing cell (2,\u20093) charge is equal to 6.\u000a, after passing cell (2,\u20093) charge is equal to 6.\u000a, charge remains unchanged and equals 11.\u000a, after passing cells (2,\u20091) and (2,\u20093) charge equals 6 and then 3.\u000a, after passing cell (2,\u20091) charge is equal to 6.\u000a, after passing cell (2,\u20091) charge is equal to 6.\u000aExpected value of the battery charge is calculated by the following formula:\u000a.\u000aThus P\u2009=\u200919, and Q\u2009=\u20093.\u000a3\u2009-\u20091 modulo 109\u2009+\u20097 equals 333333336.\u000a19·333333336\u2009=\u2009333333342 (mod 109\u2009+\u20097)
+p3
+sS'problemStatement'
+p4
+VE. Research Rover\u000atime limit per test2.5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aUnfortunately, the formal description of the task turned out to be too long, so here is the legend.\u000aResearch rover finally reached the surface of Mars and is ready to complete its mission. Unfortunately, due to the mistake in the navigation system design, the rover is located in the wrong place.\u000aThe rover will operate on the grid consisting of n rows and m columns. We will define as (r,\u2009c) the cell located in the row r and column c. From each cell the rover is able to move to any cell that share a side with the current one.\u000aThe rover is currently located at cell (1,\u20091) and has to move to the cell (n,\u2009m). It will randomly follow some shortest path between these two cells. Each possible way is chosen equiprobably.\u000aThe cargo section of the rover contains the battery required to conduct the research. Initially, the battery charge is equal to s units of energy.\u000aSome of the cells contain anomaly. Each time the rover gets to the cell with anomaly, the battery looses half of its charge rounded down. Formally, if the charge was equal to x before the rover gets to the cell with anomaly, the charge will change to .\u000aWhile the rover picks a random shortest path to proceed, compute the expected value of the battery charge after it reaches cell (n,\u2009m). If the cells (1,\u20091) and (n,\u2009m) contain anomaly, they also affect the charge of the battery.\u000aInput\u000aThe first line of the input contains four integers n, m, k and s (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100\u2009000, 0\u2009\u2264\u2009k\u2009\u2264\u20092000, 1\u2009\u2264\u2009s\u2009\u2264\u20091\u2009000\u2009000) \u2014 the number of rows and columns of the field, the number of cells with anomaly and the initial charge of the battery respectively.\u000aThe follow k lines containing two integers ri and ci (1\u2009\u2264\u2009ri\u2009\u2264\u2009n, 1\u2009\u2264\u2009ci\u2009\u2264\u2009m) \u2014 coordinates of the cells, containing anomaly. It's guaranteed that each cell appears in this list no more than once.\u000aOutput\u000aThe answer can always be represented as an irreducible fraction . Print the only integer P·Q\u2009-\u20091 modulo 109\u2009+\u20097.\u000aExamples\u000ainput\u000a3 3 2 11\u000a2 1\u000a2 3\u000aoutput\u000a333333342\u000ainput\u000a4 5 3 17\u000a1 2\u000a3 3\u000a4 1\u000aoutput\u000a514285727\u000ainput\u000a1 6 2 15\u000a1 1\u000a1 5\u000aoutput\u000a4\u000aNote\u000aIn the first sample, the rover picks one of the following six routes:\u000a, after passing cell (2,\u20093) charge is equal to 6.\u000a, after passing cell (2,\u20093) charge is equal to 6.\u000a, charge remains unchanged and equals 11.\u000a, after passing cells (2,\u20091) and (2,\u20093) charge equals 6 and then 3.\u000a, after passing cell (2,\u20091) charge is equal to 6.\u000a, after passing cell (2,\u20091) charge is equal to 6.\u000aExpected value of the battery charge is calculated by the following formula:\u000a.\u000aThus P\u2009=\u200919, and Q\u2009=\u20093.\u000a3\u2009-\u20091 modulo 109\u2009+\u20097 equals 333333336.\u000a19·333333336\u2009=\u2009333333342 (mod 109\u2009+\u20097)
+p5
+sS'name'
+p6
+VE. Research Rover
+p7
+sS'tags'
+p8
+Vcombinatorics dp 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/722/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2.5 seconds
+p15
+sS'problemId'
+p16
+V722/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

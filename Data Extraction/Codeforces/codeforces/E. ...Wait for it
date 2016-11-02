@@ -1,0 +1,94 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. ...Wait for it...\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aBarney is searching for his dream girl. He lives in NYC. NYC has n junctions numbered from 1 to n and n\u2009-\u20091 roads connecting them. We will consider the NYC as a rooted tree with root being junction 1. m girls live in NYC, i-th of them lives along junction ci and her weight initially equals i pounds.\u000aBarney consider a girl x to be better than a girl y if and only if: girl x has weight strictly less than girl y or girl x and girl y have equal weights and index of girl x living junction index is strictly less than girl y living junction index, i.e. cx\u2009<\u2009cy. Thus for any two girls one of them is always better than another one.\u000aFor the next q days, one event happens each day. There are two types of events:\u000aBarney goes from junction v to junction u. As a result he picks at most k best girls he still have not invited from junctions on his way and invites them to his house to test if one of them is his dream girl. If there are less than k not invited girls on his path, he invites all of them.\u000aGirls living along junctions in subtree of junction v (including v itself) put on some weight. As result, their weights increase by k pounds.\u000aYour task is for each event of first type tell Barney the indices of girls he will invite to his home in this event.\u000aInput\u000aThe first line of input contains three integers n, m and q (1\u2009\u2264\u2009n,\u2009m,\u2009q\u2009\u2264\u2009105) \u2014 the number of junctions in NYC, the number of girls living in NYC and the number of events respectively.\u000aThe next n\u2009-\u20091 lines describes the roads. Each line contains two integers v and u (1\u2009\u2264\u2009v,\u2009u\u2009\u2264\u2009n,\u2009v\u2009\u2260\u2009u) meaning that there is a road connecting junctions v and u .\u000aThe next line contains m integers c1,\u2009c2,\u2009...,\u2009cm (1\u2009\u2264\u2009ci\u2009\u2264\u2009n) \u2014 the girl's living junctions.\u000aThe next q lines describe the events in chronological order. Each line starts with an integer t (1\u2009\u2264\u2009t\u2009\u2264\u20092) \u2014 type of the event .\u000aIf t\u2009=\u20091 then the line describes event of first type three integers v, u and k (1\u2009\u2264\u2009v,\u2009u,\u2009k\u2009\u2264\u2009n) follow \u2014 the endpoints of Barney's path and the number of girls that he will invite at most.\u000aOtherwise the line describes event of second type and two integers v and k (1\u2009\u2264\u2009v\u2009\u2264\u2009n,\u20091\u2009\u2264\u2009k\u2009\u2264\u2009109) follow \u2014 the root of the subtree and value by which all the girls' weights in the subtree should increase.\u000aOutput\u000aFor each event of the first type, print number t and then t integers g1,\u2009g2,\u2009...,\u2009gt in one line, meaning that in this event Barney will invite t girls whose indices are g1,\u2009...,\u2009gt in the order from the best to the worst according to Barney's considerations.\u000aExample\u000ainput\u000a5 7 11\u000a3 5\u000a2 3\u000a4 3\u000a1 4\u000a4 1 4 5 4 1 4\u000a2 4 3\u000a1 2 1 2\u000a1 4 2 1\u000a2 2 10\u000a2 1 10\u000a1 2 4 1\u000a1 2 3 4\u000a2 5 2\u000a2 4 9\u000a1 3 5 2\u000a1 1 2 3\u000aoutput\u000a2 2 1 \u000a1 3 \u000a1 5 \u000a0 \u000a1 4 \u000a2 6 7 \u000aNote\u000aFor the first sample case:\u000aDescription of events:\u000aWeights of girls in subtree of junction 4 increase by 3. These girls have IDs: 1,\u20093,\u20095,\u20094,\u20097.\u000aBarney goes from junction 2 to 1. Girls on his way have IDs 1,\u20092,\u20093,\u20095,\u20096,\u20097 with weights 4,\u20092,\u20096,\u20098,\u20096,\u200910 respectively. So, he invites girls 2 and 1.\u000aBarney goes from junction 4 to junction 2. Girls on his way has IDs 3,\u20095,\u20097 with weights 6,\u20098,\u200910 respectively. So he invites girl 3.\u000aWeight of girls in subtree of junction 2 increase by 10. There are no not invited girls, so nothing happens.\u000aWeight of girls in subtree of junction 1 increase by 10. These girls (all girls left) have IDs: 4,\u20095,\u20096,\u20097.\u000aBarney goes from junction 2 to junction 4. Girls on his way has IDs 5,\u20097 with weights 18,\u200920 respectively. So he invites girl 5.\u000aBarney goes from junction 2 to junction 3. There is no girl on his way.\u000aWeight of girls in subtree of junction 5 increase by 2. The only girl there is girl with ID 4.\u000aWeight of girls in subtree of junction 4 increase by 9. These girls have IDs: 4,\u20096,\u20097.\u000aBarney goes from junction 3 to junction 5. Only girl on his way is girl with ID 4.\u000aBarney goes from junction 1 to junction 2. Girls on his way has IDs 6,\u20097 with weights 16,\u200929 respectively.
+p3
+sS'problemStatement'
+p4
+VE. ...Wait for it...\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aBarney is searching for his dream girl. He lives in NYC. NYC has n junctions numbered from 1 to n and n\u2009-\u20091 roads connecting them. We will consider the NYC as a rooted tree with root being junction 1. m girls live in NYC, i-th of them lives along junction ci and her weight initially equals i pounds.\u000aBarney consider a girl x to be better than a girl y if and only if: girl x has weight strictly less than girl y or girl x and girl y have equal weights and index of girl x living junction index is strictly less than girl y living junction index, i.e. cx\u2009<\u2009cy. Thus for any two girls one of them is always better than another one.\u000aFor the next q days, one event happens each day. There are two types of events:\u000aBarney goes from junction v to junction u. As a result he picks at most k best girls he still have not invited from junctions on his way and invites them to his house to test if one of them is his dream girl. If there are less than k not invited girls on his path, he invites all of them.\u000aGirls living along junctions in subtree of junction v (including v itself) put on some weight. As result, their weights increase by k pounds.\u000aYour task is for each event of first type tell Barney the indices of girls he will invite to his home in this event.\u000aInput\u000aThe first line of input contains three integers n, m and q (1\u2009\u2264\u2009n,\u2009m,\u2009q\u2009\u2264\u2009105) \u2014 the number of junctions in NYC, the number of girls living in NYC and the number of events respectively.\u000aThe next n\u2009-\u20091 lines describes the roads. Each line contains two integers v and u (1\u2009\u2264\u2009v,\u2009u\u2009\u2264\u2009n,\u2009v\u2009\u2260\u2009u) meaning that there is a road connecting junctions v and u .\u000aThe next line contains m integers c1,\u2009c2,\u2009...,\u2009cm (1\u2009\u2264\u2009ci\u2009\u2264\u2009n) \u2014 the girl's living junctions.\u000aThe next q lines describe the events in chronological order. Each line starts with an integer t (1\u2009\u2264\u2009t\u2009\u2264\u20092) \u2014 type of the event .\u000aIf t\u2009=\u20091 then the line describes event of first type three integers v, u and k (1\u2009\u2264\u2009v,\u2009u,\u2009k\u2009\u2264\u2009n) follow \u2014 the endpoints of Barney's path and the number of girls that he will invite at most.\u000aOtherwise the line describes event of second type and two integers v and k (1\u2009\u2264\u2009v\u2009\u2264\u2009n,\u20091\u2009\u2264\u2009k\u2009\u2264\u2009109) follow \u2014 the root of the subtree and value by which all the girls' weights in the subtree should increase.\u000aOutput\u000aFor each event of the first type, print number t and then t integers g1,\u2009g2,\u2009...,\u2009gt in one line, meaning that in this event Barney will invite t girls whose indices are g1,\u2009...,\u2009gt in the order from the best to the worst according to Barney's considerations.\u000aExample\u000ainput\u000a5 7 11\u000a3 5\u000a2 3\u000a4 3\u000a1 4\u000a4 1 4 5 4 1 4\u000a2 4 3\u000a1 2 1 2\u000a1 4 2 1\u000a2 2 10\u000a2 1 10\u000a1 2 4 1\u000a1 2 3 4\u000a2 5 2\u000a2 4 9\u000a1 3 5 2\u000a1 1 2 3\u000aoutput\u000a2 2 1 \u000a1 3 \u000a1 5 \u000a0 \u000a1 4 \u000a2 6 7 \u000aNote\u000aFor the first sample case:\u000aDescription of events:\u000aWeights of girls in subtree of junction 4 increase by 3. These girls have IDs: 1,\u20093,\u20095,\u20094,\u20097.\u000aBarney goes from junction 2 to 1. Girls on his way have IDs 1,\u20092,\u20093,\u20095,\u20096,\u20097 with weights 4,\u20092,\u20096,\u20098,\u20096,\u200910 respectively. So, he invites girls 2 and 1.\u000aBarney goes from junction 4 to junction 2. Girls on his way has IDs 3,\u20095,\u20097 with weights 6,\u20098,\u200910 respectively. So he invites girl 3.\u000aWeight of girls in subtree of junction 2 increase by 10. There are no not invited girls, so nothing happens.\u000aWeight of girls in subtree of junction 1 increase by 10. These girls (all girls left) have IDs: 4,\u20095,\u20096,\u20097.\u000aBarney goes from junction 2 to junction 4. Girls on his way has IDs 5,\u20097 with weights 18,\u200920 respectively. So he invites girl 5.\u000aBarney goes from junction 2 to junction 3. There is no girl on his way.\u000aWeight of girls in subtree of junction 5 increase by 2. The only girl there is girl with ID 4.\u000aWeight of girls in subtree of junction 4 increase by 9. These girls have IDs: 4,\u20096,\u20097.\u000aBarney goes from junction 3 to junction 5. Only girl on his way is girl with ID 4.\u000aBarney goes from junction 1 to junction 2. Girls on his way has IDs 6,\u20097 with weights 16,\u200929 respectively.
+p5
+sS'name'
+p6
+VE. ...Wait for it...
+p7
+sS'tags'
+p8
+Vdata structures dsu trees 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/696/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVFor each event of the first type, print number t and then t integers g1,\u2009g2,\u2009...,\u2009gt in one line, meaning that in this event Barney will invite t girls whose indices are g1,\u2009...,\u2009gt in the order from the best to the worst according to Barney's considerations.
+p19
+asS'statement'
+p20
+(lp21
+VE. ...Wait for it...
+p22
+aVtime limit per test3 seconds
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVBarney is searching for his dream girl. He lives in NYC. NYC has n junctions numbered from 1 to n and n\u2009-\u20091 roads connecting them. We will consider the NYC as a rooted tree with root being junction 1. m girls live in NYC, i-th of them lives along junction ci and her weight initially equals i pounds.
+p27
+aVBarney consider a girl x to be better than a girl y if and only if: girl x has weight strictly less than girl y or girl x and girl y have equal weights and index of girl x living junction index is strictly less than girl y living junction index, i.e. cx\u2009<\u2009cy. Thus for any two girls one of them is always better than another one.
+p28
+aVFor the next q days, one event happens each day. There are two types of events:
+p29
+aVBarney goes from junction v to junction u. As a result he picks at most k best girls he still have not invited from junctions on his way and invites them to his house to test if one of them is his dream girl. If there are less than k not invited girls on his path, he invites all of them.
+p30
+aVGirls living along junctions in subtree of junction v (including v itself) put on some weight. As result, their weights increase by k pounds.
+p31
+aVYour task is for each event of first type tell Barney the indices of girls he will invite to his home in this event.
+p32
+asS'problemId'
+p33
+V696/E
+p34
+sS'input'
+p35
+(lp36
+VInput
+p37
+aVThe first line of input contains three integers n, m and q (1\u2009\u2264\u2009n,\u2009m,\u2009q\u2009\u2264\u2009105) \u2014 the number of junctions in NYC, the number of girls living in NYC and the number of events respectively.
+p38
+aVThe next n\u2009-\u20091 lines describes the roads. Each line contains two integers v and u (1\u2009\u2264\u2009v,\u2009u\u2009\u2264\u2009n,\u2009v\u2009\u2260\u2009u) meaning that there is a road connecting junctions v and u .
+p39
+aVThe next line contains m integers c1,\u2009c2,\u2009...,\u2009cm (1\u2009\u2264\u2009ci\u2009\u2264\u2009n) \u2014 the girl's living junctions.
+p40
+aVThe next q lines describe the events in chronological order. Each line starts with an integer t (1\u2009\u2264\u2009t\u2009\u2264\u20092) \u2014 type of the event .
+p41
+aVIf t\u2009=\u20091 then the line describes event of first type three integers v, u and k (1\u2009\u2264\u2009v,\u2009u,\u2009k\u2009\u2264\u2009n) follow \u2014 the endpoints of Barney's path and the number of girls that he will invite at most.
+p42
+aVOtherwise the line describes event of second type and two integers v and k (1\u2009\u2264\u2009v\u2009\u2264\u2009n,\u20091\u2009\u2264\u2009k\u2009\u2264\u2009109) follow \u2014 the root of the subtree and value by which all the girls' weights in the subtree should increase.
+p43
+asS'id'
+p44
+c__builtin__
+id
+p45
+sS'constraints'
+p46
+g36
+sb.

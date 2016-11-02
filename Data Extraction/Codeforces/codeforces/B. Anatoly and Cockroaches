@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Anatoly and Cockroaches\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAnatoly lives in the university dorm as many other students do. As you know, cockroaches are also living there together with students. Cockroaches might be of two colors: black and red. There are n cockroaches living in Anatoly's room.\u000aAnatoly just made all his cockroaches to form a single line. As he is a perfectionist, he would like the colors of cockroaches in the line to alternate. He has a can of black paint and a can of red paint. In one turn he can either swap any two cockroaches, or take any single cockroach and change it's color.\u000aHelp Anatoly find out the minimum number of turns he needs to make the colors of cockroaches in the line alternate.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of cockroaches.\u000aThe second line contains a string of length n, consisting of characters 'b' and 'r' that denote black cockroach and red cockroach respectively.\u000aOutput\u000aPrint one integer \u2014 the minimum number of moves Anatoly has to perform in order to make the colors of cockroaches in the line to alternate.\u000aExamples\u000ainput\u000a5\u000arbbrr\u000aoutput\u000a1\u000ainput\u000a5\u000abbbbb\u000aoutput\u000a2\u000ainput\u000a3\u000arbr\u000aoutput\u000a0\u000aNote\u000aIn the first sample, Anatoly has to swap third and fourth cockroaches. He needs 1 turn to do this.\u000aIn the second sample, the optimum answer is to paint the second and the fourth cockroaches red. This requires 2 turns.\u000aIn the third sample, the colors of cockroaches in the line are alternating already, thus the answer is 0.
+p3
+sS'problemStatement'
+p4
+VB. Anatoly and Cockroaches\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAnatoly lives in the university dorm as many other students do. As you know, cockroaches are also living there together with students. Cockroaches might be of two colors: black and red. There are n cockroaches living in Anatoly's room.\u000aAnatoly just made all his cockroaches to form a single line. As he is a perfectionist, he would like the colors of cockroaches in the line to alternate. He has a can of black paint and a can of red paint. In one turn he can either swap any two cockroaches, or take any single cockroach and change it's color.\u000aHelp Anatoly find out the minimum number of turns he needs to make the colors of cockroaches in the line alternate.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of cockroaches.\u000aThe second line contains a string of length n, consisting of characters 'b' and 'r' that denote black cockroach and red cockroach respectively.\u000aOutput\u000aPrint one integer \u2014 the minimum number of moves Anatoly has to perform in order to make the colors of cockroaches in the line to alternate.\u000aExamples\u000ainput\u000a5\u000arbbrr\u000aoutput\u000a1\u000ainput\u000a5\u000abbbbb\u000aoutput\u000a2\u000ainput\u000a3\u000arbr\u000aoutput\u000a0\u000aNote\u000aIn the first sample, Anatoly has to swap third and fourth cockroaches. He needs 1 turn to do this.\u000aIn the second sample, the optimum answer is to paint the second and the fourth cockroaches red. This requires 2 turns.\u000aIn the third sample, the colors of cockroaches in the line are alternating already, thus the answer is 0.
+p5
+sS'name'
+p6
+VB. Anatoly and Cockroaches
+p7
+sS'tags'
+p8
+Vgreedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/719/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V719/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

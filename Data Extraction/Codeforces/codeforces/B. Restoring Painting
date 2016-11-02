@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Restoring Painting\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVasya works as a watchman in the gallery. Unfortunately, one of the most expensive paintings was stolen while he was on duty. He doesn't want to be fired, so he has to quickly restore the painting. He remembers some facts about it.\u000aThe painting is a square 3\u2009×\u20093, each cell contains a single integer from 1 to n, and different cells may contain either different or equal integers.\u000aThe sum of integers in each of four squares 2\u2009×\u20092 is equal to the sum of integers in the top left square 2\u2009×\u20092.\u000aFour elements a, b, c and d are known and are located as shown on the picture below.\u000aHelp Vasya find out the number of distinct squares the satisfy all the conditions above. Note, that this number may be equal to 0, meaning Vasya remembers something wrong.\u000aTwo squares are considered to be different, if there exists a cell that contains two different integers in different squares.\u000aInput\u000aThe first line of the input contains five integers n, a, b, c and d (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 1\u2009\u2264\u2009a,\u2009b,\u2009c,\u2009d\u2009\u2264\u2009n) \u2014 maximum possible value of an integer in the cell and four integers that Vasya remembers.\u000aOutput\u000aPrint one integer \u2014 the number of distinct valid squares.\u000aExamples\u000ainput\u000a2 1 1 1 2\u000aoutput\u000a2\u000ainput\u000a3 3 1 2 3\u000aoutput\u000a6\u000aNote\u000aBelow are all the possible paintings for the first sample.\u000aIn the second sample, only paintings displayed below satisfy all the rules.
+p3
+sS'problemStatement'
+p4
+VB. Restoring Painting\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVasya works as a watchman in the gallery. Unfortunately, one of the most expensive paintings was stolen while he was on duty. He doesn't want to be fired, so he has to quickly restore the painting. He remembers some facts about it.\u000aThe painting is a square 3\u2009×\u20093, each cell contains a single integer from 1 to n, and different cells may contain either different or equal integers.\u000aThe sum of integers in each of four squares 2\u2009×\u20092 is equal to the sum of integers in the top left square 2\u2009×\u20092.\u000aFour elements a, b, c and d are known and are located as shown on the picture below.\u000aHelp Vasya find out the number of distinct squares the satisfy all the conditions above. Note, that this number may be equal to 0, meaning Vasya remembers something wrong.\u000aTwo squares are considered to be different, if there exists a cell that contains two different integers in different squares.\u000aInput\u000aThe first line of the input contains five integers n, a, b, c and d (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 1\u2009\u2264\u2009a,\u2009b,\u2009c,\u2009d\u2009\u2264\u2009n) \u2014 maximum possible value of an integer in the cell and four integers that Vasya remembers.\u000aOutput\u000aPrint one integer \u2014 the number of distinct valid squares.\u000aExamples\u000ainput\u000a2 1 1 1 2\u000aoutput\u000a2\u000ainput\u000a3 3 1 2 3\u000aoutput\u000a6\u000aNote\u000aBelow are all the possible paintings for the first sample.\u000aIn the second sample, only paintings displayed below satisfy all the rules.
+p5
+sS'name'
+p6
+VB. Restoring Painting
+p7
+sS'tags'
+p8
+Vbrute force constructive algorithms math 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/675/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V675/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

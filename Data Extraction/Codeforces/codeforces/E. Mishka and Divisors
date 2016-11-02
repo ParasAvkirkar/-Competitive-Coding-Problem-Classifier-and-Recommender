@@ -1,0 +1,90 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Mishka and Divisors\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAfter playing with her beautiful array, Mishka decided to learn some math. After learning how to multiply, divide and what is divisibility, she is now interested in solving the following problem.\u000aYou are given integer k and array a1,\u2009a2,\u2009...,\u2009an of n integers. You are to find non-empty subsequence of array elements such that the product of its elements is divisible by k and it contains minimum possible number of elements.\u000aFormally, you are to find a sequence of indices 1\u2009\u2264\u2009i1\u2009<\u2009i2\u2009<\u2009...\u2009<\u2009im\u2009\u2264\u2009n such that is divisible by k while m is minimum possible among all such variants.\u000aIf there are more than one such subsequences, you should choose one among them, such that sum of its elements is minimum possible.\u000aMishka quickly solved this problem. Will you do so?\u000aInput\u000aThe first line of the input contains two integers n and k (1\u2009\u2264\u2009n\u2009\u2264\u20091\u2009000, 1\u2009\u2264\u2009k\u2009\u2264\u20091012).\u000aThe second line of the input contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091012) \u2014 array elements.\u000aOutput\u000aPrint single positive integer m in the first line \u2014 the number of elements in desired sequence.\u000aIn the second line print m distinct integers \u2014 the sequence of indices of given array elements, which should be taken into the desired sequence.\u000aIf there are more than one such subsequence (e.g. subsequence of minimum possible number of elements and with minimum possible sum of elements), you can print any of them.\u000aIf there are no such subsequences, print \u2009-\u20091 in the only line.\u000aExample\u000ainput\u000a5 60\u000a2 4 6 5 2\u000aoutput\u000a3\u000a4 3 1 
+p3
+sS'problemStatement'
+p4
+VE. Mishka and Divisors\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAfter playing with her beautiful array, Mishka decided to learn some math. After learning how to multiply, divide and what is divisibility, she is now interested in solving the following problem.\u000aYou are given integer k and array a1,\u2009a2,\u2009...,\u2009an of n integers. You are to find non-empty subsequence of array elements such that the product of its elements is divisible by k and it contains minimum possible number of elements.\u000aFormally, you are to find a sequence of indices 1\u2009\u2264\u2009i1\u2009<\u2009i2\u2009<\u2009...\u2009<\u2009im\u2009\u2264\u2009n such that is divisible by k while m is minimum possible among all such variants.\u000aIf there are more than one such subsequences, you should choose one among them, such that sum of its elements is minimum possible.\u000aMishka quickly solved this problem. Will you do so?\u000aInput\u000aThe first line of the input contains two integers n and k (1\u2009\u2264\u2009n\u2009\u2264\u20091\u2009000, 1\u2009\u2264\u2009k\u2009\u2264\u20091012).\u000aThe second line of the input contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091012) \u2014 array elements.\u000aOutput\u000aPrint single positive integer m in the first line \u2014 the number of elements in desired sequence.\u000aIn the second line print m distinct integers \u2014 the sequence of indices of given array elements, which should be taken into the desired sequence.\u000aIf there are more than one such subsequence (e.g. subsequence of minimum possible number of elements and with minimum possible sum of elements), you can print any of them.\u000aIf there are no such subsequences, print \u2009-\u20091 in the only line.\u000aExample\u000ainput\u000a5 60\u000a2 4 6 5 2\u000aoutput\u000a3\u000a4 3 1 
+p5
+sS'name'
+p6
+VE. Mishka and Divisors
+p7
+sS'tags'
+p8
+Vdp number theory 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/703/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint single positive integer m in the first line \u2014 the number of elements in desired sequence.
+p19
+aVIn the second line print m distinct integers \u2014 the sequence of indices of given array elements, which should be taken into the desired sequence.
+p20
+aVIf there are more than one such subsequence (e.g. subsequence of minimum possible number of elements and with minimum possible sum of elements), you can print any of them.
+p21
+aVIf there are no such subsequences, print \u2009-\u20091 in the only line.
+p22
+asS'statement'
+p23
+(lp24
+VE. Mishka and Divisors
+p25
+aVtime limit per test1 second
+p26
+aVmemory limit per test256 megabytes
+p27
+aVinputstandard input
+p28
+aVoutputstandard output
+p29
+aVAfter playing with her beautiful array, Mishka decided to learn some math. After learning how to multiply, divide and what is divisibility, she is now interested in solving the following problem.
+p30
+aVYou are given integer k and array a1,\u2009a2,\u2009...,\u2009an of n integers. You are to find non-empty subsequence of array elements such that the product of its elements is divisible by k and it contains minimum possible number of elements.
+p31
+aVFormally, you are to find a sequence of indices 1\u2009\u2264\u2009i1\u2009<\u2009i2\u2009<\u2009...\u2009<\u2009im\u2009\u2264\u2009n such that is divisible by k while m is minimum possible among all such variants.
+p32
+aVIf there are more than one such subsequences, you should choose one among them, such that sum of its elements is minimum possible.
+p33
+aVMishka quickly solved this problem. Will you do so?
+p34
+asS'problemId'
+p35
+V703/E
+p36
+sS'input'
+p37
+(lp38
+VInput
+p39
+aVThe first line of the input contains two integers n and k (1\u2009\u2264\u2009n\u2009\u2264\u20091\u2009000, 1\u2009\u2264\u2009k\u2009\u2264\u20091012).
+p40
+aVThe second line of the input contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091012) \u2014 array elements.
+p41
+asS'id'
+p42
+c__builtin__
+id
+p43
+sS'constraints'
+p44
+g38
+sb.

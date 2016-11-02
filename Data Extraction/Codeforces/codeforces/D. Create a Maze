@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Create a Maze\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aZS the Coder loves mazes. Your job is to create one so that he can play with it. A maze consists of n\u2009×\u2009m rooms, and the rooms are arranged in n rows (numbered from the top to the bottom starting from 1) and m columns (numbered from the left to the right starting from 1). The room in the i-th row and j-th column is denoted by (i,\u2009j). A player starts in the room (1,\u20091) and wants to reach the room (n,\u2009m).\u000aEach room has four doors (except for ones at the maze border), one on each of its walls, and two adjacent by the wall rooms shares the same door. Some of the doors are locked, which means it is impossible to pass through the door. For example, if the door connecting (i,\u2009j) and (i,\u2009j\u2009+\u20091) is locked, then we can't go from (i,\u2009j) to (i,\u2009j\u2009+\u20091). Also, one can only travel between the rooms downwards (from the room (i,\u2009j) to the room (i\u2009+\u20091,\u2009j)) or rightwards (from the room (i,\u2009j) to the room (i,\u2009j\u2009+\u20091)) provided the corresponding door is not locked.\u000aThis image represents a maze with some doors locked. The colored arrows denotes all the possible paths while a red cross denotes a locked door.\u000aZS the Coder considers a maze to have difficulty x if there is exactly x ways of travelling from the room (1,\u20091) to the room (n,\u2009m). Two ways are considered different if they differ by the sequence of rooms visited while travelling.\u000aYour task is to create a maze such that its difficulty is exactly equal to T. In addition, ZS the Coder doesn't like large mazes, so the size of the maze and the number of locked doors are limited. Sounds simple enough, right?\u000aInput\u000aThe first and only line of the input contains a single integer T (1\u2009\u2264\u2009T\u2009\u2264\u20091018), the difficulty of the required maze.\u000aOutput\u000aThe first line should contain two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u200950) \u2014 the number of rows and columns of the maze respectively.\u000aThe next line should contain a single integer k (0\u2009\u2264\u2009k\u2009\u2264\u2009300) \u2014 the number of locked doors in the maze.\u000aThen, k lines describing locked doors should follow. Each of them should contain four integers, x1,\u2009y1,\u2009x2,\u2009y2. This means that the door connecting room (x1,\u2009y1) and room (x2,\u2009y2) is locked. Note that room (x2,\u2009y2) should be adjacent either to the right or to the bottom of (x1,\u2009y1), i.e. x2\u2009+\u2009y2 should be equal to x1\u2009+\u2009y1\u2009+\u20091. There should not be a locked door that appears twice in the list.\u000aIt is guaranteed that at least one solution exists. If there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a3\u000aoutput\u000a3 2\u000a0\u000ainput\u000a4\u000aoutput\u000a4 3\u000a3\u000a1 2 2 2\u000a3 2 3 3\u000a1 3 2 3\u000aNote\u000aHere are how the sample input and output looks like. The colored arrows denotes all the possible paths while a red cross denotes a locked door.\u000aIn the first sample case:\u000aIn the second sample case:
+p3
+sS'problemStatement'
+p4
+VD. Create a Maze\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aZS the Coder loves mazes. Your job is to create one so that he can play with it. A maze consists of n\u2009×\u2009m rooms, and the rooms are arranged in n rows (numbered from the top to the bottom starting from 1) and m columns (numbered from the left to the right starting from 1). The room in the i-th row and j-th column is denoted by (i,\u2009j). A player starts in the room (1,\u20091) and wants to reach the room (n,\u2009m).\u000aEach room has four doors (except for ones at the maze border), one on each of its walls, and two adjacent by the wall rooms shares the same door. Some of the doors are locked, which means it is impossible to pass through the door. For example, if the door connecting (i,\u2009j) and (i,\u2009j\u2009+\u20091) is locked, then we can't go from (i,\u2009j) to (i,\u2009j\u2009+\u20091). Also, one can only travel between the rooms downwards (from the room (i,\u2009j) to the room (i\u2009+\u20091,\u2009j)) or rightwards (from the room (i,\u2009j) to the room (i,\u2009j\u2009+\u20091)) provided the corresponding door is not locked.\u000aThis image represents a maze with some doors locked. The colored arrows denotes all the possible paths while a red cross denotes a locked door.\u000aZS the Coder considers a maze to have difficulty x if there is exactly x ways of travelling from the room (1,\u20091) to the room (n,\u2009m). Two ways are considered different if they differ by the sequence of rooms visited while travelling.\u000aYour task is to create a maze such that its difficulty is exactly equal to T. In addition, ZS the Coder doesn't like large mazes, so the size of the maze and the number of locked doors are limited. Sounds simple enough, right?\u000aInput\u000aThe first and only line of the input contains a single integer T (1\u2009\u2264\u2009T\u2009\u2264\u20091018), the difficulty of the required maze.\u000aOutput\u000aThe first line should contain two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u200950) \u2014 the number of rows and columns of the maze respectively.\u000aThe next line should contain a single integer k (0\u2009\u2264\u2009k\u2009\u2264\u2009300) \u2014 the number of locked doors in the maze.\u000aThen, k lines describing locked doors should follow. Each of them should contain four integers, x1,\u2009y1,\u2009x2,\u2009y2. This means that the door connecting room (x1,\u2009y1) and room (x2,\u2009y2) is locked. Note that room (x2,\u2009y2) should be adjacent either to the right or to the bottom of (x1,\u2009y1), i.e. x2\u2009+\u2009y2 should be equal to x1\u2009+\u2009y1\u2009+\u20091. There should not be a locked door that appears twice in the list.\u000aIt is guaranteed that at least one solution exists. If there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a3\u000aoutput\u000a3 2\u000a0\u000ainput\u000a4\u000aoutput\u000a4 3\u000a3\u000a1 2 2 2\u000a3 2 3 3\u000a1 3 2 3\u000aNote\u000aHere are how the sample input and output looks like. The colored arrows denotes all the possible paths while a red cross denotes a locked door.\u000aIn the first sample case:\u000aIn the second sample case:
+p5
+sS'name'
+p6
+VD. Create a Maze
+p7
+sS'tags'
+p8
+Vconstructive algorithms 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/715/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V715/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

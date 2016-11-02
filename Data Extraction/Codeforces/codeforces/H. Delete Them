@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VH. Delete Them\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPolycarp is a beginner programmer. He is studying how to use a command line.\u000aPolycarp faced the following problem. There are n files in a directory and he needs to delete some of them. Polycarp wants to run a single delete command with filename pattern as an argument. All the files to be deleted should match the pattern and all other files shouldn't match the pattern.\u000aPolycarp doesn't know about an asterisk '*', the only special character he knows is a question mark '?' which matches any single character. All other characters in the pattern match themselves only.\u000aFormally, a pattern matches a filename if and only if they have equal lengths and all characters in the corresponding positions are equal except when the character in the pattern is '?', in which case the corresponding filename character does not matter.\u000aFor example, the filename pattern "a?ba?":\u000amatches filenames "aabaa", "abba.", "a.ba9" and "a.ba.";\u000adoes not match filenames "aaba", "abaab", "aabaaa" and "aabaa.".\u000aHelp Polycarp find a pattern which matches files to be deleted and only them or report if there is no such pattern.\u000aInput\u000aThe first line of the input contains two integers n and m (1\u2009\u2264\u2009m\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the total number of files and the number of files to be deleted.\u000aThe following n lines contain filenames, single filename per line. All filenames are non-empty strings containing only lowercase English letters, digits and dots ('.'). The length of each filename doesn't exceed 100. It is guaranteed that all filenames are distinct.\u000aThe last line of the input contains m distinct integer numbers in ascending order a1,\u2009a2,\u2009...,\u2009am (1\u2009\u2264\u2009ai\u2009\u2264\u2009n) \u2014 indices of files to be deleted. All files are indexed from 1 to n in order of their appearance in the input.\u000aOutput\u000aIf the required pattern exists, print "Yes" in the first line of the output. The second line should contain the required pattern. If there are multiple solutions, print any of them.\u000aIf the required pattern doesn't exist, print the only line containing "No".\u000aExamples\u000ainput\u000a3 2\u000aab\u000aac\u000acd\u000a1 2\u000aoutput\u000aYes\u000aa?\u000ainput\u000a5 3\u000atest\u000atezt\u000atest.\u000a.est\u000ates.\u000a1 4 5\u000aoutput\u000aYes\u000a?es?\u000ainput\u000a4 4\u000aa\u000ab\u000ac\u000add\u000a1 2 3 4\u000aoutput\u000aNo\u000ainput\u000a6 3\u000a.svn\u000a.git\u000a....\u000a...\u000a..\u000a.\u000a1 2 3\u000aoutput\u000aYes\u000a.???
+p3
+sS'problemStatement'
+p4
+VH. Delete Them\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPolycarp is a beginner programmer. He is studying how to use a command line.\u000aPolycarp faced the following problem. There are n files in a directory and he needs to delete some of them. Polycarp wants to run a single delete command with filename pattern as an argument. All the files to be deleted should match the pattern and all other files shouldn't match the pattern.\u000aPolycarp doesn't know about an asterisk '*', the only special character he knows is a question mark '?' which matches any single character. All other characters in the pattern match themselves only.\u000aFormally, a pattern matches a filename if and only if they have equal lengths and all characters in the corresponding positions are equal except when the character in the pattern is '?', in which case the corresponding filename character does not matter.\u000aFor example, the filename pattern "a?ba?":\u000amatches filenames "aabaa", "abba.", "a.ba9" and "a.ba.";\u000adoes not match filenames "aaba", "abaab", "aabaaa" and "aabaa.".\u000aHelp Polycarp find a pattern which matches files to be deleted and only them or report if there is no such pattern.\u000aInput\u000aThe first line of the input contains two integers n and m (1\u2009\u2264\u2009m\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the total number of files and the number of files to be deleted.\u000aThe following n lines contain filenames, single filename per line. All filenames are non-empty strings containing only lowercase English letters, digits and dots ('.'). The length of each filename doesn't exceed 100. It is guaranteed that all filenames are distinct.\u000aThe last line of the input contains m distinct integer numbers in ascending order a1,\u2009a2,\u2009...,\u2009am (1\u2009\u2264\u2009ai\u2009\u2264\u2009n) \u2014 indices of files to be deleted. All files are indexed from 1 to n in order of their appearance in the input.\u000aOutput\u000aIf the required pattern exists, print "Yes" in the first line of the output. The second line should contain the required pattern. If there are multiple solutions, print any of them.\u000aIf the required pattern doesn't exist, print the only line containing "No".\u000aExamples\u000ainput\u000a3 2\u000aab\u000aac\u000acd\u000a1 2\u000aoutput\u000aYes\u000aa?\u000ainput\u000a5 3\u000atest\u000atezt\u000atest.\u000a.est\u000ates.\u000a1 4 5\u000aoutput\u000aYes\u000a?es?\u000ainput\u000a4 4\u000aa\u000ab\u000ac\u000add\u000a1 2 3 4\u000aoutput\u000aNo\u000ainput\u000a6 3\u000a.svn\u000a.git\u000a....\u000a...\u000a..\u000a.\u000a1 2 3\u000aoutput\u000aYes\u000a.???
+p5
+sS'name'
+p6
+VH. Delete Them
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/H
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V730/H
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

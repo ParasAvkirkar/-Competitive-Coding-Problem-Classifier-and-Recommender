@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Sockets\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe ICM ACPC World Finals is coming! Unfortunately, the organizers of the competition were so busy preparing tasks that totally missed an important technical point \u2014 the organization of electricity supplement for all the participants workstations.\u000aThere are n computers for participants, the i-th of which has power equal to positive integer pi. At the same time there are m sockets available, the j-th of which has power euqal to positive integer sj. It is possible to connect the i-th computer to the j-th socket if and only if their powers are the same: pi\u2009=\u2009sj. It is allowed to connect no more than one computer to one socket. Thus, if the powers of all computers and sockets are distinct, then no computer can be connected to any of the sockets.\u000aIn order to fix the situation professor Puch Williams urgently ordered a wagon of adapters \u2014 power splitters. Each adapter has one plug and one socket with a voltage divider between them. After plugging an adapter to a socket with power x, the power on the adapter's socket becomes equal to , it means that it is equal to the socket's power divided by two with rounding up, for example and .\u000aEach adapter can be used only once. It is possible to connect several adapters in a chain plugging the first to a socket. For example, if two adapters are plugged one after enother to a socket with power 10, it becomes possible to connect one computer with power 3 to this socket.\u000aThe organizers should install adapters so that it will be possible to supply with electricity the maximum number of computers c at the same time. If there are several possible connection configurations, they want to find the one that uses the minimum number of adapters u to connect c computers.\u000aHelp organizers calculate the maximum number of connected computers c and the minimum number of adapters u needed for this.\u000aThe wagon of adapters contains enough of them to do the task. It is guaranteed that it's possible to connect at least one computer.\u000aInput\u000aThe first line contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009200\u2009000) \u2014 the number of computers and the number of sockets.\u000aThe second line contains n integers p1,\u2009p2,\u2009...,\u2009pn (1\u2009\u2264\u2009pi\u2009\u2264\u2009109) \u2014 the powers of the computers.\u000aThe third line contains m integers s1,\u2009s2,\u2009...,\u2009sm (1\u2009\u2264\u2009si\u2009\u2264\u2009109) \u2014 the power of the sockets.\u000aOutput\u000aIn the first line print two numbers c and u \u2014 the maximum number of computers which can at the same time be connected to electricity and the minimum number of adapters needed to connect c computers.\u000aIn the second line print m integers a1,\u2009a2,\u2009...,\u2009am (0\u2009\u2264\u2009ai\u2009\u2264\u2009109), where ai equals the number of adapters orginizers need to plug into the i-th socket. The sum of all ai should be equal to u.\u000aIn third line print n integers b1,\u2009b2,\u2009...,\u2009bn (0\u2009\u2264\u2009bi\u2009\u2264\u2009m), where the bj-th equals the number of the socket which the j-th computer should be connected to. bj\u2009=\u20090 means that the j-th computer should not be connected to any socket. All bj that are different from 0 should be distinct. The power of the j-th computer should be equal to the power of the socket bj after plugging in abj adapters. The number of non-zero bj should be equal to c.\u000aIf there are multiple answers, print any of them.\u000aExamples\u000ainput\u000a2 2\u000a1 1\u000a2 2\u000aoutput\u000a2 2\u000a1 1\u000a1 2\u000ainput\u000a2 1\u000a2 100\u000a99\u000aoutput\u000a1 6\u000a6\u000a1 0
+p3
+sS'problemStatement'
+p4
+VE. Sockets\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe ICM ACPC World Finals is coming! Unfortunately, the organizers of the competition were so busy preparing tasks that totally missed an important technical point \u2014 the organization of electricity supplement for all the participants workstations.\u000aThere are n computers for participants, the i-th of which has power equal to positive integer pi. At the same time there are m sockets available, the j-th of which has power euqal to positive integer sj. It is possible to connect the i-th computer to the j-th socket if and only if their powers are the same: pi\u2009=\u2009sj. It is allowed to connect no more than one computer to one socket. Thus, if the powers of all computers and sockets are distinct, then no computer can be connected to any of the sockets.\u000aIn order to fix the situation professor Puch Williams urgently ordered a wagon of adapters \u2014 power splitters. Each adapter has one plug and one socket with a voltage divider between them. After plugging an adapter to a socket with power x, the power on the adapter's socket becomes equal to , it means that it is equal to the socket's power divided by two with rounding up, for example and .\u000aEach adapter can be used only once. It is possible to connect several adapters in a chain plugging the first to a socket. For example, if two adapters are plugged one after enother to a socket with power 10, it becomes possible to connect one computer with power 3 to this socket.\u000aThe organizers should install adapters so that it will be possible to supply with electricity the maximum number of computers c at the same time. If there are several possible connection configurations, they want to find the one that uses the minimum number of adapters u to connect c computers.\u000aHelp organizers calculate the maximum number of connected computers c and the minimum number of adapters u needed for this.\u000aThe wagon of adapters contains enough of them to do the task. It is guaranteed that it's possible to connect at least one computer.\u000aInput\u000aThe first line contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009200\u2009000) \u2014 the number of computers and the number of sockets.\u000aThe second line contains n integers p1,\u2009p2,\u2009...,\u2009pn (1\u2009\u2264\u2009pi\u2009\u2264\u2009109) \u2014 the powers of the computers.\u000aThe third line contains m integers s1,\u2009s2,\u2009...,\u2009sm (1\u2009\u2264\u2009si\u2009\u2264\u2009109) \u2014 the power of the sockets.\u000aOutput\u000aIn the first line print two numbers c and u \u2014 the maximum number of computers which can at the same time be connected to electricity and the minimum number of adapters needed to connect c computers.\u000aIn the second line print m integers a1,\u2009a2,\u2009...,\u2009am (0\u2009\u2264\u2009ai\u2009\u2264\u2009109), where ai equals the number of adapters orginizers need to plug into the i-th socket. The sum of all ai should be equal to u.\u000aIn third line print n integers b1,\u2009b2,\u2009...,\u2009bn (0\u2009\u2264\u2009bi\u2009\u2264\u2009m), where the bj-th equals the number of the socket which the j-th computer should be connected to. bj\u2009=\u20090 means that the j-th computer should not be connected to any socket. All bj that are different from 0 should be distinct. The power of the j-th computer should be equal to the power of the socket bj after plugging in abj adapters. The number of non-zero bj should be equal to c.\u000aIf there are multiple answers, print any of them.\u000aExamples\u000ainput\u000a2 2\u000a1 1\u000a2 2\u000aoutput\u000a2 2\u000a1 1\u000a1 2\u000ainput\u000a2 1\u000a2 100\u000a99\u000aoutput\u000a1 6\u000a6\u000a1 0
+p5
+sS'name'
+p6
+VE. Sockets
+p7
+sS'tags'
+p8
+Vgreedy sortings 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/732/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V732/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

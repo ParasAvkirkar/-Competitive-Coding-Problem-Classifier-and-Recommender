@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Cellular Network\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given n points on the straight line \u2014 the positions (x-coordinates) of the cities and m points on the same line \u2014 the positions (x-coordinates) of the cellular towers. All towers work in the same way \u2014 they provide cellular network for all cities, which are located at the distance which is no more than r from this tower.\u000aYour task is to find minimal r that each city has been provided by cellular network, i.e. for each city there is at least one cellular tower at the distance which is no more than r.\u000aIf r\u2009=\u20090 then a tower provides cellular network only for the point where it is located. One tower can provide cellular network for any number of cities, but all these cities must be at the distance which is no more than r from this tower.\u000aInput\u000aThe first line contains two positive integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009105) \u2014 the number of cities and the number of cellular towers.\u000aThe second line contains a sequence of n integers a1,\u2009a2,\u2009...,\u2009an (\u2009-\u2009109\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the coordinates of cities. It is allowed that there are any number of cities in the same point. All coordinates ai are given in non-decreasing order.\u000aThe third line contains a sequence of m integers b1,\u2009b2,\u2009...,\u2009bm (\u2009-\u2009109\u2009\u2264\u2009bj\u2009\u2264\u2009109) \u2014 the coordinates of cellular towers. It is allowed that there are any number of towers in the same point. All coordinates bj are given in non-decreasing order.\u000aOutput\u000aPrint minimal r so that each city will be covered by cellular network.\u000aExamples\u000ainput\u000a3 2\u000a-2 2 4\u000a-3 0\u000aoutput\u000a4\u000ainput\u000a5 3\u000a1 5 10 14 17\u000a4 11 15\u000aoutput\u000a3
+p3
+sS'problemStatement'
+p4
+VC. Cellular Network\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given n points on the straight line \u2014 the positions (x-coordinates) of the cities and m points on the same line \u2014 the positions (x-coordinates) of the cellular towers. All towers work in the same way \u2014 they provide cellular network for all cities, which are located at the distance which is no more than r from this tower.\u000aYour task is to find minimal r that each city has been provided by cellular network, i.e. for each city there is at least one cellular tower at the distance which is no more than r.\u000aIf r\u2009=\u20090 then a tower provides cellular network only for the point where it is located. One tower can provide cellular network for any number of cities, but all these cities must be at the distance which is no more than r from this tower.\u000aInput\u000aThe first line contains two positive integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009105) \u2014 the number of cities and the number of cellular towers.\u000aThe second line contains a sequence of n integers a1,\u2009a2,\u2009...,\u2009an (\u2009-\u2009109\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the coordinates of cities. It is allowed that there are any number of cities in the same point. All coordinates ai are given in non-decreasing order.\u000aThe third line contains a sequence of m integers b1,\u2009b2,\u2009...,\u2009bm (\u2009-\u2009109\u2009\u2264\u2009bj\u2009\u2264\u2009109) \u2014 the coordinates of cellular towers. It is allowed that there are any number of towers in the same point. All coordinates bj are given in non-decreasing order.\u000aOutput\u000aPrint minimal r so that each city will be covered by cellular network.\u000aExamples\u000ainput\u000a3 2\u000a-2 2 4\u000a-3 0\u000aoutput\u000a4\u000ainput\u000a5 3\u000a1 5 10 14 17\u000a4 11 15\u000aoutput\u000a3
+p5
+sS'name'
+p6
+VC. Cellular Network
+p7
+sS'tags'
+p8
+Vbinary search two pointers 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/702/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'problemId'
+p16
+V702/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

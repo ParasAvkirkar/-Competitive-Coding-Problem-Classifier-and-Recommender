@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Chris and Magic Square\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aZS the Coder and Chris the Baboon arrived at the entrance of Udayland. There is a n\u2009×\u2009n magic grid on the entrance which is filled with integers. Chris noticed that exactly one of the cells in the grid is empty, and to enter Udayland, they need to fill a positive integer into the empty cell.\u000aChris tried filling in random numbers but it didn't work. ZS the Coder realizes that they need to fill in a positive integer such that the numbers in the grid form a magic square. This means that he has to fill in a positive integer so that the sum of the numbers in each row of the grid (), each column of the grid (), and the two long diagonals of the grid (the main diagonal \u2014 and the secondary diagonal \u2014 ) are equal.\u000aChris doesn't know what number to fill in. Can you help Chris find the correct positive integer to fill in or determine that it is impossible?\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009500) \u2014 the number of rows and columns of the magic grid.\u000an lines follow, each of them contains n integers. The j-th number in the i-th of them denotes ai,\u2009j (1\u2009\u2264\u2009ai,\u2009j\u2009\u2264\u2009109 or ai,\u2009j\u2009=\u20090), the number in the i-th row and j-th column of the magic grid. If the corresponding cell is empty, ai,\u2009j will be equal to 0. Otherwise, ai,\u2009j is positive.\u000aIt is guaranteed that there is exactly one pair of integers i,\u2009j (1\u2009\u2264\u2009i,\u2009j\u2009\u2264\u2009n) such that ai,\u2009j\u2009=\u20090.\u000aOutput\u000aOutput a single integer, the positive integer x (1\u2009\u2264\u2009x\u2009\u2264\u20091018) that should be filled in the empty cell so that the whole grid becomes a magic square. If such positive integer x does not exist, output \u2009-\u20091 instead.\u000aIf there are multiple solutions, you may print any of them.\u000aExamples\u000ainput\u000a3\u000a4 0 2\u000a3 5 7\u000a8 1 6\u000aoutput\u000a9\u000ainput\u000a4\u000a1 1 1 1\u000a1 1 0 1\u000a1 1 1 1\u000a1 1 1 1\u000aoutput\u000a1\u000ainput\u000a4\u000a1 1 1 1\u000a1 1 0 1\u000a1 1 2 1\u000a1 1 1 1\u000aoutput\u000a-1\u000aNote\u000aIn the first sample case, we can fill in 9 into the empty cell to make the resulting grid a magic square. Indeed,\u000aThe sum of numbers in each row is:\u000a4\u2009+\u20099\u2009+\u20092\u2009=\u20093\u2009+\u20095\u2009+\u20097\u2009=\u20098\u2009+\u20091\u2009+\u20096\u2009=\u200915.\u000aThe sum of numbers in each column is:\u000a4\u2009+\u20093\u2009+\u20098\u2009=\u20099\u2009+\u20095\u2009+\u20091\u2009=\u20092\u2009+\u20097\u2009+\u20096\u2009=\u200915.\u000aThe sum of numbers in the two diagonals is:\u000a4\u2009+\u20095\u2009+\u20096\u2009=\u20092\u2009+\u20095\u2009+\u20098\u2009=\u200915.\u000aIn the third sample case, it is impossible to fill a number in the empty square such that the resulting grid is a magic square.
+p3
+sS'problemStatement'
+p4
+VB. Chris and Magic Square\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aZS the Coder and Chris the Baboon arrived at the entrance of Udayland. There is a n\u2009×\u2009n magic grid on the entrance which is filled with integers. Chris noticed that exactly one of the cells in the grid is empty, and to enter Udayland, they need to fill a positive integer into the empty cell.\u000aChris tried filling in random numbers but it didn't work. ZS the Coder realizes that they need to fill in a positive integer such that the numbers in the grid form a magic square. This means that he has to fill in a positive integer so that the sum of the numbers in each row of the grid (), each column of the grid (), and the two long diagonals of the grid (the main diagonal \u2014 and the secondary diagonal \u2014 ) are equal.\u000aChris doesn't know what number to fill in. Can you help Chris find the correct positive integer to fill in or determine that it is impossible?\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009500) \u2014 the number of rows and columns of the magic grid.\u000an lines follow, each of them contains n integers. The j-th number in the i-th of them denotes ai,\u2009j (1\u2009\u2264\u2009ai,\u2009j\u2009\u2264\u2009109 or ai,\u2009j\u2009=\u20090), the number in the i-th row and j-th column of the magic grid. If the corresponding cell is empty, ai,\u2009j will be equal to 0. Otherwise, ai,\u2009j is positive.\u000aIt is guaranteed that there is exactly one pair of integers i,\u2009j (1\u2009\u2264\u2009i,\u2009j\u2009\u2264\u2009n) such that ai,\u2009j\u2009=\u20090.\u000aOutput\u000aOutput a single integer, the positive integer x (1\u2009\u2264\u2009x\u2009\u2264\u20091018) that should be filled in the empty cell so that the whole grid becomes a magic square. If such positive integer x does not exist, output \u2009-\u20091 instead.\u000aIf there are multiple solutions, you may print any of them.\u000aExamples\u000ainput\u000a3\u000a4 0 2\u000a3 5 7\u000a8 1 6\u000aoutput\u000a9\u000ainput\u000a4\u000a1 1 1 1\u000a1 1 0 1\u000a1 1 1 1\u000a1 1 1 1\u000aoutput\u000a1\u000ainput\u000a4\u000a1 1 1 1\u000a1 1 0 1\u000a1 1 2 1\u000a1 1 1 1\u000aoutput\u000a-1\u000aNote\u000aIn the first sample case, we can fill in 9 into the empty cell to make the resulting grid a magic square. Indeed,\u000aThe sum of numbers in each row is:\u000a4\u2009+\u20099\u2009+\u20092\u2009=\u20093\u2009+\u20095\u2009+\u20097\u2009=\u20098\u2009+\u20091\u2009+\u20096\u2009=\u200915.\u000aThe sum of numbers in each column is:\u000a4\u2009+\u20093\u2009+\u20098\u2009=\u20099\u2009+\u20095\u2009+\u20091\u2009=\u20092\u2009+\u20097\u2009+\u20096\u2009=\u200915.\u000aThe sum of numbers in the two diagonals is:\u000a4\u2009+\u20095\u2009+\u20096\u2009=\u20092\u2009+\u20095\u2009+\u20098\u2009=\u200915.\u000aIn the third sample case, it is impossible to fill a number in the empty square such that the resulting grid is a magic square.
+p5
+sS'name'
+p6
+VB. Chris and Magic Square
+p7
+sS'tags'
+p8
+Vconstructive algorithms 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/711/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V711/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

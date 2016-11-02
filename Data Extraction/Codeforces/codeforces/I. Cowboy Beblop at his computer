@@ -1,0 +1,82 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VI. Cowboy Beblop at his computer\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aCowboy Beblop is a funny little boy who likes sitting at his computer. He somehow obtained two elastic hoops in the shape of 2D polygons, which are not necessarily convex. Since there's no gravity on his spaceship, the hoops are standing still in the air. Since the hoops are very elastic, Cowboy Beblop can stretch, rotate, translate or shorten their edges as much as he wants.\u000aFor both hoops, you are given the number of their vertices, as well as the position of each vertex, defined by the X , Y and Z coordinates. The vertices are given in the order they're connected: the 1st\u202fvertex is connected to the 2nd, which is connected to the 3rd, etc., and the last vertex is connected to the first one. Two hoops are connected if it's impossible to pull them to infinity in different directions by manipulating their edges, without having their edges or vertices intersect at any point \u2013 just like when two links of a chain are connected. The polygons' edges do not intersect or overlap.\u000aTo make things easier, we say that two polygons are well-connected, if the edges of one polygon cross the area of the other polygon in two different directions (from the upper and lower sides of the plane defined by that polygon) a different number of times.\u000aCowboy Beblop is fascinated with the hoops he has obtained and he would like to know whether they are well-connected or not. Since he\u2019s busy playing with his dog, Zwei, he\u2019d like you to figure it out for him. He promised you some sweets if you help him!\u000aInput\u000aThe first line of input contains an integer n (3\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000), which denotes the number of edges of the first polygon. The next N lines each contain the integers x, y and z (\u2009-\u20091\u2009000\u2009000\u2009\u2264\u2009x,\u2009y,\u2009z\u2009\u2264\u20091\u2009000\u2009000) \u2014 coordinates of the vertices, in the manner mentioned above. The next line contains an integer m (3\u2009\u2264\u2009m\u2009\u2264\u2009100\u2009000) , denoting the number of edges of the second polygon, followed by m lines containing the coordinates of the second polygon\u2019s vertices.\u000aIt is guaranteed that both polygons are simple (no self-intersections), and in general that the obtained polygonal lines do not intersect each other. Also, you can assume that no 3 consecutive points of a polygon lie on the same line.\u000aOutput\u000aYour output should contain only one line, with the words "YES" or "NO", depending on whether the two given polygons are well-connected.\u000aExample\u000ainput\u000a4\u000a0 0 0\u000a2 0 0\u000a2 2 0\u000a0 2 0\u000a4\u000a1 1 -1\u000a1 1 1\u000a1 3 1\u000a1 3 -1\u000aoutput\u000aYES\u000aNote\u000aOn the picture below, the two polygons are well-connected, as the edges of the vertical polygon cross the area of the horizontal one exactly once in one direction (for example, from above to below), and zero times in the other (in this case, from below to above). Note that the polygons do not have to be parallel to any of the xy-,xz-,yz- planes in general.
+p3
+sS'problemStatement'
+p4
+VI. Cowboy Beblop at his computer\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aCowboy Beblop is a funny little boy who likes sitting at his computer. He somehow obtained two elastic hoops in the shape of 2D polygons, which are not necessarily convex. Since there's no gravity on his spaceship, the hoops are standing still in the air. Since the hoops are very elastic, Cowboy Beblop can stretch, rotate, translate or shorten their edges as much as he wants.\u000aFor both hoops, you are given the number of their vertices, as well as the position of each vertex, defined by the X , Y and Z coordinates. The vertices are given in the order they're connected: the 1st\u202fvertex is connected to the 2nd, which is connected to the 3rd, etc., and the last vertex is connected to the first one. Two hoops are connected if it's impossible to pull them to infinity in different directions by manipulating their edges, without having their edges or vertices intersect at any point \u2013 just like when two links of a chain are connected. The polygons' edges do not intersect or overlap.\u000aTo make things easier, we say that two polygons are well-connected, if the edges of one polygon cross the area of the other polygon in two different directions (from the upper and lower sides of the plane defined by that polygon) a different number of times.\u000aCowboy Beblop is fascinated with the hoops he has obtained and he would like to know whether they are well-connected or not. Since he\u2019s busy playing with his dog, Zwei, he\u2019d like you to figure it out for him. He promised you some sweets if you help him!\u000aInput\u000aThe first line of input contains an integer n (3\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000), which denotes the number of edges of the first polygon. The next N lines each contain the integers x, y and z (\u2009-\u20091\u2009000\u2009000\u2009\u2264\u2009x,\u2009y,\u2009z\u2009\u2264\u20091\u2009000\u2009000) \u2014 coordinates of the vertices, in the manner mentioned above. The next line contains an integer m (3\u2009\u2264\u2009m\u2009\u2264\u2009100\u2009000) , denoting the number of edges of the second polygon, followed by m lines containing the coordinates of the second polygon\u2019s vertices.\u000aIt is guaranteed that both polygons are simple (no self-intersections), and in general that the obtained polygonal lines do not intersect each other. Also, you can assume that no 3 consecutive points of a polygon lie on the same line.\u000aOutput\u000aYour output should contain only one line, with the words "YES" or "NO", depending on whether the two given polygons are well-connected.\u000aExample\u000ainput\u000a4\u000a0 0 0\u000a2 0 0\u000a2 2 0\u000a0 2 0\u000a4\u000a1 1 -1\u000a1 1 1\u000a1 3 1\u000a1 3 -1\u000aoutput\u000aYES\u000aNote\u000aOn the picture below, the two polygons are well-connected, as the edges of the vertical polygon cross the area of the horizontal one exactly once in one direction (for example, from above to below), and zero times in the other (in this case, from below to above). Note that the polygons do not have to be parallel to any of the xy-,xz-,yz- planes in general.
+p5
+sS'name'
+p6
+VI. Cowboy Beblop at his computer
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/717/I
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVYour output should contain only one line, with the words "YES" or "NO", depending on whether the two given polygons are well-connected.
+p19
+asS'statement'
+p20
+(lp21
+VI. Cowboy Beblop at his computer
+p22
+aVtime limit per test1 second
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVCowboy Beblop is a funny little boy who likes sitting at his computer. He somehow obtained two elastic hoops in the shape of 2D polygons, which are not necessarily convex. Since there's no gravity on his spaceship, the hoops are standing still in the air. Since the hoops are very elastic, Cowboy Beblop can stretch, rotate, translate or shorten their edges as much as he wants.
+p27
+aVFor both hoops, you are given the number of their vertices, as well as the position of each vertex, defined by the X , Y and Z coordinates. The vertices are given in the order they're connected: the 1st\u202fvertex is connected to the 2nd, which is connected to the 3rd, etc., and the last vertex is connected to the first one. Two hoops are connected if it's impossible to pull them to infinity in different directions by manipulating their edges, without having their edges or vertices intersect at any point \u2013 just like when two links of a chain are connected. The polygons' edges do not intersect or overlap.
+p28
+aVTo make things easier, we say that two polygons are well-connected, if the edges of one polygon cross the area of the other polygon in two different directions (from the upper and lower sides of the plane defined by that polygon) a different number of times.
+p29
+aVCowboy Beblop is fascinated with the hoops he has obtained and he would like to know whether they are well-connected or not. Since he\u2019s busy playing with his dog, Zwei, he\u2019d like you to figure it out for him. He promised you some sweets if you help him!
+p30
+asS'problemId'
+p31
+V717/I
+p32
+sS'input'
+p33
+(lp34
+VInput
+p35
+aVThe first line of input contains an integer n (3\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000), which denotes the number of edges of the first polygon. The next N lines each contain the integers x, y and z (\u2009-\u20091\u2009000\u2009000\u2009\u2264\u2009x,\u2009y,\u2009z\u2009\u2264\u20091\u2009000\u2009000) \u2014 coordinates of the vertices, in the manner mentioned above. The next line contains an integer m (3\u2009\u2264\u2009m\u2009\u2264\u2009100\u2009000) , denoting the number of edges of the second polygon, followed by m lines containing the coordinates of the second polygon\u2019s vertices.
+p36
+aVIt is guaranteed that both polygons are simple (no self-intersections), and in general that the obtained polygonal lines do not intersect each other. Also, you can assume that no 3 consecutive points of a polygon lie on the same line.
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'constraints'
+p40
+g34
+sb.

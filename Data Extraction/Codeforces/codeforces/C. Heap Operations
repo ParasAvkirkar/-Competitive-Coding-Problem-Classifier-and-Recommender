@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Heap Operations\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPetya has recently learned data structure named "Binary heap".\u000aThe heap he is now operating with allows the following operations:\u000aput the given number into the heap;\u000aget the value of the minimum element in the heap;\u000aextract the minimum element from the heap;\u000aThus, at any moment of time the heap contains several integers (possibly none), some of them might be equal.\u000aIn order to better learn this data structure Petya took an empty heap and applied some operations above to it. Also, he carefully wrote down all the operations and their results to his event log, following the format:\u000ainsert x \u2014 put the element with value x in the heap;\u000agetMin x \u2014 the value of the minimum element contained in the heap was equal to x;\u000aremoveMin \u2014 the minimum element was extracted from the heap (only one instance, if there were many).\u000aAll the operations were correct, i.e. there was at least one element in the heap each time getMin or removeMin operations were applied.\u000aWhile Petya was away for a lunch, his little brother Vova came to the room, took away some of the pages from Petya's log and used them to make paper boats.\u000aNow Vova is worried, if he made Petya's sequence of operations inconsistent. For example, if one apply operations one-by-one in the order they are written in the event log, results of getMin operations might differ from the results recorded by Petya, and some of getMin or removeMin operations may be incorrect, as the heap is empty at the moment they are applied.\u000aNow Vova wants to add some new operation records to the event log in order to make the resulting sequence of operations correct. That is, the result of each getMin operation is equal to the result in the record, and the heap is non-empty when getMin ad removeMin are applied. Vova wants to complete this as fast as possible, as the Petya may get back at any moment. He asks you to add the least possible number of operation records to the current log. Note that arbitrary number of operations may be added at the beginning, between any two other operations, or at the end of the log.\u000aInput\u000aThe first line of the input contains the only integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of the records left in Petya's journal.\u000aEach of the following n lines describe the records in the current log in the order they are applied. Format described in the statement is used. All numbers in the input are integers not exceeding 109 by their absolute value.\u000aOutput\u000aThe first line of the output should contain a single integer m \u2014 the minimum possible number of records in the modified sequence of operations.\u000aNext m lines should contain the corrected sequence of records following the format of the input (described in the statement), one per line and in the order they are applied. All the numbers in the output should be integers not exceeding 109 by their absolute value.\u000aNote that the input sequence of operations must be the subsequence of the output sequence.\u000aIt's guaranteed that there exists the correct answer consisting of no more than 1\u2009000\u2009000 operations.\u000aExamples\u000ainput\u000a2\u000ainsert 3\u000agetMin 4\u000aoutput\u000a4\u000ainsert 3\u000aremoveMin\u000ainsert 4\u000agetMin 4\u000ainput\u000a4\u000ainsert 1\u000ainsert 1\u000aremoveMin\u000agetMin 2\u000aoutput\u000a6\u000ainsert 1\u000ainsert 1\u000aremoveMin\u000aremoveMin\u000ainsert 2\u000agetMin 2\u000aNote\u000aIn the first sample, after number 3 is inserted into the heap, the minimum number is 3. To make the result of the first getMin equal to 4 one should firstly remove number 3 from the heap and then add number 4 into the heap.\u000aIn the second sample case number 1 is inserted two times, so should be similarly removed twice.
+p3
+sS'problemStatement'
+p4
+VC. Heap Operations\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPetya has recently learned data structure named "Binary heap".\u000aThe heap he is now operating with allows the following operations:\u000aput the given number into the heap;\u000aget the value of the minimum element in the heap;\u000aextract the minimum element from the heap;\u000aThus, at any moment of time the heap contains several integers (possibly none), some of them might be equal.\u000aIn order to better learn this data structure Petya took an empty heap and applied some operations above to it. Also, he carefully wrote down all the operations and their results to his event log, following the format:\u000ainsert x \u2014 put the element with value x in the heap;\u000agetMin x \u2014 the value of the minimum element contained in the heap was equal to x;\u000aremoveMin \u2014 the minimum element was extracted from the heap (only one instance, if there were many).\u000aAll the operations were correct, i.e. there was at least one element in the heap each time getMin or removeMin operations were applied.\u000aWhile Petya was away for a lunch, his little brother Vova came to the room, took away some of the pages from Petya's log and used them to make paper boats.\u000aNow Vova is worried, if he made Petya's sequence of operations inconsistent. For example, if one apply operations one-by-one in the order they are written in the event log, results of getMin operations might differ from the results recorded by Petya, and some of getMin or removeMin operations may be incorrect, as the heap is empty at the moment they are applied.\u000aNow Vova wants to add some new operation records to the event log in order to make the resulting sequence of operations correct. That is, the result of each getMin operation is equal to the result in the record, and the heap is non-empty when getMin ad removeMin are applied. Vova wants to complete this as fast as possible, as the Petya may get back at any moment. He asks you to add the least possible number of operation records to the current log. Note that arbitrary number of operations may be added at the beginning, between any two other operations, or at the end of the log.\u000aInput\u000aThe first line of the input contains the only integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of the records left in Petya's journal.\u000aEach of the following n lines describe the records in the current log in the order they are applied. Format described in the statement is used. All numbers in the input are integers not exceeding 109 by their absolute value.\u000aOutput\u000aThe first line of the output should contain a single integer m \u2014 the minimum possible number of records in the modified sequence of operations.\u000aNext m lines should contain the corrected sequence of records following the format of the input (described in the statement), one per line and in the order they are applied. All the numbers in the output should be integers not exceeding 109 by their absolute value.\u000aNote that the input sequence of operations must be the subsequence of the output sequence.\u000aIt's guaranteed that there exists the correct answer consisting of no more than 1\u2009000\u2009000 operations.\u000aExamples\u000ainput\u000a2\u000ainsert 3\u000agetMin 4\u000aoutput\u000a4\u000ainsert 3\u000aremoveMin\u000ainsert 4\u000agetMin 4\u000ainput\u000a4\u000ainsert 1\u000ainsert 1\u000aremoveMin\u000agetMin 2\u000aoutput\u000a6\u000ainsert 1\u000ainsert 1\u000aremoveMin\u000aremoveMin\u000ainsert 2\u000agetMin 2\u000aNote\u000aIn the first sample, after number 3 is inserted into the heap, the minimum number is 3. To make the result of the first getMin equal to 4 one should firstly remove number 3 from the heap and then add number 4 into the heap.\u000aIn the second sample case number 1 is inserted two times, so should be similarly removed twice.
+p5
+sS'name'
+p6
+VC. Heap Operations
+p7
+sS'tags'
+p8
+Vdata structures greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/681/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V681/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Student's Camp\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlex studied well and won the trip to student camp Alushta, located on the seashore.\u000aUnfortunately, it's the period of the strong winds now and there is a chance the camp will be destroyed! Camp building can be represented as the rectangle of n\u2009+\u20092 concrete blocks height and m blocks width.\u000aEvery day there is a breeze blowing from the sea. Each block, except for the blocks of the upper and lower levers, such that there is no block to the left of it is destroyed with the probability . Similarly, each night the breeze blows in the direction to the sea. Thus, each block (again, except for the blocks of the upper and lower levers) such that there is no block to the right of it is destroyed with the same probability p. Note, that blocks of the upper and lower level are indestructible, so there are only n·m blocks that can be destroyed.\u000aThe period of the strong winds will last for k days and k nights. If during this period the building will split in at least two connected components, it will collapse and Alex will have to find another place to spend summer.\u000aFind the probability that Alex won't have to look for other opportunities and will be able to spend the summer in this camp.\u000aInput\u000aThe first line of the input contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u20091500) that define the size of the destructible part of building.\u000aThe second line of the input contains two integers a and b (1\u2009\u2264\u2009a\u2009\u2264\u2009b\u2009\u2264\u2009109) that define the probability p. It's guaranteed that integers a and b are coprime.\u000aThe third line contains a single integer k (0\u2009\u2264\u2009k\u2009\u2264\u2009100\u2009000) \u2014 the number of days and nights strong wind will blow for.\u000aOutput\u000aConsider the answer as an irreducible fraction is equal to . Print one integer equal to . It's guaranteed that within the given constraints .\u000aExamples\u000ainput\u000a2 2\u000a1 2\u000a1\u000aoutput\u000a937500007\u000ainput\u000a5 1\u000a3 10\u000a1\u000aoutput\u000a95964640\u000ainput\u000a3 3\u000a1 10\u000a5\u000aoutput\u000a927188454\u000aNote\u000aIn the first sample, each of the four blocks is destroyed with the probability . There are 7 scenarios that result in building not collapsing, and the probability we are looking for is equal to , so you should print
+p3
+sS'problemStatement'
+p4
+VE. Student's Camp\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlex studied well and won the trip to student camp Alushta, located on the seashore.\u000aUnfortunately, it's the period of the strong winds now and there is a chance the camp will be destroyed! Camp building can be represented as the rectangle of n\u2009+\u20092 concrete blocks height and m blocks width.\u000aEvery day there is a breeze blowing from the sea. Each block, except for the blocks of the upper and lower levers, such that there is no block to the left of it is destroyed with the probability . Similarly, each night the breeze blows in the direction to the sea. Thus, each block (again, except for the blocks of the upper and lower levers) such that there is no block to the right of it is destroyed with the same probability p. Note, that blocks of the upper and lower level are indestructible, so there are only n·m blocks that can be destroyed.\u000aThe period of the strong winds will last for k days and k nights. If during this period the building will split in at least two connected components, it will collapse and Alex will have to find another place to spend summer.\u000aFind the probability that Alex won't have to look for other opportunities and will be able to spend the summer in this camp.\u000aInput\u000aThe first line of the input contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u20091500) that define the size of the destructible part of building.\u000aThe second line of the input contains two integers a and b (1\u2009\u2264\u2009a\u2009\u2264\u2009b\u2009\u2264\u2009109) that define the probability p. It's guaranteed that integers a and b are coprime.\u000aThe third line contains a single integer k (0\u2009\u2264\u2009k\u2009\u2264\u2009100\u2009000) \u2014 the number of days and nights strong wind will blow for.\u000aOutput\u000aConsider the answer as an irreducible fraction is equal to . Print one integer equal to . It's guaranteed that within the given constraints .\u000aExamples\u000ainput\u000a2 2\u000a1 2\u000a1\u000aoutput\u000a937500007\u000ainput\u000a5 1\u000a3 10\u000a1\u000aoutput\u000a95964640\u000ainput\u000a3 3\u000a1 10\u000a5\u000aoutput\u000a927188454\u000aNote\u000aIn the first sample, each of the four blocks is destroyed with the probability . There are 7 scenarios that result in building not collapsing, and the probability we are looking for is equal to , so you should print
+p5
+sS'name'
+p6
+VE. Student's Camp
+p7
+sS'tags'
+p8
+Vdp math 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/708/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'problemId'
+p16
+V708/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

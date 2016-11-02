@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Persistent Bookcase\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aRecently in school Alina has learned what are the persistent data structures: they are data structures that always preserves the previous version of itself and access to it when it is modified.\u000aAfter reaching home Alina decided to invent her own persistent data structure. Inventing didn't take long: there is a bookcase right behind her bed. Alina thinks that the bookcase is a good choice for a persistent data structure. Initially the bookcase is empty, thus there is no book at any position at any shelf.\u000aThe bookcase consists of n shelves, and each shelf has exactly m positions for books at it. Alina enumerates shelves by integers from 1 to n and positions at shelves \u2014 from 1 to m. Initially the bookcase is empty, thus there is no book at any position at any shelf in it.\u000aAlina wrote down q operations, which will be consecutively applied to the bookcase. Each of the operations has one of four types:\u000a1 i j \u2014 Place a book at position j at shelf i if there is no book at it.\u000a2 i j \u2014 Remove the book from position j at shelf i if there is a book at it.\u000a3 i \u2014 Invert book placing at shelf i. This means that from every position at shelf i which has a book at it, the book should be removed, and at every position at shelf i which has not book at it, a book should be placed.\u000a4 k \u2014 Return the books in the bookcase in a state they were after applying k-th operation. In particular, k\u2009=\u20090 means that the bookcase should be in initial state, thus every book in the bookcase should be removed from its position.\u000aAfter applying each of operation Alina is interested in the number of books in the bookcase. Alina got 'A' in the school and had no problem finding this values. Will you do so?\u000aInput\u000aThe first line of the input contains three integers n, m and q (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009103, 1\u2009\u2264\u2009q\u2009\u2264\u2009105) \u2014 the bookcase dimensions and the number of operations respectively.\u000aThe next q lines describes operations in chronological order \u2014 i-th of them describes i-th operation in one of the four formats described in the statement.\u000aIt is guaranteed that shelf indices and position indices are correct, and in each of fourth-type operation the number k corresponds to some operation before it or equals to 0.\u000aOutput\u000aFor each operation, print the number of books in the bookcase after applying it in a separate line. The answers should be printed in chronological order.\u000aExamples\u000ainput\u000a2 3 3\u000a1 1 1\u000a3 2\u000a4 0\u000aoutput\u000a1\u000a4\u000a0\u000ainput\u000a4 2 6\u000a3 2\u000a2 2 2\u000a3 3\u000a3 2\u000a2 2 2\u000a3 2\u000aoutput\u000a2\u000a1\u000a3\u000a3\u000a2\u000a4\u000ainput\u000a2 2 2\u000a3 2\u000a2 2 1\u000aoutput\u000a2\u000a1\u000aNote\u000aThis image illustrates the second sample case.
+p3
+sS'problemStatement'
+p4
+VD. Persistent Bookcase\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aRecently in school Alina has learned what are the persistent data structures: they are data structures that always preserves the previous version of itself and access to it when it is modified.\u000aAfter reaching home Alina decided to invent her own persistent data structure. Inventing didn't take long: there is a bookcase right behind her bed. Alina thinks that the bookcase is a good choice for a persistent data structure. Initially the bookcase is empty, thus there is no book at any position at any shelf.\u000aThe bookcase consists of n shelves, and each shelf has exactly m positions for books at it. Alina enumerates shelves by integers from 1 to n and positions at shelves \u2014 from 1 to m. Initially the bookcase is empty, thus there is no book at any position at any shelf in it.\u000aAlina wrote down q operations, which will be consecutively applied to the bookcase. Each of the operations has one of four types:\u000a1 i j \u2014 Place a book at position j at shelf i if there is no book at it.\u000a2 i j \u2014 Remove the book from position j at shelf i if there is a book at it.\u000a3 i \u2014 Invert book placing at shelf i. This means that from every position at shelf i which has a book at it, the book should be removed, and at every position at shelf i which has not book at it, a book should be placed.\u000a4 k \u2014 Return the books in the bookcase in a state they were after applying k-th operation. In particular, k\u2009=\u20090 means that the bookcase should be in initial state, thus every book in the bookcase should be removed from its position.\u000aAfter applying each of operation Alina is interested in the number of books in the bookcase. Alina got 'A' in the school and had no problem finding this values. Will you do so?\u000aInput\u000aThe first line of the input contains three integers n, m and q (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009103, 1\u2009\u2264\u2009q\u2009\u2264\u2009105) \u2014 the bookcase dimensions and the number of operations respectively.\u000aThe next q lines describes operations in chronological order \u2014 i-th of them describes i-th operation in one of the four formats described in the statement.\u000aIt is guaranteed that shelf indices and position indices are correct, and in each of fourth-type operation the number k corresponds to some operation before it or equals to 0.\u000aOutput\u000aFor each operation, print the number of books in the bookcase after applying it in a separate line. The answers should be printed in chronological order.\u000aExamples\u000ainput\u000a2 3 3\u000a1 1 1\u000a3 2\u000a4 0\u000aoutput\u000a1\u000a4\u000a0\u000ainput\u000a4 2 6\u000a3 2\u000a2 2 2\u000a3 3\u000a3 2\u000a2 2 2\u000a3 2\u000aoutput\u000a2\u000a1\u000a3\u000a3\u000a2\u000a4\u000ainput\u000a2 2 2\u000a3 2\u000a2 2 1\u000aoutput\u000a2\u000a1\u000aNote\u000aThis image illustrates the second sample case.
+p5
+sS'name'
+p6
+VD. Persistent Bookcase
+p7
+sS'tags'
+p8
+Vdata structures dfs and similar implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/707/D
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V707/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. st-Spanning Tree\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given an undirected connected graph consisting of n vertices and m edges. There are no loops and no multiple edges in the graph.\u000aYou are also given two distinct vertices s and t, and two values ds and dt. Your task is to build any spanning tree of the given graph (note that the graph is not weighted), such that the degree of the vertex s doesn't exceed ds, and the degree of the vertex t doesn't exceed dt, or determine, that there is no such spanning tree.\u000aThe spanning tree of the graph G is a subgraph which is a tree and contains all vertices of the graph G. In other words, it is a connected graph which contains n\u2009-\u20091 edges and can be obtained by removing some of the edges from G.\u000aThe degree of a vertex is the number of edges incident to this vertex.\u000aInput\u000aThe first line of the input contains two integers n and m (2\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000, 1\u2009\u2264\u2009m\u2009\u2264\u2009min(400\u2009000,\u2009n·(n\u2009-\u20091)\u2009/\u20092)) \u2014 the number of vertices and the number of edges in the graph.\u000aThe next m lines contain the descriptions of the graph's edges. Each of the lines contains two integers u and v (1\u2009\u2264\u2009u,\u2009v\u2009\u2264\u2009n, u\u2009\u2260\u2009v) \u2014 the ends of the corresponding edge. It is guaranteed that the graph contains no loops and no multiple edges and that it is connected.\u000aThe last line contains four integers s, t, ds, dt (1\u2009\u2264\u2009s,\u2009t\u2009\u2264\u2009n, s\u2009\u2260\u2009t, 1\u2009\u2264\u2009ds,\u2009dt\u2009\u2264\u2009n\u2009-\u20091).\u000aOutput\u000aIf the answer doesn't exist print "No" (without quotes) in the only line of the output.\u000aOtherwise, in the first line print "Yes" (without quotes). In the each of the next (n\u2009-\u20091) lines print two integers \u2014 the description of the edges of the spanning tree. Each of the edges of the spanning tree must be printed exactly once.\u000aYou can output edges in any order. You can output the ends of each edge in any order.\u000aIf there are several solutions, print any of them.\u000aExamples\u000ainput\u000a3 3\u000a1 2\u000a2 3\u000a3 1\u000a1 2 1 1\u000aoutput\u000aYes\u000a3 2\u000a1 3\u000ainput\u000a7 8\u000a7 4\u000a1 3\u000a5 4\u000a5 7\u000a3 2\u000a2 4\u000a6 1\u000a1 2\u000a6 4 1 4\u000aoutput\u000aYes\u000a1 3\u000a5 7\u000a3 2\u000a7 4\u000a2 4\u000a6 1
+p3
+sS'problemStatement'
+p4
+VF. st-Spanning Tree\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given an undirected connected graph consisting of n vertices and m edges. There are no loops and no multiple edges in the graph.\u000aYou are also given two distinct vertices s and t, and two values ds and dt. Your task is to build any spanning tree of the given graph (note that the graph is not weighted), such that the degree of the vertex s doesn't exceed ds, and the degree of the vertex t doesn't exceed dt, or determine, that there is no such spanning tree.\u000aThe spanning tree of the graph G is a subgraph which is a tree and contains all vertices of the graph G. In other words, it is a connected graph which contains n\u2009-\u20091 edges and can be obtained by removing some of the edges from G.\u000aThe degree of a vertex is the number of edges incident to this vertex.\u000aInput\u000aThe first line of the input contains two integers n and m (2\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000, 1\u2009\u2264\u2009m\u2009\u2264\u2009min(400\u2009000,\u2009n·(n\u2009-\u20091)\u2009/\u20092)) \u2014 the number of vertices and the number of edges in the graph.\u000aThe next m lines contain the descriptions of the graph's edges. Each of the lines contains two integers u and v (1\u2009\u2264\u2009u,\u2009v\u2009\u2264\u2009n, u\u2009\u2260\u2009v) \u2014 the ends of the corresponding edge. It is guaranteed that the graph contains no loops and no multiple edges and that it is connected.\u000aThe last line contains four integers s, t, ds, dt (1\u2009\u2264\u2009s,\u2009t\u2009\u2264\u2009n, s\u2009\u2260\u2009t, 1\u2009\u2264\u2009ds,\u2009dt\u2009\u2264\u2009n\u2009-\u20091).\u000aOutput\u000aIf the answer doesn't exist print "No" (without quotes) in the only line of the output.\u000aOtherwise, in the first line print "Yes" (without quotes). In the each of the next (n\u2009-\u20091) lines print two integers \u2014 the description of the edges of the spanning tree. Each of the edges of the spanning tree must be printed exactly once.\u000aYou can output edges in any order. You can output the ends of each edge in any order.\u000aIf there are several solutions, print any of them.\u000aExamples\u000ainput\u000a3 3\u000a1 2\u000a2 3\u000a3 1\u000a1 2 1 1\u000aoutput\u000aYes\u000a3 2\u000a1 3\u000ainput\u000a7 8\u000a7 4\u000a1 3\u000a5 4\u000a5 7\u000a3 2\u000a2 4\u000a6 1\u000a1 2\u000a6 4 1 4\u000aoutput\u000aYes\u000a1 3\u000a5 7\u000a3 2\u000a7 4\u000a2 4\u000a6 1
+p5
+sS'name'
+p6
+VF. st-Spanning Tree
+p7
+sS'tags'
+p8
+Vdsu graphs greedy implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/723/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'problemId'
+p16
+V723/F
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

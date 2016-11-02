@@ -1,0 +1,78 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VG. Underfail\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou have recently fallen through a hole and, after several hours of unconsciousness, have realized you are in an underground city. On one of your regular, daily walks through the unknown, you have encountered two unusually looking skeletons called Sanz and P\u2019pairus, who decided to accompany you and give you some puzzles for seemingly unknown reasons.\u000aOne day, Sanz has created a crossword for you. Not any kind of crossword, but a 1D crossword! You are given m words and a string of length n. You are also given an array p, which designates how much each word is worth \u2014 the i-th word is worth pi points. Whenever you find one of the m words in the string, you are given the corresponding number of points. Each position in the crossword can be used at most x times. A certain word can be counted at different places, but you cannot count the same appearance of a word multiple times. If a word is a substring of another word, you can count them both (presuming you haven\u2019t used the positions more than x times).\u000aIn order to solve the puzzle, you need to tell Sanz what\u2019s the maximum achievable number of points in the crossword. There is no need to cover all postions, just get the maximal score! Crossword and words contain only lowercase English letters.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009500) \u2014 the length of the crossword. The second line contains the crossword string. The third line contains a single integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009100) \u2014 the number of given words, and next m lines contain description of words: each line will have a string representing a non-empty word (its length doesn't exceed the length of the crossword) and integer pi (0\u2009\u2264\u2009pi\u2009\u2264\u2009100). Last line of the input will contain x (1\u2009\u2264\u2009x\u2009\u2264\u2009100) \u2014 maximum number of times a position in crossword can be used.\u000aOutput\u000aOutput single integer \u2014 maximum number of points you can get.\u000aExample\u000ainput\u000a6\u000aabacba\u000a2\u000aaba 6\u000aba 3\u000a3\u000aoutput\u000a12\u000aNote\u000aFor example, with the string "abacba", words "aba" (6 points) and "ba" (3 points), and x\u2009=\u20093, you can get at most 12 points - the word "aba" appears once ("abacba"), while "ba" appears two times ("abacba"). Note that for x\u2009=\u20091, you could get at most 9 points, since you wouldn\u2019t be able to count both "aba" and the first appearance of "ba".
+p3
+sS'problemStatement'
+p4
+VG. Underfail\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou have recently fallen through a hole and, after several hours of unconsciousness, have realized you are in an underground city. On one of your regular, daily walks through the unknown, you have encountered two unusually looking skeletons called Sanz and P\u2019pairus, who decided to accompany you and give you some puzzles for seemingly unknown reasons.\u000aOne day, Sanz has created a crossword for you. Not any kind of crossword, but a 1D crossword! You are given m words and a string of length n. You are also given an array p, which designates how much each word is worth \u2014 the i-th word is worth pi points. Whenever you find one of the m words in the string, you are given the corresponding number of points. Each position in the crossword can be used at most x times. A certain word can be counted at different places, but you cannot count the same appearance of a word multiple times. If a word is a substring of another word, you can count them both (presuming you haven\u2019t used the positions more than x times).\u000aIn order to solve the puzzle, you need to tell Sanz what\u2019s the maximum achievable number of points in the crossword. There is no need to cover all postions, just get the maximal score! Crossword and words contain only lowercase English letters.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009500) \u2014 the length of the crossword. The second line contains the crossword string. The third line contains a single integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009100) \u2014 the number of given words, and next m lines contain description of words: each line will have a string representing a non-empty word (its length doesn't exceed the length of the crossword) and integer pi (0\u2009\u2264\u2009pi\u2009\u2264\u2009100). Last line of the input will contain x (1\u2009\u2264\u2009x\u2009\u2264\u2009100) \u2014 maximum number of times a position in crossword can be used.\u000aOutput\u000aOutput single integer \u2014 maximum number of points you can get.\u000aExample\u000ainput\u000a6\u000aabacba\u000a2\u000aaba 6\u000aba 3\u000a3\u000aoutput\u000a12\u000aNote\u000aFor example, with the string "abacba", words "aba" (6 points) and "ba" (3 points), and x\u2009=\u20093, you can get at most 12 points - the word "aba" appears once ("abacba"), while "ba" appears two times ("abacba"). Note that for x\u2009=\u20091, you could get at most 9 points, since you wouldn\u2019t be able to count both "aba" and the first appearance of "ba".
+p5
+sS'name'
+p6
+VG. Underfail
+p7
+sS'tags'
+p8
+Vflows 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/717/G
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVOutput single integer \u2014 maximum number of points you can get.
+p19
+asS'statement'
+p20
+(lp21
+VG. Underfail
+p22
+aVtime limit per test1 second
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVYou have recently fallen through a hole and, after several hours of unconsciousness, have realized you are in an underground city. On one of your regular, daily walks through the unknown, you have encountered two unusually looking skeletons called Sanz and P\u2019pairus, who decided to accompany you and give you some puzzles for seemingly unknown reasons.
+p27
+aVOne day, Sanz has created a crossword for you. Not any kind of crossword, but a 1D crossword! You are given m words and a string of length n. You are also given an array p, which designates how much each word is worth \u2014 the i-th word is worth pi points. Whenever you find one of the m words in the string, you are given the corresponding number of points. Each position in the crossword can be used at most x times. A certain word can be counted at different places, but you cannot count the same appearance of a word multiple times. If a word is a substring of another word, you can count them both (presuming you haven\u2019t used the positions more than x times).
+p28
+aVIn order to solve the puzzle, you need to tell Sanz what\u2019s the maximum achievable number of points in the crossword. There is no need to cover all postions, just get the maximal score! Crossword and words contain only lowercase English letters.
+p29
+asS'problemId'
+p30
+V717/G
+p31
+sS'input'
+p32
+(lp33
+VInput
+p34
+aVThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009500) \u2014 the length of the crossword. The second line contains the crossword string. The third line contains a single integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009100) \u2014 the number of given words, and next m lines contain description of words: each line will have a string representing a non-empty word (its length doesn't exceed the length of the crossword) and integer pi (0\u2009\u2264\u2009pi\u2009\u2264\u2009100). Last line of the input will contain x (1\u2009\u2264\u2009x\u2009\u2264\u2009100) \u2014 maximum number of times a position in crossword can be used.
+p35
+asS'id'
+p36
+c__builtin__
+id
+p37
+sS'constraints'
+p38
+g33
+sb.

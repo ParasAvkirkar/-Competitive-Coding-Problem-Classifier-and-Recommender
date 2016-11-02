@@ -28,7 +28,7 @@ class CodeforcesProblem:
 				input_start = description_lines.index('Input :')
 			except ValueError:
 				input_start = description_lines.index('Input:')
-
+				
 
 		try:
 			output_start = description_lines.index('Output')
@@ -44,14 +44,16 @@ class CodeforcesProblem:
 			try:
 				example_start = description_lines.index('Examples :')
 			except ValueError:
-				example_start = description_lines.index('Examples:')
+				try:
+					example_start = description_lines.index('Examples:')
+				except ValueError:
+					example_start = description_lines.index('Example')
 
-		self.statement = description_lines[:input_start]
-		self.input = description_lines[input_start:output_start]
-		self.output = description_lines[output_start:example_start]
-		self.constraints = self.input
-		print self.input
-		print self.output
-
+			self.statement = description_lines[:input_start]
+			self.input = description_lines[input_start:output_start]
+			self.output = description_lines[output_start:example_start]
+			self.constraints = self.input
+			print self.input
+			print self.output
 
 	

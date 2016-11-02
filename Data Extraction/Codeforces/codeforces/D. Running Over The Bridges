@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Running Over The Bridges\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPolycarp is playing a game called "Running Over The Bridges". In this game he has to run over n bridges from the left to the right. Bridges are arranged one after the other, so the i-th bridge begins where the (i\u2009-\u20091)-th bridge ends.\u000aYou have the following data about bridges: li and ti \u2014 the length of the i-th bridge and the maximum allowed time which Polycarp can spend running over the i-th bridge. Thus, if Polycarp is in the beginning of the bridge i at the time T then he has to leave it at the time T\u2009+\u2009ti or earlier. It is allowed to reach the right end of a bridge exactly at the time T\u2009+\u2009ti.\u000aPolycarp can run from the left side to the right one with speed 0.5, so he will run over a bridge with length s in time 2·s. Besides, he has several magical drinks. If he uses one drink, his speed increases twice (i.e. to value 1) for r seconds. All magical drinks are identical. Please note that Polycarp can use a drink only at integer moments of time, and he drinks it instantly and completely. Additionally, if Polycarp uses a drink at the moment T he can use the next drink not earlier than at the moment T\u2009+\u2009r.\u000aWhat is the minimal number of drinks Polycarp has to use to run over all n bridges? If this number is not greater than 105, then you have to find out the moments of time when Polycarp has to use each magical drink.\u000aInput\u000aThe first line contains two integers n and r (1\u2009\u2264\u2009n\u2009\u2264\u20092·105, 1\u2009\u2264\u2009r\u2009\u2264\u20091012) \u2014 the number of bridges and the duration of the effect of a magical drink.\u000aThe second line contains a sequence of integers l1,\u2009l2,\u2009...,\u2009ln (1\u2009\u2264\u2009li\u2009\u2264\u20095·106), where li is equal to the length of the i-th bridge.\u000aThe third line contains a sequence of integers t1,\u2009t2,\u2009...,\u2009tn (1\u2009\u2264\u2009ti\u2009\u2264\u2009107), where ti is equal to the maximum allowed time which Polycarp can spend running over the i-th bridge.\u000aOutput\u000aThe first line of the output should contain k \u2014 the minimal number of drinks which Polycarp has to use, or -1 if there is no solution.\u000aIf the solution exists and the value of k is not greater than 105 then output k integers on the next line \u2014 moments of time from beginning of the game when Polycarp has to use drinks. Print the moments of time in chronological order. If there are several solutions, you can output any of them.\u000aExamples\u000ainput\u000a1 3\u000a7\u000a10\u000aoutput\u000a2\u000a0 3\u000ainput\u000a3 3\u000a3 3 3\u000a3 3 2\u000aoutput\u000a-1\u000ainput\u000a3 100000\u000a5 5 5\u000a5 7 8\u000aoutput\u000a1\u000a0 \u000ainput\u000a4 1000\u000a1 2 3 4\u000a10 9 10 9\u000aoutput\u000a0\u000a\u000aNote\u000aIn the first case, there is only one bridge and it is clear that Polycarp cannot run over it without magical drinks. So, if he will use one magical drink on start (moment of time 0), and the second one \u2014 three seconds later (moment of time 3), he will be able to reach the end of the bridge in time. Please note, in this case there are several possible answers to the problem. For example, Polycarp can use the first drink at the moment of time 4 and the second one \u2014 at the moment of time 7.\u000aIn the second case, Polycarp cannot run over all bridges even if he will use magical drinks. So, answer in this case is -1.\u000aIn the fourth case, Polycarp can run over all bridges without magical drinks.
+p3
+sS'problemStatement'
+p4
+VD. Running Over The Bridges\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPolycarp is playing a game called "Running Over The Bridges". In this game he has to run over n bridges from the left to the right. Bridges are arranged one after the other, so the i-th bridge begins where the (i\u2009-\u20091)-th bridge ends.\u000aYou have the following data about bridges: li and ti \u2014 the length of the i-th bridge and the maximum allowed time which Polycarp can spend running over the i-th bridge. Thus, if Polycarp is in the beginning of the bridge i at the time T then he has to leave it at the time T\u2009+\u2009ti or earlier. It is allowed to reach the right end of a bridge exactly at the time T\u2009+\u2009ti.\u000aPolycarp can run from the left side to the right one with speed 0.5, so he will run over a bridge with length s in time 2·s. Besides, he has several magical drinks. If he uses one drink, his speed increases twice (i.e. to value 1) for r seconds. All magical drinks are identical. Please note that Polycarp can use a drink only at integer moments of time, and he drinks it instantly and completely. Additionally, if Polycarp uses a drink at the moment T he can use the next drink not earlier than at the moment T\u2009+\u2009r.\u000aWhat is the minimal number of drinks Polycarp has to use to run over all n bridges? If this number is not greater than 105, then you have to find out the moments of time when Polycarp has to use each magical drink.\u000aInput\u000aThe first line contains two integers n and r (1\u2009\u2264\u2009n\u2009\u2264\u20092·105, 1\u2009\u2264\u2009r\u2009\u2264\u20091012) \u2014 the number of bridges and the duration of the effect of a magical drink.\u000aThe second line contains a sequence of integers l1,\u2009l2,\u2009...,\u2009ln (1\u2009\u2264\u2009li\u2009\u2264\u20095·106), where li is equal to the length of the i-th bridge.\u000aThe third line contains a sequence of integers t1,\u2009t2,\u2009...,\u2009tn (1\u2009\u2264\u2009ti\u2009\u2264\u2009107), where ti is equal to the maximum allowed time which Polycarp can spend running over the i-th bridge.\u000aOutput\u000aThe first line of the output should contain k \u2014 the minimal number of drinks which Polycarp has to use, or -1 if there is no solution.\u000aIf the solution exists and the value of k is not greater than 105 then output k integers on the next line \u2014 moments of time from beginning of the game when Polycarp has to use drinks. Print the moments of time in chronological order. If there are several solutions, you can output any of them.\u000aExamples\u000ainput\u000a1 3\u000a7\u000a10\u000aoutput\u000a2\u000a0 3\u000ainput\u000a3 3\u000a3 3 3\u000a3 3 2\u000aoutput\u000a-1\u000ainput\u000a3 100000\u000a5 5 5\u000a5 7 8\u000aoutput\u000a1\u000a0 \u000ainput\u000a4 1000\u000a1 2 3 4\u000a10 9 10 9\u000aoutput\u000a0\u000a\u000aNote\u000aIn the first case, there is only one bridge and it is clear that Polycarp cannot run over it without magical drinks. So, if he will use one magical drink on start (moment of time 0), and the second one \u2014 three seconds later (moment of time 3), he will be able to reach the end of the bridge in time. Please note, in this case there are several possible answers to the problem. For example, Polycarp can use the first drink at the moment of time 4 and the second one \u2014 at the moment of time 7.\u000aIn the second case, Polycarp cannot run over all bridges even if he will use magical drinks. So, answer in this case is -1.\u000aIn the fourth case, Polycarp can run over all bridges without magical drinks.
+p5
+sS'name'
+p6
+VD. Running Over The Bridges
+p7
+sS'tags'
+p8
+Vgreedy implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/D
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V730/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

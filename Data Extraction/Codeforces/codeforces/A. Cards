@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Cards\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n cards (n is even) in the deck. Each card has a positive integer written on it. n\u2009/\u20092 people will play new card game. At the beginning of the game each player gets two cards, each card is given to exactly one player.\u000aFind the way to distribute cards such that the sum of values written of the cards will be equal for each player. It is guaranteed that it is always possible.\u000aInput\u000aThe first line of the input contains integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of cards in the deck. It is guaranteed that n is even.\u000aThe second line contains the sequence of n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009100), where ai is equal to the number written on the i-th card.\u000aOutput\u000aPrint n\u2009/\u20092 pairs of integers, the i-th pair denote the cards that should be given to the i-th player. Each card should be given to exactly one player. Cards are numbered in the order they appear in the input.\u000aIt is guaranteed that solution exists. If there are several correct answers, you are allowed to print any of them.\u000aExamples\u000ainput\u000a6\u000a1 5 7 4 4 3\u000aoutput\u000a1 3\u000a6 2\u000a4 5\u000ainput\u000a4\u000a10 10 10 10\u000aoutput\u000a1 2\u000a3 4\u000aNote\u000aIn the first sample, cards are distributed in such a way that each player has the sum of numbers written on his cards equal to 8.\u000aIn the second sample, all values ai are equal. Thus, any distribution is acceptable.
+p3
+sS'problemStatement'
+p4
+VA. Cards\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n cards (n is even) in the deck. Each card has a positive integer written on it. n\u2009/\u20092 people will play new card game. At the beginning of the game each player gets two cards, each card is given to exactly one player.\u000aFind the way to distribute cards such that the sum of values written of the cards will be equal for each player. It is guaranteed that it is always possible.\u000aInput\u000aThe first line of the input contains integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of cards in the deck. It is guaranteed that n is even.\u000aThe second line contains the sequence of n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009100), where ai is equal to the number written on the i-th card.\u000aOutput\u000aPrint n\u2009/\u20092 pairs of integers, the i-th pair denote the cards that should be given to the i-th player. Each card should be given to exactly one player. Cards are numbered in the order they appear in the input.\u000aIt is guaranteed that solution exists. If there are several correct answers, you are allowed to print any of them.\u000aExamples\u000ainput\u000a6\u000a1 5 7 4 4 3\u000aoutput\u000a1 3\u000a6 2\u000a4 5\u000ainput\u000a4\u000a10 10 10 10\u000aoutput\u000a1 2\u000a3 4\u000aNote\u000aIn the first sample, cards are distributed in such a way that each player has the sum of numbers written on his cards equal to 8.\u000aIn the second sample, all values ai are equal. Thus, any distribution is acceptable.
+p5
+sS'name'
+p6
+VA. Cards
+p7
+sS'tags'
+p8
+Vgreedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/701/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V701/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

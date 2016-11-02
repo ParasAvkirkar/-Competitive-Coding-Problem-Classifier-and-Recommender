@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Joty and Chocolate\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aLittle Joty has got a task to do. She has a line of n tiles indexed from 1 to n. She has to paint them in a strange pattern.\u000aAn unpainted tile should be painted Red if it's index is divisible by a and an unpainted tile should be painted Blue if it's index is divisible by b. So the tile with the number divisible by a and b can be either painted Red or Blue.\u000aAfter her painting is done, she will get p chocolates for each tile that is painted Red and q chocolates for each tile that is painted Blue.\u000aNote that she can paint tiles in any order she wants.\u000aGiven the required information, find the maximum number of chocolates Joty can get.\u000aInput\u000aThe only line contains five integers n, a, b, p and q (1\u2009\u2264\u2009n,\u2009a,\u2009b,\u2009p,\u2009q\u2009\u2264\u2009109).\u000aOutput\u000aPrint the only integer s \u2014 the maximum number of chocolates Joty can get.\u000aNote that the answer can be too large, so you should use 64-bit integer type to store it. In C++ you can use the long long integer type and in Java you can use long integer type.\u000aExamples\u000ainput\u000a5 2 3 12 15\u000aoutput\u000a39\u000ainput\u000a20 2 3 3 5\u000aoutput\u000a51
+p3
+sS'problemStatement'
+p4
+VC. Joty and Chocolate\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aLittle Joty has got a task to do. She has a line of n tiles indexed from 1 to n. She has to paint them in a strange pattern.\u000aAn unpainted tile should be painted Red if it's index is divisible by a and an unpainted tile should be painted Blue if it's index is divisible by b. So the tile with the number divisible by a and b can be either painted Red or Blue.\u000aAfter her painting is done, she will get p chocolates for each tile that is painted Red and q chocolates for each tile that is painted Blue.\u000aNote that she can paint tiles in any order she wants.\u000aGiven the required information, find the maximum number of chocolates Joty can get.\u000aInput\u000aThe only line contains five integers n, a, b, p and q (1\u2009\u2264\u2009n,\u2009a,\u2009b,\u2009p,\u2009q\u2009\u2264\u2009109).\u000aOutput\u000aPrint the only integer s \u2014 the maximum number of chocolates Joty can get.\u000aNote that the answer can be too large, so you should use 64-bit integer type to store it. In C++ you can use the long long integer type and in Java you can use long integer type.\u000aExamples\u000ainput\u000a5 2 3 12 15\u000aoutput\u000a39\u000ainput\u000a20 2 3 3 5\u000aoutput\u000a51
+p5
+sS'name'
+p6
+VC. Joty and Chocolate
+p7
+sS'tags'
+p8
+Vimplementation math number theory 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/678/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V678/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

@@ -1,0 +1,94 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Lena and Queries\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aLena is a programmer. She got a task to solve at work.\u000aThere is an empty set of pairs of integers and n queries to process. Each query is one of three types:\u000aAdd a pair (a,\u2009b) to the set.\u000aRemove a pair added in the query number i. All queries are numbered with integers from 1 to n.\u000aFor a given integer q find the maximal value x·q\u2009+\u2009y over all pairs (x,\u2009y) from the set.\u000aHelp Lena to process the queries.\u000aInput\u000aThe first line of input contains integer n (1\u2009\u2264\u2009n\u2009\u2264\u20093·105) \u2014 the number of queries.\u000aEach of the next n lines starts with integer t (1\u2009\u2264\u2009t\u2009\u2264\u20093) \u2014 the type of the query.\u000aA pair of integers a and b (\u2009-\u2009109\u2009\u2264\u2009a,\u2009b\u2009\u2264\u2009109) follows in the query of the first type.\u000aAn integer i (1\u2009\u2264\u2009i\u2009\u2264\u2009n) follows in the query of the second type. It is guaranteed that i is less than the number of the query, the query number i has the first type and the pair from the i-th query is not already removed.\u000aAn integer q (\u2009-\u2009109\u2009\u2264\u2009q\u2009\u2264\u2009109) follows in the query of the third type.\u000aOutput\u000aFor the queries of the third type print on a separate line the desired maximal value of x·q\u2009+\u2009y.\u000aIf there are no pairs in the set print "EMPTY SET".\u000aExample\u000ainput\u000a7\u000a3 1\u000a1 2 3\u000a3 1\u000a1 -1 100\u000a3 1\u000a2 4\u000a3 1\u000aoutput\u000aEMPTY SET\u000a5\u000a99\u000a5
+p3
+sS'problemStatement'
+p4
+VF. Lena and Queries\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aLena is a programmer. She got a task to solve at work.\u000aThere is an empty set of pairs of integers and n queries to process. Each query is one of three types:\u000aAdd a pair (a,\u2009b) to the set.\u000aRemove a pair added in the query number i. All queries are numbered with integers from 1 to n.\u000aFor a given integer q find the maximal value x·q\u2009+\u2009y over all pairs (x,\u2009y) from the set.\u000aHelp Lena to process the queries.\u000aInput\u000aThe first line of input contains integer n (1\u2009\u2264\u2009n\u2009\u2264\u20093·105) \u2014 the number of queries.\u000aEach of the next n lines starts with integer t (1\u2009\u2264\u2009t\u2009\u2264\u20093) \u2014 the type of the query.\u000aA pair of integers a and b (\u2009-\u2009109\u2009\u2264\u2009a,\u2009b\u2009\u2264\u2009109) follows in the query of the first type.\u000aAn integer i (1\u2009\u2264\u2009i\u2009\u2264\u2009n) follows in the query of the second type. It is guaranteed that i is less than the number of the query, the query number i has the first type and the pair from the i-th query is not already removed.\u000aAn integer q (\u2009-\u2009109\u2009\u2264\u2009q\u2009\u2264\u2009109) follows in the query of the third type.\u000aOutput\u000aFor the queries of the third type print on a separate line the desired maximal value of x·q\u2009+\u2009y.\u000aIf there are no pairs in the set print "EMPTY SET".\u000aExample\u000ainput\u000a7\u000a3 1\u000a1 2 3\u000a3 1\u000a1 -1 100\u000a3 1\u000a2 4\u000a3 1\u000aoutput\u000aEMPTY SET\u000a5\u000a99\u000a5
+p5
+sS'name'
+p6
+VF. Lena and Queries
+p7
+sS'tags'
+p8
+Vdata structures divide and conquer geometry 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/678/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVFor the queries of the third type print on a separate line the desired maximal value of x·q\u2009+\u2009y.
+p19
+aVIf there are no pairs in the set print "EMPTY SET".
+p20
+asS'statement'
+p21
+(lp22
+VF. Lena and Queries
+p23
+aVtime limit per test4 seconds
+p24
+aVmemory limit per test256 megabytes
+p25
+aVinputstandard input
+p26
+aVoutputstandard output
+p27
+aVLena is a programmer. She got a task to solve at work.
+p28
+aVThere is an empty set of pairs of integers and n queries to process. Each query is one of three types:
+p29
+aVAdd a pair (a,\u2009b) to the set.
+p30
+aVRemove a pair added in the query number i. All queries are numbered with integers from 1 to n.
+p31
+aVFor a given integer q find the maximal value x·q\u2009+\u2009y over all pairs (x,\u2009y) from the set.
+p32
+aVHelp Lena to process the queries.
+p33
+asS'problemId'
+p34
+V678/F
+p35
+sS'input'
+p36
+(lp37
+VInput
+p38
+aVThe first line of input contains integer n (1\u2009\u2264\u2009n\u2009\u2264\u20093·105) \u2014 the number of queries.
+p39
+aVEach of the next n lines starts with integer t (1\u2009\u2264\u2009t\u2009\u2264\u20093) \u2014 the type of the query.
+p40
+aVA pair of integers a and b (\u2009-\u2009109\u2009\u2264\u2009a,\u2009b\u2009\u2264\u2009109) follows in the query of the first type.
+p41
+aVAn integer i (1\u2009\u2264\u2009i\u2009\u2264\u2009n) follows in the query of the second type. It is guaranteed that i is less than the number of the query, the query number i has the first type and the pair from the i-th query is not already removed.
+p42
+aVAn integer q (\u2009-\u2009109\u2009\u2264\u2009q\u2009\u2264\u2009109) follows in the query of the third type.
+p43
+asS'id'
+p44
+c__builtin__
+id
+p45
+sS'constraints'
+p46
+g37
+sb.

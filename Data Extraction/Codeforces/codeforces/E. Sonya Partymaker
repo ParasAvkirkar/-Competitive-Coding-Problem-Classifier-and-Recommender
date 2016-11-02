@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Sonya Partymaker\u000atime limit per test1.5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOwl Sonya decided to become a partymaker. To train for this role she gather all her owl friends in the country house. There are m chairs located in a circle and consequently numbered with integers from 1 to m. Thus, chairs i and i\u2009+\u20091 are neighbouring for all i from 1 to m\u2009-\u20091. Chairs 1 and m are also neighbouring. Some chairs are occupied by her friends. There are n friends in total. No two friends occupy the same chair. Rules are the following:\u000aEach participant removes from the game the chair he is currently sitting on.\u000aEach of the participants choose a direction that she will follow: clockwise (indices increase, from m goes to 1) and counter-clockwise (indices decrease, from 1 goes to m). This direction may coincide or be different for any pair of owls.\u000aEach turn all guests move one step in the chosen directions. If some guest move to the position with a chair there, he removes this chair from the game.\u000aGame ends if there are no more chairs left in the game.\u000aOwls are very busy and want to get rid of the game as soon as possible. They cooperate to pick the direction. Your goal is to find the minimum number o moves required to finish the game.\u000aInput\u000aThe first line of the input contains a single integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009109) \u2014 the length of the circle.\u000aThe second line contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of friends.\u000aLast line contains an increasing sequence of n integers ai (1\u2009\u2264\u2009ai\u2009\u2264\u2009m) \u2014 initial positions of all owls.\u000aOutput\u000aPrint the minimum number of move required to finish the game. Note, that 0 also may be an answer.\u000aExamples\u000ainput\u000a6\u000a3\u000a1 3 5\u000aoutput\u000a1\u000ainput\u000a6\u000a2\u000a1 6\u000aoutput\u000a2\u000ainput\u000a406\u000a6\u000a1 2 3 204 205 206\u000aoutput\u000a100\u000aNote\u000aIn the first sample, it's possible if all owls will move clockwise, i.e. in the direction of increasing indices.\u000aIn the sample, first owl has to move clockwise, while the second \u2014 counterclockwise.\u000aIn the third sample, the first and the fourth owls should move counterclockwise, while the third and the sixth \u2014 clockwise. The second and the firth may move in any direction.
+p3
+sS'problemStatement'
+p4
+VE. Sonya Partymaker\u000atime limit per test1.5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOwl Sonya decided to become a partymaker. To train for this role she gather all her owl friends in the country house. There are m chairs located in a circle and consequently numbered with integers from 1 to m. Thus, chairs i and i\u2009+\u20091 are neighbouring for all i from 1 to m\u2009-\u20091. Chairs 1 and m are also neighbouring. Some chairs are occupied by her friends. There are n friends in total. No two friends occupy the same chair. Rules are the following:\u000aEach participant removes from the game the chair he is currently sitting on.\u000aEach of the participants choose a direction that she will follow: clockwise (indices increase, from m goes to 1) and counter-clockwise (indices decrease, from 1 goes to m). This direction may coincide or be different for any pair of owls.\u000aEach turn all guests move one step in the chosen directions. If some guest move to the position with a chair there, he removes this chair from the game.\u000aGame ends if there are no more chairs left in the game.\u000aOwls are very busy and want to get rid of the game as soon as possible. They cooperate to pick the direction. Your goal is to find the minimum number o moves required to finish the game.\u000aInput\u000aThe first line of the input contains a single integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009109) \u2014 the length of the circle.\u000aThe second line contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of friends.\u000aLast line contains an increasing sequence of n integers ai (1\u2009\u2264\u2009ai\u2009\u2264\u2009m) \u2014 initial positions of all owls.\u000aOutput\u000aPrint the minimum number of move required to finish the game. Note, that 0 also may be an answer.\u000aExamples\u000ainput\u000a6\u000a3\u000a1 3 5\u000aoutput\u000a1\u000ainput\u000a6\u000a2\u000a1 6\u000aoutput\u000a2\u000ainput\u000a406\u000a6\u000a1 2 3 204 205 206\u000aoutput\u000a100\u000aNote\u000aIn the first sample, it's possible if all owls will move clockwise, i.e. in the direction of increasing indices.\u000aIn the sample, first owl has to move clockwise, while the second \u2014 counterclockwise.\u000aIn the third sample, the first and the fourth owls should move counterclockwise, while the third and the sixth \u2014 clockwise. The second and the firth may move in any direction.
+p5
+sS'name'
+p6
+VE. Sonya Partymaker
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/713/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1.5 seconds
+p15
+sS'problemId'
+p16
+V713/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

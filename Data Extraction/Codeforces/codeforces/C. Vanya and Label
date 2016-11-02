@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Vanya and Label\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aWhile walking down the street Vanya saw a label "Hide&Seek". Because he is a programmer, he used & as a bitwise AND for these two words represented as a integers in base 64 and got new word. Now Vanya thinks of some string s and wants to know the number of pairs of words of length |s| (length of s), such that their bitwise AND is equal to s. As this number can be large, output it modulo 109\u2009+\u20097.\u000aTo represent the string as a number in numeral system with base 64 Vanya uses the following rules:\u000adigits from '0' to '9' correspond to integers from 0 to 9;\u000aletters from 'A' to 'Z' correspond to integers from 10 to 35;\u000aletters from 'a' to 'z' correspond to integers from 36 to 61;\u000aletter '-' correspond to integer 62;\u000aletter '_' correspond to integer 63.\u000aInput\u000aThe only line of the input contains a single word s (1\u2009\u2264\u2009|s|\u2009\u2264\u2009100\u2009000), consisting of digits, lowercase and uppercase English letters, characters '-' and '_'.\u000aOutput\u000aPrint a single integer \u2014 the number of possible pairs of words, such that their bitwise AND is equal to string s modulo 109\u2009+\u20097.\u000aExamples\u000ainput\u000az\u000aoutput\u000a3\u000ainput\u000aV_V\u000aoutput\u000a9\u000ainput\u000aCodeforces\u000aoutput\u000a130653412\u000aNote\u000aFor a detailed definition of bitwise AND we recommend to take a look in the corresponding article in Wikipedia.\u000aIn the first sample, there are 3 possible solutions:\u000az&_\u2009=\u200961&63\u2009=\u200961\u2009=\u2009z\u000a_&z\u2009=\u200963&61\u2009=\u200961\u2009=\u2009z\u000az&z\u2009=\u200961&61\u2009=\u200961\u2009=\u2009z
+p3
+sS'problemStatement'
+p4
+VC. Vanya and Label\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aWhile walking down the street Vanya saw a label "Hide&Seek". Because he is a programmer, he used & as a bitwise AND for these two words represented as a integers in base 64 and got new word. Now Vanya thinks of some string s and wants to know the number of pairs of words of length |s| (length of s), such that their bitwise AND is equal to s. As this number can be large, output it modulo 109\u2009+\u20097.\u000aTo represent the string as a number in numeral system with base 64 Vanya uses the following rules:\u000adigits from '0' to '9' correspond to integers from 0 to 9;\u000aletters from 'A' to 'Z' correspond to integers from 10 to 35;\u000aletters from 'a' to 'z' correspond to integers from 36 to 61;\u000aletter '-' correspond to integer 62;\u000aletter '_' correspond to integer 63.\u000aInput\u000aThe only line of the input contains a single word s (1\u2009\u2264\u2009|s|\u2009\u2264\u2009100\u2009000), consisting of digits, lowercase and uppercase English letters, characters '-' and '_'.\u000aOutput\u000aPrint a single integer \u2014 the number of possible pairs of words, such that their bitwise AND is equal to string s modulo 109\u2009+\u20097.\u000aExamples\u000ainput\u000az\u000aoutput\u000a3\u000ainput\u000aV_V\u000aoutput\u000a9\u000ainput\u000aCodeforces\u000aoutput\u000a130653412\u000aNote\u000aFor a detailed definition of bitwise AND we recommend to take a look in the corresponding article in Wikipedia.\u000aIn the first sample, there are 3 possible solutions:\u000az&_\u2009=\u200961&63\u2009=\u200961\u2009=\u2009z\u000a_&z\u2009=\u200963&61\u2009=\u200961\u2009=\u2009z\u000az&z\u2009=\u200961&61\u2009=\u200961\u2009=\u2009z
+p5
+sS'name'
+p6
+VC. Vanya and Label
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/677/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V677/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

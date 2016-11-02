@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Cormen \u2014 The Best Friend Of a Man\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aRecently a dog was bought for Polycarp. The dog's name is Cormen. Now Polycarp has a lot of troubles. For example, Cormen likes going for a walk.\u000aEmpirically Polycarp learned that the dog needs at least k walks for any two consecutive days in order to feel good. For example, if k\u2009=\u20095 and yesterday Polycarp went for a walk with Cormen 2 times, today he has to go for a walk at least 3 times.\u000aPolycarp analysed all his affairs over the next n days and made a sequence of n integers a1,\u2009a2,\u2009...,\u2009an, where ai is the number of times Polycarp will walk with the dog on the i-th day while doing all his affairs (for example, he has to go to a shop, throw out the trash, etc.).\u000aHelp Polycarp determine the minimum number of walks he needs to do additionaly in the next n days so that Cormen will feel good during all the n days. You can assume that on the day before the first day and on the day after the n-th day Polycarp will go for a walk with Cormen exactly k times.\u000aWrite a program that will find the minumum number of additional walks and the appropriate schedule \u2014 the sequence of integers b1,\u2009b2,\u2009...,\u2009bn (bi\u2009\u2265\u2009ai), where bi means the total number of walks with the dog on the i-th day.\u000aInput\u000aThe first line contains two integers n and k (1\u2009\u2264\u2009n,\u2009k\u2009\u2264\u2009500) \u2014 the number of days and the minimum number of walks with Cormen for any two consecutive days.\u000aThe second line contains integers a1,\u2009a2,\u2009...,\u2009an (0\u2009\u2264\u2009ai\u2009\u2264\u2009500) \u2014 the number of walks with Cormen on the i-th day which Polycarp has already planned.\u000aOutput\u000aIn the first line print the smallest number of additional walks that Polycarp should do during the next n days so that Cormen will feel good during all days.\u000aIn the second line print n integers b1,\u2009b2,\u2009...,\u2009bn, where bi \u2014 the total number of walks on the i-th day according to the found solutions (ai\u2009\u2264\u2009bi for all i from 1 to n). If there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a3 5\u000a2 0 1\u000aoutput\u000a4\u000a2 3 2\u000ainput\u000a3 1\u000a0 0 0\u000aoutput\u000a1\u000a0 1 0\u000ainput\u000a4 6\u000a2 4 3 5\u000aoutput\u000a0\u000a2 4 3 5
+p3
+sS'problemStatement'
+p4
+VB. Cormen \u2014 The Best Friend Of a Man\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aRecently a dog was bought for Polycarp. The dog's name is Cormen. Now Polycarp has a lot of troubles. For example, Cormen likes going for a walk.\u000aEmpirically Polycarp learned that the dog needs at least k walks for any two consecutive days in order to feel good. For example, if k\u2009=\u20095 and yesterday Polycarp went for a walk with Cormen 2 times, today he has to go for a walk at least 3 times.\u000aPolycarp analysed all his affairs over the next n days and made a sequence of n integers a1,\u2009a2,\u2009...,\u2009an, where ai is the number of times Polycarp will walk with the dog on the i-th day while doing all his affairs (for example, he has to go to a shop, throw out the trash, etc.).\u000aHelp Polycarp determine the minimum number of walks he needs to do additionaly in the next n days so that Cormen will feel good during all the n days. You can assume that on the day before the first day and on the day after the n-th day Polycarp will go for a walk with Cormen exactly k times.\u000aWrite a program that will find the minumum number of additional walks and the appropriate schedule \u2014 the sequence of integers b1,\u2009b2,\u2009...,\u2009bn (bi\u2009\u2265\u2009ai), where bi means the total number of walks with the dog on the i-th day.\u000aInput\u000aThe first line contains two integers n and k (1\u2009\u2264\u2009n,\u2009k\u2009\u2264\u2009500) \u2014 the number of days and the minimum number of walks with Cormen for any two consecutive days.\u000aThe second line contains integers a1,\u2009a2,\u2009...,\u2009an (0\u2009\u2264\u2009ai\u2009\u2264\u2009500) \u2014 the number of walks with Cormen on the i-th day which Polycarp has already planned.\u000aOutput\u000aIn the first line print the smallest number of additional walks that Polycarp should do during the next n days so that Cormen will feel good during all days.\u000aIn the second line print n integers b1,\u2009b2,\u2009...,\u2009bn, where bi \u2014 the total number of walks on the i-th day according to the found solutions (ai\u2009\u2264\u2009bi for all i from 1 to n). If there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a3 5\u000a2 0 1\u000aoutput\u000a4\u000a2 3 2\u000ainput\u000a3 1\u000a0 0 0\u000aoutput\u000a1\u000a0 1 0\u000ainput\u000a4 6\u000a2 4 3 5\u000aoutput\u000a0\u000a2 4 3 5
+p5
+sS'name'
+p6
+VB. Cormen \u2014 The Best Friend Of a Man
+p7
+sS'tags'
+p8
+Vdp greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/732/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V732/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

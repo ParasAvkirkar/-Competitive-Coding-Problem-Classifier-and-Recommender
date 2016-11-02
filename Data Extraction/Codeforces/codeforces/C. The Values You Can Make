@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. The Values You Can Make\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPari wants to buy an expensive chocolate from Arya. She has n coins, the value of the i-th coin is ci. The price of the chocolate is k, so Pari will take a subset of her coins with sum equal to k and give it to Arya.\u000aLooking at her coins, a question came to her mind: after giving the coins to Arya, what values does Arya can make with them? She is jealous and she doesn't want Arya to make a lot of values. So she wants to know all the values x, such that Arya will be able to make x using some subset of coins with the sum k.\u000aFormally, Pari wants to know the values x such that there exists a subset of coins with the sum k such that some subset of this subset has the sum x, i.e. there is exists some way to pay for the chocolate, such that Arya will be able to make the sum x using these coins.\u000aInput\u000aThe first line contains two integers n and k (1\u2009\u2009\u2264\u2009\u2009n,\u2009k\u2009\u2009\u2264\u2009\u2009500) \u2014 the number of coins and the price of the chocolate, respectively.\u000aNext line will contain n integers c1,\u2009c2,\u2009...,\u2009cn (1\u2009\u2264\u2009ci\u2009\u2264\u2009500) \u2014 the values of Pari's coins.\u000aIt's guaranteed that one can make value k using these coins.\u000aOutput\u000aFirst line of the output must contain a single integer q\u2014 the number of suitable values x. Then print q integers in ascending order \u2014 the values that Arya can make for some subset of coins of Pari that pays for the chocolate.\u000aExamples\u000ainput\u000a6 18\u000a5 6 1 10 12 2\u000aoutput\u000a16\u000a0 1 2 3 5 6 7 8 10 11 12 13 15 16 17 18 \u000ainput\u000a3 50\u000a25 25 50\u000aoutput\u000a3\u000a0 25 50 
+p3
+sS'problemStatement'
+p4
+VC. The Values You Can Make\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPari wants to buy an expensive chocolate from Arya. She has n coins, the value of the i-th coin is ci. The price of the chocolate is k, so Pari will take a subset of her coins with sum equal to k and give it to Arya.\u000aLooking at her coins, a question came to her mind: after giving the coins to Arya, what values does Arya can make with them? She is jealous and she doesn't want Arya to make a lot of values. So she wants to know all the values x, such that Arya will be able to make x using some subset of coins with the sum k.\u000aFormally, Pari wants to know the values x such that there exists a subset of coins with the sum k such that some subset of this subset has the sum x, i.e. there is exists some way to pay for the chocolate, such that Arya will be able to make the sum x using these coins.\u000aInput\u000aThe first line contains two integers n and k (1\u2009\u2009\u2264\u2009\u2009n,\u2009k\u2009\u2009\u2264\u2009\u2009500) \u2014 the number of coins and the price of the chocolate, respectively.\u000aNext line will contain n integers c1,\u2009c2,\u2009...,\u2009cn (1\u2009\u2264\u2009ci\u2009\u2264\u2009500) \u2014 the values of Pari's coins.\u000aIt's guaranteed that one can make value k using these coins.\u000aOutput\u000aFirst line of the output must contain a single integer q\u2014 the number of suitable values x. Then print q integers in ascending order \u2014 the values that Arya can make for some subset of coins of Pari that pays for the chocolate.\u000aExamples\u000ainput\u000a6 18\u000a5 6 1 10 12 2\u000aoutput\u000a16\u000a0 1 2 3 5 6 7 8 10 11 12 13 15 16 17 18 \u000ainput\u000a3 50\u000a25 25 50\u000aoutput\u000a3\u000a0 25 50 
+p5
+sS'name'
+p6
+VC. The Values You Can Make
+p7
+sS'tags'
+p8
+Vdp 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/687/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V687/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

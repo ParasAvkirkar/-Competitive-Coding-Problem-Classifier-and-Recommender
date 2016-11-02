@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Dense Subsequence\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given a string s, consisting of lowercase English letters, and the integer m.\u000aOne should choose some symbols from the given string so that any contiguous subsegment of length m has at least one selected symbol. Note that here we choose positions of symbols, not the symbols themselves.\u000aThen one uses the chosen symbols to form a new string. All symbols from the chosen position should be used, but we are allowed to rearrange them in any order.\u000aFormally, we choose a subsequence of indices 1\u2009\u2264\u2009i1\u2009<\u2009i2\u2009<\u2009...\u2009<\u2009it\u2009\u2264\u2009|s|. The selected sequence must meet the following condition: for every j such that 1\u2009\u2264\u2009j\u2009\u2264\u2009|s|\u2009-\u2009m\u2009+\u20091, there must be at least one selected index that belongs to the segment [j,\u2009 j\u2009+\u2009m\u2009-\u20091], i.e. there should exist a k from 1 to t, such that j\u2009\u2264\u2009ik\u2009\u2264\u2009j\u2009+\u2009m\u2009-\u20091.\u000aThen we take any permutation p of the selected indices and form a new string sip1sip2... sipt.\u000aFind the lexicographically smallest string, that can be obtained using this procedure.\u000aInput\u000aThe first line of the input contains a single integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009100\u2009000).\u000aThe second line contains the string s consisting of lowercase English letters. It is guaranteed that this string is non-empty and its length doesn't exceed 100\u2009000. It is also guaranteed that the number m doesn't exceed the length of the string s.\u000aOutput\u000aPrint the single line containing the lexicographically smallest string, that can be obtained using the procedure described above.\u000aExamples\u000ainput\u000a3\u000acbabc\u000aoutput\u000aa\u000ainput\u000a2\u000aabcab\u000aoutput\u000aaab\u000ainput\u000a3\u000abcabcbaccba\u000aoutput\u000aaaabb\u000aNote\u000aIn the first sample, one can choose the subsequence {3} and form a string "a".\u000aIn the second sample, one can choose the subsequence {1,\u20092,\u20094} (symbols on this positions are 'a', 'b' and 'a') and rearrange the chosen symbols to form a string "aab".
+p3
+sS'problemStatement'
+p4
+VD. Dense Subsequence\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given a string s, consisting of lowercase English letters, and the integer m.\u000aOne should choose some symbols from the given string so that any contiguous subsegment of length m has at least one selected symbol. Note that here we choose positions of symbols, not the symbols themselves.\u000aThen one uses the chosen symbols to form a new string. All symbols from the chosen position should be used, but we are allowed to rearrange them in any order.\u000aFormally, we choose a subsequence of indices 1\u2009\u2264\u2009i1\u2009<\u2009i2\u2009<\u2009...\u2009<\u2009it\u2009\u2264\u2009|s|. The selected sequence must meet the following condition: for every j such that 1\u2009\u2264\u2009j\u2009\u2264\u2009|s|\u2009-\u2009m\u2009+\u20091, there must be at least one selected index that belongs to the segment [j,\u2009 j\u2009+\u2009m\u2009-\u20091], i.e. there should exist a k from 1 to t, such that j\u2009\u2264\u2009ik\u2009\u2264\u2009j\u2009+\u2009m\u2009-\u20091.\u000aThen we take any permutation p of the selected indices and form a new string sip1sip2... sipt.\u000aFind the lexicographically smallest string, that can be obtained using this procedure.\u000aInput\u000aThe first line of the input contains a single integer m (1\u2009\u2264\u2009m\u2009\u2264\u2009100\u2009000).\u000aThe second line contains the string s consisting of lowercase English letters. It is guaranteed that this string is non-empty and its length doesn't exceed 100\u2009000. It is also guaranteed that the number m doesn't exceed the length of the string s.\u000aOutput\u000aPrint the single line containing the lexicographically smallest string, that can be obtained using the procedure described above.\u000aExamples\u000ainput\u000a3\u000acbabc\u000aoutput\u000aa\u000ainput\u000a2\u000aabcab\u000aoutput\u000aaab\u000ainput\u000a3\u000abcabcbaccba\u000aoutput\u000aaaabb\u000aNote\u000aIn the first sample, one can choose the subsequence {3} and form a string "a".\u000aIn the second sample, one can choose the subsequence {1,\u20092,\u20094} (symbols on this positions are 'a', 'b' and 'a') and rearrange the chosen symbols to form a string "aab".
+p5
+sS'name'
+p6
+VD. Dense Subsequence
+p7
+sS'tags'
+p8
+Vdata structures greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/724/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V724/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

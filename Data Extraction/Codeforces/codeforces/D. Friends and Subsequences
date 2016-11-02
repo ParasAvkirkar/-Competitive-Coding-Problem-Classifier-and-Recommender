@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Friends and Subsequences\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aMike and !Mike are old childhood rivals, they are opposite in everything they do, except programming. Today they have a problem they cannot solve on their own, but together (with you) \u2014 who knows?\u000aEvery one of them has an integer sequences a and b of length n. Being given a query of the form of pair of integers (l,\u2009r), Mike can instantly tell the value of while !Mike can instantly tell the value of .\u000aNow suppose a robot (you!) asks them all possible different queries of pairs of integers (l,\u2009r) (1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n) (so he will make exactly n(n\u2009+\u20091)\u2009/\u20092 queries) and counts how many times their answers coincide, thus for how many pairs is satisfied.\u000aHow many occasions will the robot count?\u000aInput\u000aThe first line contains only integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000).\u000aThe second line contains n integer numbers a1,\u2009a2,\u2009...,\u2009an (\u2009-\u2009109\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the sequence a.\u000aThe third line contains n integer numbers b1,\u2009b2,\u2009...,\u2009bn (\u2009-\u2009109\u2009\u2264\u2009bi\u2009\u2264\u2009109) \u2014 the sequence b.\u000aOutput\u000aPrint the only integer number \u2014 the number of occasions the robot will count, thus for how many pairs is satisfied.\u000aExamples\u000ainput\u000a6\u000a1 2 3 2 1 4\u000a6 7 1 2 3 2\u000aoutput\u000a2\u000ainput\u000a3\u000a3 3 3\u000a1 1 1\u000aoutput\u000a0\u000aNote\u000aThe occasions in the first sample case are:\u000a1.l\u2009=\u20094,r\u2009=\u20094 since max{2}\u2009=\u2009min{2}.\u000a2.l\u2009=\u20094,r\u2009=\u20095 since max{2,\u20091}\u2009=\u2009min{2,\u20093}.\u000aThere are no occasions in the second sample case since Mike will answer 3 to any query pair, but !Mike will always answer 1.
+p3
+sS'problemStatement'
+p4
+VD. Friends and Subsequences\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aMike and !Mike are old childhood rivals, they are opposite in everything they do, except programming. Today they have a problem they cannot solve on their own, but together (with you) \u2014 who knows?\u000aEvery one of them has an integer sequences a and b of length n. Being given a query of the form of pair of integers (l,\u2009r), Mike can instantly tell the value of while !Mike can instantly tell the value of .\u000aNow suppose a robot (you!) asks them all possible different queries of pairs of integers (l,\u2009r) (1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n) (so he will make exactly n(n\u2009+\u20091)\u2009/\u20092 queries) and counts how many times their answers coincide, thus for how many pairs is satisfied.\u000aHow many occasions will the robot count?\u000aInput\u000aThe first line contains only integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000).\u000aThe second line contains n integer numbers a1,\u2009a2,\u2009...,\u2009an (\u2009-\u2009109\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the sequence a.\u000aThe third line contains n integer numbers b1,\u2009b2,\u2009...,\u2009bn (\u2009-\u2009109\u2009\u2264\u2009bi\u2009\u2264\u2009109) \u2014 the sequence b.\u000aOutput\u000aPrint the only integer number \u2014 the number of occasions the robot will count, thus for how many pairs is satisfied.\u000aExamples\u000ainput\u000a6\u000a1 2 3 2 1 4\u000a6 7 1 2 3 2\u000aoutput\u000a2\u000ainput\u000a3\u000a3 3 3\u000a1 1 1\u000aoutput\u000a0\u000aNote\u000aThe occasions in the first sample case are:\u000a1.l\u2009=\u20094,r\u2009=\u20094 since max{2}\u2009=\u2009min{2}.\u000a2.l\u2009=\u20094,r\u2009=\u20095 since max{2,\u20091}\u2009=\u2009min{2,\u20093}.\u000aThere are no occasions in the second sample case since Mike will answer 3 to any query pair, but !Mike will always answer 1.
+p5
+sS'name'
+p6
+VD. Friends and Subsequences
+p7
+sS'tags'
+p8
+Vbinary search data structures 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/689/D
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V689/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

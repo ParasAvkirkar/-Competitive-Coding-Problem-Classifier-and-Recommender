@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Sonya and Problem Wihtout a Legend\u000atime limit per test5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aSonya was unable to think of a story for this problem, so here comes the formal description.\u000aYou are given the array containing n positive integers. At one turn you can pick any element and increase or decrease it by 1. The goal is the make the array strictly increasing by making the minimum possible number of operations. You are allowed to change elements in any way, they can become negative or equal to 0.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u20093000) \u2014 the length of the array.\u000aNext line contains n integer ai (1\u2009\u2264\u2009ai\u2009\u2264\u2009109).\u000aOutput\u000aPrint the minimum number of operation required to make the array strictly increasing.\u000aExamples\u000ainput\u000a7\u000a2 1 5 11 5 9 11\u000aoutput\u000a9\u000ainput\u000a5\u000a5 4 3 2 1\u000aoutput\u000a12\u000aNote\u000aIn the first sample, the array is going to look as follows:\u000a2 3 5 6 7 9 11\u000a|2\u2009-\u20092|\u2009+\u2009|1\u2009-\u20093|\u2009+\u2009|5\u2009-\u20095|\u2009+\u2009|11\u2009-\u20096|\u2009+\u2009|5\u2009-\u20097|\u2009+\u2009|9\u2009-\u20099|\u2009+\u2009|11\u2009-\u200911|\u2009=\u20099\u000aAnd for the second sample:\u000a1 2 3 4 5\u000a|5\u2009-\u20091|\u2009+\u2009|4\u2009-\u20092|\u2009+\u2009|3\u2009-\u20093|\u2009+\u2009|2\u2009-\u20094|\u2009+\u2009|1\u2009-\u20095|\u2009=\u200912
+p3
+sS'problemStatement'
+p4
+VC. Sonya and Problem Wihtout a Legend\u000atime limit per test5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aSonya was unable to think of a story for this problem, so here comes the formal description.\u000aYou are given the array containing n positive integers. At one turn you can pick any element and increase or decrease it by 1. The goal is the make the array strictly increasing by making the minimum possible number of operations. You are allowed to change elements in any way, they can become negative or equal to 0.\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u20093000) \u2014 the length of the array.\u000aNext line contains n integer ai (1\u2009\u2264\u2009ai\u2009\u2264\u2009109).\u000aOutput\u000aPrint the minimum number of operation required to make the array strictly increasing.\u000aExamples\u000ainput\u000a7\u000a2 1 5 11 5 9 11\u000aoutput\u000a9\u000ainput\u000a5\u000a5 4 3 2 1\u000aoutput\u000a12\u000aNote\u000aIn the first sample, the array is going to look as follows:\u000a2 3 5 6 7 9 11\u000a|2\u2009-\u20092|\u2009+\u2009|1\u2009-\u20093|\u2009+\u2009|5\u2009-\u20095|\u2009+\u2009|11\u2009-\u20096|\u2009+\u2009|5\u2009-\u20097|\u2009+\u2009|9\u2009-\u20099|\u2009+\u2009|11\u2009-\u200911|\u2009=\u20099\u000aAnd for the second sample:\u000a1 2 3 4 5\u000a|5\u2009-\u20091|\u2009+\u2009|4\u2009-\u20092|\u2009+\u2009|3\u2009-\u20093|\u2009+\u2009|2\u2009-\u20094|\u2009+\u2009|1\u2009-\u20095|\u2009=\u200912
+p5
+sS'name'
+p6
+VC. Sonya and Problem Wihtout a Legend
+p7
+sS'tags'
+p8
+Vdp sortings 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/713/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V5 seconds
+p15
+sS'problemId'
+p16
+V713/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

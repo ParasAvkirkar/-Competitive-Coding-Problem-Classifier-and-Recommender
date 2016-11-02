@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Meeting of Old Friends\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aToday an outstanding event is going to happen in the forest \u2014 hedgehog Filya will come to his old fried Sonya!\u000aSonya is an owl and she sleeps during the day and stay awake from minute l1 to minute r1 inclusive. Also, during the minute k she prinks and is unavailable for Filya.\u000aFilya works a lot and he plans to visit Sonya from minute l2 to minute r2 inclusive.\u000aCalculate the number of minutes they will be able to spend together.\u000aInput\u000aThe only line of the input contains integers l1, r1, l2, r2 and k (1\u2009\u2264\u2009l1,\u2009r1,\u2009l2,\u2009r2,\u2009k\u2009\u2264\u20091018, l1\u2009\u2264\u2009r1, l2\u2009\u2264\u2009r2), providing the segments of time for Sonya and Filya and the moment of time when Sonya prinks.\u000aOutput\u000aPrint one integer \u2014 the number of minutes Sonya and Filya will be able to spend together.\u000aExamples\u000ainput\u000a1 10 9 20 1\u000aoutput\u000a2\u000ainput\u000a1 100 50 200 75\u000aoutput\u000a50\u000aNote\u000aIn the first sample, they will be together during minutes 9 and 10.\u000aIn the second sample, they will be together from minute 50 to minute 74 and from minute 76 to minute 100.
+p3
+sS'problemStatement'
+p4
+VA. Meeting of Old Friends\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aToday an outstanding event is going to happen in the forest \u2014 hedgehog Filya will come to his old fried Sonya!\u000aSonya is an owl and she sleeps during the day and stay awake from minute l1 to minute r1 inclusive. Also, during the minute k she prinks and is unavailable for Filya.\u000aFilya works a lot and he plans to visit Sonya from minute l2 to minute r2 inclusive.\u000aCalculate the number of minutes they will be able to spend together.\u000aInput\u000aThe only line of the input contains integers l1, r1, l2, r2 and k (1\u2009\u2264\u2009l1,\u2009r1,\u2009l2,\u2009r2,\u2009k\u2009\u2264\u20091018, l1\u2009\u2264\u2009r1, l2\u2009\u2264\u2009r2), providing the segments of time for Sonya and Filya and the moment of time when Sonya prinks.\u000aOutput\u000aPrint one integer \u2014 the number of minutes Sonya and Filya will be able to spend together.\u000aExamples\u000ainput\u000a1 10 9 20 1\u000aoutput\u000a2\u000ainput\u000a1 100 50 200 75\u000aoutput\u000a50\u000aNote\u000aIn the first sample, they will be together during minutes 9 and 10.\u000aIn the second sample, they will be together from minute 50 to minute 74 and from minute 76 to minute 100.
+p5
+sS'name'
+p6
+VA. Meeting of Old Friends
+p7
+sS'tags'
+p8
+Vmath 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/714/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V714/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

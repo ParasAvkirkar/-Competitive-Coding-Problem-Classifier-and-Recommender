@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Family Photos\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlice and Bonnie are sisters, but they don't like each other very much. So when some old family photos were found in the attic, they started to argue about who should receive which photos. In the end, they decided that they would take turns picking photos. Alice goes first.\u000aThere are n stacks of photos. Each stack contains exactly two photos. In each turn, a player may take only a photo from the top of one of the stacks.\u000aEach photo is described by two non-negative integers a and b, indicating that it is worth a units of happiness to Alice and b units of happiness to Bonnie. Values of a and b might differ for different photos.\u000aIt's allowed to pass instead of taking a photo. The game ends when all photos are taken or both players pass consecutively.\u000aThe players don't act to maximize their own happiness. Instead, each player acts to maximize the amount by which her happiness exceeds her sister's. Assuming both players play optimal, find the difference between Alice's and Bonnie's happiness. That is, if there's a perfectly-played game such that Alice has x happiness and Bonnie has y happiness at the end, you should print x\u2009-\u2009y.\u000aInput\u000aThe first line of input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of two-photo stacks. Then follow n lines, each describing one of the stacks. A stack is described by four space-separated non-negative integers a1, b1, a2 and b2, each not exceeding 109. a1 and b1 describe the top photo in the stack, while a2 and b2 describe the bottom photo in the stack.\u000aOutput\u000aOutput a single integer: the difference between Alice's and Bonnie's happiness if both play optimally.\u000aExamples\u000ainput\u000a2\u000a12 3 4 7\u000a1 15 9 1\u000aoutput\u000a1\u000ainput\u000a2\u000a5 4 8 8\u000a4 12 14 0\u000aoutput\u000a4\u000ainput\u000a1\u000a0 10 0 10\u000aoutput\u000a-10
+p3
+sS'problemStatement'
+p4
+VF. Family Photos\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlice and Bonnie are sisters, but they don't like each other very much. So when some old family photos were found in the attic, they started to argue about who should receive which photos. In the end, they decided that they would take turns picking photos. Alice goes first.\u000aThere are n stacks of photos. Each stack contains exactly two photos. In each turn, a player may take only a photo from the top of one of the stacks.\u000aEach photo is described by two non-negative integers a and b, indicating that it is worth a units of happiness to Alice and b units of happiness to Bonnie. Values of a and b might differ for different photos.\u000aIt's allowed to pass instead of taking a photo. The game ends when all photos are taken or both players pass consecutively.\u000aThe players don't act to maximize their own happiness. Instead, each player acts to maximize the amount by which her happiness exceeds her sister's. Assuming both players play optimal, find the difference between Alice's and Bonnie's happiness. That is, if there's a perfectly-played game such that Alice has x happiness and Bonnie has y happiness at the end, you should print x\u2009-\u2009y.\u000aInput\u000aThe first line of input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of two-photo stacks. Then follow n lines, each describing one of the stacks. A stack is described by four space-separated non-negative integers a1, b1, a2 and b2, each not exceeding 109. a1 and b1 describe the top photo in the stack, while a2 and b2 describe the bottom photo in the stack.\u000aOutput\u000aOutput a single integer: the difference between Alice's and Bonnie's happiness if both play optimally.\u000aExamples\u000ainput\u000a2\u000a12 3 4 7\u000a1 15 9 1\u000aoutput\u000a1\u000ainput\u000a2\u000a5 4 8 8\u000a4 12 14 0\u000aoutput\u000a4\u000ainput\u000a1\u000a0 10 0 10\u000aoutput\u000a-10
+p5
+sS'name'
+p6
+VF. Family Photos
+p7
+sS'tags'
+p8
+Vgreedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/725/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V725/F
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Complete the Permutations\u000atime limit per test5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aZS the Coder is given two permutations p and q of {1,\u20092,\u2009...,\u2009n}, but some of their elements are replaced with 0. The distance between two permutations p and q is defined as the minimum number of moves required to turn p into q. A move consists of swapping exactly 2 elements of p.\u000aZS the Coder wants to determine the number of ways to replace the zeros with positive integers from the set {1,\u20092,\u2009...,\u2009n} such that p and q are permutations of {1,\u20092,\u2009...,\u2009n} and the distance between p and q is exactly k.\u000aZS the Coder wants to find the answer for all 0\u2009\u2264\u2009k\u2009\u2264\u2009n\u2009-\u20091. Can you help him?\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009250) \u2014 the number of elements in the permutations.\u000aThe second line contains n integers, p1,\u2009p2,\u2009...,\u2009pn (0\u2009\u2264\u2009pi\u2009\u2264\u2009n) \u2014 the permutation p. It is guaranteed that there is at least one way to replace zeros such that p is a permutation of {1,\u20092,\u2009...,\u2009n}.\u000aThe third line contains n integers, q1,\u2009q2,\u2009...,\u2009qn (0\u2009\u2264\u2009qi\u2009\u2264\u2009n) \u2014 the permutation q. It is guaranteed that there is at least one way to replace zeros such that q is a permutation of {1,\u20092,\u2009...,\u2009n}.\u000aOutput\u000aPrint n integers, i-th of them should denote the answer for k\u2009=\u2009i\u2009-\u20091. Since the answer may be quite large, and ZS the Coder loves weird primes, print them modulo 998244353\u2009=\u2009223򊐙7\u2009+\u20091, which is a prime.\u000aExamples\u000ainput\u000a3\u000a1 0 0\u000a0 2 0\u000aoutput\u000a1 2 1 \u000ainput\u000a4\u000a1 0 0 3\u000a0 0 0 4\u000aoutput\u000a0 2 6 4 \u000ainput\u000a6\u000a1 3 2 5 4 6\u000a6 4 5 1 0 0\u000aoutput\u000a0 0 0 0 1 1 \u000ainput\u000a4\u000a1 2 3 4\u000a2 3 4 1\u000aoutput\u000a0 0 0 1 \u000aNote\u000aIn the first sample case, there is the only way to replace zeros so that it takes 0 swaps to convert p into q, namely p\u2009=\u2009(1,\u20092,\u20093),\u2009q\u2009=\u2009(1,\u20092,\u20093).\u000aThere are two ways to replace zeros so that it takes 1 swap to turn p into q. One of these ways is p\u2009=\u2009(1,\u20092,\u20093),\u2009q\u2009=\u2009(3,\u20092,\u20091), then swapping 1 and 3 from p transform it into q. The other way is p\u2009=\u2009(1,\u20093,\u20092),\u2009q\u2009=\u2009(1,\u20092,\u20093). Swapping 2 and 3 works in this case.\u000aFinally, there is one way to replace zeros so that it takes 2 swaps to turn p into q, namely p\u2009=\u2009(1,\u20093,\u20092),\u2009q\u2009=\u2009(3,\u20092,\u20091). Then, we can transform p into q like following: .
+p3
+sS'problemStatement'
+p4
+VE. Complete the Permutations\u000atime limit per test5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aZS the Coder is given two permutations p and q of {1,\u20092,\u2009...,\u2009n}, but some of their elements are replaced with 0. The distance between two permutations p and q is defined as the minimum number of moves required to turn p into q. A move consists of swapping exactly 2 elements of p.\u000aZS the Coder wants to determine the number of ways to replace the zeros with positive integers from the set {1,\u20092,\u2009...,\u2009n} such that p and q are permutations of {1,\u20092,\u2009...,\u2009n} and the distance between p and q is exactly k.\u000aZS the Coder wants to find the answer for all 0\u2009\u2264\u2009k\u2009\u2264\u2009n\u2009-\u20091. Can you help him?\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009250) \u2014 the number of elements in the permutations.\u000aThe second line contains n integers, p1,\u2009p2,\u2009...,\u2009pn (0\u2009\u2264\u2009pi\u2009\u2264\u2009n) \u2014 the permutation p. It is guaranteed that there is at least one way to replace zeros such that p is a permutation of {1,\u20092,\u2009...,\u2009n}.\u000aThe third line contains n integers, q1,\u2009q2,\u2009...,\u2009qn (0\u2009\u2264\u2009qi\u2009\u2264\u2009n) \u2014 the permutation q. It is guaranteed that there is at least one way to replace zeros such that q is a permutation of {1,\u20092,\u2009...,\u2009n}.\u000aOutput\u000aPrint n integers, i-th of them should denote the answer for k\u2009=\u2009i\u2009-\u20091. Since the answer may be quite large, and ZS the Coder loves weird primes, print them modulo 998244353\u2009=\u2009223򊐙7\u2009+\u20091, which is a prime.\u000aExamples\u000ainput\u000a3\u000a1 0 0\u000a0 2 0\u000aoutput\u000a1 2 1 \u000ainput\u000a4\u000a1 0 0 3\u000a0 0 0 4\u000aoutput\u000a0 2 6 4 \u000ainput\u000a6\u000a1 3 2 5 4 6\u000a6 4 5 1 0 0\u000aoutput\u000a0 0 0 0 1 1 \u000ainput\u000a4\u000a1 2 3 4\u000a2 3 4 1\u000aoutput\u000a0 0 0 1 \u000aNote\u000aIn the first sample case, there is the only way to replace zeros so that it takes 0 swaps to convert p into q, namely p\u2009=\u2009(1,\u20092,\u20093),\u2009q\u2009=\u2009(1,\u20092,\u20093).\u000aThere are two ways to replace zeros so that it takes 1 swap to turn p into q. One of these ways is p\u2009=\u2009(1,\u20092,\u20093),\u2009q\u2009=\u2009(3,\u20092,\u20091), then swapping 1 and 3 from p transform it into q. The other way is p\u2009=\u2009(1,\u20093,\u20092),\u2009q\u2009=\u2009(1,\u20092,\u20093). Swapping 2 and 3 works in this case.\u000aFinally, there is one way to replace zeros so that it takes 2 swaps to turn p into q, namely p\u2009=\u2009(1,\u20093,\u20092),\u2009q\u2009=\u2009(3,\u20092,\u20091). Then, we can transform p into q like following: .
+p5
+sS'name'
+p6
+VE. Complete the Permutations
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/715/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V5 seconds
+p15
+sS'problemId'
+p16
+V715/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

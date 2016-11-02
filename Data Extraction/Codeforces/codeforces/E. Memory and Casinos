@@ -1,0 +1,102 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Memory and Casinos\u000atime limit per test4 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n casinos lined in a row. If Memory plays at casino i, he has probability pi to win and move to the casino on the right (i\u2009+\u20091) or exit the row (if i\u2009=\u2009n), and a probability 1\u2009-\u2009pi to lose and move to the casino on the left (i\u2009-\u20091) or also exit the row (if i\u2009=\u20091).\u000aWe say that Memory dominates on the interval i... j if he completes a walk such that,\u000aHe starts on casino i.\u000aHe never looses in casino i.\u000aHe finishes his walk by winning in casino j.\u000aNote that Memory can still walk left of the 1-st casino and right of the casino n and that always finishes the process.\u000aNow Memory has some requests, in one of the following forms:\u000a1 i a b: Set .\u000a2 l r: Print the probability that Memory will dominate on the interval l... r, i.e. compute the probability that Memory will first leave the segment l... r after winning at casino r, if she starts in casino l.\u000aIt is guaranteed that at any moment of time p is a non-decreasing sequence, i.e. pi\u2009\u2264\u2009pi\u2009+\u20091 for all i from 1 to n\u2009-\u20091.\u000aPlease help Memory by answering all his requests!\u000aInput\u000aThe first line of the input contains two integers n and q(1\u2009\u2264\u2009n,\u2009q\u2009\u2264\u2009100\u2009000),  \u2014 number of casinos and number of requests respectively.\u000aThe next n lines each contain integers ai and bi (1\u2009\u2264\u2009ai\u2009<\u2009bi\u2009\u2264\u2009109)  \u2014 is the probability pi of winning in casino i.\u000aThe next q lines each contain queries of one of the types specified above (1\u2009\u2264\u2009a\u2009<\u2009b\u2009\u2264\u2009109, 1\u2009\u2264\u2009i\u2009\u2264\u2009n, 1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n).\u000aIt's guaranteed that there will be at least one query of type 2, i.e. the output will be non-empty. Additionally, it is guaranteed that p forms a non-decreasing sequence at all times.\u000aOutput\u000aPrint a real number for every request of type 2 \u2014 the probability that boy will "dominate" on that interval. Your answer will be considered correct if its absolute error does not exceed 10\u2009-\u20094.\u000aNamely: let's assume that one of your answers is a, and the corresponding answer of the jury is b. The checker program will consider your answer correct if |a\u2009-\u2009b|\u2009\u2264\u200910\u2009-\u20094.\u000aExample\u000ainput\u000a3 13\u000a1 3\u000a1 2\u000a2 3\u000a2 1 1\u000a2 1 2\u000a2 1 3\u000a2 2 2\u000a2 2 3\u000a2 3 3\u000a1 2 2 3\u000a2 1 1\u000a2 1 2\u000a2 1 3\u000a2 2 2\u000a2 2 3\u000a2 3 3\u000aoutput\u000a0.3333333333\u000a0.2000000000\u000a0.1666666667\u000a0.5000000000\u000a0.4000000000\u000a0.6666666667\u000a0.3333333333\u000a0.2500000000\u000a0.2222222222\u000a0.6666666667\u000a0.5714285714\u000a0.6666666667
+p3
+sS'problemStatement'
+p4
+VE. Memory and Casinos\u000atime limit per test4 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n casinos lined in a row. If Memory plays at casino i, he has probability pi to win and move to the casino on the right (i\u2009+\u20091) or exit the row (if i\u2009=\u2009n), and a probability 1\u2009-\u2009pi to lose and move to the casino on the left (i\u2009-\u20091) or also exit the row (if i\u2009=\u20091).\u000aWe say that Memory dominates on the interval i... j if he completes a walk such that,\u000aHe starts on casino i.\u000aHe never looses in casino i.\u000aHe finishes his walk by winning in casino j.\u000aNote that Memory can still walk left of the 1-st casino and right of the casino n and that always finishes the process.\u000aNow Memory has some requests, in one of the following forms:\u000a1 i a b: Set .\u000a2 l r: Print the probability that Memory will dominate on the interval l... r, i.e. compute the probability that Memory will first leave the segment l... r after winning at casino r, if she starts in casino l.\u000aIt is guaranteed that at any moment of time p is a non-decreasing sequence, i.e. pi\u2009\u2264\u2009pi\u2009+\u20091 for all i from 1 to n\u2009-\u20091.\u000aPlease help Memory by answering all his requests!\u000aInput\u000aThe first line of the input contains two integers n and q(1\u2009\u2264\u2009n,\u2009q\u2009\u2264\u2009100\u2009000),  \u2014 number of casinos and number of requests respectively.\u000aThe next n lines each contain integers ai and bi (1\u2009\u2264\u2009ai\u2009<\u2009bi\u2009\u2264\u2009109)  \u2014 is the probability pi of winning in casino i.\u000aThe next q lines each contain queries of one of the types specified above (1\u2009\u2264\u2009a\u2009<\u2009b\u2009\u2264\u2009109, 1\u2009\u2264\u2009i\u2009\u2264\u2009n, 1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n).\u000aIt's guaranteed that there will be at least one query of type 2, i.e. the output will be non-empty. Additionally, it is guaranteed that p forms a non-decreasing sequence at all times.\u000aOutput\u000aPrint a real number for every request of type 2 \u2014 the probability that boy will "dominate" on that interval. Your answer will be considered correct if its absolute error does not exceed 10\u2009-\u20094.\u000aNamely: let's assume that one of your answers is a, and the corresponding answer of the jury is b. The checker program will consider your answer correct if |a\u2009-\u2009b|\u2009\u2264\u200910\u2009-\u20094.\u000aExample\u000ainput\u000a3 13\u000a1 3\u000a1 2\u000a2 3\u000a2 1 1\u000a2 1 2\u000a2 1 3\u000a2 2 2\u000a2 2 3\u000a2 3 3\u000a1 2 2 3\u000a2 1 1\u000a2 1 2\u000a2 1 3\u000a2 2 2\u000a2 2 3\u000a2 3 3\u000aoutput\u000a0.3333333333\u000a0.2000000000\u000a0.1666666667\u000a0.5000000000\u000a0.4000000000\u000a0.6666666667\u000a0.3333333333\u000a0.2500000000\u000a0.2222222222\u000a0.6666666667\u000a0.5714285714\u000a0.6666666667
+p5
+sS'name'
+p6
+VE. Memory and Casinos
+p7
+sS'tags'
+p8
+Vdata structures math probabilities 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/712/E
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint a real number for every request of type 2 \u2014 the probability that boy will "dominate" on that interval. Your answer will be considered correct if its absolute error does not exceed 10\u2009-\u20094.
+p19
+aVNamely: let's assume that one of your answers is a, and the corresponding answer of the jury is b. The checker program will consider your answer correct if |a\u2009-\u2009b|\u2009\u2264\u200910\u2009-\u20094.
+p20
+asS'statement'
+p21
+(lp22
+VE. Memory and Casinos
+p23
+aVtime limit per test4 seconds
+p24
+aVmemory limit per test512 megabytes
+p25
+aVinputstandard input
+p26
+aVoutputstandard output
+p27
+aVThere are n casinos lined in a row. If Memory plays at casino i, he has probability pi to win and move to the casino on the right (i\u2009+\u20091) or exit the row (if i\u2009=\u2009n), and a probability 1\u2009-\u2009pi to lose and move to the casino on the left (i\u2009-\u20091) or also exit the row (if i\u2009=\u20091).
+p28
+aVWe say that Memory dominates on the interval i... j if he completes a walk such that,
+p29
+aVHe starts on casino i.
+p30
+aVHe never looses in casino i.
+p31
+aVHe finishes his walk by winning in casino j.
+p32
+aVNote that Memory can still walk left of the 1-st casino and right of the casino n and that always finishes the process.
+p33
+aVNow Memory has some requests, in one of the following forms:
+p34
+aV1 i a b: Set .
+p35
+aV2 l r: Print the probability that Memory will dominate on the interval l... r, i.e. compute the probability that Memory will first leave the segment l... r after winning at casino r, if she starts in casino l.
+p36
+aVIt is guaranteed that at any moment of time p is a non-decreasing sequence, i.e. pi\u2009\u2264\u2009pi\u2009+\u20091 for all i from 1 to n\u2009-\u20091.
+p37
+aVPlease help Memory by answering all his requests!
+p38
+asS'problemId'
+p39
+V712/E
+p40
+sS'input'
+p41
+(lp42
+VInput
+p43
+aVThe first line of the input contains two integers n and q(1\u2009\u2264\u2009n,\u2009q\u2009\u2264\u2009100\u2009000),  \u2014 number of casinos and number of requests respectively.
+p44
+aVThe next n lines each contain integers ai and bi (1\u2009\u2264\u2009ai\u2009<\u2009bi\u2009\u2264\u2009109)  \u2014 is the probability pi of winning in casino i.
+p45
+aVThe next q lines each contain queries of one of the types specified above (1\u2009\u2264\u2009a\u2009<\u2009b\u2009\u2264\u2009109, 1\u2009\u2264\u2009i\u2009\u2264\u2009n, 1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n).
+p46
+aVIt's guaranteed that there will be at least one query of type 2, i.e. the output will be non-empty. Additionally, it is guaranteed that p forms a non-decreasing sequence at all times.
+p47
+asS'id'
+p48
+c__builtin__
+id
+p49
+sS'constraints'
+p50
+g42
+sb.

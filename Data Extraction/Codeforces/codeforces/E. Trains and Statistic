@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Trains and Statistic\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVasya commutes by train every day. There are n train stations in the city, and at the i-th station it's possible to buy only tickets to stations from i\u2009+\u20091 to ai inclusive. No tickets are sold at the last station.\u000aLet \u03c1i,\u2009j be the minimum number of tickets one needs to buy in order to get from stations i to station j. As Vasya is fond of different useless statistic he asks you to compute the sum of all values \u03c1i,\u2009j among all pairs 1\u2009\u2264\u2009i\u2009<\u2009j\u2009\u2264\u2009n.\u000aInput\u000aThe first line of the input contains a single integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of stations.\u000aThe second line contains n\u2009-\u20091 integer ai (i\u2009+\u20091\u2009\u2264\u2009ai\u2009\u2264\u2009n), the i-th of them means that at the i-th station one may buy tickets to each station from i\u2009+\u20091 to ai inclusive.\u000aOutput\u000aPrint the sum of \u03c1i,\u2009j among all pairs of 1\u2009\u2264\u2009i\u2009<\u2009j\u2009\u2264\u2009n.\u000aExamples\u000ainput\u000a4\u000a4 4 4\u000aoutput\u000a6\u000ainput\u000a5\u000a2 3 5 5\u000aoutput\u000a17\u000aNote\u000aIn the first sample it's possible to get from any station to any other (with greater index) using only one ticket. The total number of pairs is 6, so the answer is also 6.\u000aConsider the second sample:\u000a\u03c11,\u20092\u2009=\u20091\u000a\u03c11,\u20093\u2009=\u20092\u000a\u03c11,\u20094\u2009=\u20093\u000a\u03c11,\u20095\u2009=\u20093\u000a\u03c12,\u20093\u2009=\u20091\u000a\u03c12,\u20094\u2009=\u20092\u000a\u03c12,\u20095\u2009=\u20092\u000a\u03c13,\u20094\u2009=\u20091\u000a\u03c13,\u20095\u2009=\u20091\u000a\u03c14,\u20095\u2009=\u20091\u000aThus the answer equals 1\u2009+\u20092\u2009+\u20093\u2009+\u20093\u2009+\u20091\u2009+\u20092\u2009+\u20092\u2009+\u20091\u2009+\u20091\u2009+\u20091\u2009=\u200917.
+p3
+sS'problemStatement'
+p4
+VE. Trains and Statistic\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVasya commutes by train every day. There are n train stations in the city, and at the i-th station it's possible to buy only tickets to stations from i\u2009+\u20091 to ai inclusive. No tickets are sold at the last station.\u000aLet \u03c1i,\u2009j be the minimum number of tickets one needs to buy in order to get from stations i to station j. As Vasya is fond of different useless statistic he asks you to compute the sum of all values \u03c1i,\u2009j among all pairs 1\u2009\u2264\u2009i\u2009<\u2009j\u2009\u2264\u2009n.\u000aInput\u000aThe first line of the input contains a single integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of stations.\u000aThe second line contains n\u2009-\u20091 integer ai (i\u2009+\u20091\u2009\u2264\u2009ai\u2009\u2264\u2009n), the i-th of them means that at the i-th station one may buy tickets to each station from i\u2009+\u20091 to ai inclusive.\u000aOutput\u000aPrint the sum of \u03c1i,\u2009j among all pairs of 1\u2009\u2264\u2009i\u2009<\u2009j\u2009\u2264\u2009n.\u000aExamples\u000ainput\u000a4\u000a4 4 4\u000aoutput\u000a6\u000ainput\u000a5\u000a2 3 5 5\u000aoutput\u000a17\u000aNote\u000aIn the first sample it's possible to get from any station to any other (with greater index) using only one ticket. The total number of pairs is 6, so the answer is also 6.\u000aConsider the second sample:\u000a\u03c11,\u20092\u2009=\u20091\u000a\u03c11,\u20093\u2009=\u20092\u000a\u03c11,\u20094\u2009=\u20093\u000a\u03c11,\u20095\u2009=\u20093\u000a\u03c12,\u20093\u2009=\u20091\u000a\u03c12,\u20094\u2009=\u20092\u000a\u03c12,\u20095\u2009=\u20092\u000a\u03c13,\u20094\u2009=\u20091\u000a\u03c13,\u20095\u2009=\u20091\u000a\u03c14,\u20095\u2009=\u20091\u000aThus the answer equals 1\u2009+\u20092\u2009+\u20093\u2009+\u20093\u2009+\u20091\u2009+\u20092\u2009+\u20092\u2009+\u20091\u2009+\u20091\u2009+\u20091\u2009=\u200917.
+p5
+sS'name'
+p6
+VE. Trains and Statistic
+p7
+sS'tags'
+p8
+Vdata structures dp greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/675/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V675/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

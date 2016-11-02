@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Mishka and Game\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aMishka is a little polar bear. As known, little bears loves spending their free time playing dice for chocolates. Once in a wonderful sunny morning, walking around blocks of ice, Mishka met her friend Chris, and they started playing the game.\u000aRules of the game are very simple: at first number of rounds n is defined. In every round each of the players throws a cubical dice with distinct numbers from 1 to 6 written on its faces. Player, whose value after throwing the dice is greater, wins the round. In case if player dice values are equal, no one of them is a winner.\u000aIn average, player, who won most of the rounds, is the winner of the game. In case if two players won the same number of rounds, the result of the game is draw.\u000aMishka is still very little and can't count wins and losses, so she asked you to watch their game and determine its result. Please help her!\u000aInput\u000aThe first line of the input contains single integer n n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of game rounds.\u000aThe next n lines contains rounds description. i-th of them contains pair of integers mi and ci (1\u2009\u2264\u2009mi,\u2009\u2009ci\u2009\u2264\u20096) \u2014 values on dice upper face after Mishka's and Chris' throws in i-th round respectively.\u000aOutput\u000aIf Mishka is the winner of the game, print "Mishka" (without quotes) in the only line.\u000aIf Chris is the winner of the game, print "Chris" (without quotes) in the only line.\u000aIf the result of the game is draw, print "Friendship is magic!^^" (without quotes) in the only line.\u000aExamples\u000ainput\u000a3\u000a3 5\u000a2 1\u000a4 2\u000aoutput\u000aMishka\u000ainput\u000a2\u000a6 1\u000a1 6\u000aoutput\u000aFriendship is magic!^^\u000ainput\u000a3\u000a1 5\u000a3 3\u000a2 2\u000aoutput\u000aChris\u000aNote\u000aIn the first sample case Mishka loses the first round, but wins second and third rounds and thus she is the winner of the game.\u000aIn the second sample case Mishka wins the first round, Chris wins the second round, and the game ends with draw with score 1:1.\u000aIn the third sample case Chris wins the first round, but there is no winner of the next two rounds. The winner of the game is Chris.
+p3
+sS'problemStatement'
+p4
+VA. Mishka and Game\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aMishka is a little polar bear. As known, little bears loves spending their free time playing dice for chocolates. Once in a wonderful sunny morning, walking around blocks of ice, Mishka met her friend Chris, and they started playing the game.\u000aRules of the game are very simple: at first number of rounds n is defined. In every round each of the players throws a cubical dice with distinct numbers from 1 to 6 written on its faces. Player, whose value after throwing the dice is greater, wins the round. In case if player dice values are equal, no one of them is a winner.\u000aIn average, player, who won most of the rounds, is the winner of the game. In case if two players won the same number of rounds, the result of the game is draw.\u000aMishka is still very little and can't count wins and losses, so she asked you to watch their game and determine its result. Please help her!\u000aInput\u000aThe first line of the input contains single integer n n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of game rounds.\u000aThe next n lines contains rounds description. i-th of them contains pair of integers mi and ci (1\u2009\u2264\u2009mi,\u2009\u2009ci\u2009\u2264\u20096) \u2014 values on dice upper face after Mishka's and Chris' throws in i-th round respectively.\u000aOutput\u000aIf Mishka is the winner of the game, print "Mishka" (without quotes) in the only line.\u000aIf Chris is the winner of the game, print "Chris" (without quotes) in the only line.\u000aIf the result of the game is draw, print "Friendship is magic!^^" (without quotes) in the only line.\u000aExamples\u000ainput\u000a3\u000a3 5\u000a2 1\u000a4 2\u000aoutput\u000aMishka\u000ainput\u000a2\u000a6 1\u000a1 6\u000aoutput\u000aFriendship is magic!^^\u000ainput\u000a3\u000a1 5\u000a3 3\u000a2 2\u000aoutput\u000aChris\u000aNote\u000aIn the first sample case Mishka loses the first round, but wins second and third rounds and thus she is the winner of the game.\u000aIn the second sample case Mishka wins the first round, Chris wins the second round, and the game ends with draw with score 1:1.\u000aIn the third sample case Chris wins the first round, but there is no winner of the next two rounds. The winner of the game is Chris.
+p5
+sS'name'
+p6
+VA. Mishka and Game
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/703/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V703/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

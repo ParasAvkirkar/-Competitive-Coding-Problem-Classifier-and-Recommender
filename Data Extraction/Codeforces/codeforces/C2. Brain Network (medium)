@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC2. Brain Network (medium)\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aFurther research on zombie thought processes yielded interesting results. As we know from the previous problem, the nervous system of a zombie consists of n brains and m brain connectors joining some pairs of brains together. It was observed that the intellectual abilities of a zombie depend mainly on the topology of its nervous system. More precisely, we define the distance between two brains u and v (1\u2009\u2264\u2009u,\u2009v\u2009\u2264\u2009n) as the minimum number of brain connectors used when transmitting a thought between these two brains. The brain latency of a zombie is defined to be the maximum distance between any two of its brains. Researchers conjecture that the brain latency is the crucial parameter which determines how smart a given zombie is. Help them test this conjecture by writing a program to compute brain latencies of nervous systems.\u000aIn this problem you may assume that any nervous system given in the input is valid, i.e., it satisfies conditions (1) and (2) from the easy version.\u000aInput\u000aThe first line of the input contains two space-separated integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100000) denoting the number of brains (which are conveniently numbered from 1 to n) and the number of brain connectors in the nervous system, respectively. In the next m lines, descriptions of brain connectors follow. Every connector is given as a pair of brains a\u2002b it connects (1\u2009\u2264\u2009a,\u2009b\u2009\u2264\u2009n and a\u2009\u2260\u2009b).\u000aOutput\u000aPrint one number \u2013 the brain latency.\u000aExamples\u000ainput\u000a4 3\u000a1 2\u000a1 3\u000a1 4\u000aoutput\u000a2\u000ainput\u000a5 4\u000a1 2\u000a2 3\u000a3 4\u000a3 5\u000aoutput\u000a3
+p3
+sS'problemStatement'
+p4
+VC2. Brain Network (medium)\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aFurther research on zombie thought processes yielded interesting results. As we know from the previous problem, the nervous system of a zombie consists of n brains and m brain connectors joining some pairs of brains together. It was observed that the intellectual abilities of a zombie depend mainly on the topology of its nervous system. More precisely, we define the distance between two brains u and v (1\u2009\u2264\u2009u,\u2009v\u2009\u2264\u2009n) as the minimum number of brain connectors used when transmitting a thought between these two brains. The brain latency of a zombie is defined to be the maximum distance between any two of its brains. Researchers conjecture that the brain latency is the crucial parameter which determines how smart a given zombie is. Help them test this conjecture by writing a program to compute brain latencies of nervous systems.\u000aIn this problem you may assume that any nervous system given in the input is valid, i.e., it satisfies conditions (1) and (2) from the easy version.\u000aInput\u000aThe first line of the input contains two space-separated integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100000) denoting the number of brains (which are conveniently numbered from 1 to n) and the number of brain connectors in the nervous system, respectively. In the next m lines, descriptions of brain connectors follow. Every connector is given as a pair of brains a\u2002b it connects (1\u2009\u2264\u2009a,\u2009b\u2009\u2264\u2009n and a\u2009\u2260\u2009b).\u000aOutput\u000aPrint one number \u2013 the brain latency.\u000aExamples\u000ainput\u000a4 3\u000a1 2\u000a1 3\u000a1 4\u000aoutput\u000a2\u000ainput\u000a5 4\u000a1 2\u000a2 3\u000a3 4\u000a3 5\u000aoutput\u000a3
+p5
+sS'name'
+p6
+VC2. Brain Network (medium)
+p7
+sS'tags'
+p8
+Vdfs and similar graphs trees 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/690/C2
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V690/C2
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

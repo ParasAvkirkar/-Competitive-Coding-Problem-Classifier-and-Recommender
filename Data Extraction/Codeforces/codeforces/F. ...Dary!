@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. ...Dary!\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aBarney has finally found the one, a beautiful young lady named Lyanna. The problem is, Lyanna and Barney are trapped in Lord Loss' castle. This castle has shape of a convex polygon of n points. Like most of castles in Demonata worlds, this castle has no ceiling.\u000aBarney and Lyanna have an escape plan, but it requires some geometry knowledge, so they asked for your help.\u000aBarney knows that demons are organized and move in lines. He and Lyanna want to wait for the appropriate time so they need to watch for the demons. Each of them wants to stay in a point inside the castle (possibly on edges or corners), also they may stay in the same position. They both want to pick a real number r and watch all points in the circles with radius r around each of them (these two circles may overlap).\u000aWe say that Barney and Lyanna are watching carefully if and only if for every edge of the polygon, at least one of them can see at least one point on the line this edge lies on, thus such point may not be on the edge but it should be on edge's line. Formally, each edge line should have at least one common point with at least one of two circles.\u000aThe greater r is, the more energy and focus they need. So they asked you to tell them the minimum value of r such that they can watch carefully.\u000aInput\u000aThe first line of input contains a single integer n (3\u2009\u2264\u2009n\u2009\u2264\u2009300) \u2014 the number of castle polygon vertices.\u000aThe next n lines describe the polygon vertices in counter-clockwise order. i-th of them contains two integers xi and yi (|xi|,\u2009|yi|\u2009\u2264\u2009104) \u2014 the coordinates of i-th point of the castle. It is guaranteed that given points form a convex polygon, in particular, any three of them do not line on the same line.\u000aOutput\u000aIn the first line print the single number r \u2014 minimum radius of guys' watching circles.\u000aIn the second line print the pair of coordinates of point where Barney should stay.\u000aIn the third line print the pair of coordinates of point where Lyanna should stay.\u000aPoints should lie inside the polygon.\u000aCoordinates may not be integers. If there are multiple answers print any of them.\u000aYour answer will be considered correct if its absolute or relative error doesn't exceed 10\u2009-\u20096.\u000aExamples\u000ainput\u000a4\u000a-41 67\u000a-16 20\u000a25 25\u000a-36 85\u000aoutput\u000a0\u000a-16 20\u000a-36 85\u000ainput\u000a7\u000a-7 54\u000a-5 31\u000a-2 17\u000a20 19\u000a32 23\u000a34 27\u000a26 57\u000aoutput\u000a2.9342248\u000a32.019503 23.0390067\u000a-6.929116 54.006444\u000aNote\u000aIn the first example guys can stay in opposite corners of the castle.
+p3
+sS'problemStatement'
+p4
+VF. ...Dary!\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aBarney has finally found the one, a beautiful young lady named Lyanna. The problem is, Lyanna and Barney are trapped in Lord Loss' castle. This castle has shape of a convex polygon of n points. Like most of castles in Demonata worlds, this castle has no ceiling.\u000aBarney and Lyanna have an escape plan, but it requires some geometry knowledge, so they asked for your help.\u000aBarney knows that demons are organized and move in lines. He and Lyanna want to wait for the appropriate time so they need to watch for the demons. Each of them wants to stay in a point inside the castle (possibly on edges or corners), also they may stay in the same position. They both want to pick a real number r and watch all points in the circles with radius r around each of them (these two circles may overlap).\u000aWe say that Barney and Lyanna are watching carefully if and only if for every edge of the polygon, at least one of them can see at least one point on the line this edge lies on, thus such point may not be on the edge but it should be on edge's line. Formally, each edge line should have at least one common point with at least one of two circles.\u000aThe greater r is, the more energy and focus they need. So they asked you to tell them the minimum value of r such that they can watch carefully.\u000aInput\u000aThe first line of input contains a single integer n (3\u2009\u2264\u2009n\u2009\u2264\u2009300) \u2014 the number of castle polygon vertices.\u000aThe next n lines describe the polygon vertices in counter-clockwise order. i-th of them contains two integers xi and yi (|xi|,\u2009|yi|\u2009\u2264\u2009104) \u2014 the coordinates of i-th point of the castle. It is guaranteed that given points form a convex polygon, in particular, any three of them do not line on the same line.\u000aOutput\u000aIn the first line print the single number r \u2014 minimum radius of guys' watching circles.\u000aIn the second line print the pair of coordinates of point where Barney should stay.\u000aIn the third line print the pair of coordinates of point where Lyanna should stay.\u000aPoints should lie inside the polygon.\u000aCoordinates may not be integers. If there are multiple answers print any of them.\u000aYour answer will be considered correct if its absolute or relative error doesn't exceed 10\u2009-\u20096.\u000aExamples\u000ainput\u000a4\u000a-41 67\u000a-16 20\u000a25 25\u000a-36 85\u000aoutput\u000a0\u000a-16 20\u000a-36 85\u000ainput\u000a7\u000a-7 54\u000a-5 31\u000a-2 17\u000a20 19\u000a32 23\u000a34 27\u000a26 57\u000aoutput\u000a2.9342248\u000a32.019503 23.0390067\u000a-6.929116 54.006444\u000aNote\u000aIn the first example guys can stay in opposite corners of the castle.
+p5
+sS'name'
+p6
+VF. ...Dary!
+p7
+sS'tags'
+p8
+Vbinary search geometry two pointers 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/696/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'problemId'
+p16
+V696/F
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

@@ -1,0 +1,80 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Festival Organization\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe Prodiggers are quite a cool band and for this reason, they have been the surprise guest at the ENTER festival for the past 80 years. At the beginning of their careers, they weren\u2019t so successful, so they had to spend time digging channels to earn money; hence the name. Anyway, they like to tour a lot and have surprising amounts of energy to do extremely long tours. However, they hate spending two consecutive days without having a concert, so they would like to avoid it.\u000aA tour is defined by a sequence of concerts and days-off. You need to count in how many ways The Prodiggers can select k different tours of the same length between l and r.\u000aFor example if k\u2009=\u20092, l\u2009=\u20091 and r\u2009=\u20092, if we define concert day as {1} and day-off as {0}, here are all possible tours: {0}, {1}, {00}, {01}, {10}, {11}. But tour 00 can not be selected because it has 2 days-off in a row. Now, we need to count in how many ways we can select k\u2009=\u20092 tours of the same length in range [1;2]. Here they are: {0,1}; {01,10}; {01,11}; {10,11}.\u000aSince their schedule is quite busy, they want you to tell them in how many ways can do that, modulo 1\u2009000\u2009000\u2009007 (109\u2009+\u20097).\u000aInput\u000aThe first line of the input contains three integers k, l and r (1\u2009\u2264\u2009k\u2009\u2264\u2009200, 1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u20091018).\u000aOutput\u000aOutput a single number: the number of ways to select k different tours of the same length, modulo 1\u2009000\u2009000\u2009007.\u000aExample\u000ainput\u000a1 1 2\u000aoutput\u000a5
+p3
+sS'problemStatement'
+p4
+VA. Festival Organization\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe Prodiggers are quite a cool band and for this reason, they have been the surprise guest at the ENTER festival for the past 80 years. At the beginning of their careers, they weren\u2019t so successful, so they had to spend time digging channels to earn money; hence the name. Anyway, they like to tour a lot and have surprising amounts of energy to do extremely long tours. However, they hate spending two consecutive days without having a concert, so they would like to avoid it.\u000aA tour is defined by a sequence of concerts and days-off. You need to count in how many ways The Prodiggers can select k different tours of the same length between l and r.\u000aFor example if k\u2009=\u20092, l\u2009=\u20091 and r\u2009=\u20092, if we define concert day as {1} and day-off as {0}, here are all possible tours: {0}, {1}, {00}, {01}, {10}, {11}. But tour 00 can not be selected because it has 2 days-off in a row. Now, we need to count in how many ways we can select k\u2009=\u20092 tours of the same length in range [1;2]. Here they are: {0,1}; {01,10}; {01,11}; {10,11}.\u000aSince their schedule is quite busy, they want you to tell them in how many ways can do that, modulo 1\u2009000\u2009000\u2009007 (109\u2009+\u20097).\u000aInput\u000aThe first line of the input contains three integers k, l and r (1\u2009\u2264\u2009k\u2009\u2264\u2009200, 1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u20091018).\u000aOutput\u000aOutput a single number: the number of ways to select k different tours of the same length, modulo 1\u2009000\u2009000\u2009007.\u000aExample\u000ainput\u000a1 1 2\u000aoutput\u000a5
+p5
+sS'name'
+p6
+VA. Festival Organization
+p7
+sS'tags'
+p8
+Vmath number theory 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/717/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVOutput a single number: the number of ways to select k different tours of the same length, modulo 1\u2009000\u2009000\u2009007.
+p19
+asS'statement'
+p20
+(lp21
+VA. Festival Organization
+p22
+aVtime limit per test1 second
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVThe Prodiggers are quite a cool band and for this reason, they have been the surprise guest at the ENTER festival for the past 80 years. At the beginning of their careers, they weren\u2019t so successful, so they had to spend time digging channels to earn money; hence the name. Anyway, they like to tour a lot and have surprising amounts of energy to do extremely long tours. However, they hate spending two consecutive days without having a concert, so they would like to avoid it.
+p27
+aVA tour is defined by a sequence of concerts and days-off. You need to count in how many ways The Prodiggers can select k different tours of the same length between l and r.
+p28
+aVFor example if k\u2009=\u20092, l\u2009=\u20091 and r\u2009=\u20092, if we define concert day as {1} and day-off as {0}, here are all possible tours: {0}, {1}, {00}, {01}, {10}, {11}. But tour 00 can not be selected because it has 2 days-off in a row. Now, we need to count in how many ways we can select k\u2009=\u20092 tours of the same length in range [1;2]. Here they are: {0,1}; {01,10}; {01,11}; {10,11}.
+p29
+aVSince their schedule is quite busy, they want you to tell them in how many ways can do that, modulo 1\u2009000\u2009000\u2009007 (109\u2009+\u20097).
+p30
+asS'problemId'
+p31
+V717/A
+p32
+sS'input'
+p33
+(lp34
+VInput
+p35
+aVThe first line of the input contains three integers k, l and r (1\u2009\u2264\u2009k\u2009\u2264\u2009200, 1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u20091018).
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'constraints'
+p39
+g34
+sb.

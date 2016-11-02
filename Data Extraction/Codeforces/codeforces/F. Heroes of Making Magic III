@@ -1,0 +1,84 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Heroes of Making Magic III\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aI\u2019m strolling on sunshine, yeah-ah! And doesn\u2019t it feel good! Well, it certainly feels good for our Heroes of Making Magic, who are casually walking on a one-directional road, fighting imps. Imps are weak and feeble creatures and they are not good at much. However, Heroes enjoy fighting them. For fun, if nothing else.\u000aOur Hero, Ignatius, simply adores imps. He is observing a line of imps, represented as a zero-indexed array of integers a of length n, where ai denotes the number of imps at the i-th position. Sometimes, imps can appear out of nowhere. When heroes fight imps, they select a segment of the line, start at one end of the segment, and finish on the other end, without ever exiting the segment. They can move exactly one cell left or right from their current position and when they do so, they defeat one imp on the cell that they moved to, so, the number of imps on that cell decreases by one. This also applies when heroes appear at one end of the segment, at the beginning of their walk.\u000aTheir goal is to defeat all imps on the segment, without ever moving to an empty cell in it (without imps), since they would get bored. Since Ignatius loves imps, he doesn\u2019t really want to fight them, so no imps are harmed during the events of this task. However, he would like you to tell him whether it would be possible for him to clear a certain segment of imps in the above mentioned way if he wanted to.\u000aYou are given q queries, which have two types:\u000a1 a b k \u2014 denotes that k imps appear at each cell from the interval [a,\u2009b]\u000a2 a b - asks whether Ignatius could defeat all imps on the interval [a,\u2009b] in the way described above\u000aInput\u000aThe first line contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000), the length of the array a. The following line contains n integers a1,\u2009a2,\u2009...,\u2009an (0\u2009\u2264\u2009ai\u2009\u2264\u20095\u2009000), the initial number of imps in each cell. The third line contains a single integer q (1\u2009\u2264\u2009q\u2009\u2264\u2009300\u2009000), the number of queries. The remaining q lines contain one query each. Each query is provided by integers a, b and, possibly, k (0\u2009\u2264\u2009a\u2009\u2264\u2009b\u2009<\u2009n, 0\u2009\u2264\u2009k\u2009\u2264\u20095\u2009000).\u000aOutput\u000aFor each second type of query output 1 if it is possible to clear the segment, and 0 if it is not.\u000aExample\u000ainput\u000a3\u000a2 2 2\u000a3\u000a2 0 2\u000a1 1 1 1\u000a2 0 2\u000aoutput\u000a0\u000a1\u000aNote\u000aFor the first query, one can easily check that it is indeed impossible to get from the first to the last cell while clearing everything. After we add 1 to the second position, we can clear the segment, for example by moving in the following way: .
+p3
+sS'problemStatement'
+p4
+VF. Heroes of Making Magic III\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aI\u2019m strolling on sunshine, yeah-ah! And doesn\u2019t it feel good! Well, it certainly feels good for our Heroes of Making Magic, who are casually walking on a one-directional road, fighting imps. Imps are weak and feeble creatures and they are not good at much. However, Heroes enjoy fighting them. For fun, if nothing else.\u000aOur Hero, Ignatius, simply adores imps. He is observing a line of imps, represented as a zero-indexed array of integers a of length n, where ai denotes the number of imps at the i-th position. Sometimes, imps can appear out of nowhere. When heroes fight imps, they select a segment of the line, start at one end of the segment, and finish on the other end, without ever exiting the segment. They can move exactly one cell left or right from their current position and when they do so, they defeat one imp on the cell that they moved to, so, the number of imps on that cell decreases by one. This also applies when heroes appear at one end of the segment, at the beginning of their walk.\u000aTheir goal is to defeat all imps on the segment, without ever moving to an empty cell in it (without imps), since they would get bored. Since Ignatius loves imps, he doesn\u2019t really want to fight them, so no imps are harmed during the events of this task. However, he would like you to tell him whether it would be possible for him to clear a certain segment of imps in the above mentioned way if he wanted to.\u000aYou are given q queries, which have two types:\u000a1 a b k \u2014 denotes that k imps appear at each cell from the interval [a,\u2009b]\u000a2 a b - asks whether Ignatius could defeat all imps on the interval [a,\u2009b] in the way described above\u000aInput\u000aThe first line contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000), the length of the array a. The following line contains n integers a1,\u2009a2,\u2009...,\u2009an (0\u2009\u2264\u2009ai\u2009\u2264\u20095\u2009000), the initial number of imps in each cell. The third line contains a single integer q (1\u2009\u2264\u2009q\u2009\u2264\u2009300\u2009000), the number of queries. The remaining q lines contain one query each. Each query is provided by integers a, b and, possibly, k (0\u2009\u2264\u2009a\u2009\u2264\u2009b\u2009<\u2009n, 0\u2009\u2264\u2009k\u2009\u2264\u20095\u2009000).\u000aOutput\u000aFor each second type of query output 1 if it is possible to clear the segment, and 0 if it is not.\u000aExample\u000ainput\u000a3\u000a2 2 2\u000a3\u000a2 0 2\u000a1 1 1 1\u000a2 0 2\u000aoutput\u000a0\u000a1\u000aNote\u000aFor the first query, one can easily check that it is indeed impossible to get from the first to the last cell while clearing everything. After we add 1 to the second position, we can clear the segment, for example by moving in the following way: .
+p5
+sS'name'
+p6
+VF. Heroes of Making Magic III
+p7
+sS'tags'
+p8
+Vdata structures 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/717/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVFor each second type of query output 1 if it is possible to clear the segment, and 0 if it is not.
+p19
+asS'statement'
+p20
+(lp21
+VF. Heroes of Making Magic III
+p22
+aVtime limit per test3 seconds
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVI\u2019m strolling on sunshine, yeah-ah! And doesn\u2019t it feel good! Well, it certainly feels good for our Heroes of Making Magic, who are casually walking on a one-directional road, fighting imps. Imps are weak and feeble creatures and they are not good at much. However, Heroes enjoy fighting them. For fun, if nothing else.
+p27
+aVOur Hero, Ignatius, simply adores imps. He is observing a line of imps, represented as a zero-indexed array of integers a of length n, where ai denotes the number of imps at the i-th position. Sometimes, imps can appear out of nowhere. When heroes fight imps, they select a segment of the line, start at one end of the segment, and finish on the other end, without ever exiting the segment. They can move exactly one cell left or right from their current position and when they do so, they defeat one imp on the cell that they moved to, so, the number of imps on that cell decreases by one. This also applies when heroes appear at one end of the segment, at the beginning of their walk.
+p28
+aVTheir goal is to defeat all imps on the segment, without ever moving to an empty cell in it (without imps), since they would get bored. Since Ignatius loves imps, he doesn\u2019t really want to fight them, so no imps are harmed during the events of this task. However, he would like you to tell him whether it would be possible for him to clear a certain segment of imps in the above mentioned way if he wanted to.
+p29
+aVYou are given q queries, which have two types:
+p30
+aV1 a b k \u2014 denotes that k imps appear at each cell from the interval [a,\u2009b]
+p31
+aV2 a b - asks whether Ignatius could defeat all imps on the interval [a,\u2009b] in the way described above
+p32
+asS'problemId'
+p33
+V717/F
+p34
+sS'input'
+p35
+(lp36
+VInput
+p37
+aVThe first line contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009200\u2009000), the length of the array a. The following line contains n integers a1,\u2009a2,\u2009...,\u2009an (0\u2009\u2264\u2009ai\u2009\u2264\u20095\u2009000), the initial number of imps in each cell. The third line contains a single integer q (1\u2009\u2264\u2009q\u2009\u2264\u2009300\u2009000), the number of queries. The remaining q lines contain one query each. Each query is provided by integers a, b and, possibly, k (0\u2009\u2264\u2009a\u2009\u2264\u2009b\u2009<\u2009n, 0\u2009\u2264\u2009k\u2009\u2264\u20095\u2009000).
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'constraints'
+p41
+g36
+sb.

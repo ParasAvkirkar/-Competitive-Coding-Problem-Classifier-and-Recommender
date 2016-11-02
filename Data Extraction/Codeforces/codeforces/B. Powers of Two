@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Powers of Two\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given n integers a1,\u2009a2,\u2009...,\u2009an. Find the number of pairs of indexes i,\u2009j (i\u2009<\u2009j) that ai\u2009+\u2009aj is a power of 2 (i. e. some integer x exists so that ai\u2009+\u2009aj\u2009=\u20092x).\u000aInput\u000aThe first line contains the single positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009105) \u2014 the number of integers.\u000aThe second line contains n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109).\u000aOutput\u000aPrint the number of pairs of indexes i,\u2009j (i\u2009<\u2009j) that ai\u2009+\u2009aj is a power of 2.\u000aExamples\u000ainput\u000a4\u000a7 3 2 1\u000aoutput\u000a2\u000ainput\u000a3\u000a1 1 1\u000aoutput\u000a3\u000aNote\u000aIn the first example the following pairs of indexes include in answer: (1,\u20094) and (2,\u20094).\u000aIn the second example all pairs of indexes (i,\u2009j) (where i\u2009<\u2009j) include in answer.
+p3
+sS'problemStatement'
+p4
+VB. Powers of Two\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given n integers a1,\u2009a2,\u2009...,\u2009an. Find the number of pairs of indexes i,\u2009j (i\u2009<\u2009j) that ai\u2009+\u2009aj is a power of 2 (i. e. some integer x exists so that ai\u2009+\u2009aj\u2009=\u20092x).\u000aInput\u000aThe first line contains the single positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009105) \u2014 the number of integers.\u000aThe second line contains n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109).\u000aOutput\u000aPrint the number of pairs of indexes i,\u2009j (i\u2009<\u2009j) that ai\u2009+\u2009aj is a power of 2.\u000aExamples\u000ainput\u000a4\u000a7 3 2 1\u000aoutput\u000a2\u000ainput\u000a3\u000a1 1 1\u000aoutput\u000a3\u000aNote\u000aIn the first example the following pairs of indexes include in answer: (1,\u20094) and (2,\u20094).\u000aIn the second example all pairs of indexes (i,\u2009j) (where i\u2009<\u2009j) include in answer.
+p5
+sS'name'
+p6
+VB. Powers of Two
+p7
+sS'tags'
+p8
+Vbrute force data structures implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/702/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'problemId'
+p16
+V702/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

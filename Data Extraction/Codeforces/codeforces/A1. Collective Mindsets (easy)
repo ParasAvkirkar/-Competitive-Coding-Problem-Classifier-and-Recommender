@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA1. Collective Mindsets (easy)\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aTonight is brain dinner night and all zombies will gather together to scarf down some delicious brains. The artful Heidi plans to crash the party, incognito, disguised as one of them. Her objective is to get away with at least one brain, so she can analyze the zombies' mindset back home and gain a strategic advantage.\u000aThey will be N guests tonight: N\u2009-\u20091 real zombies and a fake one, our Heidi. The living-dead love hierarchies as much as they love brains: each one has a unique rank in the range 1 to N\u2009-\u20091, and Heidi, who still appears slightly different from the others, is attributed the highest rank, N. Tonight there will be a chest with brains on display and every attendee sees how many there are. These will then be split among the attendees according to the following procedure:\u000aThe zombie of the highest rank makes a suggestion on who gets how many brains (every brain is an indivisible entity). A vote follows. If at least half of the attendees accept the offer, the brains are shared in the suggested way and the feast begins. But if majority is not reached, then the highest-ranked zombie is killed, and the next zombie in hierarchy has to make a suggestion. If he is killed too, then the third highest-ranked makes one, etc. (It's enough to have exactly half of the votes \u2013 in case of a tie, the vote of the highest-ranked alive zombie counts twice, and he will of course vote in favor of his own suggestion in order to stay alive.)\u000aYou should know that zombies are very greedy and sly, and they know this too \u2013 basically all zombie brains are alike. Consequently, a zombie will never accept an offer which is suboptimal for him. That is, if an offer is not strictly better than a potential later offer, he will vote against it. And make no mistake: while zombies may normally seem rather dull, tonight their intellects are perfect. Each zombie's priorities for tonight are, in descending order:\u000asurvive the event (they experienced death already once and know it is no fun),\u000aget as many brains as possible.\u000aHeidi goes first and must make an offer which at least half of the attendees will accept, and which allocates at least one brain for Heidi herself.\u000aWhat is the smallest number of brains that have to be in the chest for this to be possible?\u000aInput\u000aThe only line of input contains one integer: N, the number of attendees (1\u2009\u2264\u2009N\u2009\u2264\u2009109).\u000aOutput\u000aOutput one integer: the smallest number of brains in the chest which allows Heidi to take one brain home.\u000aExamples\u000ainput\u000a1\u000aoutput\u000a1\u000ainput\u000a4\u000aoutput\u000a2\u000aNote
+p3
+sS'problemStatement'
+p4
+VA1. Collective Mindsets (easy)\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aTonight is brain dinner night and all zombies will gather together to scarf down some delicious brains. The artful Heidi plans to crash the party, incognito, disguised as one of them. Her objective is to get away with at least one brain, so she can analyze the zombies' mindset back home and gain a strategic advantage.\u000aThey will be N guests tonight: N\u2009-\u20091 real zombies and a fake one, our Heidi. The living-dead love hierarchies as much as they love brains: each one has a unique rank in the range 1 to N\u2009-\u20091, and Heidi, who still appears slightly different from the others, is attributed the highest rank, N. Tonight there will be a chest with brains on display and every attendee sees how many there are. These will then be split among the attendees according to the following procedure:\u000aThe zombie of the highest rank makes a suggestion on who gets how many brains (every brain is an indivisible entity). A vote follows. If at least half of the attendees accept the offer, the brains are shared in the suggested way and the feast begins. But if majority is not reached, then the highest-ranked zombie is killed, and the next zombie in hierarchy has to make a suggestion. If he is killed too, then the third highest-ranked makes one, etc. (It's enough to have exactly half of the votes \u2013 in case of a tie, the vote of the highest-ranked alive zombie counts twice, and he will of course vote in favor of his own suggestion in order to stay alive.)\u000aYou should know that zombies are very greedy and sly, and they know this too \u2013 basically all zombie brains are alike. Consequently, a zombie will never accept an offer which is suboptimal for him. That is, if an offer is not strictly better than a potential later offer, he will vote against it. And make no mistake: while zombies may normally seem rather dull, tonight their intellects are perfect. Each zombie's priorities for tonight are, in descending order:\u000asurvive the event (they experienced death already once and know it is no fun),\u000aget as many brains as possible.\u000aHeidi goes first and must make an offer which at least half of the attendees will accept, and which allocates at least one brain for Heidi herself.\u000aWhat is the smallest number of brains that have to be in the chest for this to be possible?\u000aInput\u000aThe only line of input contains one integer: N, the number of attendees (1\u2009\u2264\u2009N\u2009\u2264\u2009109).\u000aOutput\u000aOutput one integer: the smallest number of brains in the chest which allows Heidi to take one brain home.\u000aExamples\u000ainput\u000a1\u000aoutput\u000a1\u000ainput\u000a4\u000aoutput\u000a2\u000aNote
+p5
+sS'name'
+p6
+VA1. Collective Mindsets (easy)
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/690/A1
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V690/A1
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

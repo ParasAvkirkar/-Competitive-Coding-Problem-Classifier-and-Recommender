@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Sleep in Class\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe academic year has just begun, but lessons and olympiads have already occupied all the free time. It is not a surprise that today Olga fell asleep on the Literature. She had a dream in which she was on a stairs.\u000aThe stairs consists of n steps. The steps are numbered from bottom to top, it means that the lowest step has number 1, and the highest step has number n. Above each of them there is a pointer with the direction (up or down) Olga should move from this step. As soon as Olga goes to the next step, the direction of the pointer (above the step she leaves) changes. It means that the direction "up" changes to "down", the direction "down"  \u2014  to the direction "up".\u000aOlga always moves to the next step in the direction which is shown on the pointer above the step.\u000aIf Olga moves beyond the stairs, she will fall and wake up. Moving beyond the stairs is a moving down from the first step or moving up from the last one (it means the n-th) step.\u000aIn one second Olga moves one step up or down according to the direction of the pointer which is located above the step on which Olga had been at the beginning of the second.\u000aFor each step find the duration of the dream if Olga was at this step at the beginning of the dream.\u000aOlga's fall also takes one second, so if she was on the first step and went down, she would wake up in the next second.\u000aInput\u000aThe first line contains single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009106) \u2014 the number of steps on the stairs.\u000aThe second line contains a string s with the length n \u2014 it denotes the initial direction of pointers on the stairs. The i-th character of string s denotes the direction of the pointer above i-th step, and is either 'U' (it means that this pointer is directed up), or 'D' (it means this pointed is directed down).\u000aThe pointers are given in order from bottom to top.\u000aOutput\u000aPrint n numbers, the i-th of which is equal either to the duration of Olga's dream or to \u2009-\u20091 if Olga never goes beyond the stairs, if in the beginning of sleep she was on the i-th step.\u000aExamples\u000ainput\u000a3\u000aUUD\u000aoutput\u000a5 6 3 \u000ainput\u000a10\u000aUUDUDUUDDU\u000aoutput\u000a5 12 23 34 36 27 18 11 6 1 
+p3
+sS'problemStatement'
+p4
+VE. Sleep in Class\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe academic year has just begun, but lessons and olympiads have already occupied all the free time. It is not a surprise that today Olga fell asleep on the Literature. She had a dream in which she was on a stairs.\u000aThe stairs consists of n steps. The steps are numbered from bottom to top, it means that the lowest step has number 1, and the highest step has number n. Above each of them there is a pointer with the direction (up or down) Olga should move from this step. As soon as Olga goes to the next step, the direction of the pointer (above the step she leaves) changes. It means that the direction "up" changes to "down", the direction "down"  \u2014  to the direction "up".\u000aOlga always moves to the next step in the direction which is shown on the pointer above the step.\u000aIf Olga moves beyond the stairs, she will fall and wake up. Moving beyond the stairs is a moving down from the first step or moving up from the last one (it means the n-th) step.\u000aIn one second Olga moves one step up or down according to the direction of the pointer which is located above the step on which Olga had been at the beginning of the second.\u000aFor each step find the duration of the dream if Olga was at this step at the beginning of the dream.\u000aOlga's fall also takes one second, so if she was on the first step and went down, she would wake up in the next second.\u000aInput\u000aThe first line contains single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009106) \u2014 the number of steps on the stairs.\u000aThe second line contains a string s with the length n \u2014 it denotes the initial direction of pointers on the stairs. The i-th character of string s denotes the direction of the pointer above i-th step, and is either 'U' (it means that this pointer is directed up), or 'D' (it means this pointed is directed down).\u000aThe pointers are given in order from bottom to top.\u000aOutput\u000aPrint n numbers, the i-th of which is equal either to the duration of Olga's dream or to \u2009-\u20091 if Olga never goes beyond the stairs, if in the beginning of sleep she was on the i-th step.\u000aExamples\u000ainput\u000a3\u000aUUD\u000aoutput\u000a5 6 3 \u000ainput\u000a10\u000aUUDUDUUDDU\u000aoutput\u000a5 12 23 34 36 27 18 11 6 1 
+p5
+sS'name'
+p6
+VE. Sleep in Class
+p7
+sS'tags'
+p8
+Vmath 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/733/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V733/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

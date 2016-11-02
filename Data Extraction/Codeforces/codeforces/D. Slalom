@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Slalom\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aLittle girl Masha likes winter sports, today she's planning to take part in slalom skiing.\u000aThe track is represented as a grid composed of n\u2009×\u2009m squares. There are rectangular obstacles at the track, composed of grid squares. Masha must get from the square (1,\u20091) to the square (n,\u2009m). She can move from a square to adjacent square: either to the right, or upwards. If the square is occupied by an obstacle, it is not allowed to move to that square.\u000aOne can see that each obstacle can actually be passed in two ways: either it is to the right of Masha's path, or to the left. Masha likes to try all ways to do things, so she would like to know how many ways are there to pass the track. Two ways are considered different if there is an obstacle such that it is to the right of the path in one way, and to the left of the path in the other way.\u000aHelp Masha to find the number of ways to pass the track. The number of ways can be quite big, so Masha would like to know it modulo 109\u2009+\u20097.\u000aThe pictures below show different ways to pass the track in sample tests.\u000aInput\u000aThe first line of input data contains three positive integers: n, m and k (3\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009106, 0\u2009\u2264\u2009k\u2009\u2264\u2009105) \u2014 the size of the track and the number of obstacles.\u000aThe following k lines contain four positive integers each: x1, y1, x2, y2 (1\u2009\u2264\u2009x1\u2009\u2264\u2009x2\u2009\u2264\u2009n, 1\u2009\u2264\u2009y1\u2009\u2264\u2009y2\u2009\u2264\u2009m) \u2014 coordinates of bottom left, and top right squares of the obstacle.\u000aIt is guaranteed that there are no obstacles at squares (1,\u20091) and (n,\u2009m), and no obstacles overlap (but some of them may touch).\u000aOutput\u000aOutput one integer \u2014 the number of ways to pass the track modulo 109\u2009+\u20097.\u000aExamples\u000ainput\u000a3 3 0\u000aoutput\u000a1\u000ainput\u000a4 5 1\u000a2 2 3 4\u000aoutput\u000a2\u000ainput\u000a5 5 3\u000a2 2 2 3\u000a4 2 5 2\u000a4 4 4 4\u000aoutput\u000a3
+p3
+sS'problemStatement'
+p4
+VD. Slalom\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aLittle girl Masha likes winter sports, today she's planning to take part in slalom skiing.\u000aThe track is represented as a grid composed of n\u2009×\u2009m squares. There are rectangular obstacles at the track, composed of grid squares. Masha must get from the square (1,\u20091) to the square (n,\u2009m). She can move from a square to adjacent square: either to the right, or upwards. If the square is occupied by an obstacle, it is not allowed to move to that square.\u000aOne can see that each obstacle can actually be passed in two ways: either it is to the right of Masha's path, or to the left. Masha likes to try all ways to do things, so she would like to know how many ways are there to pass the track. Two ways are considered different if there is an obstacle such that it is to the right of the path in one way, and to the left of the path in the other way.\u000aHelp Masha to find the number of ways to pass the track. The number of ways can be quite big, so Masha would like to know it modulo 109\u2009+\u20097.\u000aThe pictures below show different ways to pass the track in sample tests.\u000aInput\u000aThe first line of input data contains three positive integers: n, m and k (3\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009106, 0\u2009\u2264\u2009k\u2009\u2264\u2009105) \u2014 the size of the track and the number of obstacles.\u000aThe following k lines contain four positive integers each: x1, y1, x2, y2 (1\u2009\u2264\u2009x1\u2009\u2264\u2009x2\u2009\u2264\u2009n, 1\u2009\u2264\u2009y1\u2009\u2264\u2009y2\u2009\u2264\u2009m) \u2014 coordinates of bottom left, and top right squares of the obstacle.\u000aIt is guaranteed that there are no obstacles at squares (1,\u20091) and (n,\u2009m), and no obstacles overlap (but some of them may touch).\u000aOutput\u000aOutput one integer \u2014 the number of ways to pass the track modulo 109\u2009+\u20097.\u000aExamples\u000ainput\u000a3 3 0\u000aoutput\u000a1\u000ainput\u000a4 5 1\u000a2 2 3 4\u000aoutput\u000a2\u000ainput\u000a5 5 3\u000a2 2 2 3\u000a4 2 5 2\u000a4 4 4 4\u000aoutput\u000a3
+p5
+sS'name'
+p6
+VD. Slalom
+p7
+sS'tags'
+p8
+Vdata structures dp 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/720/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V720/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

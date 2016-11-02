@@ -1,0 +1,108 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Searching Rectangles\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aFilya just learned new geometry object \u2014 rectangle. He is given a field consisting of n\u2009×\u2009n unit cells. Rows are numbered from bottom to top with integer from 1 to n. Columns are numbered from left to right with integers from 1 to n. Cell, located at the intersection of the row r and column c is denoted as (r,\u2009c). Filya has painted two rectangles, such that their sides are parallel to coordinate axes and each cell lies fully inside or fully outside each of them. Moreover, no cell lies in both rectangles.\u000aLater, hedgehog Filya became interested in the location of his rectangles but was unable to find the sheet of paper they were painted on. They were taken by Sonya and now she wants to play a little game with Filya. He tells her a query rectangle and she replies with the number of initial rectangles that lie fully inside the given query rectangle. The query rectangle should match the same conditions as initial rectangles. Rectangle lies fully inside the query if each o its cells lies inside the query.\u000aFilya knows Sonya really well, so is sure that if he asks more than 200 questions she will stop to reply.\u000aInput\u000aThe first line of the input contains an integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009216) \u2014 size of the field.\u000aFor each query an integer between 0 and 2 is returned \u2014 the number of initial rectangles that lie fully inside the query rectangle.\u000aOutput\u000aTo make a query you have to print "? x1 y1 x2 y2" (without quotes) (1\u2009\u2264\u2009x1\u2009\u2264\u2009x2\u2009\u2264\u2009n, 1\u2009\u2264\u2009y1\u2009\u2264\u2009y2\u2009\u2264\u2009n), where (x1,\u2009y1) stands for the position of the bottom left cell of the query and (x2,\u2009y2) stands for the up right cell of the query. You are allowed to ask no more than 200 queries. After each query you should perform "flush" operation and read the answer.\u000aIn case you suppose you've already determined the location of two rectangles (or run out of queries) you should print "! x11 y11 x12 y12 x21 y21 x22 y22" (without quotes), where first four integers describe the bottom left and up right cells of the first rectangle, and following four describe the corresponding cells of the second rectangle. You can print the rectangles in an arbitrary order. After you have printed the answer, print the end of the line and perform "flush". Your program should terminate immediately after it print the answer.\u000aInteraction\u000aTo flush you can use (just after printing an integer and end-of-line):\u000afflush(stdout) in C++;\u000aSystem.out.flush() in Java;\u000astdout.flush() in Python;\u000aflush(output) in Pascal;\u000aSee the documentation for other languages.\u000aYou will get the Wrong Answer verdict if you ask more than 200 queries, or if you print an incorrect coordinates.\u000aYou will get the Idleness Limit Exceeded verdict if you don't print anything (but you should) or if you forget about flushing the output (more info below).\u000aHacking.\u000aThe first line should contain an integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009216).\u000aThe second line should contain four integers x1, y1, x2, y2 (1\u2009\u2264\u2009x1\u2009\u2264\u2009x2\u2009\u2264\u2009n, 1\u2009\u2264\u2009y1\u2009\u2264\u2009y2\u2009\u2264\u2009n) \u2014 the description of the first rectangle.\u000aThe third line contains the description of the second rectangle in the similar way.\u000aExample\u000ainput\u000a5\u000a2\u000a1\u000a0\u000a1\u000a1\u000a1\u000a0\u000a1\u000aoutput\u000a? 1 1 5 5\u000a? 1 1 3 3\u000a? 1 1 3 1\u000a? 2 2 2 2\u000a? 3 3 5 5\u000a? 3 3 3 5\u000a? 3 3 3 4\u000a? 3 4 3 5\u000a! 2 2 2 2 3 4 3 5
+p3
+sS'problemStatement'
+p4
+VB. Searching Rectangles\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aFilya just learned new geometry object \u2014 rectangle. He is given a field consisting of n\u2009×\u2009n unit cells. Rows are numbered from bottom to top with integer from 1 to n. Columns are numbered from left to right with integers from 1 to n. Cell, located at the intersection of the row r and column c is denoted as (r,\u2009c). Filya has painted two rectangles, such that their sides are parallel to coordinate axes and each cell lies fully inside or fully outside each of them. Moreover, no cell lies in both rectangles.\u000aLater, hedgehog Filya became interested in the location of his rectangles but was unable to find the sheet of paper they were painted on. They were taken by Sonya and now she wants to play a little game with Filya. He tells her a query rectangle and she replies with the number of initial rectangles that lie fully inside the given query rectangle. The query rectangle should match the same conditions as initial rectangles. Rectangle lies fully inside the query if each o its cells lies inside the query.\u000aFilya knows Sonya really well, so is sure that if he asks more than 200 questions she will stop to reply.\u000aInput\u000aThe first line of the input contains an integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009216) \u2014 size of the field.\u000aFor each query an integer between 0 and 2 is returned \u2014 the number of initial rectangles that lie fully inside the query rectangle.\u000aOutput\u000aTo make a query you have to print "? x1 y1 x2 y2" (without quotes) (1\u2009\u2264\u2009x1\u2009\u2264\u2009x2\u2009\u2264\u2009n, 1\u2009\u2264\u2009y1\u2009\u2264\u2009y2\u2009\u2264\u2009n), where (x1,\u2009y1) stands for the position of the bottom left cell of the query and (x2,\u2009y2) stands for the up right cell of the query. You are allowed to ask no more than 200 queries. After each query you should perform "flush" operation and read the answer.\u000aIn case you suppose you've already determined the location of two rectangles (or run out of queries) you should print "! x11 y11 x12 y12 x21 y21 x22 y22" (without quotes), where first four integers describe the bottom left and up right cells of the first rectangle, and following four describe the corresponding cells of the second rectangle. You can print the rectangles in an arbitrary order. After you have printed the answer, print the end of the line and perform "flush". Your program should terminate immediately after it print the answer.\u000aInteraction\u000aTo flush you can use (just after printing an integer and end-of-line):\u000afflush(stdout) in C++;\u000aSystem.out.flush() in Java;\u000astdout.flush() in Python;\u000aflush(output) in Pascal;\u000aSee the documentation for other languages.\u000aYou will get the Wrong Answer verdict if you ask more than 200 queries, or if you print an incorrect coordinates.\u000aYou will get the Idleness Limit Exceeded verdict if you don't print anything (but you should) or if you forget about flushing the output (more info below).\u000aHacking.\u000aThe first line should contain an integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009216).\u000aThe second line should contain four integers x1, y1, x2, y2 (1\u2009\u2264\u2009x1\u2009\u2264\u2009x2\u2009\u2264\u2009n, 1\u2009\u2264\u2009y1\u2009\u2264\u2009y2\u2009\u2264\u2009n) \u2014 the description of the first rectangle.\u000aThe third line contains the description of the second rectangle in the similar way.\u000aExample\u000ainput\u000a5\u000a2\u000a1\u000a0\u000a1\u000a1\u000a1\u000a0\u000a1\u000aoutput\u000a? 1 1 5 5\u000a? 1 1 3 3\u000a? 1 1 3 1\u000a? 2 2 2 2\u000a? 3 3 5 5\u000a? 3 3 3 5\u000a? 3 3 3 4\u000a? 3 4 3 5\u000a! 2 2 2 2 3 4 3 5
+p5
+sS'name'
+p6
+VB. Searching Rectangles
+p7
+sS'tags'
+p8
+Vbinary search constructive algorithms 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/713/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVTo make a query you have to print "? x1 y1 x2 y2" (without quotes) (1\u2009\u2264\u2009x1\u2009\u2264\u2009x2\u2009\u2264\u2009n, 1\u2009\u2264\u2009y1\u2009\u2264\u2009y2\u2009\u2264\u2009n), where (x1,\u2009y1) stands for the position of the bottom left cell of the query and (x2,\u2009y2) stands for the up right cell of the query. You are allowed to ask no more than 200 queries. After each query you should perform "flush" operation and read the answer.
+p19
+aVIn case you suppose you've already determined the location of two rectangles (or run out of queries) you should print "! x11 y11 x12 y12 x21 y21 x22 y22" (without quotes), where first four integers describe the bottom left and up right cells of the first rectangle, and following four describe the corresponding cells of the second rectangle. You can print the rectangles in an arbitrary order. After you have printed the answer, print the end of the line and perform "flush". Your program should terminate immediately after it print the answer.
+p20
+aVInteraction
+p21
+aVTo flush you can use (just after printing an integer and end-of-line):
+p22
+aVfflush(stdout) in C++;
+p23
+aVSystem.out.flush() in Java;
+p24
+aVstdout.flush() in Python;
+p25
+aVflush(output) in Pascal;
+p26
+aVSee the documentation for other languages.
+p27
+aVYou will get the Wrong Answer verdict if you ask more than 200 queries, or if you print an incorrect coordinates.
+p28
+aVYou will get the Idleness Limit Exceeded verdict if you don't print anything (but you should) or if you forget about flushing the output (more info below).
+p29
+aVHacking.
+p30
+aVThe first line should contain an integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009216).
+p31
+aVThe second line should contain four integers x1, y1, x2, y2 (1\u2009\u2264\u2009x1\u2009\u2264\u2009x2\u2009\u2264\u2009n, 1\u2009\u2264\u2009y1\u2009\u2264\u2009y2\u2009\u2264\u2009n) \u2014 the description of the first rectangle.
+p32
+aVThe third line contains the description of the second rectangle in the similar way.
+p33
+asS'statement'
+p34
+(lp35
+VB. Searching Rectangles
+p36
+aVtime limit per test1 second
+p37
+aVmemory limit per test256 megabytes
+p38
+aVinputstandard input
+p39
+aVoutputstandard output
+p40
+aVFilya just learned new geometry object \u2014 rectangle. He is given a field consisting of n\u2009×\u2009n unit cells. Rows are numbered from bottom to top with integer from 1 to n. Columns are numbered from left to right with integers from 1 to n. Cell, located at the intersection of the row r and column c is denoted as (r,\u2009c). Filya has painted two rectangles, such that their sides are parallel to coordinate axes and each cell lies fully inside or fully outside each of them. Moreover, no cell lies in both rectangles.
+p41
+aVLater, hedgehog Filya became interested in the location of his rectangles but was unable to find the sheet of paper they were painted on. They were taken by Sonya and now she wants to play a little game with Filya. He tells her a query rectangle and she replies with the number of initial rectangles that lie fully inside the given query rectangle. The query rectangle should match the same conditions as initial rectangles. Rectangle lies fully inside the query if each o its cells lies inside the query.
+p42
+aVFilya knows Sonya really well, so is sure that if he asks more than 200 questions she will stop to reply.
+p43
+asS'problemId'
+p44
+V713/B
+p45
+sS'input'
+p46
+(lp47
+VInput
+p48
+aVThe first line of the input contains an integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009216) \u2014 size of the field.
+p49
+aVFor each query an integer between 0 and 2 is returned \u2014 the number of initial rectangles that lie fully inside the query rectangle.
+p50
+asS'id'
+p51
+c__builtin__
+id
+p52
+sS'constraints'
+p53
+g47
+sb.

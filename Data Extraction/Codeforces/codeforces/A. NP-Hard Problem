@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. NP-Hard Problem\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aRecently, Pari and Arya did some research about NP-Hard problems and they found the minimum vertex cover problem very interesting.\u000aSuppose the graph G is given. Subset A of its vertices is called a vertex cover of this graph, if for each edge uv there is at least one endpoint of it in this set, i.e. or (or both).\u000aPari and Arya have won a great undirected graph as an award in a team contest. Now they have to split it in two parts, but both of them want their parts of the graph to be a vertex cover.\u000aThey have agreed to give you their graph and you need to find two disjoint subsets of its vertices A and B, such that both A and B are vertex cover or claim it's impossible. Each vertex should be given to no more than one of the friends (or you can even keep it for yourself).\u000aInput\u000aThe first line of the input contains two integers n and m (2\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 1\u2009\u2264\u2009m\u2009\u2264\u2009100\u2009000) \u2014 the number of vertices and the number of edges in the prize graph, respectively.\u000aEach of the next m lines contains a pair of integers ui and vi (1\u2009\u2009\u2264\u2009\u2009ui,\u2009\u2009vi\u2009\u2009\u2264\u2009\u2009n), denoting an undirected edge between ui and vi. It's guaranteed the graph won't contain any self-loops or multiple edges.\u000aOutput\u000aIf it's impossible to split the graph between Pari and Arya as they expect, print "-1" (without quotes).\u000aIf there are two disjoint sets of vertices, such that both sets are vertex cover, print their descriptions. Each description must contain two lines. The first line contains a single integer k denoting the number of vertices in that vertex cover, and the second line contains k integers \u2014 the indices of vertices. Note that because of m\u2009\u2265\u20091, vertex cover cannot be empty.\u000aExamples\u000ainput\u000a4 2\u000a1 2\u000a2 3\u000aoutput\u000a1\u000a2 \u000a2\u000a1 3 \u000ainput\u000a3 3\u000a1 2\u000a2 3\u000a1 3\u000aoutput\u000a-1\u000aNote\u000aIn the first sample, you can give the vertex number 2 to Arya and vertices numbered 1 and 3 to Pari and keep vertex number 4 for yourself (or give it someone, if you wish).\u000aIn the second sample, there is no way to satisfy both Pari and Arya.
+p3
+sS'problemStatement'
+p4
+VA. NP-Hard Problem\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aRecently, Pari and Arya did some research about NP-Hard problems and they found the minimum vertex cover problem very interesting.\u000aSuppose the graph G is given. Subset A of its vertices is called a vertex cover of this graph, if for each edge uv there is at least one endpoint of it in this set, i.e. or (or both).\u000aPari and Arya have won a great undirected graph as an award in a team contest. Now they have to split it in two parts, but both of them want their parts of the graph to be a vertex cover.\u000aThey have agreed to give you their graph and you need to find two disjoint subsets of its vertices A and B, such that both A and B are vertex cover or claim it's impossible. Each vertex should be given to no more than one of the friends (or you can even keep it for yourself).\u000aInput\u000aThe first line of the input contains two integers n and m (2\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 1\u2009\u2264\u2009m\u2009\u2264\u2009100\u2009000) \u2014 the number of vertices and the number of edges in the prize graph, respectively.\u000aEach of the next m lines contains a pair of integers ui and vi (1\u2009\u2009\u2264\u2009\u2009ui,\u2009\u2009vi\u2009\u2009\u2264\u2009\u2009n), denoting an undirected edge between ui and vi. It's guaranteed the graph won't contain any self-loops or multiple edges.\u000aOutput\u000aIf it's impossible to split the graph between Pari and Arya as they expect, print "-1" (without quotes).\u000aIf there are two disjoint sets of vertices, such that both sets are vertex cover, print their descriptions. Each description must contain two lines. The first line contains a single integer k denoting the number of vertices in that vertex cover, and the second line contains k integers \u2014 the indices of vertices. Note that because of m\u2009\u2265\u20091, vertex cover cannot be empty.\u000aExamples\u000ainput\u000a4 2\u000a1 2\u000a2 3\u000aoutput\u000a1\u000a2 \u000a2\u000a1 3 \u000ainput\u000a3 3\u000a1 2\u000a2 3\u000a1 3\u000aoutput\u000a-1\u000aNote\u000aIn the first sample, you can give the vertex number 2 to Arya and vertices numbered 1 and 3 to Pari and keep vertex number 4 for yourself (or give it someone, if you wish).\u000aIn the second sample, there is no way to satisfy both Pari and Arya.
+p5
+sS'name'
+p6
+VA. NP-Hard Problem
+p7
+sS'tags'
+p8
+Vdfs and similar graphs 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/687/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V687/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

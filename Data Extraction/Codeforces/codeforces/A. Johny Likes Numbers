@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Johny Likes Numbers\u000atime limit per test0.5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aJohny likes numbers n and k very much. Now Johny wants to find the smallest integer x greater than n, so it is divisible by the number k.\u000aInput\u000aThe only line contains two integers n and k (1\u2009\u2264\u2009n,\u2009k\u2009\u2264\u2009109).\u000aOutput\u000aPrint the smallest integer x\u2009>\u2009n, so it is divisible by the number k.\u000aExamples\u000ainput\u000a5 3\u000aoutput\u000a6\u000ainput\u000a25 13\u000aoutput\u000a26\u000ainput\u000a26 13\u000aoutput\u000a39
+p3
+sS'problemStatement'
+p4
+VA. Johny Likes Numbers\u000atime limit per test0.5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aJohny likes numbers n and k very much. Now Johny wants to find the smallest integer x greater than n, so it is divisible by the number k.\u000aInput\u000aThe only line contains two integers n and k (1\u2009\u2264\u2009n,\u2009k\u2009\u2264\u2009109).\u000aOutput\u000aPrint the smallest integer x\u2009>\u2009n, so it is divisible by the number k.\u000aExamples\u000ainput\u000a5 3\u000aoutput\u000a6\u000ainput\u000a25 13\u000aoutput\u000a26\u000ainput\u000a26 13\u000aoutput\u000a39
+p5
+sS'name'
+p6
+VA. Johny Likes Numbers
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/678/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V0.5 seconds
+p15
+sS'problemId'
+p16
+V678/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

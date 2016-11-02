@@ -9,30 +9,29 @@ from HTMLParser import HTMLParser
 
 import pickle
 
-current_progress = {'page':1, 'problem_no':0}
+current_progress = {'link':"http://codeforces.com/problemset/", 'problem_no':0, 'total_problems':0}
 
 h = HTMLParser()
 driver = webdriver.Chrome()
 try:
 	with open('current_progress.pickle', 'r+b') as f:
 		current_progress = pickle.load(f)
-		print 'Resuming Progress from page '+str(current_progress['page'])+' and problem no '+str(current_progress['problem_no'])
+		print 'Resuming Progress from page '+str(current_progress['link'])+' and problem no '+str(current_progress['problem_no'])
 except Exception as e:
 	print e
 	print 'Starting problem collection'
 
-count = current_progress['problem_no']
-#page_no = current_progress['page']
-codeforcesProblemsLink="http://codeforces.com/problemset/"
+page_count = current_progress['problem_no']
+global_count = current_progress['total_problems']
+codeforcesProblemsLink = current_progress['link']
 while True:
-	#driver.get(codeforcesProblemsLink+str(page_no))
 	driver.get(codeforcesProblemsLink)
 
 	print("Page successfully loaded")
 
 	problemsTable = driver.find_element_by_class_name("datatable")
 	problemList = problemsTable.find_elements_by_tag_name("tr")
-	for problem in problemList[count:]:
+	for problem in problemList[page_count:]:
 		try:
 			problemLink = problem.find_element_by_class_name("id")
 			problemLink = problemLink.find_element_by_tag_name("a")
@@ -45,10 +44,11 @@ while True:
 			if p:
 				with open('codeforces/'+p.name, 'w+b') as f:
 					pickle.dump(p, f)
-				count = count + 1
+				global_count = global_count + 1
+				page_count = page_count +1
 				with open('current_progress.pickle', 'w+b') as f:
-					#pickle.dump({'page':page_no, 'problem_no':count}, f)
-				print("Suceesfully extracted problem " + problemId + "  Count - " + str(count))
+					pickle.dump({'link':codeforcesProblemsLink, 'problem_no':page_count, 'total_problems':global_count}, f)
+				print("Suceesfully extracted problem " + problemId + "  Count - " + str(global_count))
 
 		except Exception as e:
 			print("Table Header")
@@ -61,10 +61,8 @@ while True:
 		break
 	else:
 		codeforcesProblemsLink = nextLink
-	#page_no += 1
-	#print codeforcesProblemsLink + str(page_no)
-	count = 0
+	page_count = 0
 	print("Loading next page")
 
-print("Extraction completed successfully " + str(count))
+print("Extraction completed successfully " + str(global_count))
 driver.close()

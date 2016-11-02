@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. The Last Fight Between Human and AI\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000a100 years have passed since the last victory of the man versus computer in Go. Technologies made a huge step forward and robots conquered the Earth! It's time for the final fight between human and robot that will decide the faith of the planet.\u000aThe following game was chosen for the fights: initially there is a polynomial\u000aP(x)\u2009=\u2009anxn\u2009+\u2009an\u2009-\u20091xn\u2009-\u20091\u2009+\u2009...\u2009+\u2009a1x\u2009+\u2009a0,\u000awith yet undefined coefficients and the integer k. Players alternate their turns. At each turn, a player pick some index j, such that coefficient aj that stay near xj is not determined yet and sets it to any value (integer or real, positive or negative, 0 is also allowed). Computer moves first. The human will be declared the winner if and only if the resulting polynomial will be divisible by Q(x)\u2009=\u2009x\u2009-\u2009k.\u000aPolynomial P(x) is said to be divisible by polynomial Q(x) if there exists a representation P(x)\u2009=\u2009B(x)Q(x), where B(x) is also some polynomial.\u000aSome moves have been made already and now you wonder, is it true that human can guarantee the victory if he plays optimally?\u000aInput\u000aThe first line of the input contains two integers n and k (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000,\u2009|k|\u2009\u2264\u200910\u2009000) \u2014 the size of the polynomial and the integer k.\u000aThe i-th of the following n\u2009+\u20091 lines contain character '?' if the coefficient near xi\u2009-\u20091 is yet undefined or the integer value ai, if the coefficient is already known (\u2009-\u200910\u2009000\u2009\u2264\u2009ai\u2009\u2264\u200910\u2009000). Each of integers ai (and even an) may be equal to 0.\u000aPlease note, that it's not guaranteed that you are given the position of the game where it's computer's turn to move.\u000aOutput\u000aPrint "Yes" (without quotes) if the human has winning strategy, or "No" (without quotes) otherwise.\u000aExamples\u000ainput\u000a1 2\u000a-1\u000a?\u000aoutput\u000aYes\u000ainput\u000a2 100\u000a-10000\u000a0\u000a1\u000aoutput\u000aYes\u000ainput\u000a4 5\u000a?\u000a1\u000a?\u000a1\u000a?\u000aoutput\u000aNo\u000aNote\u000aIn the first sample, computer set a0 to \u2009-\u20091 on the first move, so if human can set coefficient a1 to 0.5 and win.\u000aIn the second sample, all coefficients are already set and the resulting polynomial is divisible by x\u2009-\u2009100, so the human has won.
+p3
+sS'problemStatement'
+p4
+VE. The Last Fight Between Human and AI\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000a100 years have passed since the last victory of the man versus computer in Go. Technologies made a huge step forward and robots conquered the Earth! It's time for the final fight between human and robot that will decide the faith of the planet.\u000aThe following game was chosen for the fights: initially there is a polynomial\u000aP(x)\u2009=\u2009anxn\u2009+\u2009an\u2009-\u20091xn\u2009-\u20091\u2009+\u2009...\u2009+\u2009a1x\u2009+\u2009a0,\u000awith yet undefined coefficients and the integer k. Players alternate their turns. At each turn, a player pick some index j, such that coefficient aj that stay near xj is not determined yet and sets it to any value (integer or real, positive or negative, 0 is also allowed). Computer moves first. The human will be declared the winner if and only if the resulting polynomial will be divisible by Q(x)\u2009=\u2009x\u2009-\u2009k.\u000aPolynomial P(x) is said to be divisible by polynomial Q(x) if there exists a representation P(x)\u2009=\u2009B(x)Q(x), where B(x) is also some polynomial.\u000aSome moves have been made already and now you wonder, is it true that human can guarantee the victory if he plays optimally?\u000aInput\u000aThe first line of the input contains two integers n and k (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000,\u2009|k|\u2009\u2264\u200910\u2009000) \u2014 the size of the polynomial and the integer k.\u000aThe i-th of the following n\u2009+\u20091 lines contain character '?' if the coefficient near xi\u2009-\u20091 is yet undefined or the integer value ai, if the coefficient is already known (\u2009-\u200910\u2009000\u2009\u2264\u2009ai\u2009\u2264\u200910\u2009000). Each of integers ai (and even an) may be equal to 0.\u000aPlease note, that it's not guaranteed that you are given the position of the game where it's computer's turn to move.\u000aOutput\u000aPrint "Yes" (without quotes) if the human has winning strategy, or "No" (without quotes) otherwise.\u000aExamples\u000ainput\u000a1 2\u000a-1\u000a?\u000aoutput\u000aYes\u000ainput\u000a2 100\u000a-10000\u000a0\u000a1\u000aoutput\u000aYes\u000ainput\u000a4 5\u000a?\u000a1\u000a?\u000a1\u000a?\u000aoutput\u000aNo\u000aNote\u000aIn the first sample, computer set a0 to \u2009-\u20091 on the first move, so if human can set coefficient a1 to 0.5 and win.\u000aIn the second sample, all coefficients are already set and the resulting polynomial is divisible by x\u2009-\u2009100, so the human has won.
+p5
+sS'name'
+p6
+VE. The Last Fight Between Human and AI
+p7
+sS'tags'
+p8
+Vmath 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/676/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V676/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Juicer\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aKolya is going to make fresh orange juice. He has n oranges of sizes a1,\u2009a2,\u2009...,\u2009an. Kolya will put them in the juicer in the fixed order, starting with orange of size a1, then orange of size a2 and so on. To be put in the juicer the orange must have size not exceeding b, so if Kolya sees an orange that is strictly greater he throws it away and continues with the next one.\u000aThe juicer has a special section to collect waste. It overflows if Kolya squeezes oranges of the total size strictly greater than d. When it happens Kolya empties the waste section (even if there are no more oranges) and continues to squeeze the juice. How many times will he have to empty the waste section?\u000aInput\u000aThe first line of the input contains three integers n, b and d (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 1\u2009\u2264\u2009b\u2009\u2264\u2009d\u2009\u2264\u20091\u2009000\u2009000) \u2014 the number of oranges, the maximum size of the orange that fits in the juicer and the value d, which determines the condition when the waste section should be emptied.\u000aThe second line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091\u2009000\u2009000) \u2014 sizes of the oranges listed in the order Kolya is going to try to put them in the juicer.\u000aOutput\u000aPrint one integer \u2014 the number of times Kolya will have to empty the waste section.\u000aExamples\u000ainput\u000a2 7 10\u000a5 6\u000aoutput\u000a1\u000ainput\u000a1 5 10\u000a7\u000aoutput\u000a0\u000ainput\u000a3 10 10\u000a5 7 7\u000aoutput\u000a1\u000ainput\u000a1 1 1\u000a1\u000aoutput\u000a0\u000aNote\u000aIn the first sample, Kolya will squeeze the juice from two oranges and empty the waste section afterwards.\u000aIn the second sample, the orange won't fit in the juicer so Kolya will have no juice at all.
+p3
+sS'problemStatement'
+p4
+VA. Juicer\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aKolya is going to make fresh orange juice. He has n oranges of sizes a1,\u2009a2,\u2009...,\u2009an. Kolya will put them in the juicer in the fixed order, starting with orange of size a1, then orange of size a2 and so on. To be put in the juicer the orange must have size not exceeding b, so if Kolya sees an orange that is strictly greater he throws it away and continues with the next one.\u000aThe juicer has a special section to collect waste. It overflows if Kolya squeezes oranges of the total size strictly greater than d. When it happens Kolya empties the waste section (even if there are no more oranges) and continues to squeeze the juice. How many times will he have to empty the waste section?\u000aInput\u000aThe first line of the input contains three integers n, b and d (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 1\u2009\u2264\u2009b\u2009\u2264\u2009d\u2009\u2264\u20091\u2009000\u2009000) \u2014 the number of oranges, the maximum size of the orange that fits in the juicer and the value d, which determines the condition when the waste section should be emptied.\u000aThe second line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091\u2009000\u2009000) \u2014 sizes of the oranges listed in the order Kolya is going to try to put them in the juicer.\u000aOutput\u000aPrint one integer \u2014 the number of times Kolya will have to empty the waste section.\u000aExamples\u000ainput\u000a2 7 10\u000a5 6\u000aoutput\u000a1\u000ainput\u000a1 5 10\u000a7\u000aoutput\u000a0\u000ainput\u000a3 10 10\u000a5 7 7\u000aoutput\u000a1\u000ainput\u000a1 1 1\u000a1\u000aoutput\u000a0\u000aNote\u000aIn the first sample, Kolya will squeeze the juice from two oranges and empty the waste section afterwards.\u000aIn the second sample, the orange won't fit in the juicer so Kolya will have no juice at all.
+p5
+sS'name'
+p6
+VA. Juicer
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/709/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V709/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

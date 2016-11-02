@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Bear and Finding Criminals\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n cities in Bearland, numbered 1 through n. Cities are arranged in one long row. The distance between cities i and j is equal to |i\u2009-\u2009j|.\u000aLimak is a police officer. He lives in a city a. His job is to catch criminals. It's hard because he doesn't know in which cities criminals are. Though, he knows that there is at most one criminal in each city.\u000aLimak is going to use a BCD (Bear Criminal Detector). The BCD will tell Limak how many criminals there are for every distance from a city a. After that, Limak can catch a criminal in each city for which he is sure that there must be a criminal.\u000aYou know in which cities criminals are. Count the number of criminals Limak will catch, after he uses the BCD.\u000aInput\u000aThe first line of the input contains two integers n and a (1\u2009\u2264\u2009a\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of cities and the index of city where Limak lives.\u000aThe second line contains n integers t1,\u2009t2,\u2009...,\u2009tn (0\u2009\u2264\u2009ti\u2009\u2264\u20091). There are ti criminals in the i-th city.\u000aOutput\u000aPrint the number of criminals Limak will catch.\u000aExamples\u000ainput\u000a6 3\u000a1 1 1 0 1 0\u000aoutput\u000a3\u000ainput\u000a5 2\u000a0 0 0 1 0\u000aoutput\u000a1\u000aNote\u000aIn the first sample, there are six cities and Limak lives in the third one (blue arrow below). Criminals are in cities marked red.\u000aUsing the BCD gives Limak the following information:\u000aThere is one criminal at distance 0 from the third city \u2014 Limak is sure that this criminal is exactly in the third city.\u000aThere is one criminal at distance 1 from the third city \u2014 Limak doesn't know if a criminal is in the second or fourth city.\u000aThere are two criminals at distance 2 from the third city \u2014 Limak is sure that there is one criminal in the first city and one in the fifth city.\u000aThere are zero criminals for every greater distance.\u000aSo, Limak will catch criminals in cities 1, 3 and 5, that is 3 criminals in total.\u000aIn the second sample (drawing below), the BCD gives Limak the information that there is one criminal at distance 2 from Limak's city. There is only one city at distance 2 so Limak is sure where a criminal is.
+p3
+sS'problemStatement'
+p4
+VB. Bear and Finding Criminals\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n cities in Bearland, numbered 1 through n. Cities are arranged in one long row. The distance between cities i and j is equal to |i\u2009-\u2009j|.\u000aLimak is a police officer. He lives in a city a. His job is to catch criminals. It's hard because he doesn't know in which cities criminals are. Though, he knows that there is at most one criminal in each city.\u000aLimak is going to use a BCD (Bear Criminal Detector). The BCD will tell Limak how many criminals there are for every distance from a city a. After that, Limak can catch a criminal in each city for which he is sure that there must be a criminal.\u000aYou know in which cities criminals are. Count the number of criminals Limak will catch, after he uses the BCD.\u000aInput\u000aThe first line of the input contains two integers n and a (1\u2009\u2264\u2009a\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of cities and the index of city where Limak lives.\u000aThe second line contains n integers t1,\u2009t2,\u2009...,\u2009tn (0\u2009\u2264\u2009ti\u2009\u2264\u20091). There are ti criminals in the i-th city.\u000aOutput\u000aPrint the number of criminals Limak will catch.\u000aExamples\u000ainput\u000a6 3\u000a1 1 1 0 1 0\u000aoutput\u000a3\u000ainput\u000a5 2\u000a0 0 0 1 0\u000aoutput\u000a1\u000aNote\u000aIn the first sample, there are six cities and Limak lives in the third one (blue arrow below). Criminals are in cities marked red.\u000aUsing the BCD gives Limak the following information:\u000aThere is one criminal at distance 0 from the third city \u2014 Limak is sure that this criminal is exactly in the third city.\u000aThere is one criminal at distance 1 from the third city \u2014 Limak doesn't know if a criminal is in the second or fourth city.\u000aThere are two criminals at distance 2 from the third city \u2014 Limak is sure that there is one criminal in the first city and one in the fifth city.\u000aThere are zero criminals for every greater distance.\u000aSo, Limak will catch criminals in cities 1, 3 and 5, that is 3 criminals in total.\u000aIn the second sample (drawing below), the BCD gives Limak the information that there is one criminal at distance 2 from Limak's city. There is only one city at distance 2 so Limak is sure where a criminal is.
+p5
+sS'name'
+p6
+VB. Bear and Finding Criminals
+p7
+sS'tags'
+p8
+Vconstructive algorithms implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/680/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V680/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

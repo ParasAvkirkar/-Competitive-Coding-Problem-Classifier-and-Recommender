@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Parade\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVery soon there will be a parade of victory over alien invaders in Berland. Unfortunately, all soldiers died in the war and now the army consists of entirely new recruits, many of whom do not even know from which leg they should begin to march. The civilian population also poorly understands from which leg recruits begin to march, so it is only important how many soldiers march in step.\u000aThere will be n columns participating in the parade, the i-th column consists of li soldiers, who start to march from left leg, and ri soldiers, who start to march from right leg.\u000aThe beauty of the parade is calculated by the following formula: if L is the total number of soldiers on the parade who start to march from the left leg, and R is the total number of soldiers on the parade who start to march from the right leg, so the beauty will equal |L\u2009-\u2009R|.\u000aNo more than once you can choose one column and tell all the soldiers in this column to switch starting leg, i.e. everyone in this columns who starts the march from left leg will now start it from right leg, and vice versa. Formally, you can pick no more than one index i and swap values li and ri.\u000aFind the index of the column, such that switching the starting leg for soldiers in it will maximize the the beauty of the parade, or determine, that no such operation can increase the current beauty.\u000aInput\u000aThe first line contains single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009105) \u2014 the number of columns.\u000aThe next n lines contain the pairs of integers li and ri (1\u2009\u2264\u2009li,\u2009ri\u2009\u2264\u2009500) \u2014 the number of soldiers in the i-th column which start to march from the left or the right leg respectively.\u000aOutput\u000aPrint single integer k \u2014 the number of the column in which soldiers need to change the leg from which they start to march, or 0 if the maximum beauty is already reached.\u000aConsider that columns are numbered from 1 to n in the order they are given in the input data.\u000aIf there are several answers, print any of them.\u000aExamples\u000ainput\u000a3\u000a5 6\u000a8 9\u000a10 3\u000aoutput\u000a3\u000ainput\u000a2\u000a6 5\u000a5 6\u000aoutput\u000a1\u000ainput\u000a6\u000a5 9\u000a1 3\u000a4 8\u000a4 5\u000a23 54\u000a12 32\u000aoutput\u000a0\u000aNote\u000aIn the first example if you don't give the order to change the leg, the number of soldiers, who start to march from the left leg, would equal 5\u2009+\u20098\u2009+\u200910\u2009=\u200923, and from the right leg \u2014 6\u2009+\u20099\u2009+\u20093\u2009=\u200918. In this case the beauty of the parade will equal |23\u2009-\u200918|\u2009=\u20095.\u000aIf you give the order to change the leg to the third column, so the number of soldiers, who march from the left leg, will equal 5\u2009+\u20098\u2009+\u20093\u2009=\u200916, and who march from the right leg \u2014 6\u2009+\u20099\u2009+\u200910\u2009=\u200925. In this case the beauty equals |16\u2009-\u200925|\u2009=\u20099.\u000aIt is impossible to reach greater beauty by giving another orders. Thus, the maximum beauty that can be achieved is 9.
+p3
+sS'problemStatement'
+p4
+VB. Parade\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVery soon there will be a parade of victory over alien invaders in Berland. Unfortunately, all soldiers died in the war and now the army consists of entirely new recruits, many of whom do not even know from which leg they should begin to march. The civilian population also poorly understands from which leg recruits begin to march, so it is only important how many soldiers march in step.\u000aThere will be n columns participating in the parade, the i-th column consists of li soldiers, who start to march from left leg, and ri soldiers, who start to march from right leg.\u000aThe beauty of the parade is calculated by the following formula: if L is the total number of soldiers on the parade who start to march from the left leg, and R is the total number of soldiers on the parade who start to march from the right leg, so the beauty will equal |L\u2009-\u2009R|.\u000aNo more than once you can choose one column and tell all the soldiers in this column to switch starting leg, i.e. everyone in this columns who starts the march from left leg will now start it from right leg, and vice versa. Formally, you can pick no more than one index i and swap values li and ri.\u000aFind the index of the column, such that switching the starting leg for soldiers in it will maximize the the beauty of the parade, or determine, that no such operation can increase the current beauty.\u000aInput\u000aThe first line contains single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009105) \u2014 the number of columns.\u000aThe next n lines contain the pairs of integers li and ri (1\u2009\u2264\u2009li,\u2009ri\u2009\u2264\u2009500) \u2014 the number of soldiers in the i-th column which start to march from the left or the right leg respectively.\u000aOutput\u000aPrint single integer k \u2014 the number of the column in which soldiers need to change the leg from which they start to march, or 0 if the maximum beauty is already reached.\u000aConsider that columns are numbered from 1 to n in the order they are given in the input data.\u000aIf there are several answers, print any of them.\u000aExamples\u000ainput\u000a3\u000a5 6\u000a8 9\u000a10 3\u000aoutput\u000a3\u000ainput\u000a2\u000a6 5\u000a5 6\u000aoutput\u000a1\u000ainput\u000a6\u000a5 9\u000a1 3\u000a4 8\u000a4 5\u000a23 54\u000a12 32\u000aoutput\u000a0\u000aNote\u000aIn the first example if you don't give the order to change the leg, the number of soldiers, who start to march from the left leg, would equal 5\u2009+\u20098\u2009+\u200910\u2009=\u200923, and from the right leg \u2014 6\u2009+\u20099\u2009+\u20093\u2009=\u200918. In this case the beauty of the parade will equal |23\u2009-\u200918|\u2009=\u20095.\u000aIf you give the order to change the leg to the third column, so the number of soldiers, who march from the left leg, will equal 5\u2009+\u20098\u2009+\u20093\u2009=\u200916, and who march from the right leg \u2014 6\u2009+\u20099\u2009+\u200910\u2009=\u200925. In this case the beauty equals |16\u2009-\u200925|\u2009=\u20099.\u000aIt is impossible to reach greater beauty by giving another orders. Thus, the maximum beauty that can be achieved is 9.
+p5
+sS'name'
+p6
+VB. Parade
+p7
+sS'tags'
+p8
+Vmath 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/733/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V733/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

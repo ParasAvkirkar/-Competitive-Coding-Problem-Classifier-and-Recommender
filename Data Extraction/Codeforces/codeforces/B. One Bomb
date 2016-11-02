@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. One Bomb\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given a description of a depot. It is a rectangular checkered field of n\u2009×\u2009m size. Each cell in a field can be empty (".") or it can be occupied by a wall ("*").\u000aYou have one bomb. If you lay the bomb at the cell (x,\u2009y), then after triggering it will wipe out all walls in the row x and all walls in the column y.\u000aYou are to determine if it is possible to wipe out all walls in the depot by placing and triggering exactly one bomb. The bomb can be laid both in an empty cell or in a cell occupied by a wall.\u000aInput\u000aThe first line contains two positive integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u20091000) \u2014 the number of rows and columns in the depot field.\u000aThe next n lines contain m symbols "." and "*" each \u2014 the description of the field. j-th symbol in i-th of them stands for cell (i,\u2009j). If the symbol is equal to ".", then the corresponding cell is empty, otherwise it equals "*" and the corresponding cell is occupied by a wall.\u000aOutput\u000aIf it is impossible to wipe out all walls by placing and triggering exactly one bomb, then print "NO" in the first line (without quotes).\u000aOtherwise print "YES" (without quotes) in the first line and two integers in the second line \u2014 the coordinates of the cell at which the bomb should be laid. If there are multiple answers, print any of them.\u000aExamples\u000ainput\u000a3 4\u000a.*..\u000a....\u000a.*..\u000aoutput\u000aYES\u000a1 2\u000ainput\u000a3 3\u000a..*\u000a.*.\u000a*..\u000aoutput\u000aNO\u000ainput\u000a6 5\u000a..*..\u000a..*..\u000a*****\u000a..*..\u000a..*..\u000a..*..\u000aoutput\u000aYES\u000a3 3
+p3
+sS'problemStatement'
+p4
+VB. One Bomb\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given a description of a depot. It is a rectangular checkered field of n\u2009×\u2009m size. Each cell in a field can be empty (".") or it can be occupied by a wall ("*").\u000aYou have one bomb. If you lay the bomb at the cell (x,\u2009y), then after triggering it will wipe out all walls in the row x and all walls in the column y.\u000aYou are to determine if it is possible to wipe out all walls in the depot by placing and triggering exactly one bomb. The bomb can be laid both in an empty cell or in a cell occupied by a wall.\u000aInput\u000aThe first line contains two positive integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u20091000) \u2014 the number of rows and columns in the depot field.\u000aThe next n lines contain m symbols "." and "*" each \u2014 the description of the field. j-th symbol in i-th of them stands for cell (i,\u2009j). If the symbol is equal to ".", then the corresponding cell is empty, otherwise it equals "*" and the corresponding cell is occupied by a wall.\u000aOutput\u000aIf it is impossible to wipe out all walls by placing and triggering exactly one bomb, then print "NO" in the first line (without quotes).\u000aOtherwise print "YES" (without quotes) in the first line and two integers in the second line \u2014 the coordinates of the cell at which the bomb should be laid. If there are multiple answers, print any of them.\u000aExamples\u000ainput\u000a3 4\u000a.*..\u000a....\u000a.*..\u000aoutput\u000aYES\u000a1 2\u000ainput\u000a3 3\u000a..*\u000a.*.\u000a*..\u000aoutput\u000aNO\u000ainput\u000a6 5\u000a..*..\u000a..*..\u000a*****\u000a..*..\u000a..*..\u000a..*..\u000aoutput\u000aYES\u000a3 3
+p5
+sS'name'
+p6
+VB. One Bomb
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/699/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V699/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

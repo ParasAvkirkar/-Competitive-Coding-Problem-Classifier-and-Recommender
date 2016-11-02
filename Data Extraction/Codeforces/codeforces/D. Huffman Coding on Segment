@@ -1,0 +1,82 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Huffman Coding on Segment\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlice wants to send an important message to Bob. Message a\u2009=\u2009(a1,\u2009...,\u2009an) is a sequence of positive integers (characters).\u000aTo compress the message Alice wants to use binary Huffman coding. We recall that binary Huffman code, or binary prefix code is a function f, that maps each letter that appears in the string to some binary string (that is, string consisting of characters '0' and '1' only) such that for each pair of different characters ai and aj string f(ai) is not a prefix of f(aj) (and vice versa). The result of the encoding of the message a1,\u2009a2,\u2009...,\u2009an is the concatenation of the encoding of each character, that is the string f(a1)f(a2)... f(an). Huffman codes are very useful, as the compressed message can be easily and uniquely decompressed, if the function f is given. Code is usually chosen in order to minimize the total length of the compressed message, i.e. the length of the string f(a1)f(a2)... f(an).\u000aBecause of security issues Alice doesn't want to send the whole message. Instead, she picks some substrings of the message and wants to send them separately. For each of the given substrings ali... ari she wants to know the minimum possible length of the Huffman coding. Help her solve this problem.\u000aInput\u000aThe first line of the input contains the single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the length of the initial message. The second line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009100\u2009000) \u2014 characters of the message.\u000aNext line contains the single integer q (1\u2009\u2264\u2009q\u2009\u2264\u2009100\u2009000) \u2014 the number of queries.\u000aThen follow q lines with queries descriptions. The i-th of these lines contains two integers li and ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009n) \u2014 the position of the left and right ends of the i-th substring respectively. Positions are numbered from 1. Substrings may overlap in any way. The same substring may appear in the input more than once.\u000aOutput\u000aPrint q lines. Each line should contain a single integer \u2014 the minimum possible length of the Huffman encoding of the substring ali... ari.\u000aExample\u000ainput\u000a7\u000a1 2 1 3 1 2 1\u000a5\u000a1 7\u000a1 3\u000a3 5\u000a2 4\u000a4 4\u000aoutput\u000a10\u000a3\u000a3\u000a5\u000a0\u000aNote\u000aIn the first query, one of the optimal ways to encode the substring is to map 1 to "0", 2 to "10" and 3 to "11".\u000aNote that it is correct to map the letter to the empty substring (as in the fifth query from the sample).
+p3
+sS'problemStatement'
+p4
+VD. Huffman Coding on Segment\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlice wants to send an important message to Bob. Message a\u2009=\u2009(a1,\u2009...,\u2009an) is a sequence of positive integers (characters).\u000aTo compress the message Alice wants to use binary Huffman coding. We recall that binary Huffman code, or binary prefix code is a function f, that maps each letter that appears in the string to some binary string (that is, string consisting of characters '0' and '1' only) such that for each pair of different characters ai and aj string f(ai) is not a prefix of f(aj) (and vice versa). The result of the encoding of the message a1,\u2009a2,\u2009...,\u2009an is the concatenation of the encoding of each character, that is the string f(a1)f(a2)... f(an). Huffman codes are very useful, as the compressed message can be easily and uniquely decompressed, if the function f is given. Code is usually chosen in order to minimize the total length of the compressed message, i.e. the length of the string f(a1)f(a2)... f(an).\u000aBecause of security issues Alice doesn't want to send the whole message. Instead, she picks some substrings of the message and wants to send them separately. For each of the given substrings ali... ari she wants to know the minimum possible length of the Huffman coding. Help her solve this problem.\u000aInput\u000aThe first line of the input contains the single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the length of the initial message. The second line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009100\u2009000) \u2014 characters of the message.\u000aNext line contains the single integer q (1\u2009\u2264\u2009q\u2009\u2264\u2009100\u2009000) \u2014 the number of queries.\u000aThen follow q lines with queries descriptions. The i-th of these lines contains two integers li and ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009n) \u2014 the position of the left and right ends of the i-th substring respectively. Positions are numbered from 1. Substrings may overlap in any way. The same substring may appear in the input more than once.\u000aOutput\u000aPrint q lines. Each line should contain a single integer \u2014 the minimum possible length of the Huffman encoding of the substring ali... ari.\u000aExample\u000ainput\u000a7\u000a1 2 1 3 1 2 1\u000a5\u000a1 7\u000a1 3\u000a3 5\u000a2 4\u000a4 4\u000aoutput\u000a10\u000a3\u000a3\u000a5\u000a0\u000aNote\u000aIn the first query, one of the optimal ways to encode the substring is to map 1 to "0", 2 to "10" and 3 to "11".\u000aNote that it is correct to map the letter to the empty substring (as in the fifth query from the sample).
+p5
+sS'name'
+p6
+VD. Huffman Coding on Segment
+p7
+sS'tags'
+p8
+Vdata structures greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/700/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint q lines. Each line should contain a single integer \u2014 the minimum possible length of the Huffman encoding of the substring ali... ari.
+p19
+asS'statement'
+p20
+(lp21
+VD. Huffman Coding on Segment
+p22
+aVtime limit per test4 seconds
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVAlice wants to send an important message to Bob. Message a\u2009=\u2009(a1,\u2009...,\u2009an) is a sequence of positive integers (characters).
+p27
+aVTo compress the message Alice wants to use binary Huffman coding. We recall that binary Huffman code, or binary prefix code is a function f, that maps each letter that appears in the string to some binary string (that is, string consisting of characters '0' and '1' only) such that for each pair of different characters ai and aj string f(ai) is not a prefix of f(aj) (and vice versa). The result of the encoding of the message a1,\u2009a2,\u2009...,\u2009an is the concatenation of the encoding of each character, that is the string f(a1)f(a2)... f(an). Huffman codes are very useful, as the compressed message can be easily and uniquely decompressed, if the function f is given. Code is usually chosen in order to minimize the total length of the compressed message, i.e. the length of the string f(a1)f(a2)... f(an).
+p28
+aVBecause of security issues Alice doesn't want to send the whole message. Instead, she picks some substrings of the message and wants to send them separately. For each of the given substrings ali... ari she wants to know the minimum possible length of the Huffman coding. Help her solve this problem.
+p29
+asS'problemId'
+p30
+V700/D
+p31
+sS'input'
+p32
+(lp33
+VInput
+p34
+aVThe first line of the input contains the single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the length of the initial message. The second line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009100\u2009000) \u2014 characters of the message.
+p35
+aVNext line contains the single integer q (1\u2009\u2264\u2009q\u2009\u2264\u2009100\u2009000) \u2014 the number of queries.
+p36
+aVThen follow q lines with queries descriptions. The i-th of these lines contains two integers li and ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009n) \u2014 the position of the left and right ends of the i-th substring respectively. Positions are numbered from 1. Substrings may overlap in any way. The same substring may appear in the input more than once.
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'constraints'
+p40
+g33
+sb.

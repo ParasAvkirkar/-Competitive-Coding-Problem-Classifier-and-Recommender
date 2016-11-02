@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Black Widow\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aNatalia Romanova is trying to test something on the new gun S.H.I.E.L.D gave her. In order to determine the result of the test, she needs to find the number of answers to a certain equation. The equation is of form:\u000aWhere represents logical OR and represents logical exclusive OR (XOR), and vi,\u2009j are some boolean variables or their negations. Natalia calls the left side of the equation a XNF formula. Each statement in brackets is called a clause, and vi,\u2009j are called literals.\u000aIn the equation Natalia has, the left side is actually a 2-XNF-2 containing variables x1,\u2009x2,\u2009...,\u2009xm and their negations. An XNF formula is 2-XNF-2 if:\u000aFor each 1\u2009\u2264\u2009i\u2009\u2264\u2009n, ki\u2009\u2264\u20092, i.e. the size of each clause doesn't exceed two.\u000aEach variable occurs in the formula at most two times (with negation and without negation in total). Please note that it's possible that a variable occurs twice but its negation doesn't occur in any clause (or vice versa).\u000aNatalia is given a formula of m variables, consisting of n clauses. Please, make sure to check the samples in order to properly understand how the formula looks like.\u000aNatalia is more into fight than theory, so she asked you to tell her the number of answers to this equation. More precisely, you need to find the number of ways to set x1,\u2009...,\u2009xm with true and false (out of total of 2m ways) so that the equation is satisfied. Since this number can be extremely large, you need to print the answer modulo 109\u2009+\u20097.\u000aPlease, note that some variable may appear twice in one clause, or not appear in the equation at all (but still, setting it to false or true gives different ways to set variables).\u000aInput\u000aThe first line of input contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100\u2009000) \u2014 the number of clauses and the number of variables respectively.\u000aThe next n lines contain the formula. The i-th of them starts with an integer ki \u2014 the number of literals in the i-th clause. It is followed by ki non-zero integers ai,\u20091,\u2009...,\u2009ai,\u2009ki. If ai,\u2009j\u2009>\u20090 then vi,\u2009j is xai,\u2009j otherwise it's negation of x\u2009-\u2009ai,\u2009j (1\u2009\u2264\u2009ki\u2009\u2264\u20092, \u2009-\u2009m\u2009\u2264\u2009ai,\u2009j\u2009\u2264\u2009m, ai,\u2009j\u2009\u2260\u20090).\u000aOutput\u000aPrint the answer modulo 1\u2009000\u2009000\u2009007 (109\u2009+\u20097) in one line.\u000aExamples\u000ainput\u000a6 7\u000a2 4 -2\u000a2 6 3\u000a2 -7 1\u000a2 -5 1\u000a2 3 6\u000a2 -2 -5\u000aoutput\u000a48\u000ainput\u000a8 10\u000a1 -5\u000a2 4 -6\u000a2 -2 -6\u000a2 -7 9\u000a2 10 -1\u000a2 3 -1\u000a2 -8 9\u000a2 5 8\u000aoutput\u000a544\u000ainput\u000a2 3\u000a2 1 1\u000a2 -3 3\u000aoutput\u000a4\u000aNote\u000aThe equation in the first sample is:\u000aThe equation in the second sample is:\u000aThe equation in the third sample is:
+p3
+sS'problemStatement'
+p4
+VC. Black Widow\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aNatalia Romanova is trying to test something on the new gun S.H.I.E.L.D gave her. In order to determine the result of the test, she needs to find the number of answers to a certain equation. The equation is of form:\u000aWhere represents logical OR and represents logical exclusive OR (XOR), and vi,\u2009j are some boolean variables or their negations. Natalia calls the left side of the equation a XNF formula. Each statement in brackets is called a clause, and vi,\u2009j are called literals.\u000aIn the equation Natalia has, the left side is actually a 2-XNF-2 containing variables x1,\u2009x2,\u2009...,\u2009xm and their negations. An XNF formula is 2-XNF-2 if:\u000aFor each 1\u2009\u2264\u2009i\u2009\u2264\u2009n, ki\u2009\u2264\u20092, i.e. the size of each clause doesn't exceed two.\u000aEach variable occurs in the formula at most two times (with negation and without negation in total). Please note that it's possible that a variable occurs twice but its negation doesn't occur in any clause (or vice versa).\u000aNatalia is given a formula of m variables, consisting of n clauses. Please, make sure to check the samples in order to properly understand how the formula looks like.\u000aNatalia is more into fight than theory, so she asked you to tell her the number of answers to this equation. More precisely, you need to find the number of ways to set x1,\u2009...,\u2009xm with true and false (out of total of 2m ways) so that the equation is satisfied. Since this number can be extremely large, you need to print the answer modulo 109\u2009+\u20097.\u000aPlease, note that some variable may appear twice in one clause, or not appear in the equation at all (but still, setting it to false or true gives different ways to set variables).\u000aInput\u000aThe first line of input contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100\u2009000) \u2014 the number of clauses and the number of variables respectively.\u000aThe next n lines contain the formula. The i-th of them starts with an integer ki \u2014 the number of literals in the i-th clause. It is followed by ki non-zero integers ai,\u20091,\u2009...,\u2009ai,\u2009ki. If ai,\u2009j\u2009>\u20090 then vi,\u2009j is xai,\u2009j otherwise it's negation of x\u2009-\u2009ai,\u2009j (1\u2009\u2264\u2009ki\u2009\u2264\u20092, \u2009-\u2009m\u2009\u2264\u2009ai,\u2009j\u2009\u2264\u2009m, ai,\u2009j\u2009\u2260\u20090).\u000aOutput\u000aPrint the answer modulo 1\u2009000\u2009000\u2009007 (109\u2009+\u20097) in one line.\u000aExamples\u000ainput\u000a6 7\u000a2 4 -2\u000a2 6 3\u000a2 -7 1\u000a2 -5 1\u000a2 3 6\u000a2 -2 -5\u000aoutput\u000a48\u000ainput\u000a8 10\u000a1 -5\u000a2 4 -6\u000a2 -2 -6\u000a2 -7 9\u000a2 10 -1\u000a2 3 -1\u000a2 -8 9\u000a2 5 8\u000aoutput\u000a544\u000ainput\u000a2 3\u000a2 1 1\u000a2 -3 3\u000aoutput\u000a4\u000aNote\u000aThe equation in the first sample is:\u000aThe equation in the second sample is:\u000aThe equation in the third sample is:
+p5
+sS'name'
+p6
+VC. Black Widow
+p7
+sS'tags'
+p8
+Vdp implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/704/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V704/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

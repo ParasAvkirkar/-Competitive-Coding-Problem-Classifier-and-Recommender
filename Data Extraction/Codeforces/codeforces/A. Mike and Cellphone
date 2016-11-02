@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Mike and Cellphone\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aWhile swimming at the beach, Mike has accidentally dropped his cellphone into the water. There was no worry as he bought a cheap replacement phone with an old-fashioned keyboard. The keyboard has only ten digital equal-sized keys, located in the following way:\u000aTogether with his old phone, he lost all his contacts and now he can only remember the way his fingers moved when he put some number in. One can formally consider finger movements as a sequence of vectors connecting centers of keys pressed consecutively to put in a number. For example, the finger movements for number "586" are the same as finger movements for number "253":\u000aMike has already put in a number by his "finger memory" and started calling it, so he is now worrying, can he be sure that he is calling the correct number? In other words, is there any other number, that has the same finger movements?\u000aInput\u000aThe first line of the input contains the only integer n (1\u2009\u2264\u2009n\u2009\u2264\u20099) \u2014 the number of digits in the phone number that Mike put in.\u000aThe second line contains the string consisting of n digits (characters from '0' to '9') representing the number that Mike put in.\u000aOutput\u000aIf there is no other phone number with the same finger movements and Mike can be sure he is calling the correct number, print "YES" (without quotes) in the only line.\u000aOtherwise print "NO" (without quotes) in the first line.\u000aExamples\u000ainput\u000a3\u000a586\u000aoutput\u000aNO\u000ainput\u000a2\u000a09\u000aoutput\u000aNO\u000ainput\u000a9\u000a123456789\u000aoutput\u000aYES\u000ainput\u000a3\u000a911\u000aoutput\u000aYES\u000aNote\u000aYou can find the picture clarifying the first sample case in the statement above.
+p3
+sS'problemStatement'
+p4
+VA. Mike and Cellphone\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aWhile swimming at the beach, Mike has accidentally dropped his cellphone into the water. There was no worry as he bought a cheap replacement phone with an old-fashioned keyboard. The keyboard has only ten digital equal-sized keys, located in the following way:\u000aTogether with his old phone, he lost all his contacts and now he can only remember the way his fingers moved when he put some number in. One can formally consider finger movements as a sequence of vectors connecting centers of keys pressed consecutively to put in a number. For example, the finger movements for number "586" are the same as finger movements for number "253":\u000aMike has already put in a number by his "finger memory" and started calling it, so he is now worrying, can he be sure that he is calling the correct number? In other words, is there any other number, that has the same finger movements?\u000aInput\u000aThe first line of the input contains the only integer n (1\u2009\u2264\u2009n\u2009\u2264\u20099) \u2014 the number of digits in the phone number that Mike put in.\u000aThe second line contains the string consisting of n digits (characters from '0' to '9') representing the number that Mike put in.\u000aOutput\u000aIf there is no other phone number with the same finger movements and Mike can be sure he is calling the correct number, print "YES" (without quotes) in the only line.\u000aOtherwise print "NO" (without quotes) in the first line.\u000aExamples\u000ainput\u000a3\u000a586\u000aoutput\u000aNO\u000ainput\u000a2\u000a09\u000aoutput\u000aNO\u000ainput\u000a9\u000a123456789\u000aoutput\u000aYES\u000ainput\u000a3\u000a911\u000aoutput\u000aYES\u000aNote\u000aYou can find the picture clarifying the first sample case in the statement above.
+p5
+sS'name'
+p6
+VA. Mike and Cellphone
+p7
+sS'tags'
+p8
+Vbrute force constructive algorithms implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/689/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V689/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

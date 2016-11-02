@@ -1,0 +1,96 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VH. Pokermon League challenge\u000atime limit per test5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aWelcome to the world of Pokermon, yellow little mouse-like creatures, who absolutely love playing poker!\u000aYeah, right\u2026\u000aIn the ensuing Pokermon League, there are n registered Pokermon trainers, and t existing trainer teams each of which belongs to one of two conferences. Since there is a lot of jealousy between trainers, there are e pairs of trainers who hate each other. Their hate is mutual, there are no identical pairs among these, and no trainer hates himself (the world of Pokermon is a joyful place!). Each trainer has a wish-list of length li of teams he\u2019d like to join.\u000aYour task is to divide players into teams and the teams into two conferences, so that:\u000aeach trainer belongs to exactly one team;\u000ano team is in both conferences;\u000atotal hate between conferences is at least e\u2009/\u20092;\u000aevery trainer is in a team from his wish-list.\u000aTotal hate between conferences is calculated as the number of pairs of trainers from teams from different conferences who hate each other.\u000aInput\u000aThe first line of the input contains two integer n (4\u2009\u2264\u2009n\u2009\u2264\u200950\u2009000) and e (2\u2009\u2264\u2009e\u2009\u2264\u2009100\u2009000) \u2014 the total number of Pokermon trainers and the number of pairs of trainers who hate each other.\u000aPokermon trainers are numbered from 1 to n. Next e lines contain two integers a and b (1\u2009\u2264\u2009a,\u2009b\u2009\u2264\u2009n) indicating that Pokermon trainers a and b hate each other. Next 2n lines are in a following format. Starting with Pokermon trainer 1, for each trainer in consecutive order: first number li (16\u2009\u2264\u2009li\u2009\u2264\u200920) \u2014 a size of Pokermon trainers wish list, then li positive integers ti,\u2009j (1\u2009\u2264\u2009ti,\u2009j\u2009\u2264\u2009T), providing the teams the i-th trainer would like to be on.\u000aEach trainers wish list will contain each team no more than once. Teams on the wish lists are numbered in such a way that the set of all teams that appear on at least 1 wish list is set of consecutive positive integers {1,\u20092,\u20093,\u2009\u2026,\u2009T}. Here T might be up to 1\u2009000\u2009000.\u000aOutput\u000aPrint two lines. The first line should contain n numbers, specifying for each trainer the team he is in.\u000aThe second line should contain T numbers, specifying the conference for each team (1 or 2).\u000aExample\u000ainput\u000a4 3\u000a1 2\u000a2 3\u000a4 1\u000a16\u000a1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 15\u000a16\u000a2 3 4 5 6 7 8 9 10 11 12 13 14 15 17 18\u000a16\u000a2 3 4 5 6 7 8 9 10 11 12 13 14 15 18 19\u000a16\u000a1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 19\u000aoutput\u000a16 15 19 14 \u000a2 2 2 1 1 1 2 1 1 2 1 1 1 2 2 1 1 1 1 \u000aNote
+p3
+sS'problemStatement'
+p4
+VH. Pokermon League challenge\u000atime limit per test5 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aWelcome to the world of Pokermon, yellow little mouse-like creatures, who absolutely love playing poker!\u000aYeah, right\u2026\u000aIn the ensuing Pokermon League, there are n registered Pokermon trainers, and t existing trainer teams each of which belongs to one of two conferences. Since there is a lot of jealousy between trainers, there are e pairs of trainers who hate each other. Their hate is mutual, there are no identical pairs among these, and no trainer hates himself (the world of Pokermon is a joyful place!). Each trainer has a wish-list of length li of teams he\u2019d like to join.\u000aYour task is to divide players into teams and the teams into two conferences, so that:\u000aeach trainer belongs to exactly one team;\u000ano team is in both conferences;\u000atotal hate between conferences is at least e\u2009/\u20092;\u000aevery trainer is in a team from his wish-list.\u000aTotal hate between conferences is calculated as the number of pairs of trainers from teams from different conferences who hate each other.\u000aInput\u000aThe first line of the input contains two integer n (4\u2009\u2264\u2009n\u2009\u2264\u200950\u2009000) and e (2\u2009\u2264\u2009e\u2009\u2264\u2009100\u2009000) \u2014 the total number of Pokermon trainers and the number of pairs of trainers who hate each other.\u000aPokermon trainers are numbered from 1 to n. Next e lines contain two integers a and b (1\u2009\u2264\u2009a,\u2009b\u2009\u2264\u2009n) indicating that Pokermon trainers a and b hate each other. Next 2n lines are in a following format. Starting with Pokermon trainer 1, for each trainer in consecutive order: first number li (16\u2009\u2264\u2009li\u2009\u2264\u200920) \u2014 a size of Pokermon trainers wish list, then li positive integers ti,\u2009j (1\u2009\u2264\u2009ti,\u2009j\u2009\u2264\u2009T), providing the teams the i-th trainer would like to be on.\u000aEach trainers wish list will contain each team no more than once. Teams on the wish lists are numbered in such a way that the set of all teams that appear on at least 1 wish list is set of consecutive positive integers {1,\u20092,\u20093,\u2009\u2026,\u2009T}. Here T might be up to 1\u2009000\u2009000.\u000aOutput\u000aPrint two lines. The first line should contain n numbers, specifying for each trainer the team he is in.\u000aThe second line should contain T numbers, specifying the conference for each team (1 or 2).\u000aExample\u000ainput\u000a4 3\u000a1 2\u000a2 3\u000a4 1\u000a16\u000a1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 15\u000a16\u000a2 3 4 5 6 7 8 9 10 11 12 13 14 15 17 18\u000a16\u000a2 3 4 5 6 7 8 9 10 11 12 13 14 15 18 19\u000a16\u000a1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 19\u000aoutput\u000a16 15 19 14 \u000a2 2 2 1 1 1 2 1 1 2 1 1 1 2 2 1 1 1 1 \u000aNote
+p5
+sS'name'
+p6
+VH. Pokermon League challenge
+p7
+sS'tags'
+p8
+Vprobabilities 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/717/H
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V5 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint two lines. The first line should contain n numbers, specifying for each trainer the team he is in.
+p19
+aVThe second line should contain T numbers, specifying the conference for each team (1 or 2).
+p20
+asS'statement'
+p21
+(lp22
+VH. Pokermon League challenge
+p23
+aVtime limit per test5 seconds
+p24
+aVmemory limit per test256 megabytes
+p25
+aVinputstandard input
+p26
+aVoutputstandard output
+p27
+aVWelcome to the world of Pokermon, yellow little mouse-like creatures, who absolutely love playing poker!
+p28
+aVYeah, right\u2026
+p29
+aVIn the ensuing Pokermon League, there are n registered Pokermon trainers, and t existing trainer teams each of which belongs to one of two conferences. Since there is a lot of jealousy between trainers, there are e pairs of trainers who hate each other. Their hate is mutual, there are no identical pairs among these, and no trainer hates himself (the world of Pokermon is a joyful place!). Each trainer has a wish-list of length li of teams he\u2019d like to join.
+p30
+aVYour task is to divide players into teams and the teams into two conferences, so that:
+p31
+aVeach trainer belongs to exactly one team;
+p32
+aVno team is in both conferences;
+p33
+aVtotal hate between conferences is at least e\u2009/\u20092;
+p34
+aVevery trainer is in a team from his wish-list.
+p35
+aVTotal hate between conferences is calculated as the number of pairs of trainers from teams from different conferences who hate each other.
+p36
+asS'problemId'
+p37
+V717/H
+p38
+sS'input'
+p39
+(lp40
+VInput
+p41
+aVThe first line of the input contains two integer n (4\u2009\u2264\u2009n\u2009\u2264\u200950\u2009000) and e (2\u2009\u2264\u2009e\u2009\u2264\u2009100\u2009000) \u2014 the total number of Pokermon trainers and the number of pairs of trainers who hate each other.
+p42
+aVPokermon trainers are numbered from 1 to n. Next e lines contain two integers a and b (1\u2009\u2264\u2009a,\u2009b\u2009\u2264\u2009n) indicating that Pokermon trainers a and b hate each other. Next 2n lines are in a following format. Starting with Pokermon trainer 1, for each trainer in consecutive order: first number li (16\u2009\u2264\u2009li\u2009\u2264\u200920) \u2014 a size of Pokermon trainers wish list, then li positive integers ti,\u2009j (1\u2009\u2264\u2009ti,\u2009j\u2009\u2264\u2009T), providing the teams the i-th trainer would like to be on.
+p43
+aVEach trainers wish list will contain each team no more than once. Teams on the wish lists are numbered in such a way that the set of all teams that appear on at least 1 wish list is set of consecutive positive integers {1,\u20092,\u20093,\u2009\u2026,\u2009T}. Here T might be up to 1\u2009000\u2009000.
+p44
+asS'id'
+p45
+c__builtin__
+id
+p46
+sS'constraints'
+p47
+g40
+sb.

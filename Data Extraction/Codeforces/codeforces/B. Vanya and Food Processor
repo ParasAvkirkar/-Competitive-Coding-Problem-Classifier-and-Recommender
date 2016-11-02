@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Vanya and Food Processor\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVanya smashes potato in a vertical food processor. At each moment of time the height of the potato in the processor doesn't exceed h and the processor smashes k centimeters of potato each second. If there are less than k centimeters remaining, than during this second processor smashes all the remaining potato.\u000aVanya has n pieces of potato, the height of the i-th piece is equal to ai. He puts them in the food processor one by one starting from the piece number 1 and finishing with piece number n. Formally, each second the following happens:\u000aIf there is at least one piece of potato remaining, Vanya puts them in the processor one by one, until there is not enough space for the next piece.\u000aProcessor smashes k centimeters of potato (or just everything that is inside).\u000aProvided the information about the parameter of the food processor and the size of each potato in a row, compute how long will it take for all the potato to become smashed.\u000aInput\u000aThe first line of the input contains integers n, h and k (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000,\u20091\u2009\u2264\u2009k\u2009\u2264\u2009h\u2009\u2264\u2009109) \u2014 the number of pieces of potato, the height of the food processor and the amount of potato being smashed each second, respectively.\u000aThe second line contains n integers ai (1\u2009\u2264\u2009ai\u2009\u2264\u2009h) \u2014 the heights of the pieces.\u000aOutput\u000aPrint a single integer \u2014 the number of seconds required to smash all the potatoes following the process described in the problem statement.\u000aExamples\u000ainput\u000a5 6 3\u000a5 4 3 2 1\u000aoutput\u000a5\u000ainput\u000a5 6 3\u000a5 5 5 5 5\u000aoutput\u000a10\u000ainput\u000a5 6 3\u000a1 2 1 1 1\u000aoutput\u000a2\u000aNote\u000aConsider the first sample.\u000aFirst Vanya puts the piece of potato of height 5 into processor. At the end of the second there is only amount of height 2 remaining inside.\u000aNow Vanya puts the piece of potato of height 4. At the end of the second there is amount of height 3 remaining.\u000aVanya puts the piece of height 3 inside and again there are only 3 centimeters remaining at the end of this second.\u000aVanya finally puts the pieces of height 2 and 1 inside. At the end of the second the height of potato in the processor is equal to 3.\u000aDuring this second processor finally smashes all the remaining potato and the process finishes.\u000aIn the second sample, Vanya puts the piece of height 5 inside and waits for 2 seconds while it is completely smashed. Then he repeats the same process for 4 other pieces. The total time is equal to 2·5\u2009=\u200910 seconds.\u000aIn the third sample, Vanya simply puts all the potato inside the processor and waits 2 seconds.
+p3
+sS'problemStatement'
+p4
+VB. Vanya and Food Processor\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVanya smashes potato in a vertical food processor. At each moment of time the height of the potato in the processor doesn't exceed h and the processor smashes k centimeters of potato each second. If there are less than k centimeters remaining, than during this second processor smashes all the remaining potato.\u000aVanya has n pieces of potato, the height of the i-th piece is equal to ai. He puts them in the food processor one by one starting from the piece number 1 and finishing with piece number n. Formally, each second the following happens:\u000aIf there is at least one piece of potato remaining, Vanya puts them in the processor one by one, until there is not enough space for the next piece.\u000aProcessor smashes k centimeters of potato (or just everything that is inside).\u000aProvided the information about the parameter of the food processor and the size of each potato in a row, compute how long will it take for all the potato to become smashed.\u000aInput\u000aThe first line of the input contains integers n, h and k (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000,\u20091\u2009\u2264\u2009k\u2009\u2264\u2009h\u2009\u2264\u2009109) \u2014 the number of pieces of potato, the height of the food processor and the amount of potato being smashed each second, respectively.\u000aThe second line contains n integers ai (1\u2009\u2264\u2009ai\u2009\u2264\u2009h) \u2014 the heights of the pieces.\u000aOutput\u000aPrint a single integer \u2014 the number of seconds required to smash all the potatoes following the process described in the problem statement.\u000aExamples\u000ainput\u000a5 6 3\u000a5 4 3 2 1\u000aoutput\u000a5\u000ainput\u000a5 6 3\u000a5 5 5 5 5\u000aoutput\u000a10\u000ainput\u000a5 6 3\u000a1 2 1 1 1\u000aoutput\u000a2\u000aNote\u000aConsider the first sample.\u000aFirst Vanya puts the piece of potato of height 5 into processor. At the end of the second there is only amount of height 2 remaining inside.\u000aNow Vanya puts the piece of potato of height 4. At the end of the second there is amount of height 3 remaining.\u000aVanya puts the piece of height 3 inside and again there are only 3 centimeters remaining at the end of this second.\u000aVanya finally puts the pieces of height 2 and 1 inside. At the end of the second the height of potato in the processor is equal to 3.\u000aDuring this second processor finally smashes all the remaining potato and the process finishes.\u000aIn the second sample, Vanya puts the piece of height 5 inside and waits for 2 seconds while it is completely smashed. Then he repeats the same process for 4 other pieces. The total time is equal to 2·5\u2009=\u200910 seconds.\u000aIn the third sample, Vanya simply puts all the potato inside the processor and waits 2 seconds.
+p5
+sS'name'
+p6
+VB. Vanya and Food Processor
+p7
+sS'tags'
+p8
+Vimplementation math 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/677/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V677/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.
