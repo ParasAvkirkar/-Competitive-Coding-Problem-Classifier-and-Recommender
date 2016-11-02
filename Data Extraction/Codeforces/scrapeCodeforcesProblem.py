@@ -4,12 +4,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from CodeforcesProblemPage import getCodeforcesProblem
-
-import html
+from HTMLParser import HTMLParser
 
 count=0
+h = HTMLParser()
 driver = webdriver.Chrome()
-codeforcesProblemsLink="http://codeforces.com/problemset/page/31"
+codeforcesProblemsLink="http://codeforces.com/problemset/"
 while True:
 	driver.get(codeforcesProblemsLink)
 
@@ -26,7 +26,7 @@ while True:
 			
 			print("Problem link extracted")
 
-			getCodeforcesProblem(problemLink,problemId)
+			prob = getCodeforcesProblem(problemLink,problemId)
 			count = count + 1
 
 			print("Suceesfully extracted problem " + problemId + "  Count - " + str(count))
@@ -36,7 +36,7 @@ while True:
 				#print(e)
 	nextPageLink = driver.find_elements_by_class_name("arrow")
 	for link in nextPageLink:
-		if link.text == html.unescape('&rarr;'):
+		if link.text == h.unescape('&rarr;'):
 			nextLink = link.get_attribute("href")
 	if nextLink == codeforcesProblemsLink:
 		break
