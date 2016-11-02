@@ -1,0 +1,86 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Lakes in Berland\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe map of Berland is a rectangle of the size n\u2009×\u2009m, which consists of cells of size 1\u2009×\u20091. Each cell is either land or water. The map is surrounded by the ocean.\u000aLakes are the maximal regions of water cells, connected by sides, which are not connected with the ocean. Formally, lake is a set of water cells, such that it's possible to get from any cell of the set to any other without leaving the set and moving only to cells adjacent by the side, none of them is located on the border of the rectangle, and it's impossible to add one more water cell to the set such that it will be connected with any other cell.\u000aYou task is to fill up with the earth the minimum number of water cells so that there will be exactly k lakes in Berland. Note that the initial number of lakes on the map is not less than k.\u000aInput\u000aThe first line of the input contains three integers n, m and k (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u200950, 0\u2009\u2264\u2009k\u2009\u2264\u200950) \u2014 the sizes of the map and the number of lakes which should be left on the map.\u000aThe next n lines contain m characters each \u2014 the description of the map. Each of the characters is either '.' (it means that the corresponding cell is water) or '*' (it means that the corresponding cell is land).\u000aIt is guaranteed that the map contain at least k lakes.\u000aOutput\u000aIn the first line print the minimum number of cells which should be transformed from water to land.\u000aIn the next n lines print m symbols \u2014 the map after the changes. The format must strictly follow the format of the map in the input data (there is no need to print the size of the map). If there are several answers, print any of them.\u000aIt is guaranteed that the answer exists on the given data.\u000aExamples\u000ainput\u000a5 4 1\u000a****\u000a*..*\u000a****\u000a**.*\u000a..**\u000aoutput\u000a1\u000a****\u000a*..*\u000a****\u000a****\u000a..**\u000ainput\u000a3 3 0\u000a***\u000a*.*\u000a***\u000aoutput\u000a1\u000a***\u000a***\u000a***\u000aNote\u000aIn the first example there are only two lakes \u2014 the first consists of the cells (2,\u20092) and (2,\u20093), the second consists of the cell (4,\u20093). It is profitable to cover the second lake because it is smaller. Pay attention that the area of water in the lower left corner is not a lake because this area share a border with the ocean.
+p3
+sS'problemStatement'
+p4
+VD. Lakes in Berland\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe map of Berland is a rectangle of the size n\u2009×\u2009m, which consists of cells of size 1\u2009×\u20091. Each cell is either land or water. The map is surrounded by the ocean.\u000aLakes are the maximal regions of water cells, connected by sides, which are not connected with the ocean. Formally, lake is a set of water cells, such that it's possible to get from any cell of the set to any other without leaving the set and moving only to cells adjacent by the side, none of them is located on the border of the rectangle, and it's impossible to add one more water cell to the set such that it will be connected with any other cell.\u000aYou task is to fill up with the earth the minimum number of water cells so that there will be exactly k lakes in Berland. Note that the initial number of lakes on the map is not less than k.\u000aInput\u000aThe first line of the input contains three integers n, m and k (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u200950, 0\u2009\u2264\u2009k\u2009\u2264\u200950) \u2014 the sizes of the map and the number of lakes which should be left on the map.\u000aThe next n lines contain m characters each \u2014 the description of the map. Each of the characters is either '.' (it means that the corresponding cell is water) or '*' (it means that the corresponding cell is land).\u000aIt is guaranteed that the map contain at least k lakes.\u000aOutput\u000aIn the first line print the minimum number of cells which should be transformed from water to land.\u000aIn the next n lines print m symbols \u2014 the map after the changes. The format must strictly follow the format of the map in the input data (there is no need to print the size of the map). If there are several answers, print any of them.\u000aIt is guaranteed that the answer exists on the given data.\u000aExamples\u000ainput\u000a5 4 1\u000a****\u000a*..*\u000a****\u000a**.*\u000a..**\u000aoutput\u000a1\u000a****\u000a*..*\u000a****\u000a****\u000a..**\u000ainput\u000a3 3 0\u000a***\u000a*.*\u000a***\u000aoutput\u000a1\u000a***\u000a***\u000a***\u000aNote\u000aIn the first example there are only two lakes \u2014 the first consists of the cells (2,\u20092) and (2,\u20093), the second consists of the cell (4,\u20093). It is profitable to cover the second lake because it is smaller. Pay attention that the area of water in the lower left corner is not a lake because this area share a border with the ocean.
+p5
+sS'name'
+p6
+VD. Lakes in Berland
+p7
+sS'tags'
+p8
+Vdfs and similar dsu greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/723/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVIn the first line print the minimum number of cells which should be transformed from water to land.
+p19
+aVIn the next n lines print m symbols \u2014 the map after the changes. The format must strictly follow the format of the map in the input data (there is no need to print the size of the map). If there are several answers, print any of them.
+p20
+aVIt is guaranteed that the answer exists on the given data.
+p21
+asS'statement'
+p22
+(lp23
+VD. Lakes in Berland
+p24
+aVtime limit per test2 seconds
+p25
+aVmemory limit per test256 megabytes
+p26
+aVinputstandard input
+p27
+aVoutputstandard output
+p28
+aVThe map of Berland is a rectangle of the size n\u2009×\u2009m, which consists of cells of size 1\u2009×\u20091. Each cell is either land or water. The map is surrounded by the ocean.
+p29
+aVLakes are the maximal regions of water cells, connected by sides, which are not connected with the ocean. Formally, lake is a set of water cells, such that it's possible to get from any cell of the set to any other without leaving the set and moving only to cells adjacent by the side, none of them is located on the border of the rectangle, and it's impossible to add one more water cell to the set such that it will be connected with any other cell.
+p30
+aVYou task is to fill up with the earth the minimum number of water cells so that there will be exactly k lakes in Berland. Note that the initial number of lakes on the map is not less than k.
+p31
+asS'problemId'
+p32
+V723/D
+p33
+sS'input'
+p34
+(lp35
+VInput
+p36
+aVThe first line of the input contains three integers n, m and k (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u200950, 0\u2009\u2264\u2009k\u2009\u2264\u200950) \u2014 the sizes of the map and the number of lakes which should be left on the map.
+p37
+aVThe next n lines contain m characters each \u2014 the description of the map. Each of the characters is either '.' (it means that the corresponding cell is water) or '*' (it means that the corresponding cell is land).
+p38
+aVIt is guaranteed that the map contain at least k lakes.
+p39
+asS'id'
+p40
+c__builtin__
+id
+p41
+sS'constraints'
+p42
+g35
+sb.

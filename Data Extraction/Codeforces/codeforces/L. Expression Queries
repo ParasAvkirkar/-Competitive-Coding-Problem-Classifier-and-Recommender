@@ -1,0 +1,90 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VL. Expression Queries\u000atime limit per test4 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aA simplified arithmetic expression (SAE) is an arithmetic expression defined by the following grammar:\u000a<SAE> ::= <Number> | <SAE>+<SAE> | <SAE>*<SAE> | (<SAE>)\u000a<Number> ::= <Digit> | <Digit><Number>\u000a<Digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9\u000aIn other words it's a correct arithmetic expression that is allowed to contain brackets, numbers (possibly with leading zeros), multiplications and additions. For example expressions "(0+01)", "0" and "1*(0)" are simplified arithmetic expressions, but expressions "2-1", "+1" and "1+2)" are not.\u000aGiven a string s1s2...s|s| that represents a SAE; si denotes the i-th character of the string which can be either a digit ('0'-'9'), a plus sign ('+'), a multiplication sign ('*'), an opening round bracket '(' or a closing round bracket ')'.\u000aA part slsl\u2009+\u20091...sr of this string is called a sub-expression if and only if it is a SAE.\u000aYou task is to answer m queries, each of which is a pair of integers li, ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009|s|). For each query determine whether the corresponding part of the given string is a sub-expression and in case it's a sub-expression calculate its value modulo 1000000007 (109\u2009+\u20097). The values should be calculated using standard operator priorities.\u000aInput\u000aThe first line of the input contains non-empty string s (1\u2009\u2264\u2009|s|\u2009\u2264\u20094·105) which represents a correct SAE. Each character of the string can be one of the following characters: '*', '+', '(', ')' or a digit ('0'-'9'). The expression might contain extra-huge numbers.\u000aThe second line contains an integer m (1\u2009\u2264\u2009m\u2009\u2264\u20094·105) which is the number of queries. Each of the next m lines contains two space-separated integers li, ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009|s|) \u2014 the i-th query.\u000aOutput\u000aThe i-th number of output should be the answer for the i-th query. If the i-th query corresponds to a valid sub-expression output the value of the sub-expression modulo 1000000007 (109\u2009+\u20097). Otherwise output -1 as an answer for the query. Print numbers on separate lines.\u000aExamples\u000ainput\u000a((1+2)*3+101*2)\u000a6\u000a8 14\u000a1 6\u000a2 10\u000a11 14\u000a5 5\u000a4 5\u000aoutput\u000a205\u000a-1\u000a10\u000a2\u000a2\u000a-1\u000ainput\u000a(01)\u000a1\u000a1 4\u000aoutput\u000a1
+p3
+sS'problemStatement'
+p4
+VL. Expression Queries\u000atime limit per test4 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aA simplified arithmetic expression (SAE) is an arithmetic expression defined by the following grammar:\u000a<SAE> ::= <Number> | <SAE>+<SAE> | <SAE>*<SAE> | (<SAE>)\u000a<Number> ::= <Digit> | <Digit><Number>\u000a<Digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9\u000aIn other words it's a correct arithmetic expression that is allowed to contain brackets, numbers (possibly with leading zeros), multiplications and additions. For example expressions "(0+01)", "0" and "1*(0)" are simplified arithmetic expressions, but expressions "2-1", "+1" and "1+2)" are not.\u000aGiven a string s1s2...s|s| that represents a SAE; si denotes the i-th character of the string which can be either a digit ('0'-'9'), a plus sign ('+'), a multiplication sign ('*'), an opening round bracket '(' or a closing round bracket ')'.\u000aA part slsl\u2009+\u20091...sr of this string is called a sub-expression if and only if it is a SAE.\u000aYou task is to answer m queries, each of which is a pair of integers li, ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009|s|). For each query determine whether the corresponding part of the given string is a sub-expression and in case it's a sub-expression calculate its value modulo 1000000007 (109\u2009+\u20097). The values should be calculated using standard operator priorities.\u000aInput\u000aThe first line of the input contains non-empty string s (1\u2009\u2264\u2009|s|\u2009\u2264\u20094·105) which represents a correct SAE. Each character of the string can be one of the following characters: '*', '+', '(', ')' or a digit ('0'-'9'). The expression might contain extra-huge numbers.\u000aThe second line contains an integer m (1\u2009\u2264\u2009m\u2009\u2264\u20094·105) which is the number of queries. Each of the next m lines contains two space-separated integers li, ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009|s|) \u2014 the i-th query.\u000aOutput\u000aThe i-th number of output should be the answer for the i-th query. If the i-th query corresponds to a valid sub-expression output the value of the sub-expression modulo 1000000007 (109\u2009+\u20097). Otherwise output -1 as an answer for the query. Print numbers on separate lines.\u000aExamples\u000ainput\u000a((1+2)*3+101*2)\u000a6\u000a8 14\u000a1 6\u000a2 10\u000a11 14\u000a5 5\u000a4 5\u000aoutput\u000a205\u000a-1\u000a10\u000a2\u000a2\u000a-1\u000ainput\u000a(01)\u000a1\u000a1 4\u000aoutput\u000a1
+p5
+sS'name'
+p6
+VL. Expression Queries
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/L
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVThe i-th number of output should be the answer for the i-th query. If the i-th query corresponds to a valid sub-expression output the value of the sub-expression modulo 1000000007 (109\u2009+\u20097). Otherwise output -1 as an answer for the query. Print numbers on separate lines.
+p19
+asS'statement'
+p20
+(lp21
+VL. Expression Queries
+p22
+aVtime limit per test4 seconds
+p23
+aVmemory limit per test512 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVA simplified arithmetic expression (SAE) is an arithmetic expression defined by the following grammar:
+p27
+aV<SAE> ::= <Number> | <SAE>+<SAE> | <SAE>*<SAE> | (<SAE>)
+p28
+aV<Number> ::= <Digit> | <Digit><Number>
+p29
+aV<Digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+p30
+aVIn other words it's a correct arithmetic expression that is allowed to contain brackets, numbers (possibly with leading zeros), multiplications and additions. For example expressions "(0+01)", "0" and "1*(0)" are simplified arithmetic expressions, but expressions "2-1", "+1" and "1+2)" are not.
+p31
+aVGiven a string s1s2...s|s| that represents a SAE; si denotes the i-th character of the string which can be either a digit ('0'-'9'), a plus sign ('+'), a multiplication sign ('*'), an opening round bracket '(' or a closing round bracket ')'.
+p32
+aVA part slsl\u2009+\u20091...sr of this string is called a sub-expression if and only if it is a SAE.
+p33
+aVYou task is to answer m queries, each of which is a pair of integers li, ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009|s|). For each query determine whether the corresponding part of the given string is a sub-expression and in case it's a sub-expression calculate its value modulo 1000000007 (109\u2009+\u20097). The values should be calculated using standard operator priorities.
+p34
+asS'problemId'
+p35
+V730/L
+p36
+sS'input'
+p37
+(lp38
+VInput
+p39
+aVThe first line of the input contains non-empty string s (1\u2009\u2264\u2009|s|\u2009\u2264\u20094·105) which represents a correct SAE. Each character of the string can be one of the following characters: '*', '+', '(', ')' or a digit ('0'-'9'). The expression might contain extra-huge numbers.
+p40
+aVThe second line contains an integer m (1\u2009\u2264\u2009m\u2009\u2264\u20094·105) which is the number of queries. Each of the next m lines contains two space-separated integers li, ri (1\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u2009|s|) \u2014 the i-th query.
+p41
+asS'id'
+p42
+c__builtin__
+id
+p43
+sS'constraints'
+p44
+g38
+sb.

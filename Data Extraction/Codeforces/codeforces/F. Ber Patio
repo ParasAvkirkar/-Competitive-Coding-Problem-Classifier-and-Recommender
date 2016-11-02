@@ -1,0 +1,98 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Ber Patio\u000atime limit per test3 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPolycarp is a regular customer at the restaurant "Ber Patio". He likes having lunches there.\u000a"Ber Patio" has special discount program for regular customers. A customer can collect bonuses and partially cover expenses in the restaurant.\u000aLet's assume a customer currently has b bonuses and she has to pay r burles for a lunch. In this case the customer can use bonuses (1 bonus = 1 burle) to reduce the payment. She can cover at most half of the payment using bonuses. However, 1 bonus will be added to the customer's bonus balance per each 10 burles she paid.\u000aFormally:\u000aa customer can choose any number x of bonuses to use ()),\u000athe customer's bonus balance is reduced by x,\u000athe customer pays r\u2009-\u2009x burles,\u000athe customer's bonus balance is increased by \u230a(r\u2009-\u2009x)\u2009/\u200910\u230b (i.e. integer division rounded down is used).\u000aInitially, there are b bonuses on Polycarp's account. Polycarp is going to have a lunch in "Ber Patio" for the next n days. He estimated the values a1,\u2009a2,\u2009...,\u2009an, where ai is the number of burles in a receipt for the i-th day. The sum over all receipts doesn't exceed 105 burles.\u000aWrite a program to find the minimum number of burles Polycarp has to spend and an optimal strategy to use bonuses.\u000aInput\u000aThe first line contains two integer numbers n and b (1\u2009\u2264\u2009n\u2009\u2264\u20095000, 0\u2009\u2264\u2009b\u2009\u2264\u2009105) \u2014 number of days and initial number of bonuses Polycarp has.\u000aThe second line contains the integer sequence a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091000), where ai is the amount of burles in the i-th day's receipt.\u000aIt is guaranteed that the sum of all receipts does not exceed 105 burles.\u000aOutput\u000aOn the first line, print the expected minimal number of burles to pay for all n receipts.\u000aOn the second line, print the sequence of integer numbers b1,\u2009b2,\u2009...,\u2009bn, where bi is the number of bonuses to use on the i-th day. If there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a3 21\u000a12 75 52\u000aoutput\u000a110\u000a2 5 22 \u000ainput\u000a3 39\u000a58 64 33\u000aoutput\u000a107\u000a28 4 16 
+p3
+sS'problemStatement'
+p4
+VF. Ber Patio\u000atime limit per test3 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPolycarp is a regular customer at the restaurant "Ber Patio". He likes having lunches there.\u000a"Ber Patio" has special discount program for regular customers. A customer can collect bonuses and partially cover expenses in the restaurant.\u000aLet's assume a customer currently has b bonuses and she has to pay r burles for a lunch. In this case the customer can use bonuses (1 bonus = 1 burle) to reduce the payment. She can cover at most half of the payment using bonuses. However, 1 bonus will be added to the customer's bonus balance per each 10 burles she paid.\u000aFormally:\u000aa customer can choose any number x of bonuses to use ()),\u000athe customer's bonus balance is reduced by x,\u000athe customer pays r\u2009-\u2009x burles,\u000athe customer's bonus balance is increased by \u230a(r\u2009-\u2009x)\u2009/\u200910\u230b (i.e. integer division rounded down is used).\u000aInitially, there are b bonuses on Polycarp's account. Polycarp is going to have a lunch in "Ber Patio" for the next n days. He estimated the values a1,\u2009a2,\u2009...,\u2009an, where ai is the number of burles in a receipt for the i-th day. The sum over all receipts doesn't exceed 105 burles.\u000aWrite a program to find the minimum number of burles Polycarp has to spend and an optimal strategy to use bonuses.\u000aInput\u000aThe first line contains two integer numbers n and b (1\u2009\u2264\u2009n\u2009\u2264\u20095000, 0\u2009\u2264\u2009b\u2009\u2264\u2009105) \u2014 number of days and initial number of bonuses Polycarp has.\u000aThe second line contains the integer sequence a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091000), where ai is the amount of burles in the i-th day's receipt.\u000aIt is guaranteed that the sum of all receipts does not exceed 105 burles.\u000aOutput\u000aOn the first line, print the expected minimal number of burles to pay for all n receipts.\u000aOn the second line, print the sequence of integer numbers b1,\u2009b2,\u2009...,\u2009bn, where bi is the number of bonuses to use on the i-th day. If there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a3 21\u000a12 75 52\u000aoutput\u000a110\u000a2 5 22 \u000ainput\u000a3 39\u000a58 64 33\u000aoutput\u000a107\u000a28 4 16 
+p5
+sS'name'
+p6
+VF. Ber Patio
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/F
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVOn the first line, print the expected minimal number of burles to pay for all n receipts.
+p19
+aVOn the second line, print the sequence of integer numbers b1,\u2009b2,\u2009...,\u2009bn, where bi is the number of bonuses to use on the i-th day. If there are multiple solutions, print any of them.
+p20
+asS'statement'
+p21
+(lp22
+VF. Ber Patio
+p23
+aVtime limit per test3 seconds
+p24
+aVmemory limit per test512 megabytes
+p25
+aVinputstandard input
+p26
+aVoutputstandard output
+p27
+aVPolycarp is a regular customer at the restaurant "Ber Patio". He likes having lunches there.
+p28
+aV"Ber Patio" has special discount program for regular customers. A customer can collect bonuses and partially cover expenses in the restaurant.
+p29
+aVLet's assume a customer currently has b bonuses and she has to pay r burles for a lunch. In this case the customer can use bonuses (1 bonus = 1 burle) to reduce the payment. She can cover at most half of the payment using bonuses. However, 1 bonus will be added to the customer's bonus balance per each 10 burles she paid.
+p30
+aVFormally:
+p31
+aVa customer can choose any number x of bonuses to use ()),
+p32
+aVthe customer's bonus balance is reduced by x,
+p33
+aVthe customer pays r\u2009-\u2009x burles,
+p34
+aVthe customer's bonus balance is increased by \u230a(r\u2009-\u2009x)\u2009/\u200910\u230b (i.e. integer division rounded down is used).
+p35
+aVInitially, there are b bonuses on Polycarp's account. Polycarp is going to have a lunch in "Ber Patio" for the next n days. He estimated the values a1,\u2009a2,\u2009...,\u2009an, where ai is the number of burles in a receipt for the i-th day. The sum over all receipts doesn't exceed 105 burles.
+p36
+aVWrite a program to find the minimum number of burles Polycarp has to spend and an optimal strategy to use bonuses.
+p37
+asS'problemId'
+p38
+V730/F
+p39
+sS'input'
+p40
+(lp41
+VInput
+p42
+aVThe first line contains two integer numbers n and b (1\u2009\u2264\u2009n\u2009\u2264\u20095000, 0\u2009\u2264\u2009b\u2009\u2264\u2009105) \u2014 number of days and initial number of bonuses Polycarp has.
+p43
+aVThe second line contains the integer sequence a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091000), where ai is the amount of burles in the i-th day's receipt.
+p44
+aVIt is guaranteed that the sum of all receipts does not exceed 105 burles.
+p45
+asS'id'
+p46
+c__builtin__
+id
+p47
+sS'constraints'
+p48
+g41
+sb.

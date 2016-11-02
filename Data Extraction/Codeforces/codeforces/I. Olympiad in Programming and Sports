@@ -1,0 +1,90 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VI. Olympiad in Programming and Sports\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n students at Berland State University. Every student has two skills, each measured as a number: ai \u2014 the programming skill and bi \u2014 the sports skill.\u000aIt is announced that an Olympiad in programming and sports will be held soon. That's why Berland State University should choose two teams: one to take part in the programming track and one to take part in the sports track.\u000aThere should be exactly p students in the programming team and exactly s students in the sports team. A student can't be a member of both teams.\u000aThe university management considers that the strength of the university on the Olympiad is equal to the sum of two values: the programming team strength and the sports team strength. The strength of a team is the sum of skills of its members in the corresponding area, so the strength of the programming team is the sum of all ai and the strength of the sports team is the sum of all bi over corresponding team members.\u000aHelp Berland State University to compose two teams to maximize the total strength of the university on the Olympiad.\u000aInput\u000aThe first line contains three positive integer numbers n, p and s (2\u2009\u2264\u2009n\u2009\u2264\u20093000, p\u2009+\u2009s\u2009\u2264\u2009n) \u2014 the number of students, the size of the programming team and the size of the sports team.\u000aThe second line contains n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20093000), where ai is the programming skill of the i-th student.\u000aThe third line contains n positive integers b1,\u2009b2,\u2009...,\u2009bn (1\u2009\u2264\u2009bi\u2009\u2264\u20093000), where bi is the sports skill of the i-th student.\u000aOutput\u000aIn the first line, print the the maximum strength of the university on the Olympiad. In the second line, print p numbers \u2014 the members of the programming team. In the third line, print s numbers \u2014 the members of the sports team.\u000aThe students are numbered from 1 to n as they are given in the input. All numbers printed in the second and in the third lines should be distinct and can be printed in arbitrary order.\u000aIf there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a5 2 2\u000a1 3 4 5 2\u000a5 3 2 1 4\u000aoutput\u000a18\u000a3 4 \u000a1 5 \u000ainput\u000a4 2 2\u000a10 8 8 3\u000a10 7 9 4\u000aoutput\u000a31\u000a1 2 \u000a3 4 \u000ainput\u000a5 3 1\u000a5 2 5 1 7\u000a6 3 1 6 3\u000aoutput\u000a23\u000a1 3 5 \u000a4 
+p3
+sS'problemStatement'
+p4
+VI. Olympiad in Programming and Sports\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n students at Berland State University. Every student has two skills, each measured as a number: ai \u2014 the programming skill and bi \u2014 the sports skill.\u000aIt is announced that an Olympiad in programming and sports will be held soon. That's why Berland State University should choose two teams: one to take part in the programming track and one to take part in the sports track.\u000aThere should be exactly p students in the programming team and exactly s students in the sports team. A student can't be a member of both teams.\u000aThe university management considers that the strength of the university on the Olympiad is equal to the sum of two values: the programming team strength and the sports team strength. The strength of a team is the sum of skills of its members in the corresponding area, so the strength of the programming team is the sum of all ai and the strength of the sports team is the sum of all bi over corresponding team members.\u000aHelp Berland State University to compose two teams to maximize the total strength of the university on the Olympiad.\u000aInput\u000aThe first line contains three positive integer numbers n, p and s (2\u2009\u2264\u2009n\u2009\u2264\u20093000, p\u2009+\u2009s\u2009\u2264\u2009n) \u2014 the number of students, the size of the programming team and the size of the sports team.\u000aThe second line contains n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20093000), where ai is the programming skill of the i-th student.\u000aThe third line contains n positive integers b1,\u2009b2,\u2009...,\u2009bn (1\u2009\u2264\u2009bi\u2009\u2264\u20093000), where bi is the sports skill of the i-th student.\u000aOutput\u000aIn the first line, print the the maximum strength of the university on the Olympiad. In the second line, print p numbers \u2014 the members of the programming team. In the third line, print s numbers \u2014 the members of the sports team.\u000aThe students are numbered from 1 to n as they are given in the input. All numbers printed in the second and in the third lines should be distinct and can be printed in arbitrary order.\u000aIf there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a5 2 2\u000a1 3 4 5 2\u000a5 3 2 1 4\u000aoutput\u000a18\u000a3 4 \u000a1 5 \u000ainput\u000a4 2 2\u000a10 8 8 3\u000a10 7 9 4\u000aoutput\u000a31\u000a1 2 \u000a3 4 \u000ainput\u000a5 3 1\u000a5 2 5 1 7\u000a6 3 1 6 3\u000aoutput\u000a23\u000a1 3 5 \u000a4 
+p5
+sS'name'
+p6
+VI. Olympiad in Programming and Sports
+p7
+sS'tags'
+p8
+Vdp flows greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/I
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVIn the first line, print the the maximum strength of the university on the Olympiad. In the second line, print p numbers \u2014 the members of the programming team. In the third line, print s numbers \u2014 the members of the sports team.
+p19
+aVThe students are numbered from 1 to n as they are given in the input. All numbers printed in the second and in the third lines should be distinct and can be printed in arbitrary order.
+p20
+aVIf there are multiple solutions, print any of them.
+p21
+asS'statement'
+p22
+(lp23
+VI. Olympiad in Programming and Sports
+p24
+aVtime limit per test2 seconds
+p25
+aVmemory limit per test512 megabytes
+p26
+aVinputstandard input
+p27
+aVoutputstandard output
+p28
+aVThere are n students at Berland State University. Every student has two skills, each measured as a number: ai \u2014 the programming skill and bi \u2014 the sports skill.
+p29
+aVIt is announced that an Olympiad in programming and sports will be held soon. That's why Berland State University should choose two teams: one to take part in the programming track and one to take part in the sports track.
+p30
+aVThere should be exactly p students in the programming team and exactly s students in the sports team. A student can't be a member of both teams.
+p31
+aVThe university management considers that the strength of the university on the Olympiad is equal to the sum of two values: the programming team strength and the sports team strength. The strength of a team is the sum of skills of its members in the corresponding area, so the strength of the programming team is the sum of all ai and the strength of the sports team is the sum of all bi over corresponding team members.
+p32
+aVHelp Berland State University to compose two teams to maximize the total strength of the university on the Olympiad.
+p33
+asS'problemId'
+p34
+V730/I
+p35
+sS'input'
+p36
+(lp37
+VInput
+p38
+aVThe first line contains three positive integer numbers n, p and s (2\u2009\u2264\u2009n\u2009\u2264\u20093000, p\u2009+\u2009s\u2009\u2264\u2009n) \u2014 the number of students, the size of the programming team and the size of the sports team.
+p39
+aVThe second line contains n positive integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20093000), where ai is the programming skill of the i-th student.
+p40
+aVThe third line contains n positive integers b1,\u2009b2,\u2009...,\u2009bn (1\u2009\u2264\u2009bi\u2009\u2264\u20093000), where bi is the sports skill of the i-th student.
+p41
+asS'id'
+p42
+c__builtin__
+id
+p43
+sS'constraints'
+p44
+g37
+sb.

@@ -1,0 +1,96 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Drivers Dissatisfaction\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aIn one kingdom there are n cities and m two-way roads. Each road connects a pair of cities, and for each road we know the level of drivers dissatisfaction \u2014 the value wi.\u000aFor each road we know the value ci \u2014 how many lamziks we should spend to reduce the level of dissatisfaction with this road by one. Thus, to reduce the dissatisfaction with the i-th road by k, we should spend k·ci lamziks. And it is allowed for the dissatisfaction to become zero or even negative.\u000aIn accordance with the king's order, we need to choose n\u2009-\u20091 roads and make them the main roads. An important condition must hold: it should be possible to travel from any city to any other by the main roads.\u000aThe road ministry has a budget of S lamziks for the reform. The ministry is going to spend this budget for repair of some roads (to reduce the dissatisfaction with them), and then to choose the n\u2009-\u20091 main roads.\u000aHelp to spend the budget in such a way and then to choose the main roads so that the total dissatisfaction with the main roads will be as small as possible. The dissatisfaction with some roads can become negative. It is not necessary to spend whole budget S.\u000aIt is guaranteed that it is possible to travel from any city to any other using existing roads. Each road in the kingdom is a two-way road.\u000aInput\u000aThe first line contains two integers n and m (2\u2009\u2264\u2009n\u2009\u2264\u20092·105, n\u2009-\u20091\u2009\u2264\u2009m\u2009\u2264\u20092·105) \u2014 the number of cities and the number of roads in the kingdom, respectively.\u000aThe second line contains m integers w1,\u2009w2,\u2009...,\u2009wm (1\u2009\u2264\u2009wi\u2009\u2264\u2009109), where wi is the drivers dissatisfaction with the i-th road.\u000aThe third line contains m integers c1,\u2009c2,\u2009...,\u2009cm (1\u2009\u2264\u2009ci\u2009\u2264\u2009109), where ci is the cost (in lamziks) of reducing the dissatisfaction with the i-th road by one.\u000aThe next m lines contain the description of the roads. The i-th of this lines contain a pair of integers ai and bi (1\u2009\u2264\u2009ai,\u2009bi\u2009\u2264\u2009n, ai\u2009\u2260\u2009bi) which mean that the i-th road connects cities ai and bi. All roads are two-way oriented so it is possible to move by the i-th road from ai to bi, and vice versa. It is allowed that a pair of cities is connected by more than one road.\u000aThe last line contains one integer S (0\u2009\u2264\u2009S\u2009\u2264\u2009109) \u2014 the number of lamziks which we can spend for reforms.\u000aOutput\u000aIn the first line print K \u2014 the minimum possible total dissatisfaction with main roads.\u000aIn each of the next n\u2009-\u20091 lines print two integers x,\u2009vx, which mean that the road x is among main roads and the road x, after the reform, has the level of dissatisfaction vx.\u000aConsider that roads are numbered from 1 to m in the order as they are given in the input data. The edges can be printed in arbitrary order. If there are several answers, print any of them.\u000aExamples\u000ainput\u000a6 9\u000a1 3 1 1 3 1 2 2 2\u000a4 1 4 2 2 5 3 1 6\u000a1 2\u000a1 3\u000a2 3\u000a2 4\u000a2 5\u000a3 5\u000a3 6\u000a4 5\u000a5 6\u000a7\u000aoutput\u000a0\u000a1 1\u000a3 1\u000a6 1\u000a7 2\u000a8 -5\u000ainput\u000a3 3\u000a9 5 1\u000a7 7 2\u000a2 1\u000a3 1\u000a3 2\u000a2\u000aoutput\u000a5\u000a3 0\u000a2 5
+p3
+sS'problemStatement'
+p4
+VF. Drivers Dissatisfaction\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aIn one kingdom there are n cities and m two-way roads. Each road connects a pair of cities, and for each road we know the level of drivers dissatisfaction \u2014 the value wi.\u000aFor each road we know the value ci \u2014 how many lamziks we should spend to reduce the level of dissatisfaction with this road by one. Thus, to reduce the dissatisfaction with the i-th road by k, we should spend k·ci lamziks. And it is allowed for the dissatisfaction to become zero or even negative.\u000aIn accordance with the king's order, we need to choose n\u2009-\u20091 roads and make them the main roads. An important condition must hold: it should be possible to travel from any city to any other by the main roads.\u000aThe road ministry has a budget of S lamziks for the reform. The ministry is going to spend this budget for repair of some roads (to reduce the dissatisfaction with them), and then to choose the n\u2009-\u20091 main roads.\u000aHelp to spend the budget in such a way and then to choose the main roads so that the total dissatisfaction with the main roads will be as small as possible. The dissatisfaction with some roads can become negative. It is not necessary to spend whole budget S.\u000aIt is guaranteed that it is possible to travel from any city to any other using existing roads. Each road in the kingdom is a two-way road.\u000aInput\u000aThe first line contains two integers n and m (2\u2009\u2264\u2009n\u2009\u2264\u20092·105, n\u2009-\u20091\u2009\u2264\u2009m\u2009\u2264\u20092·105) \u2014 the number of cities and the number of roads in the kingdom, respectively.\u000aThe second line contains m integers w1,\u2009w2,\u2009...,\u2009wm (1\u2009\u2264\u2009wi\u2009\u2264\u2009109), where wi is the drivers dissatisfaction with the i-th road.\u000aThe third line contains m integers c1,\u2009c2,\u2009...,\u2009cm (1\u2009\u2264\u2009ci\u2009\u2264\u2009109), where ci is the cost (in lamziks) of reducing the dissatisfaction with the i-th road by one.\u000aThe next m lines contain the description of the roads. The i-th of this lines contain a pair of integers ai and bi (1\u2009\u2264\u2009ai,\u2009bi\u2009\u2264\u2009n, ai\u2009\u2260\u2009bi) which mean that the i-th road connects cities ai and bi. All roads are two-way oriented so it is possible to move by the i-th road from ai to bi, and vice versa. It is allowed that a pair of cities is connected by more than one road.\u000aThe last line contains one integer S (0\u2009\u2264\u2009S\u2009\u2264\u2009109) \u2014 the number of lamziks which we can spend for reforms.\u000aOutput\u000aIn the first line print K \u2014 the minimum possible total dissatisfaction with main roads.\u000aIn each of the next n\u2009-\u20091 lines print two integers x,\u2009vx, which mean that the road x is among main roads and the road x, after the reform, has the level of dissatisfaction vx.\u000aConsider that roads are numbered from 1 to m in the order as they are given in the input data. The edges can be printed in arbitrary order. If there are several answers, print any of them.\u000aExamples\u000ainput\u000a6 9\u000a1 3 1 1 3 1 2 2 2\u000a4 1 4 2 2 5 3 1 6\u000a1 2\u000a1 3\u000a2 3\u000a2 4\u000a2 5\u000a3 5\u000a3 6\u000a4 5\u000a5 6\u000a7\u000aoutput\u000a0\u000a1 1\u000a3 1\u000a6 1\u000a7 2\u000a8 -5\u000ainput\u000a3 3\u000a9 5 1\u000a7 7 2\u000a2 1\u000a3 1\u000a3 2\u000a2\u000aoutput\u000a5\u000a3 0\u000a2 5
+p5
+sS'name'
+p6
+VF. Drivers Dissatisfaction
+p7
+sS'tags'
+p8
+Vdata structures dsu graphs trees 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/733/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVIn the first line print K \u2014 the minimum possible total dissatisfaction with main roads.
+p19
+aVIn each of the next n\u2009-\u20091 lines print two integers x,\u2009vx, which mean that the road x is among main roads and the road x, after the reform, has the level of dissatisfaction vx.
+p20
+aVConsider that roads are numbered from 1 to m in the order as they are given in the input data. The edges can be printed in arbitrary order. If there are several answers, print any of them.
+p21
+asS'statement'
+p22
+(lp23
+VF. Drivers Dissatisfaction
+p24
+aVtime limit per test4 seconds
+p25
+aVmemory limit per test256 megabytes
+p26
+aVinputstandard input
+p27
+aVoutputstandard output
+p28
+aVIn one kingdom there are n cities and m two-way roads. Each road connects a pair of cities, and for each road we know the level of drivers dissatisfaction \u2014 the value wi.
+p29
+aVFor each road we know the value ci \u2014 how many lamziks we should spend to reduce the level of dissatisfaction with this road by one. Thus, to reduce the dissatisfaction with the i-th road by k, we should spend k·ci lamziks. And it is allowed for the dissatisfaction to become zero or even negative.
+p30
+aVIn accordance with the king's order, we need to choose n\u2009-\u20091 roads and make them the main roads. An important condition must hold: it should be possible to travel from any city to any other by the main roads.
+p31
+aVThe road ministry has a budget of S lamziks for the reform. The ministry is going to spend this budget for repair of some roads (to reduce the dissatisfaction with them), and then to choose the n\u2009-\u20091 main roads.
+p32
+aVHelp to spend the budget in such a way and then to choose the main roads so that the total dissatisfaction with the main roads will be as small as possible. The dissatisfaction with some roads can become negative. It is not necessary to spend whole budget S.
+p33
+aVIt is guaranteed that it is possible to travel from any city to any other using existing roads. Each road in the kingdom is a two-way road.
+p34
+asS'problemId'
+p35
+V733/F
+p36
+sS'input'
+p37
+(lp38
+VInput
+p39
+aVThe first line contains two integers n and m (2\u2009\u2264\u2009n\u2009\u2264\u20092·105, n\u2009-\u20091\u2009\u2264\u2009m\u2009\u2264\u20092·105) \u2014 the number of cities and the number of roads in the kingdom, respectively.
+p40
+aVThe second line contains m integers w1,\u2009w2,\u2009...,\u2009wm (1\u2009\u2264\u2009wi\u2009\u2264\u2009109), where wi is the drivers dissatisfaction with the i-th road.
+p41
+aVThe third line contains m integers c1,\u2009c2,\u2009...,\u2009cm (1\u2009\u2264\u2009ci\u2009\u2264\u2009109), where ci is the cost (in lamziks) of reducing the dissatisfaction with the i-th road by one.
+p42
+aVThe next m lines contain the description of the roads. The i-th of this lines contain a pair of integers ai and bi (1\u2009\u2264\u2009ai,\u2009bi\u2009\u2264\u2009n, ai\u2009\u2260\u2009bi) which mean that the i-th road connects cities ai and bi. All roads are two-way oriented so it is possible to move by the i-th road from ai to bi, and vice versa. It is allowed that a pair of cities is connected by more than one road.
+p43
+aVThe last line contains one integer S (0\u2009\u2264\u2009S\u2009\u2264\u2009109) \u2014 the number of lamziks which we can spend for reforms.
+p44
+asS'id'
+p45
+c__builtin__
+id
+p46
+sS'constraints'
+p47
+g38
+sb.

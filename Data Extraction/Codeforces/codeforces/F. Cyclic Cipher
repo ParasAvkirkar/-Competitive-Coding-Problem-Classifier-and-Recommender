@@ -1,0 +1,84 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Cyclic Cipher\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given n sequences. Each sequence consists of positive integers, not exceeding m. All integers in one sequence are distinct, but the same integer may appear in multiple sequences. The length of the i-th sequence is ki.\u000aEach second integers in each of the sequences are shifted by one to the left, i.e. integers at positions i\u2009>\u20091 go to positions i\u2009-\u20091, while the first integers becomes the last.\u000aEach second we take the first integer of each sequence and write it down to a new array. Then, for each value x from 1 to m we compute the longest segment of the array consisting of element x only.\u000aThe above operation is performed for 10100 seconds. For each integer from 1 to m find out the longest segment found at this time.\u000aInput\u000aThe first line of the input contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100\u2009000) \u2014 the number of sequences and the maximum integer that can appear in the sequences.\u000aThen follow n lines providing the sequences. Each of them starts with an integer ki (1\u2009\u2264\u2009ki\u2009\u2264\u200940) \u2014 the number of integers in the sequence, proceeded by ki positive integers \u2014 elements of the sequence. It's guaranteed that all integers in each sequence are pairwise distinct and do not exceed m.\u000aThe total length of all sequences doesn't exceed 200\u2009000.\u000aOutput\u000aPrint m integers, the i-th of them should be equal to the length of the longest segment of the array with all its values equal to i during the first 10100 seconds.\u000aExamples\u000ainput\u000a3 4\u000a3 3 4 1\u000a4 1 3 4 2\u000a3 3 1 4\u000aoutput\u000a2\u000a1\u000a3\u000a2\u000ainput\u000a5 5\u000a2 3 1\u000a4 5 1 3 2\u000a4 2 1 3 5\u000a1 3\u000a2 5 3\u000aoutput\u000a3\u000a1\u000a4\u000a0\u000a1\u000ainput\u000a4 6\u000a3 4 5 3\u000a2 6 3\u000a2 3 6\u000a3 3 6 5\u000aoutput\u000a0\u000a0\u000a2\u000a1\u000a1\u000a2
+p3
+sS'problemStatement'
+p4
+VF. Cyclic Cipher\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aYou are given n sequences. Each sequence consists of positive integers, not exceeding m. All integers in one sequence are distinct, but the same integer may appear in multiple sequences. The length of the i-th sequence is ki.\u000aEach second integers in each of the sequences are shifted by one to the left, i.e. integers at positions i\u2009>\u20091 go to positions i\u2009-\u20091, while the first integers becomes the last.\u000aEach second we take the first integer of each sequence and write it down to a new array. Then, for each value x from 1 to m we compute the longest segment of the array consisting of element x only.\u000aThe above operation is performed for 10100 seconds. For each integer from 1 to m find out the longest segment found at this time.\u000aInput\u000aThe first line of the input contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100\u2009000) \u2014 the number of sequences and the maximum integer that can appear in the sequences.\u000aThen follow n lines providing the sequences. Each of them starts with an integer ki (1\u2009\u2264\u2009ki\u2009\u2264\u200940) \u2014 the number of integers in the sequence, proceeded by ki positive integers \u2014 elements of the sequence. It's guaranteed that all integers in each sequence are pairwise distinct and do not exceed m.\u000aThe total length of all sequences doesn't exceed 200\u2009000.\u000aOutput\u000aPrint m integers, the i-th of them should be equal to the length of the longest segment of the array with all its values equal to i during the first 10100 seconds.\u000aExamples\u000ainput\u000a3 4\u000a3 3 4 1\u000a4 1 3 4 2\u000a3 3 1 4\u000aoutput\u000a2\u000a1\u000a3\u000a2\u000ainput\u000a5 5\u000a2 3 1\u000a4 5 1 3 2\u000a4 2 1 3 5\u000a1 3\u000a2 5 3\u000aoutput\u000a3\u000a1\u000a4\u000a0\u000a1\u000ainput\u000a4 6\u000a3 4 5 3\u000a2 6 3\u000a2 3 6\u000a3 3 6 5\u000aoutput\u000a0\u000a0\u000a2\u000a1\u000a1\u000a2
+p5
+sS'name'
+p6
+VF. Cyclic Cipher
+p7
+sS'tags'
+p8
+Vchinese remainder theorem implementation number theory two pointers 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/722/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint m integers, the i-th of them should be equal to the length of the longest segment of the array with all its values equal to i during the first 10100 seconds.
+p19
+asS'statement'
+p20
+(lp21
+VF. Cyclic Cipher
+p22
+aVtime limit per test2 seconds
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVYou are given n sequences. Each sequence consists of positive integers, not exceeding m. All integers in one sequence are distinct, but the same integer may appear in multiple sequences. The length of the i-th sequence is ki.
+p27
+aVEach second integers in each of the sequences are shifted by one to the left, i.e. integers at positions i\u2009>\u20091 go to positions i\u2009-\u20091, while the first integers becomes the last.
+p28
+aVEach second we take the first integer of each sequence and write it down to a new array. Then, for each value x from 1 to m we compute the longest segment of the array consisting of element x only.
+p29
+aVThe above operation is performed for 10100 seconds. For each integer from 1 to m find out the longest segment found at this time.
+p30
+asS'problemId'
+p31
+V722/F
+p32
+sS'input'
+p33
+(lp34
+VInput
+p35
+aVThe first line of the input contains two integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100\u2009000) \u2014 the number of sequences and the maximum integer that can appear in the sequences.
+p36
+aVThen follow n lines providing the sequences. Each of them starts with an integer ki (1\u2009\u2264\u2009ki\u2009\u2264\u200940) \u2014 the number of integers in the sequence, proceeded by ki positive integers \u2014 elements of the sequence. It's guaranteed that all integers in each sequence are pairwise distinct and do not exceed m.
+p37
+aVThe total length of all sequences doesn't exceed 200\u2009000.
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'constraints'
+p41
+g34
+sb.

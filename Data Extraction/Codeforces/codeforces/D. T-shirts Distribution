@@ -1,0 +1,92 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. T-shirts Distribution\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe organizers of a programming contest have decided to present t-shirts to participants. There are six different t-shirts sizes in this problem: S, M, L, XL, XXL, XXXL (sizes are listed in increasing order). The t-shirts are already prepared. For each size from S to XXXL you are given the number of t-shirts of this size.\u000aDuring the registration, the organizers asked each of the n participants about the t-shirt size he wants. If a participant hesitated between two sizes, he could specify two neighboring sizes \u2014 this means that any of these two sizes suits him.\u000aWrite a program that will determine whether it is possible to present a t-shirt to each participant of the competition, or not. Of course, each participant should get a t-shirt of proper size:\u000athe size he wanted, if he specified one size;\u000aany of the two neibouring sizes, if he specified two sizes.\u000aIf it is possible, the program should find any valid distribution of the t-shirts.\u000aInput\u000aThe first line of the input contains six non-negative integers \u2014 the number of t-shirts of each size. The numbers are given for the sizes S, M, L, XL, XXL, XXXL, respectively. The total number of t-shirts doesn't exceed 100\u2009000.\u000aThe second line contains positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of participants.\u000aThe following n lines contain the sizes specified by the participants, one line per participant. The i-th line contains information provided by the i-th participant: single size or two sizes separated by comma (without any spaces). If there are two sizes, the sizes are written in increasing order. It is guaranteed that two sizes separated by comma are neighboring.\u000aOutput\u000aIf it is not possible to present a t-shirt to each participant, print «NO» (without quotes).\u000aOtherwise, print n\u2009+\u20091 lines. In the first line print «YES» (without quotes). In the following n lines print the t-shirt sizes the orginizers should give to participants, one per line. The order of the participants should be the same as in the input.\u000aIf there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a0 1 0 1 1 0\u000a3\u000aXL\u000aS,M\u000aXL,XXL\u000aoutput\u000aYES\u000aXL\u000aM\u000aXXL\u000ainput\u000a1 1 2 0 1 1\u000a5\u000aS\u000aM\u000aS,M\u000aXXL,XXXL\u000aXL,XXL\u000aoutput\u000aNO
+p3
+sS'problemStatement'
+p4
+VD. T-shirts Distribution\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThe organizers of a programming contest have decided to present t-shirts to participants. There are six different t-shirts sizes in this problem: S, M, L, XL, XXL, XXXL (sizes are listed in increasing order). The t-shirts are already prepared. For each size from S to XXXL you are given the number of t-shirts of this size.\u000aDuring the registration, the organizers asked each of the n participants about the t-shirt size he wants. If a participant hesitated between two sizes, he could specify two neighboring sizes \u2014 this means that any of these two sizes suits him.\u000aWrite a program that will determine whether it is possible to present a t-shirt to each participant of the competition, or not. Of course, each participant should get a t-shirt of proper size:\u000athe size he wanted, if he specified one size;\u000aany of the two neibouring sizes, if he specified two sizes.\u000aIf it is possible, the program should find any valid distribution of the t-shirts.\u000aInput\u000aThe first line of the input contains six non-negative integers \u2014 the number of t-shirts of each size. The numbers are given for the sizes S, M, L, XL, XXL, XXXL, respectively. The total number of t-shirts doesn't exceed 100\u2009000.\u000aThe second line contains positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of participants.\u000aThe following n lines contain the sizes specified by the participants, one line per participant. The i-th line contains information provided by the i-th participant: single size or two sizes separated by comma (without any spaces). If there are two sizes, the sizes are written in increasing order. It is guaranteed that two sizes separated by comma are neighboring.\u000aOutput\u000aIf it is not possible to present a t-shirt to each participant, print «NO» (without quotes).\u000aOtherwise, print n\u2009+\u20091 lines. In the first line print «YES» (without quotes). In the following n lines print the t-shirt sizes the orginizers should give to participants, one per line. The order of the participants should be the same as in the input.\u000aIf there are multiple solutions, print any of them.\u000aExamples\u000ainput\u000a0 1 0 1 1 0\u000a3\u000aXL\u000aS,M\u000aXL,XXL\u000aoutput\u000aYES\u000aXL\u000aM\u000aXXL\u000ainput\u000a1 1 2 0 1 1\u000a5\u000aS\u000aM\u000aS,M\u000aXXL,XXXL\u000aXL,XXL\u000aoutput\u000aNO
+p5
+sS'name'
+p6
+VD. T-shirts Distribution
+p7
+sS'tags'
+p8
+Vconstructive algorithms flows greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/727/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVIf it is not possible to present a t-shirt to each participant, print «NO» (without quotes).
+p19
+aVOtherwise, print n\u2009+\u20091 lines. In the first line print «YES» (without quotes). In the following n lines print the t-shirt sizes the orginizers should give to participants, one per line. The order of the participants should be the same as in the input.
+p20
+aVIf there are multiple solutions, print any of them.
+p21
+asS'statement'
+p22
+(lp23
+VD. T-shirts Distribution
+p24
+aVtime limit per test1 second
+p25
+aVmemory limit per test256 megabytes
+p26
+aVinputstandard input
+p27
+aVoutputstandard output
+p28
+aVThe organizers of a programming contest have decided to present t-shirts to participants. There are six different t-shirts sizes in this problem: S, M, L, XL, XXL, XXXL (sizes are listed in increasing order). The t-shirts are already prepared. For each size from S to XXXL you are given the number of t-shirts of this size.
+p29
+aVDuring the registration, the organizers asked each of the n participants about the t-shirt size he wants. If a participant hesitated between two sizes, he could specify two neighboring sizes \u2014 this means that any of these two sizes suits him.
+p30
+aVWrite a program that will determine whether it is possible to present a t-shirt to each participant of the competition, or not. Of course, each participant should get a t-shirt of proper size:
+p31
+aVthe size he wanted, if he specified one size;
+p32
+aVany of the two neibouring sizes, if he specified two sizes.
+p33
+aVIf it is possible, the program should find any valid distribution of the t-shirts.
+p34
+asS'problemId'
+p35
+V727/D
+p36
+sS'input'
+p37
+(lp38
+VInput
+p39
+aVThe first line of the input contains six non-negative integers \u2014 the number of t-shirts of each size. The numbers are given for the sizes S, M, L, XL, XXL, XXXL, respectively. The total number of t-shirts doesn't exceed 100\u2009000.
+p40
+aVThe second line contains positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000) \u2014 the number of participants.
+p41
+aVThe following n lines contain the sizes specified by the participants, one line per participant. The i-th line contains information provided by the i-th participant: single size or two sizes separated by comma (without any spaces). If there are two sizes, the sizes are written in increasing order. It is guaranteed that two sizes separated by comma are neighboring.
+p42
+asS'id'
+p43
+c__builtin__
+id
+p44
+sS'constraints'
+p45
+g38
+sb.

@@ -1,0 +1,82 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Award Ceremony\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAll-Berland programming contest comes to an end. In total, n teams participated in it. Like in ACM-ICPC, current results stopped refreshing one hour before the contest ends. So at the Award Ceremony, results are partially known. For each team the value ai is given \u2014 the number of points the i-th team has earned before the last hour of the contest. Besides that, the Jury has evaluated all submissions sent during the last hour and knows values di \u2014 the number of points earned by the i-th team during the last hour (these values can be negative, which means that a team can lose points).\u000aBefore the contest, each team got unique id from 1 to n. According to the contest rules, a team with more points takes a higher place. If two or more teams have equal number of points, the team with lower id will take the higher place. So no two teams can share the same place.\u000aThe Award Ceremony proceeds in the following way. At the beginning of the ceremony, a large screen shows the results for the time moment "one hour before the end", which means that the i-th team has ai points. Then the Jury unfreezes results of the teams one by one in some order. When result of the j-th team is unfrozen, its score changes from aj to aj\u2009+\u2009dj. At this time the table of results is modified and the place of the team can change. The unfreezing of the j-th team is followed by the applause from the audience with duration of |xj\u2009-\u2009yj| seconds, where xj is the place of the j-th team before unfreezing and yj is the place right after the unfreezing. For example, if the team does not change the place, there is no applause from the audience. As you can see, during the Award Ceremony, each team will be unfrozen exactly once.\u000aYour task is to find such an order to unfreeze all the teams that the total duration of applause is maximum possible.\u000aInput\u000aThe first line of the input file contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of teams.\u000aEach of the next n lines contains two integers ai and di (1\u2009\u2264\u2009ai\u2009\u2264\u2009100, \u2009-\u2009100\u2009\u2264\u2009di\u2009\u2264\u2009100) \u2014 the number of points the i-th team has earned before the last hour of the contest and the number of points earned by this team during the last hour. It is possible that after unfreezing a team will have a negative score.\u000aOutput\u000aPrint the only integer \u2014 maximal total applause duration in seconds if the Jury can choose any order of the teams to unfreeze.\u000aExamples\u000ainput\u000a4\u000a17 -14\u000a52 -5\u000a1 52\u000a6 0\u000aoutput\u000a4\u000ainput\u000a5\u000a4 5\u000a3 2\u000a5 -3\u000a6 -2\u000a4 3\u000aoutput\u000a14\u000aNote\u000aIn the first example the initial standings are:\u000aTeam 2, 52 points\u000aTeam 1, 17 points\u000aTeam 4, 6 points\u000aTeam 3, 1 point\u000aHere any order of unfreezing the teams leads to 4 seconds of applause in total. For example, let's unfreeze teams in their order from the Team 1 to the Team 4.\u000aAfter the Team 1 became unfrozen the standings are:\u000aTeam 2, 52 points\u000aTeam 4, 6 points\u000aTeam 1, 3 points\u000aTeam 3, 1 point\u000aSo there is 1 second of applause, because the difference between old and new places |2\u2009-\u20093|\u2009=\u20091.\u000aAfter the Team 2 became unfrozen the standings are:\u000aTeam 2, 47 points\u000aTeam 4, 6 points\u000aTeam 1, 3 points\u000aTeam 3, 1 point\u000aThe place of the Team 2 has not changed, so no applause during unfreezing.\u000aAfter the Team 3 became unfrozen the standings are:\u000aTeam 3, 53 point\u000aTeam 2, 47 points\u000aTeam 4, 6 points\u000aTeam 1, 3 points\u000aThe place of the Team 3 has changed from 4 to 1, so the duration of applause is |4\u2009-\u20091|\u2009=\u20093.\u000aThe unfreezing of the Team 4 has not changed any place because d4\u2009=\u20090.\u000aTherefore, the total duration of applause is 1\u2009+\u20090\u2009+\u20093\u2009+\u20090\u2009=\u20094 seconds.
+p3
+sS'problemStatement'
+p4
+VE. Award Ceremony\u000atime limit per test2 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAll-Berland programming contest comes to an end. In total, n teams participated in it. Like in ACM-ICPC, current results stopped refreshing one hour before the contest ends. So at the Award Ceremony, results are partially known. For each team the value ai is given \u2014 the number of points the i-th team has earned before the last hour of the contest. Besides that, the Jury has evaluated all submissions sent during the last hour and knows values di \u2014 the number of points earned by the i-th team during the last hour (these values can be negative, which means that a team can lose points).\u000aBefore the contest, each team got unique id from 1 to n. According to the contest rules, a team with more points takes a higher place. If two or more teams have equal number of points, the team with lower id will take the higher place. So no two teams can share the same place.\u000aThe Award Ceremony proceeds in the following way. At the beginning of the ceremony, a large screen shows the results for the time moment "one hour before the end", which means that the i-th team has ai points. Then the Jury unfreezes results of the teams one by one in some order. When result of the j-th team is unfrozen, its score changes from aj to aj\u2009+\u2009dj. At this time the table of results is modified and the place of the team can change. The unfreezing of the j-th team is followed by the applause from the audience with duration of |xj\u2009-\u2009yj| seconds, where xj is the place of the j-th team before unfreezing and yj is the place right after the unfreezing. For example, if the team does not change the place, there is no applause from the audience. As you can see, during the Award Ceremony, each team will be unfrozen exactly once.\u000aYour task is to find such an order to unfreeze all the teams that the total duration of applause is maximum possible.\u000aInput\u000aThe first line of the input file contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of teams.\u000aEach of the next n lines contains two integers ai and di (1\u2009\u2264\u2009ai\u2009\u2264\u2009100, \u2009-\u2009100\u2009\u2264\u2009di\u2009\u2264\u2009100) \u2014 the number of points the i-th team has earned before the last hour of the contest and the number of points earned by this team during the last hour. It is possible that after unfreezing a team will have a negative score.\u000aOutput\u000aPrint the only integer \u2014 maximal total applause duration in seconds if the Jury can choose any order of the teams to unfreeze.\u000aExamples\u000ainput\u000a4\u000a17 -14\u000a52 -5\u000a1 52\u000a6 0\u000aoutput\u000a4\u000ainput\u000a5\u000a4 5\u000a3 2\u000a5 -3\u000a6 -2\u000a4 3\u000aoutput\u000a14\u000aNote\u000aIn the first example the initial standings are:\u000aTeam 2, 52 points\u000aTeam 1, 17 points\u000aTeam 4, 6 points\u000aTeam 3, 1 point\u000aHere any order of unfreezing the teams leads to 4 seconds of applause in total. For example, let's unfreeze teams in their order from the Team 1 to the Team 4.\u000aAfter the Team 1 became unfrozen the standings are:\u000aTeam 2, 52 points\u000aTeam 4, 6 points\u000aTeam 1, 3 points\u000aTeam 3, 1 point\u000aSo there is 1 second of applause, because the difference between old and new places |2\u2009-\u20093|\u2009=\u20091.\u000aAfter the Team 2 became unfrozen the standings are:\u000aTeam 2, 47 points\u000aTeam 4, 6 points\u000aTeam 1, 3 points\u000aTeam 3, 1 point\u000aThe place of the Team 2 has not changed, so no applause during unfreezing.\u000aAfter the Team 3 became unfrozen the standings are:\u000aTeam 3, 53 point\u000aTeam 2, 47 points\u000aTeam 4, 6 points\u000aTeam 1, 3 points\u000aThe place of the Team 3 has changed from 4 to 1, so the duration of applause is |4\u2009-\u20091|\u2009=\u20093.\u000aThe unfreezing of the Team 4 has not changed any place because d4\u2009=\u20090.\u000aTherefore, the total duration of applause is 1\u2009+\u20090\u2009+\u20093\u2009+\u20090\u2009=\u20094 seconds.
+p5
+sS'name'
+p6
+VE. Award Ceremony
+p7
+sS'tags'
+p8
+Vgreedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/E
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint the only integer \u2014 maximal total applause duration in seconds if the Jury can choose any order of the teams to unfreeze.
+p19
+asS'statement'
+p20
+(lp21
+VE. Award Ceremony
+p22
+aVtime limit per test2 seconds
+p23
+aVmemory limit per test512 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVAll-Berland programming contest comes to an end. In total, n teams participated in it. Like in ACM-ICPC, current results stopped refreshing one hour before the contest ends. So at the Award Ceremony, results are partially known. For each team the value ai is given \u2014 the number of points the i-th team has earned before the last hour of the contest. Besides that, the Jury has evaluated all submissions sent during the last hour and knows values di \u2014 the number of points earned by the i-th team during the last hour (these values can be negative, which means that a team can lose points).
+p27
+aVBefore the contest, each team got unique id from 1 to n. According to the contest rules, a team with more points takes a higher place. If two or more teams have equal number of points, the team with lower id will take the higher place. So no two teams can share the same place.
+p28
+aVThe Award Ceremony proceeds in the following way. At the beginning of the ceremony, a large screen shows the results for the time moment "one hour before the end", which means that the i-th team has ai points. Then the Jury unfreezes results of the teams one by one in some order. When result of the j-th team is unfrozen, its score changes from aj to aj\u2009+\u2009dj. At this time the table of results is modified and the place of the team can change. The unfreezing of the j-th team is followed by the applause from the audience with duration of |xj\u2009-\u2009yj| seconds, where xj is the place of the j-th team before unfreezing and yj is the place right after the unfreezing. For example, if the team does not change the place, there is no applause from the audience. As you can see, during the Award Ceremony, each team will be unfrozen exactly once.
+p29
+aVYour task is to find such an order to unfreeze all the teams that the total duration of applause is maximum possible.
+p30
+asS'problemId'
+p31
+V730/E
+p32
+sS'input'
+p33
+(lp34
+VInput
+p35
+aVThe first line of the input file contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of teams.
+p36
+aVEach of the next n lines contains two integers ai and di (1\u2009\u2264\u2009ai\u2009\u2264\u2009100, \u2009-\u2009100\u2009\u2264\u2009di\u2009\u2264\u2009100) \u2014 the number of points the i-th team has earned before the last hour of the contest and the number of points earned by this team during the last hour. It is possible that after unfreezing a team will have a negative score.
+p37
+asS'id'
+p38
+c__builtin__
+id
+p39
+sS'constraints'
+p40
+g34
+sb.

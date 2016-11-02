@@ -1,0 +1,84 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. 80-th Level Archeology\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aArcheologists have found a secret pass in the dungeon of one of the pyramids of Cycleland. To enter the treasury they have to open an unusual lock on the door. The lock consists of n words, each consisting of some hieroglyphs. The wall near the lock has a round switch. Each rotation of this switch changes the hieroglyphs according to some rules. The instruction nearby says that the door will open only if words written on the lock would be sorted in lexicographical order (the definition of lexicographical comparison in given in notes section).\u000aThe rule that changes hieroglyphs is the following. One clockwise rotation of the round switch replaces each hieroglyph with the next hieroglyph in alphabet, i.e. hieroglyph x (1\u2009\u2264\u2009x\u2009\u2264\u2009c\u2009-\u20091) is replaced with hieroglyph (x\u2009+\u20091), and hieroglyph c is replaced with hieroglyph 1.\u000aHelp archeologist determine, how many clockwise rotations they should perform in order to open the door, or determine that this is impossible, i.e. no cyclic shift of the alphabet will make the sequence of words sorted lexicographically.\u000aInput\u000aThe first line of the input contains two integers n and c (2\u2009\u2264\u2009n\u2009\u2264\u2009500\u2009000, 1\u2009\u2264\u2009c\u2009\u2264\u2009106) \u2014 the number of words, written on the lock, and the number of different hieroglyphs.\u000aEach of the following n lines contains the description of one word. The i-th of these lines starts with integer li (1\u2009\u2264\u2009li\u2009\u2264\u2009500\u2009000), that denotes the length of the i-th word, followed by li integers wi,\u20091, wi,\u20092, ..., wi,\u2009li (1\u2009\u2264\u2009wi,\u2009j\u2009\u2264\u2009c) \u2014 the indices of hieroglyphs that make up the i-th word. Hieroglyph with index 1 is the smallest in the alphabet and with index c \u2014 the biggest.\u000aIt's guaranteed, that the total length of all words doesn't exceed 106.\u000aOutput\u000aIf it is possible to open the door by rotating the round switch, print integer x (0\u2009\u2264\u2009x\u2009\u2264\u2009c\u2009-\u20091) that defines the required number of clockwise rotations. If there are several valid x, print any of them.\u000aIf it is impossible to open the door by this method, print \u2009-\u20091.\u000aExamples\u000ainput\u000a4 3\u000a2 3 2\u000a1 1\u000a3 2 3 1\u000a4 2 3 1 2\u000aoutput\u000a1\u000ainput\u000a2 5\u000a2 4 2\u000a2 4 2\u000aoutput\u000a0\u000ainput\u000a4 4\u000a1 2\u000a1 3\u000a1 4\u000a1 2\u000aoutput\u000a-1\u000aNote\u000aWord a1,\u2009a2,\u2009...,\u2009am of length m is lexicographically not greater than word b1,\u2009b2,\u2009...,\u2009bk of length k, if one of two conditions hold:\u000aat first position i, such that ai\u2009\u2260\u2009bi, the character ai goes earlier in the alphabet than character bi, i.e. a has smaller character in the first position where they differ;\u000aif there is no such position i and m\u2009\u2264\u2009k, i.e. the first word is a prefix of the second or two words are equal.\u000aThe sequence of words is said to be sorted in lexicographical order if each word (except the last one) is lexicographically not greater than the next word.\u000aIn the first sample, after the round switch is rotated 1 position clockwise the words look as follows:\u000a\u000a1 3\u000a2\u000a3 1 2\u000a3 1 2 3\u000aIn the second sample, words are already sorted in lexicographical order.\u000aIn the last sample, one can check that no shift of the alphabet will work.
+p3
+sS'problemStatement'
+p4
+VD. 80-th Level Archeology\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aArcheologists have found a secret pass in the dungeon of one of the pyramids of Cycleland. To enter the treasury they have to open an unusual lock on the door. The lock consists of n words, each consisting of some hieroglyphs. The wall near the lock has a round switch. Each rotation of this switch changes the hieroglyphs according to some rules. The instruction nearby says that the door will open only if words written on the lock would be sorted in lexicographical order (the definition of lexicographical comparison in given in notes section).\u000aThe rule that changes hieroglyphs is the following. One clockwise rotation of the round switch replaces each hieroglyph with the next hieroglyph in alphabet, i.e. hieroglyph x (1\u2009\u2264\u2009x\u2009\u2264\u2009c\u2009-\u20091) is replaced with hieroglyph (x\u2009+\u20091), and hieroglyph c is replaced with hieroglyph 1.\u000aHelp archeologist determine, how many clockwise rotations they should perform in order to open the door, or determine that this is impossible, i.e. no cyclic shift of the alphabet will make the sequence of words sorted lexicographically.\u000aInput\u000aThe first line of the input contains two integers n and c (2\u2009\u2264\u2009n\u2009\u2264\u2009500\u2009000, 1\u2009\u2264\u2009c\u2009\u2264\u2009106) \u2014 the number of words, written on the lock, and the number of different hieroglyphs.\u000aEach of the following n lines contains the description of one word. The i-th of these lines starts with integer li (1\u2009\u2264\u2009li\u2009\u2264\u2009500\u2009000), that denotes the length of the i-th word, followed by li integers wi,\u20091, wi,\u20092, ..., wi,\u2009li (1\u2009\u2264\u2009wi,\u2009j\u2009\u2264\u2009c) \u2014 the indices of hieroglyphs that make up the i-th word. Hieroglyph with index 1 is the smallest in the alphabet and with index c \u2014 the biggest.\u000aIt's guaranteed, that the total length of all words doesn't exceed 106.\u000aOutput\u000aIf it is possible to open the door by rotating the round switch, print integer x (0\u2009\u2264\u2009x\u2009\u2264\u2009c\u2009-\u20091) that defines the required number of clockwise rotations. If there are several valid x, print any of them.\u000aIf it is impossible to open the door by this method, print \u2009-\u20091.\u000aExamples\u000ainput\u000a4 3\u000a2 3 2\u000a1 1\u000a3 2 3 1\u000a4 2 3 1 2\u000aoutput\u000a1\u000ainput\u000a2 5\u000a2 4 2\u000a2 4 2\u000aoutput\u000a0\u000ainput\u000a4 4\u000a1 2\u000a1 3\u000a1 4\u000a1 2\u000aoutput\u000a-1\u000aNote\u000aWord a1,\u2009a2,\u2009...,\u2009am of length m is lexicographically not greater than word b1,\u2009b2,\u2009...,\u2009bk of length k, if one of two conditions hold:\u000aat first position i, such that ai\u2009\u2260\u2009bi, the character ai goes earlier in the alphabet than character bi, i.e. a has smaller character in the first position where they differ;\u000aif there is no such position i and m\u2009\u2264\u2009k, i.e. the first word is a prefix of the second or two words are equal.\u000aThe sequence of words is said to be sorted in lexicographical order if each word (except the last one) is lexicographically not greater than the next word.\u000aIn the first sample, after the round switch is rotated 1 position clockwise the words look as follows:\u000a\u000a1 3\u000a2\u000a3 1 2\u000a3 1 2 3\u000aIn the second sample, words are already sorted in lexicographical order.\u000aIn the last sample, one can check that no shift of the alphabet will work.
+p5
+sS'name'
+p6
+VD. 80-th Level Archeology
+p7
+sS'tags'
+p8
+Vbrute force data structures greedy sortings 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/731/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVIf it is possible to open the door by rotating the round switch, print integer x (0\u2009\u2264\u2009x\u2009\u2264\u2009c\u2009-\u20091) that defines the required number of clockwise rotations. If there are several valid x, print any of them.
+p19
+aVIf it is impossible to open the door by this method, print \u2009-\u20091.
+p20
+asS'statement'
+p21
+(lp22
+VD. 80-th Level Archeology
+p23
+aVtime limit per test2 seconds
+p24
+aVmemory limit per test256 megabytes
+p25
+aVinputstandard input
+p26
+aVoutputstandard output
+p27
+aVArcheologists have found a secret pass in the dungeon of one of the pyramids of Cycleland. To enter the treasury they have to open an unusual lock on the door. The lock consists of n words, each consisting of some hieroglyphs. The wall near the lock has a round switch. Each rotation of this switch changes the hieroglyphs according to some rules. The instruction nearby says that the door will open only if words written on the lock would be sorted in lexicographical order (the definition of lexicographical comparison in given in notes section).
+p28
+aVThe rule that changes hieroglyphs is the following. One clockwise rotation of the round switch replaces each hieroglyph with the next hieroglyph in alphabet, i.e. hieroglyph x (1\u2009\u2264\u2009x\u2009\u2264\u2009c\u2009-\u20091) is replaced with hieroglyph (x\u2009+\u20091), and hieroglyph c is replaced with hieroglyph 1.
+p29
+aVHelp archeologist determine, how many clockwise rotations they should perform in order to open the door, or determine that this is impossible, i.e. no cyclic shift of the alphabet will make the sequence of words sorted lexicographically.
+p30
+asS'problemId'
+p31
+V731/D
+p32
+sS'input'
+p33
+(lp34
+VInput
+p35
+aVThe first line of the input contains two integers n and c (2\u2009\u2264\u2009n\u2009\u2264\u2009500\u2009000, 1\u2009\u2264\u2009c\u2009\u2264\u2009106) \u2014 the number of words, written on the lock, and the number of different hieroglyphs.
+p36
+aVEach of the following n lines contains the description of one word. The i-th of these lines starts with integer li (1\u2009\u2264\u2009li\u2009\u2264\u2009500\u2009000), that denotes the length of the i-th word, followed by li integers wi,\u20091, wi,\u20092, ..., wi,\u2009li (1\u2009\u2264\u2009wi,\u2009j\u2009\u2264\u2009c) \u2014 the indices of hieroglyphs that make up the i-th word. Hieroglyph with index 1 is the smallest in the alphabet and with index c \u2014 the biggest.
+p37
+aVIt's guaranteed, that the total length of all words doesn't exceed 106.
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'constraints'
+p41
+g34
+sb.

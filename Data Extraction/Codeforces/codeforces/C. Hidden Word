@@ -1,0 +1,84 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Hidden Word\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aLet\u2019s define a grid to be a set of tiles with 2 rows and 13 columns. Each tile has an English letter written in it. The letters don't have to be unique: there might be two or more tiles with the same letter written on them. Here is an example of a grid:\u000aABCDEFGHIJKLM\u000aNOPQRSTUVWXYZ\u000aWe say that two tiles are adjacent if they share a side or a corner. In the example grid above, the tile with the letter 'A' is adjacent only to the tiles with letters 'B', 'N', and 'O'. A tile is not adjacent to itself.\u000aA sequence of tiles is called a path if each tile in the sequence is adjacent to the tile which follows it (except for the last tile in the sequence, which of course has no successor). In this example, "ABC" is a path, and so is "KXWIHIJK". "MAB" is not a path because 'M' is not adjacent to 'A'. A single tile can be used more than once by a path (though the tile cannot occupy two consecutive places in the path because no tile is adjacent to itself).\u000aYou\u2019re given a string s which consists of 27 upper-case English letters. Each English letter occurs at least once in s. Find a grid that contains a path whose tiles, viewed in the order that the path visits them, form the string s. If there\u2019s no solution, print "Impossible" (without the quotes).\u000aInput\u000aThe only line of the input contains the string s, consisting of 27 upper-case English letters. Each English letter occurs at least once in s.\u000aOutput\u000aOutput two lines, each consisting of 13 upper-case English characters, representing the rows of the grid. If there are multiple solutions, print any of them. If there is no solution print "Impossible".\u000aExamples\u000ainput\u000aABCDEFGHIJKLMNOPQRSGTUVWXYZ\u000aoutput\u000aYXWVUTGHIJKLM\u000aZABCDEFSRQPON\u000ainput\u000aBUVTYZFQSNRIWOXXGJLKACPEMDH\u000aoutput\u000aImpossible
+p3
+sS'problemStatement'
+p4
+VC. Hidden Word\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aLet\u2019s define a grid to be a set of tiles with 2 rows and 13 columns. Each tile has an English letter written in it. The letters don't have to be unique: there might be two or more tiles with the same letter written on them. Here is an example of a grid:\u000aABCDEFGHIJKLM\u000aNOPQRSTUVWXYZ\u000aWe say that two tiles are adjacent if they share a side or a corner. In the example grid above, the tile with the letter 'A' is adjacent only to the tiles with letters 'B', 'N', and 'O'. A tile is not adjacent to itself.\u000aA sequence of tiles is called a path if each tile in the sequence is adjacent to the tile which follows it (except for the last tile in the sequence, which of course has no successor). In this example, "ABC" is a path, and so is "KXWIHIJK". "MAB" is not a path because 'M' is not adjacent to 'A'. A single tile can be used more than once by a path (though the tile cannot occupy two consecutive places in the path because no tile is adjacent to itself).\u000aYou\u2019re given a string s which consists of 27 upper-case English letters. Each English letter occurs at least once in s. Find a grid that contains a path whose tiles, viewed in the order that the path visits them, form the string s. If there\u2019s no solution, print "Impossible" (without the quotes).\u000aInput\u000aThe only line of the input contains the string s, consisting of 27 upper-case English letters. Each English letter occurs at least once in s.\u000aOutput\u000aOutput two lines, each consisting of 13 upper-case English characters, representing the rows of the grid. If there are multiple solutions, print any of them. If there is no solution print "Impossible".\u000aExamples\u000ainput\u000aABCDEFGHIJKLMNOPQRSGTUVWXYZ\u000aoutput\u000aYXWVUTGHIJKLM\u000aZABCDEFSRQPON\u000ainput\u000aBUVTYZFQSNRIWOXXGJLKACPEMDH\u000aoutput\u000aImpossible
+p5
+sS'name'
+p6
+VC. Hidden Word
+p7
+sS'tags'
+p8
+Vbrute force constructive algorithms implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/725/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVOutput two lines, each consisting of 13 upper-case English characters, representing the rows of the grid. If there are multiple solutions, print any of them. If there is no solution print "Impossible".
+p19
+asS'statement'
+p20
+(lp21
+VC. Hidden Word
+p22
+aVtime limit per test2 seconds
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVLet\u2019s define a grid to be a set of tiles with 2 rows and 13 columns. Each tile has an English letter written in it. The letters don't have to be unique: there might be two or more tiles with the same letter written on them. Here is an example of a grid:
+p27
+aVABCDEFGHIJKLM
+p28
+aVNOPQRSTUVWXYZ
+p29
+aVWe say that two tiles are adjacent if they share a side or a corner. In the example grid above, the tile with the letter 'A' is adjacent only to the tiles with letters 'B', 'N', and 'O'. A tile is not adjacent to itself.
+p30
+aVA sequence of tiles is called a path if each tile in the sequence is adjacent to the tile which follows it (except for the last tile in the sequence, which of course has no successor). In this example, "ABC" is a path, and so is "KXWIHIJK". "MAB" is not a path because 'M' is not adjacent to 'A'. A single tile can be used more than once by a path (though the tile cannot occupy two consecutive places in the path because no tile is adjacent to itself).
+p31
+aVYou\u2019re given a string s which consists of 27 upper-case English letters. Each English letter occurs at least once in s. Find a grid that contains a path whose tiles, viewed in the order that the path visits them, form the string s. If there\u2019s no solution, print "Impossible" (without the quotes).
+p32
+asS'problemId'
+p33
+V725/C
+p34
+sS'input'
+p35
+(lp36
+VInput
+p37
+aVThe only line of the input contains the string s, consisting of 27 upper-case English letters. Each English letter occurs at least once in s.
+p38
+asS'id'
+p39
+c__builtin__
+id
+p40
+sS'constraints'
+p41
+g36
+sb.

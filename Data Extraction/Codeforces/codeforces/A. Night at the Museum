@@ -1,0 +1,80 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Night at the Museum\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aGrigoriy, like the hero of one famous comedy film, found a job as a night security guard at the museum. At first night he received embosser and was to take stock of the whole exposition.\u000aEmbosser is a special devise that allows to "print" the text of a plastic tape. Text is printed sequentially, character by character. The device consists of a wheel with a lowercase English letters written in a circle, static pointer to the current letter and a button that print the chosen letter. At one move it's allowed to rotate the alphabetic wheel one step clockwise or counterclockwise. Initially, static pointer points to letter 'a'. Other letters are located as shown on the picture:\u000aAfter Grigoriy add new item to the base he has to print its name on the plastic tape and attach it to the corresponding exhibit. It's not required to return the wheel to its initial position with pointer on the letter 'a'.\u000aOur hero is afraid that some exhibits may become alive and start to attack him, so he wants to print the names as fast as possible. Help him, for the given string find the minimum number of rotations of the wheel required to print it.\u000aInput\u000aThe only line of input contains the name of some exhibit \u2014 the non-empty string consisting of no more than 100 characters. It's guaranteed that the string consists of only lowercase English letters.\u000aOutput\u000aPrint one integer \u2014 the minimum number of rotations of the wheel, required to print the name given in the input.\u000aExamples\u000ainput\u000azeus\u000aoutput\u000a18\u000ainput\u000amap\u000aoutput\u000a35\u000ainput\u000aares\u000aoutput\u000a34\u000aNote\u000a  To print the string from the first sample it would be optimal to perform the following sequence of rotations:\u000afrom 'a' to 'z' (1 rotation counterclockwise),\u000afrom 'z' to 'e' (5 clockwise rotations),\u000afrom 'e' to 'u' (10 rotations counterclockwise),\u000afrom 'u' to 's' (2 counterclockwise rotations).\u000aIn total, 1\u2009+\u20095\u2009+\u200910\u2009+\u20092\u2009=\u200918 rotations are required.
+p3
+sS'problemStatement'
+p4
+VA. Night at the Museum\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aGrigoriy, like the hero of one famous comedy film, found a job as a night security guard at the museum. At first night he received embosser and was to take stock of the whole exposition.\u000aEmbosser is a special devise that allows to "print" the text of a plastic tape. Text is printed sequentially, character by character. The device consists of a wheel with a lowercase English letters written in a circle, static pointer to the current letter and a button that print the chosen letter. At one move it's allowed to rotate the alphabetic wheel one step clockwise or counterclockwise. Initially, static pointer points to letter 'a'. Other letters are located as shown on the picture:\u000aAfter Grigoriy add new item to the base he has to print its name on the plastic tape and attach it to the corresponding exhibit. It's not required to return the wheel to its initial position with pointer on the letter 'a'.\u000aOur hero is afraid that some exhibits may become alive and start to attack him, so he wants to print the names as fast as possible. Help him, for the given string find the minimum number of rotations of the wheel required to print it.\u000aInput\u000aThe only line of input contains the name of some exhibit \u2014 the non-empty string consisting of no more than 100 characters. It's guaranteed that the string consists of only lowercase English letters.\u000aOutput\u000aPrint one integer \u2014 the minimum number of rotations of the wheel, required to print the name given in the input.\u000aExamples\u000ainput\u000azeus\u000aoutput\u000a18\u000ainput\u000amap\u000aoutput\u000a35\u000ainput\u000aares\u000aoutput\u000a34\u000aNote\u000a  To print the string from the first sample it would be optimal to perform the following sequence of rotations:\u000afrom 'a' to 'z' (1 rotation counterclockwise),\u000afrom 'z' to 'e' (5 clockwise rotations),\u000afrom 'e' to 'u' (10 rotations counterclockwise),\u000afrom 'u' to 's' (2 counterclockwise rotations).\u000aIn total, 1\u2009+\u20095\u2009+\u200910\u2009+\u20092\u2009=\u200918 rotations are required.
+p5
+sS'name'
+p6
+VA. Night at the Museum
+p7
+sS'tags'
+p8
+Vimplementation strings 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/731/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint one integer \u2014 the minimum number of rotations of the wheel, required to print the name given in the input.
+p19
+asS'statement'
+p20
+(lp21
+VA. Night at the Museum
+p22
+aVtime limit per test1 second
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVGrigoriy, like the hero of one famous comedy film, found a job as a night security guard at the museum. At first night he received embosser and was to take stock of the whole exposition.
+p27
+aVEmbosser is a special devise that allows to "print" the text of a plastic tape. Text is printed sequentially, character by character. The device consists of a wheel with a lowercase English letters written in a circle, static pointer to the current letter and a button that print the chosen letter. At one move it's allowed to rotate the alphabetic wheel one step clockwise or counterclockwise. Initially, static pointer points to letter 'a'. Other letters are located as shown on the picture:
+p28
+aVAfter Grigoriy add new item to the base he has to print its name on the plastic tape and attach it to the corresponding exhibit. It's not required to return the wheel to its initial position with pointer on the letter 'a'.
+p29
+aVOur hero is afraid that some exhibits may become alive and start to attack him, so he wants to print the names as fast as possible. Help him, for the given string find the minimum number of rotations of the wheel required to print it.
+p30
+asS'problemId'
+p31
+V731/A
+p32
+sS'input'
+p33
+(lp34
+VInput
+p35
+aVThe only line of input contains the name of some exhibit \u2014 the non-empty string consisting of no more than 100 characters. It's guaranteed that the string consists of only lowercase English letters.
+p36
+asS'id'
+p37
+c__builtin__
+id
+p38
+sS'constraints'
+p39
+g34
+sb.
