@@ -1,4 +1,5 @@
 from selenium import webdriver
+from user import User
 from bs4 import BeautifulSoup
 
 from selenium.webdriver.common.by import By
@@ -8,11 +9,11 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import requests
 
-f = open('users_urls.txt', 'a')
+f = open('users_ids.txt', 'a')
 
 def fetch_user_list(start, driver):
 	
-	baseUrl = "http://www.spoj.com/ranks/users/start="
+	baseUrl = "https://discuss.codechef.com/users/?sort=karma&page="
 	userLink = baseUrl + str(start)
 
 	driver.get(userLink)
@@ -20,16 +21,14 @@ def fetch_user_list(start, driver):
 
 	
 	try:
-		table = driver.find_element_by_class_name('table-condensed')
-		for tr in table.find_elements_by_tag_name('tr'):
-			# tds = tr.find_elements_by_tag_name('td')
-			count = 1
-			for td in tr.find_elements_by_tag_name('td'):
-				if count == 3:
-					a = td.find_element_by_tag_name('a')
-					f.write(a.get_attribute('href') + '\n')
-					# print (a.get_attribute('href'))
-				count += 1	
+		userList = driver.find_element_by_class_name('userList')
+		lis = userList.find_elements_by_class_name('thumb')
+		for li in lis: 
+			a = li.find_element_by_tag_name('a')
+			aas = a.get_attribute('href').split('/')
+			# print aas[5]
+			f.write(aas[5] + '\n')
+			
 	
 	except Exception as e:
 		print('element not found')
@@ -41,16 +40,15 @@ def fetch_user_list(start, driver):
 		pass
 	
 	
-	if start < 54000:
-		fetch_user_list(start+100, driver)
+	if start < 4763:
+		fetch_user_list(start+1, driver)
 		
 	
 
 driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-# driver = webdriver.Chrome()
 # fetch_user('anudeep2011', driver)
 # fetch_user('sherlock_holms', driver)
-fetch_user_list(15100, driver)
+fetch_user_list(101, driver)
 # fetch_user('paragpachpute', driver)
 # fetch_user('pranay0007', driver)
 driver.close()

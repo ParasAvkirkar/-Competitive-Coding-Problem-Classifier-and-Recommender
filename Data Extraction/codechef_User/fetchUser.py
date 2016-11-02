@@ -8,6 +8,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import requests
+import pickle
+from user import User
 
 
 def fetch_user(uname, driver):
@@ -122,7 +124,18 @@ def fetch_user(uname, driver):
 				prefLang = key
 
 		print prefLang		
-		
+
+		u = User(uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)
+		with open('users/' + uname, 'w+b') as f:
+			pickle.dump(u, f)
+
+
+		# with open('users/' + uname, 'r+b') as f2:
+		# 	us = pickle.load(f2)
+		# 	print "his name is " + us.uname + " city "
+		# 	print us.probs	
+
+
 	except Exception as e:
 		print(e)
 		print('element not found')
@@ -132,10 +145,38 @@ def fetch_user(uname, driver):
 	finally:
 		pass
 
-# driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-driver = webdriver.Chrome()
+driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+# driver = webdriver.Chrome()
 #fetch_user('anudeep2011', driver)
-fetch_user('paras18', driver)
+# fetch_user('paras18', driver)
 # fetch_user('paragpachpute', driver)
 # fetch_user('pranay0007', driver)
+
+count = 0
+
+try:
+	with open('curr_progress', 'r+b') as f:
+		count = pickle.load(f)
+		print count
+except Exception as e:
+	# print e
+	count = 0		
+
+
+i = 0
+
+f = open('users_ids.txt', 'r')
+for uname in f:
+	if count == i:
+		uname = uname.split('\n')[0]
+		fetch_user(uname, driver)
+		
+		count += 1
+		with open('curr_progress', 'w+b') as f:
+			pickle.dump(count, f)
+
+	i += 1	
+	# print i, " ", count
+
+
 driver.close()
