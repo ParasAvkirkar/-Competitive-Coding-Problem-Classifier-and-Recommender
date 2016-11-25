@@ -11,7 +11,6 @@ import requests
 import pickle
 from user import User
 
-
 def fetch_user(uname, driver):
 	
 	baseUrl = "https://www.codechef.com/users/"
@@ -126,6 +125,8 @@ def fetch_user(uname, driver):
 		print prefLang		
 
 		u = User(uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)
+		u.insert_db(uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)
+		
 		with open('users/' + uname, 'w+b') as f:
 			pickle.dump(u, f)
 
@@ -180,3 +181,5 @@ for uname in f:
 
 
 driver.close()
+
+	
