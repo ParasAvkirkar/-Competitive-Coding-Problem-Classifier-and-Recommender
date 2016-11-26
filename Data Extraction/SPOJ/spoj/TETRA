@@ -1,0 +1,75 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput N lines, each consisting of a real number given with four digits decimal precision equal to the radius of a sphere inscribed in the given tetrahedron. 
+p6
+asS'description'
+p7
+V Of course a Sphere Online Judge System is bound to have some tasks about spheres. So here is one. Given the lengths of the edges of a tetrahedron calculate the radius of a sphere inscribed in that tetrahedron (i.e. a sphere tangent to all the faces). Input Number N of test cases in a single line. ( N <= 30 ) Each of the next N lines consists of 6 integer numbers -- the lengths of the edges of a tetrahedron separated by single spaces. The edges are not longer than 1000 and for the tetrahedron WXYZ, the order of the edges is: WX, WY, WZ, XY, XZ, YZ. Output N lines, each consisting of a real number given with four digits decimal precision equal to the radius of a sphere inscribed in the given tetrahedron. Example  Input:\u000a2\u000a1 1 1 1 1 1\u000a1000 999 998 5 5 6\u000a\u000aOutput:\u000a0.2041\u000a1.4189 
+p8
+sS'tags'
+p9
+S''
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/TETRA
+p12
+sS'addedBy'
+p13
+VAdam Dzedzej
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V1s
+p20
+sS'statement'
+p21
+(lp22
+V Of course a Sphere Online Judge System is bound to have some tasks about spheres. So here is one. Given the lengths of the edges of a tetrahedron calculate the radius of a sphere inscribed in that tetrahedron (i.e. a sphere tangent to all the faces). 
+p23
+asS'submissionSize'
+p24
+F0.0
+sS'sourcelimit'
+p25
+V50000B
+p26
+sS'date'
+p27
+V2004-05-11
+p28
+sS'input'
+p29
+(lp30
+VInput Number N of test cases in a single line. ( N <= 30 ) Each of the next N lines consists of 6 integer numbers -- the lengths of the edges of a tetrahedron separated by single spaces. The edges are not longer than 1000 and for the tetrahedron WXYZ, the order of the edges is: WX, WY, WZ, XY, XZ, YZ. 
+p31
+asS'constraints'
+p32
+g30
+sS'id'
+p33
+c__builtin__
+id
+p34
+sS'name'
+p35
+VTETRA
+p36
+sb.

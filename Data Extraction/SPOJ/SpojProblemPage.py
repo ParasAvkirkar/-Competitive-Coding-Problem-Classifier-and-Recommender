@@ -9,7 +9,9 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 import requests
-
+import sys, os
+import time
+import re
 
 #driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 driver = webdriver.Chrome()
@@ -28,12 +30,13 @@ def getSpojProblem(problemUrl):
 	try:
 		
 		driver.get(problemUrl)
+		print problemUrl
 		print('reach problem page')
 
 		#Getting tags of the problem
 		problemTag = ''
-		divTags = driver.find_element_by_id('problem-tags')
-		aTags = divTags.find_elements_by_tag_name('a')
+		divTag = driver.find_element_by_id('problem-tags')
+		aTags = divTag.find_elements_by_tag_name('a')
 		for aTag in aTags:
 			problemTag = problemTag + ' ' + aTag.text
 
@@ -51,7 +54,7 @@ def getSpojProblem(problemUrl):
 		#Getting other infos of the problem
 		addedBy = ''
 		date = ''
-		time = ''
+		timelimit = ''
 		source = ''
 		memory = ''
 		cluster = ''
@@ -66,7 +69,7 @@ def getSpojProblem(problemUrl):
 			elif('date' in label):
 				date = dataCells[1].text
 			elif('time' in label):
-				time = dataCells[1].text
+				timelimit = dataCells[1].text
 			elif('source' in label):
 				source = dataCells[1].text
 			elif('memory' in label):
@@ -76,20 +79,77 @@ def getSpojProblem(problemUrl):
 			elif('languages' in label):
 				languages = dataCells[1].text					
 
-		print(addedBy)
-		print(date)
-		print(time)
-		print(source)
-		print(memory)
-		print(cluster)
-		print(languages)
+		medianSubmissionSize = 0.0
+		submissionSizes = []
 
-		prob = SpojProblem(problemName, problemUrl, problemTag, problemText, addedBy, date, time, source, memory, cluster, languages)
+		divContent = driver.find_element_by_id('content')
+		statusUrl = ''
+		aTags = divContent.find_elements_by_tag_name('a')
+		for aTag in aTags:
+			if 'status' in aTag.get_attribute('href'):
+				statusUrl = aTag.get_attribute('href')
+				break
+
+		flag = True
+		while flag:
+			if statusUrl is not "":
+				try:
+					driver.get(statusUrl)
+					# time.sleep(5)
+					print 'got problem status page'
+					titleTag = driver.find_element_by_tag_name('title')
+					if 'error' in titleTag.text.lower():
+						print 'got error page'
+						return None
+					else:
+						
+						#tableTag = driver.find_element_by_class_name('problems table newstatus')
+						time.sleep(4)
+						tableTag = driver.find_element_by_tag_name('table')
+						bodyTag = tableTag.find_element_by_tag_name('tbody')
+						allRowTags = bodyTag.find_elements_by_tag_name('tr')
+						for rowTag in allRowTags:
+							allDataTags = rowTag.find_elements_by_tag_name('td')
+							if 'c++' in allDataTags[6].text.lower() and 'accepted' in allDataTags[3].text:
+								#print re.sub("[^0-9, .]", "", allDataTags[5].text)
+								submissionSizes.append(float(re.sub("[^0-9, .]", "", allDataTags[5].text)))
+
+						paginationTag = driver.find_element_by_class_name('pagination')
+						aTags = paginationTag.find_elements_by_tag_name('a')
+						flag = False
+						for aTag in aTags:
+							if 'next' in aTag.text.lower():
+								statusUrl = aTag.get_attribute('href')
+								#driver.get(aTag.get_attribute('href'))
+
+				except Exception as e:
+					print 'exception raised while pulling status page'
+					print e
+					exc_type, exc_obj, exc_tb = sys.exc_info()
+					print exc_tb.tb_lineno
+			
+		if len(submissionSizes) == 0:
+			print 'no c++ based submission sizes'
+			return None
+		submissionSizes.sort()
+		medianSubmissionSize = submissionSizes[(len(submissionSizes) - 1)/2]
+		# print(addedBy)
+		# print(date)
+		# print(timelimit)
+		# print(source)
+		# print(memory)
+		# print(cluster)
+		# print(languages)
+
+		prob = SpojProblem(problemName, problemUrl, problemTag, problemText, addedBy, date, timelimit, source, memory, cluster, languages, medianSubmissionSize)
+		print prob
 		return prob
 	except Exception as e:
 			print('element not found')
 			print(e)
-			with open('spoj/unscuccessful', 'a') as f:
+			exc_type, exc_obj, exc_tb = sys.exc_info()
+			print exc_tb.tb_lineno
+			with open('spoj/unsuccessful', 'a') as f:
 				f.write(problemName+'\n')
 			return None
 	finally:

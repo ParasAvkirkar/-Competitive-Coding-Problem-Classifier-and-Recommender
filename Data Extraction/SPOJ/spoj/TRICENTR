@@ -1,0 +1,57 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'description'
+p4
+V Given the length of side a of a triangle and the distances from the centroid (the point of concurrence of the medians - red in the picture) to all sides: a, b and c, calculate this triangle's area and the distance (blue line) from the orthocenter (the point of concurrence of the heights - green in the picture) to the centroid.  Input In the first line integer n - the number of test cases (equal to about 1000). The next n lines - 4 floating point values: the length of side a, and distances from the centroid to sides a, b and c. Output n lines consisting of 2 floating point values with 3 digits after the decimal point: the area of the triangle and the distance from the orthocenter to centroid. Example Input:\u000a2\u000a3.0 0.8660254038 0.8660254038 0.8660254038\u000a657.8256599140 151.6154399062 213.5392629932 139.4878846649\u000a\u000aOutput:\u000a3.897 0.000\u000a149604.790 150.275 Input: Output:
+p5
+sS'tags'
+p6
+S''
+p7
+sS'url'
+p8
+Vhttp://www.spoj.com/problems/TRICENTR
+p9
+sS'addedBy'
+p10
+VPatryk Pomykalski
+p11
+sS'memorylimit'
+p12
+V1536MB
+p13
+sS'cluster'
+p14
+VCube (Intel G860)
+p15
+sS'timelimit'
+p16
+V1s
+p17
+sS'submissionSize'
+p18
+F2.7
+sS'sourcelimit'
+p19
+V50000B
+p20
+sS'date'
+p21
+V2004-05-22
+p22
+sS'id'
+p23
+c__builtin__
+id
+p24
+sS'name'
+p25
+VTRICENTR
+p26
+sb.

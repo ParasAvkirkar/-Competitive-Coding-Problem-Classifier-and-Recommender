@@ -1,0 +1,77 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'output'
+p4
+(lp5
+VOutput The decrypted GMT time and date of attack, somewhere between 1970 and 2030, using standard 26 character formatting. 
+p6
+asS'description'
+p7
+V The infamous Bytelandian Bit-eating Fanatic Organisation (BBFO for short) plans to launch an all-out denial-of-service attack on the Bytelandian McDecimal's fast food network by blocking the entrance to every restaurant with a camel (the purpose being to rid the Organisation of unhealthy competition, obviously). In a sly and perfidious move, the head cryptographer of BBFO decided to disclose the date and time of the planned attack to the management of McDecimal's, but in encrypted form (ha ha). He calculated the number of seconds from midnight 1970.01.01 GMT to the moment of attack, squared it, divided it by 4000000007 and sent the remainder by e-mail to McDecimal's. This made the original date impossible to decode. Or did it? *   *   * You work as the head algorthimist at McDecimal's HQ and know nothing of what is happening in Byteland. Things are not going well. You are playing a quiet game of hearts against your computer and wondering why on earth Management are considering making you redundant. Suddenly, the CEO bursts into your office, saying: - Look here, young man[lady]! I have this number and those guys claim it is supposed to be some date. I am giving you one second to tell me what it all means! I am afraid you have no choice. You can't ask any further questions.\u000aYou just have to answer, now.  Input The encrypted timestamp. Output The decrypted GMT time and date of attack, somewhere between 1970 and 2030, using standard 26 character formatting. Example Input:\u000a1749870067  1749870067 Output:\u000aSun Jun 13 16:20:39 2004  Sun Jun 13 16:20:39 2004
+p8
+sS'tags'
+p9
+S''
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/CRYPTO1
+p12
+sS'addedBy'
+p13
+Vadrian
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V1s
+p20
+sS'statement'
+p21
+(lp22
+V The infamous Bytelandian Bit-eating Fanatic Organisation (BBFO for short) plans to launch an all-out denial-of-service attack on the Bytelandian McDecimal's fast food network by blocking the entrance to every restaurant with a camel (the purpose being to rid the Organisation of unhealthy competition, obviously). In a sly and perfidious move, the head cryptographer of BBFO decided to disclose the date and time of the planned attack to the management of McDecimal's, but in encrypted form (ha ha). He calculated the number of seconds from midnight 1970.01.01 GMT to the moment of attack, squared it, divided it by 4000000007 and sent the remainder by e-mail to McDecimal's. This made the original date impossible to decode. Or did it? *   *   * You work as the head algorthimist at McDecimal's HQ and know nothing of what is happening in Byteland. Things are not going well. You are playing a quiet game of hearts against your computer and wondering why on earth Management are considering making you redundant. Suddenly, the CEO bursts into your office, saying: - Look here, young man[lady]! I have this number and those guys claim it is supposed to be some date. I am giving you one second to tell me what it all means! I am afraid you have no choice. You can't ask any further questions.
+p23
+aVYou just have to answer, now.  
+p24
+asS'submissionSize'
+p25
+F0.0
+sS'sourcelimit'
+p26
+V;)
+p27
+sS'date'
+p28
+V2004-05-13
+p29
+sS'input'
+p30
+(lp31
+VInput The encrypted timestamp. 
+p32
+asS'constraints'
+p33
+g31
+sS'id'
+p34
+c__builtin__
+id
+p35
+sS'name'
+p36
+VCRYPTO1
+p37
+sb.

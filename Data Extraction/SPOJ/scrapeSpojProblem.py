@@ -66,7 +66,7 @@ for section in sections[sec_count:]:
 								print('not successfull ' + str(count))
 							else:
 								print('successfull ' + str(count))
-								with open('SPOJ/'+prob.name, 'w+b') as f:
+								with open('spoj/'+prob.name, 'w+b') as f:
 									pickle.dump(prob, f)
 									# f.write(p.__str__())
 									# f.write(str(p.id)+'\t'+p.name+'\t'+p.url+'\t'+p.tags+'\t')#+p.description.encode('utf-8'))

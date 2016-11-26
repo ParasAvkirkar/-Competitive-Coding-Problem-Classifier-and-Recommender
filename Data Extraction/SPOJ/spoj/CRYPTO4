@@ -1,0 +1,57 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll except: NODEJS PERL 6 VB.net
+p3
+sS'description'
+p4
+V The Bytelandian Cryptographer has been requested by the BBFO to put forward an encryption scheme which would allow the BBFO to communicate with its foreign associates. After some intensive studies, he has decided upon the Vigen\u010f\u017c\u02ddre cipher. Messages written using 26 upper case characters of the Latin alphabet: A, B, ..., Z which are interpreted as integers 0,1, ..., 25 respectively. The secret cypher for transmitting a message is known to both sides and consists of n integers k1, k2,...,kn. Using this cypher, the i-th number xi of the input message x is encrypted to the form of the i-th number of the output message y, as follows:\u000ayi =(xi+k1+ ((i-1) mod n)) mod 26. 1 2 n i  i i 1+ ((i-1) mod n) You are trying to find out the content of a message transmitted by the BBFO. By a lucky stroke of fortune, your spies managed to intercept the message in both its plaintext and encrypted form (x and y respectively). Unfortunately, during their dramatic escape the files they were carrying where pierced by bullets and fragments of messages x and y were inadvertently lost. Or were they? It is your task to reconstruct as much of message x as you possibly can. Input The first line of input contains a single integer t<=200 denoting the number of test cases. t test case descriptions follow. For each test case, the first line contains one integer m which is some upper bound on the length of the cypher (1<=n<=m<=100000). The second line of input contains the original message x, while the third line contains the encrypted message y. The messages are expressed using characters 'A'-'Z' (interpreted as integers 0-25) and '*' (denoting a single character illegible due to damage). The total length of the input file is not more than 2MB. Output For each test case output a single line containing the original message x, with asterisks '*' in place of only those characters whose value cannot be determined. Example Input:\u000a4\u000a1\u000aA*X*C\u000a**CM*\u000a4\u000a*B***A\u000aAAAAAA\u000a6\u000a*B***A\u000aAAAAAA\u000a4\u000a*AA*******\u000aAAAAAAAAAA\u000a\u000aOutput:\u000aA*XHC\u000a*BA*BA\u000a*B***A\u000a*AA**A**** Input: Output: Warning: large Input/Output data, be careful with certain languages.\u000aThe time limit is strict for this problem. 
+p5
+sS'tags'
+p6
+S''
+p7
+sS'url'
+p8
+Vhttp://www.spoj.com/problems/CRYPTO4
+p9
+sS'addedBy'
+p10
+VKonrad Piwakowski
+p11
+sS'memorylimit'
+p12
+V1536MB
+p13
+sS'cluster'
+p14
+VCube (Intel G860)
+p15
+sS'timelimit'
+p16
+V17s
+p17
+sS'submissionSize'
+p18
+F9.2
+sS'sourcelimit'
+p19
+VDASM Programming League 2004 (problemset 3)
+p20
+sS'date'
+p21
+V2004-11-16
+p22
+sS'id'
+p23
+c__builtin__
+id
+p24
+sS'name'
+p25
+VCRYPTO4
+p26
+sb.

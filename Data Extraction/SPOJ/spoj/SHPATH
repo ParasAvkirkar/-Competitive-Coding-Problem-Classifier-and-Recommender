@@ -1,0 +1,91 @@
+(ispojProblem
+SpojProblem
+p0
+(dp1
+S'languages'
+p2
+VAll
+p3
+sS'output'
+p4
+(lp5
+VOutput   cost [the minimum transportation cost from city NAME1 to city NAME2 (one per line)] cost NAME1 NAME2   
+p6
+asS'description'
+p7
+V You are given a list of cities. Each direct connection between two cities has its transportation cost (an integer bigger than 0). The goal is to find the paths of minimum cost between pairs of cities. Assume that the cost of each path (which is the sum of costs of all direct connections belongning to this path) is at most 200000. The name of a city is a string containing characters a,...,z and is at most 10 characters long. Input   s [the number of tests <= 10]\u000an [the number of cities <= 10000]\u000aNAME [city name]\u000ap [the number of neighbours of city NAME]\u000anr cost [nr - index of a city connected to NAME (the index of the first city is 1)]\u000a           [cost - the transportation cost]\u000ar [the number of paths to find <= 100]\u000aNAME1 NAME2 [NAME1 - source, NAME2 - destination]\u000a[empty line separating the tests] s n NAME p NAME nr cost nr NAME cost r 100 NAME1 NAME2 NAME1 NAME2   Output   cost [the minimum transportation cost from city NAME1 to city NAME2 (one per line)] cost NAME1 NAME2   Example   Input:\u000a1\u000a4\u000agdansk\u000a2\u000a2 1\u000a3 3\u000abydgoszcz\u000a3\u000a1 1\u000a3 1\u000a4 4\u000atorun\u000a3\u000a1 3\u000a2 1\u000a4 1\u000awarszawa\u000a2\u000a2 4\u000a3 1\u000a2\u000agdansk warszawa\u000abydgoszcz warszawa\u000a\u000aOutput:\u000a3\u000a2 Input: Output:   Warning: large Input/Output data, be careful with certain languages Warning: large Input/Output data, be careful with certain languages
+p8
+sS'tags'
+p9
+V #shortest-path #dijkstra-s-algorithm
+p10
+sS'url'
+p11
+Vhttp://www.spoj.com/problems/SHPATH
+p12
+sS'addedBy'
+p13
+VDarek Dereniowski
+p14
+sS'memorylimit'
+p15
+V1536MB
+p16
+sS'cluster'
+p17
+VCube (Intel G860)
+p18
+sS'timelimit'
+p19
+V1.5s
+p20
+sS'statement'
+p21
+(lp22
+V You are given a list of cities. Each direct connection between two cities has its transportation cost (an integer bigger than 0). The goal is to find the paths of minimum cost between pairs of cities. Assume that the cost of each path (which is the sum of costs of all direct connections belongning to this path) is at most 200000. The name of a city is a string containing characters a,...,z and is at most 10 characters long. 
+p23
+asS'submissionSize'
+p24
+F0.0
+sS'sourcelimit'
+p25
+VDASM Programming League 2003 (problemset 11)
+p26
+sS'date'
+p27
+V2004-05-10
+p28
+sS'input'
+p29
+(lp30
+VInput   s [the number of tests <= 10]
+p31
+aVn [the number of cities <= 10000]
+p32
+aVNAME [city name]
+p33
+aVp [the number of neighbours of city NAME]
+p34
+aVnr cost [nr - index of a city connected to NAME (the index of the first city is 1)]
+p35
+aV           [cost - the transportation cost]
+p36
+aVr [the number of paths to find <= 100]
+p37
+aVNAME1 NAME2 [NAME1 - source, NAME2 - destination]
+p38
+aV[empty line separating the tests] s n NAME p NAME nr cost nr NAME cost r 100 NAME1 NAME2 NAME1 NAME2   
+p39
+asS'constraints'
+p40
+g30
+sS'id'
+p41
+c__builtin__
+id
+p42
+sS'name'
+p43
+VSHPATH
+p44
+sb.
