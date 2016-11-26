@@ -31,6 +31,7 @@ for section in sections[sec_count:]:
 			for a in allHrefTags:
 				if a.has_attr('href') and 'problem' in a['href']:
 					p = getCodechefProblem(codechefUrl+a['href'])
+					print p
 					if p:
 						with open('codechef/'+p.name, 'w+b') as f:
 							pickle.dump(p, f)

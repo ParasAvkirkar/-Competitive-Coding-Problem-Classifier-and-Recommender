@@ -6,10 +6,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.common.keys import Keys
 
 import requests
 import pickle
-from user import User
+from user import User, UserSubmission
+
+
 
 def fetch_user(uname, driver):
 	
@@ -49,13 +52,25 @@ def fetch_user(uname, driver):
 		rating_table = driver.find_element_by_class_name('rating-table')		
 
 		#Get the problems solved
-		problemsSolved = []
+		#problemsSolved = []
+		userSubmissions = []
 		countProbs = 0
 		aTags = driver.find_elements_by_tag_name('a')
 		for aTag in aTags:
 			if aTag.get_attribute('href') is not None and 'status' in aTag.get_attribute('href'):
-				problemsSolved.append(aTag.text)
+				problemCode = aTag.text
+				noOfSubmission = 0
+				date = None
+
+				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 't') 
+				
+				driver.get('https://www.codechef.com' + aTag.get_attribute('href'))
 				countProbs = countProbs + 1
+				
+				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
+				
+				userSubmissions.append( UserSubmission(problemCode, noOfSubmission, date))
+				#problemsSolved.append(aTag.text)
 				#print(str(countProbs))
 
 		# for p in problemsSolved:
@@ -146,7 +161,8 @@ def fetch_user(uname, driver):
 	finally:
 		pass
 
-driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+#driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+driver = webdriver.Chrome()
 # driver = webdriver.Chrome()
 #fetch_user('anudeep2011', driver)
 # fetch_user('paras18', driver)

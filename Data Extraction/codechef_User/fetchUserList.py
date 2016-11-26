@@ -45,7 +45,8 @@ def fetch_user_list(start, driver):
 		
 	
 
-driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+#driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+driver = webdriver.Chrome()
 # fetch_user('anudeep2011', driver)
 # fetch_user('sherlock_holms', driver)
 fetch_user_list(101, driver)
