@@ -1,7 +1,7 @@
 class CodeForcesUser:
 	'Class representing users on Codeforces'
 
-	def __init__(self, url, uname, name, country, city, organization, probs, ratings, rank):
+	def __init__(self, url, uname, name, country, city, organization, probs, submissions, ratings, rank):
 		self.url = url
 		self.uname = uname
 		self.name = name
@@ -10,7 +10,8 @@ class CodeForcesUser:
 		self.country = country
 		self.city = city
 		self.probs = probs
-
+		self.submissions =submissions
+		
 		self.ratings = ratings
 		self.rank = rank
 
