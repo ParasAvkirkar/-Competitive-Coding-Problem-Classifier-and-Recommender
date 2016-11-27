@@ -2,10 +2,13 @@ import MySQLdb
 
 class UserSubmission:
 	"""docstring for ClassName"""
-	def __init__(self, problemCode, noOfSubmissions, date):
+	def __init__(self, problemCode, noOfSubmissions, time):
 		self.problemCode = problemCode
 		self.noOfSubmissions = noOfSubmissions
-		self.date = date
+		self.time = time
+
+	def __str__(self):
+		return "Problem code: " + self.problemCode + " No of submissions: " + str(self.noOfSubmissions) + " Time: "+str(self.time)
 
 class User:
 	baseUrl = "https://www.codechef.com/users/"
@@ -25,6 +28,10 @@ class User:
 
 		self.ratings = ratings
 		self.ranks = ranks
+
+	def __str__(self):
+		return 'Username: '+self.uname+' Country: '+self.country+' City: '+self.city+' isStudent'+str(self.isStudent)
+		+ ' Prefered Language: ' + self.prefLang + ' Ratings: '+self.ratings+' Ranks: '+self.ranks
 
 	# def connect_db(self):
 	# 	# Open database connection

@@ -7,14 +7,21 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.keys import Keys
-
-import requests
-import pickle
+from datetime import datetime
 from user import User, UserSubmission
 
 
+import requests
+import pickle
+import sys, os
+sys.path.append("../DataBase")
+import sqlDB
 
-def fetch_user(uname, driver):
+
+
+
+
+def fetch_user(uname, driver, statusPageDriver):
 	
 	baseUrl = "https://www.codechef.com/users/"
 	userLink = baseUrl + uname
@@ -26,12 +33,9 @@ def fetch_user(uname, driver):
 	try:
 		countryElm = driver.find_element_by_class_name('user-country-name')
 		country = countryElm.text
-		# print(countryElm.text)
 
 		print(country)
 
-		#Get the city and student/professional
-		#tableTag = driver.find_elements_by_tag_name('table')
 		allTrs = driver.find_elements_by_tag_name('tr')
 		isStudent = False
 		userCity = ''
@@ -55,23 +59,65 @@ def fetch_user(uname, driver):
 		#problemsSolved = []
 		userSubmissions = []
 		countProbs = 0
-		aTags = driver.find_elements_by_tag_name('a')
-		for aTag in aTags:
-			if aTag.get_attribute('href') is not None and 'status' in aTag.get_attribute('href'):
-				problemCode = aTag.text
-				noOfSubmission = 0
-				date = None
+		divOfTable = driver.find_element_by_class_name('profile')
+		rowTags = divOfTable.find_elements_by_tag_name('tr')
 
-				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 't') 
-				
-				driver.get('https://www.codechef.com' + aTag.get_attribute('href'))
-				countProbs = countProbs + 1
-				
-				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
-				
-				userSubmissions.append( UserSubmission(problemCode, noOfSubmission, date))
-				#problemsSolved.append(aTag.text)
-				#print(str(countProbs))
+		try:
+			for rowTag in rowTags:
+				allDataTags = rowTag.find_elements_by_tag_name('td')
+				if 'success' in allDataTags[0].text.lower():
+					aTags = allDataTags[1].find_elements_by_tag_name('a')
+					for aTag in aTags:
+						if aTag.get_attribute('href') is not None and 'status' in aTag.get_attribute('href'):
+							problemCode = aTag.text
+							noOfSubmission = 0
+							time = None
+
+							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 't') 
+							
+							countProbs = countProbs + 1
+							flag = True
+							statusUrl = aTag.get_attribute('href')
+							try:
+								while flag:
+									statusPageDriver.get(statusUrl)
+									tableTagStatus = statusPageDriver.find_element_by_class_name('dataTable')
+									bodyTagStatus = tableTagStatus.find_element_by_tag_name('tbody')
+									rowTagsStatus = bodyTagStatus.find_elements_by_tag_name('tr')
+									allDataTagsStatus = rowTagsStatus[0].find_elements_by_tag_name('td')
+									# print 'no of submission '+str(noOfSubmission) + ' row tag length'
+									# for r in rowTagsStatus:
+									# 	print r
+									noOfSubmission = noOfSubmission + len(rowTagsStatus)
+									if time is None:
+										#10:57 PM 08/10/15
+										time = datetime.strptime(allDataTagsStatus[1].text,'%I:%M %p %d/%m/%y')
+
+									aTagsStatus = statusPageDriver.find_elements_by_tag_name('a')
+									flag = False
+									for aTagStatus in aTagsStatus:
+										if aTagStatus.get_attribute('href') is not None and 'status' in aTagStatus.get_attribute('href'):
+											imgTag = aTagStatus.find_element_by_tag_name('img')
+											if 'next' in imgTag.get_attribute('src'):
+												statusUrl = aTagStatus.get_attribute('href')
+												flag = True
+												break
+							except Exception as e:
+								print (e)
+								exc_type, exc_obj, exc_tb = sys.exc_info()
+								print exc_tb.tb_lineno
+
+
+							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
+							
+							userSubmissions.append( UserSubmission(problemCode, noOfSubmission, time))
+							print userSubmissions[len(userSubmissions)-1]
+					break		
+		except Exception as e:
+			print (e)
+			exc_type, exc_obj, exc_tb = sys.exc_info()
+			print exc_tb.tb_lineno
+
 
 		# for p in problemsSolved:
 		# 	print(p)
@@ -139,9 +185,9 @@ def fetch_user(uname, driver):
 
 		print prefLang		
 
-		u = User(uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)
-		u.insert_db(uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)
-		
+		u = User(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
+		#u.insert_db(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
+		sqlDB.insert_user_db('codechef_user', uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)		
 		with open('users/' + uname, 'w+b') as f:
 			pickle.dump(u, f)
 
@@ -155,6 +201,8 @@ def fetch_user(uname, driver):
 	except Exception as e:
 		print(e)
 		print('element not found')
+		exc_type, exc_obj, exc_tb = sys.exc_info()
+		print exc_tb.tb_lineno
 		prob = None
 	else:
 		pass
@@ -163,6 +211,7 @@ def fetch_user(uname, driver):
 
 #driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
 driver = webdriver.Chrome()
+statusPageDriver = webdriver.Chrome()
 # driver = webdriver.Chrome()
 #fetch_user('anudeep2011', driver)
 # fetch_user('paras18', driver)
@@ -186,7 +235,7 @@ f = open('users_ids.txt', 'r')
 for uname in f:
 	if count == i:
 		uname = uname.split('\n')[0]
-		fetch_user(uname, driver)
+		fetch_user(uname, driver, statusPageDriver)
 		
 		count += 1
 		with open('curr_progress', 'w+b') as f:
