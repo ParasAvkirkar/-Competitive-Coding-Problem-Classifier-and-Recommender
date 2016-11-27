@@ -8,8 +8,9 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import requests
 from spojUser import SpojUser
-import pickle
-
+import pickle, sys
+sys.path.append("../DataBase")
+import sqlDB
 
 
 def fetch_user(userLink, driver):
@@ -85,13 +86,11 @@ def fetch_user(userLink, driver):
 
 
 		user = SpojUser(userLink, uname, name, country, probs, rating, rank)
-		with open('users/' + uname, 'w+b') as f:
-			pickle.dump(user, f)
 
-		# with open('users/' + uname, 'r+b') as f2:
-		# 	n = pickle.load(f2)
-		# 	print n.name
-		
+		sqlDB.insert_user_db("spoj_user", uname, country, country, True, probs, "C++", rating, rank)
+		# with open('users/' + uname, 'w+b') as f:
+		# 	pickle.dump(user, f)
+
 
 		
 	except Exception as e:
@@ -103,8 +102,8 @@ def fetch_user(userLink, driver):
 	finally:
 		pass
 
-driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-
+# driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 count = 0
 
 try:

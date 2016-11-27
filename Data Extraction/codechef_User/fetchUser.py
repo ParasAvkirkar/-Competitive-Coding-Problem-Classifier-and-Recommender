@@ -11,7 +11,9 @@ from selenium.webdriver.common.keys import Keys
 import requests
 import pickle
 from user import User, UserSubmission
-
+import sys
+sys.path.append("../DataBase")
+import sqlDB
 
 
 def fetch_user(uname, driver):
@@ -52,7 +54,7 @@ def fetch_user(uname, driver):
 		rating_table = driver.find_element_by_class_name('rating-table')		
 
 		#Get the problems solved
-		#problemsSolved = []
+		problemsSolved = []
 		userSubmissions = []
 		countProbs = 0
 		aTags = driver.find_elements_by_tag_name('a')
@@ -70,7 +72,7 @@ def fetch_user(uname, driver):
 				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
 				
 				userSubmissions.append( UserSubmission(problemCode, noOfSubmission, date))
-				#problemsSolved.append(aTag.text)
+				problemsSolved.append(aTag.text)
 				#print(str(countProbs))
 
 		# for p in problemsSolved:
@@ -140,7 +142,7 @@ def fetch_user(uname, driver):
 		print prefLang		
 
 		u = User(uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)
-		u.insert_db(uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)
+		sqlDB.insert_user_db('codechef_user', uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)
 		
 		with open('users/' + uname, 'w+b') as f:
 			pickle.dump(u, f)

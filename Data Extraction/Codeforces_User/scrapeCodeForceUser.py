@@ -13,9 +13,12 @@ import requests
 import json
 import pickle
 import os
-import time
+import time, sys
+sys.path.append("../DataBase")
+import sqlDB
 
-def fetch_user(userLink):
+
+def fetch_user(userLink, driver):
 	try:
 
 		codeforcesProfileUrl = 'http://codeforces.com/profile/'
@@ -51,10 +54,28 @@ def fetch_user(userLink):
 				# print problemDetailDict['index']
 				problemCodes.append(str(problemDetailDict['contestId']) + '/' + str(problemDetailDict['index']))
 
+		submission_link = 'http://codeforces.com/submissions/'+stringUserDict.get('handle', '')
+		driver.get(submission_link)
+		table = driver.find_element_by_class_name('status-frame-datatable')
+		rows = table.find_elements(By.TAG_NAME, 'tr')
+		langs = {}
+		for row in rows[1:]:
+			cols = row.find_elements(By.TAG_NAME, 'td')
+			if cols[4].text in langs:
+				langs[cols[4].text] += 1
+			else:
+				langs[cols[4].text] = 1
+		prefLang = ""
+		max = -1;
+		for key in langs:
+			if langs[key] > max:
+				prefLang = key
+				max = langs[key]
+
 		user = CodeForcesUser(codeforcesProfileUrl + stringUserDict.get('handle', ''), stringUserDict.get('handle', ''),
 								stringUserDict.get('firstName', '') + ' ' + stringUserDict.get('lastName', ''), 
 								stringUserDict.get('country', ''), stringUserDict.get('city', ''), stringUserDict.get('organization', ''),
-								problemCodes, submissionsList, stringUserDict.get('rating', ''), stringUserDict.get('rank', ''))
+								problemCodes, submissionsList, stringUserDict.get('rating', ''), stringUserDict.get('rank', ''), prefLang)
 
 	
 	except Exception as e:
@@ -95,7 +116,7 @@ def fetch_submissions(resultList):
 		return submissionsList
 
 if __name__ == '__main__':
-	#driver = webdriver.Chrome()
+	driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 	with open('texts/supuserList.txt') as listF:
 		userHandles = listF.read().splitlines()
 		count = 0
@@ -110,7 +131,9 @@ if __name__ == '__main__':
 				pickle.dump(count, progWrite)
 				count = count + 1
 
-			user = fetch_user('http://codeforces.com/api/user.info?handles='+ userHandles[i] +';')
-			with open('users/' + userHandles[i], 'wb') as userWrite:
-				pickle.dump(user, userWrite)
+			user = fetch_user('http://codeforces.com/api/user.info?handles='+ userHandles[i] +';', driver)
+			if user:
+				sqlDB.insert_user_db('codeforces_user', user.uname, user.country, user.city, True, user.probs, user.pref_lang, user.ratings, user.rank)
+			# with open('users/' + userHandles[i], 'wb') as userWrite:
+			# 	pickle.dump(user, userWrite)
 			print('count = ' + str(count) + ' ' + str(user))
