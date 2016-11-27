@@ -1,17 +1,26 @@
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+import nltk.classify.util
+
 class Problem:
 	'Class for representing problems solved'
 
-	def __init__(self, name, url, tags, description, submissionSize):
+	def __init__(self, name, url, tags, description, difficulty, submission_size):
 		self.id = id
 		self.name = name
 		self.url = url
 		self.tags = tags
 		self.description = description
-		self.submissionSize = submissionSize
 		self.process_description()
+		self.difficulty = difficulty
+		self.submission_size = submission_size
+		if difficulty == 'hard':
+			self.example_given = False
+		self.example_given = True
+		self.category = self.tags
 
 	def __str__(self):
-		return "Problem name: " + self.name + " Problem tag: " + self.tags + " Problem url: "+self.url + " Submission Size: "+ str(self.submissionSize)
+		return "Problem name: " + self.name + " Problem tag: " + self.tags + " Problem url: "+self.url + " Submission Size: "+ str(self.submission_size)
 		#return "Problem name: " + self.name + " Problem tag: " + self.tag
 
 	def process_description(self):
@@ -50,12 +59,25 @@ class Problem:
 		sources_limit_start =  [i for i,word in enumerate(description_lines) if word.startswith('Source Limit:')][0]
 		lang_limit_start =  [i for i,word in enumerate(description_lines) if word.startswith('Languages:')][0]
 		self.statement = description_lines[:input_start]
+		self.statement = ((self.create_word_features(self.statement)).replace('"', '')).replace("'", "")
 		self.input = description_lines[input_start:constraint_start]
+		self.input = ((self.create_word_features(self.input)).replace('"', '')).replace("'", "")
 		self.constraints = description_lines[constraint_start:example_start]
+		self.constraints = ((self.create_word_features(self.constraints)).replace('"', '')).replace("'", "")
 		self.time_limit = description_lines[time_limit_start:sources_limit_start]
 		self.source_limit = description_lines[sources_limit_start:lang_limit_start]
+		sl = self.source_limit[0]
+		self.source_limit = (sl[sl.index(':')+1:sl.index('B')]).strip()
+		tl = self.time_limit[0]
+		self.time_limit = (tl[tl.index(':')+1:tl.index('s')]).strip()
 		# print self.input
 		# print self.constraints
 		# print self.time_limit
-		# print self.source_limit
+		print self.source_limit
+
+	def create_word_features(self, words):
+		useful_words = [word for word in words if word not in
+                        stopwords.words('english')]
+		my_dict = ' '.join([word for word in useful_words])
+		return my_dict
 

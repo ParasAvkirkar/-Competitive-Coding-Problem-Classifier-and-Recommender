@@ -15,7 +15,7 @@ import time
 driver = webdriver.Chrome()
 
 #driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
-def getCodechefProblem(problemUrl):
+def getCodechefProblem(problemUrl, difficulty):
 	count = 0
 	# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 	# submissionPageQuery = "?sort_by=All&sorting_order=asc&language=All&status=15&handle=&Submit=GO"
@@ -90,9 +90,9 @@ def getCodechefProblem(problemUrl):
 						time.sleep(2)
 						break
 				except Exception as e:
-					print e
+					# print e
 					exc_type, exc_obj, exc_tb = sys.exc_info()
-					print exc_tb.tb_lineno
+					# print exc_tb.tb_lineno
 					onclickAttr = None
 
 		
@@ -100,7 +100,7 @@ def getCodechefProblem(problemUrl):
 		medianSubmissionSize = submissionSizes[(len(submissionSizes) - 1)/2]
 		print str(medianSubmissionSize) + " median submission size"
 		
-		prob = Problem(problemName, problemUrl, problemTags, problemText, medianSubmissionSize)
+		prob = Problem(problemName, problemUrl, problemTags, problemText, difficulty, medianSubmissionSize)
 		count = count + 1
 		return prob
 	except Exception as e:
