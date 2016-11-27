@@ -1,0 +1,4 @@
+localost
+root
+
+data stage fyp
