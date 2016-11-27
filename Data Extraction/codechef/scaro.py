@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import requests
 import pickle
 from problems import Problem
+import sys
+sys.path.append("../DataBase")
+import sqlDB
 
 current_progress = {'section':0, 'problem_no':0}
 codechefUrl = 'https://www.codechef.com'
@@ -30,11 +33,12 @@ for section in sections[sec_count:]:
 			allHrefTags = row.find_all('a')
 			for a in allHrefTags:
 				if a.has_attr('href') and 'problem' in a['href']:
-					p = getCodechefProblem(codechefUrl+a['href'])
-					print p
+					p = getCodechefProblem(codechefUrl+a['href'], sections[current_progress['section']])
 					if p:
-						with open('codechef/'+p.name, 'w+b') as f:
-							pickle.dump(p, f)
+						sqlDB.insert_problem_db('codechef_problem', p.name, p.url, p.statement, p.tags, p.difficulty, p.category,
+												p.submission_size, p.constraints, p.time_limit, p.source_limit, p.example_given)
+						# with open('codechef/'+p.name, 'w+b') as f:
+						# 	pickle.dump(p, f)
 							# f.write(p.__str__())
 							# f.write(str(p.id)+'\t'+p.name+'\t'+p.url+'\t'+p.tags+'\t')#+p.description.encode('utf-8'))
 							# f.write(p.description.encode('utf-8'))

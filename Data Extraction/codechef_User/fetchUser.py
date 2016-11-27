@@ -13,13 +13,10 @@ from user import User, UserSubmission
 
 import requests
 import pickle
+
 import sys, os
 sys.path.append("../DataBase")
 import sqlDB
-
-
-
-
 
 def fetch_user(uname, driver, statusPageDriver):
 	
@@ -56,9 +53,10 @@ def fetch_user(uname, driver, statusPageDriver):
 		rating_table = driver.find_element_by_class_name('rating-table')		
 
 		#Get the problems solved
-		#problemsSolved = []
+		problemsSolved = []
 		userSubmissions = []
 		countProbs = 0
+
 		divOfTable = driver.find_element_by_class_name('profile')
 		rowTags = divOfTable.find_elements_by_tag_name('tr')
 
@@ -117,6 +115,25 @@ def fetch_user(uname, driver, statusPageDriver):
 			print (e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			print exc_tb.tb_lineno
+
+
+		aTags = driver.find_elements_by_tag_name('a')
+		for aTag in aTags:
+			if aTag.get_attribute('href') is not None and 'status' in aTag.get_attribute('href'):
+				problemCode = aTag.text
+				noOfSubmission = 0
+				date = None
+
+				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 't') 
+				
+				driver.get('https://www.codechef.com' + aTag.get_attribute('href'))
+				countProbs = countProbs + 1
+				
+				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
+				
+				userSubmissions.append( UserSubmission(problemCode, noOfSubmission, date))
+				problemsSolved.append(aTag.text)
+				#print(str(countProbs))
 
 
 		# for p in problemsSolved:
@@ -184,6 +201,7 @@ def fetch_user(uname, driver, statusPageDriver):
 				prefLang = key
 
 		print prefLang		
+
 
 		u = User(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
 		#u.insert_db(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)

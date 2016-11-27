@@ -29,6 +29,7 @@ class User:
 		self.ratings = ratings
 		self.ranks = ranks
 
+
 	def __str__(self):
 		return 'Username: '+self.uname+' Country: '+self.country+' City: '+self.city+' isStudent'+str(self.isStudent)
 		+ ' Prefered Language: ' + self.prefLang + ' Ratings: '+self.ratings+' Ranks: '+self.ranks
@@ -57,4 +58,3 @@ class User:
 	# 		print "Success DB"
 	# 	else: print "Fail DB"	
 			
-
