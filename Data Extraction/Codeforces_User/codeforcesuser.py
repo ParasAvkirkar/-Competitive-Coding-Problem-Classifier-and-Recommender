@@ -20,3 +20,12 @@ class CodeForcesUser:
 	def __str__(self):
 		return self.uname + " " + self.name + " " + self.country + " " + self.city + " " + self.organization + " " + self.rank + " " + self.ratings
 
+class UserSubmission:
+	"""docstring for ClassName"""
+	def __init__(self, problemCode, noOfSubmissions, time):
+		self.problemCode = problemCode
+		self.noOfSubmissions = noOfSubmissions
+		self.time = time
+
+	def __str__(self):
+		return "Problem code: " + self.problemCode + " No of submissions: " + str(self.noOfSubmissions) + " Time: "+str(self.time)
