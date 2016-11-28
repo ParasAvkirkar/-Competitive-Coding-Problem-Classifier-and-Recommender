@@ -16,7 +16,9 @@ import pickle
 
 import sys, os
 sys.path.append("../DataBase")
+sys.path.append("../Utilities")
 import sqlDB
+from driverUtil import getDriver
 
 def fetch_user(uname, driver, statusPageDriver):
 	
@@ -224,13 +226,26 @@ def fetch_user(uname, driver, statusPageDriver):
 
 #driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
 # driver = webdriver.Chrome()
-driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
-statusPageDriver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+# driver = None
+# paths = ['', 'C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe', 'C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe']
+# i = 0
+# while driver is None:
+# 	try:
+# 		driver = webdriver.Chrome(paths[i])
+# 	except:
+# 		pass
+# 	i = i + 1
+driver = getDriver()
+
+
+#statusPageDriver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 # driver = webdriver.Chrome()
 #fetch_user('anudeep2011', driver)
 # fetch_user('paras18', driver)
 # fetch_user('paragpachpute', driver)
 # fetch_user('pranay0007', driver)
+statusPageDriver = getDriver()
 
 count = 0
 
@@ -245,20 +260,20 @@ except Exception as e:
 
 i = 0
 
-# f = open('users_ids.txt', 'r')
-# for uname in f:
-# 	if count == i:
-# 		uname = uname.split('\n')[0]
-# 		fetch_user(uname, driver, statusPageDriver)
-#
-# 		count += 1
-# 		with open('curr_progress', 'w+b') as f:
-# 			pickle.dump(count, f)
-#
-# 	i += 1
+f = open('users_ids.txt', 'r')
+for uname in f:
+	if count == i:
+		uname = uname.split('\n')[0]
+		fetch_user(uname, driver, statusPageDriver)
+
+		count += 1
+		with open('curr_progress', 'w+b') as f:
+			pickle.dump(count, f)
+
+	i += 1
 # 	# print i, " ", count
 
-fetch_user('rahulj15', driver, statusPageDriver)
+# fetch_user('rahulj15', driver, statusPageDriver)
 driver.close()
 
 	

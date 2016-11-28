@@ -12,7 +12,10 @@ import requests
 import sys, os
 import time
 
-driver = webdriver.Chrome()
+sys.path.append("../Utilities")
+from driverUtil import getDriver
+driver = getDriver()
+
 
 #driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 def getCodechefProblem(problemUrl, difficulty):

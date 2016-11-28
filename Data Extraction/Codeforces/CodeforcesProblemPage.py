@@ -5,9 +5,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from CodeforcesProblem import CodeforcesProblem
 
-import re
+import re, sys
 
-driver = webdriver.Chrome()
+sys.path.append("../Utilities")
+from driverUtil import getDriver
+
+driver = getDriver()
 
 def getCodeforcesProblem(problemUrl,problemId):
 	

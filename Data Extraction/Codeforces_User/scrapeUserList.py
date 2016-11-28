@@ -10,12 +10,14 @@ from codeforcesuser import CodeForcesUser
 import requests
 import json
 import pickle
-import os
+import os, sys
 
+sys.path.append("../Utilities")
+from driverUtil import getDriver
 
 
 if __name__ == '__main__':
-	driver = webdriver.Chrome()
+	driver = getDriver()
 	#nextPageUrl = 'http://codeforces.com/ratings/all/true'
 	nextPageUrl = ''
 	mainUrl = 'http://codeforces.com/ratings/page/'

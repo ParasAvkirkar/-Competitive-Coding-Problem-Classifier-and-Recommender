@@ -17,6 +17,8 @@ import time, sys
 sys.path.append("../DataBase")
 import sqlDB
 
+sys.path.append("../Utilities")
+from driverUtil import getDriver
 
 def fetch_user(userLink, driver):
 	try:
@@ -116,7 +118,8 @@ def fetch_submissions(resultList):
 		return submissionsList
 
 if __name__ == '__main__':
-	driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+	# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+	driver = getDriver()
 	with open('texts/supuserList.txt') as listF:
 		userHandles = listF.read().splitlines()
 		count = 0

@@ -12,6 +12,9 @@ from spojUser import SpojUser, SubmissionDetails
 import pickle, sys, os
 sys.path.append("../DataBase")
 import sqlDB
+
+sys.path.append("../Utilities")
+from driverUtil import getDriver
 import time
 
 
@@ -177,10 +180,12 @@ def fetch_user(userLink, driver):
 		pass
 
 # driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+driver = getDriver()
 # driver = webdriver.Chrome()
 # statusDriver = webdriver.Chrome()
-statusDriver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+statusDriver = getDriver()
+
+
 count = 0
 
 try:
