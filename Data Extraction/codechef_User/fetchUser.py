@@ -103,7 +103,7 @@ def fetch_user(uname, driver, statusPageDriver):
 							except Exception as e:
 								print (e)
 								exc_type, exc_obj, exc_tb = sys.exc_info()
-								print exc_tb.tb_lineno
+								print 'Exception at line '+ str(exc_tb.tb_lineno) 
 
 
 							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
@@ -114,7 +114,7 @@ def fetch_user(uname, driver, statusPageDriver):
 		except Exception as e:
 			print (e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print exc_tb.tb_lineno
+			print 'Exception at line '+ str(exc_tb.tb_lineno) 
 
 
 		aTags = driver.find_elements_by_tag_name('a')
@@ -188,6 +188,13 @@ def fetch_user(uname, driver, statusPageDriver):
 
 			tds = tr.find_elements_by_tag_name('td')
 			l = tds[3].text
+			l = l.strip().lower()
+			if 'c++' in l:
+				l = 'c++'	
+			elif 'pas' in l:
+				l = 'pas'
+			elif 'pyth' in l:
+				l = 'python'
 			if l in lang:
 				lang[l] += 1
 			else:
@@ -199,6 +206,7 @@ def fetch_user(uname, driver, statusPageDriver):
 		for key in lang:
 			if lang[key] > max:
 				prefLang = key
+				max = lang[key]
 
 		print prefLang		
 
@@ -220,7 +228,7 @@ def fetch_user(uname, driver, statusPageDriver):
 		print(e)
 		print('element not found')
 		exc_type, exc_obj, exc_tb = sys.exc_info()
-		print exc_tb.tb_lineno
+		print 'Exception at line '+ str(exc_tb.tb_lineno) 
 		prob = None
 	else:
 		pass
