@@ -14,7 +14,7 @@ def connect_db():
 		db = MySQLdb.connect(ip, username, password, db_name)
 		return db
 
-def insert_user_db(tableName, uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank):
+def insert_user_db(tableName, uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank):
 		if tableName == 'codechef_user':
 			q = "INSERT INTO "+ tableName +" VALUES ( " + "null, '" + uname + "', '" + country + "', '" + userCity + "', '" \
 				+ str(isStudent) + "', '" + prefLang + "', '" + str(rating['Long']) + "', '" + str(rating['Short']) +"', '" + str(rating['LTime']) +"', '" + str(rank['Long']) +"', '"+ str(rank['Short']) +"', '" + str(rank['LTime']) + "');\n"
@@ -31,10 +31,13 @@ def insert_user_db(tableName, uname, country, userCity, isStudent, problemsSolve
 			db.commit()
 			print "Success DB"
 		else: print "Fail DB"
-
-		for probCode in problemsSolved:
-			if len(probCode)>0:
-				q = "INSERT INTO "+tableName.split("_")[0]+"_prob_user_map VALUES (null, '"+uname+"', '"+probCode+"' )"
+		# print userSubmissions
+		for submission in userSubmissions:
+			# print (submission)
+			if len(submission.problemCode)>0:
+				q = "INSERT INTO "+tableName.split("_")[0]+"_prob_user_map VALUES (null, '"+uname+"', '"+submission.problemCode+"', \
+					'"+str(submission.time)+"', '"+str(submission.noOfSubmissions)+"' )"
+				print q
 				if cursor.execute(q) == 1:
 					db.commit()
 					print "Success DB"

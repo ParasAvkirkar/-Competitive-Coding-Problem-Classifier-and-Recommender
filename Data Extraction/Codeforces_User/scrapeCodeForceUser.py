@@ -8,7 +8,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 from itertools import groupby
 
-from codeforcesuser import CodeForcesUser
+from codeforcesuser import CodeForcesUser, UserSubmission
 import requests
 import json
 import pickle
@@ -17,6 +17,8 @@ import time, sys
 sys.path.append("../DataBase")
 import sqlDB
 
+sys.path.append("../Utilities")
+from driverUtil import getDriver
 
 def fetch_user(userLink, driver):
 	try:
@@ -106,9 +108,9 @@ def fetch_submissions(resultList):
 			problemId = str(date[0][0]) + "/" + str(date[0][1])
 			submissionCount = successfulSubmissionCountDict[problemId]
 			submissionDate = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(date[1].get('creationTimeSeconds')))
-			submissionDetails = {"problemId" : problemId, "submissionDate" : submissionDate, "submissionCount" : submissionCount}
+			submissionDetails = UserSubmission(problemId, submissionCount, submissionDate)
 			submissionsList.append(submissionDetails)
-
+		print submissionsList
 	except Exception as e:
 		print(e)
 		submissionsList = Error
@@ -116,7 +118,8 @@ def fetch_submissions(resultList):
 		return submissionsList
 
 if __name__ == '__main__':
-	driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+	# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+	driver = getDriver()
 	with open('texts/supuserList.txt') as listF:
 		userHandles = listF.read().splitlines()
 		count = 0
@@ -133,7 +136,7 @@ if __name__ == '__main__':
 
 			user = fetch_user('http://codeforces.com/api/user.info?handles='+ userHandles[i] +';', driver)
 			if user:
-				sqlDB.insert_user_db('codeforces_user', user.uname, user.country, user.city, True, user.probs, user.pref_lang, user.ratings, user.rank)
+				sqlDB.insert_user_db('codeforces_user', user.uname, user.country, user.city, True, user.submissions, user.pref_lang, user.ratings, user.rank)
 			# with open('users/' + userHandles[i], 'wb') as userWrite:
 			# 	pickle.dump(user, userWrite)
 			print('count = ' + str(count) + ' ' + str(user))

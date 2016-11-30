@@ -16,7 +16,9 @@ import pickle
 
 import sys, os
 sys.path.append("../DataBase")
+sys.path.append("../Utilities")
 import sqlDB
+from driverUtil import getDriver
 
 def fetch_user(uname, driver, statusPageDriver):
 	
@@ -28,10 +30,16 @@ def fetch_user(uname, driver, statusPageDriver):
 	print('reach user page '+ userLink)
 
 	try:
-		countryElm = driver.find_element_by_class_name('user-country-name')
-		country = countryElm.text
-
+		try:
+			countryElm = driver.find_element_by_class_name('user-country-name')
+			country = countryElm.text
+		except Exception as e:
+			print (e)
+			exc_type, exc_obj, exc_tb = sys.exc_info()
+			print exc_tb.tb_lineno
+			country = ""
 		print(country)
+
 
 		allTrs = driver.find_elements_by_tag_name('tr')
 		isStudent = False
@@ -109,31 +117,13 @@ def fetch_user(uname, driver, statusPageDriver):
 							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
 							
 							userSubmissions.append( UserSubmission(problemCode, noOfSubmission, time))
-							print userSubmissions[len(userSubmissions)-1]
+							print "len: " + str(userSubmissions[len(userSubmissions)-1])
 					break		
 		except Exception as e:
 			print (e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			print 'Exception at line '+ str(exc_tb.tb_lineno) 
 
-
-		aTags = driver.find_elements_by_tag_name('a')
-		for aTag in aTags:
-			if aTag.get_attribute('href') is not None and 'status' in aTag.get_attribute('href'):
-				problemCode = aTag.text
-				noOfSubmission = 0
-				date = None
-
-				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 't') 
-				
-				driver.get('https://www.codechef.com' + aTag.get_attribute('href'))
-				countProbs = countProbs + 1
-				
-				driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
-				
-				userSubmissions.append( UserSubmission(problemCode, noOfSubmission, date))
-				problemsSolved.append(aTag.text)
-				#print(str(countProbs))
 
 
 		# for p in problemsSolved:
@@ -174,7 +164,7 @@ def fetch_user(uname, driver, statusPageDriver):
 		for key in rating:
 			rating[key] = rating[key].replace('(?)', '')
 			print(str(rating[key]))
-		print(len(rating))
+		# print(len(rating))
 		count = 1
 		lang = {}
 
@@ -190,19 +180,20 @@ def fetch_user(uname, driver, statusPageDriver):
 			l = tds[3].text
 			l = l.strip().lower()
 			if 'c++' in l:
-				l = 'c++'	
-			elif 'pas' in l:
-				l = 'pas'
-			elif 'pyth' in l:
-				l = 'python'
-			if l in lang:
-				lang[l] += 1
-			else:
-				lang[l] = 0	
 
+					l = 'c++'
+			elif 'pas' in l:
+					l = 'pas'
+			elif 'pyth' in l:
+					l = 'python'
+
+			if l in lang:
+					lang[l] += 1
+			else:
+				lang[l] = 0
 
 		prefLang = ""
-		max = -1;
+		max = -1
 		for key in lang:
 			if lang[key] > max:
 				prefLang = key
@@ -213,9 +204,9 @@ def fetch_user(uname, driver, statusPageDriver):
 
 		u = User(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
 		#u.insert_db(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
-		sqlDB.insert_user_db('codechef_user', uname, country, userCity, isStudent, problemsSolved, prefLang, rating, rank)		
-		with open('users/' + uname, 'w+b') as f:
-			pickle.dump(u, f)
+		sqlDB.insert_user_db('codechef_user', uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
+		# with open('users/' + uname, 'w+b') as f:
+		# 	pickle.dump(u, f)
 
 
 		# with open('users/' + uname, 'r+b') as f2:
@@ -226,7 +217,7 @@ def fetch_user(uname, driver, statusPageDriver):
 
 	except Exception as e:
 		print(e)
-		print('element not found')
+		# print('element not found')
 		exc_type, exc_obj, exc_tb = sys.exc_info()
 		print 'Exception at line '+ str(exc_tb.tb_lineno) 
 		prob = None
@@ -236,13 +227,27 @@ def fetch_user(uname, driver, statusPageDriver):
 		pass
 
 #driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-driver = webdriver.Chrome()
-statusPageDriver = webdriver.Chrome()
+# driver = webdriver.Chrome()
+# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+# driver = None
+# paths = ['', 'C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe', 'C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe']
+# i = 0
+# while driver is None:
+# 	try:
+# 		driver = webdriver.Chrome(paths[i])
+# 	except:
+# 		pass
+# 	i = i + 1
+driver = getDriver()
+
+
+#statusPageDriver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 # driver = webdriver.Chrome()
 #fetch_user('anudeep2011', driver)
 # fetch_user('paras18', driver)
 # fetch_user('paragpachpute', driver)
 # fetch_user('pranay0007', driver)
+statusPageDriver = getDriver()
 
 count = 0
 
@@ -262,15 +267,15 @@ for uname in f:
 	if count == i:
 		uname = uname.split('\n')[0]
 		fetch_user(uname, driver, statusPageDriver)
-		
+
 		count += 1
 		with open('curr_progress', 'w+b') as f:
 			pickle.dump(count, f)
 
-	i += 1	
-	# print i, " ", count
+	i += 1
+# 	# print i, " ", count
 
-
+# fetch_user('rahulj15', driver, statusPageDriver)
 driver.close()
 
 	

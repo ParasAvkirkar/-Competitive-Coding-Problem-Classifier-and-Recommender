@@ -12,6 +12,9 @@ from spojUser import SpojUser, SubmissionDetails
 import pickle, sys, os
 sys.path.append("../DataBase")
 import sqlDB
+
+sys.path.append("../Utilities")
+from driverUtil import getDriver
 import time
 
 
@@ -106,7 +109,7 @@ def fetch_user(userLink, driver):
 		try:
 			probTable = driver.find_element_by_class_name('table-condensed')
 			for prob in probTable.find_elements_by_tag_name('td'):
-				print prob.text + 'kuch'
+				# print prob.text + 'kuch'
 				if len(prob.text) > 0:
 					submissionTime = None
 					#probs.append(prob.text)
@@ -146,7 +149,7 @@ def fetch_user(userLink, driver):
 					lang[l] += 1
 			else:
 				lang[l] = 0	
-			print l + 'arrow'
+			# print l + 'arrow'
 		
 		prefLang = ""
 		max = -1;
@@ -159,7 +162,7 @@ def fetch_user(userLink, driver):
 		
 		user = SpojUser(userLink, uname, country, submissionDetails, rating, rank)
 
-		#sqlDB.insert_user_db("spoj_user", uname, country, country, True, submissionDetails, "C++", rating, rank)
+		sqlDB.insert_user_db("spoj_user", uname, country, country, True, submissionDetails, prefLang, rating, rank)
 		# with open('users/' + uname, 'w+b') as f:
 		# 	pickle.dump(user, f)
 
@@ -177,9 +180,12 @@ def fetch_user(userLink, driver):
 		pass
 
 # driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
-driver = webdriver.Chrome()
-statusDriver = webdriver.Chrome()
+driver = getDriver()
+# driver = webdriver.Chrome()
+# statusDriver = webdriver.Chrome()
+statusDriver = getDriver()
+
+
 count = 0
 
 try:

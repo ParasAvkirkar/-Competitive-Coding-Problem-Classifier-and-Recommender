@@ -11,6 +11,9 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import requests
 import time
 import pickle
+import sys
+sys.path.append("../Utilities")
+from driverUtil import getDriver
 
 current_progress = {'section':0, 'problem_no':0}
 spojUrl = 'http://www.spoj.com'
@@ -30,7 +33,8 @@ sec_count = current_progress['section']
 
 
 #driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
-driver = webdriver.Chrome()
+driver = getDriver()
+
 nextPageUrl = ''
 for section in sections[sec_count:]:
 	nextPageUrl = spojProblemUrl + '/' + section

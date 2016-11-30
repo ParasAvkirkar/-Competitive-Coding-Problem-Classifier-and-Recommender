@@ -8,11 +8,13 @@ from CodeforcesProblemPage import getCodeforcesProblem
 from HTMLParser import HTMLParser
 
 import pickle
-
+import sys
+sys.path.append("../Utilities")
+from driverUtil import getDriver
 current_progress = {'link':"http://codeforces.com/problemset/", 'problem_no':0, 'total_problems':0}
 
 h = HTMLParser()
-driver = webdriver.Chrome()
+driver = getDriver()
 try:
 	with open('current_progress.pickle', 'r+b') as f:
 		current_progress = pickle.load(f)
