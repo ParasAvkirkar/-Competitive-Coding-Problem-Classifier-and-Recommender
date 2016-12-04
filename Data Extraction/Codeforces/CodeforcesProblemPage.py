@@ -6,11 +6,14 @@ from selenium.webdriver.support import expected_conditions
 from CodeforcesProblem import CodeforcesProblem
 
 import re, sys
+import os
+import logging
 
 sys.path.append("../Utilities")
 from driverUtil import getDriver
 
 driver = getDriver()
+logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 def getCodeforcesProblem(problemUrl,problemId):
 	
@@ -48,8 +51,12 @@ def getCodeforcesProblem(problemUrl,problemId):
 		problem = CodeforcesProblem(problemId, problemName, problemUrl, problemTags, problemStatement, timelimit, memorylimit)
 		return problem
 	except Exception as e:
-		print('ERROR')
 		print(e)
+		exc_type, exc_obj, exc_tb = sys.exc_info()
+		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Problem Id: '+ str(problemId) +' :Caused By: ' + str(e))
+		print('ERROR')
 		with open('codeforces/error', 'a') as f:
 			f.write(problemName+'\n')
 		return None

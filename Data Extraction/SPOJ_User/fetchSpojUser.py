@@ -16,6 +16,7 @@ import sqlDB
 sys.path.append("../Utilities")
 from driverUtil import getDriver
 import time
+import logging
 
 
 def fetch_user(userLink, driver):
@@ -51,9 +52,12 @@ def fetch_user(userLink, driver):
 				print country.split(",")[0]
 				break
 			except Exception as e:
-				print e
+				print(e)
 				exc_type, exc_obj, exc_tb = sys.exc_info()
-				print 'Exception at line '+ str(exc_tb.tb_lineno) 
+				print 'Exception at line '+ str(exc_tb.tb_lineno)
+				logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+						' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
+				
 				country = ""
 
 		if country == "":
@@ -80,9 +84,11 @@ def fetch_user(userLink, driver):
 			print rating
 			#break
 		except Exception as e:
-			print e
+			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno) 
+			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
 			rank = ""		
 		# for p in pElms:
 
@@ -96,9 +102,11 @@ def fetch_user(userLink, driver):
 				print institution
 				break
 			except Exception as e:
-				print e
+				print(e)
 				exc_type, exc_obj, exc_tb = sys.exc_info()
-				print 'Exception at line '+ str(exc_tb.tb_lineno) 
+				print 'Exception at line '+ str(exc_tb.tb_lineno)
+				logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+						' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	 
 				institution = ""		
 
 		if institution == "":
@@ -126,9 +134,11 @@ def fetch_user(userLink, driver):
 						print 'Exception at line '+ str(exc_tb.tb_lineno) 
 
 		except Exception as e:
-			print e
+			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno) 
+			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
 			print "probs does not exist"
 
 		lang = {}
@@ -172,7 +182,9 @@ def fetch_user(userLink, driver):
 		print('element not found')
 		print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
-		print 'Exception at line '+ str(exc_tb.tb_lineno) 
+		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
 		prob = None
 	else:
 		pass
@@ -185,6 +197,7 @@ driver = getDriver()
 # statusDriver = webdriver.Chrome()
 statusDriver = getDriver()
 
+logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 count = 0
 
@@ -194,11 +207,14 @@ try:
 		print count
 except Exception as e:
 	# print e
+	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
-	print 'Exception at line '+ str(exc_tb.tb_lineno) 
-	count = 0		
+	print 'Exception at line '+ str(exc_tb.tb_lineno)
+	logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+		' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
 
-
+	
+count = 0		
 i = 0
 f = open('users_urls.txt', 'r')
 for ulink in f:

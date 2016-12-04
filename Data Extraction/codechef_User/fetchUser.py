@@ -34,10 +34,13 @@ def fetch_user(uname, driver, statusPageDriver):
 			countryElm = driver.find_element_by_class_name('user-country-name')
 			country = countryElm.text
 		except Exception as e:
-			print (e)
+			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print exc_tb.tb_lineno
+			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 			country = ""
+
 		print(country)
 
 
@@ -109,10 +112,11 @@ def fetch_user(uname, driver, statusPageDriver):
 												flag = True
 												break
 							except Exception as e:
-								print (e)
+								print(e)
 								exc_type, exc_obj, exc_tb = sys.exc_info()
-								print 'Exception at line '+ str(exc_tb.tb_lineno) 
-
+								print 'Exception at line '+ str(exc_tb.tb_lineno)
+								logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+										' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 
 							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
 							
@@ -120,10 +124,11 @@ def fetch_user(uname, driver, statusPageDriver):
 							print "len: " + str(userSubmissions[len(userSubmissions)-1])
 					break		
 		except Exception as e:
-			print (e)
+			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno) 
-
+			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 
 
 		# for p in problemsSolved:
@@ -217,9 +222,10 @@ def fetch_user(uname, driver, statusPageDriver):
 
 	except Exception as e:
 		print(e)
-		# print('element not found')
 		exc_type, exc_obj, exc_tb = sys.exc_info()
-		print 'Exception at line '+ str(exc_tb.tb_lineno) 
+		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 		prob = None
 	else:
 		pass
@@ -239,7 +245,7 @@ def fetch_user(uname, driver, statusPageDriver):
 # 		pass
 # 	i = i + 1
 driver = getDriver()
-
+logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 #statusPageDriver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 # driver = webdriver.Chrome()
@@ -257,6 +263,11 @@ try:
 		print count
 except Exception as e:
 	# print e
+	print(e)
+	exc_type, exc_obj, exc_tb = sys.exc_info()
+	print 'Exception at line '+ str(exc_tb.tb_lineno)
+	logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 	count = 0		
 
 

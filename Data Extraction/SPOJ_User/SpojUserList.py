@@ -7,8 +7,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import requests
+import sys
+import os
+import logging
 
 f = open('users_urls.txt', 'a')
+logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 def fetch_user_list(start, driver):
 	
@@ -34,6 +38,10 @@ def fetch_user_list(start, driver):
 	except Exception as e:
 		print('element not found')
 		print(e)
+		exc_type, exc_obj, exc_tb = sys.exc_info()
+		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
 		prob = None
 	else:
 		pass

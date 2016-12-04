@@ -12,9 +12,12 @@ import requests
 import sys, os
 import time
 import re
+import logging
 
 #driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 driver = webdriver.Chrome()
+logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
+
 def getSpojProblem(problemUrl):
 	
 	#driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
@@ -124,10 +127,12 @@ def getSpojProblem(problemUrl):
 
 				except Exception as e:
 					print 'exception raised while pulling status page'
-					print e
+					print(e)
 					exc_type, exc_obj, exc_tb = sys.exc_info()
-					print exc_tb.tb_lineno
-			
+					print 'Exception at line '+ str(exc_tb.tb_lineno)
+					logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+							' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+							
 		if len(submissionSizes) == 0:
 			print 'no c++ based submission sizes'
 			return None
@@ -145,13 +150,15 @@ def getSpojProblem(problemUrl):
 		print prob
 		return prob
 	except Exception as e:
-			print('element not found')
-			print(e)
-			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print exc_tb.tb_lineno
-			with open('spoj/unsuccessful', 'a') as f:
-				f.write(problemName+'\n')
-			return None
+		print('element not found')
+		print(e)
+		exc_type, exc_obj, exc_tb = sys.exc_info()
+		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+		with open('spoj/unsuccessful', 'a') as f:
+			f.write(problemName+'\n')
+		return None
 	finally:
 		pass
 		#driver.quit()

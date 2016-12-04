@@ -13,6 +13,7 @@ import requests
 import json
 import pickle
 import os
+import logging
 import time, sys
 sys.path.append("../DataBase")
 import sqlDB
@@ -82,6 +83,10 @@ def fetch_user(userLink, driver):
 	
 	except Exception as e:
 		print(e)
+		exc_type, exc_obj, exc_tb = sys.exc_info()
+		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 		user = None
 	finally:
 		return user
@@ -112,31 +117,43 @@ def fetch_submissions(resultList):
 			submissionsList.append(submissionDetails)
 		print submissionsList
 	except Exception as e:
-		print(e)
 		submissionsList = Error
+		print(e)
+		exc_type, exc_obj, exc_tb = sys.exc_info()
+		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 	finally:
 		return submissionsList
 
 if __name__ == '__main__':
 	# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 	driver = getDriver()
-	with open('texts/supuserList.txt') as listF:
-		userHandles = listF.read().splitlines()
-		count = 0
-		print('till here')
-		if os.path.exists('curr_progress'):
-			with open('curr_progress', 'rb') as progRead:
-				count = pickle.load(progRead)
+	logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
+	try:
+		with open('texts/supuserList.txt') as listF:
+			userHandles = listF.read().splitlines()
+			count = 0
+			print('till here')
+			if os.path.exists('curr_progress'):
+				with open('curr_progress', 'rb') as progRead:
+					count = pickle.load(progRead)
 
-		#print(userHandles)
-		for i in range(count, 1000):
-			with open('curr_progress', 'wb') as progWrite:
-				pickle.dump(count, progWrite)
-				count = count + 1
+			#print(userHandles)
+			for i in range(count, 1000):
+				with open('curr_progress', 'wb') as progWrite:
+					pickle.dump(count, progWrite)
+					count = count + 1
 
-			user = fetch_user('http://codeforces.com/api/user.info?handles='+ userHandles[i] +';', driver)
-			if user:
-				sqlDB.insert_user_db('codeforces_user', user.uname, user.country, user.city, True, user.submissions, user.pref_lang, user.ratings, user.rank)
-			# with open('users/' + userHandles[i], 'wb') as userWrite:
-			# 	pickle.dump(user, userWrite)
-			print('count = ' + str(count) + ' ' + str(user))
+				user = fetch_user('http://codeforces.com/api/user.info?handles='+ userHandles[i] +';', driver)
+				if user:
+					sqlDB.insert_user_db('codeforces_user', user.uname, user.country, user.city, True, user.submissions, user.pref_lang, user.ratings, user.rank)
+				# with open('users/' + userHandles[i], 'wb') as userWrite:
+				# 	pickle.dump(user, userWrite)
+				print('count = ' + str(count) + ' ' + str(user))
+	except Exception as e:
+		print(e)
+		exc_type, exc_obj, exc_tb = sys.exc_info()
+		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	

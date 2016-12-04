@@ -1,3 +1,7 @@
+import sys
+import os
+import logging
+
 class SpojProblem:
 	'Class for representing problems'
 
@@ -16,6 +20,7 @@ class SpojProblem:
 		self.languages = languages
 		self.submissionSize = submissionSize
 		self.process_description()
+		logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 	def __str__(self):
 		return "Problem name: " + self.name + " Problem tag: " + self.tags + " Problem url: "+self.url +" " + str(self.submissionSize)
@@ -33,6 +38,11 @@ class SpojProblem:
 			input_start = 0
 			output_start = len(description_lines[0])
 			example_start = len(description_lines[0])
+			print(e)
+			exc_type, exc_obj, exc_tb = sys.exc_info()
+			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))				
 
 		# self.statement = description_lines[:input_start].split('\n')
 		# self.input = description_lines[input_start:output_start].split('\n')

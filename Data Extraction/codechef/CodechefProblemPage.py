@@ -11,12 +11,13 @@ import re
 import requests
 import sys, os
 import time
+import logging
 
 sys.path.append("../Utilities")
 from driverUtil import getDriver
 driver = getDriver()
 
-
+logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 #driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 def getCodechefProblem(problemUrl, difficulty):
 	count = 0
@@ -93,8 +94,13 @@ def getCodechefProblem(problemUrl, difficulty):
 						time.sleep(2)
 						break
 				except Exception as e:
-					# print e
+					print(e)
 					exc_type, exc_obj, exc_tb = sys.exc_info()
+					print 'Exception at line '+ str(exc_tb.tb_lineno)
+					logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+							' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
+					# print e
+					# exc_type, exc_obj, exc_tb = sys.exc_info()
 					# print exc_tb.tb_lineno
 					onclickAttr = None
 
@@ -110,7 +116,9 @@ def getCodechefProblem(problemUrl, difficulty):
 			print('Exception raised')
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print exc_tb.tb_lineno
+			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
 			with open('codechef/unscuccessful', 'a') as f:
 				f.write(problemName+'\n')
 			return None
