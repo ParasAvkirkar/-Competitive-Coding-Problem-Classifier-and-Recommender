@@ -1,0 +1,14 @@
+ERROR:root:Time: 2016-12-05 20:07:13.038764 File: problems.pyc Line: 69 Caused By: 
+**********************************************************************
+  Resource u'corpora/stopwords' not found.  Please use the NLTK
+  Downloader to obtain the resource:  >>> nltk.download()
+  Searched in:
+    - '/home/paras/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+ERROR:root:Time: 2016-12-05 20:07:13.039000 File: scaro.py Line: 55 Caused By: Problem instance has no attribute 'constraints'
+ERROR:root:2016-12-05 20:12:48.512865 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 20:13:03.784049 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'

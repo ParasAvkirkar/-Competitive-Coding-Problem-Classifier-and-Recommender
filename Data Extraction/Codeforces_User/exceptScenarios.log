@@ -1,0 +1,54 @@
+ERROR:root:Time: 2016-12-05 11:41:39.945585 File: scrapeCodeForceUser.py Line: 155 Caused By: global name 'sys' is not defined
+ERROR:root:Time: 2016-12-05 11:46:20.672449 File: scrapeCodeForceUser.py Line: 155 Caused By: global name 'sys' is not defined
+ERROR:root:Time: 2016-12-05 11:51:37.986970 File: scrapeCodeForceUser.py Line: 156 Caused By: global name 'sys' is not defined
+ERROR:root:2016-12-05 11:53:00.218437 :File Name: sqlDB.py :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:Time: 2016-12-05 11:53:00.742831 File: scrapeCodeForceUser.py Line: 39 Caused By: 'ascii' codec can't encode character u'\xfc' in position 1: ordinal not in range(128)
+ERROR:root:Time: 2016-12-05 11:53:05.848086 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment
+ERROR:root:2016-12-05 11:53:51.578531 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:2016-12-05 11:54:03.261997 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:2016-12-05 11:54:19.544588 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:2016-12-05 11:54:30.966922 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:2016-12-05 11:54:38.096068 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:Time: 2016-12-05 11:54:46.530495 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment
+ERROR:root:2016-12-05 11:56:42.766555 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:2016-12-05 11:56:52.833665 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:2016-12-05 11:57:04.880018 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: global name 'e' is not defined
+ERROR:root:Time: 2016-12-05 11:57:12.569096 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment
+ERROR:root:2016-12-05 11:57:37.953428 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 11:57:38.156121 :File Name: sqlDB.py :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:2016-12-05 11:57:47.732386 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 11:57:47.732738 :File Name: sqlDB.py :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:2016-12-05 11:57:57.111790 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 11:57:57.112269 :File Name: sqlDB.py :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:2016-12-05 11:58:06.109876 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 11:58:06.110230 :File Name: sqlDB.py :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:Time: 2016-12-05 11:58:13.152728 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment
+ERROR:root:2016-12-05 12:00:49.450028 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 12:00:49.452508 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:2016-12-05 12:00:56.865451 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 12:00:56.865768 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:2016-12-05 12:05:28.170450 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 12:05:28.172754 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:2016-12-05 12:05:36.085438 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 12:05:36.085934 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:Time: 2016-12-05 12:05:38.265432 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment
+ERROR:root:2016-12-05 12:09:02.003006 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 12:09:02.005323 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:2016-12-05 12:09:08.671983 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 12:09:08.672303 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:2016-12-05 12:09:23.762840 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 12:09:23.763426 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:Time: 2016-12-05 12:09:24.294801 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment
+ERROR:root:2016-12-05 19:46:27.957246 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 19:46:27.959466 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+ERROR:root:Time: 2016-12-05 19:46:31.620123 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment
+ERROR:root:2016-12-05 19:57:45.218285 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 19:57:45.267049 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (1049, "Unknown database 'data stage fyp'")
+ERROR:root:2016-12-05 19:57:54.321770 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 19:57:54.322371 :File Name: sqlDB.pyc :Line Number: 37 :Caused By: (1049, "Unknown database 'data stage fyp'")
+ERROR:root:Time: 2016-12-05 19:57:57.711095 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment
+ERROR:root:2016-12-05 19:59:35.058967 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 19:59:35.146560 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-05 19:59:42.242269 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-05 19:59:42.316244 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:Time: 2016-12-05 19:59:48.973063 File: scrapeCodeForceUser.py Line: 154 Caused By: local variable 'user' referenced before assignment

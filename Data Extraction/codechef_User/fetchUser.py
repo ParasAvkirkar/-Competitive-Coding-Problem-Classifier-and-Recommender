@@ -13,7 +13,8 @@ from user import User, UserSubmission
 
 import requests
 import pickle
-
+import datetime
+import logging
 import sys, os
 sys.path.append("../DataBase")
 sys.path.append("../Utilities")
@@ -37,8 +38,10 @@ def fetch_user(uname, driver, statusPageDriver):
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			print 'Exception at line '+ str(exc_tb.tb_lineno)
-			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, e))
+			# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+			# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 			country = ""
 
 		print(country)
@@ -115,8 +118,10 @@ def fetch_user(uname, driver, statusPageDriver):
 								print(e)
 								exc_type, exc_obj, exc_tb = sys.exc_info()
 								print 'Exception at line '+ str(exc_tb.tb_lineno)
-								logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-										' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+								logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+												exc_tb.tb_lineno, e))
+								# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+								# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 
 							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
 							
@@ -127,8 +132,10 @@ def fetch_user(uname, driver, statusPageDriver):
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			print 'Exception at line '+ str(exc_tb.tb_lineno)
-			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, e))
+			# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+			# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 
 
 		# for p in problemsSolved:
@@ -224,8 +231,10 @@ def fetch_user(uname, driver, statusPageDriver):
 		print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
 		print 'Exception at line '+ str(exc_tb.tb_lineno)
-		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-				' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+		logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, e))
+		# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+		# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 		prob = None
 	else:
 		pass
@@ -266,8 +275,10 @@ except Exception as e:
 	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
-	logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+				exc_tb.tb_lineno, e))
+	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+	# 	' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 	count = 0		
 
 

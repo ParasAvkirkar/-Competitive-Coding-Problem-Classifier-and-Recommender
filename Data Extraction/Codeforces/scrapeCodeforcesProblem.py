@@ -10,6 +10,7 @@ from HTMLParser import HTMLParser
 import pickle
 import sys
 import os
+import datetime
 import logging
 sys.path.append("../Utilities")
 from driverUtil import getDriver
@@ -27,8 +28,10 @@ except Exception as e:
 	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
-	logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-			' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))
+	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+								exc_tb.tb_lineno, e))
+	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+	# 		' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))
 	
 try:
 	print 'Starting problem collection'
@@ -66,8 +69,10 @@ try:
 				print(e)
 				exc_type, exc_obj, exc_tb = sys.exc_info()
 				print 'Exception at line '+ str(exc_tb.tb_lineno)
-				logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-					+ ' :Problem Link: '+ str(codeforcesProblemsLink) +' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))
+				logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+								exc_tb.tb_lineno, e))
+				# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+				# 	+ ' :Problem Link: '+ str(codeforcesProblemsLink) +' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))
 
 		nextPageLink = driver.find_elements_by_class_name("arrow")
 		for link in nextPageLink:
@@ -86,5 +91,7 @@ except Exception as e:
 	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
-	logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-			' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))
+	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+		exc_tb.tb_lineno, e))
+	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+	# 		' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))

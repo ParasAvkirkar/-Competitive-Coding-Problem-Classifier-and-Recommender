@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Coat of Anticubism\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAs some of you know, cubism is a trend in art, where the problem of constructing volumetrical shape on a plane with a combination of three-dimensional geometric shapes comes to the fore.\u000aA famous sculptor Cicasso, whose self-portrait you can contemplate, hates cubism. He is more impressed by the idea to transmit two-dimensional objects through three-dimensional objects by using his magnificent sculptures. And his new project is connected with this. Cicasso wants to make a coat for the haters of anticubism. To do this, he wants to create a sculpture depicting a well-known geometric primitive \u2014 convex polygon.\u000aCicasso prepared for this a few blanks, which are rods with integer lengths, and now he wants to bring them together. The i-th rod is a segment of length li.\u000aThe sculptor plans to make a convex polygon with a nonzero area, using all rods he has as its sides. Each rod should be used as a side to its full length. It is forbidden to cut, break or bend rods. However, two sides may form a straight angle .\u000aCicasso knows that it is impossible to make a convex polygon with a nonzero area out of the rods with the lengths which he had chosen. Cicasso does not want to leave the unused rods, so the sculptor decides to make another rod-blank with an integer length so that his problem is solvable. Of course, he wants to make it as short as possible, because the materials are expensive, and it is improper deed to spend money for nothing.\u000aHelp sculptor!\u000aInput\u000aThe first line contains an integer n (3\u2009\u2264\u2009n\u2009\u2264\u2009105) \u2014 a number of rod-blanks.\u000aThe second line contains n integers li (1\u2009\u2264\u2009li\u2009\u2264\u2009109) \u2014 lengths of rods, which Cicasso already has. It is guaranteed that it is impossible to make a polygon with n vertices and nonzero area using the rods Cicasso already has.\u000aOutput\u000aPrint the only integer z \u2014 the minimum length of the rod, so that after adding it it can be possible to construct convex polygon with (n\u2009+\u20091) vertices and nonzero area from all of the rods.\u000aExamples\u000ainput\u000a3\u000a1 2 1\u000aoutput\u000a1\u000ainput\u000a5\u000a20 4 3 2 1\u000aoutput\u000a11\u000aNote\u000aIn the first example triangle with sides {1\u2009+\u20091\u2009=\u20092,\u20092,\u20091} can be formed from a set of lengths {1,\u20091,\u20091,\u20092}.\u000aIn the second example you can make a triangle with lengths {20,\u200911,\u20094\u2009+\u20093\u2009+\u20092\u2009+\u20091\u2009=\u200910}.
+p3
+sS'problemStatement'
+p4
+VB. Coat of Anticubism\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAs some of you know, cubism is a trend in art, where the problem of constructing volumetrical shape on a plane with a combination of three-dimensional geometric shapes comes to the fore.\u000aA famous sculptor Cicasso, whose self-portrait you can contemplate, hates cubism. He is more impressed by the idea to transmit two-dimensional objects through three-dimensional objects by using his magnificent sculptures. And his new project is connected with this. Cicasso wants to make a coat for the haters of anticubism. To do this, he wants to create a sculpture depicting a well-known geometric primitive \u2014 convex polygon.\u000aCicasso prepared for this a few blanks, which are rods with integer lengths, and now he wants to bring them together. The i-th rod is a segment of length li.\u000aThe sculptor plans to make a convex polygon with a nonzero area, using all rods he has as its sides. Each rod should be used as a side to its full length. It is forbidden to cut, break or bend rods. However, two sides may form a straight angle .\u000aCicasso knows that it is impossible to make a convex polygon with a nonzero area out of the rods with the lengths which he had chosen. Cicasso does not want to leave the unused rods, so the sculptor decides to make another rod-blank with an integer length so that his problem is solvable. Of course, he wants to make it as short as possible, because the materials are expensive, and it is improper deed to spend money for nothing.\u000aHelp sculptor!\u000aInput\u000aThe first line contains an integer n (3\u2009\u2264\u2009n\u2009\u2264\u2009105) \u2014 a number of rod-blanks.\u000aThe second line contains n integers li (1\u2009\u2264\u2009li\u2009\u2264\u2009109) \u2014 lengths of rods, which Cicasso already has. It is guaranteed that it is impossible to make a polygon with n vertices and nonzero area using the rods Cicasso already has.\u000aOutput\u000aPrint the only integer z \u2014 the minimum length of the rod, so that after adding it it can be possible to construct convex polygon with (n\u2009+\u20091) vertices and nonzero area from all of the rods.\u000aExamples\u000ainput\u000a3\u000a1 2 1\u000aoutput\u000a1\u000ainput\u000a5\u000a20 4 3 2 1\u000aoutput\u000a11\u000aNote\u000aIn the first example triangle with sides {1\u2009+\u20091\u2009=\u20092,\u20092,\u20091} can be formed from a set of lengths {1,\u20091,\u20091,\u20092}.\u000aIn the second example you can make a triangle with lengths {20,\u200911,\u20094\u2009+\u20093\u2009+\u20092\u2009+\u20091\u2009=\u200910}.
+p5
+sS'name'
+p6
+VB. Coat of Anticubism
+p7
+sS'tags'
+p8
+Vconstructive algorithms geometry 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/667/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V667/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

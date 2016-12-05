@@ -13,6 +13,8 @@ import sys, os
 import time
 import re
 import logging
+import datetime
+
 
 #driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
 driver = webdriver.Chrome()
@@ -130,8 +132,10 @@ def getSpojProblem(problemUrl):
 					print(e)
 					exc_type, exc_obj, exc_tb = sys.exc_info()
 					print 'Exception at line '+ str(exc_tb.tb_lineno)
-					logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-							' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+					logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, e))
+					# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 							
 		if len(submissionSizes) == 0:
 			print 'no c++ based submission sizes'
@@ -154,8 +158,10 @@ def getSpojProblem(problemUrl):
 		print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
 		print 'Exception at line '+ str(exc_tb.tb_lineno)
-		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-				' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+		logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+				exc_tb.tb_lineno, e))
+		# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+		# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 		with open('spoj/unsuccessful', 'a') as f:
 			f.write(problemName+'\n')
 		return None

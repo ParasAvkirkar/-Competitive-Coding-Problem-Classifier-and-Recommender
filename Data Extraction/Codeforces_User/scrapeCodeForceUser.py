@@ -14,6 +14,7 @@ import json
 import pickle
 import os
 import logging
+import datetime
 import time, sys
 sys.path.append("../DataBase")
 import sqlDB
@@ -85,8 +86,10 @@ def fetch_user(userLink, driver):
 		print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
 		print 'Exception at line '+ str(exc_tb.tb_lineno)
-		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-				' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+		logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+								exc_tb.tb_lineno, e))
+		# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+		# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 		user = None
 	finally:
 		return user
@@ -115,19 +118,22 @@ def fetch_submissions(resultList):
 			submissionDate = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(date[1].get('creationTimeSeconds')))
 			submissionDetails = UserSubmission(problemId, submissionCount, submissionDate)
 			submissionsList.append(submissionDetails)
-		print submissionsList
+		#print submissionsList
 	except Exception as e:
 		submissionsList = Error
 		print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
 		print 'Exception at line '+ str(exc_tb.tb_lineno)
-		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-				' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+		logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+								exc_tb.tb_lineno, e))
+		# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+		# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 	finally:
 		return submissionsList
 
 if __name__ == '__main__':
 	# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
+	
 	driver = getDriver()
 	logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 	try:
@@ -155,5 +161,7 @@ if __name__ == '__main__':
 		print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
 		print 'Exception at line '+ str(exc_tb.tb_lineno)
-		logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-				' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	
+		logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+								exc_tb.tb_lineno, e))
+		# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+		# 		' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))	

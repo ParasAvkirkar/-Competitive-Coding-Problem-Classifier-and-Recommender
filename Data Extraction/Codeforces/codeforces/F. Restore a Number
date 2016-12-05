@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VF. Restore a Number\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVasya decided to pass a very large integer n to Kate. First, he wrote that number as a string, then he appended to the right integer k \u2014 the number of digits in n.\u000aMagically, all the numbers were shuffled in arbitrary order while this note was passed to Kate. The only thing that Vasya remembers, is a non-empty substring of n (a substring of n is a sequence of consecutive digits of the number n).\u000aVasya knows that there may be more than one way to restore the number n. Your task is to find the smallest possible initial integer n. Note that decimal representation of number n contained no leading zeroes, except the case the integer n was equal to zero itself (in this case a single digit 0 was used).\u000aInput\u000aThe first line of the input contains the string received by Kate. The number of digits in this string does not exceed 1\u2009000\u2009000.\u000aThe second line contains the substring of n which Vasya remembers. This string can contain leading zeroes.\u000aIt is guaranteed that the input data is correct, and the answer always exists.\u000aOutput\u000aPrint the smalles integer n which Vasya could pass to Kate.\u000aExamples\u000ainput\u000a003512\u000a021\u000aoutput\u000a30021\u000ainput\u000a199966633300\u000a63\u000aoutput\u000a3036366999
+p3
+sS'problemStatement'
+p4
+VF. Restore a Number\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aVasya decided to pass a very large integer n to Kate. First, he wrote that number as a string, then he appended to the right integer k \u2014 the number of digits in n.\u000aMagically, all the numbers were shuffled in arbitrary order while this note was passed to Kate. The only thing that Vasya remembers, is a non-empty substring of n (a substring of n is a sequence of consecutive digits of the number n).\u000aVasya knows that there may be more than one way to restore the number n. Your task is to find the smallest possible initial integer n. Note that decimal representation of number n contained no leading zeroes, except the case the integer n was equal to zero itself (in this case a single digit 0 was used).\u000aInput\u000aThe first line of the input contains the string received by Kate. The number of digits in this string does not exceed 1\u2009000\u2009000.\u000aThe second line contains the substring of n which Vasya remembers. This string can contain leading zeroes.\u000aIt is guaranteed that the input data is correct, and the answer always exists.\u000aOutput\u000aPrint the smalles integer n which Vasya could pass to Kate.\u000aExamples\u000ainput\u000a003512\u000a021\u000aoutput\u000a30021\u000ainput\u000a199966633300\u000a63\u000aoutput\u000a3036366999
+p5
+sS'name'
+p6
+VF. Restore a Number
+p7
+sS'tags'
+p8
+Vconstructive algorithms strings 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/670/F
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V670/F
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

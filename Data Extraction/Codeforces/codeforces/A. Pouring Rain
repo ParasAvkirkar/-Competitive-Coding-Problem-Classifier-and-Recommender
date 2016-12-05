@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Pouring Rain\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aA lot of people in Berland hates rain, but you do not. Rain pacifies, puts your thoughts in order. By these years you have developed a good tradition \u2014 when it rains, you go on the street and stay silent for a moment, contemplate all around you, enjoy freshness, think about big deeds you have to do.\u000aToday everything had changed quietly. You went on the street with a cup contained water, your favorite drink. In a moment when you were drinking a water you noticed that the process became quite long: the cup still contained water because of rain. You decided to make a formal model of what was happening and to find if it was possible to drink all water in that situation.\u000aThus, your cup is a cylinder with diameter equals d centimeters. Initial level of water in cup equals h centimeters from the bottom.\u000aYou drink a water with a speed equals v milliliters per second. But rain goes with such speed that if you do not drink a water from the cup, the level of water increases on e centimeters per second. The process of drinking water from the cup and the addition of rain to the cup goes evenly and continuously.\u000aFind the time needed to make the cup empty or find that it will never happen. It is guaranteed that if it is possible to drink all water, it will happen not later than after 104 seconds.\u000aNote one milliliter equals to one cubic centimeter.\u000aInput\u000aThe only line of the input contains four integer numbers d,\u2009h,\u2009v,\u2009e (1\u2009\u2264\u2009d,\u2009h,\u2009v,\u2009e\u2009\u2264\u2009104), where:\u000ad \u2014 the diameter of your cylindrical cup,\u000ah \u2014 the initial level of water in the cup,\u000av \u2014 the speed of drinking process from the cup in milliliters per second,\u000ae \u2014 the growth of water because of rain if you do not drink from the cup.\u000aOutput\u000aIf it is impossible to make the cup empty, print "NO" (without quotes).\u000aOtherwise print "YES" (without quotes) in the first line. In the second line print a real number \u2014 time in seconds needed the cup will be empty. The answer will be considered correct if its relative or absolute error doesn't exceed 10\u2009-\u20094. It is guaranteed that if the answer exists, it doesn't exceed 104.\u000aExamples\u000ainput\u000a1 2 3 100\u000aoutput\u000aNO\u000ainput\u000a1 1 1 1\u000aoutput\u000aYES\u000a3.659792366325\u000aNote\u000aIn the first example the water fills the cup faster than you can drink from it.\u000aIn the second example area of the cup's bottom equals to , thus we can conclude that you decrease the level of water by centimeters per second. At the same time water level increases by 1 centimeter per second due to rain. Thus, cup will be empty in seconds.
+p3
+sS'problemStatement'
+p4
+VA. Pouring Rain\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aA lot of people in Berland hates rain, but you do not. Rain pacifies, puts your thoughts in order. By these years you have developed a good tradition \u2014 when it rains, you go on the street and stay silent for a moment, contemplate all around you, enjoy freshness, think about big deeds you have to do.\u000aToday everything had changed quietly. You went on the street with a cup contained water, your favorite drink. In a moment when you were drinking a water you noticed that the process became quite long: the cup still contained water because of rain. You decided to make a formal model of what was happening and to find if it was possible to drink all water in that situation.\u000aThus, your cup is a cylinder with diameter equals d centimeters. Initial level of water in cup equals h centimeters from the bottom.\u000aYou drink a water with a speed equals v milliliters per second. But rain goes with such speed that if you do not drink a water from the cup, the level of water increases on e centimeters per second. The process of drinking water from the cup and the addition of rain to the cup goes evenly and continuously.\u000aFind the time needed to make the cup empty or find that it will never happen. It is guaranteed that if it is possible to drink all water, it will happen not later than after 104 seconds.\u000aNote one milliliter equals to one cubic centimeter.\u000aInput\u000aThe only line of the input contains four integer numbers d,\u2009h,\u2009v,\u2009e (1\u2009\u2264\u2009d,\u2009h,\u2009v,\u2009e\u2009\u2264\u2009104), where:\u000ad \u2014 the diameter of your cylindrical cup,\u000ah \u2014 the initial level of water in the cup,\u000av \u2014 the speed of drinking process from the cup in milliliters per second,\u000ae \u2014 the growth of water because of rain if you do not drink from the cup.\u000aOutput\u000aIf it is impossible to make the cup empty, print "NO" (without quotes).\u000aOtherwise print "YES" (without quotes) in the first line. In the second line print a real number \u2014 time in seconds needed the cup will be empty. The answer will be considered correct if its relative or absolute error doesn't exceed 10\u2009-\u20094. It is guaranteed that if the answer exists, it doesn't exceed 104.\u000aExamples\u000ainput\u000a1 2 3 100\u000aoutput\u000aNO\u000ainput\u000a1 1 1 1\u000aoutput\u000aYES\u000a3.659792366325\u000aNote\u000aIn the first example the water fills the cup faster than you can drink from it.\u000aIn the second example area of the cup's bottom equals to , thus we can conclude that you decrease the level of water by centimeters per second. At the same time water level increases by 1 centimeter per second due to rain. Thus, cup will be empty in seconds.
+p5
+sS'name'
+p6
+VA. Pouring Rain
+p7
+sS'tags'
+p8
+Vgeometry math 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/667/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V667/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

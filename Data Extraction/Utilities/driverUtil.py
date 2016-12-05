@@ -1,5 +1,10 @@
 __author__ = 'Pranay'
 
+import os
+import sys
+import logging
+import datetime
+
 from selenium import webdriver
 
 def getDriver():
@@ -18,8 +23,10 @@ def getDriver():
             print(e)
             exc_type, exc_obj, exc_tb = sys.exc_info()
             print 'Exception at line '+ str(exc_tb.tb_lineno)
-            logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-                    ' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+            logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+                        exc_tb.tb_lineno, e))
+            # logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+            #         ' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
         i = i + 1
         if i >= len(paths):
             if driver is None:

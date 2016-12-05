@@ -1,6 +1,7 @@
 import sys
 import os
 import logging
+import datetime
 
 class SpojProblem:
 	'Class for representing problems'
@@ -41,8 +42,10 @@ class SpojProblem:
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			print 'Exception at line '+ str(exc_tb.tb_lineno)
-			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))				
+			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, e))
+			# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+			# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))				
 
 		# self.statement = description_lines[:input_start].split('\n')
 		# self.input = description_lines[input_start:output_start].split('\n')

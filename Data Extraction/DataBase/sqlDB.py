@@ -1,11 +1,16 @@
 import MySQLdb
+import sys
+import os
+import logging
+import datetime
+
 
 def connect_db():
 		# Open database connection
 		try:
 			with open("dbINFO.txt", "r") as f:
 				ip, username, password, db_name = f.read().split('\n')
-		except:
+		except Exception as e:
 			ip = "localhost"
 			username = "root"
 			password = ""

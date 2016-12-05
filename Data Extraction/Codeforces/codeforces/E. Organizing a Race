@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Organizing a Race\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aKekoland is a country with n beautiful cities numbered from left to right and connected by n\u2009-\u20091 roads. The i-th road connects cities i and i\u2009+\u20091 and length of this road is wi kilometers.\u000aWhen you drive in Kekoland, each time you arrive in city i by car you immediately receive gi liters of gas. There is no other way to get gas in Kekoland.\u000aYou were hired by the Kekoland president Keko to organize the most beautiful race Kekoland has ever seen. Let race be between cities l and r (l\u2009\u2264\u2009r). Race will consist of two stages. On the first stage cars will go from city l to city r. After completing first stage, next day second stage will be held, now racers will go from r to l with their cars. Of course, as it is a race, racers drive directly from start city to finish city. It means that at the first stage they will go only right, and at the second stage they go only left. Beauty of the race between l and r is equal to r\u2009-\u2009l\u2009+\u20091 since racers will see r\u2009-\u2009l\u2009+\u20091 beautiful cities of Kekoland. Cars have infinite tank so racers will take all the gas given to them.\u000aAt the beginning of each stage racers start the race with empty tank (0 liters of gasoline). They will immediately take their gasoline in start cities (l for the first stage and r for the second stage) right after the race starts.\u000aIt may not be possible to organize a race between l and r if cars will run out of gas before they reach finish.\u000aYou have k presents. Each time you give a present to city i its value gi increases by 1. You may distribute presents among cities in any way (also give many presents to one city, each time increasing gi by 1). What is the most beautiful race you can organize?\u000aEach car consumes 1 liter of gas per one kilometer.\u000aInput\u000aThe first line of the input contains two integers n and k (2\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 0\u2009\u2264\u2009k\u2009\u2264\u2009109) \u2014 the number of cities in Kekoland and the number of presents you have, respectively.\u000aNext line contains n\u2009-\u20091 integers. The i-th of them is wi (1\u2009\u2264\u2009wi\u2009\u2264\u2009109) \u2014 the length of the road between city i and i\u2009+\u20091.\u000aNext line contains n integers. The i-th of them is gi (0\u2009\u2264\u2009gi\u2009\u2264\u2009109) \u2014 the amount of gas you receive every time you enter city i.\u000aOutput\u000aPrint a single line \u2014 the beauty of the most beautiful race you can organize.\u000aExamples\u000ainput\u000a4 4\u000a2 2 2\u000a1 1 1 1\u000aoutput\u000a4\u000ainput\u000a8 5\u000a2 2 2 3 7 3 1\u000a1 3 1 5 4 0 2 5\u000aoutput\u000a7\u000aNote\u000aIn first sample if you give one present to each city then it will be possible to make a race between city 1 and city 4.\u000aIn second sample you should add 1 to g5 and 4 to g6, then it will be possible to make a race between cities 2 and 8.
+p3
+sS'problemStatement'
+p4
+VE. Organizing a Race\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aKekoland is a country with n beautiful cities numbered from left to right and connected by n\u2009-\u20091 roads. The i-th road connects cities i and i\u2009+\u20091 and length of this road is wi kilometers.\u000aWhen you drive in Kekoland, each time you arrive in city i by car you immediately receive gi liters of gas. There is no other way to get gas in Kekoland.\u000aYou were hired by the Kekoland president Keko to organize the most beautiful race Kekoland has ever seen. Let race be between cities l and r (l\u2009\u2264\u2009r). Race will consist of two stages. On the first stage cars will go from city l to city r. After completing first stage, next day second stage will be held, now racers will go from r to l with their cars. Of course, as it is a race, racers drive directly from start city to finish city. It means that at the first stage they will go only right, and at the second stage they go only left. Beauty of the race between l and r is equal to r\u2009-\u2009l\u2009+\u20091 since racers will see r\u2009-\u2009l\u2009+\u20091 beautiful cities of Kekoland. Cars have infinite tank so racers will take all the gas given to them.\u000aAt the beginning of each stage racers start the race with empty tank (0 liters of gasoline). They will immediately take their gasoline in start cities (l for the first stage and r for the second stage) right after the race starts.\u000aIt may not be possible to organize a race between l and r if cars will run out of gas before they reach finish.\u000aYou have k presents. Each time you give a present to city i its value gi increases by 1. You may distribute presents among cities in any way (also give many presents to one city, each time increasing gi by 1). What is the most beautiful race you can organize?\u000aEach car consumes 1 liter of gas per one kilometer.\u000aInput\u000aThe first line of the input contains two integers n and k (2\u2009\u2264\u2009n\u2009\u2264\u2009100\u2009000, 0\u2009\u2264\u2009k\u2009\u2264\u2009109) \u2014 the number of cities in Kekoland and the number of presents you have, respectively.\u000aNext line contains n\u2009-\u20091 integers. The i-th of them is wi (1\u2009\u2264\u2009wi\u2009\u2264\u2009109) \u2014 the length of the road between city i and i\u2009+\u20091.\u000aNext line contains n integers. The i-th of them is gi (0\u2009\u2264\u2009gi\u2009\u2264\u2009109) \u2014 the amount of gas you receive every time you enter city i.\u000aOutput\u000aPrint a single line \u2014 the beauty of the most beautiful race you can organize.\u000aExamples\u000ainput\u000a4 4\u000a2 2 2\u000a1 1 1 1\u000aoutput\u000a4\u000ainput\u000a8 5\u000a2 2 2 3 7 3 1\u000a1 3 1 5 4 0 2 5\u000aoutput\u000a7\u000aNote\u000aIn first sample if you give one present to each city then it will be possible to make a race between city 1 and city 4.\u000aIn second sample you should add 1 to g5 and 4 to g6, then it will be possible to make a race between cities 2 and 8.
+p5
+sS'name'
+p6
+VE. Organizing a Race
+p7
+sS'tags'
+p8
+Vdata structures greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/671/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'problemId'
+p16
+V671/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

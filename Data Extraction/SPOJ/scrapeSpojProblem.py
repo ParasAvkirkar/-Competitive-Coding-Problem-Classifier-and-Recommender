@@ -12,6 +12,7 @@ import requests
 import time
 import pickle
 import os
+import datetime
 import logging
 import sys
 sys.path.append("../Utilities")
@@ -33,8 +34,10 @@ except Exception as e:
 	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
-	logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-			' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+			exc_tb.tb_lineno, e))
+	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+	# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 
 print 'Starting problem collection'
 
@@ -90,6 +93,8 @@ try:
 										pickle.dump({'section':sec_count, 'problem_no':count}, f)
 							except Exception as e:
 								print "exception in global scraping loop"
+								logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+										exc_tb.tb_lineno, e))
 								print(e)
 			sec_count += 1
 			count = 0
@@ -101,5 +106,7 @@ except Exception as e:
 	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
-	logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-		' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))
+	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+			exc_tb.tb_lineno, e))
+	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+	# 	' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))

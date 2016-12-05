@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Robin Hood\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aWe all know the impressive story of Robin Hood. Robin Hood uses his archery skills and his wits to steal the money from rich, and return it to the poor.\u000aThere are n citizens in Kekoland, each person has ci coins. Each day, Robin Hood will take exactly 1 coin from the richest person in the city and he will give it to the poorest person (poorest person right after taking richest's 1 coin). In case the choice is not unique, he will select one among them at random. Sadly, Robin Hood is old and want to retire in k days. He decided to spend these last days with helping poor people.\u000aAfter taking his money are taken by Robin Hood richest person may become poorest person as well, and it might even happen that Robin Hood will give his money back. For example if all people have same number of coins, then next day they will have same number of coins too.\u000aYour task is to find the difference between richest and poorest persons wealth after k days. Note that the choosing at random among richest and poorest doesn't affect the answer.\u000aInput\u000aThe first line of the input contains two integers n and k (1\u2009\u2264\u2009n\u2009\u2264\u2009500\u2009000,\u20090\u2009\u2264\u2009k\u2009\u2264\u2009109) \u2014 the number of citizens in Kekoland and the number of days left till Robin Hood's retirement.\u000aThe second line contains n integers, the i-th of them is ci (1\u2009\u2264\u2009ci\u2009\u2264\u2009109) \u2014 initial wealth of the i-th person.\u000aOutput\u000aPrint a single line containing the difference between richest and poorest peoples wealth.\u000aExamples\u000ainput\u000a4 1\u000a1 1 4 2\u000aoutput\u000a2\u000ainput\u000a3 1\u000a2 2 2\u000aoutput\u000a0\u000aNote\u000aLets look at how wealth changes through day in the first sample.\u000a[1,\u20091,\u20094,\u20092]\u000a[2,\u20091,\u20093,\u20092] or [1,\u20092,\u20093,\u20092]\u000aSo the answer is 3\u2009-\u20091\u2009=\u20092\u000aIn second sample wealth will remain the same for each person.
+p3
+sS'problemStatement'
+p4
+VB. Robin Hood\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aWe all know the impressive story of Robin Hood. Robin Hood uses his archery skills and his wits to steal the money from rich, and return it to the poor.\u000aThere are n citizens in Kekoland, each person has ci coins. Each day, Robin Hood will take exactly 1 coin from the richest person in the city and he will give it to the poorest person (poorest person right after taking richest's 1 coin). In case the choice is not unique, he will select one among them at random. Sadly, Robin Hood is old and want to retire in k days. He decided to spend these last days with helping poor people.\u000aAfter taking his money are taken by Robin Hood richest person may become poorest person as well, and it might even happen that Robin Hood will give his money back. For example if all people have same number of coins, then next day they will have same number of coins too.\u000aYour task is to find the difference between richest and poorest persons wealth after k days. Note that the choosing at random among richest and poorest doesn't affect the answer.\u000aInput\u000aThe first line of the input contains two integers n and k (1\u2009\u2264\u2009n\u2009\u2264\u2009500\u2009000,\u20090\u2009\u2264\u2009k\u2009\u2264\u2009109) \u2014 the number of citizens in Kekoland and the number of days left till Robin Hood's retirement.\u000aThe second line contains n integers, the i-th of them is ci (1\u2009\u2264\u2009ci\u2009\u2264\u2009109) \u2014 initial wealth of the i-th person.\u000aOutput\u000aPrint a single line containing the difference between richest and poorest peoples wealth.\u000aExamples\u000ainput\u000a4 1\u000a1 1 4 2\u000aoutput\u000a2\u000ainput\u000a3 1\u000a2 2 2\u000aoutput\u000a0\u000aNote\u000aLets look at how wealth changes through day in the first sample.\u000a[1,\u20091,\u20094,\u20092]\u000a[2,\u20091,\u20093,\u20092] or [1,\u20092,\u20093,\u20092]\u000aSo the answer is 3\u2009-\u20091\u2009=\u20092\u000aIn second sample wealth will remain the same for each person.
+p5
+sS'name'
+p6
+VB. Robin Hood
+p7
+sS'tags'
+p8
+Vbinary search greedy 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/671/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V671/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

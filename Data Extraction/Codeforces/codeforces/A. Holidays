@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Holidays\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOn the planet Mars a year lasts exactly n days (there are no leap years on Mars). But Martians have the same weeks as earthlings \u2014 5 work days and then 2 days off. Your task is to determine the minimum possible and the maximum possible number of days off per year on Mars.\u000aInput\u000aThe first line of the input contains a positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u20091\u2009000\u2009000) \u2014 the number of days in a year on Mars.\u000aOutput\u000aPrint two integers \u2014 the minimum possible and the maximum possible number of days off per year on Mars.\u000aExamples\u000ainput\u000a14\u000aoutput\u000a4 4\u000ainput\u000a2\u000aoutput\u000a0 2\u000aNote\u000aIn the first sample there are 14 days in a year on Mars, and therefore independently of the day a year starts with there will be exactly 4 days off .\u000aIn the second sample there are only 2 days in a year on Mars, and they can both be either work days or days off.
+p3
+sS'problemStatement'
+p4
+VA. Holidays\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOn the planet Mars a year lasts exactly n days (there are no leap years on Mars). But Martians have the same weeks as earthlings \u2014 5 work days and then 2 days off. Your task is to determine the minimum possible and the maximum possible number of days off per year on Mars.\u000aInput\u000aThe first line of the input contains a positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u20091\u2009000\u2009000) \u2014 the number of days in a year on Mars.\u000aOutput\u000aPrint two integers \u2014 the minimum possible and the maximum possible number of days off per year on Mars.\u000aExamples\u000ainput\u000a14\u000aoutput\u000a4 4\u000ainput\u000a2\u000aoutput\u000a0 2\u000aNote\u000aIn the first sample there are 14 days in a year on Mars, and therefore independently of the day a year starts with there will be exactly 4 days off .\u000aIn the second sample there are only 2 days in a year on Mars, and they can both be either work days or days off.
+p5
+sS'name'
+p6
+VA. Holidays
+p7
+sS'tags'
+p8
+Vbrute force constructive algorithms 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/670/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V670/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.
