@@ -7,6 +7,7 @@ import os
 import logging
 import sys
 import datetime
+import winsound
 sys.path.append("../DataBase")
 import sqlDB
 
@@ -71,5 +72,7 @@ except Exception as e:
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
 	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
 					exc_tb.tb_lineno, e))
+	winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+	pass
 	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 	# 	' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))

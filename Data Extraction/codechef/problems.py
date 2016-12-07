@@ -40,8 +40,42 @@ class Problem:
 				try:
 					input_start = description_lines.index('Input :')
 				except ValueError:
-					input_start = description_lines.index('Input:')
+					try:
+						input_start = description_lines.index('Input:')
+					except ValueError:
+						try:
+							input_start = description_lines.index('INPUT FORMAT')
+						except ValueError:
+							try:
+								input_start = description_lines.index('INPUT:')
+							except ValueError:
+								try:
+									input_start = description_lines.index('Input format')
+								except ValueError:
+									try:
+										input_start = description_lines.index('Input Format')
+									except ValueError:
+										try:
+											input_start = description_lines.index('Input Description')
+										except ValueError:
+											input_start = description_lines.index('Input format:')
 
+
+
+			try:
+				example_start = description_lines.index('Example')
+			except ValueError:
+				try:
+					example_start = description_lines.index('Example:')
+				except ValueError:
+					try:
+						example_start = description_lines.index('Example :')
+					except ValueError:
+						try:
+							example_start = description_lines.index('Example 1')
+						except:
+							example_start = -1
+							
 
 			try:
 				constraint_start = description_lines.index('Constraints')
@@ -51,16 +85,18 @@ class Problem:
 				except ValueError:
 					try:
 						constraint_start = [i for i,word in enumerate(description_lines) if word.startswith('Constraints and Subtasks')][0]
-					except ValueError:
-						constraint_start = description_lines.index('Constraints:')
+					except:
+						try:
+							constraint_start = description_lines.index('Constraints:')
+						except:
+							try:
+								constraint_start = description_lines.index('CONSTRAINTS')
+							except:
+								try:
+									constraint_start = description_lines.index('CONSTRAINTS:')
+								except:
+									constraint_start = example_start	# means constraints not given
 
-			try:
-				example_start = description_lines.index('Example')
-			except ValueError:
-				try:
-					example_start = description_lines.index('Example:')
-				except ValueError:
-					example_start = description_lines.index('Example :')
 
 			time_limit_start =  [i for i,word in enumerate(description_lines) if word.startswith('Time Limit:')][0]
 			sources_limit_start =  [i for i,word in enumerate(description_lines) if word.startswith('Source Limit:')][0]

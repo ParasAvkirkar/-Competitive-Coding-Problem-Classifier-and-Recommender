@@ -1,7 +1,6 @@
 from selenium import webdriver
 from problems import Problem
 from bs4 import BeautifulSoup
-from lxml import html
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -78,6 +77,9 @@ def getCodechefProblem(problemUrl, difficulty):
 			 			submissionSizes.append(float(re.sub("[^0-9, .]", "", allDataTags[2].text)))
 			 			totalSub = totalSub + 1
 			 			
+			if flag == False:
+				break
+
 			successDiv = driver.find_element_by_id('success-submissions')
 			aTags = successDiv.find_elements_by_tag_name('a')
 			if aTags is None:
