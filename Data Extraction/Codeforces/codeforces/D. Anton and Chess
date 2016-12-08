@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Anton and Chess\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAnton likes to play chess. Also, he likes to do programming. That is why he decided to write the program that plays chess. However, he finds the game on 8 to 8 board to too simple, he uses an infinite one instead.\u000aThe first task he faced is to check whether the king is in check. Anton doesn't know how to implement this so he asks you to help.\u000aConsider that an infinite chess board contains one white king and the number of black pieces. There are only rooks, bishops and queens, as the other pieces are not supported yet. The white king is said to be in check if at least one black piece can reach the cell with the king in one move.\u000aHelp Anton and write the program that for the given position determines whether the white king is in check.\u000aRemainder, on how do chess pieces move:\u000aBishop moves any number of cells diagonally, but it can't "leap" over the occupied cells.\u000aRook moves any number of cells horizontally or vertically, but it also can't "leap" over the occupied cells.\u000aQueen is able to move any number of cells horizontally, vertically or diagonally, but it also can't "leap".\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009500\u2009000) \u2014 the number of black pieces.\u000aThe second line contains two integers x0 and y0 (\u2009-\u2009109\u2009\u2264\u2009x0,\u2009y0\u2009\u2264\u2009109) \u2014 coordinates of the white king.\u000aThen follow n lines, each of them contains a character and two integers xi and yi (\u2009-\u2009109\u2009\u2264\u2009xi,\u2009yi\u2009\u2264\u2009109) \u2014 type of the i-th piece and its position. Character 'B' stands for the bishop, 'R' for the rook and 'Q' for the queen. It's guaranteed that no two pieces occupy the same position.\u000aOutput\u000aThe only line of the output should contains "YES" (without quotes) if the white king is in check and "NO" (without quotes) otherwise.\u000aExamples\u000ainput\u000a2\u000a4 2\u000aR 1 1\u000aB 1 5\u000aoutput\u000aYES\u000ainput\u000a2\u000a4 2\u000aR 3 3\u000aB 1 5\u000aoutput\u000aNO\u000aNote\u000aPicture for the first sample:\u000aWhite king is in check, because the black bishop can reach the cell with the white king in one move. The answer is "YES".\u000aPicture for the second sample:\u000aHere bishop can't reach the cell with the white king, because his path is blocked by the rook, and the bishop cant "leap" over it. Rook can't reach the white king, because it can't move diagonally. Hence, the king is not in check and the answer is "NO".
+p3
+sS'problemStatement'
+p4
+VD. Anton and Chess\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAnton likes to play chess. Also, he likes to do programming. That is why he decided to write the program that plays chess. However, he finds the game on 8 to 8 board to too simple, he uses an infinite one instead.\u000aThe first task he faced is to check whether the king is in check. Anton doesn't know how to implement this so he asks you to help.\u000aConsider that an infinite chess board contains one white king and the number of black pieces. There are only rooks, bishops and queens, as the other pieces are not supported yet. The white king is said to be in check if at least one black piece can reach the cell with the king in one move.\u000aHelp Anton and write the program that for the given position determines whether the white king is in check.\u000aRemainder, on how do chess pieces move:\u000aBishop moves any number of cells diagonally, but it can't "leap" over the occupied cells.\u000aRook moves any number of cells horizontally or vertically, but it also can't "leap" over the occupied cells.\u000aQueen is able to move any number of cells horizontally, vertically or diagonally, but it also can't "leap".\u000aInput\u000aThe first line of the input contains a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009500\u2009000) \u2014 the number of black pieces.\u000aThe second line contains two integers x0 and y0 (\u2009-\u2009109\u2009\u2264\u2009x0,\u2009y0\u2009\u2264\u2009109) \u2014 coordinates of the white king.\u000aThen follow n lines, each of them contains a character and two integers xi and yi (\u2009-\u2009109\u2009\u2264\u2009xi,\u2009yi\u2009\u2264\u2009109) \u2014 type of the i-th piece and its position. Character 'B' stands for the bishop, 'R' for the rook and 'Q' for the queen. It's guaranteed that no two pieces occupy the same position.\u000aOutput\u000aThe only line of the output should contains "YES" (without quotes) if the white king is in check and "NO" (without quotes) otherwise.\u000aExamples\u000ainput\u000a2\u000a4 2\u000aR 1 1\u000aB 1 5\u000aoutput\u000aYES\u000ainput\u000a2\u000a4 2\u000aR 3 3\u000aB 1 5\u000aoutput\u000aNO\u000aNote\u000aPicture for the first sample:\u000aWhite king is in check, because the black bishop can reach the cell with the white king in one move. The answer is "YES".\u000aPicture for the second sample:\u000aHere bishop can't reach the cell with the white king, because his path is blocked by the rook, and the bishop cant "leap" over it. Rook can't reach the white king, because it can't move diagonally. Hence, the king is not in check and the answer is "NO".
+p5
+sS'name'
+p6
+VD. Anton and Chess
+p7
+sS'tags'
+p8
+Vimplementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/734/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'problemId'
+p16
+V734/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

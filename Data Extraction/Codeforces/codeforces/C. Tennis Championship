@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Tennis Championship\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aFamous Brazil city Rio de Janeiro holds a tennis tournament and Ostap Bender doesn't want to miss this event. There will be n players participating, and the tournament will follow knockout rules from the very first game. That means, that if someone loses a game he leaves the tournament immediately.\u000aOrganizers are still arranging tournament grid (i.e. the order games will happen and who is going to play with whom) but they have already fixed one rule: two players can play against each other only if the number of games one of them has already played differs by no more than one from the number of games the other one has already played. Of course, both players had to win all their games in order to continue participating in the tournament.\u000aTournament hasn't started yet so the audience is a bit bored. Ostap decided to find out what is the maximum number of games the winner of the tournament can take part in (assuming the rule above is used). However, it is unlikely he can deal with this problem without your help.\u000aInput\u000aThe only line of the input contains a single integer n (2\u2009\u2264\u2009n\u2009\u2264\u20091018) \u2014 the number of players to participate in the tournament.\u000aOutput\u000aPrint the maximum number of games in which the winner of the tournament can take part.\u000aExamples\u000ainput\u000a2\u000aoutput\u000a1\u000ainput\u000a3\u000aoutput\u000a2\u000ainput\u000a4\u000aoutput\u000a2\u000ainput\u000a10\u000aoutput\u000a4\u000aNote\u000aIn all samples we consider that player number 1 is the winner.\u000aIn the first sample, there would be only one game so the answer is 1.\u000aIn the second sample, player 1 can consequently beat players 2 and 3.\u000aIn the third sample, player 1 can't play with each other player as after he plays with players 2 and 3 he can't play against player 4, as he has 0 games played, while player 1 already played 2. Thus, the answer is 2 and to achieve we make pairs (1,\u20092) and (3,\u20094) and then clash the winners.
+p3
+sS'problemStatement'
+p4
+VC. Tennis Championship\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aFamous Brazil city Rio de Janeiro holds a tennis tournament and Ostap Bender doesn't want to miss this event. There will be n players participating, and the tournament will follow knockout rules from the very first game. That means, that if someone loses a game he leaves the tournament immediately.\u000aOrganizers are still arranging tournament grid (i.e. the order games will happen and who is going to play with whom) but they have already fixed one rule: two players can play against each other only if the number of games one of them has already played differs by no more than one from the number of games the other one has already played. Of course, both players had to win all their games in order to continue participating in the tournament.\u000aTournament hasn't started yet so the audience is a bit bored. Ostap decided to find out what is the maximum number of games the winner of the tournament can take part in (assuming the rule above is used). However, it is unlikely he can deal with this problem without your help.\u000aInput\u000aThe only line of the input contains a single integer n (2\u2009\u2264\u2009n\u2009\u2264\u20091018) \u2014 the number of players to participate in the tournament.\u000aOutput\u000aPrint the maximum number of games in which the winner of the tournament can take part.\u000aExamples\u000ainput\u000a2\u000aoutput\u000a1\u000ainput\u000a3\u000aoutput\u000a2\u000ainput\u000a4\u000aoutput\u000a2\u000ainput\u000a10\u000aoutput\u000a4\u000aNote\u000aIn all samples we consider that player number 1 is the winner.\u000aIn the first sample, there would be only one game so the answer is 1.\u000aIn the second sample, player 1 can consequently beat players 2 and 3.\u000aIn the third sample, player 1 can't play with each other player as after he plays with players 2 and 3 he can't play against player 4, as he has 0 games played, while player 1 already played 2. Thus, the answer is 2 and to achieve we make pairs (1,\u20092) and (3,\u20094) and then clash the winners.
+p5
+sS'name'
+p6
+VC. Tennis Championship
+p7
+sS'tags'
+p8
+Vgreedy math 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/735/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V735/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.
