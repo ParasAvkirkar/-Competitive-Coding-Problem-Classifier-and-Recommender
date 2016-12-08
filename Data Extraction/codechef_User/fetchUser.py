@@ -103,7 +103,7 @@ def fetch_user(uname, driver, statusPageDriver):
 									noOfSubmission = noOfSubmission + len(rowTagsStatus)
 									if time is None:
 										#10:57 PM 08/10/15
-										time = datetime.strptime(allDataTagsStatus[1].text,'%I:%M %p %d/%m/%y')
+										time = datetime.datetime.strptime(allDataTagsStatus[1].text,'%I:%M %p %d/%m/%y')
 
 									aTagsStatus = statusPageDriver.find_elements_by_tag_name('a')
 									flag = False
@@ -283,12 +283,13 @@ except Exception as e:
 
 
 i = 0
-
+count = 0
 f = open('users_ids.txt', 'r')
 for uname in f:
 	if count == i:
 		uname = uname.split('\n')[0]
-		fetch_user(uname, driver, statusPageDriver)
+		if not sqlDB.does_user_exist(uname, 'codechef_user'):
+			fetch_user(uname, driver, statusPageDriver)
 
 		count += 1
 		with open('curr_progress', 'w+b') as f:

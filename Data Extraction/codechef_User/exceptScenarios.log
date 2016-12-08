@@ -193,3 +193,883 @@ ERROR:root:Time: 2016-12-05 20:23:50.938263 File: fetchUser.py Line: 106 Caused 
 ERROR:root:2016-12-05 20:23:51.586379 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
 ERROR:root:2016-12-05 20:23:51.684353 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
 ERROR:root:Time: 2016-12-05 20:23:58.137166 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:19:06.843000 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:19:10.685000 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:19:12.230000 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:19:14.012000 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:19:15.768000 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:19:20.137000 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:19:21.976000 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:19:23.752000 File: fetchUser.py Line: 106 Caused By: 'module' object has no attribute 'strptime'
+ERROR:root:Time: 2016-12-08 12:24:34.717000 File: fetchUser.py Line: 96 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:34.780000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:34.840000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:34.905000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:34.955000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.008000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.079000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.150000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.228000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.311000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.383000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.454000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.523000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.588000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.655000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.806000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.852000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.912000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:35.966000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.016000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.066000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.118000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.182000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.237000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.291000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.351000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.412000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.464000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.517000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.619000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.672000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.724000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.779000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.828000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.884000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:24:36.941000 File: fetchUser.py Line: 95 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:33:14.517000 File: fetchUser.py Line: 270 Caused By: [Errno 2] No such file or directory: 'curr_progress'
+ERROR:root:Time: 2016-12-08 12:35:46.809000 File: fetchUser.py Line: 106 Caused By: list index out of range
+ERROR:root:Time: 2016-12-08 12:46:01.233000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-08 12:47:59.532000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 12:56:53.818000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 12:59:56.456000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:00:49.021000 File: fetchUser.py Line: 106 Caused By: must be string, not None
+ERROR:root:Time: 2016-12-08 13:00:53.074000 File: fetchUser.py Line: 83 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:00:57.092000 File: fetchUser.py Line: 150 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:02:25.759000 File: fetchUser.py Line: 192 Caused By: list index out of range
+ERROR:root:Time: 2016-12-08 13:06:54.060000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:08:18.131000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:12:23.200000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:15:11.162000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.064000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.149000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.230000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.310000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.390000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.472000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.557000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.664000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.745000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.866000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:06.941000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.022000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.139000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.260000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.364000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.459000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.574000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.646000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.732000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.818000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.900000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:07.982000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:08.068000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:08.152000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:08.239000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:08.321000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:08.408000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:08.489000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:08.573000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.140000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.249000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.333000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.418000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.497000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.576000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.661000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.750000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.852000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:09.946000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.022000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.101000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.192000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.270000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.353000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.435000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.530000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.611000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.687000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.789000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:10.946000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.027000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.118000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.208000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.288000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.367000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.445000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.563000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.659000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.741000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.816000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.894000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:11.970000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.052000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.144000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.222000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.305000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.392000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.474000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.554000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.639000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.724000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.804000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.890000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:12.984000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.059000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.136000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.221000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.297000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.398000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.483000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.564000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.645000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.738000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.815000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:13.893000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:14.067000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:14.149000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:14.230000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:14.320000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:14.408000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:14.491000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:14.586000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:14.978000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.064000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.141000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.219000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.307000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.389000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.468000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.555000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.637000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.723000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.817000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.914000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:15.998000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:16.093000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:16.182000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:16:16.646000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:22:01.477000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:22:58.558000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:23:11.479000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:25:07.994000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:25:52.522000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:25:53.261000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-08 13:26:14.055000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 13:38:35.892000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-08 13:39:03.240000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 13:39:45.558000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:46:08.105000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:50:21.590000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:51:06.616000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:51:16.301000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:51:59.487000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:53:38.243000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:54:48.250000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:56:29.971000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 13:58:02.408000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:07:30.911000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:09:18.244000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:15:21.092000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:17:28.526000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:18:59.510000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:25:17.730000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:32:01.326000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:40:03.253000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:40:17.695000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-08 14:44:04.554000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 14:44:55.104000 File: fetchUser.py Line: 35 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:46:07.001000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:48:01.309000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:52:14.111000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:52:51.351000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-08 14:56:42.707000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 14:57:00.991000 File: fetchUser.py Line: 35 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:57:01.045000 File: fetchUser.py Line: 67 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"rating-table"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:57:18.819000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 14:58:44.305000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:00:43.256000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:02:17.040000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:11:02.688000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:16:18.205000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:17:16.962000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:18:56.160000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:21:26.501000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-08 15:24:34.914000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 15:43:49.153000 File: fetchUser.py Line: 271 Caused By: 
+ERROR:root:2016-12-08 15:43:49.155000 :File Name: sqlDB.py :Line Number: 93 :Caused By: bad operand type for unary +: 'str'
+ERROR:root:Time: 2016-12-08 15:45:04.764000 File: fetchUser.py Line: 271 Caused By: 
+ERROR:root:2016-12-08 15:45:04.766000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-08 15:45:04.776000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 15:45:06.457000 File: fetchUser.py Line: 35 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:45:06.461000 File: fetchUser.py Line: 50 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-08 15:45:06.464000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-08 15:45:20.998000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-08 15:45:21.016000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 15:50:26.115000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:51:44.742000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:52:13.124000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 15:56:21.223000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-08 16:16:34.086000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-08 16:22:32.500000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-08 16:22:45.674000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-08 16:23:12.512000 File: fetchUser.py Line: 192 Caused By: list index out of range
+ERROR:root:2016-12-08 16:23:12.513000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-08 16:23:12.517000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-08 16:23:12.520000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-08 16:23:12.524000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-08 16:23:12.528000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
