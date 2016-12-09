@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Alyona and a tree\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlyona has a tree with n vertices. The root of the tree is the vertex 1. In each vertex Alyona wrote an positive integer, in the vertex i she wrote ai. Moreover, the girl wrote a positive integer to every edge of the tree (possibly, different integers on different edges).\u000aLet's define dist(v,\u2009u) as the sum of the integers written on the edges of the simple path from v to u.\u000aThe vertex v controls the vertex u (v\u2009\u2260\u2009u) if and only if u is in the subtree of v and dist(v,\u2009u)\u2009\u2264\u2009au.\u000aAlyona wants to settle in some vertex. In order to do this, she wants to know for each vertex v what is the number of vertices u such that v controls u.\u000aInput\u000aThe first line contains single integer n (1\u2009\u2264\u2009n\u2009\u2264\u20092·105).\u000aThe second line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the integers written in the vertices.\u000aThe next (n\u2009-\u20091) lines contain two integers each. The i-th of these lines contains integers pi and wi (1\u2009\u2264\u2009pi\u2009\u2264\u2009n, 1\u2009\u2264\u2009wi\u2009\u2264\u2009109) \u2014 the parent of the (i\u2009+\u20091)-th vertex in the tree and the number written on the edge between pi and (i\u2009+\u20091).\u000aIt is guaranteed that the given graph is a tree.\u000aOutput\u000aPrint n integers \u2014 the i-th of these numbers should be equal to the number of vertices that the i-th vertex controls.\u000aExamples\u000ainput\u000a5\u000a2 5 1 4 6\u000a1 7\u000a1 1\u000a3 5\u000a3 6\u000aoutput\u000a1 0 1 0 0\u000ainput\u000a5\u000a9 7 8 6 5\u000a1 1\u000a2 1\u000a3 1\u000a4 1\u000aoutput\u000a4 3 2 1 0\u000aNote\u000aIn the example test case the vertex 1 controls the vertex 3, the vertex 3 controls the vertex 5 (note that is doesn't mean the vertex 1 controls the vertex 5).
+p3
+sS'problemStatement'
+p4
+VB. Alyona and a tree\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlyona has a tree with n vertices. The root of the tree is the vertex 1. In each vertex Alyona wrote an positive integer, in the vertex i she wrote ai. Moreover, the girl wrote a positive integer to every edge of the tree (possibly, different integers on different edges).\u000aLet's define dist(v,\u2009u) as the sum of the integers written on the edges of the simple path from v to u.\u000aThe vertex v controls the vertex u (v\u2009\u2260\u2009u) if and only if u is in the subtree of v and dist(v,\u2009u)\u2009\u2264\u2009au.\u000aAlyona wants to settle in some vertex. In order to do this, she wants to know for each vertex v what is the number of vertices u such that v controls u.\u000aInput\u000aThe first line contains single integer n (1\u2009\u2264\u2009n\u2009\u2264\u20092·105).\u000aThe second line contains n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the integers written in the vertices.\u000aThe next (n\u2009-\u20091) lines contain two integers each. The i-th of these lines contains integers pi and wi (1\u2009\u2264\u2009pi\u2009\u2264\u2009n, 1\u2009\u2264\u2009wi\u2009\u2264\u2009109) \u2014 the parent of the (i\u2009+\u20091)-th vertex in the tree and the number written on the edge between pi and (i\u2009+\u20091).\u000aIt is guaranteed that the given graph is a tree.\u000aOutput\u000aPrint n integers \u2014 the i-th of these numbers should be equal to the number of vertices that the i-th vertex controls.\u000aExamples\u000ainput\u000a5\u000a2 5 1 4 6\u000a1 7\u000a1 1\u000a3 5\u000a3 6\u000aoutput\u000a1 0 1 0 0\u000ainput\u000a5\u000a9 7 8 6 5\u000a1 1\u000a2 1\u000a3 1\u000a4 1\u000aoutput\u000a4 3 2 1 0\u000aNote\u000aIn the example test case the vertex 1 controls the vertex 3, the vertex 3 controls the vertex 5 (note that is doesn't mean the vertex 1 controls the vertex 5).
+p5
+sS'name'
+p6
+VB. Alyona and a tree
+p7
+sS'tags'
+p8
+Vbinary search data structures dfs and similar graphs trees 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/739/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V739/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

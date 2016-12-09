@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Arpa\u2019s abnormal DNA and Mehrdad\u2019s deep interest\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAll of us know that girls in Arpa\u2019s land are... ok, you\u2019ve got the idea :D\u000aAnyone knows that Arpa isn't a normal man, he is ... well, sorry, I can't explain it more. Mehrdad is interested about the reason, so he asked Sipa, one of the best biology scientists in Arpa's land, for help. Sipa has a DNA editor.\u000aSipa put Arpa under the DNA editor. DNA editor showed Arpa's DNA as a string S consisting of n lowercase English letters. Also Sipa has another DNA T consisting of lowercase English letters that belongs to a normal man.\u000aNow there are (n\u2009+\u20091) options to change Arpa's DNA, numbered from 0 to n. i-th of them is to put T between i-th and (i\u2009+\u20091)-th characters of S (0\u2009\u2264\u2009i\u2009\u2264\u2009n). If i\u2009=\u20090, T will be put before S, and if i\u2009=\u2009n, it will be put after S.\u000aMehrdad wants to choose the most interesting option for Arpa's DNA among these n\u2009+\u20091 options. DNA A is more interesting than B if A is lexicographically smaller than B. Mehrdad asked Sipa q questions:\u000aGiven integers l,\u2009r,\u2009k,\u2009x,\u2009y, what is the most interesting option if we only consider such options i that l\u2009\u2264\u2009i\u2009\u2264\u2009r and ? If there are several most interesting options, Mehrdad wants to know one with the smallest number i.\u000aSince Sipa is a biology scientist but not a programmer, you should help him.\u000aInput\u000aThe first line contains strings S, T and integer q (1\u2009\u2264\u2009|S|,\u2009|T|,\u2009q\u2009\u2264\u2009105) \u2014 Arpa's DNA, the DNA of a normal man, and the number of Mehrdad's questions. The strings S and T consist only of small English letters.\u000aNext q lines describe the Mehrdad's questions. Each of these lines contain five integers l,\u2009r,\u2009k,\u2009x,\u2009y (0\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n, 1\u2009\u2264\u2009k\u2009\u2264\u2009n, 0\u2009\u2264\u2009x\u2009\u2264\u2009y\u2009<\u2009k).\u000aOutput\u000aPrint q integers. The j-th of them should be the number i of the most interesting option among those that satisfy the conditions of the j-th question. If there is no option i satisfying the conditions in some question, print -1.\u000aExamples\u000ainput\u000aabc d 4\u000a0 3 2 0 0\u000a0 3 1 0 0\u000a1 2 1 0 0\u000a0 1 3 2 2\u000aoutput\u000a2 3 2 -1 \u000ainput\u000aabbbbbbaaa baababaaab 10\u000a1 2 1 0 0\u000a2 7 8 4 7\u000a2 3 9 2 8\u000a3 4 6 1 1\u000a0 8 5 2 4\u000a2 8 10 4 7\u000a7 10 1 0 0\u000a1 4 6 0 2\u000a0 9 8 0 6\u000a4 8 5 0 1\u000aoutput\u000a1 4 2 -1 2 4 10 1 1 5 \u000aNote\u000aExplanation of first sample case:\u000aIn the first question Sipa has two options: dabc (i\u2009=\u20090) and abdc (i\u2009=\u20092). The latter (abcd) is better than abdc, so answer is 2.\u000aIn the last question there is no i such that 0\u2009\u2264\u2009i\u2009\u2264\u20091 and .
+p3
+sS'problemStatement'
+p4
+VE. Arpa\u2019s abnormal DNA and Mehrdad\u2019s deep interest\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAll of us know that girls in Arpa\u2019s land are... ok, you\u2019ve got the idea :D\u000aAnyone knows that Arpa isn't a normal man, he is ... well, sorry, I can't explain it more. Mehrdad is interested about the reason, so he asked Sipa, one of the best biology scientists in Arpa's land, for help. Sipa has a DNA editor.\u000aSipa put Arpa under the DNA editor. DNA editor showed Arpa's DNA as a string S consisting of n lowercase English letters. Also Sipa has another DNA T consisting of lowercase English letters that belongs to a normal man.\u000aNow there are (n\u2009+\u20091) options to change Arpa's DNA, numbered from 0 to n. i-th of them is to put T between i-th and (i\u2009+\u20091)-th characters of S (0\u2009\u2264\u2009i\u2009\u2264\u2009n). If i\u2009=\u20090, T will be put before S, and if i\u2009=\u2009n, it will be put after S.\u000aMehrdad wants to choose the most interesting option for Arpa's DNA among these n\u2009+\u20091 options. DNA A is more interesting than B if A is lexicographically smaller than B. Mehrdad asked Sipa q questions:\u000aGiven integers l,\u2009r,\u2009k,\u2009x,\u2009y, what is the most interesting option if we only consider such options i that l\u2009\u2264\u2009i\u2009\u2264\u2009r and ? If there are several most interesting options, Mehrdad wants to know one with the smallest number i.\u000aSince Sipa is a biology scientist but not a programmer, you should help him.\u000aInput\u000aThe first line contains strings S, T and integer q (1\u2009\u2264\u2009|S|,\u2009|T|,\u2009q\u2009\u2264\u2009105) \u2014 Arpa's DNA, the DNA of a normal man, and the number of Mehrdad's questions. The strings S and T consist only of small English letters.\u000aNext q lines describe the Mehrdad's questions. Each of these lines contain five integers l,\u2009r,\u2009k,\u2009x,\u2009y (0\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n, 1\u2009\u2264\u2009k\u2009\u2264\u2009n, 0\u2009\u2264\u2009x\u2009\u2264\u2009y\u2009<\u2009k).\u000aOutput\u000aPrint q integers. The j-th of them should be the number i of the most interesting option among those that satisfy the conditions of the j-th question. If there is no option i satisfying the conditions in some question, print -1.\u000aExamples\u000ainput\u000aabc d 4\u000a0 3 2 0 0\u000a0 3 1 0 0\u000a1 2 1 0 0\u000a0 1 3 2 2\u000aoutput\u000a2 3 2 -1 \u000ainput\u000aabbbbbbaaa baababaaab 10\u000a1 2 1 0 0\u000a2 7 8 4 7\u000a2 3 9 2 8\u000a3 4 6 1 1\u000a0 8 5 2 4\u000a2 8 10 4 7\u000a7 10 1 0 0\u000a1 4 6 0 2\u000a0 9 8 0 6\u000a4 8 5 0 1\u000aoutput\u000a1 4 2 -1 2 4 10 1 1 5 \u000aNote\u000aExplanation of first sample case:\u000aIn the first question Sipa has two options: dabc (i\u2009=\u20090) and abdc (i\u2009=\u20092). The latter (abcd) is better than abdc, so answer is 2.\u000aIn the last question there is no i such that 0\u2009\u2264\u2009i\u2009\u2264\u20091 and .
+p5
+sS'name'
+p6
+VE. Arpa\u2019s abnormal DNA and Mehrdad\u2019s deep interest
+p7
+sS'tags'
+p8
+S''
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/741/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V741/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

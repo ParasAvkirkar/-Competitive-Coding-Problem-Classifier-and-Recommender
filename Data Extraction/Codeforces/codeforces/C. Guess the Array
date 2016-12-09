@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Guess the Array\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThis is an interactive problem. You should use flush operation after each printed line. For example, in C++ you should use fflush(stdout), in Java you should use System.out.flush(), and in Pascal \u2014 flush(output).\u000aIn this problem you should guess an array a which is unknown for you. The only information you have initially is the length n of the array a.\u000aThe only allowed action is to ask the sum of two elements by their indices. Formally, you can print two indices i and j (the indices should be distinct). Then your program should read the response: the single integer equals to ai\u2009+\u2009aj.\u000aIt is easy to prove that it is always possible to guess the array using at most n requests.\u000aWrite a program that will guess the array a by making at most n requests.\u000aInteraction\u000aIn each test your program should guess a single array.\u000aThe input starts with a line containing integer n (3\u2009\u2264\u2009n\u2009\u2264\u20095000) \u2014 the length of the array. Your program should read it at first.\u000aAfter that your program should print to the standard output the requests about the sum of two elements or inform that the array is guessed.\u000aIn case your program is making a request to ask the sum of two elements, it should print line in the format "? i j" (i and j are distinct integers between 1 and n), where i and j are indices in the array a.\u000aIn case your program informs that the array is guessed, it should print line in the format "! a1 a2 ... an" (it is guaranteed that all ai are positive integers not exceeding 105), where ai is the i-th element of the array a.\u000aThe response on a request is a single integer equal to ai\u2009+\u2009aj, printed on a separate line.\u000aYour program can do at most n requests. Note that the final line «! a1 a2 ... an» is not counted as a request.\u000aDo not forget about flush operation after each printed line.\u000aAfter you program prints the guessed array, it should terminate normally.\u000aExample\u000ainput\u000a5\u000a \u000a9\u000a \u000a7\u000a \u000a9\u000a \u000a11\u000a \u000a6\u000a output\u000a \u000a? 1 5\u000a \u000a? 2 3\u000a \u000a? 4 1\u000a \u000a? 5 2\u000a \u000a? 3 4\u000a \u000a! 4 6 1 5 5\u000aNote\u000aThe format of a test to make a hack is:\u000aThe first line contains an integer number n (3\u2009\u2264\u2009n\u2009\u2264\u20095000) \u2014 the length of the array.\u000aThe second line contains n numbers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009105) \u2014 the elements of the array to guess.
+p3
+sS'problemStatement'
+p4
+VC. Guess the Array\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThis is an interactive problem. You should use flush operation after each printed line. For example, in C++ you should use fflush(stdout), in Java you should use System.out.flush(), and in Pascal \u2014 flush(output).\u000aIn this problem you should guess an array a which is unknown for you. The only information you have initially is the length n of the array a.\u000aThe only allowed action is to ask the sum of two elements by their indices. Formally, you can print two indices i and j (the indices should be distinct). Then your program should read the response: the single integer equals to ai\u2009+\u2009aj.\u000aIt is easy to prove that it is always possible to guess the array using at most n requests.\u000aWrite a program that will guess the array a by making at most n requests.\u000aInteraction\u000aIn each test your program should guess a single array.\u000aThe input starts with a line containing integer n (3\u2009\u2264\u2009n\u2009\u2264\u20095000) \u2014 the length of the array. Your program should read it at first.\u000aAfter that your program should print to the standard output the requests about the sum of two elements or inform that the array is guessed.\u000aIn case your program is making a request to ask the sum of two elements, it should print line in the format "? i j" (i and j are distinct integers between 1 and n), where i and j are indices in the array a.\u000aIn case your program informs that the array is guessed, it should print line in the format "! a1 a2 ... an" (it is guaranteed that all ai are positive integers not exceeding 105), where ai is the i-th element of the array a.\u000aThe response on a request is a single integer equal to ai\u2009+\u2009aj, printed on a separate line.\u000aYour program can do at most n requests. Note that the final line «! a1 a2 ... an» is not counted as a request.\u000aDo not forget about flush operation after each printed line.\u000aAfter you program prints the guessed array, it should terminate normally.\u000aExample\u000ainput\u000a5\u000a \u000a9\u000a \u000a7\u000a \u000a9\u000a \u000a11\u000a \u000a6\u000a output\u000a \u000a? 1 5\u000a \u000a? 2 3\u000a \u000a? 4 1\u000a \u000a? 5 2\u000a \u000a? 3 4\u000a \u000a! 4 6 1 5 5\u000aNote\u000aThe format of a test to make a hack is:\u000aThe first line contains an integer number n (3\u2009\u2264\u2009n\u2009\u2264\u20095000) \u2014 the length of the array.\u000aThe second line contains n numbers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009105) \u2014 the elements of the array to guess.
+p5
+sS'name'
+p6
+VC. Guess the Array
+p7
+sS'tags'
+p8
+Vconstructive algorithms math 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/727/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V727/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

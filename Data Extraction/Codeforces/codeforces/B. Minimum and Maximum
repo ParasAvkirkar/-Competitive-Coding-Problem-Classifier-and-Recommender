@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Minimum and Maximum\u000atime limit per test4 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThis is an interactive problem. You have to use flush operation right after printing each line. For example, in C++ you should use function fflush(stdout), in Java \u2014 System.out.flush(), in Pascal \u2014 flush(output) and in Python \u2014 sys.stdout.flush().\u000aIn this problem, you need to find maximal and minimal elements of an array. What could be simpler?\u000aYou can imagine that the jury has an array, and initially you know the only number n \u2014 array's length.\u000aArray's elements are numbered from 1 to n. You are allowed to compare two elements of the array by using their indices i and j. There are three possible responses to this query: '<' (if ai is less than aj), '=' (if ai is equal to aj) and finally '>' (if ai is greater than aj).\u000aIt's known that it's always possible to find both maximal and minimal elements of the array by using no more than comparisons, where \u2308 x\u2309 is the result of rounding x up.\u000aWrite the program that will find positions of the minimum and the maximum in the jury's array of length n, by using no more than f(n) comparisons.\u000aInteraction\u000aEach test for this problem will contain one or more arrays. You have to find positions of minimal and maximal elements for each of these arrays. The first line of the input contains integer T (1\u2009\u2264\u2009T\u2009\u2264\u20091000) \u2014 number of arrays in the test.\u000aThus, at the beginning, you program should read number T, and then it should solve the problem for T jury's arrays one by one.\u000aThen input for each array goes. Firstly, your program has to read the number n (1\u2009\u2264\u2009n\u2009\u2264\u200950) \u2014 the length of the array. It will be provided in the next line of the input.\u000aFurther, your program can perform comparisons or report that the answer is found.\u000aTo perform a comparison, you have to output string of the following pattern «? i j» (i and j must be integer numbers from 1 to n) \u2014 the indices of the elements to compare in the current query.\u000aTo report the indices of minimal and maximal elements of the hidden array, your program have to output a line in the form «! i j» (i and j must be integer numbers from 1 to n), where i is an index of the minimal element of array, and j is an index of the maximal element of the array. If there are several possible answers to the problem, you can output any of them.\u000aThere are several possible responses for a comparison:\u000a'<' \u2014 if ai is less than aj,\u000a'=' \u2014 if ai is equal to aj,\u000a'>' \u2014 if ai is greater than aj.\u000aFor an array of length n your program can make at most comparisons. Note that the operation of reporting an answer («! i j» ) is not included into the value of f(n).\u000aAfter the answer is reported, your program has to solve the problem for the next array or it should terminate if all T arrays are processed.\u000aExample\u000ainput\u000a2\u000a2\u000a \u000a>\u000a \u000a3\u000a \u000a=\u000a \u000a=\u000a output\u000a \u000a \u000a? 1 2\u000a \u000a! 2 1\u000a \u000a? 3 1\u000a \u000a? 2 1\u000a \u000a! 2 3
+p3
+sS'problemStatement'
+p4
+VB. Minimum and Maximum\u000atime limit per test4 seconds\u000amemory limit per test512 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThis is an interactive problem. You have to use flush operation right after printing each line. For example, in C++ you should use function fflush(stdout), in Java \u2014 System.out.flush(), in Pascal \u2014 flush(output) and in Python \u2014 sys.stdout.flush().\u000aIn this problem, you need to find maximal and minimal elements of an array. What could be simpler?\u000aYou can imagine that the jury has an array, and initially you know the only number n \u2014 array's length.\u000aArray's elements are numbered from 1 to n. You are allowed to compare two elements of the array by using their indices i and j. There are three possible responses to this query: '<' (if ai is less than aj), '=' (if ai is equal to aj) and finally '>' (if ai is greater than aj).\u000aIt's known that it's always possible to find both maximal and minimal elements of the array by using no more than comparisons, where \u2308 x\u2309 is the result of rounding x up.\u000aWrite the program that will find positions of the minimum and the maximum in the jury's array of length n, by using no more than f(n) comparisons.\u000aInteraction\u000aEach test for this problem will contain one or more arrays. You have to find positions of minimal and maximal elements for each of these arrays. The first line of the input contains integer T (1\u2009\u2264\u2009T\u2009\u2264\u20091000) \u2014 number of arrays in the test.\u000aThus, at the beginning, you program should read number T, and then it should solve the problem for T jury's arrays one by one.\u000aThen input for each array goes. Firstly, your program has to read the number n (1\u2009\u2264\u2009n\u2009\u2264\u200950) \u2014 the length of the array. It will be provided in the next line of the input.\u000aFurther, your program can perform comparisons or report that the answer is found.\u000aTo perform a comparison, you have to output string of the following pattern «? i j» (i and j must be integer numbers from 1 to n) \u2014 the indices of the elements to compare in the current query.\u000aTo report the indices of minimal and maximal elements of the hidden array, your program have to output a line in the form «! i j» (i and j must be integer numbers from 1 to n), where i is an index of the minimal element of array, and j is an index of the maximal element of the array. If there are several possible answers to the problem, you can output any of them.\u000aThere are several possible responses for a comparison:\u000a'<' \u2014 if ai is less than aj,\u000a'=' \u2014 if ai is equal to aj,\u000a'>' \u2014 if ai is greater than aj.\u000aFor an array of length n your program can make at most comparisons. Note that the operation of reporting an answer («! i j» ) is not included into the value of f(n).\u000aAfter the answer is reported, your program has to solve the problem for the next array or it should terminate if all T arrays are processed.\u000aExample\u000ainput\u000a2\u000a2\u000a \u000a>\u000a \u000a3\u000a \u000a=\u000a \u000a=\u000a output\u000a \u000a \u000a? 1 2\u000a \u000a! 2 1\u000a \u000a? 3 1\u000a \u000a? 2 1\u000a \u000a! 2 3
+p5
+sS'name'
+p6
+VB. Minimum and Maximum
+p7
+sS'tags'
+p8
+Vconstructive algorithms 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/730/B
+p11
+sS'memorylimit'
+p12
+V512 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'problemId'
+p16
+V730/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

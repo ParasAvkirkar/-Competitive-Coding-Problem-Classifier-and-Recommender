@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Anton and Making Potions\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAnton is playing a very interesting computer game, but now he is stuck at one of the levels. To pass to the next level he has to prepare n potions.\u000aAnton has a special kettle, that can prepare one potions in x seconds. Also, he knows spells of two types that can faster the process of preparing potions.\u000aSpells of this type speed up the preparation time of one potion. There are m spells of this type, the i-th of them costs bi manapoints and changes the preparation time of each potion to ai instead of x.\u000aSpells of this type immediately prepare some number of potions. There are k such spells, the i-th of them costs di manapoints and instantly create ci potions.\u000aAnton can use no more than one spell of the first type and no more than one spell of the second type, and the total number of manapoints spent should not exceed s. Consider that all spells are used instantly and right before Anton starts to prepare potions.\u000aAnton wants to get to the next level as fast as possible, so he is interested in the minimum number of time he needs to spent in order to prepare at least n potions.\u000aInput\u000aThe first line of the input contains three integers n, m, k (1\u2009\u2264\u2009n\u2009\u2264\u20092·109,\u20091\u2009\u2264\u2009m,\u2009k\u2009\u2264\u20092·105) \u2014 the number of potions, Anton has to make, the number of spells of the first type and the number of spells of the second type.\u000aThe second line of the input contains two integers x and s (2\u2009\u2264\u2009x\u2009\u2264\u20092·109,\u20091\u2009\u2264\u2009s\u2009\u2264\u20092·109) \u2014 the initial number of seconds required to prepare one potion and the number of manapoints Anton can use.\u000aThe third line contains m integers ai (1\u2009\u2264\u2009ai\u2009<\u2009x) \u2014 the number of seconds it will take to prepare one potion if the i-th spell of the first type is used.\u000aThe fourth line contains m integers bi (1\u2009\u2264\u2009bi\u2009\u2264\u20092·109) \u2014 the number of manapoints to use the i-th spell of the first type.\u000aThere are k integers ci (1\u2009\u2264\u2009ci\u2009\u2264\u2009n) in the fifth line \u2014 the number of potions that will be immediately created if the i-th spell of the second type is used. It's guaranteed that ci are not decreasing, i.e. ci\u2009\u2264\u2009cj if i\u2009<\u2009j.\u000aThe sixth line contains k integers di (1\u2009\u2264\u2009di\u2009\u2264\u20092·109) \u2014 the number of manapoints required to use the i-th spell of the second type. It's guaranteed that di are not decreasing, i.e. di\u2009\u2264\u2009dj if i\u2009<\u2009j.\u000aOutput\u000aPrint one integer \u2014 the minimum time one has to spent in order to prepare n potions.\u000aExamples\u000ainput\u000a20 3 2\u000a10 99\u000a2 4 3\u000a20 10 40\u000a4 15\u000a10 80\u000aoutput\u000a20\u000ainput\u000a20 3 2\u000a10 99\u000a2 4 3\u000a200 100 400\u000a4 15\u000a100 800\u000aoutput\u000a200\u000aNote\u000aIn the first sample, the optimum answer is to use the second spell of the first type that costs 10 manapoints. Thus, the preparation time of each potion changes to 4 seconds. Also, Anton should use the second spell of the second type to instantly prepare 15 potions spending 80 manapoints. The total number of manapoints used is 10\u2009+\u200980\u2009=\u200990, and the preparation time is 4·5\u2009=\u200920 seconds (15 potions were prepared instantly, and the remaining 5 will take 4 seconds each).\u000aIn the second sample, Anton can't use any of the spells, so he just prepares 20 potions, spending 10 seconds on each of them and the answer is 20·10\u2009=\u2009200.
+p3
+sS'problemStatement'
+p4
+VC. Anton and Making Potions\u000atime limit per test4 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAnton is playing a very interesting computer game, but now he is stuck at one of the levels. To pass to the next level he has to prepare n potions.\u000aAnton has a special kettle, that can prepare one potions in x seconds. Also, he knows spells of two types that can faster the process of preparing potions.\u000aSpells of this type speed up the preparation time of one potion. There are m spells of this type, the i-th of them costs bi manapoints and changes the preparation time of each potion to ai instead of x.\u000aSpells of this type immediately prepare some number of potions. There are k such spells, the i-th of them costs di manapoints and instantly create ci potions.\u000aAnton can use no more than one spell of the first type and no more than one spell of the second type, and the total number of manapoints spent should not exceed s. Consider that all spells are used instantly and right before Anton starts to prepare potions.\u000aAnton wants to get to the next level as fast as possible, so he is interested in the minimum number of time he needs to spent in order to prepare at least n potions.\u000aInput\u000aThe first line of the input contains three integers n, m, k (1\u2009\u2264\u2009n\u2009\u2264\u20092·109,\u20091\u2009\u2264\u2009m,\u2009k\u2009\u2264\u20092·105) \u2014 the number of potions, Anton has to make, the number of spells of the first type and the number of spells of the second type.\u000aThe second line of the input contains two integers x and s (2\u2009\u2264\u2009x\u2009\u2264\u20092·109,\u20091\u2009\u2264\u2009s\u2009\u2264\u20092·109) \u2014 the initial number of seconds required to prepare one potion and the number of manapoints Anton can use.\u000aThe third line contains m integers ai (1\u2009\u2264\u2009ai\u2009<\u2009x) \u2014 the number of seconds it will take to prepare one potion if the i-th spell of the first type is used.\u000aThe fourth line contains m integers bi (1\u2009\u2264\u2009bi\u2009\u2264\u20092·109) \u2014 the number of manapoints to use the i-th spell of the first type.\u000aThere are k integers ci (1\u2009\u2264\u2009ci\u2009\u2264\u2009n) in the fifth line \u2014 the number of potions that will be immediately created if the i-th spell of the second type is used. It's guaranteed that ci are not decreasing, i.e. ci\u2009\u2264\u2009cj if i\u2009<\u2009j.\u000aThe sixth line contains k integers di (1\u2009\u2264\u2009di\u2009\u2264\u20092·109) \u2014 the number of manapoints required to use the i-th spell of the second type. It's guaranteed that di are not decreasing, i.e. di\u2009\u2264\u2009dj if i\u2009<\u2009j.\u000aOutput\u000aPrint one integer \u2014 the minimum time one has to spent in order to prepare n potions.\u000aExamples\u000ainput\u000a20 3 2\u000a10 99\u000a2 4 3\u000a20 10 40\u000a4 15\u000a10 80\u000aoutput\u000a20\u000ainput\u000a20 3 2\u000a10 99\u000a2 4 3\u000a200 100 400\u000a4 15\u000a100 800\u000aoutput\u000a200\u000aNote\u000aIn the first sample, the optimum answer is to use the second spell of the first type that costs 10 manapoints. Thus, the preparation time of each potion changes to 4 seconds. Also, Anton should use the second spell of the second type to instantly prepare 15 potions spending 80 manapoints. The total number of manapoints used is 10\u2009+\u200980\u2009=\u200990, and the preparation time is 4·5\u2009=\u200920 seconds (15 potions were prepared instantly, and the remaining 5 will take 4 seconds each).\u000aIn the second sample, Anton can't use any of the spells, so he just prepares 20 potions, spending 10 seconds on each of them and the answer is 20·10\u2009=\u2009200.
+p5
+sS'name'
+p6
+VC. Anton and Making Potions
+p7
+sS'tags'
+p8
+Vbinary search dp greedy two pointers 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/734/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V4 seconds
+p15
+sS'problemId'
+p16
+V734/C
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

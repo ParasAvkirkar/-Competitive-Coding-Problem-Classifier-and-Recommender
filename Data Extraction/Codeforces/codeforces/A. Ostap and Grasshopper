@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Ostap and Grasshopper\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOn the way to Rio de Janeiro Ostap kills time playing with a grasshopper he took with him in a special box. Ostap builds a line of length n such that some cells of this line are empty and some contain obstacles. Then, he places his grasshopper to one of the empty cells and a small insect in another empty cell. The grasshopper wants to eat the insect.\u000aOstap knows that grasshopper is able to jump to any empty cell that is exactly k cells away from the current (to the left or to the right). Note that it doesn't matter whether intermediate cells are empty or not as the grasshopper makes a jump over them. For example, if k\u2009=\u20091 the grasshopper can jump to a neighboring cell only, and if k\u2009=\u20092 the grasshopper can jump over a single cell.\u000aYour goal is to determine whether there is a sequence of jumps such that grasshopper will get from his initial position to the cell with an insect.\u000aInput\u000aThe first line of the input contains two integers n and k (2\u2009\u2264\u2009n\u2009\u2264\u2009100, 1\u2009\u2264\u2009k\u2009\u2264\u2009n\u2009-\u20091) \u2014 the number of cells in the line and the length of one grasshopper's jump.\u000aThe second line contains a string of length n consisting of characters '.', '#', 'G' and 'T'. Character '.' means that the corresponding cell is empty, character '#' means that the corresponding cell contains an obstacle and grasshopper can't jump there. Character 'G' means that the grasshopper starts at this position and, finally, 'T' means that the target insect is located at this cell. It's guaranteed that characters 'G' and 'T' appear in this line exactly once.\u000aOutput\u000aIf there exists a sequence of jumps (each jump of length k), such that the grasshopper can get from his initial position to the cell with the insect, print "YES" (without quotes) in the only line of the input. Otherwise, print "NO" (without quotes).\u000aExamples\u000ainput\u000a5 2\u000a#G#T#\u000aoutput\u000aYES\u000ainput\u000a6 1\u000aT....G\u000aoutput\u000aYES\u000ainput\u000a7 3\u000aT..#..G\u000aoutput\u000aNO\u000ainput\u000a6 2\u000a..GT..\u000aoutput\u000aNO\u000aNote\u000aIn the first sample, the grasshopper can make one jump to the right in order to get from cell 2 to cell 4.\u000aIn the second sample, the grasshopper is only able to jump to neighboring cells but the way to the insect is free \u2014 he can get there by jumping left 5 times.\u000aIn the third sample, the grasshopper can't make a single jump.\u000aIn the fourth sample, the grasshopper can only jump to the cells with odd indices, thus he won't be able to reach the insect.
+p3
+sS'problemStatement'
+p4
+VA. Ostap and Grasshopper\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOn the way to Rio de Janeiro Ostap kills time playing with a grasshopper he took with him in a special box. Ostap builds a line of length n such that some cells of this line are empty and some contain obstacles. Then, he places his grasshopper to one of the empty cells and a small insect in another empty cell. The grasshopper wants to eat the insect.\u000aOstap knows that grasshopper is able to jump to any empty cell that is exactly k cells away from the current (to the left or to the right). Note that it doesn't matter whether intermediate cells are empty or not as the grasshopper makes a jump over them. For example, if k\u2009=\u20091 the grasshopper can jump to a neighboring cell only, and if k\u2009=\u20092 the grasshopper can jump over a single cell.\u000aYour goal is to determine whether there is a sequence of jumps such that grasshopper will get from his initial position to the cell with an insect.\u000aInput\u000aThe first line of the input contains two integers n and k (2\u2009\u2264\u2009n\u2009\u2264\u2009100, 1\u2009\u2264\u2009k\u2009\u2264\u2009n\u2009-\u20091) \u2014 the number of cells in the line and the length of one grasshopper's jump.\u000aThe second line contains a string of length n consisting of characters '.', '#', 'G' and 'T'. Character '.' means that the corresponding cell is empty, character '#' means that the corresponding cell contains an obstacle and grasshopper can't jump there. Character 'G' means that the grasshopper starts at this position and, finally, 'T' means that the target insect is located at this cell. It's guaranteed that characters 'G' and 'T' appear in this line exactly once.\u000aOutput\u000aIf there exists a sequence of jumps (each jump of length k), such that the grasshopper can get from his initial position to the cell with the insect, print "YES" (without quotes) in the only line of the input. Otherwise, print "NO" (without quotes).\u000aExamples\u000ainput\u000a5 2\u000a#G#T#\u000aoutput\u000aYES\u000ainput\u000a6 1\u000aT....G\u000aoutput\u000aYES\u000ainput\u000a7 3\u000aT..#..G\u000aoutput\u000aNO\u000ainput\u000a6 2\u000a..GT..\u000aoutput\u000aNO\u000aNote\u000aIn the first sample, the grasshopper can make one jump to the right in order to get from cell 2 to cell 4.\u000aIn the second sample, the grasshopper is only able to jump to neighboring cells but the way to the insect is free \u2014 he can get there by jumping left 5 times.\u000aIn the third sample, the grasshopper can't make a single jump.\u000aIn the fourth sample, the grasshopper can only jump to the cells with odd indices, thus he won't be able to reach the insect.
+p5
+sS'name'
+p6
+VA. Ostap and Grasshopper
+p7
+sS'tags'
+p8
+Vimplementation strings 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/735/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V735/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

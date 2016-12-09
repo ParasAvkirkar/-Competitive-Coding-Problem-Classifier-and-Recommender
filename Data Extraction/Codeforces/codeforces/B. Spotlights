@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VB. Spotlights\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aTheater stage is a rectangular field of size n\u2009×\u2009m. The director gave you the stage's plan which actors will follow. For each cell it is stated in the plan if there would be an actor in this cell or not.\u000aYou are to place a spotlight on the stage in some good position. The spotlight will project light in one of the four directions (if you look at the stage from above) \u2014 left, right, up or down. Thus, the spotlight's position is a cell it is placed to and a direction it shines.\u000aA position is good if two conditions hold:\u000athere is no actor in the cell the spotlight is placed to;\u000athere is at least one actor in the direction the spotlight projects.\u000aCount the number of good positions for placing the spotlight. Two positions of spotlight are considered to be different if the location cells or projection direction differ.\u000aInput\u000aThe first line contains two positive integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u20091000) \u2014 the number of rows and the number of columns in the plan.\u000aThe next n lines contain m integers, 0 or 1 each \u2014 the description of the plan. Integer 1, means there will be an actor in the corresponding cell, while 0 means the cell will remain empty. It is guaranteed that there is at least one actor in the plan.\u000aOutput\u000aPrint one integer \u2014 the number of good positions for placing the spotlight.\u000aExamples\u000ainput\u000a2 4\u000a0 1 0 0\u000a1 0 1 0\u000aoutput\u000a9\u000ainput\u000a4 4\u000a0 0 0 0\u000a1 0 0 1\u000a0 1 1 0\u000a0 1 0 0\u000aoutput\u000a20\u000aNote\u000aIn the first example the following positions are good:\u000athe (1, 1) cell and right direction;\u000athe (1, 1) cell and down direction;\u000athe (1, 3) cell and left direction;\u000athe (1, 3) cell and down direction;\u000athe (1, 4) cell and left direction;\u000athe (2, 2) cell and left direction;\u000athe (2, 2) cell and up direction;\u000athe (2, 2) and right direction;\u000athe (2, 4) cell and left direction.\u000aTherefore, there are 9 good positions in this example.
+p3
+sS'problemStatement'
+p4
+VB. Spotlights\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aTheater stage is a rectangular field of size n\u2009×\u2009m. The director gave you the stage's plan which actors will follow. For each cell it is stated in the plan if there would be an actor in this cell or not.\u000aYou are to place a spotlight on the stage in some good position. The spotlight will project light in one of the four directions (if you look at the stage from above) \u2014 left, right, up or down. Thus, the spotlight's position is a cell it is placed to and a direction it shines.\u000aA position is good if two conditions hold:\u000athere is no actor in the cell the spotlight is placed to;\u000athere is at least one actor in the direction the spotlight projects.\u000aCount the number of good positions for placing the spotlight. Two positions of spotlight are considered to be different if the location cells or projection direction differ.\u000aInput\u000aThe first line contains two positive integers n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u20091000) \u2014 the number of rows and the number of columns in the plan.\u000aThe next n lines contain m integers, 0 or 1 each \u2014 the description of the plan. Integer 1, means there will be an actor in the corresponding cell, while 0 means the cell will remain empty. It is guaranteed that there is at least one actor in the plan.\u000aOutput\u000aPrint one integer \u2014 the number of good positions for placing the spotlight.\u000aExamples\u000ainput\u000a2 4\u000a0 1 0 0\u000a1 0 1 0\u000aoutput\u000a9\u000ainput\u000a4 4\u000a0 0 0 0\u000a1 0 0 1\u000a0 1 1 0\u000a0 1 0 0\u000aoutput\u000a20\u000aNote\u000aIn the first example the following positions are good:\u000athe (1, 1) cell and right direction;\u000athe (1, 1) cell and down direction;\u000athe (1, 3) cell and left direction;\u000athe (1, 3) cell and down direction;\u000athe (1, 4) cell and left direction;\u000athe (2, 2) cell and left direction;\u000athe (2, 2) cell and up direction;\u000athe (2, 2) and right direction;\u000athe (2, 4) cell and left direction.\u000aTherefore, there are 9 good positions in this example.
+p5
+sS'name'
+p6
+VB. Spotlights
+p7
+sS'tags'
+p8
+Vdp implementation 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/729/B
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V729/B
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.
