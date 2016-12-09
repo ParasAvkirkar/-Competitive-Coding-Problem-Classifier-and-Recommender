@@ -17,6 +17,7 @@ from driverUtil import getDriver
 sys.path.append("../DataBase")
 import sqlDB
 
+
 current_progress = {'link':"http://codeforces.com/problemset/", 'problem_no':0, 'total_problems':0}
 logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
@@ -60,7 +61,7 @@ try:
 				if p:
 					# with open('codeforces/'+p.name, 'w+b') as f:
 					# 	pickle.dump(p, f)
-					sqlDB.insert_problem_db('codeforces_problem', p.name, p.url, p.statement, p.tags, p.difficulty, p.category,
+					sqlDB.insert_problem_db('codeforces_problem', p.name, p.url, p.problemStatement, p.tags, p.difficulty, p.category,
 													'', p.constraints, p.timelimit, '50000', p.isExampleGiven)
 					global_count = global_count + 1
 					page_count = page_count + 1
