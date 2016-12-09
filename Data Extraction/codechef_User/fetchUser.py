@@ -1,3 +1,5 @@
+
+from __future__ import print_function
 from selenium import webdriver
 from user import User
 from bs4 import BeautifulSoup
@@ -9,7 +11,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.keys import Keys
 from datetime import datetime
 from user import User, UserSubmission
-
+import time
 
 import requests
 import pickle
@@ -37,7 +39,7 @@ def fetch_user(uname, driver, statusPageDriver):
 		except Exception as e:
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			print('Exception at line '+ str(exc_tb.tb_lineno))
 			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
 						exc_tb.tb_lineno, e))
 			# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
@@ -90,9 +92,14 @@ def fetch_user(uname, driver, statusPageDriver):
 							countProbs = countProbs + 1
 							flag = True
 							statusUrl = aTag.get_attribute('href')
+							# statusUrl = 'https://www.codechef.com/JULY14/status/GERALD09,neo1tech9_7'
 							try:
+								i=0
 								while flag:
 									statusPageDriver.get(statusUrl)
+									doneOnce = False
+									# print(statusUrl+' '+str(i))
+									i = i +1
 									tableTagStatus = statusPageDriver.find_element_by_class_name('dataTable')
 									bodyTagStatus = tableTagStatus.find_element_by_tag_name('tbody')
 									rowTagsStatus = bodyTagStatus.find_elements_by_tag_name('tr')
@@ -104,20 +111,29 @@ def fetch_user(uname, driver, statusPageDriver):
 									if time is None:
 										#10:57 PM 08/10/15
 										time = datetime.datetime.strptime(allDataTagsStatus[1].text,'%I:%M %p %d/%m/%y')
-
+									if '?page=' in statusUrl:
+										flag = False
+									if noOfSubmission >= 25 and not doneOnce and flag:
+										pageInfo = statusPageDriver.find_element_by_class_name('pageinfo')
+										last_page_no = int(pageInfo.text.split(' ')[-1])
+										# print(last_page_no)
+										noOfSubmission = noOfSubmission + (last_page_no-2)*25
+										statusUrl = statusUrl + '?page=' + str(last_page_no-1)
+										doneOnce = True
 									aTagsStatus = statusPageDriver.find_elements_by_tag_name('a')
-									flag = False
-									for aTagStatus in aTagsStatus:
-										if aTagStatus.get_attribute('href') is not None and 'status' in aTagStatus.get_attribute('href'):
-											imgTag = aTagStatus.find_element_by_tag_name('img')
-											if 'next' in imgTag.get_attribute('src'):
-												statusUrl = aTagStatus.get_attribute('href')
-												flag = True
-												break
+									if not doneOnce:
+										flag = False
+									# for aTagStatus in aTagsStatus:
+									# 	if aTagStatus.get_attribute('href') is not None and 'status' in aTagStatus.get_attribute('href'):
+									# 		imgTag = aTagStatus.find_element_by_tag_name('img')
+									# 		if 'next' in imgTag.get_attribute('src'):
+									# 			statusUrl = aTagStatus.get_attribute('href')
+									# 			flag = True
+									# 			break
 							except Exception as e:
 								print(e)
 								exc_type, exc_obj, exc_tb = sys.exc_info()
-								print 'Exception at line '+ str(exc_tb.tb_lineno)
+								print('Exception at line '+ str(exc_tb.tb_lineno))
 								logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
 												exc_tb.tb_lineno, e))
 								# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
@@ -126,12 +142,12 @@ def fetch_user(uname, driver, statusPageDriver):
 							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
 							
 							userSubmissions.append( UserSubmission(problemCode, noOfSubmission, time))
-							print "len: " + str(userSubmissions[len(userSubmissions)-1])
+							print("len: " + str(userSubmissions[len(userSubmissions)-1]), end='')
 					break		
 		except Exception as e:
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			print('Exception at line '+ str(exc_tb.tb_lineno))
 			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
 						exc_tb.tb_lineno, e))
 			# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
@@ -181,37 +197,45 @@ def fetch_user(uname, driver, statusPageDriver):
 		lang = {}
 
 
-		#Get preferred language		
-		dataTable = driver.find_element_by_class_name('dataTable')
-		for tr in dataTable.find_elements_by_tag_name('tr'):
-			if count == 1:
-				count += 1
-				continue
+		try:
+			#Get preferred language
+			dataTable = driver.find_element_by_class_name('dataTable')
+			for tr in dataTable.find_elements_by_tag_name('tr'):
+				if count == 1:
+					count += 1
+					continue
 
-			tds = tr.find_elements_by_tag_name('td')
-			l = tds[3].text
-			l = l.strip().lower()
-			if 'c++' in l:
+				tds = tr.find_elements_by_tag_name('td')
+				l = tds[3].text
+				l = l.strip().lower()
+				if 'c++' in l:
 
-					l = 'c++'
-			elif 'pas' in l:
-					l = 'pas'
-			elif 'pyth' in l:
-					l = 'python'
+						l = 'c++'
+				elif 'pas' in l:
+						l = 'pas'
+				elif 'pyth' in l:
+						l = 'python'
 
-			if l in lang:
-					lang[l] += 1
-			else:
-				lang[l] = 0
+				if l in lang:
+						lang[l] += 1
+				else:
+					lang[l] = 0
 
-		prefLang = ""
-		max = -1
-		for key in lang:
-			if lang[key] > max:
-				prefLang = key
-				max = lang[key]
+			prefLang = ""
+			max = -1
+			for key in lang:
+				if lang[key] > max:
+					prefLang = key
+					max = lang[key]
 
-		print prefLang		
+			print(prefLang)
+		except Exception as e:
+			prefLang = 'c++'
+			print(e)
+			exc_type, exc_obj, exc_tb = sys.exc_info()
+			print('Exception at line '+ str(exc_tb.tb_lineno))
+			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+				exc_tb.tb_lineno, e))
 
 
 		u = User(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
@@ -230,7 +254,7 @@ def fetch_user(uname, driver, statusPageDriver):
 	except Exception as e:
 		print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
-		print 'Exception at line '+ str(exc_tb.tb_lineno)
+		print('Exception at line '+ str(exc_tb.tb_lineno))
 		logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
 						exc_tb.tb_lineno, e))
 		# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
@@ -269,12 +293,12 @@ count = 0
 try:
 	with open('curr_progress', 'r+b') as f:
 		count = pickle.load(f)
-		print count
+		print(count)
 except Exception as e:
 	# print e
 	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
-	print 'Exception at line '+ str(exc_tb.tb_lineno)
+	print('Exception at line '+ str(exc_tb.tb_lineno))
 	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
 				exc_tb.tb_lineno, e))
 	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
@@ -289,8 +313,10 @@ for uname in f:
 	if count == i:
 		uname = uname.split('\n')[0]
 		if not sqlDB.does_user_exist(uname, 'codechef_user'):
+			start = time.time()
 			fetch_user(uname, driver, statusPageDriver)
-
+			end = time.time()
+			print('Total time : '+str(1.0*(end-start)/60))
 		count += 1
 		with open('curr_progress', 'w+b') as f:
 			pickle.dump(count, f)

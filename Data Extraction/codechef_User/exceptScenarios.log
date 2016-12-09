@@ -1073,3 +1073,483 @@ ERROR:root:2016-12-08 16:23:12.517000 :File Name: sqlDB.pyc :Line Number: 11 :Ca
 ERROR:root:2016-12-08 16:23:12.520000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
 ERROR:root:2016-12-08 16:23:12.524000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
 ERROR:root:2016-12-08 16:23:12.528000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 09:04:28.769000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 09:04:28.784000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 09:04:28.790000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 09:04:39.055000 File: fetchUser.py Line: 192 Caused By: list index out of range
+ERROR:root:2016-12-09 09:04:39.056000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 09:04:39.060000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 09:04:39.065000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 09:04:39.069000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 09:04:39.072000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 09:22:17.075000 File: fetchUser.py Line: 185 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 09:22:17.076000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 09:22:17.079000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 09:22:34.551000 File: fetchUser.py Line: 96 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:04:06.118000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:04:06.137000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:04:06.141000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:04:23.508000 File: fetchUser.py Line: 195 Caused By: list index out of range
+ERROR:root:2016-12-09 11:04:23.508000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:04:23.650000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:04:23.655000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:04:23.659000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:04:23.664000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:04:23.668000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:09:21.002000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:09:33.339000 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:09:34.684000 File: fetchUser.py Line: 195 Caused By: list index out of range
+ERROR:root:2016-12-09 11:09:34.685000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:09:34.724000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:09:39.196000 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:09:40.387000 File: fetchUser.py Line: 195 Caused By: list index out of range
+ERROR:root:2016-12-09 11:09:40.387000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:09:40.425000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:11:22.505000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:14:01.210000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:14:09 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:15:43.946000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:15:46.802000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:17:07.320000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:17:09.550000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:17:10.377000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:17:11.172000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:18:20.272000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:18:43.936000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:20:07.128000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:20:08.799000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:20:12.823000 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:20:12.960000 File: fetchUser.py Line: 69 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"rating-table"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:20:12.963000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:20:18.975000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:20:38.798000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:20:39.458000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:20:41.773000 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:20:44.533000 File: fetchUser.py Line: 195 Caused By: list index out of range
+ERROR:root:2016-12-09 11:20:44.534000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:20:44.603000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:20:46.580000 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:20:50.008000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:20:50.126000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:20:52.637000 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:20:54.989000 File: fetchUser.py Line: 195 Caused By: list index out of range
+ERROR:root:2016-12-09 11:20:54.990000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:20:55.034000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:22:00.658000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:22:34.589000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:22:35.736000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:22:35.747000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:22:35.756000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:22:35.767000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:22:35.776000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:22:35.786000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:22:35.794000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:22:35.800000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:24:15.636000 File: fetchUser.py Line: 98 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:33:43.208000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:33:43.240000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:33:43.251000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:33:43.260000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:33:43.269000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 11:33:43.279000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:33:56.920000 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:09.706000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:11.908000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:13.941000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:18.176000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:22.464000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:24.947000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:26.878000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:28.951000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:32.015000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:33.868000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:34:35.633000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:36:11.596000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:36:35.956000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:37.681000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:40.210000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:43.023000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:45.048000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:47.327000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:50.845000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:52.790000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:54.930000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:36:56.800000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:00.012000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:03.724000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:05.836000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:07.437000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:15.654000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:17.587000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:19.621000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:21.446000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:22.947000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:37:24.964000 File: fetchUser.py Line: 110 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:38:48.868000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 11:39:10.872000 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:46:36.505000 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:47:08.414000 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 11:51:32.817000 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 11:53:57.041000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:04:37.807000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:06:25.580000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:09:40.965000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:11:12.984000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 12:11:34.226000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 12:12:21.978000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 12:12:54.348000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:13:59.680000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:14:21.809000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:16:14.142000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:16:57.286000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:16:58.388000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:17:15.683000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:17:29.468000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:17:32.046000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:17:32.997000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:18:56.135000 File: fetchUser.py Line: 117 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:19:45.783000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:19:48.952000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:19:52.432000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:19:55.105000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:20:54.808000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:22:11.015000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:22:25.941000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:24:11.699000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:24:39.998000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:24:42.704000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 12:24:47.238000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:25:01.408000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:25:01.419000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:25:01.430000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:25:01.441000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:25:01.451000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:25:01.460000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 12:25:04.986000 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:25:25.202000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 12:26:02.556000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.697000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.707000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.718000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.728000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.739000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.750000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.759000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.768000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.776000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.785000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.795000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.805000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.815000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:26:03.824000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 12:28:41.881000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:29:12.593000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:31:16.249000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:32:14.083000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:38:07.224000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:42:25.172000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:42:37.053000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 12:43:45.565000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:44:03.497000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 12:45:29.593000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:47:17.539000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:47:29.237000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:47:59.408000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:53:28.418000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:53:39.580000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 12:53:56.169000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 12:54:08.317000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-09 12:55:42.517000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 12:55:48.084000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 13:06:40.683000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-09 13:09:59.271000 File: fetchUser.py Line: 103 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-09 13:10:10.131000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-09 13:10:34.782000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
