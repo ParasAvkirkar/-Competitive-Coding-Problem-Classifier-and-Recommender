@@ -16,7 +16,7 @@ logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 current_progress = {'section':0, 'problem_no':0}
 codechefUrl = 'https://www.codechef.com'
 codechefProblemUrl = 'https://www.codechef.com/problems/'
-sections = ['easy', 'medium', 'hard']
+sections = ['easy', 'medium', 'hard', 'school']
 
 try:
 	with open('current_progress.pickle', 'r+b') as f:
@@ -35,7 +35,7 @@ except Exception as e:
 
 print 'Starting problem collection'
 
-
+prob_href = ''
 try:
 	sec_count = current_progress['section']
 
@@ -50,6 +50,7 @@ try:
 				allHrefTags = row.find_all('a')
 				for a in allHrefTags:
 					if a.has_attr('href') and 'problem' in a['href']:
+						prob_href = a['href']
 						p = getCodechefProblem(codechefUrl+a['href'], sections[current_progress['section']])
 						if p:
 							sqlDB.insert_problem_db('codechef_problem', p.name, p.url, p.statement, p.tags, p.difficulty, p.category,
@@ -70,9 +71,8 @@ except Exception as e:
 	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
-	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-					exc_tb.tb_lineno, e))
+	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3} Problem href: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+					exc_tb.tb_lineno, e, prob_href))
 	winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
-	pass
 	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 	# 	' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
