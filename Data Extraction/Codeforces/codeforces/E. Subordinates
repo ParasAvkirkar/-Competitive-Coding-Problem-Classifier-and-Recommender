@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VE. Subordinates\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n workers in a company, each of them has a unique id from 1 to n. Exaclty one of them is a chief, his id is s. Each worker except the chief has exactly one immediate superior.\u000aThere was a request to each of the workers to tell how how many superiors (not only immediate). Worker's superiors are his immediate superior, the immediate superior of the his immediate superior, and so on. For example, if there are three workers in the company, from which the first is the chief, the second worker's immediate superior is the first, the third worker's immediate superior is the second, then the third worker has two superiors, one of them is immediate and one not immediate. The chief is a superior to all the workers except himself.\u000aSome of the workers were in a hurry and made a mistake. You are to find the minimum number of workers that could make a mistake.\u000aInput\u000aThe first line contains two positive integers n and s (1\u2009\u2264\u2009n\u2009\u2264\u20092·105, 1\u2009\u2264\u2009s\u2009\u2264\u2009n) \u2014 the number of workers and the id of the chief.\u000aThe second line contains n integers a1,\u2009a2,\u2009...,\u2009an (0\u2009\u2264\u2009ai\u2009\u2264\u2009n\u2009-\u20091), where ai is the number of superiors (not only immediate) the worker with id i reported about.\u000aOutput\u000aPrint the minimum number of workers that could make a mistake.\u000aExamples\u000ainput\u000a3 2\u000a2 0 2\u000aoutput\u000a1\u000ainput\u000a5 3\u000a1 0 0 4 1\u000aoutput\u000a2\u000aNote\u000aIn the first example it is possible that only the first worker made a mistake. Then:\u000athe immediate superior of the first worker is the second worker,\u000athe immediate superior of the third worker is the first worker,\u000athe second worker is the chief.
+p3
+sS'problemStatement'
+p4
+VE. Subordinates\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aThere are n workers in a company, each of them has a unique id from 1 to n. Exaclty one of them is a chief, his id is s. Each worker except the chief has exactly one immediate superior.\u000aThere was a request to each of the workers to tell how how many superiors (not only immediate). Worker's superiors are his immediate superior, the immediate superior of the his immediate superior, and so on. For example, if there are three workers in the company, from which the first is the chief, the second worker's immediate superior is the first, the third worker's immediate superior is the second, then the third worker has two superiors, one of them is immediate and one not immediate. The chief is a superior to all the workers except himself.\u000aSome of the workers were in a hurry and made a mistake. You are to find the minimum number of workers that could make a mistake.\u000aInput\u000aThe first line contains two positive integers n and s (1\u2009\u2264\u2009n\u2009\u2264\u20092·105, 1\u2009\u2264\u2009s\u2009\u2264\u2009n) \u2014 the number of workers and the id of the chief.\u000aThe second line contains n integers a1,\u2009a2,\u2009...,\u2009an (0\u2009\u2264\u2009ai\u2009\u2264\u2009n\u2009-\u20091), where ai is the number of superiors (not only immediate) the worker with id i reported about.\u000aOutput\u000aPrint the minimum number of workers that could make a mistake.\u000aExamples\u000ainput\u000a3 2\u000a2 0 2\u000aoutput\u000a1\u000ainput\u000a5 3\u000a1 0 0 4 1\u000aoutput\u000a2\u000aNote\u000aIn the first example it is possible that only the first worker made a mistake. Then:\u000athe immediate superior of the first worker is the second worker,\u000athe immediate superior of the third worker is the first worker,\u000athe second worker is the chief.
+p5
+sS'name'
+p6
+VE. Subordinates
+p7
+sS'tags'
+p8
+Vconstructive algorithms data structures greedy sortings 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/729/E
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V729/E
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

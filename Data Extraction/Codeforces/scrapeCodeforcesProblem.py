@@ -14,6 +14,9 @@ import datetime
 import logging
 sys.path.append("../Utilities")
 from driverUtil import getDriver
+sys.path.append("../DataBase")
+import sqlDB
+
 
 current_progress = {'link':"http://codeforces.com/problemset/", 'problem_no':0, 'total_problems':0}
 logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
@@ -56,21 +59,23 @@ try:
 
 				p = getCodeforcesProblem(problemLink,problemId)
 				if p:
-					with open('codeforces/'+p.name, 'w+b') as f:
-						pickle.dump(p, f)
+					# with open('codeforces/'+p.name, 'w+b') as f:
+					# 	pickle.dump(p, f)
+					sqlDB.insert_problem_db('codeforces_problem', p.name, p.url, p.problemStatement, p.tags, p.difficulty, p.category,
+													'', p.constraints, p.timelimit, '50000', p.isExampleGiven)
 					global_count = global_count + 1
-					page_count = page_count +1
+					page_count = page_count + 1
 					with open('current_progress.pickle', 'w+b') as f:
 						pickle.dump({'link':codeforcesProblemsLink, 'problem_no':page_count, 'total_problems':global_count}, f)
 					print("Suceesfully extracted problem " + problemId + "  Count - " + str(global_count))
 
 			except Exception as e:
-				print("Table Header")
-				print(e)
-				exc_type, exc_obj, exc_tb = sys.exc_info()
-				print 'Exception at line '+ str(exc_tb.tb_lineno)
-				logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-								exc_tb.tb_lineno, e))
+				if page_count != 0 :
+					print(e)
+					exc_type, exc_obj, exc_tb = sys.exc_info()
+					print 'Exception at line ' + str(exc_tb.tb_lineno)
+					logging.error('Time: {0} File: {1} Line: {2} ProblemsListPageUrl: {3} ProblemUrl: {4} Caused By: {5}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, codeforcesProblemsLink, problemLink, e))
 				# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 				# 	+ ' :Problem Link: '+ str(codeforcesProblemsLink) +' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))
 
@@ -91,7 +96,7 @@ except Exception as e:
 	print(e)
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
-	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-		exc_tb.tb_lineno, e))
+	logging.error('Time: {0} File: {1} Line: {2} ProblemsListPageUrl: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+		exc_tb.tb_lineno, codeforcesProblemsLink, e))
 	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 	# 		' :Line Number: '+ str(exc_tb.tb_lineno) + ' :Caused By: ' + str(e))

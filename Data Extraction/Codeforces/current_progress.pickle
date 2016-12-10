@@ -1,12 +1,12 @@
 (dp0
 S'total_problems'
 p1
-I316
+I3
 sS'link'
 p2
-Vhttp://codeforces.com/problemset/page/4
+S'http://codeforces.com/problemset/'
 p3
 sS'problem_no'
 p4
-I19
+I3
 s.

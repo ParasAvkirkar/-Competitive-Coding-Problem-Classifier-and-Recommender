@@ -1,0 +1,86 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VC. Alyona and towers\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlyona has built n towers by putting small cubes some on the top of others. Each cube has size 1\u2009×\u20091\u2009×\u20091. A tower is a non-zero amount of cubes standing on the top of each other. The towers are next to each other, forming a row.\u000aSometimes Alyona chooses some segment towers, and put on the top of each tower several cubes. Formally, Alyouna chooses some segment of towers from li to ri and adds di cubes on the top of them.\u000aLet the sequence a1,\u2009a2,\u2009...,\u2009an be the heights of the towers from left to right. Let's call as a segment of towers al,\u2009al\u2009+\u20091,\u2009...,\u2009ar a hill if the following condition holds: there is integer k (l\u2009\u2264\u2009k\u2009\u2264\u2009r) such that al\u2009<\u2009al\u2009+\u20091\u2009<\u2009al\u2009+\u20092\u2009<\u2009...\u2009<\u2009ak\u2009>\u2009ak\u2009+\u20091\u2009>\u2009ak\u2009+\u20092\u2009>\u2009...\u2009>\u2009ar.\u000aAfter each addition of di cubes on the top of the towers from li to ri, Alyona wants to know the maximum width among all hills. The width of a hill is the number of towers in it.\u000aInput\u000aThe first line contain single integer n (1\u2009\u2264\u2009n\u2009\u2264\u20093·105) \u2014 the number of towers.\u000aThe second line contain n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the number of cubes in each tower.\u000aThe third line contain single integer m (1\u2009\u2264\u2009m\u2009\u2264\u20093·105) \u2014 the number of additions.\u000aThe next m lines contain 3 integers each. The i-th of these lines contains integers li, ri and di (1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n, 1\u2009\u2264\u2009di\u2009\u2264\u2009109), that mean that Alyona puts di cubes on the tio of each of the towers from li to ri.\u000aOutput\u000aPrint m lines. In i-th line print the maximum width of the hills after the i-th addition.\u000aExample\u000ainput\u000a5\u000a5 5 5 5 5\u000a3\u000a1 3 2\u000a2 2 1\u000a4 4 1\u000aoutput\u000a2\u000a4\u000a5\u000aNote\u000aThe first sample is as follows:\u000aAfter addition of 2 cubes on the top of each towers from the first to the third, the number of cubes in the towers become equal to [7,\u20097,\u20097,\u20095,\u20095]. The hill with maximum width is [7,\u20095], thus the maximum width is 2.\u000aAfter addition of 1 cube on the second tower, the number of cubes in the towers become equal to [7,\u20098,\u20097,\u20095,\u20095]. The hill with maximum width is now [7,\u20098,\u20097,\u20095], thus the maximum width is 4.\u000aAfter addition of 1 cube on the fourth tower, the number of cubes in the towers become equal to [7,\u20098,\u20097,\u20096,\u20095]. The hill with maximum width is now [7,\u20098,\u20097,\u20096,\u20095], thus the maximum width is 5.
+p3
+sS'problemStatement'
+p4
+VC. Alyona and towers\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aAlyona has built n towers by putting small cubes some on the top of others. Each cube has size 1\u2009×\u20091\u2009×\u20091. A tower is a non-zero amount of cubes standing on the top of each other. The towers are next to each other, forming a row.\u000aSometimes Alyona chooses some segment towers, and put on the top of each tower several cubes. Formally, Alyouna chooses some segment of towers from li to ri and adds di cubes on the top of them.\u000aLet the sequence a1,\u2009a2,\u2009...,\u2009an be the heights of the towers from left to right. Let's call as a segment of towers al,\u2009al\u2009+\u20091,\u2009...,\u2009ar a hill if the following condition holds: there is integer k (l\u2009\u2264\u2009k\u2009\u2264\u2009r) such that al\u2009<\u2009al\u2009+\u20091\u2009<\u2009al\u2009+\u20092\u2009<\u2009...\u2009<\u2009ak\u2009>\u2009ak\u2009+\u20091\u2009>\u2009ak\u2009+\u20092\u2009>\u2009...\u2009>\u2009ar.\u000aAfter each addition of di cubes on the top of the towers from li to ri, Alyona wants to know the maximum width among all hills. The width of a hill is the number of towers in it.\u000aInput\u000aThe first line contain single integer n (1\u2009\u2264\u2009n\u2009\u2264\u20093·105) \u2014 the number of towers.\u000aThe second line contain n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the number of cubes in each tower.\u000aThe third line contain single integer m (1\u2009\u2264\u2009m\u2009\u2264\u20093·105) \u2014 the number of additions.\u000aThe next m lines contain 3 integers each. The i-th of these lines contains integers li, ri and di (1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n, 1\u2009\u2264\u2009di\u2009\u2264\u2009109), that mean that Alyona puts di cubes on the tio of each of the towers from li to ri.\u000aOutput\u000aPrint m lines. In i-th line print the maximum width of the hills after the i-th addition.\u000aExample\u000ainput\u000a5\u000a5 5 5 5 5\u000a3\u000a1 3 2\u000a2 2 1\u000a4 4 1\u000aoutput\u000a2\u000a4\u000a5\u000aNote\u000aThe first sample is as follows:\u000aAfter addition of 2 cubes on the top of each towers from the first to the third, the number of cubes in the towers become equal to [7,\u20097,\u20097,\u20095,\u20095]. The hill with maximum width is [7,\u20095], thus the maximum width is 2.\u000aAfter addition of 1 cube on the second tower, the number of cubes in the towers become equal to [7,\u20098,\u20097,\u20095,\u20095]. The hill with maximum width is now [7,\u20098,\u20097,\u20095], thus the maximum width is 4.\u000aAfter addition of 1 cube on the fourth tower, the number of cubes in the towers become equal to [7,\u20098,\u20097,\u20096,\u20095]. The hill with maximum width is now [7,\u20098,\u20097,\u20096,\u20095], thus the maximum width is 5.
+p5
+sS'name'
+p6
+VC. Alyona and towers
+p7
+sS'tags'
+p8
+Vdata structures 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/739/C
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'output'
+p16
+(lp17
+VOutput
+p18
+aVPrint m lines. In i-th line print the maximum width of the hills after the i-th addition.
+p19
+asS'statement'
+p20
+(lp21
+VC. Alyona and towers
+p22
+aVtime limit per test2 seconds
+p23
+aVmemory limit per test256 megabytes
+p24
+aVinputstandard input
+p25
+aVoutputstandard output
+p26
+aVAlyona has built n towers by putting small cubes some on the top of others. Each cube has size 1\u2009×\u20091\u2009×\u20091. A tower is a non-zero amount of cubes standing on the top of each other. The towers are next to each other, forming a row.
+p27
+aVSometimes Alyona chooses some segment towers, and put on the top of each tower several cubes. Formally, Alyouna chooses some segment of towers from li to ri and adds di cubes on the top of them.
+p28
+aVLet the sequence a1,\u2009a2,\u2009...,\u2009an be the heights of the towers from left to right. Let's call as a segment of towers al,\u2009al\u2009+\u20091,\u2009...,\u2009ar a hill if the following condition holds: there is integer k (l\u2009\u2264\u2009k\u2009\u2264\u2009r) such that al\u2009<\u2009al\u2009+\u20091\u2009<\u2009al\u2009+\u20092\u2009<\u2009...\u2009<\u2009ak\u2009>\u2009ak\u2009+\u20091\u2009>\u2009ak\u2009+\u20092\u2009>\u2009...\u2009>\u2009ar.
+p29
+aVAfter each addition of di cubes on the top of the towers from li to ri, Alyona wants to know the maximum width among all hills. The width of a hill is the number of towers in it.
+p30
+asS'problemId'
+p31
+V739/C
+p32
+sS'input'
+p33
+(lp34
+VInput
+p35
+aVThe first line contain single integer n (1\u2009\u2264\u2009n\u2009\u2264\u20093·105) \u2014 the number of towers.
+p36
+aVThe second line contain n integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u2009109) \u2014 the number of cubes in each tower.
+p37
+aVThe third line contain single integer m (1\u2009\u2264\u2009m\u2009\u2264\u20093·105) \u2014 the number of additions.
+p38
+aVThe next m lines contain 3 integers each. The i-th of these lines contains integers li, ri and di (1\u2009\u2264\u2009l\u2009\u2264\u2009r\u2009\u2264\u2009n, 1\u2009\u2264\u2009di\u2009\u2264\u2009109), that mean that Alyona puts di cubes on the tio of each of the towers from li to ri.
+p39
+asS'id'
+p40
+c__builtin__
+id
+p41
+sS'constraints'
+p42
+g34
+sb.

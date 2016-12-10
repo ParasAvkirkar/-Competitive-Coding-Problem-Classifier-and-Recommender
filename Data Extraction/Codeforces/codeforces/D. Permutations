@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Permutations\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOstap Bender is worried that people started to forget that he is the Great Combinator. Now he wants to show them his skills in combinatorics. Now he studies the permutations of length n. He has a list of m valid pairs, pair ai and bi means that he is allowed to place integers bi at position ai.\u000aHe knows that the number of permutations that use only valid pairs is odd. Now, for each pair he wants to find out, will the number of valid permutations be odd if he removes this pair (and only it) from the list.\u000aInput\u000aThe first line contains two integers n and m (1\u2009\u2264\u2009n\u2009\u2264\u20092000, n\u2009\u2264\u2009m\u2009\u2264\u2009min(n2,\u2009500\u2009000)) \u2014 the number of elements in the permutation. Then follow m lines, each containing some valid pair (ai,\u2009bi) (1\u2009\u2264\u2009ai,\u2009bi\u2009\u2264\u2009n). It's guaranteed that no pair occurs in the input twice and that the total number of valid permutations (i.e. using only allowed pairs position-elements) is odd.\u000aOutput\u000aPrint m lines, one line for each valid pair. The i-th line should contain "YES" if after Ostap removes the i-th pair (and only it) the remaining number of valid permutations is odd. Otherwise, print «NO».\u000aExamples\u000ainput\u000a2 3\u000a1 1\u000a1 2\u000a2 2\u000aoutput\u000aNO\u000aYES\u000aNO\u000ainput\u000a3 3\u000a1 1\u000a2 2\u000a3 3\u000aoutput\u000aNO\u000aNO\u000aNO\u000ainput\u000a3 7\u000a3 3\u000a3 1\u000a1 3\u000a1 1\u000a2 2\u000a1 2\u000a2 1\u000aoutput\u000aYES\u000aNO\u000aNO\u000aNO\u000aYES\u000aNO\u000aNO
+p3
+sS'problemStatement'
+p4
+VD. Permutations\u000atime limit per test2 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aOstap Bender is worried that people started to forget that he is the Great Combinator. Now he wants to show them his skills in combinatorics. Now he studies the permutations of length n. He has a list of m valid pairs, pair ai and bi means that he is allowed to place integers bi at position ai.\u000aHe knows that the number of permutations that use only valid pairs is odd. Now, for each pair he wants to find out, will the number of valid permutations be odd if he removes this pair (and only it) from the list.\u000aInput\u000aThe first line contains two integers n and m (1\u2009\u2264\u2009n\u2009\u2264\u20092000, n\u2009\u2264\u2009m\u2009\u2264\u2009min(n2,\u2009500\u2009000)) \u2014 the number of elements in the permutation. Then follow m lines, each containing some valid pair (ai,\u2009bi) (1\u2009\u2264\u2009ai,\u2009bi\u2009\u2264\u2009n). It's guaranteed that no pair occurs in the input twice and that the total number of valid permutations (i.e. using only allowed pairs position-elements) is odd.\u000aOutput\u000aPrint m lines, one line for each valid pair. The i-th line should contain "YES" if after Ostap removes the i-th pair (and only it) the remaining number of valid permutations is odd. Otherwise, print «NO».\u000aExamples\u000ainput\u000a2 3\u000a1 1\u000a1 2\u000a2 2\u000aoutput\u000aNO\u000aYES\u000aNO\u000ainput\u000a3 3\u000a1 1\u000a2 2\u000a3 3\u000aoutput\u000aNO\u000aNO\u000aNO\u000ainput\u000a3 7\u000a3 3\u000a3 1\u000a1 3\u000a1 1\u000a2 2\u000a1 2\u000a2 1\u000aoutput\u000aYES\u000aNO\u000aNO\u000aNO\u000aYES\u000aNO\u000aNO
+p5
+sS'name'
+p6
+VD. Permutations
+p7
+sS'tags'
+p8
+Vmatrices 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/736/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V2 seconds
+p15
+sS'problemId'
+p16
+V736/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

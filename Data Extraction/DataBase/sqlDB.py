@@ -8,7 +8,7 @@ import datetime
 def connect_db():
 		# Open database connection
 		try:
-			with open("dbINFO.txt", "r") as f:
+			with open("dbINFO.txt", "r+b") as f:
 				ip, username, password, db_name = f.read().split('\n')
 		except Exception as e:
 			ip = "localhost"
@@ -54,12 +54,13 @@ def insert_user_db(tableName, uname, country, userCity, isStudent, userSubmissio
 						db.commit()
 						print "Success DB"
 					else: print "Fail DB"
+			db.close()
 		except Exception as e:
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			print 'Exception at line '+ str(exc_tb.tb_lineno)
 			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))				
+					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 
 
 def insert_problem_db(tableName, prob_code, url, desc, tag, diff, category, sub_size, constraint, time_limit, source_limit, is_example_given):
@@ -81,9 +82,31 @@ def insert_problem_db(tableName, prob_code, url, desc, tag, diff, category, sub_
 				db.commit()
 				print "Success DB"
 			else: print "Fail DB"
+			db.close()
 		except Exception as e:
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			print 'Exception at line '+ str(exc_tb.tb_lineno)
 			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))				
+					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+
+
+def does_user_exist(username, tablename):
+	try:
+		q = "SELECT count(uname) FROM `"+tablename+"` WHERE uname='"+ username +"'"
+		db = connect_db()
+		# prepare a cursor object using cursor() method
+		cursor = db.cursor()
+		cursor.execute(q)
+		result = cursor.fetchall()
+		result = result[0][0]
+		db.close()
+		if result==1:
+			return True
+		return False
+	except Exception as e:
+			print(e)
+			exc_type, exc_obj, exc_tb = sys.exc_info()
+			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))

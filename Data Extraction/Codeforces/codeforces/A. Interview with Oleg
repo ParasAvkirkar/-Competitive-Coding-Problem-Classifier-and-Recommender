@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VA. Interview with Oleg\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPolycarp has interviewed Oleg and has written the interview down without punctuation marks and spaces to save time. Thus, the interview is now a string s consisting of n lowercase English letters.\u000aThere is a filler word ogo in Oleg's speech. All words that can be obtained from ogo by adding go several times to the end of it are also considered to be fillers. For example, the words ogo, ogogo, ogogogo are fillers, but the words go, og, ogog, ogogog and oggo are not fillers.\u000aThe fillers have maximal size, for example, for ogogoo speech we can't consider ogo a filler and goo as a normal phrase. We should consider ogogo as a filler here.\u000aTo print the interview, Polycarp has to replace each of the fillers with three asterisks. Note that a filler word is replaced with exactly three asterisks regardless of its length.\u000aPolycarp has dealt with this problem in no time. Can you do the same? The clock is ticking!\u000aInput\u000aThe first line contains a positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the length of the interview.\u000aThe second line contains the string s of length n, consisting of lowercase English letters.\u000aOutput\u000aPrint the interview text after the replacement of each of the fillers with "***". It is allowed for the substring "***" to have several consecutive occurences.\u000aExamples\u000ainput\u000a7\u000aaogogob\u000aoutput\u000aa***b\u000ainput\u000a13\u000aogogmgogogogo\u000aoutput\u000a***gmg***\u000ainput\u000a9\u000aogoogoogo\u000aoutput\u000a*********\u000aNote\u000aThe first sample contains one filler word ogogo, so the interview for printing is "a***b".\u000aThe second sample contains two fillers ogo and ogogogo. Thus, the interview is transformed to "***gmg***".
+p3
+sS'problemStatement'
+p4
+VA. Interview with Oleg\u000atime limit per test1 second\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aPolycarp has interviewed Oleg and has written the interview down without punctuation marks and spaces to save time. Thus, the interview is now a string s consisting of n lowercase English letters.\u000aThere is a filler word ogo in Oleg's speech. All words that can be obtained from ogo by adding go several times to the end of it are also considered to be fillers. For example, the words ogo, ogogo, ogogogo are fillers, but the words go, og, ogog, ogogog and oggo are not fillers.\u000aThe fillers have maximal size, for example, for ogogoo speech we can't consider ogo a filler and goo as a normal phrase. We should consider ogogo as a filler here.\u000aTo print the interview, Polycarp has to replace each of the fillers with three asterisks. Note that a filler word is replaced with exactly three asterisks regardless of its length.\u000aPolycarp has dealt with this problem in no time. Can you do the same? The clock is ticking!\u000aInput\u000aThe first line contains a positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the length of the interview.\u000aThe second line contains the string s of length n, consisting of lowercase English letters.\u000aOutput\u000aPrint the interview text after the replacement of each of the fillers with "***". It is allowed for the substring "***" to have several consecutive occurences.\u000aExamples\u000ainput\u000a7\u000aaogogob\u000aoutput\u000aa***b\u000ainput\u000a13\u000aogogmgogogogo\u000aoutput\u000a***gmg***\u000ainput\u000a9\u000aogoogoogo\u000aoutput\u000a*********\u000aNote\u000aThe first sample contains one filler word ogogo, so the interview for printing is "a***b".\u000aThe second sample contains two fillers ogo and ogogogo. Thus, the interview is transformed to "***gmg***".
+p5
+sS'name'
+p6
+VA. Interview with Oleg
+p7
+sS'tags'
+p8
+Vimplementation strings 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/729/A
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V1 second
+p15
+sS'problemId'
+p16
+V729/A
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

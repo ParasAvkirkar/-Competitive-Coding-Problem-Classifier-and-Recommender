@@ -1,0 +1,42 @@
+(iCodeforcesProblem
+CodeforcesProblem
+p0
+(dp1
+S'desription'
+p2
+VD. Arpa\u2019s letter-marked tree and Mehrdad\u2019s Dokhtar-kosh paths\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aJust in case somebody missed it: we have wonderful girls in Arpa\u2019s land.\u000aArpa has a rooted tree (connected acyclic graph) consisting of n vertices. The vertices are numbered 1 through n, the vertex 1 is the root. There is a letter written on each edge of this tree. Mehrdad is a fan of Dokhtar-kosh things. He call a string Dokhtar-kosh, if we can shuffle the characters in string such that it becomes palindrome.\u000aHe asks Arpa, for each vertex v, what is the length of the longest simple path in subtree of v that form a Dokhtar-kosh string.\u000aInput\u000aThe first line contains integer n (1\u2009\u2009\u2264\u2009\u2009n\u2009\u2009\u2264\u2009\u20095·105) \u2014 the number of vertices in the tree.\u000a(n\u2009\u2009-\u2009\u20091) lines follow, the i-th of them contain an integer pi\u2009+\u20091 and a letter ci\u2009+\u20091 (1\u2009\u2009\u2264\u2009\u2009pi\u2009+\u20091\u2009\u2009\u2264\u2009\u2009i, ci\u2009+\u20091 is lowercase English letter, between a and v, inclusively), that mean that there is an edge between nodes pi\u2009+\u20091 and i\u2009+\u20091 and there is a letter ci\u2009+\u20091 written on this edge.\u000aOutput\u000aPrint n integers. The i-th of them should be the length of the longest simple path in subtree of the i-th vertex that form a Dokhtar-kosh string.\u000aExamples\u000ainput\u000a4\u000a1 s\u000a2 a\u000a3 s\u000aoutput\u000a3 1 1 0 \u000ainput\u000a5\u000a1 a\u000a2 h\u000a1 a\u000a4 h\u000aoutput\u000a4 1 0 1 0 
+p3
+sS'problemStatement'
+p4
+VD. Arpa\u2019s letter-marked tree and Mehrdad\u2019s Dokhtar-kosh paths\u000atime limit per test3 seconds\u000amemory limit per test256 megabytes\u000ainputstandard input\u000aoutputstandard output\u000aJust in case somebody missed it: we have wonderful girls in Arpa\u2019s land.\u000aArpa has a rooted tree (connected acyclic graph) consisting of n vertices. The vertices are numbered 1 through n, the vertex 1 is the root. There is a letter written on each edge of this tree. Mehrdad is a fan of Dokhtar-kosh things. He call a string Dokhtar-kosh, if we can shuffle the characters in string such that it becomes palindrome.\u000aHe asks Arpa, for each vertex v, what is the length of the longest simple path in subtree of v that form a Dokhtar-kosh string.\u000aInput\u000aThe first line contains integer n (1\u2009\u2009\u2264\u2009\u2009n\u2009\u2009\u2264\u2009\u20095·105) \u2014 the number of vertices in the tree.\u000a(n\u2009\u2009-\u2009\u20091) lines follow, the i-th of them contain an integer pi\u2009+\u20091 and a letter ci\u2009+\u20091 (1\u2009\u2009\u2264\u2009\u2009pi\u2009+\u20091\u2009\u2009\u2264\u2009\u2009i, ci\u2009+\u20091 is lowercase English letter, between a and v, inclusively), that mean that there is an edge between nodes pi\u2009+\u20091 and i\u2009+\u20091 and there is a letter ci\u2009+\u20091 written on this edge.\u000aOutput\u000aPrint n integers. The i-th of them should be the length of the longest simple path in subtree of the i-th vertex that form a Dokhtar-kosh string.\u000aExamples\u000ainput\u000a4\u000a1 s\u000a2 a\u000a3 s\u000aoutput\u000a3 1 1 0 \u000ainput\u000a5\u000a1 a\u000a2 h\u000a1 a\u000a4 h\u000aoutput\u000a4 1 0 1 0 
+p5
+sS'name'
+p6
+VD. Arpa\u2019s letter-marked tree and Mehrdad\u2019s Dokhtar-kosh paths
+p7
+sS'tags'
+p8
+Vdata structures trees 
+p9
+sS'url'
+p10
+Vhttp://codeforces.com/problemset/problem/741/D
+p11
+sS'memorylimit'
+p12
+V256 megabytes
+p13
+sS'timelimit'
+p14
+V3 seconds
+p15
+sS'problemId'
+p16
+V741/D
+p17
+sS'id'
+p18
+c__builtin__
+id
+p19
+sb.

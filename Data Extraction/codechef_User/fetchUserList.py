@@ -60,7 +60,7 @@ def fetch_user_list(start, driver):
 driver = webdriver.Chrome()
 # fetch_user('anudeep2011', driver)
 # fetch_user('sherlock_holms', driver)
-fetch_user_list(101, driver)
+fetch_user_list(4000, driver)
 # fetch_user('paragpachpute', driver)
 # fetch_user('pranay0007', driver)
 driver.close()
