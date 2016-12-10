@@ -1387,3 +1387,586 @@ ERROR:root:2016-12-07 21:05:45.873000 :File Name: sqlDB.pyc :Line Number: 11 :Ca
 ERROR:root:2016-12-07 21:05:57.879000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
 ERROR:root:Time: 2016-12-07 21:06:15.955000 File: CodechefProblemPage.pyc Line: 114 Caused By: list index out of range
 ERROR:root:2016-12-07 21:06:23.834000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:06:33.047000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:06:42.156000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:06:49.500000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:06:58.648000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:07:08.896000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:07:18.957000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:07:27.267000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:07:35.002000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:07:44.602000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:07:53.728000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:08:03.106000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:08:09.204000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:08:15.894000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:08:28.670000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:08:37.880000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:08:49.690000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:09:00.156000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:09:11.364000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:09:21.575000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:09:32.946000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:09:44.836000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:09:54.804000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:10:06.573000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:10:16.068000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:10:25.547000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:10:35.369000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:10:42.145000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:10:48.881000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:10:55.281000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:11:02.834000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:11:08.976000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:11:17.173000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:11:22.799000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 21:11:29.350000 File: CodechefProblemPage.pyc Line: 114 Caused By: list index out of range
+ERROR:root:2016-12-07 21:11:35.409000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:11:42.713000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:11:49.369000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 21:11:58.826000 File: CodechefProblemPage.pyc Line: 114 Caused By: list index out of range
+ERROR:root:2016-12-07 21:12:06.205000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:12:14.450000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:12:21.593000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:12:32.004000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:12:40.229000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:12:48.235000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:00.961000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:09.021000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:17.257000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:24.050000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:31.020000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:38.216000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:44.011000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:50.614000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:13:56.635000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:14:02.817000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:14:09.851000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:14:16.189000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:14:23.372000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:14:29.769000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:14:37.330000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:14:44.987000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:14:54.898000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:15:03.837000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:15:10.612000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:15:21.776000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:15:31.129000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:15:38.251000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:15:49.283000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:15:59.267000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:16:08.667000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:16:18.130000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:16:25.563000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:16:34.784000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:16:42.836000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:16:50.917000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 21:16:58.931000 File: CodechefProblemPage.pyc Line: 114 Caused By: list index out of range
+ERROR:root:2016-12-07 21:17:05.150000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:17:15.445000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:17:23.436000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:17:29.724000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:17:37.236000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:17:45.967000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:17:51.943000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:17:59.689000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:18:06.731000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:18:13.203000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:18:24.901000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:18:33.331000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:18:53.915000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:19:02.519000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:19:10.747000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:19:17.437000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:19:25.039000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:19:39.774000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:19:47.284000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 21:20:02.566000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 21:20:18.900000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:20:25.438000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:20:32.713000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:20:39.269000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:20:50.654000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:21:00.996000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:21:13.391000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:21:21.740000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:21:33.701000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:21:42.885000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:21:52.901000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:22:01.871000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:22:11.332000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:22:21.102000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:22:31.157000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:22:44.654000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:22:55.833000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:23:04.639000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:23:14.486000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:23:23.639000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:23:37.101000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:23:48.638000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:23:57.639000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:24:07.285000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:24:17.415000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:24:26.984000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:24:36.200000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 21:24:45.573000 File: CodechefProblemPage.pyc Line: 77 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 21:24:58.726000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:25:10.087000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:25:25.702000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:25:49.640000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:25:59.580000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:26:09.766000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:26:21.502000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:26:31.970000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:26:47.495000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:26:58.008000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:27:07.819000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:27:20.241000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:27:29.391000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:27:38.240000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:27:48.672000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:27:59.887000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:28:13.906000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 21:28:20.340000 File: CodechefProblemPage.pyc Line: 38 Caused By: Message: 
+
+ERROR:root:2016-12-07 21:28:34.394000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:28:43.390000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:28:53.570000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:29:03.057000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:29:14.841000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:29:25.158000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:29:36.488000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:29:49.904000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:30:04.575000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:30:14.162000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:30:24.978000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:30:39.207000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:30:49.806000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:31:04.704000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:31:13.618000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:31:30.658000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:31:44.689000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:31:58.992000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:32:18.459000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:32:28.104000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:32:38.379000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:32:51.458000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:33:03.816000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:33:14.204000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:33:25.136000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:33:37.842000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:33:51.764000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:34:07.588000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:34:19.859000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:34:32.156000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:34:44.819000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:34:59.290000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:35:13.228000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:35:25.857000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:35:38.474000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:35:54.963000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:36:22.059000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:36:36.011000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:36:50.306000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:37:03.635000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:37:18.291000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:37:33.589000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:37:53.291000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:38:08.390000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:38:59.691000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:39:13.767000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:39:27.892000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:39:42.707000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:39:57.723000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:40:16.876000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:40:52.198000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:41:08.446000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:41:22.961000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:41:40.093000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:42:09.705000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:42:27.822000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:42:57.128000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:43:11.629000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:43:37.181000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:43:57.985000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:44:16.319000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:44:32.641000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:44:50.099000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:45:23.446000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:45:44.557000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:46:04.619000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:46:21.666000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:46:47.720000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:47:15.355000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:47:35.751000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:47:56.587000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:48:15.291000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:48:32.317000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:48:56.215000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:49:16.385000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:49:39.863000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:49:58.424000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:50:17.854000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 21:50:47.606000 File: CodechefProblemPage.pyc Line: 67 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 21:51:05.645000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:51:28.428000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:51:49.777000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:52:07.541000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:52:29.986000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:52:48.401000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:53:07.849000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:53:25.986000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:53:45.243000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:54:06.787000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:54:28.084000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:54:48.486000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:55:14.707000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:55:35.846000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:55:59.202000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:56:21.341000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:56:48.204000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:57:10.247000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:57:54.370000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 21:59:31.989000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 21:59:51.177000 File: CodechefProblemPage.pyc Line: 77 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 22:00:15.594000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:00:37.589000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 22:01:03.605000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 22:01:03.613000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 22:01:03.625000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:01:26.194000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:01:59.791000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:02:22.697000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:02:46.156000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:03:13.793000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:03:37.430000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:04:07.956000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:04:33.818000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:05:02.148000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:05:30.367000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:05:59.057000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:06:27.497000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:06:52.710000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:07:20.528000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:07:50.295000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:08:19.849000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:08:49.937000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:09:17.150000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:09:49.953000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:10:20.351000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:10:48.870000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:11:25.350000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:12:01.067000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:12:37.946000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:13:16.790000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:13:51.058000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:14:27.411000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:15:04.927000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:15:42.774000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:16:20.907000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:16:57.469000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:17:41.309000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 22:18:31.591000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 22:28:28.379000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-07 22:53:54.790000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-07 22:53:58.274000 File: scaro.py Line: 24 Caused By: list index out of range
+ERROR:root:Time: 2016-12-07 23:05:29.854000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:2016-12-07 23:06:36.009000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 23:07:36.100000 File: CodechefProblemPage.pyc Line: 73 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 23:08:33.257000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:09:16.564000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:10:04.789000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:11:01.135000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:12:07.363000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:13:27.338000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:14:40.406000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:15:59.390000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:16:50.587000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:18:02.675000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:19:41.459000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:21:09.992000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:22:54.477000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:25:03.878000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:26:45.906000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:28:35.227000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:30:11.196000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 23:30:47.577000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:31:53.640000 File: CodechefProblemPage.pyc Line: 73 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:32:18.616000 File: CodechefProblemPage.pyc Line: 64 Caused By: Message: 
+
+ERROR:root:Time: 2016-12-07 23:33:25.287000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 23:34:47.329000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 23:35:48.064000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 23:37:22.101000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:39:02.067000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:40:25.068000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 23:40:48.190000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 23:43:00.866000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:45:07.203000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 23:45:28.072000 File: CodechefProblemPage.pyc Line: 73 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:46:15.484000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:47:08.369000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:47:08.378000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:47:08.387000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:47:08.395000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:47:08.403000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-07 23:47:08.410000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 23:47:18.729000 File: CodechefProblemPage.pyc Line: 38 Caused By: Message: 
+
+ERROR:root:2016-12-07 23:49:10.608000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:50:02.647000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-07 23:52:24.940000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-07 23:54:55.670000 File: CodechefProblemPage.pyc Line: 64 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-07 23:54:59.741000 File: scaro.py Line: 53 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:31:24.345000 File: driverUtil.py Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:2016-12-10 09:33:52.004000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 09:33:52.442000 :File Name: sqlDB.py :Line Number: 81 :Caused By: (1062, "Duplicate entry 'ACBALL' for key 'prob_code'")
+ERROR:root:2016-12-10 09:35:27.619000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 09:35:27.651000 :File Name: sqlDB.py :Line Number: 81 :Caused By: (1062, "Duplicate entry 'CFRTEST' for key 'prob_code'")
+ERROR:root:2016-12-10 09:36:32.472000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-10 09:38:13.502000 File: CodechefProblemPage.pyc Line: 73 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:38:36.615000 File: CodechefProblemPage.pyc Line: 73 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:39:08.492000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:39:32.847000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:39:53.931000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:39:53.944000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:39:53.948000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:39:53.964000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:39:53.964000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:39:53.980000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-10 09:39:53.980000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 09:39:53.995000 :File Name: sqlDB.py :Line Number: 81 :Caused By: (1062, "Duplicate entry 'MSTEP' for key 'prob_code'")
+ERROR:root:Time: 2016-12-10 09:40:33.956000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:40:49.620000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:41:09.968000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:42:15.381000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:42:48.188000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:43:39.158000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:43:43.222000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:43:47.247000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:43:51.318000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:43:55.356000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:43:59.408000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:44:03.452000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:44:07.535000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:44:11.555000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:44:15.620000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:44:19.660000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:44:23.736000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:45:14.070000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-10 09:45:25.459000 File: scaro.py Line: 53 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 09:50:38.064000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-10 09:55:22.453000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:2016-12-10 09:57:45.333000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 09:57:45.505000 :File Name: sqlDB.pyc :Line Number: 81 :Caused By: (1062, "Duplicate entry 'KTTABLE' for key 'prob_code'")
+ERROR:root:2016-12-10 09:58:26.300000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:00:34.126000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:01:34.216000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:01:34.381000 :File Name: sqlDB.pyc :Line Number: 81 :Caused By: (1062, "Duplicate entry 'MSTEP' for key 'prob_code'")
+ERROR:root:2016-12-10 10:03:19.342000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:05:13.551000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:05:13.563000 :File Name: sqlDB.pyc :Line Number: 81 :Caused By: (1062, "Duplicate entry 'COLOR' for key 'prob_code'")
+ERROR:root:2016-12-10 10:06:09.778000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:06:09.782000 :File Name: sqlDB.pyc :Line Number: 81 :Caused By: (1062, "Duplicate entry 'SUBINC' for key 'prob_code'")
+ERROR:root:2016-12-10 10:08:35.706000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:08:35.726000 :File Name: sqlDB.pyc :Line Number: 81 :Caused By: (1062, "Duplicate entry 'MOVIEWKN' for key 'prob_code'")
+ERROR:root:2016-12-10 10:11:33.255000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:13:02.865000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-10 10:15:19.358000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-10 10:15:29.564000 File: CodechefProblemPage.pyc Line: 73 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 10:17:13.673000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 10:17:13.721000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 10:17:13.733000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 10:17:13.741000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 10:17:13.753000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 10:17:13.761000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 10:17:13.764000 File: CodechefProblemPage.pyc Line: 92 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-10 10:17:13.764000 File: CodechefProblemPage.pyc Line: 114 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 13:35:33.354000 File: scrape_problem_codes.py Line: 23 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-10 13:36:13.999000 File: scrape_problem_codes.py Line: 25 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 13:38:21 File: scrape_problem_codes.py Line: 25 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 13:38:54.484000 File: scrape_problem_codes.py Line: 23 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-10 13:43:27.966000 File: scaro.py Line: 23 Caused By: insecure string pickle
+ERROR:root:Time: 2016-12-10 14:01:31.261000 File: scrape_problem_codes.py Line: 25 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 14:03:35.340000 File: scrape_problem_codes.py Line: 22 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-10 14:04:55.293000 File: scrape_problem_codes.py Line: 22 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-10 14:39:32.188000 File: scrape_problem_codes.py Line: 23 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 14:39:48.376000 File: scrape_problem_codes.py Line: 21 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
