@@ -1,9 +1,214 @@
-ERROR:root:Time: 2016-12-10 19:46:05.640672 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+ERROR:root:Time: 2016-12-10 21:14:56.976959 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
   (Session info: chrome=54.0.2840.71)
   (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
 
-ERROR:root:Time: 2016-12-10 19:50:22.651517 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+ERROR:root:Time: 2016-12-10 21:16:58.717433 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
   (Session info: chrome=54.0.2840.71)
   (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
 
-ERROR:root:2016-12-10 19:50:59.135049 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:Time: 2016-12-10 21:17:41.113812 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:22:00.591615 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:22:23.633583 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:24:11.672215 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:29:40.382324 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:31:07.921679 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:36:47.384459 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:46:42.550665 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:52:05.915403 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:54:26.329820 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 21:58:52.265560 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:00:28.830640 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:01:27.304324 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:06:10.849836 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:06:50.996643 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:10:28.482319 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:11:14.123885 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:11:14.170452 File: fetchUser.py Line: 67 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"rating-table"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:11:15.770295 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:11:22.048198 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:11:36.477976 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:13:03.242543 File: fetchUser.py Line: 109 Caused By: time data '21 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-10 22:13:04.370682 File: fetchUser.py Line: 109 Caused By: time data '21 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-10 22:13:05.470526 File: fetchUser.py Line: 109 Caused By: time data '21 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-10 22:13:06.631357 File: fetchUser.py Line: 109 Caused By: time data '8 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-10 22:13:07.757866 File: fetchUser.py Line: 109 Caused By: time data '5 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-10 22:13:08.984065 File: fetchUser.py Line: 109 Caused By: time data '4 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-10 22:14:17.444208 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:16:34.642237 File: fetchUser.py Line: 113 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"pageinfo"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:17:06.098722 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:17:18.379305 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:17:20.017446 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:19:24.943427 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:20:13.685759 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:20:39.288024 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:23:01.627051 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:24:34.847294 File: fetchUser.py Line: 37 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:27:02.363770 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:29:32.683462 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:29:33.605618 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:33:18.686178 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:33:45.816103 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:35:03.436216 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:35:16.343267 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:37:06.884973 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:37:27.818357 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:40:34.089465 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:41:37.808971 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:43:09.228105 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:43:20.488779 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:43:56.137754 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:45:05.959503 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:46:26.761586 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:46:51.951812 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:52:52.187209 File: fetchUser.py Line: 99 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+
+ERROR:root:Time: 2016-12-10 22:53:13.643021 File: fetchUser.py Line: 183 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e),platform=Linux 4.4.0-47-generic x86_64)
+

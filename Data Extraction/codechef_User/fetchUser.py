@@ -40,8 +40,8 @@ def fetch_user(uname, driver, statusPageDriver):
 			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			# print('Exception at line '+ str(exc_tb.tb_lineno))
-			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-						exc_tb.tb_lineno, e))
+			logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, uname, e))
 			country = ""
 
 		# print(country)
@@ -123,8 +123,8 @@ def fetch_user(uname, driver, statusPageDriver):
 								# print(e)
 								exc_type, exc_obj, exc_tb = sys.exc_info()
 								# print('Exception at line '+ str(exc_tb.tb_lineno))
-								logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-												exc_tb.tb_lineno, e))
+								logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+									exc_tb.tb_lineno, uname, e))
 							
 							userSubmissions.append( UserSubmission(problemCode, noOfSubmission, time))
 							# print("len: " + str(userSubmissions[len(userSubmissions)-1]), end='')
@@ -133,8 +133,8 @@ def fetch_user(uname, driver, statusPageDriver):
 			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			# print('Exception at line '+ str(exc_tb.tb_lineno))
-			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-						exc_tb.tb_lineno, e))
+			logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, uname, e))
 
 
 		# print('work till getting problems')
@@ -215,8 +215,8 @@ def fetch_user(uname, driver, statusPageDriver):
 			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
 			# print('Exception at line '+ str(exc_tb.tb_lineno))
-			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-				exc_tb.tb_lineno, e))
+			logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, uname, e))
 
 
 		u = User(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
@@ -237,8 +237,8 @@ def fetch_user(uname, driver, statusPageDriver):
 		# print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
 		# print('Exception at line '+ str(exc_tb.tb_lineno))
-		logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-						exc_tb.tb_lineno, e))
+		logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, uname, e))
 		prob = None
 	else:
 		pass

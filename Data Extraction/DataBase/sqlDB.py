@@ -26,7 +26,7 @@ def connect_db():
 
 def insert_user_db(tableName, uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank):
 		try:
-			pass
+			q = ''
 			if tableName == 'codechef_user':
 				q = "INSERT INTO "+ tableName +" VALUES ( " + "null, '" + uname + "', '" + country + "', '" + userCity + "', '" \
 					+ str(isStudent) + "', '" + prefLang + "', '" + str(rating['Long']) + "', '" + str(rating['Short']) +"', '" + str(rating['LTime']) +"', '" + str(rank['Long']) +"', '"+ str(rank['Short']) +"', '" + str(rank['LTime']) + "');\n"
@@ -41,24 +41,32 @@ def insert_user_db(tableName, uname, country, userCity, isStudent, userSubmissio
 			# execute SQL query using execute() method.
 			if cursor.execute(q) == 1:
 				db.commit()
-				print "Success DB"
-			else: print "Fail DB"
+				# print "Success DB"
+			else:
+				exc_type, exc_obj, exc_tb = sys.exc_info()
+				logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(q)) 
+				# print "Fail DB"
 			# print userSubmissions
 			for submission in userSubmissions:
 				# print (submission)
 				if len(submission.problemCode)>0:
 					q = "INSERT INTO "+tableName.split("_")[0]+"_prob_user_map VALUES (null, '"+uname+"', '"+submission.problemCode+"', \
 						'"+str(submission.time)+"', '"+str(submission.noOfSubmissions)+"' )"
-					print q
+					# print q
 					if cursor.execute(q) == 1:
 						db.commit()
-						print "Success DB"
-					else: print "Fail DB"
+						# print "Success DB"
+					else: 
+						exc_type, exc_obj, exc_tb = sys.exc_info()
+						logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+								' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(q)) 
+						# print "Fail DB"
 			db.close()
 		except Exception as e:
-			print(e)
+			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			# print 'Exception at line '+ str(exc_tb.tb_lineno)
 			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 
@@ -81,12 +89,16 @@ def insert_problem_db(tableName, prob_code, url, desc, tag, diff, category, sub_
 			if cursor.execute(q) == 1:
 				db.commit()
 				print "Success DB"
-			else: print "Fail DB"
+			else:
+				exc_type, exc_obj, exc_tb = sys.exc_info()
+				logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
+					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(q))  
+				print "Fail DB"
 			db.close()
 		except Exception as e:
-			print(e)
+			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			# print 'Exception at line '+ str(exc_tb.tb_lineno)
 			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
 
@@ -105,8 +117,8 @@ def does_user_exist(username, tablename):
 			return True
 		return False
 	except Exception as e:
-			print(e)
+			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			# print 'Exception at line '+ str(exc_tb.tb_lineno)
 			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
