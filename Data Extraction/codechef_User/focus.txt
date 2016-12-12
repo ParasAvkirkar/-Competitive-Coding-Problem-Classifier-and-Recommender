@@ -1,0 +1,12 @@
+ERROR:root:Time: 2016-12-11 11:17:12.747065 File: fetchUser.py Line: 223 User: fcdkbear Caused By: 'ascii' codec can't encode characters in position 42-48: ordinal not in range(128)
+ERROR:root:Time: 2016-12-11 11:56:56.629117 File: fetchUser.py Line: 190 User: subrat2014 Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 12:42:50.314416 File: fetchUser.py Line: 109 User: rgaut_89 Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 13:04:13.317428 File: fetchUser.py Line: 223 User: meirambek Caused By: 'ascii' codec can't encode characters in position 46-51: ordinal not in range(128)
+ERROR:root:Time: 2016-12-11 13:26:34.739199 File: fetchUser.py Line: 223 User: jevi Caused By: 'ascii' codec can't encode character u'\u012b' in position 38: ordinal not in range(128)
+ERROR:root:Time: 2016-12-11 13:47:26.506439 File: fetchUser.py Line: 109 User: brianfry713 Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 15:32:28.782902 File: fetchUser.py Line: 223 User: fcdkbear Caused By: 'ascii' codec can't encode characters in position 42-48: ordinal not in range(128)
+ERROR:root:Time: 2016-12-11 15:44:16.524912 File: fetchUser.py Line: 223 User: meirambek Caused By: 'ascii' codec can't encode characters in position 46-51: ordinal not in range(128)
+ERROR:root:Time: 2016-12-11 15:47:26.457536 File: fetchUser.py Line: 223 User: jevi Caused By: 'ascii' codec can't encode character u'\u012b' in position 38: ordinal not in range(128)
+ERROR:root:Time: 2016-12-11 16:17:21.700141 File: fetchUser.py Line: 190 User: abhi2 Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 16:52:43.758752 File: fetchUser.py Line: 223 User: maze_dk Caused By: 'ascii' codec can't encode character u'\xf8' in position 42: ordinal not in range(128)
+ERROR:root:Time: 2016-12-11 17:10:08.495575 File: fetchUser.py Line: 109 User: odule Caused By: time data '40 min ago' does not match format '%I:%M %p %d/%m/%y'
