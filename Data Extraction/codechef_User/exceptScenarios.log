@@ -1553,3 +1553,1128 @@ ERROR:root:Time: 2016-12-09 13:09:59.271000 File: fetchUser.py Line: 103 Caused 
 
 ERROR:root:2016-12-09 13:10:10.131000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
 ERROR:root:2016-12-09 13:10:34.782000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 18:58:11.141000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-12 18:58:29.333000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-12 18:58:32.857000 File: fetchUser.py Line: 293 Caused By: [Errno 2] No such file or directory: 'curr_progress'
+ERROR:root:2016-12-12 18:58:32.857000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 18:58:53.598000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 18:58:53.598000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 18:58:53.846000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 18:58:58.262000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 18:58:58.262000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 18:58:58.387000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 18:59:24.297000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 18:59:24.470000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 18:59:24.470000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 18:59:27.338000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 18:59:40.843000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 18:59:40.986000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 18:59:41.001000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 18:59:44.504000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 18:59:49.883000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 18:59:50.751000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 18:59:50.755000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 18:59:55.858000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:00:01.672000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:00:02.020000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:00:02.024000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:00:04.681000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:00:06.489000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:00:06.489000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:00:06.854000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:00:12.546000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:00:21.382000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:00:21.658000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:00:21.658000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:00:24.922000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:00:42.067000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:00:42.226000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:00:42.226000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:00:45.060000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:00:46.492000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:00:46.492000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:00:46.716000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:00:50.708000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:00:50.712000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:00:51.015000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:00:57.311000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:00:57.473000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:01:21.391000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:01:21.470000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:01:21.485000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:01:27.426000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:01:27.585000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:01:27.589000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:01:31.305000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:01:31.305000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:01:31.444000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:01:36.099000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:01:36.246000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:02:07.797000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:02:07.991000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:02:07.995000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:02:10.037000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:02:18.214000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:02:18.368000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:02:18.372000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:02:20.373000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:02:22.196000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:02:22.334000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:02:24.603000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:02:26.275000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:02:26.450000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:02:28.366000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:02:41.771000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:02:41.996000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:02:41.996000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:02:44.123000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:02:53.962000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:02:54.085000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:02:54.101000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:04:37.551000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:05:52.759000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:05:52.863000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:05:52.879000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:06:01.707000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:06:01.800000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:06:01.801000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:06:03.627000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:06:25.629000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:06:26.848000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:06:29.115000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:06:29.216000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:06:29.216000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:06:54.701000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:06:54.882000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:06:54.898000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:19.725000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:19.846000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:07:19.861000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:26.163000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:26.277000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:07:26.293000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:34.773000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:34.924000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:07:34.924000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:49.395000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:49.526000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:07:49.538000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:07:53.577000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:07:53.577000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:07:53.711000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:08:33.360000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:08:33.508000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:08:33.508000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:08:46.670000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:09:13.832000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:09:13.969000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:09:13.973000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:09:16.631000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:09:17.801000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:09:17.801000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:09:18.033000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:09:21.660000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:09:21.776000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:01.749000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:01.817000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:10:01.829000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:10:06.540000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:10:06.540000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:06.694000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:10:10.197000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:10:10.197000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:10.311000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:10:14.225000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:10:14.228000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:14.414000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:42.327000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:42.451000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:10:42.464000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:49.066000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:10:49.232000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:10:49.248000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:31.228000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:31.366000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:11:31.374000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:35.203000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:35.267000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:41.752000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:41.864000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:11:41.879000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:45.881000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:46.115000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:11:49.865000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:11:49.865000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:11:49.995000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:13:47.029000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:13:47.127000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:13:47.143000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:13:54.398000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:14:00.619000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:14:00.825000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:14:00.841000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:14:08.295000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:14:08.465000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:14:08.465000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:14:20.575000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:14:21.928000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:14:21.928000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:14:22.100000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:14:24.256000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:14:29.235000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:14:29.385000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:14:29.393000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:14:31.423000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:14:34.860000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:14:34.926000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:14:34.926000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:14:37.364000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:15:03.167000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:15:03.298000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:15:03.318000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:15:05.043000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:15:08.042000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:15:08.141000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:15:08.157000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:15:12.851000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:15:12.851000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:15:13.026000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:15:23.451000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:15:23.607000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:15:23.623000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:15:25.675000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:15:27.081000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:15:27.081000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:15:27.261000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:15:59.965000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:16:00.067000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:16:00.082000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:16:12.086000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:16:27.207000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:16:27.353000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:16:27.361000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:16:29.245000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:16:56.266000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:17:26.569000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:17:26.697000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:17:26.697000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:17:30.393000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:17:30.393000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:17:30.515000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:17:34.183000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:17:35.983000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:17:36.039000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:17:38.463000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:18:01.719000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:18:01.809000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:18:01.825000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:18:09.422000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:18:09.568000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:18:09.580000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:18:13.783000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:18:15.069000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:18:15.069000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:18:15.269000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:18:17.490000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:18:18.807000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:18:18.930000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:18:23.073000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:18:24.378000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:18:24.378000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:18:24.516000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:18:26.775000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:18:28.150000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:18:28.154000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:18:28.284000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:18:30.404000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:18:31.715000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:18:31.715000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:18:31.853000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:19:14.174000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:19:14.269000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:19:14.269000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:19:17.152000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:19:18.491000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:19:18.491000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:19:18.599000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:20:13.269000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:21:57.209000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:21:57.410000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:21:57.426000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:22:11.290000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:22:11.440000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:22:11.440000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:22:31.305000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:22:47.863000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:22:48.011000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:22:48.011000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:22:58.086000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:22:58.153000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:22:58.161000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:23:07.334000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:23:07.410000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:23:07.438000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:23:37.381000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:24:04.667000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:24:32.605000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:25:21.108000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:25:26.763000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:26:33.690000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:28:03.696000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:29:26.686000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:29:29.105000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:29:29.214000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:29:29.214000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:29:36.183000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:29:36.263000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:29:36.267000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:29:47.234000 File: fetchUser.py Line: 201 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:29:47.234000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:29:47.379000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:29:47.391000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:28.945000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:29.062000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:30:29.074000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:30:31.303000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:30:32.491000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:30:32.491000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:32.617000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:42.179000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:42.322000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:30:42.322000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:30:44.327000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:30:50.454000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:50.617000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:30:50.617000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:30:52.364000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:30:53.520000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:30:53.520000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:53.628000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:57.775000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:30:57.875000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:30:59.747000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:31:00.961000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:31:00.961000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:01.045000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:31:04.407000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:31:04.411000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:04.509000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:10.074000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:10.202000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:31:10.222000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:15.867000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:15.978000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:31:15.986000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:19.969000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:20.159000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:31:24.290000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:31:24.290000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:24.448000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:31:40.644000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:31:51.140000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:51.275000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:31:51.291000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:31:55.376000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:31:55.376000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:55.523000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:31:59.209000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:31:59.209000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:31:59.323000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:32:02.572000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:32:02.572000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:32:02.676000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:32:05.048000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:32:05.117000 File: fetchUser.py Line: 68 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"rating-table"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:32:05.125000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:32:08.668000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:32:08.672000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:32:08.810000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:32:10.508000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:32:24.559000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:32:33.908000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:32:33.991000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:32:34.003000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:32:35.828000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:32:46.217000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:32:46.361000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:32:46.369000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:32:48.289000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:32:55.321000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:32:55.477000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:32:55.493000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:32:57.343000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:32:58.880000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:32:59.004000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:33:10.777000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:33:10.907000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:33:10.923000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:33:41.234000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:33:41.364000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:33:41.372000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:33:43.641000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:33:45.007000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:33:45.007000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:33:45.169000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:33:47.816000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:34:15.622000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:15.765000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:34:15.777000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:34:17.843000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:34:19.282000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:34:19.285000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:19.436000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:23.298000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:23.450000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:34:26.768000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:34:30.542000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:30.648000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:34:30.664000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:34:33.994000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:34:35.379000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:34:35.379000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:35.509000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:34:37.574000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:34:39.010000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:39.209000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:34:41.045000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:34:42.741000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:34:42.741000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:42.876000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:34:44.676000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:34:46.180000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:46.292000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:34:48.525000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:34:49.997000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:34:49.997000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:34:50.124000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:34:52.003000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:35:03.374000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:35:03.494000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:35:03.509000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:35:05.262000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:35:08.619000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:35:08.731000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:35:08.755000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:35:10.467000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:35:11.986000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:35:11.986000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:35:12.108000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:35:15.687000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:35:15.687000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:35:15.802000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:36:44.407000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:36:44.557000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:36:44.573000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:36:51.525000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:36:51.652000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:36:51.660000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:37:02.221000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:37:02.379000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:37:02.387000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:25.762000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:25.895000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:38:25.895000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:30.970000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:31.127000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:38.569000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:38.675000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:38:38.679000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:38:42.655000 File: fetchUser.py Line: 67 Caused By: 'ascii' codec can't encode character u'\u0144' in position 10: ordinal not in range(128)
+ERROR:root:2016-12-12 19:38:42.655000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:52.422000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:52.581000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:38:52.589000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:38:56.315000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:38:56.315000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:38:56.450000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:39:02.792000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:39:02.927000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:39:02.942000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:39:12.125000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:39:12.237000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:39:12.253000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:39:14.652000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:39:29.940000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:39:30.079000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:39:30.095000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:40:32.090000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:40:32.619000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:40:32.639000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:40:34.760000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:40:49.312000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:40:49.462000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:40:49.540000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:41:05.347000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:42:26.125000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:42:26.256000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:42:26.272000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:42:35.412000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:42:35.547000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:42:35.563000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:42:38.972000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:42:38.972000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:42:39.097000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:42:44.618000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:42:44.744000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:42:44.760000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:42:48.282000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:42:48.282000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:42:48.473000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:43:01.942000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:43:02.111000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:43:02.111000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:43:05.670000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:43:05.670000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:43:05.787000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:43:09.238000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:43:09.238000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:43:09.345000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:43:25.390000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:43:25.514000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:43:25.530000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:43:29.199000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:43:29.199000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:43:29.283000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:44:04.390000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:44:30.539000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:44:30.676000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:44:30.680000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:45:03.777000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:45:03.943000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:45:03.959000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:45:32.779000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:45:32.898000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:45:32.914000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:07.903000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:08.019000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:48:08.027000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:15.934000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:16.030000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:48:16.046000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:48:17.768000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:48:22.784000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:22.915000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:48:22.915000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:48:24.965000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:48:26.613000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:26.731000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:48:28.505000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:48:29.930000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:48:29.930000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:30.002000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:48:31.892000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:48:38.747000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:38.825000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:48:38.829000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:48:40.684000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:48:42.180000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:48:42.180000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:42.259000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:48:44.773000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:48:46.278000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:48:46.461000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:48:48.214000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:49:16.097000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:49:16.204000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:49:16.212000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:49:18.119000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:49:19.571000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:49:19.571000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:49:19.699000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:49:22.061000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:49:23.900000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:49:23.995000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:49:26.910000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:49:47.149000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:49:47.247000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:49:47.247000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:49:55.100000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:49:55.227000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:49:55.231000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:50:00.504000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:50:09.513000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:50:09.647000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:50:09.667000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:50:12.601000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:50:14.513000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:50:14.638000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:50:16.509000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:50:17.814000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:50:17.814000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:50:18.231000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:50:20.005000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:50:21.574000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:50:21.730000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:50:23.535000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:50:31.084000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:50:31.183000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:50:31.191000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:50:32.863000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:50:51.826000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:50:51.981000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:50:52.004000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:51:00.932000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:51:43.298000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:51:43.395000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:51:43.403000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:51:58.363000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:52:26.284000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:26.448000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:52:26.464000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:52:30.393000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:52:30.393000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:30.513000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:35.869000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:36.010000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:52:36.018000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:52:40.168000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:52:40.168000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:40.286000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:45.492000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:45.647000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:52:45.663000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:52:47.146000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:52:47.202000 File: fetchUser.py Line: 68 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"rating-table"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:52:47.206000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:52.877000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:53.017000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:52:53.021000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:52:56.781000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:52:56.781000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:52:56.885000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:53:00.317000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:53:00.317000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:53:00.450000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:53:29.384000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:53:29.484000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:53:29.484000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:53:33.246000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:53:33.385000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:53:39.032000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:53:39.179000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:53:39.187000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:23.823000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:23.918000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:54:23.934000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:54:27.589000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:54:27.589000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:27.701000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:54:29.424000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:54:30.846000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:54:30.846000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:30.993000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:47.522000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:47.631000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:54:47.631000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:54:49.571000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:54:50.916000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:54:50.916000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:51.047000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:54:52.785000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:54:54.764000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:54.878000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:54:57.320000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:54:58.991000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:54:58.991000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:54:59.102000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:55:00.758000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:55:09.266000 File: fetchUser.py Line: 112 Caused By: list index out of range
+ERROR:root:2016-12-12 19:55:26.664000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:55:26.831000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:55:26.847000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:55:28.813000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:55:30.319000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:55:30.319000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:55:30.457000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:55:32.183000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:55:33.535000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:55:33.535000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:55:33.733000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:55:43.084000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:55:43.211000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:55:43.223000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:55:46.648000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:55:46.648000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:55:46.787000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:56:00.063000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:56:00.197000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:56:00.209000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:56:06.988000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:56:07.149000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:56:07.149000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:57:27.170000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:57:27.317000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:57:27.333000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:57:31.501000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:57:31.614000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:57:33.226000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:57:34.381000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:57:34.381000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:57:34.542000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:57:36.208000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:57:37.545000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 19:57:37.545000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:57:37.631000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:57:41.079000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:57:49.024000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:57:49.184000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:57:49.192000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:57:51.582000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 19:58:01.402000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:58:01.519000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:58:01.547000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:58:10.104000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:58:10.213000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:58:10.225000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:58:30.902000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 19:58:31.037000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 19:58:31.037000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 19:58:33.151000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 19:59:15.867000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:00:03.867000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:04.014000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:00:04.022000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:20.427000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:20.549000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:00:20.549000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:00:23.185000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 20:00:25.720000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 20:00:25.720000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:25.868000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:33.703000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:33.870000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:00:33.870000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:00:35.668000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 20:00:35.733000 File: fetchUser.py Line: 68 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"rating-table"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:00:35.749000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:00:41.267000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 20:00:41.267000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:41.382000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:49.268000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:49.367000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:00:49.379000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:00:54.977000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 20:00:54.977000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:00:55.105000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:01:01.038000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 20:01:01.038000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:01:01.137000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:01:09.341000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:01:09.467000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:01:09.483000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:01:15.169000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 20:01:15.173000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:01:15.310000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:01:17.652000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:01:41.467000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:01:41.621000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:01:41.641000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:01:51.802000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:01:51.886000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:01:51.890000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:01:54.540000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:01:58.489000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:01:58.598000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:02:04.652000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 20:02:04.652000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:02:04.775000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:02:10.523000 File: fetchUser.py Line: 208 Caused By: list index out of range
+ERROR:root:2016-12-12 20:02:10.523000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:02:10.630000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:02:14.546000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:02:21.292000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:02:21.403000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:02:21.415000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:02:34.669000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:02:34.778000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:02:34.786000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:02:41.654000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:02:41.766000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:02:44.286000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:02:47.327000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:02:47.471000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:03:00.269000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:03:00.416000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:03:00.424000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:03:03.004000 File: fetchUser.py Line: 36 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"user-country-name"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:03:10.493000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:03:10.586000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:03:10.602000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:03:45.736000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 20:03:46.562000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 20:03:46.768000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 20:03:46.980000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-12 20:03:47.489000 File: fetchUser.py Line: 102 Caused By: Message: no such element: Unable to locate element: {"method":"class name","selector":"dataTable"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:53:53.004000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:2016-12-12 20:53:53.153000 :File Name: sqlDB.pyc :Line Number: 53 :Caused By: (1136, "Column count doesn't match value count at row 1")
+ERROR:root:2016-12-12 20:53:53.161000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-12 20:54:05.138000 File: fetchUser.py Line: 63 Caused By: Message: chrome not reachable
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:2016-12-12 20:54:05.149000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
