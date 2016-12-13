@@ -265,7 +265,7 @@ statusPageDriver = getDriver()
 
 
 i = 0
-count = 1000
+count = 1345
 f = open('users_ids.txt', 'r')
 for uname in f:
 	if count == i:
