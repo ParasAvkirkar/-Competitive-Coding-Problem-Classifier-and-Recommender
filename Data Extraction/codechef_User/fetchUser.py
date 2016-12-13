@@ -37,16 +37,14 @@ def fetch_user(uname, driver, statusPageDriver):
 			countryElm = driver.find_element_by_class_name('user-country-name')
 			country = countryElm.text
 		except Exception as e:
-			print(e)
+			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print('Exception at line '+ str(exc_tb.tb_lineno))
-			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-						exc_tb.tb_lineno, e))
-			# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-			# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+			# print('Exception at line '+ str(exc_tb.tb_lineno))
+			logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, uname, e))
 			country = ""
 
-		print(country)
+		# print(country)
 
 
 		allTrs = driver.find_elements_by_tag_name('tr')
@@ -65,7 +63,7 @@ def fetch_user(uname, driver, statusPageDriver):
 					userCity = tdTags[1].text
 
 
-		print(str(isStudent) + ' '  + userCity)
+		# print(str(isStudent) + ' '  + userCity)
 		rating_table = driver.find_element_by_class_name('rating-table')		
 
 		#Get the problems solved
@@ -87,8 +85,6 @@ def fetch_user(uname, driver, statusPageDriver):
 							noOfSubmission = 0
 							time = None
 
-							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 't') 
-							
 							countProbs = countProbs + 1
 							flag = True
 							statusUrl = aTag.get_attribute('href')
@@ -123,40 +119,25 @@ def fetch_user(uname, driver, statusPageDriver):
 									aTagsStatus = statusPageDriver.find_elements_by_tag_name('a')
 									if not doneOnce:
 										flag = False
-									# for aTagStatus in aTagsStatus:
-									# 	if aTagStatus.get_attribute('href') is not None and 'status' in aTagStatus.get_attribute('href'):
-									# 		imgTag = aTagStatus.find_element_by_tag_name('img')
-									# 		if 'next' in imgTag.get_attribute('src'):
-									# 			statusUrl = aTagStatus.get_attribute('href')
-									# 			flag = True
-									# 			break
 							except Exception as e:
-								print(e)
+								# print(e)
 								exc_type, exc_obj, exc_tb = sys.exc_info()
-								print('Exception at line '+ str(exc_tb.tb_lineno))
-								logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-												exc_tb.tb_lineno, e))
-								# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-								# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
-
-							#driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w') 
+								# print('Exception at line '+ str(exc_tb.tb_lineno))
+								logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+									exc_tb.tb_lineno, uname, e))
 							
 							userSubmissions.append( UserSubmission(problemCode, noOfSubmission, time))
-							print("len: " + str(userSubmissions[len(userSubmissions)-1]), end='')
+							# print("len: " + str(userSubmissions[len(userSubmissions)-1]), end='')
 					break		
 		except Exception as e:
-			print(e)
+			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print('Exception at line '+ str(exc_tb.tb_lineno))
-			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-						exc_tb.tb_lineno, e))
-			# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-			# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+			# print('Exception at line '+ str(exc_tb.tb_lineno))
+			logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, uname, e))
 
 
-		# for p in problemsSolved:
-		# 	print(p)
-		print('work till getting problems')
+		# print('work till getting problems')
 		
 		#Get rank and ratings
 		rank = {'Long' : [], 'Short' : [], 'LTime' : []}
@@ -191,7 +172,7 @@ def fetch_user(uname, driver, statusPageDriver):
 		
 		for key in rating:
 			rating[key] = rating[key].replace('(?)', '')
-			print(str(rating[key]))
+			# print(str(rating[key]))
 		# print(len(rating))
 		count = 1
 		lang = {}
@@ -228,17 +209,18 @@ def fetch_user(uname, driver, statusPageDriver):
 					prefLang = key
 					max = lang[key]
 
-			print(prefLang)
+			# print(prefLang)
 		except Exception as e:
 			prefLang = 'c++'
-			print(e)
+			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print('Exception at line '+ str(exc_tb.tb_lineno))
-			logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-				exc_tb.tb_lineno, e))
+			# print('Exception at line '+ str(exc_tb.tb_lineno))
+			logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, uname, e))
 
 
 		u = User(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
+		print(str(u))
 		#u.insert_db(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
 		sqlDB.insert_user_db('codechef_user', uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
 		# with open('users/' + uname, 'w+b') as f:
@@ -252,66 +234,43 @@ def fetch_user(uname, driver, statusPageDriver):
 
 
 	except Exception as e:
-		print(e)
+		# print(e)
 		exc_type, exc_obj, exc_tb = sys.exc_info()
-		print('Exception at line '+ str(exc_tb.tb_lineno))
-		logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-						exc_tb.tb_lineno, e))
-		# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-		# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+		# print('Exception at line '+ str(exc_tb.tb_lineno))
+		logging.error('Time: {0} File: {1} Line: {2} User: {3} Caused By: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
+						exc_tb.tb_lineno, uname, e))
 		prob = None
 	else:
 		pass
 	finally:
 		pass
 
-#driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-# driver = webdriver.Chrome()
-# driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
-# driver = None
-# paths = ['', 'C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe', 'C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe']
-# i = 0
-# while driver is None:
-# 	try:
-# 		driver = webdriver.Chrome(paths[i])
-# 	except:
-# 		pass
-# 	i = i + 1
 driver = getDriver()
 logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
-#statusPageDriver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
-# driver = webdriver.Chrome()
-#fetch_user('anudeep2011', driver)
-# fetch_user('paras18', driver)
-# fetch_user('paragpachpute', driver)
-# fetch_user('pranay0007', driver)
 statusPageDriver = getDriver()
 
-count = 0
-
-try:
-	with open('curr_progress', 'r+b') as f:
-		count = pickle.load(f)
-		print(count)
-except Exception as e:
-	# print e
-	print(e)
-	exc_type, exc_obj, exc_tb = sys.exc_info()
-	print('Exception at line '+ str(exc_tb.tb_lineno))
-	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
-				exc_tb.tb_lineno, e))
-	# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
-	# 	' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
-	count = 0		
+# try:
+# 	with open('curr_progress', 'r+b') as f:
+# 		count = pickle.load(f)
+# 		print(count)
+# except Exception as e:
+# 	# print e
+# 	print(e)
+# 	exc_type, exc_obj, exc_tb = sys.exc_info()
+# 	print('Exception at line '+ str(exc_tb.tb_lineno))
+# 	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(datetime.datetime.now(), os.path.basename(__file__),
+# 				exc_tb.tb_lineno, e))
+# 	count = 0		
 
 
 i = 0
-count = 0
+count = 1000
 f = open('users_ids.txt', 'r')
 for uname in f:
 	if count == i:
 		uname = uname.split('\n')[0]
+		print('At {0} with userId {1}'.format(str(count+1), str(uname)))
 		if not sqlDB.does_user_exist(uname, 'codechef_user'):
 			start = time.time()
 			fetch_user(uname, driver, statusPageDriver)

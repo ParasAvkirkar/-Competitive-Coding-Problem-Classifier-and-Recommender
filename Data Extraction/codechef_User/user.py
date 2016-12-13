@@ -32,6 +32,6 @@ class User:
 
 	def __str__(self):
 		return 'Username: '+self.uname+' Country: '+self.country+' City: '+self.city+' isStudent'+str(self.isStudent)\
-		+ ' Prefered Language: ' + self.prefLang + ' Ratings: '+self.ratings+' Ranks: '+self.ranks
+		+ ' Prefered Language: ' + self.prefLang
 
 			

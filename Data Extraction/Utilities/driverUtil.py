@@ -14,7 +14,7 @@ def getDriver():
     i = 0
     while driver is None:
         try:
-            print str(i)
+            print(str(i) + ' trying this user')
             if paths[i] is '':
                 driver = webdriver.Chrome()
             else:

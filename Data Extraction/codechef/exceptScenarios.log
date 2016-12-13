@@ -1960,3 +1960,13 @@ ERROR:root:Time: 2016-12-10 10:17:13.764000 File: CodechefProblemPage.pyc Line: 
   (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
 
 ERROR:root:Time: 2016-12-10 10:17:13.764000 File: CodechefProblemPage.pyc Line: 114 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 13:35:33.354000 File: scrape_problem_codes.py Line: 23 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-10 13:36:13.999000 File: scrape_problem_codes.py Line: 25 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 13:38:21 File: scrape_problem_codes.py Line: 25 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 13:38:54.484000 File: scrape_problem_codes.py Line: 23 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-10 13:43:27.966000 File: scaro.py Line: 23 Caused By: insecure string pickle
+ERROR:root:Time: 2016-12-10 14:01:31.261000 File: scrape_problem_codes.py Line: 25 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 14:03:35.340000 File: scrape_problem_codes.py Line: 22 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-10 14:04:55.293000 File: scrape_problem_codes.py Line: 22 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-10 14:39:32.188000 File: scrape_problem_codes.py Line: 23 Caused By: list index out of range
+ERROR:root:Time: 2016-12-10 14:39:48.376000 File: scrape_problem_codes.py Line: 21 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
