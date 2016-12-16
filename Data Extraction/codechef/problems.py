@@ -113,10 +113,11 @@ class Problem:
 			self.source_limit = (sl[sl.index(':')+1:sl.index('B')]).strip()
 			tl = self.time_limit[0]
 			self.time_limit = (tl[tl.index(':')+1:tl.index('s')]).strip()
+			print self.description
 			# print self.input
 			# print self.constraints
 			# print self.time_limit
-			print self.source_limit
+			# print self.source_limit
 		except Exception as e:
 			print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -128,8 +129,14 @@ class Problem:
 
 
 	def create_word_features(self, words):
-		useful_words = [word for word in words if word not in
+		# print words
+		w = []
+		for line in words:
+			for wrd in line.split():
+				w.append(wrd)
+		useful_words = [word for word in w if word not in
                         stopwords.words('english')]
 		my_dict = ' '.join([word for word in useful_words])
+		# print my_dict
 		return my_dict
 
