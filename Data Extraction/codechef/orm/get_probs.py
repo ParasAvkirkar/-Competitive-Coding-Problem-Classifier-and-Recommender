@@ -10,7 +10,8 @@ s = Session()
 
 probs = s.query(Problem).filter(Problem.description != '')
 
-problist = [p for p in probs]
+problist = [p for p in probs if p.category == 'dp' or p.category == 'maths']
+print len(problist)
 
 def get_probs():
     return problist
