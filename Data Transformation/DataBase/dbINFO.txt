@@ -1,0 +1,4 @@
+localhost
+root
+
+data stage fyp

@@ -1970,3 +1970,11 @@ ERROR:root:Time: 2016-12-10 14:03:35.340000 File: scrape_problem_codes.py Line: 
 ERROR:root:Time: 2016-12-10 14:04:55.293000 File: scrape_problem_codes.py Line: 22 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
 ERROR:root:Time: 2016-12-10 14:39:32.188000 File: scrape_problem_codes.py Line: 23 Caused By: list index out of range
 ERROR:root:Time: 2016-12-10 14:39:48.376000 File: scrape_problem_codes.py Line: 21 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2016-12-16 18:24:28.703000 File: scaro.py Line: 23 Caused By: insecure string pickle
+ERROR:root:2016-12-16 18:25:09.123000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-16 18:27:35.444000 File: problems.py Line: 109 Caused By: 'charmap' codec can't encode character u'\u2264' in position 14: character maps to <undefined>  Problem Name: KTHMAX
+ERROR:root:Time: 2016-12-16 18:27:35.444000 File: scaro.py Line: 57 Caused By: Problem instance has no attribute 'time_limit' Problem href: /problems/KTHMAX
+ERROR:root:Time: 2016-12-16 18:35:54.388000 File: problems.py Line: 116 Caused By: 'charmap' codec can't encode character u'\u2264' in position 1344: character maps to <undefined>  Problem Name: KTHMAX
+ERROR:root:2016-12-16 18:35:54.389000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2016-12-16 18:36:31.731000 File: problems.py Line: 116 Caused By: 'charmap' codec can't encode character u'\u2264' in position 1363: character maps to <undefined>  Problem Name: BASE
+ERROR:root:2016-12-16 18:36:31.732000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
