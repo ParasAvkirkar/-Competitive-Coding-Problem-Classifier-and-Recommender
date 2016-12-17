@@ -72,7 +72,7 @@ def getCodechefProblem(problemUrl, difficulty):
 		
 				allDataTags = rowTag.find_elements_by_tag_name('td')
 				if len(allDataTags) > 3:
-					if "c++" in allDataTags[3].text.lower():
+					if "c" in allDataTags[3].text.lower():
 			 			totalSub = totalSub + 1
 			 			submissionSizes.append(float(re.sub("[^0-9, .]", "", allDataTags[2].text)))
 			 			totalSub = totalSub + 1

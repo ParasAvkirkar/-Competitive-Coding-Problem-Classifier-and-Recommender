@@ -10,3 +10,122 @@ ERROR:root:Time: 2016-12-11 15:47:26.457536 File: fetchUser.py Line: 223 User: j
 ERROR:root:Time: 2016-12-11 16:17:21.700141 File: fetchUser.py Line: 190 User: abhi2 Caused By: list index out of range
 ERROR:root:Time: 2016-12-11 16:52:43.758752 File: fetchUser.py Line: 223 User: maze_dk Caused By: 'ascii' codec can't encode character u'\xf8' in position 42: ordinal not in range(128)
 ERROR:root:Time: 2016-12-11 17:10:08.495575 File: fetchUser.py Line: 109 User: odule Caused By: time data '40 min ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-11 19:15:20.045851 File: fetchUser.py Line: 109 User: pandusonu Caused By: time data '18 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-11 19:20:54.474476 File: fetchUser.py Line: 109 User: stolis Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 19:20:55.840650 File: fetchUser.py Line: 109 User: stolis Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 19:20:56.942805 File: fetchUser.py Line: 109 User: stolis Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 19:20:58.912627 File: fetchUser.py Line: 109 User: stolis Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 19:21:00.291041 File: fetchUser.py Line: 109 User: stolis Caused By: list index out of range
+ERROR:root:Time: 2016-12-11 19:21:01.419328 File: fetchUser.py Line: 109 User: stolis Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 10:59:16.035282 File: fetchUser.py Line: 223 User: fcdkbear Caused By: 'ascii' codec can't encode characters in position 42-48: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 11:09:41.286483 File: fetchUser.py Line: 223 User: meirambek Caused By: 'ascii' codec can't encode characters in position 46-51: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 11:13:20.299032 File: fetchUser.py Line: 223 User: jevi Caused By: 'ascii' codec can't encode character u'\u012b' in position 38: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 11:15:06.901889 File: fetchUser.py Line: 223 User: maze_dk Caused By: 'ascii' codec can't encode character u'\xf8' in position 42: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 12:43:13.320906 File: fetchUser.py Line: 223 User: fcdkbear Caused By: 'ascii' codec can't encode characters in position 42-48: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 12:54:50.267573 File: fetchUser.py Line: 223 User: meirambek Caused By: 'ascii' codec can't encode characters in position 46-51: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 13:00:37.368934 File: fetchUser.py Line: 223 User: jevi Caused By: 'ascii' codec can't encode character u'\u012b' in position 38: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 13:00:53.274327 File: fetchUser.py Line: 223 User: maze_dk Caused By: 'ascii' codec can't encode character u'\xf8' in position 42: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 13:54:40.825140 File: fetchUser.py Line: 190 User: sarath12 Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 14:18:58.035561 File: fetchUser.py Line: 190 User: nui6293 Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 14:19:56.340050 File: fetchUser.py Line: 190 User: akashh Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 15:43:06.799475 File: fetchUser.py Line: 190 User: sumitasr_128 Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 16:51:22.974543 File: fetchUser.py Line: 95 User: dip_kush04 Caused By: Message: timeout: cannot determine loading status
+ERROR:root:Time: 2016-12-12 17:18:16.763927 File: fetchUser.py Line: 109 User: ashutosh_cric Caused By: time data '2 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-12 17:27:06.045087 File: fetchUser.py Line: 223 User: diiazopde Caused By: 'ascii' codec can't encode character u'\xe8' in position 44: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 17:37:44.969430 File: fetchUser.py Line: 190 User: achuttan Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 17:41:07.816186 File: fetchUser.py Line: 190 User: devel Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 18:02:05.487991 File: fetchUser.py Line: 109 User: meooow Caused By: time data '11 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-12 19:35:44.347133 File: fetchUser.py Line: 109 User: chiragjn Caused By: time data '4 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-12 19:35:46.894752 File: fetchUser.py Line: 109 User: chiragjn Caused By: time data '4 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-12 19:35:48.620378 File: fetchUser.py Line: 109 User: chiragjn Caused By: time data '4 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-12 20:10:19.099604 File: fetchUser.py Line: 190 User: smolugu Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 21:03:02.936690 File: fetchUser.py Line: 223 User: fcdkbear Caused By: 'ascii' codec can't encode characters in position 42-48: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 21:17:12.486573 File: fetchUser.py Line: 223 User: meirambek Caused By: 'ascii' codec can't encode characters in position 46-51: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 21:20:55.294466 File: fetchUser.py Line: 223 User: jevi Caused By: 'ascii' codec can't encode character u'\u012b' in position 38: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 21:21:11.004331 File: fetchUser.py Line: 223 User: maze_dk Caused By: 'ascii' codec can't encode character u'\xf8' in position 42: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 21:31:32.229105 File: fetchUser.py Line: 223 User: diiazopde Caused By: 'ascii' codec can't encode character u'\xe8' in position 44: ordinal not in range(128)
+ERROR:root:Time: 2016-12-12 22:28:56.242842 File: fetchUser.py Line: 190 User: cosettelopez Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 22:34:46.944230 File: fetchUser.py Line: 190 User: voanhkhach Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 22:53:04.074361 File: fetchUser.py Line: 190 User: priyamgupta170 Caused By: list index out of range
+ERROR:root:Time: 2016-12-12 23:11:44.108549 File: fetchUser.py Line: 109 User: mayankkhetan Caused By: time data '12 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-12 23:11:49.352330 File: fetchUser.py Line: 109 User: mayankkhetan Caused By: time data '11 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-12 23:11:52.862160 File: fetchUser.py Line: 109 User: mayankkhetan Caused By: time data '11 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-12 23:12:02.242568 File: fetchUser.py Line: 109 User: mayankkhetan Caused By: time data '9 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-13 10:11:25.032514 File: fetchUser.py Line: 223 User: fcdkbear Caused By: 'ascii' codec can't encode characters in position 42-48: ordinal not in range(128)
+ERROR:root:Time: 2016-12-13 10:29:34.869089 File: fetchUser.py Line: 223 User: meirambek Caused By: 'ascii' codec can't encode characters in position 46-51: ordinal not in range(128)
+ERROR:root:Time: 2016-12-13 10:38:36.597315 File: fetchUser.py Line: 190 User: shubhgoyal5 Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 11:33:23.981160 File: fetchUser.py Line: 190 User: safa Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 12:22:26.630628 File: fetchUser.py Line: 109 User: vivekindo85 Caused By: time data '19 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-13 13:25:15.701647 File: fetchUser.py Line: 223 User: uwi Caused By: 'ascii' codec can't encode characters in position 35-36: ordinal not in range(128)
+ERROR:root:Time: 2016-12-13 14:38:37.423327 File: fetchUser.py Line: 190 User: anant9090 Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 15:00:13.823503 File: fetchUser.py Line: 190 User: cusabio1 Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 16:10:58.178362 File: fetchUser.py Line: 190 User: deltaecho Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 17:12:18.056481 File: fetchUser.py Line: 190 User: melotfi Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 17:22:18.169340 File: fetchUser.py Line: 190 User: vipin_me Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 18:09:38.918999 File: fetchUser.py Line: 190 User: rogerroger Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 18:18:01.996015 File: fetchUser.py Line: 190 User: cheatbuster Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 18:51:43.249915 File: fetchUser.py Line: 223 User: tonthatvinh Caused By: 'ascii' codec can't encode character u'\u1ebf' in position 51: ordinal not in range(128)
+ERROR:root:Time: 2016-12-13 18:52:05.737288 File: fetchUser.py Line: 190 User: jaydeep_mike Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 19:15:20.701203 File: fetchUser.py Line: 190 User: arbiterofdeath Caused By: list index out of range
+ERROR:root:Time: 2016-12-13 19:44:26.626094 File: fetchUser.py Line: 190 User: taringa2012 Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 10:52:57.253592 File: fetchUser.py Line: 223 User: uwi Caused By: 'ascii' codec can't encode characters in position 35-36: ordinal not in range(128)
+ERROR:root:Time: 2016-12-14 10:56:53.686995 File: fetchUser.py Line: 223 User: piotrekg2 Caused By: 'ascii' codec can't encode character u'\u0142' in position 46: ordinal not in range(128)
+ERROR:root:Time: 2016-12-14 11:41:14.611995 File: fetchUser.py Line: 109 User: makeitdonesolo Caused By: time data '1 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 11:42:15.244856 File: fetchUser.py Line: 109 User: makeitdonesolo Caused By: time data '13 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 11:42:16.570264 File: fetchUser.py Line: 109 User: makeitdonesolo Caused By: time data '3 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 11:42:17.702623 File: fetchUser.py Line: 109 User: makeitdonesolo Caused By: time data '3 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 11:42:18.864321 File: fetchUser.py Line: 109 User: makeitdonesolo Caused By: time data '1 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 11:42:20.131472 File: fetchUser.py Line: 109 User: makeitdonesolo Caused By: time data '19 min ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 13:30:39.533203 File: fetchUser.py Line: 109 User: dj3500 Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 13:39:18.638883 File: fetchUser.py Line: 190 User: grammarnazi Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 13:45:56.572884 File: fetchUser.py Line: 223 User: r_64 Caused By: 'ascii' codec can't encode characters in position 36-37: ordinal not in range(128)
+ERROR:root:Time: 2016-12-14 13:48:05.610337 File: fetchUser.py Line: 190 User: lamajenny Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 14:14:06.429692 File: fetchUser.py Line: 190 User: farhan36_iut Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 14:58:38.769396 File: fetchUser.py Line: 190 User: webdesign24 Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 15:01:38.049235 File: fetchUser.py Line: 223 User: mappinator Caused By: 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128)
+ERROR:root:Time: 2016-12-14 15:13:48.608756 File: fetchUser.py Line: 109 User: aloktomar26 Caused By: time data '20 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 15:13:49.819647 File: fetchUser.py Line: 109 User: aloktomar26 Caused By: time data '20 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 15:13:51.121441 File: fetchUser.py Line: 109 User: aloktomar26 Caused By: time data '20 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 15:13:52.228743 File: fetchUser.py Line: 109 User: aloktomar26 Caused By: time data '20 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 15:13:53.727436 File: fetchUser.py Line: 109 User: aloktomar26 Caused By: time data '19 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 15:13:55.183946 File: fetchUser.py Line: 109 User: aloktomar26 Caused By: time data '16 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 15:13:56.444067 File: fetchUser.py Line: 109 User: aloktomar26 Caused By: time data '15 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 16:02:37.707744 File: fetchUser.py Line: 190 User: verma_anil Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 16:19:33.958931 File: fetchUser.py Line: 109 User: rohit_0801 Caused By: time data '15 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 17:20:19.993856 File: fetchUser.py Line: 190 User: maheshd13 Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 17:25:57.509056 File: fetchUser.py Line: 190 User: free_fall Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 17:48:51.862872 File: fetchUser.py Line: 223 User: r_64 Caused By: 'ascii' codec can't encode characters in position 36-37: ordinal not in range(128)
+ERROR:root:Time: 2016-12-14 17:50:40.478272 File: fetchUser.py Line: 223 User: mappinator Caused By: 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128)
+ERROR:root:Time: 2016-12-14 18:32:28.430381 File: fetchUser.py Line: 190 User: kplau Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 18:36:05.430691 File: fetchUser.py Line: 190 User: shubhamsinghal Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 18:45:34.010965 File: fetchUser.py Line: 223 User: mazeyu Caused By: 'ascii' codec can't encode characters in position 38-39: ordinal not in range(128)
+ERROR:root:Time: 2016-12-14 18:56:53.220378 File: fetchUser.py Line: 190 User: swistakk Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 19:23:19.702755 File: fetchUser.py Line: 109 User: abhishekssj5 Caused By: time data '1 hours ago' does not match format '%I:%M %p %d/%m/%y'
+ERROR:root:Time: 2016-12-14 19:25:02.583280 File: fetchUser.py Line: 190 User: iltd Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 19:28:51.635740 File: fetchUser.py Line: 190 User: kbalfk69 Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 19:33:09.648368 File: fetchUser.py Line: 190 User: mishraankurhdi Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 19:41:54.212208 File: fetchUser.py Line: 190 User: martamarta Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 20:09:48.227541 File: fetchUser.py Line: 109 User: betu1123581321 Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 20:34:27.104738 File: fetchUser.py Line: 190 User: khayzo Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 20:38:12.336891 File: fetchUser.py Line: 190 User: tara24 Caused By: list index out of range
+ERROR:root:Time: 2016-12-14 21:21:45.473139 File: fetchUser.py Line: 190 User: tcaz2014 Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 10:31:24.575475 File: fetchUser.py Line: 223 User: r_64 Caused By: 'ascii' codec can't encode characters in position 36-37: ordinal not in range(128)
+ERROR:root:Time: 2016-12-15 10:33:02.999350 File: fetchUser.py Line: 223 User: mappinator Caused By: 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128)
+ERROR:root:Time: 2016-12-15 10:38:25.184485 File: fetchUser.py Line: 223 User: mazeyu Caused By: 'ascii' codec can't encode characters in position 38-39: ordinal not in range(128)
+ERROR:root:Time: 2016-12-15 10:51:01.340745 File: fetchUser.py Line: 190 User: prashil_gupta Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 10:54:10.936498 File: fetchUser.py Line: 190 User: incepstellar Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 11:04:09.371695 File: fetchUser.py Line: 190 User: crazyboy1 Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 11:16:02.121455 File: fetchUser.py Line: 190 User: tiandl Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 11:16:17.935054 File: fetchUser.py Line: 190 User: rezak Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 11:21:39.069230 File: fetchUser.py Line: 190 User: rutwik Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 11:45:58.653821 File: fetchUser.py Line: 190 User: jayrambhia Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 12:00:38.359538 File: fetchUser.py Line: 190 User: shreyansh0103 Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 12:07:09.892799 File: fetchUser.py Line: 190 User: geek1 Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 18:57:44.781047 File: fetchUser.py Line: 190 User: dsantosp12 Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 19:34:07.614780 File: fetchUser.py Line: 190 User: ramashankar72 Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 20:05:24.103502 File: fetchUser.py Line: 190 User: rishabh_vasani Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 21:10:04.297543 File: fetchUser.py Line: 223 User: zhouyuchen Caused By: 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128)
+ERROR:root:Time: 2016-12-15 21:30:49.341234 File: fetchUser.py Line: 223 User: sanroylozan Caused By: 'ascii' codec can't encode character u'\xfa' in position 49: ordinal not in range(128)
+ERROR:root:Time: 2016-12-15 21:54:45.101202 File: fetchUser.py Line: 190 User: toiletpaper Caused By: list index out of range
+ERROR:root:Time: 2016-12-15 22:10:39.960640 File: fetchUser.py Line: 223 User: sergio10barca Caused By: 'ascii' codec can't encode character u'\xe9' in position 57: ordinal not in range(128)
+ERROR:root:Time: 2016-12-15 22:13:39.812730 File: fetchUser.py Line: 223 User: tony_hager Caused By: 'ascii' codec can't encode character u'\xe4' in position 44: ordinal not in range(128)
