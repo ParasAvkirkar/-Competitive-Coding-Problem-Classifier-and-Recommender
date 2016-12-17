@@ -31,7 +31,10 @@ class User:
 
 
 	def __str__(self):
-		return 'Username: '+self.uname+' Country: '+self.country+' City: '+self.city+' isStudent'+str(self.isStudent)\
+		s = 'Username: '+self.uname+' Country: '+self.country+' City: '+self.city+' isStudent'+str(self.isStudent)\
 		+ ' Prefered Language: ' + self.prefLang
+		s = s.encode('utf-8', 'ignore')
+		#s = unicode(s, errors='ignore')
+		return s
 
 			

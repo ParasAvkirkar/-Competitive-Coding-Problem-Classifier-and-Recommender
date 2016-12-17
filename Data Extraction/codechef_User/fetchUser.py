@@ -220,9 +220,10 @@ def fetch_user(uname, driver, statusPageDriver):
 
 
 		u = User(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
+		sqlDB.insert_user_db('codechef_user', uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
+		
 		print(str(u))
 		#u.insert_db(uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
-		sqlDB.insert_user_db('codechef_user', uname, country, userCity, isStudent, userSubmissions, prefLang, rating, rank)
 		# with open('users/' + uname, 'w+b') as f:
 		# 	pickle.dump(u, f)
 
@@ -265,7 +266,9 @@ statusPageDriver = getDriver()
 
 
 i = 0
-count = 1000
+count = 3000
+numberOfUsersProcess = 0
+avgTime = 0.0
 f = open('users_ids.txt', 'r')
 for uname in f:
 	if count == i:
@@ -275,7 +278,12 @@ for uname in f:
 			start = time.time()
 			fetch_user(uname, driver, statusPageDriver)
 			end = time.time()
-			print('Total time : '+str(1.0*(end-start)/60))
+
+			currTime = 1.0*(end-start)/60
+			avgTime = ((numberOfUsersProcess*avgTime) / (numberOfUsersProcess + 1)) + (currTime/(numberOfUsersProcess + 1))
+			numberOfUsersProcess += 1
+			# print('Total time : '+str(currTime))
+			print('Total time: {0} Running Average Time: {1}'.format(str(currTime), str(avgTime)))
 		count += 1
 		with open('curr_progress', 'w+b') as f:
 			pickle.dump(count, f)

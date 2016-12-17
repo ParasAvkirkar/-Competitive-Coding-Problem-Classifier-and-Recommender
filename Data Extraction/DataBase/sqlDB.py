@@ -28,10 +28,10 @@ def insert_user_db(tableName, uname, country, userCity, isStudent, userSubmissio
 		try:
 			q = ''
 			if tableName == 'codechef_user':
-				q = "INSERT INTO "+ tableName +" VALUES ( " + "null, '" + uname + "', '" + country + "', '" + userCity + "', '" \
+				q = u"INSERT INTO "+ tableName +" VALUES ( " + "null, '" + uname + "', '" + country + "', '" + userCity + "', '" \
 					+ str(isStudent) + "', '" + prefLang + "', '" + str(rating['Long']) + "', '" + str(rating['Short']) +"', '" + str(rating['LTime']) +"', '" + str(rank['Long']) +"', '"+ str(rank['Short']) +"', '" + str(rank['LTime']) + "');\n"
 			elif tableName == 'spoj_user' or tableName == 'codeforces_user':
-				q = "INSERT INTO "+ tableName +" VALUES ( " + "null, '" + uname + "', '" + country + "', '" + userCity + "', '" \
+				q = u"INSERT INTO "+ tableName +" VALUES ( " + "null, '" + uname + "', '" + country + "', '" + userCity + "', '" \
 					+ str(isStudent) + "', '" + prefLang + "', '" + str(rating) + "', '" + str(rating) +"', '" + str(rating) +"', '" + str(rank) +"', '"+ str(rank) +"', '" + str(rank) + "');\n"
 
 			db = connect_db()
@@ -39,6 +39,9 @@ def insert_user_db(tableName, uname, country, userCity, isStudent, userSubmissio
 			cursor = db.cursor()
 
 			# execute SQL query using execute() method.
+			#q = unicode(q, errors='ignore')
+			#q = q.encode('latin1')
+			q = q.encode('utf-8', 'ignore')
 			if cursor.execute(q) == 1:
 				db.commit()
 				# print "Success DB"
