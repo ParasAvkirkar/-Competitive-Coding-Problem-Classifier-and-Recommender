@@ -113,7 +113,7 @@ class Problem:
 			self.source_limit = (sl[sl.index(':')+1:sl.index('B')]).strip()
 			tl = self.time_limit[0]
 			self.time_limit = (tl[tl.index(':')+1:tl.index('s')]).strip()
-			print self.description
+			# print self.description
 			# print self.input
 			# print self.constraints
 			# print self.time_limit

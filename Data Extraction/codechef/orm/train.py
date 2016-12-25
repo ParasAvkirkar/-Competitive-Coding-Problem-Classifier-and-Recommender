@@ -20,3 +20,7 @@ clf.fit(X_train, y_train)
 
 accuracy = clf.score(X_test, y_test)
 print accuracy
+
+# for i in range(len(X_test)):
+#     print clf.predict_proba(X_test[i])
+#     print '\t' + str(y_test[i])

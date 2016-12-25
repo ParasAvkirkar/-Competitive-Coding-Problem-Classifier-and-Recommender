@@ -1,1 +1,0 @@
-ERROR:root:2016-12-16 14:27:33.356000 :File Name: sqlDB.py :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'

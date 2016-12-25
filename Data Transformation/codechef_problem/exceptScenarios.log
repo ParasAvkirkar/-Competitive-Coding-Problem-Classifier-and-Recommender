@@ -1,0 +1,89 @@
+ERROR:root:Time: 2016-12-17 11:41:43.022000 File: driverUtil.py Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 11:46:06.295000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 11:47:04.983000 File: CodechefProblemPage.pyc Line: 77 Caused By: Message: chrome not reachable
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+ Problem Name: SEATL
+ERROR:root:Time: 2016-12-17 11:50:12.146000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 11:50:19.915000 File: CodechefProblemPage.pyc Line: 38 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+ Problem Name: RECTLOVE
+ERROR:root:Time: 2016-12-17 11:50:35.064000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 11:51:34.147000 File: CodechefProblemPage.pyc Line: 64 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+ Problem Name: SEATL
+ERROR:root:Time: 2016-12-17 11:55:26.898000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 11:56:51.586000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:00:55.375000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:02:45.900000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:03:13.056000 File: CodechefProblemPage.pyc Line: 96 Caused By: Message: element not visible
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-17 12:03:13.720000 File: CodechefProblemPage.pyc Line: 96 Caused By: Message: element not visible
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-17 12:03:14.387000 File: CodechefProblemPage.pyc Line: 96 Caused By: Message: element not visible
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-17 12:03:15.118000 File: CodechefProblemPage.pyc Line: 96 Caused By: Message: element not visible
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-17 12:14:30.417000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:16:21.569000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+ Problem Name: CHEFSSET
+ERROR:root:Time: 2016-12-17 12:19:09.912000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:19:33.394000 File: CodechefProblemPage.pyc Line: 96 Caused By: Message: element not visible
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+
+ERROR:root:Time: 2016-12-17 12:22:19.851000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:25:07.944000 File: CodechefProblemPage.pyc Line: 38 Caused By: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+ Problem Name: RECRECOV
+ERROR:root:Time: 2016-12-17 12:25:35.051000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:29:47.508000 File: CodechefProblemPage.pyc Line: 64 Caused By: Message: chrome not reachable
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+ Problem Name: RECRECOV
+ERROR:root:Time: 2016-12-17 12:30:10.606000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:35:30.629000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:37:08.164000 File: CodechefProblemPage.pyc Line: 75 Caused By: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64)
+ Problem Name: BOGOSORT
+ERROR:root:Time: 2016-12-17 12:41:08.796000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:52:28.325000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 12:55:25.790000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 13:00:13.703000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+ERROR:root:Time: 2016-12-17 13:03:56.967000 File: driverUtil.pyc Line: 19 Caused By: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+

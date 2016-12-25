@@ -99,6 +99,9 @@ for p in train_set:
         else:
             features.append(0)
 
+    features.append(p.submission_size)
+    features.append(p.time_limit[:1])
+
     if p.category == prob_class:
         features.append(1)
     else : features.append(0)
@@ -125,6 +128,9 @@ for p in test_set:
         else:
             features.append(0)
 
+    features.append(p.submission_size)
+    features.append(p.time_limit[:1])
+
     if p.category == prob_class:
         features.append(1)
     else : features.append(0)
@@ -136,6 +142,7 @@ for p in test_set:
 with open('dp_dataset.csv', 'w') as f:
     f.write(','.join([x[0] for x in sorted_perc[:10]]))
     f.write(','.join([x[0] for x in sorted_perc[-10:]]))
+    f.write(',sub_size,time_limit')
     f.write(',class')
 
     f.write('\n')
