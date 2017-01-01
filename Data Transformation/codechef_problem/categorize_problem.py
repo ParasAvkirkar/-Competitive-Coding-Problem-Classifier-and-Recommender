@@ -28,7 +28,7 @@ s = Session()
 
 probs = s.query(Problem)
 
-for p in probs[:25]:
+for p in probs:
     tags = p.tag.split()
     print tags
     f = False
