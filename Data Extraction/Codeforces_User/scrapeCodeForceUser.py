@@ -22,6 +22,8 @@ import sqlDB
 sys.path.append("../Utilities")
 #from driverUtil import getDriver
 
+#1400 - 2300 users not scraped net failure
+
 def fetch_user(userLink):
 	try:
 
@@ -147,7 +149,7 @@ if __name__ == '__main__':
 				with open('curr_progress', 'rb') as progRead:
 					count = pickle.load(progRead)
 			#print(userHandles)
-			for i in range(count, 1000):
+			for i in range(count, 20000):
 				with open('curr_progress', 'wb') as progWrite:
 					pickle.dump(count, progWrite)
 					count = count + 1

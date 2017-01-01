@@ -36,6 +36,60 @@ prob_class = 'dp'
 # for w in sorted_w:
 #     print w
 
+def make_csv_files():
+    with open('20feature_word_all_data.csv', 'w') as f:
+        for w in sorted_perc[:10]:
+            print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
+                word_count[w[0]]['total'])
+            f.write(w[0] + "," + str(word_count[w[0]]['yes']) + "," + str(word_count[w[0]]['no']) + "," + str(
+                word_count[w[0]]['total']))
+            f.write('\n')
+
+        print "---------------------------------------------------------"
+        for w in sorted_perc[-10:]:
+            print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
+                word_count[w[0]]['total'])
+            f.write(w[0] + "," + str(word_count[w[0]]['yes']) + "," + str(word_count[w[0]]['no']) + "," + str(
+                word_count[w[0]]['total']))
+            f.write('\n')
+
+    with open('20feature_word_percentage.csv', 'w') as f:
+        for w in sorted_perc[:10]:
+            f.write(w[0] + ",")
+        f.write('\n')
+
+        for w in sorted_perc[:10]:
+            f.write(str(w[1]) + ",")
+        f.write('\n')
+
+        for w in sorted_perc[-10:]:
+            f.write(w[0] + ",")
+        f.write('\n')
+
+        for w in sorted_perc[-10:]:
+            f.write(str(w[1]) + ",")
+        f.write('\n')
+
+def preapare_dataset():
+    with open('dp_dataset.csv', 'w') as f:
+        f.write(','.join([x[0] for x in sorted_perc[:10]]))
+        # print ','.join([x[0] for x in sorted_perc[:10]])
+
+        f.write(',')
+
+        f.write(','.join([x[0] for x in sorted_perc[-10:]]))
+        # print ','.join([x[0] for x in sorted_perc[-10:]])
+
+        f.write(',sub_size,time_limit')
+        f.write(',class')
+        f.write('\n')
+
+        for t in total_data:
+            f.write(','.join([str(x) for x in t]))
+            f.write('\n')
+
+
+
 
 #word count by, no of words in dp prob and in no dp prob
 words = {}
@@ -66,12 +120,26 @@ for p in train_set:
                 words[w][0] += 1
 
 percent = {}
+word_count = {}
 for w in words:
-    if (words[w][0] + words[w][1]) > 100: #word should have atleast 100 occurances
-        percent[w] = 100.0 * words[w][1] / (words[w][0] + words[w][1])
+    if (words[w][0] + words[w][1]) > 50: #word should have atleast 50 occurances
+        word_count[w] = {}
+        word_count[w]['yes'] = words[w][1]
+        word_count[w]['no'] = words[w][0]
+        word_count[w]['total'] = words[w][0] + words[w][1]
+        percent[w] = 100.0 * words[w][1] / word_count[w]['total']
+
+
+with open('word_table.csv', 'w') as f :
+    for w in word_count:
+        f.write(w + "," + str(word_count[w]['yes']) + "," + str(word_count[w]['no']) + "," + str(word_count[w]['total']))
+        f.write('\n')
+
 
 sorted_perc = sorted(percent.items(), key=operator.itemgetter(1))
 sorted_perc.reverse() #desc order
+
+make_csv_files()
 
 # print sorted_perc[:10]
 # print sorted_perc[-10:]
@@ -138,16 +206,5 @@ for p in test_set:
     total_data[count] = features
     count += 1
 
-
-with open('dp_dataset.csv', 'w') as f:
-    f.write(','.join([x[0] for x in sorted_perc[:10]]))
-    f.write(','.join([x[0] for x in sorted_perc[-10:]]))
-    f.write(',sub_size,time_limit')
-    f.write(',class')
-
-    f.write('\n')
-
-    for t in total_data:
-        f.write(','.join([str(x) for x in t]))
-        f.write('\n')
+preapare_dataset()
 

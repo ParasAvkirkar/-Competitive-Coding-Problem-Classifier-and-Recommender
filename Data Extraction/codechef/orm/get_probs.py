@@ -8,9 +8,9 @@ conn = engine.connect()
 Session = sessionmaker(bind=engine)
 s = Session()
 
-probs = s.query(Problem).filter(Problem.description != '')
+probs = s.query(Problem).filter()
 
-problist = [p for p in probs if p.category == 'dp' or p.category == 'maths']
+problist = [p for p in probs]
 print len(problist)
 
 def get_probs():

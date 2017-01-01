@@ -25,8 +25,14 @@ probs = s.query(Problem)
 for p in probs:
     # print p.description
     try:
-        p.description = create_word_features(p.description)
-        print "success " + p.prob_code
+        # p.description = create_word_features(p.description)
+        desc = p.description
+        desc = desc.replace('.', ' ')
+        desc = desc.replace(',', ' ')
+        desc = create_word_features(desc)
+        # print desc
+        # print "success " + p.prob_code
+        p.description = desc.lower()
         s.commit()
     except:
         print "failed " +p.prob_code
