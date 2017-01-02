@@ -4,13 +4,16 @@ import pickle
 from sklearn import neighbors, svm
 import numpy as np
 import pandas
-from get_probs import get_probs, getProbByCode
+from feature_extraction import getFeaturesByProbCode
 
-with open('classifier.pickle', 'rb') as f:
-	try:
-		clf = pickle.load(f)
-
-	except Exception as e:
-		print(e)
+def predict(problem):
+	with open('../Model Training/Codechef/classifier.pickle', 'rb') as f:
+		try:
+			clf = pickle.load(f)
+			print 'Classifier Loaded'
+			features = getFeaturesByProbCode(problem)
+			print clf.predict(features)
+		except Exception as e:
+			print(e)
 
 

@@ -48,15 +48,18 @@ with open('words.csv', 'w') as f:
 		i += 1
 #getFeaturesByProbCode('AVGSHORT')
 
-def getFeaturesByProbCode(probCode):
-	prob = getProbByCode(probCode)
+def getFeaturesByProbCode(prob):
+	print 'Requested problem '+ prob.name
+	# prob = getProbByCode(probCode)
+	# print 'Got problem '+prob.prob_code
 	features = []
 	if '-' in prob.time_limit:
 		j = prob.time_limit.index('-')
 		prob.time_limit = prob.time_limit[j + 1:]
-	features += [float(prob.submission_size), 1.0 if 'True' in prob.example_given else 0.0 , difficulty[prob.difficulty] ,float(prob.time_limit), float(categories.index(prob.category))]
+	features += [float(prob.submission_size), 1.0 if 'True' in prob.example_given else 0.0 , difficulty[prob.difficulty] ,float(prob.time_limit)]
 	freq_term_matrix = count_vectorizer.transform([prob.description])
 	# print(freq_term_matrix)
 	tf_idf_matrix = tfidf.transform(freq_term_matrix)
 	numpyAr = tf_idf_matrix.toarray()
+	print numpyAr[0]
 	return list(numpyAr[0]) + features

@@ -1,3 +1,7 @@
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+import nltk.classify.util
+
 import sys
 import os
 import logging
@@ -122,4 +126,17 @@ class Problem:
 						exc_tb.tb_lineno, e, self.name))
 			# logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 			# 		' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))
+
+
+	def create_word_features(self, words):
+		# print words
+		w = []
+		for line in words:
+			for wrd in line.split():
+				w.append(wrd)
+		useful_words = [word for word in w if word not in
+                        stopwords.words('english')]
+		my_dict = ' '.join([word for word in useful_words])
+		# print my_dict
+		return my_dict
 
