@@ -54,14 +54,9 @@ def getFeaturesByProbCode(probCode):
 	if '-' in prob.time_limit:
 		j = prob.time_limit.index('-')
 		prob.time_limit = prob.time_limit[j + 1:]
-	features += [float(prob.submission_size), 1.0 if 'True' in prob.example_given else 0.0 , difficulty[prob.difficulty] ,
-	 float(prob.time_limit), float(categories.index(prob.category))]
-	count_vectorizer = CountVectorizer()
-	count_vectorizer.fit_transform(train_set)
-	freq_term_matrix = count_vectorizer.transform(tuple(prob.description))
-	print(freq_term_matrix)
-	tfidf = TfidfTransformer(norm="l2")
-	tfidf.fit(freq_term_matrix)
+	features += [float(prob.submission_size), 1.0 if 'True' in prob.example_given else 0.0 , difficulty[prob.difficulty] ,float(prob.time_limit), float(categories.index(prob.category))]
+	freq_term_matrix = count_vectorizer.transform([prob.description])
+	# print(freq_term_matrix)
 	tf_idf_matrix = tfidf.transform(freq_term_matrix)
 	numpyAr = tf_idf_matrix.toarray()
 	return list(numpyAr[0]) + features

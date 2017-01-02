@@ -4,8 +4,6 @@ import pickle
 from sklearn import neighbors, svm
 import numpy as np
 import pandas
-from get_probs 
-
 from get_probs import get_probs, getProbByCode
 
 with open('classifier.pickle', 'rb') as f:
