@@ -29,10 +29,10 @@ def insert_user_db(tableName, uname, country, userCity, isStudent, userSubmissio
 			q = ''
 			if tableName == 'codechef_user':
 				q = u"INSERT INTO "+ tableName +" VALUES ( " + "null, '" + uname + "', '" + country + "', '" + userCity + "', '" \
-					+ str(isStudent) + "', '" + prefLang + "', '" + str(rating['Long']) + "', '" + str(rating['Short']) +"', '" + str(rating['LTime']) +"', '" + str(rank['Long']) +"', '"+ str(rank['Short']) +"', '" + str(rank['LTime']) + "');\n"
+					+ str(isStudent) + "', '" + prefLang + "', '" + str(rating['Long']) + "', '" + str(rating['Short']) +"', '" + str(rating['LTime']) +"', '" + str(rank['Long']) +"', '"+ str(rank['Short']) +"', '" + str(rank['LTime']) + "', null, null, null, null, null, null, null);\n"
 			elif tableName == 'spoj_user' or tableName == 'codeforces_user':
 				q = u"INSERT INTO "+ tableName +" VALUES ( " + "null, '" + uname + "', '" + country + "', '" + userCity + "', '" \
-					+ str(isStudent) + "', '" + prefLang + "', '" + str(rating) + "', '" + str(rating) +"', '" + str(rating) +"', '" + str(rank) +"', '"+ str(rank) +"', '" + str(rank) + "');\n"
+					+ str(isStudent) + "', '" + prefLang + "', '" + str(rating) + "', '" + str(rating) +"', '" + str(rating) +"', '" + str(rank) +"', '"+ str(rank) +"', '" + str(rank) + "', null, null, null, null, null, null, null);\n"
 
 			db = connect_db()
 			# prepare a cursor object using cursor() method

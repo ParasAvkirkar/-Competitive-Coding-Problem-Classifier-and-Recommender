@@ -8,12 +8,18 @@ conn = engine.connect()
 Session = sessionmaker(bind=engine)
 s = Session()
 
-probs = s.query(Problem).filter(Problem.description != '')
+probs = s.query(Problem)#.filter(Problem.category == 'dp' or)
 
-problist = [p for p in probs if p.category == 'dp' or p.category == 'maths']
-print len(problist)
+categories = ['combinatorics', 'graph', 'maths', 'segment-tree']
+
+#problist = [p for p in probs if p.category == 'dp' or p.category == 'graph']
+problist = [p for p in probs if p.category in categories]
+#print len(problist)
+print(len(list(probs)))
 
 def get_probs():
-    return problist
+    return list(problist)
 
 
+def getProbByCode(probCode):
+	return [prob for prob in probs if probCode in prob.prob_code][0]

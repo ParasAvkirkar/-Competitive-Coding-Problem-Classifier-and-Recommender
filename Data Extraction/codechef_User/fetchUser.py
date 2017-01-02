@@ -266,7 +266,7 @@ statusPageDriver = getDriver()
 
 
 i = 0
-count = 3000
+count = 4800
 numberOfUsersProcess = 0
 avgTime = 0.0
 f = open('users_ids.txt', 'r')
