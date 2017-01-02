@@ -2,10 +2,10 @@ from sklearn import neighbors, svm
 import numpy as np
 import pandas
 import pickle
+from training_params import test_size
 
 #df = pandas.read_csv('dp_dataset.csv')
 df = pandas.read_csv('words.csv')
-test_size = 0.1
 
 df1 = df.ix[:, :-1]
 df2 = df.ix[:, -1:]

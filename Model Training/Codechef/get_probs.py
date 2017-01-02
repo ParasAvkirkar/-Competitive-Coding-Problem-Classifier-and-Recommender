@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from prob_class import Problem
+from training_params import categories
 
 engine = create_engine('mysql+mysqldb://root:@localhost/data stage fyp')
 conn = engine.connect()
@@ -10,7 +11,6 @@ s = Session()
 
 probs = s.query(Problem)#.filter(Problem.category == 'dp' or)
 
-categories = ['combinatorics', 'graph', 'maths', 'segment-tree']
 
 #problist = [p for p in probs if p.category == 'dp' or p.category == 'graph']
 problist = [p for p in probs if p.category in categories]

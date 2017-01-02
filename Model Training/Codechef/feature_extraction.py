@@ -6,20 +6,19 @@ import operator
 import random
 import numpy
 from get_probs import get_probs, getProbByCode
+from training_params import categories, test_size
 
 probs = get_probs()
 prob_class = 'dp'
 
 random.shuffle(probs)
 
-test_size = 0.1
 train_set = tuple([prob.description for prob in probs[:-int(test_size*len(probs))] ])
 #test_set = tuple([prob.description for prob in probs[-int(test_size*len(probs)):] ])
 
-categories = ['combinatorics', 'graph', 'maths', 'segment-tree']
 
 otherFeatures = []
-difficulty = {'easy': 1, 'medium': 2, 'hard':3, 'school':4}
+difficulty = {'easy': 1, 'medium': 2, 'hard':3, 'school':4, 'challenge':5}
 for prob in probs:
 	features = []
 	if '-' in prob.time_limit:

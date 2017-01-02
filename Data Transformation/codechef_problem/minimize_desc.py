@@ -34,6 +34,7 @@ for p in probs:
         # print "success " + p.prob_code
         p.description = desc.lower()
         s.commit()
+        print 'done: '+p.prob_code
     except:
         print "failed " +p.prob_code
 
