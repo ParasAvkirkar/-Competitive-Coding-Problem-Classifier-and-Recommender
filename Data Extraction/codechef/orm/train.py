@@ -5,8 +5,8 @@ import pandas
 df = pandas.read_csv('dp_dataset.csv')
 test_size = 0.2
 
-X = np.array(df.drop(['class'], 1))
-y = np.array(df['class'])
+X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
+y = np.array(df['class']).astype(float)
 
 X_train = X[:-int(len(X)*test_size)]
 y_train = y[:-int(len(y)*test_size)]

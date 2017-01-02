@@ -1,7 +1,6 @@
 from selenium import webdriver
 from spojProblem import SpojProblem
 from bs4 import BeautifulSoup
-from lxml import html
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -17,7 +16,11 @@ import datetime
 
 
 #driver = webdriver.Chrome('C:\Users\Pranay\Downloads\Setups\Drivers\chromedriver.exe')
-driver = webdriver.Chrome()
+# driver = webdriver.Chrome()
+sys.path.append("../Utilities")
+from driverUtil import getDriver
+driver = getDriver()
+
 logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 def getSpojProblem(problemUrl):
