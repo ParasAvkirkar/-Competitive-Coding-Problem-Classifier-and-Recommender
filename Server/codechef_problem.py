@@ -18,6 +18,8 @@ class Problem:
 		self.description = description
 		self.process_description()
 		self.difficulty = difficulty
+		if difficulty == 'unknown':
+			self.difficulty = 'medium'
 		self.submission_size = submission_size
 		if difficulty == 'hard':
 			self.example_given = False

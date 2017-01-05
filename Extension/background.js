@@ -17,5 +17,6 @@ chrome.runtime.onMessage.addListener(function(response, sender, sendResponse){
     $.post( "http://127.0.0.1:5000/postData", { page: response }, function( data ) {
   			// console.log( data.name ); // John
   			console.log(data); // 2pm
+  			alert(data.result)
 		}, "json");
 })
