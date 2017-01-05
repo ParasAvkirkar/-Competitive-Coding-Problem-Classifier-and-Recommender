@@ -4,6 +4,7 @@ import random
 
 probs = get_probs()
 prob_class = 'dp'
+minimum_number_of_probs_inwhich_word_to_exist = 20
 
 
 
@@ -122,7 +123,7 @@ for p in train_set:
 percent = {}
 word_count = {}
 for w in words:
-    if (words[w][0] + words[w][1]) > 50: #word should have atleast 50 occurances
+    if (words[w][0] + words[w][1]) > minimum_number_of_probs_inwhich_word_to_exist: #word should have atleast 50 occurances
         word_count[w] = {}
         word_count[w]['yes'] = words[w][1]
         word_count[w]['no'] = words[w][0]
