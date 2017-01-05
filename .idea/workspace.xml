@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a176f7d5-8d12-46d4-903e-f209314a01f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/CodechefProblemPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/TfidfTransformer.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/classifier.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/countVectorizer.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data Extraction/codechef/CodechefProblemPage.py" afterPath="$PROJECT_DIR$/Data Extraction/codechef/CodechefProblemPage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Extension/background.js" afterPath="$PROJECT_DIR$/Extension/background.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codechef/classifier.pickle" afterPath="$PROJECT_DIR$/Model Training/Codechef/classifier.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/codechef_problem.py" afterPath="$PROJECT_DIR$/Server/codechef_problem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codechef/feature_extraction.py" afterPath="$PROJECT_DIR$/Model Training/Codechef/feature_extraction.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codechef/get_probs.py" afterPath="$PROJECT_DIR$/Model Training/Codechef/get_probs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Extension/myscript.js" afterPath="$PROJECT_DIR$/Extension/myscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/predict.py" afterPath="$PROJECT_DIR$/Server/predict.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/server.py" afterPath="$PROJECT_DIR$/Server/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codechef/train.py" afterPath="$PROJECT_DIR$/Model Training/Codechef/train.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codechef/words.csv" afterPath="$PROJECT_DIR$/Model Training/Codechef/words.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/words.csv" afterPath="$PROJECT_DIR$/Server/words.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FYP.iws" />
@@ -117,8 +101,8 @@
       <file leaf-file-name="background.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Extension/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1761658">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.66062176">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -616,7 +600,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="772" extended-state="1" />
+    <frame x="-7" y="0" width="1370" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24741507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1054,8 +1038,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Extension/background.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1761658">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.66062176">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
