@@ -18,6 +18,7 @@ class Problem(Base):
     category = Column('category', String)
     time_limit = Column('time_limit', String)
     source_limit = Column('source_limit', String)
+    modified_description = Column('modified_description', String)
 
     def __repr__(self):
         return str(self.id) + " " + self.prob_code + " " + self.category

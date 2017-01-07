@@ -11,7 +11,7 @@ df1 = df.ix[:, :-1]
 df2 = df.ix[:, -1:]
 
 # X = np.array(df.drop(['class'], 1))
-# y = np.array(df['class'])
+# y = neighborsp.array(df['class'])
 
 X = np.array(df1)
 y = np.array(df2)
