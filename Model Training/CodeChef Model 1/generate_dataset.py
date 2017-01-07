@@ -1,4 +1,4 @@
-from get_probs import get_probs
+from get_probs import get_probs, get_probs_without_category_NA
 from word_count import train_test_split, get_wordcount_by_category, get_word_perc
 import operator
 
@@ -110,7 +110,7 @@ def prepare_dataset(sorted_perc, data, category):
 
 def generate(category):
 
-    probs = get_probs()
+    probs = get_probs_without_category_NA()
 
     train_set, test_set = train_test_split(probs, test_size)
     word_cnt_by_cateogry = get_wordcount_by_category(train_set, category)
