@@ -5,12 +5,10 @@ import pandas
 import sys, pickle
 from generate_dataset import generate
 sys.path.append('../Utilities')
-from constants import test_size, categories
+from constants import test_size, categories, performance_metric_keys
 
 
 def train_for_category(category, classifier):
-
-    performance_metric_keys = {'precision':0, 'recall':1, 'fscore':2}
     
     df = pandas.read_csv('data/' + category + '/' + 'dataset.csv')
     X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
@@ -63,6 +61,11 @@ def train_for_category(category, classifier):
     with open('model/' + category, 'w') as f:
         pickle.dump(clf, f)
 
+    write_performance_matrix(category, count_metrics, performance_metrics)
+
+    
+
+def write_performance_matrix(category, count_metrics, performance_metrics):
     with open('accuracy.csv', 'a') as f:
         f.write(category
             + ',' + str(count_metrics['tp'])
@@ -76,7 +79,7 @@ def train_for_category(category, classifier):
         f.write('\n')
 
 
-def train_models():
+def train_all_models():
     
     with open('accuracy.csv', 'w') as f:
         f.write('category,tp,fp,tn,fn,precision,recall,fscore')
@@ -88,4 +91,4 @@ def train_models():
 
 
 if __name__ == '__main__':
-    train_models()
+    train_all_models()

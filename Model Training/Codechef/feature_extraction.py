@@ -48,26 +48,6 @@ test_set = tuple([prob.description for prob in probs[-int(test_size*len(probs)):
         pickle.dump(count_vectorizer, f)
     freq_term_matrix = count_vectorizer.transform(train_set)
 
-<<<<<<< HEAD
-# print features
-# print('hello')
-# print otherFeatures
-
-numpy.set_printoptions(threshold='nan')
-
-count_vectorizer = CountVectorizer(decode_error='ignore')
-count_vectorizer.fit_transform(train_set)
-freq_term_matrix = count_vectorizer.transform(train_set)
-
-#print(freq_term_matrix.toarray())
-
-tfidf = TfidfTransformer(norm="l2")
-tfidf.fit(freq_term_matrix)
-tf_idf_matrix = tfidf.transform(freq_term_matrix)
-numpyAr = tf_idf_matrix.toarray()
-
-#print(tf_idf_matrix.toarray())
-=======
     tfidf = TfidfTransformer(norm="l2")
     tfidf.fit(freq_term_matrix)
     with open('TfidfTransformer.pickle', 'w+b') as f:
@@ -85,7 +65,6 @@ numpyAr = tf_idf_matrix.toarray()
             # print len(list(row) + (otherFeatures[i]))
             i += 1
     #getFeaturesByProbCode('AVGSHORT')
->>>>>>> dae2d3da7a7eae8f866d528d64428bd694971876
 
 def getFeaturesByProb(prob):
     print 'Requested problem '+ prob.name
@@ -115,23 +94,7 @@ def getFeaturesByProb(prob):
     print 'LEN :'+ str(len(list(numpyAr[0]) + features))
     return list(numpyAr[0]) + features
 
-<<<<<<< HEAD
-def getFeaturesByProbCode(prob):
-	print('Requested problem '+ prob.name)
-	# prob = getProbByCode(probCode)
-	# print 'Got problem '+prob.prob_code
-	features = []
-	if '-' in prob.time_limit:
-		j = prob.time_limit.index('-')
-		prob.time_limit = prob.time_limit[j + 1:]
-	features += [float(prob.submission_size), 1.0 if 'True' in prob.example_given else 0.0 , difficulty[prob.difficulty] ,float(prob.time_limit)]
-	freq_term_matrix = count_vectorizer.transform([prob.description])
-	# print(freq_term_matrix)
-	tf_idf_matrix = tfidf.transform(freq_term_matrix)
-	numpyAr = tf_idf_matrix.toarray()
-	print(numpyAr[0])
-	return list(numpyAr[0]) + features
-=======
+
 def create_word_features(words):
     # print words
     w = []
@@ -142,4 +105,3 @@ def create_word_features(words):
     my_dict = ' '.join([word for word in useful_words])
     # print my_dict
     return my_dict
->>>>>>> dae2d3da7a7eae8f866d528d64428bd694971876
