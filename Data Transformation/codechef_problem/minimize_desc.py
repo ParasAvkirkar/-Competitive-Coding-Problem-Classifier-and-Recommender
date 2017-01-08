@@ -21,22 +21,26 @@ Session = sessionmaker(bind=engine)
 s = Session()
 
 probs = s.query(Problem)
-
+count = 1
 for p in probs:
     # print p.description
     try:
         # p.description = create_word_features(p.description)
-        desc = p.description
+        desc = p.modified_description
         desc = desc.replace('.', ' ')
         desc = desc.replace(',', ' ')
         desc = create_word_features(desc)
         # print desc
         # print "success " + p.prob_code
-        p.description = desc.lower()
+        p.modified_description = desc.lower()
         s.commit()
-        print 'done: '+p.prob_code
+        #print 'done: '+p.prob_code
+        print('{0} out of {1} {2} success'.format(str(count), str(probs.count()), p.prob_code))
     except:
-        print "failed " +p.prob_code
+        #print "failed " +p.prob_code
+        print('{0} out of {1} {2} failed'.format(str(count), str(probs.count()), p.prob_code))
+    finally:
+        count += 1
 
     # print desc
     # print

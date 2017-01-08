@@ -13,8 +13,10 @@ Session = sessionmaker(bind=engine)
 s = Session()
 
 probs = s.query(Problem)
-
+count = 1
 for p in probs:
-    p.description = filter(lambda x: x in printable, p.description)
+    p.modified_description = filter(lambda x: x in printable, p.modified_description)
     s.commit()
-    print p.description
+    #print p.modified_description
+    print('{0} out of {1} {2} '.format(str(count), str(probs.count()), p.prob_code))
+    count = count + 1
