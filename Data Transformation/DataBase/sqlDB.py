@@ -15,25 +15,29 @@ def connect_db():
 			username = "root"
 			password = ""
 			db_name = "data stage fyp"
-			print(e)
+			# print(e)
 			exc_type, exc_obj, exc_tb = sys.exc_info()
-			print 'Exception at line '+ str(exc_tb.tb_lineno)
+			# print 'Exception at line '+ str(exc_tb.tb_lineno)
 			logging.error(str(datetime.datetime.now()) + ' :File Name: '+ str(os.path.basename(__file__)) +
 					' :Line Number: '+ str(exc_tb.tb_lineno) +' :Caused By: ' + str(e))				
 
 		db = MySQLdb.connect(ip, username, password, db_name)
 		return db
 
-def insert_user_db(tableName, uname, total_solved, easy_solved, medium_solved, hard_solved, challenge_solved, school_solved, unknown_solved):
+def insert_user_db(tableName, uname, difficulties):
 		try:
 			q = ''
 			if tableName == 'codechef_user':
-				q = "UPDATE `codechef_user` SET `total_solved`='"+total_solved+"',`easy_solved`='"+easy_solved+"',`medium_solved`='"+medium_solved+"'," \
-					"`hard_solved`='"+hard_solved+"',`challenge_solved`='"+challenge_solved+"',`school_solved`='"+school_solved+"',`unknown_solved`='"+unknown_solved+"' " \
+				q = "UPDATE `codechef_user` SET `total_solved`='"+difficulties['total']+"',`easy_solved`='"+difficulties['easy']+"',`medium_solved`='"+difficulties['medium']+"'," \
+					"`hard_solved`='"+difficulties['hard']+"',`challenge_solved`='"+difficulties['challenge']+"',`school_solved`='"+difficulties['school']+"',`unknown_solved`='"+difficulties['unknown']+"' " \
 					"WHERE uname = '"+uname+"'"
 				# print q
 			elif tableName == 'spoj_user' or tableName == 'codeforces_user':
-				q = ""
+				q = "UPDATE `codeforces_user` SET `total_solved`='"+difficulties['total']+"',`a_solved`='"+difficulties['A']+"',`b_solved`='"+difficulties['B']+"',`c_solved`='"+difficulties['C']+"',`d_solved`='"+difficulties['D']+"'," \
+					"`e_solved`='"+difficulties['E']+"',`f_solved`='"+difficulties['F']+"',`g_solved`='"+difficulties['G']+"',`h_solved`='"+difficulties['H']+"',`i_solved`='"+difficulties['I']+"',`j_solved`='"+difficulties['J']+"',`k_solved`='"+difficulties['K']+"'," \
+					"`l_solved`='"+difficulties['L']+"',`m_solved`='"+difficulties['M']+"',`n_solved`='"+difficulties['N']+"',`o_solved`='"+difficulties['O']+"',`p_solved`='"+difficulties['P']+"',`r_solved`='"+difficulties['R']+"',`unknown_solved`='"+difficulties['unknown']+"' " \
+					"WHERE uname = '"+uname+"'"
+				# print q
 				# print tableName
 
 			db = connect_db()

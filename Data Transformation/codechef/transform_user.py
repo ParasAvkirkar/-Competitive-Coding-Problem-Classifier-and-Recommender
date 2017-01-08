@@ -32,8 +32,9 @@ for user in remaining_users:
 				diff_dict_user['unknown'] += 1
 		except Exception as e:
 			print e
-	sqlDB.insert_user_db('codechef_user', user, str(diff_dict_user['total']), str(diff_dict_user['easy']), str(diff_dict_user['medium']),
-                         str(diff_dict_user['hard']), str(diff_dict_user['challenge']), str(diff_dict_user['school']), str(diff_dict_user['unknown']))
+	for key in diff_dict_user:
+		diff_dict_user[key] = str(diff_dict_user[key])
+	sqlDB.insert_user_db('codechef_user', user, diff_dict_user)
 	# print user
 	# print diff_dict_user
 
