@@ -56,25 +56,31 @@ def insert_user_db(tableName, uname, total_solved, easy_solved, medium_solved, h
 
 
 def get_users(table_name):
-	q = "select uname from `"+table_name+"`  WHERE total_solved is null"
-	db = connect_db()
-	cursor = db.cursor()
-	cursor.execute(q)
-	result = cursor.fetchall()
-	users = []
-	for row in result:
-		users.append(row[0])
-	db.close()
-	return users
+	try:
+		q = "select uname from `"+table_name+"`  WHERE total_solved is null"
+		db = connect_db()
+		cursor = db.cursor()
+		cursor.execute(q)
+		result = cursor.fetchall()
+		users = []
+		for row in result:
+			users.append(row[0])
+		db.close()
+		return users
+	except Exception as e:
+		print e
 
 def get_prob_codes(table_name, uname):
-	prob_codes = []
-	q = "SELECT prob_code FROM `"+ table_name +"` WHERE uname = '"+ uname +"' "
-	db = connect_db()
-	cursor = db.cursor()
-	cursor.execute(q)
-	result = cursor.fetchall()
-	for row in result:
-		prob_codes.append(row[0])
-	db.close()
-	return prob_codes
+	try:
+		prob_codes = []
+		q = "SELECT prob_code FROM `"+ table_name +"` WHERE uname = '"+ uname +"' "
+		db = connect_db()
+		cursor = db.cursor()
+		cursor.execute(q)
+		result = cursor.fetchall()
+		for row in result:
+			prob_codes.append(row[0])
+		db.close()
+		return prob_codes
+	except Exception as e:
+		print e
