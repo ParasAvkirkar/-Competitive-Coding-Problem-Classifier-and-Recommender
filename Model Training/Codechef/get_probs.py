@@ -2,21 +2,19 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from prob_class import Problem
 from training_params import categories
+print 'import once get_probs'
 
-probs = []
-if(len(list(probs))==0):
-    engine = create_engine('mysql+mysqldb://root:@localhost/data stage fyp')
-    conn = engine.connect()
+engine = create_engine('mysql+mysqldb://root:@localhost/data stage fyp')
+conn = engine.connect()
+Session = sessionmaker(bind=engine)
+s = Session()
 
-    Session = sessionmaker(bind=engine)
-    s = Session()
+probs = s.query(Problem)#.filter(Problem.category == 'dp' or)
 
-    probs = s.query(Problem)#.filter(Problem.category == 'dp' or)
-
-    #problist = [p for p in probs if p.category == 'dp' or p.category == 'graph']
-    problist = [p for p in probs if p.category in categories]
-    print len(problist)
-    #print(len(list(probs)))
+#problist = [p for p in probs if p.category == 'dp' or p.category == 'graph']
+problist = [p for p in probs if p.category in categories]
+print len(problist)
+# print(len(list(probs)))
 
 def get_probs():
     return list(problist)

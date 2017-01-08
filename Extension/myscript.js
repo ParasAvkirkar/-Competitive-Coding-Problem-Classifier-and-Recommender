@@ -8,8 +8,10 @@ function send(){
 	var c = left.getElementsByClassName('content');
 	message = c[0].innerText; 
 	console.log('Written');
-	chrome.runtime.sendMessage(message);
-	
+	url = window.location.href
+	console.log(url);
+//	chrome.runtime.sendMessage(message);
+	chrome.runtime.sendMessage(url);
 }
 console.log('script Loaded');
 // var left= document.getElementById('problem-left');

@@ -1,6 +1,16 @@
+# @app.route("/postData", methods=['POST'])
+# def postData():
+#     page_url = request.form.get('page')
+#     # c = CodechefProblemPage.getCodechefProblem(page_url)
+#     # print 'Got problem: ' + c.name
+#     # result = predict.predict(c)
+#     return jsonify({'Status': str(78)})
 __author__ = 'Pranay'
 from flask import Flask, request, jsonify
 import codechef_problem
+import predict
+import CodechefProblemPage
+print 'import complete'
 
 app = Flask(__name__)
 
@@ -23,11 +33,13 @@ def getData():
 
 @app.route("/postData", methods=['POST'])
 def postData():
-    page = request.form.get('page')
-    c = codechef_problem.Problem(page)
+    page_url = request.form.get('page')
+    c = CodechefProblemPage.getCodechefProblem(page_url)
+    result = predict.predict(c)
     # print page.decode('utf-8').encode('cp850','replace').decode('cp850')
-    return jsonify({'category':c.source_limit})
+    return jsonify({'result':result})
 
-app.run(debug=True)
+# app.run(debug=True)
 if __name__ == '__main__':
-   app.run()
+    print 'Stating'
+    app.run(debug=True)
