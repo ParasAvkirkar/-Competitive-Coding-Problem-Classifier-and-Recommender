@@ -19,7 +19,7 @@ validTags = {'dp':'dp', 'math':'math', 'greedy':'greedy', 'data structures':'dat
             , 'binary search':'search', 'bitmasks':'dp', 'probabilities':'math'
             , 'flows':'graphs', 'two pointers':'implementation'
             , 'dfs':'graphs', 'bfs':'graphs', 'shortest paths':'graphs'
-            , 'chinese remainder theory':'number theory'
+            , 'chinese remainder theorem':'number theory'
             , 'suffix':'strings', 'constructive algorithms':'implementation'
             , 'hashing':'hashing', 'divide and conquer':'divide and conquer'}
 
@@ -60,7 +60,7 @@ for p in probs:
         else:
             common.append(tag)
             #print(newTag + ' common')
-            
+
     newTag = ' '.join( UniqueWords(newTag.split() ))
     #print(newTag)
 

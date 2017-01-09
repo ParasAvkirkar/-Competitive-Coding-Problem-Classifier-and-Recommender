@@ -1,0 +1,72 @@
+math : 115
+['math', 'maths', 'advanced-math', 'basic-math', 'simple-math', 'basic_math', 'basic-maths', 'mathematics']
+
+dp : 106
+['dpraveen', 'dp+lcs', 'dpmgc', 'dp', 'digit-dp', 'dp+bitmask', 'tree-dp']
+
+Adhoc : 88 
+['ad-hoc',’adhoc’]
+
+greed : 64
+['greedy-algo', 'greedychxorr', 'greedy']
+
+tree : 60
+['range-tree', 'kd-tree', 'link-cut-tree', 'fenwick-tree', 'tree', 'binary-tree', 'trees', 'segtree', 'segment-trees', 'tree-dp', 'suffix-trees', 'splay-tree', 'segment-tree']
+
+grap : 51
+['graph', 'grap', 'graphs', 'basic-graph', 'digraph', 'graph-theory']
+
+bit : 45
+['bitwise-operatn', 'bits', 'bitwise', 'bitmasking', 'bitset', 'dp+bitmask', 'bit']
+
+dynamic : 44
+['dynamic-bcc', 'dynamic-prog', 'dynamic']
+
+seg : 42
+['segment-', 'segment-tre', 'segment-tr', 'segment-t', 'segment', 'seg', 'segtree', 'segme', 'segment-trees', 'segment-tree']
+
+comb : 41
+['combination', 'combinatorial', 'combinations', 'combinatorics']
+
+sear : 36
+['search', 'researching', 'binary-search', 'binarysearch']
+
+geom : 31
+['geometry']
+
+sort : 30
+['mergesort', 'sorting']
+
+strin : 27
+['string', 'array-string', 'strin', 'string-process', 'string-parsing', 'string-ha', 'strings']
+
+implem : 25
+['basic-implement', 'implementation']
+
+dat : 19
+['data', 'data-structure', 'datatypes']
+
+game : 19
+['game-theory', 'games', 'guessinggame', 'game']
+
+dfs : 16
+['dfs-order', 'dfs']
+
+bfs : 13
+['bfs']
+
+bitm : 11
+['bitmasking', 'dp+bitmask']
+
+algo : 8
+['greedy-algo', 'mo-algorithm', 'euclids-algo', 'garner-algo', 'algorithm']
+
+gcd : 7
+['gcd']
+
+arr : 9
+['array-string', 'suffix-array', 'array', 'subarray']
+
+hash : 13
+['rolling-hash', 'hashmaps', 'hash-map', 'hashing']
+
