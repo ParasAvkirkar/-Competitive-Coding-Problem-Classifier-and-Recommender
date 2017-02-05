@@ -18,27 +18,31 @@ def get_wordcount_by_category(train_set, prob_class):
 
     #word count by, no of words in prob_class(e.g dp) problems and in no prob_class(e.g other than dp) problems
     words = {}
+    count = 0
 
     for p in train_set:
-        desclist = p.description.split()
+        desclist = p.modified_description.split()
         uniqWordList = sorted(set(desclist), key=desclist.index)
-        p.description = ' '.join(uniqWordList)
+        p.modified_description = ' '.join(uniqWordList)
 
-        if p.category == prob_class:
-            for w in p.description.split(' '):
+        if p.category == prob_class or prob_class in p.category:
+            for w in p.modified_description.split(' '):
                 if w not in words:
                     words[w] = {0:0, 1:0}
                     words[w][1] = 1
                 else :
                     words[w][1] += 1
+
+            count += 1
         else:
-            for w in p.description.split(' '):
+            for w in p.modified_description.split(' '):
                 if w not in words:
                     words[w] = {0: 0, 1: 0}
                     words[w][0] = 1
                 else :
                     words[w][0] += 1
 
+    print "\n\n\n\n\n\n\n" + str(count) + "\n\n\n\n\n"
     return words
 
 

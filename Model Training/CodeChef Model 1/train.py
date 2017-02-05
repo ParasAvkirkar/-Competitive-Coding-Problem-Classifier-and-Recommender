@@ -5,7 +5,11 @@ import pandas
 import sys, pickle
 from generate_dataset import generate
 sys.path.append('../Utilities')
-from constants import test_size, categories, performance_metric_keys
+from constants import categories, performance_metric_keys
+
+test_size = 0.5 #default value
+with open('test_size.pickle') as f:
+    test_size = pickle.load(f)
 
 
 def train_for_category(category, classifier):
@@ -32,7 +36,7 @@ def train_for_category(category, classifier):
 
     y_predictions = []
     for i in range(len(X_test)):
-        current_prediction =  clf.predict_proba(X_test[i])
+        current_prediction =  clf.predict_proba(X_test[i].reshape(1, -1))
         # print str(current_prediction[0][0]) + " " + str(current_prediction[0][1]) + '\t' + str(y_test[i]
         y_predictions.append(0 if current_prediction[0][0] > 0.5 else 1)
 
@@ -62,6 +66,7 @@ def train_for_category(category, classifier):
         pickle.dump(clf, f)
 
     write_performance_matrix(category, count_metrics, performance_metrics)
+    return performance_metrics[performance_metric_keys['fscore']][0], count_metrics
 
     
 
@@ -92,3 +97,5 @@ def train_all_models():
 
 if __name__ == '__main__':
     train_all_models()
+    # generate('greedy')
+    # train_for_category('greedy', 'KNN')

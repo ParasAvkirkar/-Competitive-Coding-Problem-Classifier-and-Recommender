@@ -43,11 +43,14 @@ for prob in probs:
             typ = l[1]
             newDesc = newDesc + wordNetLem.lemmatize(str(word), get_wordnet_pos(str(typ)))
             newDesc = newDesc + ' '
-            #print(newDesc)
+
             #print(str(word), str(typ))
         except Exception as e:
             print(e)
 
+    # print prob.modified_description
+    # print(newDesc)
+    # print 
     prob.modified_description = newDesc
     s.commit()
     print('{0} out of {1} {2} '.format(str(count), str(probs.count()), prob.prob_code))

@@ -1,10 +1,10 @@
 import sys, os
 sys.path.append('../Utilities')
 
-from prob_class import Problem
+from prob_class import Problem, Codeforces_Problem
 from get_session import get_session
 
-def get_probs():
+def get_codechef_probs():
 	s = get_session()
 	probs = s.query(Problem).filter()
 
@@ -13,7 +13,7 @@ def get_probs():
     
 	return problist
 
-def get_probs_without_category_NA():
+def get_codechef_probs_without_category_NA():
 	s = get_session()
 	probs = s.query(Problem).filter()
 
@@ -22,5 +22,16 @@ def get_probs_without_category_NA():
     
 	return problist
 
+def get_codeforces_probs_without_category_NA():
+	s = get_session()
+	probs = s.query(Codeforces_Problem).filter()
+
+	problist = [p for p in probs if p.modified_tags != 'N/A']
+	# problist = [p for p in probs if 'dp' in p.category]
+	print len(problist)
+    
+	return problist
+
 if __name__ == '__main__':
-	get_probs_without_category_NA()
+	get_codeforces_probs_without_category_NA()
+

@@ -18,6 +18,26 @@ class Problem(Base):
     category = Column('category', String)
     time_limit = Column('time_limit', String)
     source_limit = Column('source_limit', String)
+    modified_description = Column('modified_description', String)
+
+    def __repr__(self):
+        return str(self.id) + " " + self.prob_code + " " + self.category
+
+class Codeforces_Problem(Base):
+    __tablename__ = 'codeforces_problems'
+    
+    id = Column('id', Integer, primary_key = True)
+    problemId = Column('problemId', Integer)
+    name = Column('name', String)
+    url = Column('url', String)
+    description = Column('description', String)
+    tags = Column('tags', String)
+    time_limit = Column('timelimit', String)
+    submission_size = Column('memorylimit', String)
+    difficulty = Column('difficulty', String)
+    category = Column('category', String)
+    modified_description = Column('modified_description', String)
+    modified_tags = Column('modified_tags', String)
 
     def __repr__(self):
         return str(self.id) + " " + self.prob_code + " " + self.category

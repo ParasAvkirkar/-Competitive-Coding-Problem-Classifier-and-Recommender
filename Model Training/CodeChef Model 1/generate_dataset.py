@@ -1,14 +1,23 @@
-from get_probs import get_probs, get_probs_without_category_NA
+from get_probs import get_codeforces_probs_without_category_NA
 from word_count import train_test_split, get_wordcount_by_category, get_word_perc
 import operator
+import pickle
 
 import sys
 sys.path.append('../Utilities/')
-from constants import test_size
+
+try:
+    with open('num_of_top_words_as_feature.pickle') as f:
+        num_of_top_words_as_feature = pickle.load(f) 
+        # print "\n\n\n\n num_of_top_words_as_feature = " + str(num_of_top_words_as_feature) + "\n\n\n\n"
+except:
+    with open('num_of_top_words_as_feature.pickle', 'w+b') as f:
+        num_of_top_words_as_feature = 10
+        pickle.dump(num_of_top_words_as_feature, f)
 
 def make_csv_files(category, sorted_perc, word_count, percentages):
     with open('data/' + category + '/' + '20feature_word_all_data.csv', 'w') as f:
-        for w in sorted_perc[:10]:
+        for w in sorted_perc[:num_of_top_words_as_feature]:
             print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
                 word_count[w[0]]['total'])
             f.write(w[0] + "," + str(word_count[w[0]]['yes']) + "," + str(word_count[w[0]]['no']) + "," + str(
@@ -16,7 +25,7 @@ def make_csv_files(category, sorted_perc, word_count, percentages):
             f.write('\n')
 
         print "---------------------------------------------------------"
-        for w in sorted_perc[-10:]:
+        for w in sorted_perc[-num_of_top_words_as_feature:]:
             print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
                 word_count[w[0]]['total'])
             f.write(w[0] + "," + str(word_count[w[0]]['yes']) + "," + str(word_count[w[0]]['no']) + "," + str(
@@ -24,22 +33,22 @@ def make_csv_files(category, sorted_perc, word_count, percentages):
             f.write('\n')
 
     with open('data/' + category + '/' + '20feature_word_percentage.csv', 'w') as f:
-        for w in sorted_perc[:10]:
+        for w in sorted_perc[:num_of_top_words_as_feature]:
             #word name
             f.write(w[0] + ",")
         f.write('\n')
 
-        for w in sorted_perc[:10]:
+        for w in sorted_perc[:num_of_top_words_as_feature]:
             #word perc
             f.write(str(w[1]) + ",")
         f.write('\n')
 
-        for w in sorted_perc[-10:]:
+        for w in sorted_perc[-num_of_top_words_as_feature:]:
             #word name
             f.write(w[0] + ",")
         f.write('\n')
 
-        for w in sorted_perc[-10:]:
+        for w in sorted_perc[-num_of_top_words_as_feature:]:
             #word perc
             f.write(str(w[1]) + ",")
         f.write('\n')
@@ -53,13 +62,13 @@ def make_csv_files(category, sorted_perc, word_count, percentages):
 
 def write_dataset(category, sorted_perc, data):
     with open('data/' + category + '/' + 'dataset.csv', 'w') as f:
-        f.write(','.join([x[0] for x in sorted_perc[:10]]))
-        # print ','.join([x[0] for x in sorted_perc[:10]])
+        f.write(','.join([x[0] for x in sorted_perc[:num_of_top_words_as_feature]]))
+        # print ','.join([x[0] for x in sorted_perc[:num_of_top_words_as_feature]])
 
         f.write(',')
 
-        f.write(','.join([x[0] for x in sorted_perc[-10:]]))
-        # print ','.join([x[0] for x in sorted_perc[-10:]])
+        f.write(','.join([x[0] for x in sorted_perc[-num_of_top_words_as_feature:]]))
+        # print ','.join([x[0] for x in sorted_perc[-num_of_top_words_as_feature:]])
 
         f.write(',sub_size,time_limit')
         f.write(',class')
@@ -79,26 +88,26 @@ def prepare_dataset(sorted_perc, data, category):
         prepared_data.append([])
         features = []
 
-        for presentWord in sorted_perc[:10]:
+        for presentWord in sorted_perc[:num_of_top_words_as_feature]:
             presentWord = presentWord[0] #it contains tuple of word and percentage, hence [0] element for word
 
-            if presentWord in p.description.split():
+            if presentWord in p.modified_description.split():
                 features.append(1)
             else:
                 features.append(0)
 
-        for notPresentWord in sorted_perc[-10:]:
+        for notPresentWord in sorted_perc[-num_of_top_words_as_feature:]:
             notPresentWord = notPresentWord[0]
 
-            if notPresentWord in p.description.split():
+            if notPresentWord in p.modified_description.split():
                 features.append(1)
             else:
                 features.append(0)
 
-        features.append(p.submission_size)
+        features.append(p.submission_size.split()[0])
         features.append(p.time_limit[:1])
 
-        if p.category == category:
+        if category in p.category:
             features.append(1)
         else : features.append(0)
 
@@ -110,7 +119,11 @@ def prepare_dataset(sorted_perc, data, category):
 
 def generate(category):
 
-    probs = get_probs_without_category_NA()
+    probs = get_codeforces_probs_without_category_NA()
+
+    test_size = 0.5 #default value
+    with open('test_size.pickle') as f:
+        test_size = pickle.load(f)
 
     train_set, test_set = train_test_split(probs, test_size)
     word_cnt_by_cateogry = get_wordcount_by_category(train_set, category)
@@ -131,4 +144,4 @@ def generate(category):
     write_dataset(category, sorted_perc, total_data)
 
 if __name__ == '__main__':
-    generate('dp')
+    generate('graph')
