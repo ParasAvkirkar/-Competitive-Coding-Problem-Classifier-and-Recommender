@@ -8,7 +8,7 @@
 __author__ = 'Pranay'
 from flask import Flask, request, jsonify
 import codechef_problem
-import predict
+import predictCategory
 import CodechefProblemPage
 print 'import complete'
 
@@ -35,7 +35,7 @@ def getData():
 def postData():
     page_url = request.form.get('page')
     c = CodechefProblemPage.getCodechefProblem(page_url)
-    result = predict.predict(c)
+    result = predictCategory.predict(c)
     # print page.decode('utf-8').encode('cp850','replace').decode('cp850')
     return jsonify({'result':result})
 
