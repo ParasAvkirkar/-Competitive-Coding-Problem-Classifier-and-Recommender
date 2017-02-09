@@ -35,7 +35,7 @@ def getData():
 def postData():
     page_url = request.form.get('page')
     c = CodechefProblemPage.getCodechefProblem(page_url)
-    result = predictCategory.predict(c)
+    result = predictCategory.predict_category(c)
     # print page.decode('utf-8').encode('cp850','replace').decode('cp850')
     return jsonify({'result':result})
 

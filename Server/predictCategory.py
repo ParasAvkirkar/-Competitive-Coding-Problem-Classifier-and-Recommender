@@ -8,13 +8,13 @@ import pandas
 import predict
 import training_params
 
-def predict(problem):
+def predict_category(problem):
 	with open('../Model Training/Codechef/classifier.pickle', 'rb') as f:
 		try:
 			clf = pickle.load(f)
 			print 'Classifier Loaded'
 			features = predict.predict(problem)
-			# print features
+			print features
 			# return training_params.categories[int(clf.predict(np.array(features).reshape((1, len(features))))[0])]
 			print clf.predict_proba(np.array(features).reshape((1, len(features))))[0]
 			probs = clf.predict_proba(np.array(features).reshape((1, len(features))))[0]

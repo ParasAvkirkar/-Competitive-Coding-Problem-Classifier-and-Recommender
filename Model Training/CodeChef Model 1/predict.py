@@ -1,13 +1,14 @@
 import sys
 sys.path.append('../Utilities/')
-
+sys.path.append('../../Data Transformation/codechef_problem')
 import pickle, operator
 from constants import categories
+import transform_description
 
 test_example = [1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0]
 
 def createFeaturesForProbByCategory(prob, category):
-	description = prob.description
+	description = transform_description.transform(prob.description)
 	filePath = 'data/'+category+'/'
 	features = []
 	with open(filePath+'dataset.csv') as f:
