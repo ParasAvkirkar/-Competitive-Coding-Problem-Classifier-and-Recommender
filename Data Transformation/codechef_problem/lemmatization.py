@@ -22,8 +22,9 @@ def get_wordnet_pos(treebank_tag):
 
 def lemmatizeDescription(description):
     descriptionWords = description.split()
+    wordNetLem = WordNetLemmatizer()
     newDesc = ''
-    mapListTuples = pos_tag(desc.split())
+    mapListTuples = pos_tag(description.split())
     for m in mapListTuples:
         try:
             l = list(m)
