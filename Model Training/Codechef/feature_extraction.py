@@ -16,15 +16,13 @@ print 'import once feature ex'
 difficulty = {'easy': 1, 'medium': 2, 'hard':3, 'school':4, 'challenge':5}
 if __name__ == "__main__":
     probs = get_probs()
-
     random.shuffle(probs)
-
     train_set = tuple([prob.description for prob in probs[:-int(test_size*len(probs))] ])
     #test_set = tuple([prob.description for prob in probs[-int(test_size*len(probs)):] ])
 
-train_set = tuple([str(prob.description) for prob in probs])
-train_set = tuple([str(prob.description) for prob in probs[:-int(test_size*len(probs))] ])
-test_set = tuple([prob.description for prob in probs[-int(test_size*len(probs)):] ])
+    train_set = tuple([str(prob.description) for prob in probs])
+    train_set = tuple([str(prob.description) for prob in probs[:-int(test_size*len(probs))] ])
+    test_set = tuple([prob.description for prob in probs[-int(test_size*len(probs)):] ])
 
     otherFeatures = []
 
