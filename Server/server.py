@@ -39,5 +39,5 @@ def postData():
 
 # app.run(debug=True)
 if __name__ == '__main__':
-    print 'Stating'
+    print 'Starting'
     app.run(debug=True)

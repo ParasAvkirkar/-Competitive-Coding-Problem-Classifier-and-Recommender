@@ -15,8 +15,16 @@ chrome.runtime.onMessage.addListener(function(response, sender, sendResponse){
     });
 
     $.post( "http://127.0.0.1:5000/postData", { page: response }, function( data ) {
-  			// console.log( data.name ); // John
-  			console.log(data); // 2pm
-  			alert(data.result)
+//  			console.log(data);
+//  			alert(data.result)
+  			var views = chrome.extension.getViews({
+				type: "popup"
+			});
+			for (var i = 0; i < views.length; i++) {
+//				views[i].document.getElementById('result').innerHTML = '<h3>'+data.result+'</h3>';
+				views[i].document.getElementById('predict').style.visibility='hidden';
+				result = data.result+'';
+				views[i].drawGraph(result.split(','));
+			}
 		}, "json");
 })
