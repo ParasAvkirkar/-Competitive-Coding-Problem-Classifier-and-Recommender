@@ -8,25 +8,45 @@ document.getElementById('predict').addEventListener('click', hello);
 
 function drawGraph(result) {
     document.getElementsByTagName('body')[0].style.height = "400px" ;
+    document.getElementsByTagName('body')[0].style.width = "400px" ;
+    document.getElementById('chartContainer').style.height = "100%" ;
+    document.getElementById('chartContainer').style.width = "100%" ;
+    document.getElementById('predict').style.width = "0%" ;
+    document.getElementById('predict').style.height = "0%" ;
 	var chart = new CanvasJS.Chart("chartContainer",
 			{
 				title:{
 					text: "Category Probability"
 				},
-
-				data: [
-				{
-					type: "bar",
-
+//
+//				data: [
+//				{
+//					type: "bar",
+//
+//					dataPoints: [
+//					{ x: 10, y: parseFloat(result[1]), label:result[0] },
+//					{ x: 20, y: parseFloat(result[3]), label:result[2] },
+//					{ x: 30, y: parseFloat(result[5]), label:result[4] }
+//					]
+//				}
+//				]
+//			});
+//
+//			chart.render();
+				axisX: {
+					interval: 10
+				},
+				dataPointWidth: 60,
+				data: [{
+					type: "column",
+					indexLabelLineThickness: 2,
 					dataPoints: [
-					{ x: 10, y: parseFloat(result[1]), label:result[0] },
-					{ x: 20, y: parseFloat(result[3]), label:result[2] },
-					{ x: 30, y: parseFloat(result[5]), label:result[4] }
+						  { x: 10, y: parseFloat(result[1]), indexLabel: result[0] },
+						  { x: 20, y: parseFloat(result[3]), indexLabel: result[2] },
+						  { x: 30, y: parseFloat(result[5]), indexLabel: result[4]  }
 					]
-				}
-				]
+				}]
 			});
-
 			chart.render();
 }
 
