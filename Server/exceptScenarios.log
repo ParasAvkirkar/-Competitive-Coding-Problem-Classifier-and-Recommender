@@ -1,0 +1,10 @@
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:24:34] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:25:08] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:26:12] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Ashish\\Desktop\\temp\\FYProject\\Model Training\\CodeChef Model 1\\predict.py', reloading
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:27:31] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:28:20] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:30:09] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:30:50] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:49:57] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:50:06] "POST /postData HTTP/1.1" 200 -
