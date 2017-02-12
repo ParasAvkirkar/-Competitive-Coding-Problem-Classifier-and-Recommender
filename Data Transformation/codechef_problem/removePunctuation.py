@@ -29,6 +29,6 @@ if __name__ == "__main__":
 		desc = pattern.sub(' ', desc)
 		p.modified_description = desc
 		#print(p.modified_description)
-		print('{0} out of {1} {2} '.format(str(count), str(probs.count()), p.prob_code))
+		# print('{0} out of {1} {2} '.format(str(count), str(probs.count()), p.prob_code))
 		count = count + 1
 		s.commit()

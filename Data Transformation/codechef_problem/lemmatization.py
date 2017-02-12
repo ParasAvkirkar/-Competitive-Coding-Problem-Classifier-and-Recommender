@@ -35,7 +35,8 @@ def lemmatizeDescription(description):
 
             #print(str(word), str(typ))
         except Exception as e:
-            print(e)
+            pass
+            # print(e)
     return newDesc
 
 if __name__ == "__main__":
@@ -65,9 +66,10 @@ if __name__ == "__main__":
                 #print(newDesc)
                 #print(str(word), str(typ))
             except Exception as e:
-                print(e)
+                # print(e)
+                pass
 
         prob.description = newDesc
         s.commit()
-        print('{0} out of {1} {2} '.format(str(count), str(probs.count()), prob.prob_code))
+        # print('{0} out of {1} {2} '.format(str(count), str(probs.count()), prob.prob_code))
         count = count + 1

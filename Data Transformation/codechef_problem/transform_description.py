@@ -7,5 +7,5 @@ def transform(desc):
     desc = minimize_desc.minimizeDescription(desc)
     desc = removePunctuation.removePunctuation(desc)
     desc = lemmatization.lemmatizeDescription(desc)
-    print desc
+    # print 'Description Transformation Ended '
     return desc

@@ -23,5 +23,5 @@ if __name__ == "__main__":
         p.modified_description = filter(lambda x: x in printable, p.modified_description)
         s.commit()
         #print p.modified_description
-        print('{0} out of {1} {2} '.format(str(count), str(probs.count()), p.prob_code))
+        # print('{0} out of {1} {2} '.format(str(count), str(probs.count()), p.prob_code))
         count = count + 1

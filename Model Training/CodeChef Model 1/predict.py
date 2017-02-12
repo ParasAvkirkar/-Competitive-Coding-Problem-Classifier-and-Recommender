@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../Utilities/')
-sys.path.append('../../Data Transformation/codechef_problem/')
+# sys.path.append('../../Data Transformation/codechef_problem/')
 sys.path.append('../Data Transformation/codechef_problem/')
 import pickle, operator
 from constants import categories
