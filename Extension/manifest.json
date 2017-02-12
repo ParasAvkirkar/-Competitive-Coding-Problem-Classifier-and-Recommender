@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Problem Category Predictor",
+  "description": "This extension predicts the category of a competitive programming problem",
   "version": "1.0",
 
   "browser_action": {
@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*","https://*/*"],
-      "js": ["jquery.js", "myscript.js"],
+      "js": ["jquery.js"],
       "css": ["style.css"]
     }
   ],
@@ -24,7 +24,9 @@
   },
 
   "permissions": [
-        "http://127.0.0.1:5000/"
-  ]
+        "tabs", "<all_urls>", "http://127.0.0.1:5000/"
+  ],
+
+"content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'"
 
 }

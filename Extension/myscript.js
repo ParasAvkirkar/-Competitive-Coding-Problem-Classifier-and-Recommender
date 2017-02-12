@@ -1,21 +1,18 @@
-// alert(document.domain);
-// chrome.runtime.sendMessage(document.getElementsByTagName('title')[0].innerText);
-var message = 'None'
-// window.addEventListener("load", send, false);
-setTimeout(send, 5000);
+//setTimeout(send, 5000);
 function send(){
-	var left= document.getElementById('problem-left');
-	var c = left.getElementsByClassName('content');
-	message = c[0].innerText; 
+	var host = document.location.host;
+	if(host == "www.codechef.com"){
+		var problemPage = document.getElementById('problem-page-complete');
+	}else{
+		var problemPage = document.getElementById('pageContent');
+	}
+	message = problemPage.innerText;
 	console.log('Written');
-	url = window.location.href
+	url = host;
 	console.log(url);
-//	chrome.runtime.sendMessage(message);
-	chrome.runtime.sendMessage(url);
+	msg = {'url':host, 'content':message};
+	chrome.runtime.sendMessage(msg);
+//	chrome.runtime.sendMessage(url);
 }
 console.log('script Loaded');
-// var left= document.getElementById('problem-left');
-// 	var c = left.getElementsByClassName('content');
-// 	message = c[0].innerText; 
-// 	console.log('Written');
-// 	chrome.runtime.sendMessage(message);
+send();

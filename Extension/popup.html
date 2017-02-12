@@ -7,20 +7,20 @@
 <html>
   <head>
     <title>Getting Started Extension's Popup</title>
-    
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
-    <script src="popup.js"></script>
+    <style type="text/css">
+         body {
+            width: 200px;
+            height: 80px;
+            overflow: hidden;
+         }
+     </style>
+     <script src="Canvas/canvasjs.min.js"></script>
   </head>
   <body>
-    Hello World
-    <div id="status"></div>
-    <img id="image-result" hidden>
+    <button id="predict" style="height:75px;width:200px">Recommend me the Category</button>
+    <div id="chartContainer" style="height: 0%; width: 0%;"></div>
+    <script src="popup.js"></script>
+
   </body>
 </html>
 

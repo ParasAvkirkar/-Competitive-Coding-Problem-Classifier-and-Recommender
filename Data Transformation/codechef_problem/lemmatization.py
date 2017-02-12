@@ -20,22 +20,11 @@ def get_wordnet_pos(treebank_tag):
     else:
         return ''
 
-printable = set(string.printable)
-
-engine = create_engine('mysql+mysqldb://root:@localhost/data stage fyp')
-conn = engine.connect()
-
-Session = sessionmaker(bind=engine)
-s = Session()
-count = 1
-probs = s.query(Problem)
-wordNetLem = WordNetLemmatizer()
-for prob in probs:
-    desc = prob.modified_description
-    descriptionWords = desc.split()
-
+def lemmatizeDescription(description):
+    descriptionWords = description.split()
+    wordNetLem = WordNetLemmatizer()
     newDesc = ''
-    mapListTuples = pos_tag(desc.split())
+    mapListTuples = pos_tag(description.split())
     for m in mapListTuples:
         try:
             l = list(m)
@@ -47,14 +36,38 @@ for prob in probs:
             #print(str(word), str(typ))
         except Exception as e:
             print(e)
+    return newDesc
 
-    # print prob.modified_description
-    # print(newDesc)
-    # print 
-    prob.modified_description = newDesc
-    s.commit()
-    print('{0} out of {1} {2} '.format(str(count), str(probs.count()), prob.prob_code))
-    count = count + 1
+if __name__ == "__main__":
+    printable = set(string.printable)
 
+    engine = create_engine('mysql+mysqldb://root:@localhost/data stage fyp')
+    conn = engine.connect()
 
-            
+    Session = sessionmaker(bind=engine)
+    s = Session()
+    count = 1
+    probs = s.query(Problem)
+    wordNetLem = WordNetLemmatizer()
+    for prob in probs:
+        desc = prob.description
+        descriptionWords = desc.split()
+
+        newDesc = ''
+        mapListTuples = pos_tag(desc.split())
+        for m in mapListTuples:
+            try:
+                l = list(m)
+                word = l[0]
+                typ = l[1]
+                newDesc = newDesc + wordNetLem.lemmatize(str(word), get_wordnet_pos(str(typ)))
+                newDesc = newDesc + ' '
+                #print(newDesc)
+                #print(str(word), str(typ))
+            except Exception as e:
+                print(e)
+
+        prob.description = newDesc
+        s.commit()
+        print('{0} out of {1} {2} '.format(str(count), str(probs.count()), prob.prob_code))
+        count = count + 1

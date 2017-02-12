@@ -6,15 +6,22 @@ from sqlalchemy.orm import sessionmaker
 
 printable = set(string.printable)
 
-engine = create_engine('mysql+mysqldb://root:@localhost/data stage fyp')
-conn = engine.connect()
+def removeNondecodableChars(desc):
+    desc = filter(lambda x: x in printable, desc)
+    return desc
 
-Session = sessionmaker(bind=engine)
-s = Session()
+if __name__ == "__main__":
+    engine = create_engine('mysql+mysqldb://root:@localhost/data stage fyp')
+    conn = engine.connect()
 
-probs = s.query(Problem)
+    Session = sessionmaker(bind=engine)
+    s = Session()
 
-for p in probs:
-    p.modified_description = filter(lambda x: x in printable, p.modified_description)
-    s.commit()
-    print p.modified_description
+    probs = s.query(Problem)
+    count = 1
+    for p in probs:
+        p.modified_description = filter(lambda x: x in printable, p.modified_description)
+        s.commit()
+        #print p.modified_description
+        print('{0} out of {1} {2} '.format(str(count), str(probs.count()), p.prob_code))
+        count = count + 1
