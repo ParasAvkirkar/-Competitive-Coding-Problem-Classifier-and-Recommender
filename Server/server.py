@@ -6,7 +6,7 @@
 #     # result = predict.predict(c)
 #     return jsonify({'Status': str(78)})
 __author__ = 'Pranay'
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, json
 import codechef_problem
 import predictCategory
 print 'import complete'
@@ -32,7 +32,8 @@ def getData():
 
 @app.route("/postData", methods=['POST'])
 def postData():
-    problem_content = request.form.get('page')
+    platform_url = request.form.get('url')
+    problem_content = request.form.get('content')
     c = codechef_problem.getProblemFromDescription(problem_content)
     result = predictCategory.predict_category(c)
     return jsonify({'result':result})
