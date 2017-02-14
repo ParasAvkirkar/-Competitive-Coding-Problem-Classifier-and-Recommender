@@ -16,9 +16,26 @@ def write_performance_matrix(category, count_metrics, performance_metrics):
             + ',' + str(count_metrics['fn'])
             + ',' + str(performance_metrics[performance_metric_keys['precision']][0])
             + ',' + str(performance_metrics[performance_metric_keys['recall']][0])
-            + ',' + str(performance_metrics[performance_metric_keys['fscore']][0]) )
+            + ',' + str(performance_metrics[performance_metric_keys['fscore']][0])
+                + ',' + str(bias)
+                + ',' + str(variance))
 
         f.write('\n')
+def calculateExpectedValue(valuesAsNumpyArray):
+    #return np.std(valuesAsNumpyArray)/(len(valuesAsNumpyArray)**0.5)
+    #return np.sum(valuesAsNumpyArray)/len(valuesAsNumpyArray)
+    print('mean was '+str(np.mean(valuesAsNumpyArray)) )
+    return np.mean(valuesAsNumpyArray)
+
+def calculateBias(fX, fCapX):
+    errors = np.empty([len(fX), 1])
+    for i in range(len(fX)):
+        np.append(errors, fCapX[i] - fX[i])
+    return calculateExpectedValue(errors)
+
+def calculateVariance(fX, fCapX):
+    squaredFCaps = fCapX**2
+    return calculateExpectedValue(squaredFCaps) - (calculateExpectedValue(fCapX)**2)
 
 
 for category in categories:
@@ -51,13 +68,19 @@ for category in categories:
 
     accuracy = clf.score(X_test, y_test)
     print category+" : accuracy - "+str(accuracy)
+
+    fCapX = np.empty([len(X_test), 1])
+    fX = np.empty([len(X_test), 1])
     y_predictions = []
     for i in range(len(X_test)):
         current_prediction =  clf.predict_proba(X_test[i])
         # print str(current_prediction[0][0]) + " " + str(current_prediction[0][1]) + '\t' + str(y_test[i]
         y_predictions.append(0 if current_prediction[0][0] > 0.5 else 1)
+        np.append(fCapX, y_predictions[-1])
+        np.append(fX, y_test[i])
 
-
+    bias = calculateBias(fX, fCapX)
+    variance = calculateVariance(fX, fCapX)
 
     count_metrics = {'tp':0, 'fp':0, 'tn':0, 'fn':0}
     for i in range(len(y_test)):

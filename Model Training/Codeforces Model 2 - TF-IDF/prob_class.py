@@ -7,7 +7,7 @@ class Problem(Base):
     __tablename__ = 'codeforces_problems'
     
     id = Column('id', Integer, primary_key = True)
-    prob_code = Column('prob_code', String)
+    prob_code = Column('problemId', String)
     url = Column('url', String)
     description = Column('description', String)
     tag = Column('tags', String)

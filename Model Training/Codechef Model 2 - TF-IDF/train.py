@@ -5,6 +5,24 @@ import pickle
 from training_params import test_size
 
 #df = pandas.read_csv('dp_dataset.csv')
+def calculateExpectedValue(valuesAsNumpyArray):
+    #return np.std(valuesAsNumpyArray)/(len(valuesAsNumpyArray)**0.5)
+    #return np.sum(valuesAsNumpyArray)/len(valuesAsNumpyArray)
+    print('mean was '+str(np.mean(valuesAsNumpyArray)) )
+    return np.mean(valuesAsNumpyArray)
+
+def calculateBias(fX, fCapX):
+    errors = np.empty([len(fX), 1])
+    for i in range(len(fX)):
+        np.append(errors, fCapX[i] - fX[i])
+    return calculateExpectedValue(errors)
+
+def calculateVariance(fX, fCapX):
+    squaredFCaps = fCapX**2
+    return calculateExpectedValue(squaredFCaps) - (calculateExpectedValue(fCapX)**2)
+
+
+
 df = pandas.read_csv('words.csv')
 
 df1 = df.ix[:, :-1]

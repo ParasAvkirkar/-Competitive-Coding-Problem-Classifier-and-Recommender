@@ -25,7 +25,7 @@ p10
 tp11
 Rp12
 (I1
-(L2L
+(I2
 tp13
 cnumpy
 dtype
@@ -59,7 +59,7 @@ g10
 tp25
 Rp26
 (I1
-(L2L
+(I2
 tp27
 g17
 I00
@@ -76,8 +76,8 @@ g10
 tp32
 Rp33
 (I1
-(L2L
-L8690L
+(I2
+I8690
 tp34
 g17
 I00
@@ -94,8 +94,8 @@ g10
 tp39
 Rp40
 (I1
-(L2L
-L8690L
+(I2
+I8690
 tp41
 g17
 I00
@@ -104,7 +104,7 @@ p42
 tp43
 bsS'_sklearn_version'
 p44
-S'0.18.1'
+S'0.18'
 p45
 sS'class_count_'
 p46
@@ -116,7 +116,7 @@ g10
 tp48
 Rp49
 (I1
-(L2L
+(I2
 tp50
 g17
 I00
