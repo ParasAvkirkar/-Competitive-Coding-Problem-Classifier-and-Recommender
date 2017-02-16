@@ -57,3 +57,10 @@ class SpojProblem:
 		# print self.input
 		# print 'Output'
 		# print self.output
+def getProblemFromDescription(desciption):
+	explanation_given = False
+	if 'Explanation' in desciption:
+		explanation_given = True
+	problem = SpojProblem('', '', '', desciption, '', '', '', '', '', '', '', '')
+	problem.example_given = str(explanation_given)
+	return problem

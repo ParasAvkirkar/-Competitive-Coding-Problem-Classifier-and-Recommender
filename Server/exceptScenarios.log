@@ -8,3 +8,27 @@ INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:30:09] "POST /postData HTTP/1.1" 200
 INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:30:50] "POST /postData HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:49:57] "POST /postData HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [12/Feb/2017 15:50:06] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 07:57:18] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 07:57:53] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 07:58:55] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 07:59:02] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Pranay\\PycharmProjects\\FYPProject\\Server\\server.py', reloading
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:00:07] "POST /postData HTTP/1.1" 200 -
+ERROR:root:Time: 2017-02-16 08:00:29.807000 File: problems.pyc Line: 103 Caused By: list index out of range  Problem Name: 
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:00:30] "POST /postData HTTP/1.1" 200 -
+ERROR:root:Time: 2017-02-16 08:00:50.923000 File: problems.pyc Line: 103 Caused By: list index out of range  Problem Name: 
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:00:51] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:18:27] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:18:34] "POST /postData HTTP/1.1" 200 -
+ERROR:root:Time: 2017-02-16 08:18:45.967000 File: problems.pyc Line: 103 Caused By: list index out of range  Problem Name: 
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:18:46] "POST /postData HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:20:37] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:20:48] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:22:01] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:22:07] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:23:14] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:24:40] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:24:55] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:25:34] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:26:08] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:26:16] "POST /postData HTTP/1.1" 200 -

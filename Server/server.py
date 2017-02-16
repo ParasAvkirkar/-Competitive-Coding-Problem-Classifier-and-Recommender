@@ -7,10 +7,12 @@
 #     return jsonify({'Status': str(78)})
 __author__ = 'Pranay'
 from flask import Flask, request, jsonify, json
-import codechef_problem
-import predictCategory
+import  sys
+sys.path.append("../Data Extraction/codechef/")
+sys.path.append("../Data Extraction/Codeforces/")
+sys.path.append("../Data Extraction/SPOJ/")
+import predictCategory, problems, CodeforcesProblem, spojProblem
 print 'import complete'
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -34,7 +36,12 @@ def getData():
 def postData():
     platform_url = request.form.get('url')
     problem_content = request.form.get('content')
-    c = codechef_problem.getProblemFromDescription(problem_content)
+    if platform_url == 'www.codechef.com':
+        c = problems.getProblemFromDescription(problem_content)
+    elif platform_url == 'codeforces.com':
+        c = CodeforcesProblem.getProblemFromDescription(problem_content)
+    else:
+        c = spojProblem.getProblemFromDescription(problem_content)
     result = predictCategory.predict_category(c)
     return jsonify({'result':result})
 

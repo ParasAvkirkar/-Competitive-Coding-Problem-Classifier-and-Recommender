@@ -19,6 +19,7 @@ class CodeforcesProblem:
 		self.timelimit = timelimit
 		self.memorylimit = memorylimit
 		self.desription = problemStatement
+		self.description = ""
 		self.difficulty = 'Medium'
 		self.category = tags
 		self.process_description()
@@ -30,7 +31,7 @@ class CodeforcesProblem:
 	def process_description(self):
 		try:			
 			description_lines = self.desription.split('\n')
-			print(description_lines)
+			# print(description_lines)
 			description_lines = [line.strip() for line in description_lines]
 
 			try:
@@ -79,8 +80,8 @@ class CodeforcesProblem:
 			self.input = ((self.create_word_features(self.input)).replace('"', '')).replace("'", "")
 			self.output = description_lines[output_start:example_start]
 			self.constraints = self.input
-			print self.input
-			print self.output
+			# print self.input
+			# print self.output
 
 		except Exception as e:
 			print(e)
@@ -96,3 +97,12 @@ class CodeforcesProblem:
                         stopwords.words('english')]
 		my_dict = ' '.join([word for word in useful_words])
 		return my_dict
+
+def getProblemFromDescription(desciption):
+	explanation_given = False
+	if 'Explanation' in desciption:
+		explanation_given = True
+	problem = CodeforcesProblem('', '', '', '', desciption, '', '')
+	problem.example_given = str(explanation_given)
+	problem.description = problem.statement
+	return problem
