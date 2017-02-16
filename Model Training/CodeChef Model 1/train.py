@@ -1,4 +1,5 @@
-from sklearn import neighbors, svm
+from sklearn import neighbors, svm, tree
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import precision_recall_fscore_support
 import numpy as np
 import pandas
@@ -43,7 +44,12 @@ def train_for_category(category, classifier):
         clf = neighbors.KNeighborsClassifier()
     elif classifier == 'SVM':
         clf = svm.SVC(probability=True)
-    else: print "Enter valid classifier"
+    elif classifier == 'DECISIONTREE':
+        clf = tree.DecisionTreeClassifier()
+    elif classifier == 'RANDOMFOREST':
+        clf = RandomForestClassifier()
+    else:
+        print "Enter valid classifier"
     clf.fit(X_train, y_train)
 
     accuracy = clf.score(X_test, y_test)
@@ -87,21 +93,21 @@ def train_for_category(category, classifier):
     with open('model/' + category, 'w') as f:
         pickle.dump(clf, f)
 
-    write_performance_matrix(category, count_metrics, performance_metrics, bias, variance)
+    write_performance_matrix(category, count_metrics, performance_metrics, bias, variance, True)
     return performance_metrics[performance_metric_keys['fscore']][0], count_metrics
 
-    
 
-def write_performance_matrix(category, count_metrics, performance_metrics, bias, variance):
+def write_performance_matrix(category, count_metrics, performance_metrics, bias, variance, isPositiveBased=True):
+    index = 1 if isPositiveBased else 0
     with open('accuracy.csv', 'a') as f:
         f.write(category
             + ',' + str(count_metrics['tp'])
             + ',' + str(count_metrics['fp'])
             + ',' + str(count_metrics['tn'])
             + ',' + str(count_metrics['fn'])
-            + ',' + str(performance_metrics[performance_metric_keys['precision']][0]) 
-            + ',' + str(performance_metrics[performance_metric_keys['recall']][0]) 
-            + ',' + str(performance_metrics[performance_metric_keys['fscore']][0])
+            + ',' + str(performance_metrics[performance_metric_keys['precision']][index])
+            + ',' + str(performance_metrics[performance_metric_keys['recall']][index])
+            + ',' + str(performance_metrics[performance_metric_keys['fscore']][index])
             + ',' + str(bias)
             + ',' + str(variance))
 
@@ -119,7 +125,27 @@ def train_all_models():
         train_for_category(c, 'KNN')
 
 
+def train_all_types_of_models():
+    classifierTypes = ['KNN', 'SVM', 'DECISIONTREE', 'RANDOMFOREST']
+
+    #To clear and empty an existing accuracy.csv file
+    open('accuracy.csv', 'w').close()
+
+    for type in classifierTypes:
+        with open('accuracy.csv', 'a') as f:
+            f.write(type)
+            f.write('\n')
+            f.write('category,tp,fp,tn,fn,precision,recall,fscore,bias,variance')
+            f.write('\n')
+        print ('for classfier '+str(type))
+        for c in categories:
+            generate(c)
+            print( 'for category ' +str(c))
+            train_for_category(c, type)
+
+
 if __name__ == '__main__':
-    train_all_models()
+    #train_all_models()
+    train_all_types_of_models()
     # generate('greedy')
     # train_for_category('greedy', 'KNN')
