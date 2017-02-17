@@ -32,3 +32,6 @@ INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:24:55] "POST /postData HTTP/1.1" 200
 INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:25:34] "POST /postData HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:26:08] "POST /postData HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:26:16] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:41:12] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:41:44] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Feb/2017 08:43:16] "POST /postData HTTP/1.1" 200 -
