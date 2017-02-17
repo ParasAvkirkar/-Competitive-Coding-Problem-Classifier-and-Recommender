@@ -21,7 +21,7 @@ def calculateExpectedValue(valuesAsNumpyArray):
 def calculateBias(fX, fCapX):
     errors = np.empty([len(fX), 1])
     for i in range(len(fX)):
-        np.append(errors, fCapX[i] - fX[i])
+        np.append(errors, abs(fCapX[i] - fX[i]))
     return calculateExpectedValue(errors)
 
 def calculateVariance(fX, fCapX):

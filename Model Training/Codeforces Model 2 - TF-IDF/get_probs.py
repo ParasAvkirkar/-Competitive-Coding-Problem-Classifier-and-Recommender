@@ -1,25 +1,37 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from prob_class import Problem
-from training_params import categories
-print 'import once get_probs'
+import sys, os
+sys.path.append('../Utilities')
 
-engine = create_engine('mysql+mysqldb://root:@localhost/data stage fyp')
-conn = engine.connect()
-Session = sessionmaker(bind=engine)
-s = Session()
+from prob_class import Problem, Codeforces_Problem
+from get_session import get_session
 
-probs = s.query(Problem)#.filter(Problem.category == 'dp' or)
+def get_codechef_probs():
+	s = get_session()
+	probs = s.query(Problem).filter()
 
-#problist = [p for p in probs if p.category == 'dp' or p.category == 'graph']
-problist = probs
-# print len(problist)
-# print(len(list(probs)))
+	problist = [p for p in probs]
+	print len(problist)
+    
+	return problist
 
-def get_probs():
-    return list(problist)
+def get_codechef_probs_without_category_NA():
+	s = get_session()
+	probs = s.query(Problem).filter()
 
+	problist = [p for p in probs if p.category != 'N/A']
+	print len(problist)
+    
+	return problist
 
-def getProbByCode(probCode):
-    print [prob for prob in probs if probCode in prob.prob_code][0]
-    return [prob for prob in probs if probCode in prob.prob_code][0]
+def get_codeforces_probs_without_category_NA():
+	s = get_session()
+	probs = s.query(Codeforces_Problem).filter()
+
+	problist = [p for p in probs if p.modified_tags != 'N/A']
+	# problist = [p for p in probs if 'dp' in p.category]
+	print len(problist)
+    
+	return problist
+
+if __name__ == '__main__':
+	get_codeforces_probs_without_category_NA()
+

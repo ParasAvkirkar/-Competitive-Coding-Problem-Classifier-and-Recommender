@@ -1,153 +1,60 @@
-from get_probs import get_probs
-import operator
 import random
 
-probs = get_probs()
-prob_class = 'dp'
+import sys
+sys.path.append('../Utilities/')
+from constants import minimum_number_of_probs_inwhich_word_to_exist
 
 
+def train_test_split(probs, test_size):
+    random.shuffle(probs)
 
-# dp nodp separate word count list
-# dpCount = 0
-# nodpCount = 0
+    train_set = probs[ : -int(test_size*len(probs))]
+    test_set = probs[-int(test_size*len(probs)) : ]
 
-# words = {0:{}, 1:{}}
-# for p in probs:
-#     if p.category == 'dp':
-#         for w in p.description.split(' '):
-#             if w not in words[1]:
-#                 words[1][w] = 1
-#             else :
-#                 words[1][w] += 1
-#     else:
-#         for w in p.description.split(' '):
-#             if w not in words[0]:
-#                 words[0][w] = 1
-#             else :
-#                 words[0][w] += 1
+    return train_set, test_set
 
 
+def get_wordcount_by_category(train_set, prob_class):
 
-# sorted_w = sorted(words[1].items(), key=operator.itemgetter(1))
-# for w in sorted_w:
-#     print w
+    #word count by, no of words in prob_class(e.g dp) problems and in no prob_class(e.g other than dp) problems
+    words = {}
+    count = 0
 
-# sorted_w = sorted(words[0].items(), key=operator.itemgetter(1))
-# for w in sorted_w:
-#     print w
+    for p in train_set:
+        desclist = p.modified_description.split()
+        uniqWordList = sorted(set(desclist), key=desclist.index)
+        p.modified_description = ' '.join(uniqWordList)
 
+        if p.category == prob_class or prob_class in p.category:
+            for w in p.modified_description.split(' '):
+                if w not in words:
+                    words[w] = {0:0, 1:0}
+                    words[w][1] = 1
+                else :
+                    words[w][1] += 1
 
-#word count by, no of words in dp prob and in no dp prob
-words = {}
-random.shuffle(probs)
-
-test_size = 0.2
-train_set = probs[:-int(test_size*len(probs))]
-test_set = probs[-int(test_size*len(probs)):]
-
-for p in train_set:
-    desclist = p.description.split()
-    uniqWordList = sorted(set(desclist), key=desclist.index)
-    p.description = ' '.join(uniqWordList)
-
-    if p.category == prob_class:
-        for w in p.description.split(' '):
-            if w not in words:
-                words[w] = {0:0, 1:0}
-                words[w][1] = 1
-            else :
-                words[w][1] += 1
-    else:
-        for w in p.description.split(' '):
-            if w not in words:
-                words[w] = {0: 0, 1: 0}
-                words[w][0] = 1
-            else :
-                words[w][0] += 1
-
-percent = {}
-for w in words:
-    if (words[w][0] + words[w][1]) > 100: #word should have atleast 100 occurances
-        percent[w] = 100.0 * words[w][1] / (words[w][0] + words[w][1])
-
-sorted_perc = sorted(percent.items(), key=operator.itemgetter(1))
-sorted_perc.reverse() #desc order
-
-# print sorted_perc[:10]
-# print sorted_perc[-10:]
-
-total_data = []
-
-count = 0
-for p in train_set:
-    total_data.append([])
-    features = []
-
-    for presentWord in sorted_perc[:10]:
-        presentWord = presentWord[0] #it contains tuple of word and percentage, hence [0] element for word
-
-        if presentWord in p.description.split():
-            features.append(1)
+            count += 1
         else:
-            features.append(0)
+            for w in p.modified_description.split(' '):
+                if w not in words:
+                    words[w] = {0: 0, 1: 0}
+                    words[w][0] = 1
+                else :
+                    words[w][0] += 1
 
-    for notPresentWord in sorted_perc[-10:]:
-        notPresentWord = notPresentWord[0]
-
-        if notPresentWord in p.description.split():
-            features.append(1)
-        else:
-            features.append(0)
-
-    features.append(p.submission_size)
-    features.append(p.time_limit[:1])
-
-    if p.category == prob_class:
-        features.append(1)
-    else : features.append(0)
-
-    total_data[count] = features
-    count += 1
-
-for p in test_set:
-    total_data.append([])
-    features = []
-    for presentWord in sorted_perc[:10]:
-        presentWord = presentWord[0]
-
-        if presentWord in p.description.split():
-            features.append(1)
-        else:
-            features.append(0)
-
-    for notPresentWord in sorted_perc[-10:]:
-        notPresentWord = notPresentWord[0]
-
-        if notPresentWord in p.description.split():
-            features.append(1)
-        else:
-            features.append(0)
-
-    features.append(p.submission_size)
-    features.append(p.time_limit[:1])
-
-    if p.category == prob_class:
-        features.append(1)
-    else : features.append(0)
-
-    total_data[count] = features
-    count += 1
+    print "\n\n\n\n\n\n\n" + str(count) + "\n\n\n\n\n"
+    return words
 
 
-with open('dp_dataset.csv', 'w') as f:
-    f.write(','.join([x[0] for x in sorted_perc[:10]]))
-    f.write(','.join([x[0] for x in sorted_perc[-10:]]))
-    f.write(',sub_size,time_limit')
-    f.write(',class')
+def get_word_perc(words):
+    percent = {}
+    word_count = {}
+    for w in words:
+        if (words[w][0] + words[w][1]) > minimum_number_of_probs_inwhich_word_to_exist: #word should have atleast 50 occurances
+            word_count[w] = {}
+            word_count[w]['yes'] = words[w][1]
+            word_count[w]['no'] = words[w][0]
+            word_count[w]['total'] = words[w][0] + words[w][1]
+            percent[w] = 100.0 * word_count[w]['yes'] / word_count[w]['total']
 
-    f.write('\n')
-
-    for t in total_data:
-        f.write(','.join([str(x) for x in t]))
-        f.write('\n')
-
+    return percent, word_count

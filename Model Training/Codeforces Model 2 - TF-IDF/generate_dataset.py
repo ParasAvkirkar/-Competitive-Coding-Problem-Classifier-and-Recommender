@@ -1,4 +1,4 @@
-from get_probs import get_codeforces_probs_without_category_NA, get_codechef_probs_without_category_NA
+from get_probs import get_codeforces_probs_without_category_NA
 from word_count import train_test_split, get_wordcount_by_category, get_word_perc
 import operator
 import pickle
@@ -120,7 +120,7 @@ def prepare_dataset(sorted_perc, data, category):
 def generate(category):
 
     probs = get_codeforces_probs_without_category_NA()
-    #probs = get_codechef_probs_without_category_NA()
+
     test_size = 0.5 #default value
     with open('test_size.pickle') as f:
         test_size = pickle.load(f)
