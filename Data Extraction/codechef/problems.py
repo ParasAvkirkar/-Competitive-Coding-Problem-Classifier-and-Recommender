@@ -18,6 +18,8 @@ class Problem:
 		self.description = description
 		self.process_description()
 		self.difficulty = difficulty
+		if difficulty == 'unknown':
+			self.difficulty = 'medium'
 		self.submission_size = submission_size
 		if difficulty == 'hard':
 			self.example_given = False
@@ -140,3 +142,11 @@ class Problem:
 		# print my_dict
 		return my_dict
 
+def getProblemFromDescription(desciption):
+	explanation_given = False
+	if 'Explanation' in desciption:
+		explanation_given = True
+	problem = Problem('', '', '', desciption, '', '')
+	problem.example_given = str(explanation_given)
+	problem.description = problem.statement
+	return problem

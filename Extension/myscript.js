@@ -3,8 +3,10 @@ function send(){
 	var host = document.location.host;
 	if(host == "www.codechef.com"){
 		var problemPage = document.getElementById('problem-page-complete');
-	}else{
+	}else if(host == "codeforces.com"){
 		var problemPage = document.getElementById('pageContent');
+	} else{
+		var problemPage = document.getElementById('problem-body');
 	}
 	message = problemPage.innerText;
 	console.log('Written');
