@@ -26,5 +26,21 @@ chrome.runtime.onMessage.addListener(function(response, sender, sendResponse){
 				result = data.result+'';
 				views[i].drawGraph(result.split(','));
 			}
-		}, "json");
+		}, "json").fail(function(error) {
+			var views = chrome.extension.getViews({
+				type: "popup"
+			});
+			for (var i = 0; i < views.length; i++) {
+				views[i].document.getElementById('loading').style.display='none';
+				views[i].document.getElementById('error_div').style.display='block';
+			}
+		 });
 })
+chrome.runtime.onInstalled.addListener(function(details){
+    if(details.reason == "install"){
+        console.log("This is a first install!");
+    }else if(details.reason == "update"){
+        var thisVersion = chrome.runtime.getManifest().version;
+        console.log("Updated from " + details.previousVersion + " to " + thisVersion + "!");
+    }
+});
