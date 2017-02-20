@@ -18,16 +18,16 @@ except:
 def make_csv_files(category, sorted_perc, word_count, percentages):
     with open('data/' + category + '/' + '20feature_word_all_data.csv', 'w') as f:
         for w in sorted_perc[:num_of_top_words_as_feature]:
-            print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
-                word_count[w[0]]['total'])
+            # print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
+            #     word_count[w[0]]['total'])
             f.write(w[0] + "," + str(word_count[w[0]]['yes']) + "," + str(word_count[w[0]]['no']) + "," + str(
                 word_count[w[0]]['total']))
             f.write('\n')
 
         print "---------------------------------------------------------"
         for w in sorted_perc[-num_of_top_words_as_feature:]:
-            print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
-                word_count[w[0]]['total'])
+            # print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
+            #     word_count[w[0]]['total'])
             f.write(w[0] + "," + str(word_count[w[0]]['yes']) + "," + str(word_count[w[0]]['no']) + "," + str(
                 word_count[w[0]]['total']))
             f.write('\n')
@@ -142,6 +142,36 @@ def generate(category):
 
     make_csv_files(category, sorted_perc, word_cnt_stats, percentages)
     write_dataset(category, sorted_perc, total_data)
+
+def generateLazyLoad(category):
+    probs = []
+    if len(generateLazyLoad.probs) == 0:
+        generateLazyLoad.probs = get_codeforces_probs_without_category_NA()
+    probs = generateLazyLoad.probs
+    test_size = 0.5  # default value
+    with open('test_size.pickle') as f:
+        test_size = pickle.load(f)
+
+    train_set, test_set = train_test_split(probs, test_size)
+    word_cnt_by_cateogry = get_wordcount_by_category(train_set, category)
+
+    percentages, word_cnt_stats = get_word_perc(word_cnt_by_cateogry)
+
+    sorted_perc = sorted(percentages.items(), key=operator.itemgetter(1))
+    sorted_perc.reverse()  # desc order
+
+    total_data = []
+    prepared_train_data = prepare_dataset(sorted_perc, train_set, category)
+    prepared_test_data = prepare_dataset(sorted_perc, test_set, category)
+
+    [total_data.append(t) for t in prepared_train_data]
+    [total_data.append(t) for t in prepared_test_data]
+
+    make_csv_files(category, sorted_perc, word_cnt_stats, percentages)
+    write_dataset(category, sorted_perc, total_data)
+
+generateLazyLoad.probs = []
+
 
 if __name__ == '__main__':
     generate('graph')

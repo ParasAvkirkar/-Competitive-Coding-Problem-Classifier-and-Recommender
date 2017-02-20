@@ -42,7 +42,7 @@ def get_wordcount_by_category(train_set, prob_class):
                 else :
                     words[w][0] += 1
 
-    print "\n\n\n\n\n\n\n" + str(count) + "\n\n\n\n\n"
+    # print "\n\n\n\n\n\n\n" + str(count) + "\n\n\n\n\n"
     return words
 
 

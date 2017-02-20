@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a176f7d5-8d12-46d4-903e-f209314a01f8" name="Default" comment="">
-<<<<<<< HEAD
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/generate_dataset.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Model Training/CodeChef Model 1/.~lock.accuracy.csv#" afterPath="" />
-=======
-<<<<<<< HEAD
       <change type="DELETED" beforePath="C:\Users\Pranay\PycharmProjects\FYPProject\Server\codechef_problem.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data Extraction/Codeforces/CodeforcesProblem.py" afterPath="$PROJECT_DIR$/Data Extraction/Codeforces/CodeforcesProblem.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/FYP.iml" afterPath="$PROJECT_DIR$/.idea/FYP.iml" />
@@ -19,14 +14,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/server.py" afterPath="$PROJECT_DIR$/Server/server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data Extraction/SPOJ/spojProblem.py" afterPath="$PROJECT_DIR$/Data Extraction/SPOJ/spojProblem.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/combinatorics_classifier.pickle" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/combinatorics_classifier.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/dp_classifier.pickle" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/dp_classifier.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/graph_classifier.pickle" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/graph_classifier.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/greedy_classifier.pickle" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/greedy_classifier.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/math_classifier.pickle" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/math_classifier.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/tree_classifier.pickle" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/classifier/tree_classifier.pickle" />
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/CodeChef Model 1/accuracy.csv" afterPath="$PROJECT_DIR$/Model Training/CodeChef Model 1/accuracy.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/CodeChef Model 1/data/combinatorics/20feature_word_all_data.csv" afterPath="$PROJECT_DIR$/Model Training/CodeChef Model 1/data/combinatorics/20feature_word_all_data.csv" />
@@ -61,15 +54,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/CodeChef Model 1/model/math" afterPath="$PROJECT_DIR$/Model Training/CodeChef Model 1/model/math" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/CodeChef Model 1/model/tree" afterPath="$PROJECT_DIR$/Model Training/CodeChef Model 1/model/tree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/CodeChef Model 1/train.py" afterPath="$PROJECT_DIR$/Model Training/CodeChef Model 1/train.py" />
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/get_probs.py" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/get_probs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/train.py" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/train.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/word_count.py" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/word_count.py" />
-=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/accuracy.csv" afterPath="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/accuracy.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Training/Utilities/constants.py" afterPath="$PROJECT_DIR$/Model Training/Utilities/constants.py" />
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,22 +89,14 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/server.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="1275">
-              <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-=======
-<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0">
               <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
               <folding>
                 <element signature="e#304#351#0" expanded="true" />
-=======
             <state relative-caret-position="1050">
               <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
               </folding>
             </state>
           </provider>
@@ -136,15 +114,6 @@
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="generate_dataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model Training/CodeChef Model 1/generate_dataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1305">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#102#0" expanded="true" />
-=======
       <file leaf-file-name="predictCategory.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/predictCategory.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -194,14 +163,11 @@
                 <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-=======
       <file leaf-file-name="CodeforcesProblem.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data Extraction/Codeforces/CodeforcesProblem.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -212,7 +178,6 @@
           </provider>
         </entry>
       </file>
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -234,13 +199,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
         <option value="$PROJECT_DIR$/Data Extraction/Codechef/scaro.py" />
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
         <option value="$PROJECT_DIR$/Data Extraction/SPOJ/scrapeSpojProblem.py" />
         <option value="$PROJECT_DIR$/Data Transformation/codechef_problem/fill_blank_desc.py" />
         <option value="$PROJECT_DIR$/Data Extraction/codechef/orm/cluster.py" />
@@ -282,24 +241,11 @@
         <option value="$PROJECT_DIR$/Model Training/Codeforces Model 3 - Naive Bayes/train.py" />
         <option value="$PROJECT_DIR$/Model Training/Codechef Model 2 - TF-IDF/train.py" />
         <option value="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/prob_class.py" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/Extension/popup.js" />
-        <option value="$PROJECT_DIR$/Extension/popup.html" />
-        <option value="$PROJECT_DIR$/Extension/myscript.js" />
-        <option value="$PROJECT_DIR$/Data Extraction/SPOJ/spojProblem.py" />
-        <option value="$PROJECT_DIR$/Server/server.py" />
-        <option value="$PROJECT_DIR$/Data Extraction/Codeforces/CodeforcesProblem.py" />
-        <option value="$PROJECT_DIR$/Data Extraction/codechef/problems.py" />
-=======
         <option value="$PROJECT_DIR$/Model Training/Integrated Model 1/train.py" />
         <option value="$PROJECT_DIR$/Model Training/Utilities/constants.py" />
         <option value="$PROJECT_DIR$/Model Training/CodeChef Model 1/train.py" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Model Training/Codeforces Model 2 - TF-IDF/train.py" />
         <option value="$PROJECT_DIR$/Model Training/CodeChef Model 1/generate_dataset.py" />
-=======
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
       </list>
     </option>
   </component>
@@ -341,11 +287,6 @@
       <sortByType />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="Scope" />
-      <pane id="Scratches" />
-=======
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -420,11 +361,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="Codeforces Model 2 - TF-IDF" />
-=======
               <option name="myItemId" value="Integrated Model 1" />
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,30 +389,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="Data Extraction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codechef" />
-=======
               <option name="myItemId" value="CodeChef Model 1" />
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scratches" />
-      <pane id="Scope" />
-=======
-<<<<<<< HEAD
-=======
       <pane id="Scope" />
       <pane id="Scratches" />
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -502,11 +423,7 @@
       <recent name="C:\Users\Pranay\PycharmProjects\FYPProject\Server" />
     </key>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Python.server">
-=======
   <component name="RunManager" selected="Python.train (2)">
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
     <configuration default="false" name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -734,19 +651,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-<<<<<<< HEAD
-        <item index="0" class="java.lang.String" itemvalue="Python.server" />
-        <item index="1" class="java.lang.String" itemvalue="Python.train (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.feature_extraction" />
-        <item index="3" class="java.lang.String" itemvalue="Python.train" />
-        <item index="4" class="java.lang.String" itemvalue="Python.train (2)" />
-=======
         <item index="0" class="java.lang.String" itemvalue="Python.train (2)" />
         <item index="1" class="java.lang.String" itemvalue="Python.train" />
         <item index="2" class="java.lang.String" itemvalue="Python.train (1)" />
         <item index="3" class="java.lang.String" itemvalue="Python.feature_extraction" />
         <item index="4" class="java.lang.String" itemvalue="Python.server" />
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
       </list>
     </recent_temporary>
   </component>
@@ -780,28 +689,6 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17935579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37185186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-=======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2590315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3721973" sideWeight="0.50269026" order="12" side_tool="true" content_ui="tabs" />
@@ -821,11 +708,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-=======
->>>>>>> 8a1e76b6c43ce47aa184528854439708e6328209
->>>>>>> 7d14dfbb93f364449b7525a662d0645cea66bf72
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
