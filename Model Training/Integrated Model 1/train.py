@@ -65,8 +65,8 @@ def train_for_category(category, classifier):
     with open('model/' + category, 'w') as f:
         pickle.dump(clf, f)
 
-    write_performance_matrix(category, count_metrics, performance_metrics)
-    return performance_metrics[performance_metric_keys['fscore']][0], count_metrics
+    # write_performance_matrix(category, count_metrics, performance_metrics)
+    return performance_metrics[performance_metric_keys['fscore']][1], count_metrics, clf
 
     
 

@@ -6,16 +6,22 @@ import pickle
 import sys
 sys.path.append('../Utilities/')
 
-try:
-    with open('num_of_top_words_as_feature.pickle') as f:
-        num_of_top_words_as_feature = pickle.load(f) 
-        # print "\n\n\n\n num_of_top_words_as_feature = " + str(num_of_top_words_as_feature) + "\n\n\n\n"
-except:
-    with open('num_of_top_words_as_feature.pickle', 'w+b') as f:
-        num_of_top_words_as_feature = 10
-        pickle.dump(num_of_top_words_as_feature, f)
+def get_num_of_top_words_as_feature():
+    try:
+        with open('num_of_top_words_as_feature.pickle') as f:
+            num_of_top_words_as_feature = pickle.load(f) 
+            print "\n\n\n\n num_of_top_words_as_feature = " + str(num_of_top_words_as_feature) + "\n\n\n\n"
+    except:
+        with open('num_of_top_words_as_feature.pickle', 'w+b') as f:
+            num_of_top_words_as_feature = 10
+            pickle.dump(num_of_top_words_as_feature, f)
+            print "\n\n\n\n exception in num of top words as feature, using default size of 10\n\n\n\n"
+
+    return num_of_top_words_as_feature
 
 def make_csv_files(category, sorted_perc, word_count, percentages):
+    num_of_top_words_as_feature = get_num_of_top_words_as_feature()
+
     with open('data/' + category + '/' + '20feature_word_all_data.csv', 'w') as f:
         for w in sorted_perc[:num_of_top_words_as_feature]:
             print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
@@ -61,6 +67,8 @@ def make_csv_files(category, sorted_perc, word_count, percentages):
 
 
 def write_dataset(category, sorted_perc, data):
+    num_of_top_words_as_feature = get_num_of_top_words_as_feature()
+
     with open('data/' + category + '/' + 'dataset.csv', 'w') as f:
         f.write(','.join([x[0] for x in sorted_perc[:num_of_top_words_as_feature]]))
         # print ','.join([x[0] for x in sorted_perc[:num_of_top_words_as_feature]])
@@ -83,6 +91,7 @@ def write_dataset(category, sorted_perc, data):
 def prepare_dataset(sorted_perc, data, category):
     count = 0
     prepared_data = []
+    num_of_top_words_as_feature = get_num_of_top_words_as_feature()
 
     for p in data:
         prepared_data.append([])

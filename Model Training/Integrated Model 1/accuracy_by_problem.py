@@ -62,4 +62,6 @@ def get_accuracy():
 
 
 if __name__ == '__main__':
+    #comment random.shuffle() from train_test_split() in word_count.py
+    #so that all classifiers are used on same test problems
     get_accuracy()

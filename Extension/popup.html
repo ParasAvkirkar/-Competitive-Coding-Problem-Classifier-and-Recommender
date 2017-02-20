@@ -15,12 +15,20 @@
          }
      </style>
      <script src="Canvas/canvasjs.min.js"></script>
+     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
+    <!--<a href="#" id="predict" class="myButton">Which Approach Should I Go With ??</a>-->
     <button id="predict" style="height:75px;width:200px">Recommend me the Category</button>
-    <img id="loading" style="height:300px;width:400px;display:none" src="loading2.gif">
+    <img id="loading" style="height:300px;width:400px;display:none" src="images/loading2.gif">
     <div id="chartContainer" style="height: 0%; width: 0%;"></div>
-    <script src="popup.js"></script>
+    <div id="error_div" style="height: 300px;width: 400px;display: none;text-align: center;">
+        <img id="error" src="images/error.png" style="display: inline-block;margin-top: 30px;">
+        <h2 style="color: gray;">
+            Something Went Wrong, Try Again :(
+        </h2>
+    </div>
+    <script src="scripts/popup.js"></script>
 
   </body>
 </html>
