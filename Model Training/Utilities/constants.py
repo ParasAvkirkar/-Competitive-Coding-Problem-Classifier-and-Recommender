@@ -1,4 +1,4 @@
-test_size = 0.5
+test_size = 0.0
 
 categories = ['greedy', 'graph', 'tree', 'combinatorics', 'math', 'dp']
 

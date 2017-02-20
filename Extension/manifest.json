@@ -5,25 +5,25 @@
   "description": "This extension predicts the category of a competitive programming problem",
   "version": "1.0",
 
-  "icons": { "16": "icon.png",
-           "48": "icon.png"},
+  "icons": { "16": "images/icon.png",
+           "48": "images/icon.png"},
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "images/icon_1.png",
     "default_popup": "popup.html"
   },
 
   "content_scripts": [
     {
       "matches": ["http://*/*","https://*/*"],
-      "js": ["jquery.js"],
-      "css": ["style.css"]
+      "js": ["scripts/jquery.js"],
+      "css": ["styles/style.css"]
     }
   ],
 
   "background": {
     // "page": "background.html",
-    "scripts": ["jquery.js", "background.js"]
+    "scripts": ["scripts/jquery.js", "scripts/background.js"]
   },
 
   "permissions": [

@@ -10,7 +10,7 @@ from constants import categories, performance_metric_keys
 test_size = 0.5 #default value
 with open('test_size.pickle') as f:
     test_size = pickle.load(f)
-
+test_size = 0.01
 
 def train_for_category(category, classifier):
     
