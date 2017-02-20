@@ -10,7 +10,7 @@ from constants import categories, performance_metric_keys
 test_size = 0.5 #default value
 with open('test_size.pickle') as f:
     test_size = pickle.load(f)
-test_size = 0.01
+
 
 def train_for_category(category, classifier):
     
@@ -65,8 +65,8 @@ def train_for_category(category, classifier):
     with open('model/' + category, 'w') as f:
         pickle.dump(clf, f)
 
-    write_performance_matrix(category, count_metrics, performance_metrics)
-    return performance_metrics[performance_metric_keys['fscore']][0], count_metrics
+    # write_performance_matrix(category, count_metrics, performance_metrics)
+    return performance_metrics[performance_metric_keys['fscore']][1], count_metrics, clf
 
     
 
