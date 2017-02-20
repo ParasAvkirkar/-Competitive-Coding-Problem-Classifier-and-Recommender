@@ -36,11 +36,60 @@ chrome.runtime.onMessage.addListener(function(response, sender, sendResponse){
 			}
 		 });
 })
-chrome.runtime.onInstalled.addListener(function(details){
-    if(details.reason == "install"){
-        console.log("This is a first install!");
-    }else if(details.reason == "update"){
-        var thisVersion = chrome.runtime.getManifest().version;
-        console.log("Updated from " + details.previousVersion + " to " + thisVersion + "!");
-    }
+//chrome.runtime.onInstalled.addListener(function(details){
+//    if(details.reason == "install"){
+//        console.log("This is a first install!");
+//    }else if(details.reason == "update"){
+//        var thisVersion = chrome.runtime.getManifest().version;
+//        console.log("Updated from " + details.previousVersion + " to " + thisVersion + "!");
+//    }
+//});
+
+function createSetIconAction(path, callback) {
+  chrome.browserAction.setTitle({title:'Suggest me some approaches for this !'});
+  var canvas = document.createElement("canvas");
+  var ctx = canvas.getContext("2d");
+  var image = new Image();
+  image.onload = function() {
+    ctx.drawImage(image,0,0,19,19);
+    var imageData = ctx.getImageData(0,0,19,19);
+    var action = new chrome.declarativeContent.SetIcon({imageData: imageData});
+
+    callback(action);
+  }
+  image.src = chrome.runtime.getURL(path);
+}
+
+chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
+  createSetIconAction("icon3.png", function(setIconAction) {
+    chrome.declarativeContent.onPageChanged.addRules([
+      /* rule1, */
+      {
+        conditions : [
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl : {hostEquals: 'www.codechef.com', pathContains: 'problems'}
+          })
+        ],
+        actions    : [ setIconAction ]
+      },
+      /* rule2, */
+      {
+        conditions : [
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl : {hostEquals: 'codeforces.com', pathContains: 'problemset/problem'}
+          })
+        ],
+        actions    : [ setIconAction ]
+      },
+      /* rule3, */
+      {
+        conditions : [
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl : {hostEquals: 'www.codechef.com', pathContains: 'problems'}
+          })
+        ],
+        actions    : [ setIconAction ]
+      }
+    ]);
+  });
 });

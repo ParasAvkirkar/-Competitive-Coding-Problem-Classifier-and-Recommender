@@ -39,3 +39,4 @@ function drawGraph(result) {
 			chart.render();
 }
 
+window.onload = hello;

@@ -1,5 +1,5 @@
 import sys, os
-# sys.path.append("../Model Training/Codechef")
+# sys.path.append("../Model Training/CodeChef Model 1")
 sys.path.append("../Model Training/Integrated Model 1/")
 sys.path.append("../Model Training/Utilities/")
 import pickle
