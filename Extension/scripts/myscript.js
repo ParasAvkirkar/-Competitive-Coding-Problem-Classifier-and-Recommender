@@ -8,11 +8,16 @@ function send(){
 	} else{
 		var problemPage = document.getElementById('problem-body');
 	}
-	message = problemPage.innerText;
-	console.log('Written');
-	url = host;
-	console.log(url);
-	msg = {'url':host, 'content':message};
+	if(!problemPage){
+		msg = {'error':1};
+	}
+	else{
+		message = problemPage.innerText;
+		console.log('Written');
+		url = host;
+		console.log(url);
+		msg = {'url':host, 'content':message, 'error':0};
+	}
 	chrome.runtime.sendMessage(msg);
 //	chrome.runtime.sendMessage(url);
 }
