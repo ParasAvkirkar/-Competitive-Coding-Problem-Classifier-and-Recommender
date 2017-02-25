@@ -2,4 +2,5 @@
 *.pyc
 *.csv
 .idea
-.xml
+*.xml
+*.pickle
