@@ -1,5 +1,5 @@
 from sklearn import neighbors, svm, tree
-from sklearn.naive_bayes import  GaussianNB
+from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import precision_recall_fscore_support
 # from sklearn.exceptions import ConvergenceWarning
@@ -11,13 +11,15 @@ import pickle
 import operator
 import warnings
 from generate_dataset import generate, generateLazyLoad
+
 sys.path.append('Utilities/')
 sys.path.append('../hyperopt-sklearn')
 
 from constants import performance_metric_keys, ClassifierType, problemOrCategoryKeys, \
-                        PlatformType, Metrics, defaultTestSize
+    PlatformType, Metrics, defaultTestSize
 from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
 from hyperopt import tpe
+
 
 # with open('test_size.pickle') as f:
 #     test_size = pickle.load(f)
@@ -25,28 +27,35 @@ from hyperopt import tpe
 def calculateExpectedValue(valuesAsNumpyArray):
     return np.mean(valuesAsNumpyArray)
 
+
 def calculateBias(fX, fCapX):
     errors = np.array([])
     for i in range(len(fX)):
         errors = np.append(errors, abs(fCapX[i] - fX[i]))
     return calculateExpectedValue(errors)
 
+
 def calculateVariance(fX, fCapX):
-    squaredFCaps = fCapX**2
-    return calculateExpectedValue(squaredFCaps) - (calculateExpectedValue(fCapX)**2)
+    squaredFCaps = fCapX ** 2
+    return calculateExpectedValue(squaredFCaps) - (calculateExpectedValue(fCapX) ** 2)
+
 
 def calculateTotalError(fX, fCapX):
     errors = np.array([])
     for i in range(len(fX)):
-        errors = np.append(errors, (fCapX[i] - fX[i])**2)
+        errors = np.append(errors, (fCapX[i] - fX[i]) ** 2)
     return np.mean(errors)
 
+
 def calculateIrreducibleError(fX, fCapX):
-    return calculateTotalError(fX, fCapX) - (calculateBias(fX, fCapX)**2) - calculateVariance(fX, fCapX)
+    return calculateTotalError(fX, fCapX) - (calculateBias(fX, fCapX) ** 2) - calculateVariance(fX, fCapX)
 
 
-def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash, test_size=defaultTestSize):
-    df = pandas.read_csv('data/' + category + '/' + dataFileNamesHash + '_dataset.csv')
+def train_for_categoryModel1(category, classifier, uniqueFileConvention, test_size=defaultTestSize):
+    dataFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)
+    modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)\
+                          + '_' + ClassifierType.classifierTypeString[classifier]
+    df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
     X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
     y = np.array(df['class']).astype(int)
 
@@ -114,7 +123,6 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash, 
             fCapX = np.append(fCapX, current_prediction[0][1])
             fX = np.append(fX, y_test[i])
 
-
     bias = calculateBias(fX, fCapX)
     variance = calculateVariance(fX, fCapX)
     totalError = calculateTotalError(fX, fCapX)
@@ -154,12 +162,10 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash, 
     print "recall : " + str(performance_metrics[performance_metric_keys['recall']])
     print "fscore : " + str(performance_metrics[performance_metric_keys['fscore']])
 
-    # Here dataFileNamesHash that we get from function call has actually appended,
+    # Here uniqueFileConvention that we get from function call has actually appended,
     # '_' + category, at its end
-    with open('model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
-                      +'.pickle', 'w') as f:
-        print('Dumping model: ' + 'model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
-              + '.pickle')
+    with open('model/' + modelFileConvention + '.pickle', 'w') as f:
+        print('Dumping model: ' + 'model/' + modelFileConvention + '.pickle')
         pickle.dump(clf, f)
 
     return Metrics(category=category, truePositive=count_metrics['tp'], trueNegative=count_metrics['tn'],
@@ -169,8 +175,12 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash, 
                    fScore=performance_metrics[performance_metric_keys['fscore']],
                    bias=bias, variance=variance, irreducibleError=irreducibleError, totalError=totalError)
 
-def train_for_categoryModel2(category, classifier, platform, dataFileNamesHash):
-    df = pandas.read_csv('data/' + category + '/' + dataFileNamesHash + '_dataset.csv')
+
+def train_for_categoryModel2(category, classifier, uniqueFileConvention, test_size=defaultTestSize):
+    dataFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)
+    modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)\
+                          + '_' + ClassifierType.classifierTypeString[classifier]
+    df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
     df1 = df.ix[:, :-1]
     df2 = df.ix[:, -1:]
 
@@ -179,12 +189,11 @@ def train_for_categoryModel2(category, classifier, platform, dataFileNamesHash):
 
     X = np.array(df1)
     y = np.array(df2)
-    X_train = X[:-int(len(X)*test_size)]
-    y_train = y[:-int(len(y)*test_size)]
+    X_train = X[:-int(len(X) * test_size)]
+    y_train = y[:-int(len(y) * test_size)]
 
-    X_test = X[-int(len(X)*test_size):]
-    y_test = y[-int(len(y)*test_size):]
-
+    X_test = X[-int(len(X) * test_size):]
+    y_test = y[-int(len(y) * test_size):]
 
     if classifier == ClassifierType.KNN:
         clf = neighbors.KNeighborsClassifier()
@@ -210,6 +219,7 @@ def train_for_categoryModel2(category, classifier, platform, dataFileNamesHash):
 
     warnings.filterwarnings("error")
     try:
+        print('Classifier Training started')
         clf.fit(X_train, y_train.ravel())
         accuracy = clf.score(X_test, y_test.ravel())
     except Exception as e:
@@ -232,7 +242,7 @@ def train_for_categoryModel2(category, classifier, platform, dataFileNamesHash):
     y_predictions = []
     print("Predictions started")
 
-    if classifier == ClassifierType.HYPERSKLEARN or classifier in onlyHyperClassifiers:
+    if classifier == ClassifierType.HYPERSKLEARN or classifier in ClassifierType.onlyHyperClassifiers:
         y_predictions = clf.predict(X_test)
         print(type(y_predictions))
         print(str(y_predictions.shape))
@@ -245,7 +255,6 @@ def train_for_categoryModel2(category, classifier, platform, dataFileNamesHash):
             y_predictions.append(0 if current_prediction[0][0] > 0.5 else 1)
             fCapX = np.append(fCapX, current_prediction[0][1])
             fX = np.append(fX, y_test[i])
-
 
     bias = calculateBias(fX, fCapX)
     variance = calculateVariance(fX, fCapX)
@@ -288,8 +297,8 @@ def train_for_categoryModel2(category, classifier, platform, dataFileNamesHash):
 
     if not os.path.exists('model'):
         os.makedirs('model')
-    with open('model/' + PlatformType.platformString[platform] + '_' + category
-                      + '_' + ClassifierType.classifierTypeString[classifier] + '.pickle', 'w') as f:
+    with open('model/' + modelFileConvention + '.pickle', 'w') as f:
+        print('Dumping model: ' + 'model/' + modelFileConvention + '.pickle')
         pickle.dump(clf, f)
 
     return Metrics(category=category, truePositive=count_metrics['tp'], trueNegative=count_metrics['tn'],
@@ -300,36 +309,37 @@ def train_for_categoryModel2(category, classifier, platform, dataFileNamesHash):
                    bias=bias, variance=variance, irreducibleError=irreducibleError, totalError=totalError)
 
 
-def get_accuracy(categories, classifier, dataFileNamesHash, useIntegrated=True, platform=PlatformType.Default,
+def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=True, platform=PlatformType.Default,
                  modelNumber=1, test_size=defaultTestSize):
     preds_for_prob = {}
     ans_for_prob = {}
 
     for category in categories:
-        print('Processing for category: '+category)
-        if not os.path.isfile("data/" + category + "/" + dataFileNamesHash + "_" + category +"_dataset.csv"):
-            print('File does not exist: ' + 'data/' + category + '/' + dataFileNamesHash + "_" + category +"_dataset.csv")
+        print('Processing for category: ' + category)
+        dataFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)
+        modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) + '_' + \
+                              ClassifierType.classifierTypeString[classifier]
+        if not os.path.isfile("data/" + category + "/" + dataFileConvention + "_dataset.csv"):
+            print('File does not exist: ' + 'data/' + category + '/' + dataFileConvention + '_dataset.csv')
             print('Generating dataset file')
             generateLazyLoad(useIntegrated=useIntegrated, category=category, platform=platform,
-                             dataFilesNameHash=(dataFileNamesHash + '_' + category), shouldShuffle=False, test_size=test_size)
-        df = pandas.read_csv("data/" + category + "/" + dataFileNamesHash + "_" + category +"_dataset.csv")
+                             uniqueFileConvention=uniqueFileConvention, shouldShuffle=False,
+                             test_size=test_size)
+        df = pandas.read_csv("data/" + category + "/" + dataFileConvention + "_dataset.csv")
         X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
         y = np.array(df['class']).astype(int)
 
         X_test = X[-int(len(X) * test_size):]
         y_test = y[-int(len(y) * test_size):]
 
-        if not os.path.isfile('model/' + dataFileNamesHash + '_' + category + '_'
-                                   + ClassifierType.classifierTypeString[classifier] + '.pickle'):
-            print('Model does not exist: ' 'model/' + dataFileNamesHash + '_' + category + '_' + ClassifierType.classifierTypeString[classifier]
-                      + '.pickle')
+        if not os.path.isfile('model/' + modelFileConvention + '.pickle'):
+            print('Model does not exist: ' 'model/' + modelFileConvention + '.pickle')
             print('Training dataset for building model')
-            metrics = train_for_categoryModel1(category=category, classifier=classifier, platform=platform,
-                                     dataFileNamesHash=(dataFileNamesHash + '_' + category), test_size=test_size)
+            metrics = train_for_categoryModel1(category=category, classifier=classifier, uniqueFileConvention=uniqueFileConvention,
+                                               test_size=test_size)
             if not metrics.isValid:
                 return -1.0
-        with open('model/' + dataFileNamesHash + '_' + category + '_'
-                                   + ClassifierType.classifierTypeString[classifier] + '.pickle') as f:
+        with open('model/' + modelFileConvention + '.pickle') as f:
             clf = pickle.load(f)
 
         # y_predictions = []
@@ -344,7 +354,8 @@ def get_accuracy(categories, classifier, dataFileNamesHash, useIntegrated=True, 
             current_prediction = clf.predict_proba(X_test[i].reshape(1, -1))
             # print str(current_prediction[0][0]) + " " + str(current_prediction[0][1]) + '\t' + str(y_test[i]
             # y_predictions.append(current_prediction[0][1])
-            preds_for_prob[i][category] = float(current_prediction[0][1])  # class 1 confidence i.e confidence for category c
+            preds_for_prob[i][category] = float(
+                current_prediction[0][1])  # class 1 confidence i.e confidence for category c
 
             if y_test[i] == 1:
                 ans_for_prob[i].append(category)
