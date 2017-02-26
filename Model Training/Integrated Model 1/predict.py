@@ -27,7 +27,7 @@ def createFeaturesForProbByCategory(prob, category):
 		# except:
 		# 	feature_size = 10
 
-		featureWords = f.readline().split(',')[0: 2 * int(feature_size)]
+		featureWords = f.readline().split(',')[0: -3]
 		for word in featureWords:
 			if description.count(word)>0:
 				features.append(1)
