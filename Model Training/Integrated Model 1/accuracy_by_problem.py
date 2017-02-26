@@ -52,10 +52,10 @@ def get_accuracy():
         sorted_category_perc = sorted(preds_for_prob[i].items(), key=operator.itemgetter(1))
         sorted_category_perc.reverse() #desc
 
-        for i in range(3):
-            if sorted_category_perc[i][0] in ans_for_prob[i]:
+        for j in range(3):
+            if sorted_category_perc[j][0] in ans_for_prob[i]:
                 correct += 1
-                print (sorted_category_perc[i][0] + " => " + str(ans_for_prob[i]))
+                print (sorted_category_perc[j][0] + " => " + str(ans_for_prob[i]))
                 break
 
     print('accuracy = ' + str(correct * 1.0 / len(X_test)))
