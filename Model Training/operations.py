@@ -2,7 +2,7 @@ from sklearn import neighbors, svm, tree
 from sklearn.naive_bayes import  GaussianNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import precision_recall_fscore_support
-from sklearn.exceptions import ConvergenceWarning
+# from sklearn.exceptions import ConvergenceWarning
 import numpy as np
 import pandas
 import sys
@@ -16,8 +16,8 @@ sys.path.append('../hyperopt-sklearn')
 from constants import performance_metric_keys, ClassifierType, allClassifierTypes,\
                 problemOrCategoryKeys, PlatformType,\
                 onlyNonHyperClassifiers, onlyHyperClassifiers, PlatformType, Metrics
-from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
-from hyperopt import tpe
+# from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
+# from hyperopt import tpe
 
 
 test_size = 0.5 #default value
@@ -158,6 +158,136 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash):
 
     with open('model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
                       + category + '.pickle', 'w') as f:
+        pickle.dump(clf, f)
+
+    return Metrics(category=category, truePositive=count_metrics['tp'], trueNegative=count_metrics['tn'],
+                   falsePositive=count_metrics['fp'], falseNegative=count_metrics['fn'],
+                   precision=performance_metrics[performance_metric_keys['precision']],
+                   recall=performance_metrics[performance_metric_keys['recall']],
+                   fScore=performance_metrics[performance_metric_keys['fscore']],
+                   bias=bias, variance=variance, irreducibleError=irreducibleError, totalError=totalError)
+
+def train_for_categoryModel2(category, classifier, platform, dataFileNamesHash):
+    df = pandas.read_csv('data/' + category + '/' + dataFileNamesHash + '_dataset.csv')
+    df1 = df.ix[:, :-1]
+    df2 = df.ix[:, -1:]
+
+    # print 'DataFrame Shape: '+str(df1.shape)
+    # print 'DataFrame2 Shape: '+str(df2.shape)
+
+    X = np.array(df1)
+    y = np.array(df2)
+    X_train = X[:-int(len(X)*test_size)]
+    y_train = y[:-int(len(y)*test_size)]
+
+    X_test = X[-int(len(X)*test_size):]
+    y_test = y[-int(len(y)*test_size):]
+
+
+    if classifier == ClassifierType.KNN:
+        clf = neighbors.KNeighborsClassifier()
+    elif classifier == ClassifierType.SVM:
+        clf = svm.SVC(probability=True)
+    elif classifier == ClassifierType.DECISIONTREE:
+        clf = tree.DecisionTreeClassifier()
+    elif classifier == ClassifierType.RANDOMFOREST:
+        clf = RandomForestClassifier()
+    elif classifier == ClassifierType.NAIVEBAYES:
+        clf = GaussianNB()
+    elif classifier == ClassifierType.HPKNN:
+        clf = HyperoptEstimator(classifier=knn('clf'))
+    elif classifier == ClassifierType.HPSVM:
+        clf = HyperoptEstimator(classifier=svc('clf', max_iter=20000000))
+    elif classifier == ClassifierType.HPRANDOMFOREST:
+        clf = HyperoptEstimator(classifier=random_forest('clf'))
+    elif classifier == ClassifierType.HYPERSKLEARN:
+        clf = HyperoptEstimator(classifier=any_classifier('clf'), algo=tpe.suggest, trial_timeout=60)
+    else:
+        clf = None
+        print "Enter valid classifier"
+
+    warnings.filterwarnings("error")
+    try:
+        clf.fit(X_train, y_train.ravel())
+        accuracy = clf.score(X_test, y_test.ravel())
+    except Exception as e:
+        print('got training error')
+        print e
+        m = Metrics(category=category)
+        m.isValid = False
+        m.invalidityMessage = 'Training Failed'
+        return m
+    warnings.filterwarnings("always")
+
+    print("Classifier trained")
+
+    if classifier == ClassifierType.HYPERSKLEARN:
+        print('Best model is ' + str(clf.best_model()))
+    print "accuracy : " + str(accuracy)
+
+    fCapX = np.array([])
+    fX = np.array([])
+    y_predictions = []
+    print("Predictions started")
+
+    if classifier == ClassifierType.HYPERSKLEARN or classifier in onlyHyperClassifiers:
+        y_predictions = clf.predict(X_test)
+        print(type(y_predictions))
+        print(str(y_predictions.shape))
+        for i in range(len(X_test)):
+            fCapX = np.append(fCapX, y_predictions[i])
+            fX = np.append(fX, y_test[i])
+    else:
+        for i in range(len(X_test)):
+            current_prediction = clf.predict_proba(X_test[i].reshape(1, -1))
+            y_predictions.append(0 if current_prediction[0][0] > 0.5 else 1)
+            fCapX = np.append(fCapX, current_prediction[0][1])
+            fX = np.append(fX, y_test[i])
+
+
+    bias = calculateBias(fX, fCapX)
+    variance = calculateVariance(fX, fCapX)
+    totalError = calculateTotalError(fX, fCapX)
+    irreducibleError = calculateIrreducibleError(fX, fCapX)
+
+    print("Bias Variance Calculated")
+    print('Total Error: ' + str(totalError))
+    print('Bias: ' + str(bias))
+    print('Variance: ' + str(variance))
+    print('Irreducible Error: ' + str(irreducibleError))
+
+    count_metrics = {'tp': 0, 'fp': 0, 'tn': 0, 'fn': 0}
+    for i in range(len(y_test)):
+        if y_predictions[i] == 1:
+            if y_test[i] == 1:
+                count_metrics['tp'] += 1
+            else:
+                count_metrics['fp'] += 1
+        else:
+            if y_test[i] == 1:
+                count_metrics['fn'] += 1
+            else:
+                count_metrics['tn'] += 1
+
+    warnings.filterwarnings("error")
+    try:
+        performance_metrics = precision_recall_fscore_support(np.array(y_test), np.array(y_predictions))
+    except:
+        print('performance metrics not valid')
+        m = Metrics(category=category)
+        m.isValid = False
+        m.invalidityMessage = 'Performance metrics invalid'
+        return m
+    warnings.filterwarnings("always")
+
+    print "precision : " + str(performance_metrics[performance_metric_keys['precision']])
+    print "recall : " + str(performance_metrics[performance_metric_keys['recall']])
+    print "fscore : " + str(performance_metrics[performance_metric_keys['fscore']])
+
+    if not os.path.exists('model'):
+        os.makedirs('model')
+    with open('model/' + PlatformType.platformString[platform] + '_' + category
+                      + '_' + ClassifierType.classifierTypeString[classifier] + '.pickle', 'w') as f:
         pickle.dump(clf, f)
 
     return Metrics(category=category, truePositive=count_metrics['tp'], trueNegative=count_metrics['tn'],

@@ -3,7 +3,9 @@ from word_count import train_test_split, get_wordcount_by_category, get_word_per
 import operator
 import pickle
 
-import sys
+import sys, csv, os, random
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
 
 sys.path.append('Utilities/')
 from constants import categories, performance_metric_keys, ClassifierType, allClassifierTypes, problemOrCategoryKeys, \
@@ -185,8 +187,54 @@ def generateLazyLoad(useIntegrated, category, platform, dataFilesNameHash, shoul
     make_csv_files(category, sorted_perc, word_cnt_stats, percentages, dataFilesNameHash)
     write_dataset(category, sorted_perc, total_data, dataFilesNameHash)
 
+def generateLazyLoadForModel2(useIntegrated, category, platform, dataFileNamesHash):
+    probs = []
+    if len(generateLazyLoad.probs) == 0:
+        generateLazyLoadForModel2.probs = get_all_probs_without_category_NA(useIntegrated, platform)
+    probs = generateLazyLoadForModel2.probs
+    test_size = 0.5  # default value
+    # with open('test_size.pickle') as f:
+    #     test_size = pickle.load(f)
+    random.shuffle(probs)
+    train_set = tuple([prob.modified_description for prob in probs ])
+
+    prob_class = []
+
+    for prob in probs:
+        prob_class.append(1.0 if category in prob.category else 0.0)
+
+
+    print 'Test Size: '+str((test_size))
+    print 'Total: '+str((len(probs)))
+    print 'Train Set Length: '+str(len(train_set))
+
+    count_vectorizer = CountVectorizer()
+    count_vectorizer.fit_transform(train_set)
+    with open('countVectorizer.pickle', 'w+b') as f:
+        pickle.dump(count_vectorizer, f)
+
+    freq_term_matrix = count_vectorizer.transform(train_set)
+
+    tfidf = TfidfTransformer(norm="l2")
+    tfidf.fit(freq_term_matrix)
+    with open('TfidfTransformer.pickle', 'w+b') as f:
+        pickle.dump(tfidf, f)
+
+    tf_idf_matrix = tfidf.transform(freq_term_matrix)
+    numpyAr = tf_idf_matrix.toarray()
+    print 'Feature Size: '+ str(len(numpyAr[0])+1)
+    if not os.path.exists('data/' + category ):
+        os.makedirs('data/' + category )
+    with open('data/' + category + '/' + dataFileNamesHash + '_dataset.csv', 'w') as f:
+        writer = csv.writer(f)
+        i = 0
+        for row in numpyAr:
+            writer.writerow(list(row) + [prob_class[i]])
+            i += 1
+
 
 generateLazyLoad.probs = []
+generateLazyLoadForModel2.probs = []
 
 if __name__ == '__main__':
     generate('graph')
