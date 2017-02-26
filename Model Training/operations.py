@@ -13,14 +13,12 @@ import warnings
 from generate_dataset import generate, generateLazyLoad
 sys.path.append('Utilities/')
 sys.path.append('../hyperopt-sklearn')
-from constants import performance_metric_keys, ClassifierType, allClassifierTypes,\
-                problemOrCategoryKeys, PlatformType,\
-                onlyNonHyperClassifiers, onlyHyperClassifiers, PlatformType, Metrics
+from constants import performance_metric_keys, ClassifierType, problemOrCategoryKeys, \
+                        PlatformType, Metrics, defaultTestSize
 from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
 from hyperopt import tpe
 
 
-test_size = 0.5 #default value
 # with open('test_size.pickle') as f:
 #     test_size = pickle.load(f)
 
@@ -47,7 +45,7 @@ def calculateIrreducibleError(fX, fCapX):
     return calculateTotalError(fX, fCapX) - (calculateBias(fX, fCapX)**2) - calculateVariance(fX, fCapX)
 
 
-def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash):
+def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash, test_size=defaultTestSize):
     df = pandas.read_csv('data/' + category + '/' + dataFileNamesHash + '_dataset.csv')
     X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
     y = np.array(df['class']).astype(int)
@@ -102,7 +100,7 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash):
     y_predictions = []
     print("Predictions started")
 
-    if classifier == ClassifierType.HYPERSKLEARN or classifier in onlyHyperClassifiers:
+    if classifier == ClassifierType.HYPERSKLEARN or classifier in ClassifierType.onlyHyperClassifiers:
         y_predictions = clf.predict(X_test)
         print(type(y_predictions))
         print(str(y_predictions.shape))
@@ -156,8 +154,12 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash):
     print "recall : " + str(performance_metrics[performance_metric_keys['recall']])
     print "fscore : " + str(performance_metrics[performance_metric_keys['fscore']])
 
+    # Here dataFileNamesHash that we get from function call has actually appended,
+    # '_' + category, at its end
     with open('model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
-                      + category + '.pickle', 'w') as f:
+                      +'.pickle', 'w') as f:
+        print('Dumping model: ' + 'model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
+              + '.pickle')
         pickle.dump(clf, f)
 
     return Metrics(category=category, truePositive=count_metrics['tp'], trueNegative=count_metrics['tn'],
@@ -168,28 +170,36 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash):
                    bias=bias, variance=variance, irreducibleError=irreducibleError, totalError=totalError)
 
 
-def get_accuracy(categories, classifier, dataFileNamesHash, useIntegrated=True, platform=PlatformType.Default, modelNumber=1):
+def get_accuracy(categories, classifier, dataFileNamesHash, useIntegrated=True, platform=PlatformType.Default,
+                 modelNumber=1, test_size=defaultTestSize):
     preds_for_prob = {}
     ans_for_prob = {}
 
     for category in categories:
-        if not os.path.isfile('data/' + category + '/' + dataFileNamesHash + '_dataset.csv'):
+        print('Processing for category: '+category)
+        if not os.path.isfile("data/" + category + "/" + dataFileNamesHash + "_" + category +"_dataset.csv"):
+            print('File does not exist: ' + 'data/' + category + '/' + dataFileNamesHash + "_" + category +"_dataset.csv")
+            print('Generating dataset file')
             generateLazyLoad(useIntegrated=useIntegrated, category=category, platform=platform,
-                             dataFilesNameHash=(dataFileNamesHash + '_' + category), shouldShuffle=False)
-        df = pandas.read_csv('data/' + category + '/' + dataFileNamesHash + '_dataset.csv')
+                             dataFilesNameHash=(dataFileNamesHash + '_' + category), shouldShuffle=False, test_size=test_size)
+        df = pandas.read_csv("data/" + category + "/" + dataFileNamesHash + "_" + category +"_dataset.csv")
         X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
         y = np.array(df['class']).astype(int)
 
         X_test = X[-int(len(X) * test_size):]
         y_test = y[-int(len(y) * test_size):]
 
-        if not os.path.isfile('model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
-                      + category + '.pickle'):
-            train_for_categoryModel1(category=category, classifier=classifier, platform=platform,
-                                     dataFileNamesHash=dataFileNamesHash)
-
-        with open('model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
-                      + category + '.pickle') as f:
+        if not os.path.isfile('model/' + dataFileNamesHash + '_' + category + '_'
+                                   + ClassifierType.classifierTypeString[classifier] + '.pickle'):
+            print('Model does not exist: ' 'model/' + dataFileNamesHash + '_' + category + '_' + ClassifierType.classifierTypeString[classifier]
+                      + '.pickle')
+            print('Training dataset for building model')
+            metrics = train_for_categoryModel1(category=category, classifier=classifier, platform=platform,
+                                     dataFileNamesHash=(dataFileNamesHash + '_' + category), test_size=test_size)
+            if not metrics.isValid:
+                return -1.0
+        with open('model/' + dataFileNamesHash + '_' + category + '_'
+                                   + ClassifierType.classifierTypeString[classifier] + '.pickle') as f:
             clf = pickle.load(f)
 
         # y_predictions = []
@@ -209,6 +219,7 @@ def get_accuracy(categories, classifier, dataFileNamesHash, useIntegrated=True, 
             if y_test[i] == 1:
                 ans_for_prob[i].append(category)
 
+        print('=================== CATEGORY OVER ===================')
     correct = 0
     for i in range(len(X_test)):
         sorted_category_perc = sorted(preds_for_prob[i].items(), key=operator.itemgetter(1))
@@ -217,7 +228,9 @@ def get_accuracy(categories, classifier, dataFileNamesHash, useIntegrated=True, 
         for j in range(3):
             if sorted_category_perc[j][0] in ans_for_prob[i]:
                 correct += 1
-                print (sorted_category_perc[j][0] + " => " + str(ans_for_prob[i]))
+                # print (sorted_category_perc[j][0] + " => " + str(ans_for_prob[i]))
                 break
 
-    print('accuracy = ' + str(correct * 1.0 / len(X_test)))
+    accuracy = str(correct * 1.0 / len(X_test))
+    print('accuracy = ' + str(accuracy))
+    return accuracy

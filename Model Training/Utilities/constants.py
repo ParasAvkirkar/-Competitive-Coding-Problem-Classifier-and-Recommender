@@ -1,6 +1,7 @@
 from enum import Enum
 
 test_size = 0.0
+defaultTestSize = 0.5
 
 categories = ['greedy', 'graph', 'tree', 'combinatorics', 'math', 'dp']
 
@@ -38,15 +39,15 @@ class ClassifierType:
                             HYPERSKLEARN: 'HYPERSKLEARN'}
 
 
-allClassifierTypes = [ClassifierType.KNN, ClassifierType.SVM, ClassifierType.DECISIONTREE,
-                      ClassifierType.RANDOMFOREST, ClassifierType.NAIVEBAYES, ClassifierType.HPKNN,
-                      ClassifierType.HPSVM, ClassifierType.HPRANDOMFOREST, ClassifierType.HYPERSKLEARN]
-
-onlyNonHyperClassifiers = [ClassifierType.KNN, ClassifierType.SVM, ClassifierType.DECISIONTREE,
-                           ClassifierType.RANDOMFOREST, ClassifierType.NAIVEBAYES]
-
-onlyHyperClassifiers = [ClassifierType.HPKNN, ClassifierType.HPSVM, ClassifierType.HPRANDOMFOREST,
-                        ClassifierType.HYPERSKLEARN]
+    allClassifierTypes = [KNN, SVM, DECISIONTREE,
+                          RANDOMFOREST, NAIVEBAYES, HPKNN,
+                          HPSVM, HPRANDOMFOREST, HYPERSKLEARN]
+    
+    onlyNonHyperClassifiers = [KNN, SVM, DECISIONTREE,
+                               RANDOMFOREST, NAIVEBAYES]
+    
+    onlyHyperClassifiers = [HPKNN, HPSVM, HPRANDOMFOREST,
+                            HYPERSKLEARN]
 
 
 class Metrics:
@@ -96,6 +97,18 @@ class Metrics:
                                 + '\n')
                     else:
                         f.write(metric.category + ',' + metric.invalidityMessage + '\n')
+            print('Metrics written to file: '+metricsFileName)
+
+    @staticmethod
+    def writeMultipleProblemwiseMetics(metricsFileName, classifierMetricsMap):
+
+        with open(metricsFileName, 'w') as f:
+            f.write('classifier,accuracy\n')
+            for classifier in classifierMetricsMap:
+                f.write(ClassifierType.classifierTypeString[classifier] + ','
+                        + str(classifierMetricsMap[classifier])
+                        + '\n')
+            print('Metrics written to file: ' + metricsFileName)
 
     def __str__(self):
         return ''
