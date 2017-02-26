@@ -14,27 +14,27 @@ sys.path.append('../hyperopt-sklearn/')
 from constants import categories, performance_metric_keys, ClassifierType, allClassifierTypes, problemOrCategoryKeys, \
     PlatformType, Metrics, onlyNonHyperClassifiers, onlyHyperClassifiers
 
-from operations import train_for_categoryModel1
+from operations import train_for_categoryModel1, get_accuracy
 
 
 def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCategoryWise=1,
-              model1or2=1, mlAlgos=allClassifierTypes):
+              modelNumber=1, mlAlgos=allClassifierTypes):
     if useIntegrate:
         platform = PlatformType.Default
-    dataFileNamesHash = PlatformType.platformString[platform] + '_' + str(model1or2) + '_' + str(problemOrCategoryWise)
+    dataFilesNameHash = PlatformType.platformString[platform] + '_' + str(modelNumber)\
+                            + '_' + str(problemOrCategoryWise)
 
     if problemOrCategoryWise == problemOrCategoryKeys['problem']:
-        if model1or2 == 1:
-            metricsFileName = dataFileNamesHash + '_metrics.csv'
+        if modelNumber == 1:
+            metricsFileName = dataFilesNameHash + '_metrics.csv'
             classifierMetricsMap = {}
             for classifier in mlAlgos:
                 print('CLASSIFICATION USING '+ ClassifierType.classifierTypeString[classifier])
                 metricsList = []
                 for category in categories:
                     print("Processing for category: "+category)
-
-                    generateLazyLoad(useIntegrate, category, platform, dataFileNamesHash)
-                    m = train_for_categoryModel1(category, classifier, platform, dataFileNamesHash)
+                    generateLazyLoad(useIntegrate, category, platform, dataFilesNameHash + '_' + category)
+                    m = train_for_categoryModel1(category, classifier, platform, dataFilesNameHash + '_' + category)
                     metricsList.append(m)
 
                     print("================ CATEGORY OVER ================")
@@ -47,8 +47,9 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
         else:
             pass
     else:
-        if model1or2 == 1:
-            pass
+        if modelNumber == 1:
+            for classifier in mlAlgos:
+                get_accuracy(categories, classifier, dataFilesNameHash, useIntegrated=useIntegrate, platform=platform, modelNumber=1)
         else:
             pass
 
@@ -56,4 +57,4 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
 if __name__ == '__main__':
     # trainData(useIntegrate=True, problemOrCategoryWise=1, model1or2=1, mlAlgos=allClassifierTypes)
     # trainData(useIntegrate=False, platform=PlatformType.Codeforces, problemOrCategoryWise=1, model1or2=1, mlAlgos=allClassifierTypes)
-    trainData(False, platform=PlatformType.Codechef, problemOrCategoryWise=1, model1or2=1, mlAlgos=onlyNonHyperClassifiers[:-2])
+    trainData(False, platform=PlatformType.Codechef, problemOrCategoryWise=1, modelNumber=1, mlAlgos=onlyNonHyperClassifiers[:-2])

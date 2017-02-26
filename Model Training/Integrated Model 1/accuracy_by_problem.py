@@ -39,7 +39,7 @@ def get_accuracy():
             if i not in ans_for_prob.keys():
                 ans_for_prob[i] = []
 
-            current_prediction =  clf.predict_proba(X_test[i].reshape(1, -1))
+            current_prediction = clf.predict_proba(X_test[i].reshape(1, -1))
             # print str(current_prediction[0][0]) + " " + str(current_prediction[0][1]) + '\t' + str(y_test[i]
             # y_predictions.append(current_prediction[0][1])
             preds_for_prob[i][c] = float(current_prediction[0][1]) #class 1 confidence i.e confidence for category c

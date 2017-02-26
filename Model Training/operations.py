@@ -5,13 +5,15 @@ from sklearn.metrics import precision_recall_fscore_support
 from sklearn.exceptions import ConvergenceWarning
 import numpy as np
 import pandas
-import sys, pickle
-
+import sys
+import os
+import pickle
+import operator
 import warnings
 from generate_dataset import generate, generateLazyLoad
 sys.path.append('Utilities/')
 sys.path.append('../hyperopt-sklearn')
-from constants import categories, performance_metric_keys, ClassifierType, allClassifierTypes,\
+from constants import performance_metric_keys, ClassifierType, allClassifierTypes,\
                 problemOrCategoryKeys, PlatformType,\
                 onlyNonHyperClassifiers, onlyHyperClassifiers, PlatformType, Metrics
 from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
@@ -154,8 +156,8 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash):
     print "recall : " + str(performance_metrics[performance_metric_keys['recall']])
     print "fscore : " + str(performance_metrics[performance_metric_keys['fscore']])
 
-    with open('model/' + PlatformType.platformString[platform] + '_' + category
-                      + '_' + ClassifierType.classifierTypeString[classifier] + '.pickle', 'w') as f:
+    with open('model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
+                      + category + '.pickle', 'w') as f:
         pickle.dump(clf, f)
 
     return Metrics(category=category, truePositive=count_metrics['tp'], trueNegative=count_metrics['tn'],
@@ -165,21 +167,57 @@ def train_for_categoryModel1(category, classifier, platform, dataFileNamesHash):
                    fScore=performance_metrics[performance_metric_keys['fscore']],
                    bias=bias, variance=variance, irreducibleError=irreducibleError, totalError=totalError)
 
-def write_performance_matrix(category, count_metrics, performance_metrics,
-                             bias, variance, totalError, irreducibleError, isPositiveBased=True, metricsFileName=''):
-    index = 1 if isPositiveBased else 0
-    with open(metricsFileName, 'a') as f:
-        f.write(category
-            + ',' + str(count_metrics['tp'])
-            + ',' + str(count_metrics['fp'])
-            + ',' + str(count_metrics['tn'])
-            + ',' + str(count_metrics['fn'])
-            + ',' + str(performance_metrics[performance_metric_keys['precision']][index])
-            + ',' + str(performance_metrics[performance_metric_keys['recall']][index])
-            + ',' + str(performance_metrics[performance_metric_keys['fscore']][index])
-            + ',' + str(bias)
-            + ',' + str(variance)
-            + ',' + str(totalError)
-            + ',' + str(irreducibleError))
-        f.write('\n')
 
+def get_accuracy(categories, classifier, dataFileNamesHash, useIntegrated=True, platform=PlatformType.Default, modelNumber=1):
+    preds_for_prob = {}
+    ans_for_prob = {}
+
+    for category in categories:
+        if not os.path.isfile('data/' + category + '/' + dataFileNamesHash + '_dataset.csv'):
+            generateLazyLoad(useIntegrated=useIntegrated, category=category, platform=platform,
+                             dataFilesNameHash=(dataFileNamesHash + '_' + category), shouldShuffle=False)
+        df = pandas.read_csv('data/' + category + '/' + dataFileNamesHash + '_dataset.csv')
+        X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
+        y = np.array(df['class']).astype(int)
+
+        X_test = X[-int(len(X) * test_size):]
+        y_test = y[-int(len(y) * test_size):]
+
+        if not os.path.isfile('model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
+                      + category + '.pickle'):
+            train_for_categoryModel1(category=category, classifier=classifier, platform=platform,
+                                     dataFileNamesHash=dataFileNamesHash)
+
+        with open('model/' + dataFileNamesHash + '_' + ClassifierType.classifierTypeString[classifier]
+                      + category + '.pickle') as f:
+            clf = pickle.load(f)
+
+        # y_predictions = []
+        for i in range(len(X_test)):
+
+            if i not in preds_for_prob.keys():
+                preds_for_prob[i] = {}
+
+            if i not in ans_for_prob.keys():
+                ans_for_prob[i] = []
+
+            current_prediction = clf.predict_proba(X_test[i].reshape(1, -1))
+            # print str(current_prediction[0][0]) + " " + str(current_prediction[0][1]) + '\t' + str(y_test[i]
+            # y_predictions.append(current_prediction[0][1])
+            preds_for_prob[i][category] = float(current_prediction[0][1])  # class 1 confidence i.e confidence for category c
+
+            if y_test[i] == 1:
+                ans_for_prob[i].append(category)
+
+    correct = 0
+    for i in range(len(X_test)):
+        sorted_category_perc = sorted(preds_for_prob[i].items(), key=operator.itemgetter(1))
+        sorted_category_perc.reverse()  # desc
+
+        for j in range(3):
+            if sorted_category_perc[j][0] in ans_for_prob[i]:
+                correct += 1
+                print (sorted_category_perc[j][0] + " => " + str(ans_for_prob[i]))
+                break
+
+    print('accuracy = ' + str(correct * 1.0 / len(X_test)))

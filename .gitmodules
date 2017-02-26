@@ -1,0 +1,3 @@
+[submodule "hyperopt-sklearn"]
+	path = hyperopt-sklearn
+	url = https://github.com/hyperopt/hyperopt-sklearn.git

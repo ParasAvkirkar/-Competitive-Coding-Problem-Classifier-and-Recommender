@@ -10,13 +10,13 @@ from constants import categories, performance_metric_keys, ClassifierType, allCl
     PlatformType
 
 
-def get_num_of_top_words_as_feature():
+def get_num_of_top_words_as_feature(dataFilesNameHash):
     try:
-        with open('num_of_top_words_as_feature.pickle') as f:
+        with open(dataFilesNameHash+'_num_of_top_words_as_feature.pickle') as f:
             num_of_top_words_as_feature = pickle.load(f)
             # print "\n\n\n\n num_of_top_words_as_feature = " + str(num_of_top_words_as_feature) + "\n\n\n\n"
     except:
-        with open('num_of_top_words_as_feature.pickle', 'w+b') as f:
+        with open(dataFilesNameHash+'_num_of_top_words_as_feature.pickle') as f:
             num_of_top_words_as_feature = 10
             pickle.dump(num_of_top_words_as_feature, f)
             # print "\n\n\n\n exception in num of top words as feature, using default size of 10\n\n\n\n"
@@ -24,10 +24,10 @@ def get_num_of_top_words_as_feature():
     return num_of_top_words_as_feature
 
 
-def make_csv_files(category, sorted_perc, word_count, percentages, dataFileNamesHash):
+def make_csv_files(category, sorted_perc, word_count, percentages, dataFilesNameHash):
     num_of_top_words_as_feature = get_num_of_top_words_as_feature()
 
-    with open('data/' + category + '/' + '20feature_word_all_data_' + dataFileNamesHash + '.csv', 'w') as f:
+    with open('data/' + category + '/' + '20feature_word_all_data_' + dataFilesNameHash + '.csv', 'w') as f:
         for w in sorted_perc[:num_of_top_words_as_feature]:
             # print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
             #     word_count[w[0]]['total'])
@@ -43,7 +43,7 @@ def make_csv_files(category, sorted_perc, word_count, percentages, dataFileNames
                 word_count[w[0]]['total']))
             f.write('\n')
 
-    with open('data/' + category + '/' + '20feature_word_all_data_' + dataFileNamesHash + '.csv', 'w') as f:
+    with open('data/' + category + '/' + '20feature_word_all_data_' + dataFilesNameHash + '.csv', 'w') as f:
         for w in sorted_perc[:num_of_top_words_as_feature]:
             # word name
             f.write(w[0] + ",")
@@ -64,17 +64,17 @@ def make_csv_files(category, sorted_perc, word_count, percentages, dataFileNames
             f.write(str(w[1]) + ",")
         f.write('\n')
 
-    with open('data/' + category + '/' + 'word_table_' + dataFileNamesHash + '.csv', 'w') as f:
+    with open('data/' + category + '/' + 'word_table_' + dataFilesNameHash + '.csv', 'w') as f:
         for w in word_count:
             f.write(w + "," + str(word_count[w]['yes']) + "," + str(word_count[w]['no']) + "," + str(
                 word_count[w]['total']) + "," + str(percentages[w]))
             f.write('\n')
 
 
-def write_dataset(category, sorted_perc, data, dataFileNamesHash):
+def write_dataset(category, sorted_perc, data, dataFilesNameHash):
     num_of_top_words_as_feature = get_num_of_top_words_as_feature()
 
-    with open('data/' + category + '/' + dataFileNamesHash + '_dataset.csv', 'w') as f:
+    with open('data/' + category + '/' + dataFilesNameHash + '_dataset.csv', 'w') as f:
         f.write(','.join([x[0] for x in sorted_perc[:num_of_top_words_as_feature]]))
         # print ','.join([x[0] for x in sorted_perc[:num_of_top_words_as_feature]])
 
@@ -132,8 +132,8 @@ def prepare_dataset(sorted_perc, data, category, platform):
     return prepared_data
 
 
-def generate(isIntegrated, category, platform):
-    probs = get_all_probs_without_category_NA(isIntegrated, platform)
+def generate(useIntegrated, category, platform):
+    probs = get_all_probs_without_category_NA(useIntegrated, platform)
 
     test_size = 0.5  # default value
     # with open('test_size.pickle') as f:
@@ -158,7 +158,7 @@ def generate(isIntegrated, category, platform):
     write_dataset(category, sorted_perc, total_data, platform)
 
 
-def generateLazyLoad(useIntegrated, category, platform, dataFileNamesHash):
+def generateLazyLoad(useIntegrated, category, platform, dataFilesNameHash, shouldShuffle=True):
     probs = []
     if len(generateLazyLoad.probs) == 0:
         generateLazyLoad.probs = get_all_probs_without_category_NA(useIntegrated, platform)
@@ -182,8 +182,8 @@ def generateLazyLoad(useIntegrated, category, platform, dataFileNamesHash):
     [total_data.append(t) for t in prepared_train_data]
     [total_data.append(t) for t in prepared_test_data]
 
-    make_csv_files(category, sorted_perc, word_cnt_stats, percentages, dataFileNamesHash)
-    write_dataset(category, sorted_perc, total_data, dataFileNamesHash)
+    make_csv_files(category, sorted_perc, word_cnt_stats, percentages, dataFilesNameHash)
+    write_dataset(category, sorted_perc, total_data, dataFilesNameHash)
 
 
 generateLazyLoad.probs = []

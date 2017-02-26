@@ -5,8 +5,9 @@ sys.path.append('Utilities/')
 from constants import minimum_number_of_probs_inwhich_word_to_exist
 
 
-def train_test_split(probs, test_size):
-    random.shuffle(probs)
+def train_test_split(probs, test_size, shouldShuffle=True):
+    if shouldShuffle:
+        random.shuffle(probs)
 
     train_set = probs[ : -int(test_size*len(probs))]
     test_set = probs[-int(test_size*len(probs)) : ]
