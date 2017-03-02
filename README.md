@@ -7,7 +7,16 @@ Goals of the FYProject is
   (2) - For a user, it must be able to recommend best suitable problem for him/her based on the learning curve suitable to him/her
 
 Current Status:
-  In the training/testing phase of data in Goal 1
+  Goal 1 complete
+  Goal 2 in progress.....
 
 How to Build/Install?
- (To be completed...)
+ Take a clone of https://github.com/ParasAvkirkar/FYProject.git. 
+ Install Dependencies - nltk, sklearn, pickle
+ Open Google Chrome
+ Enter following link in address bar - chrome://extensions/
+ Check the "Developer Mode" box
+ Click on "Load Unpack Extension" button
+ Browse to <<Cloned Directory>>/Extension and press Enter
+ Go to any problem page of a website like Codechef or Codeforces
+ Click on the Extension, Voila!!! and you will find the *category of your problem
