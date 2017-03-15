@@ -5,11 +5,12 @@ defaultTestSize = 0.5
 
 categories = ['greedy', 'graph', 'tree', 'combinatorics', 'math', 'dp']
 
+codechefDifficultyLevels = ['easy', 'medium', 'hard']
 
 classifierTypes = ['KNN', 'SVM', 'DECISIONTREE', 'RANDOMFOREST', 'NAIVEBAYES',
                    'HPKNN', 'HPSVM', 'HPRANDOMFOREST', 'HYPERSKLEARN']
 
-problemOrCategoryKeys = {'problem': 1, 'category': 2}
+problemOrCategoryKeys = {'category': 1, 'problem': 2}
 
 minimum_number_of_probs_inwhich_word_to_exist = 50
 performance_metric_keys = {'precision': 0, 'recall': 1, 'fscore': 2}
@@ -109,6 +110,13 @@ class Metrics:
                         + str(classifierMetricsMap[classifier])
                         + '\n')
             print('Metrics written to file: ' + metricsFileName)
+
+    @staticmethod
+    def writeBaggedMetrics(metricsFileName, accuracy):
+        with open(metricsFileName, 'w') as f:
+            f.write('accuracy,'+str(accuracy)+'\n')
+            print('Metrics written to file: ' + metricsFileName)
+
 
     def __str__(self):
         return ''

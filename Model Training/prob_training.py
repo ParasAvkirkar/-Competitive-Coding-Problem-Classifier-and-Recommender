@@ -1,30 +1,27 @@
-from sklearn import neighbors, svm, tree
-from sklearn.naive_bayes import GaussianNB
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import precision_recall_fscore_support
-# from sklearn.exceptions import ConvergenceWarning
-import numpy as np
-import pandas
 import sys, pickle
-import warnings
-from generate_dataset import generate, generateLazyLoad, generateLazyLoadForModel2
+from generate_problems_dataset import generate, generateLazyLoad, generateLazyLoadForModel2
 
 sys.path.append('Utilities/')
 sys.path.append('../hyperopt-sklearn/')
 from constants import categories, performance_metric_keys, ClassifierType, problemOrCategoryKeys, \
     PlatformType, Metrics, defaultTestSize
 
-from operations import train_for_categoryModel1, get_accuracy, train_for_categoryModel2
+from prob_train_operations import train_for_categoryModel1, get_accuracy, train_for_categoryModel2, baggingBasedTraining
 
 
 def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCategoryWise=problemOrCategoryKeys['problem'],
-              modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=defaultTestSize):
+              modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=defaultTestSize, shouldBag=False):
     if useIntegrate:
         platform = PlatformType.Default
     uniqueFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model0")\
-                            + '_' + ("catWise" if problemOrCategoryWise is 1 else "probWise")
+                            + '_' + ("catWise" if problemOrCategoryWise is 1 else "probWise") +\
+                           "_" + ("bag" if shouldBag else "notBag")
     metricsFileName = uniqueFileConvention + '_' + str(test_size) + '_metrics.csv'
-    if problemOrCategoryWise == problemOrCategoryKeys['problem']:
+    if shouldBag:
+        accuracy = baggingBasedTraining(categories, mlAlgos, uniqueFileConvention, useIntegrated=True,
+                            platform=PlatformType.Default, modelNumber=modelNumber, test_size=test_size)
+        Metrics.writeBaggedMetrics(metricsFileName, accuracy)
+    elif problemOrCategoryWise == problemOrCategoryKeys['category']:
         classifierMetricsMap = {}
         for classifier in mlAlgos:
             print('CLASSIFICATION USING '+ ClassifierType.classifierTypeString[classifier])
@@ -64,21 +61,25 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
 
 if __name__ == '__main__':
 
-    # test_sizeList = [0.1, 0.2, 0.3, 0.4, 0.5]
-    test_sizeList = []
+    test_sizeList = [0.1, 0.2, 0.3, 0.4, 0.5]
     for test_size in test_sizeList:
-        trainData(useIntegrate=True, problemOrCategoryWise=1, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-        trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=1, modelNumber=1,
-                  mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-        trainData(useIntegrate=False, platform=PlatformType.Codeforces, problemOrCategoryWise=1, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
+        trainData(useIntegrate=True, platform=PlatformType.Default, problemOrCategoryWise=problemOrCategoryKeys['category'],
+                  modelNumber=1, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=test_size, shouldBag=True)
 
-        trainData(useIntegrate=True, problemOrCategoryWise=2, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-        trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=2,
-                  modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-        trainData(useIntegrate=False, platform=PlatformType.Codeforces, problemOrCategoryWise=2,
-                  modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-
-    # trainData(useIntegrate=True, platform=PlatformType.Codechef, problemOrCategoryWise=2, modelNumber=1, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2)
-    trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=1, modelNumber=2, mlAlgos=ClassifierType.onlyNonHyperClassifiers[:1], test_size=0.5)
+    # test_sizeList = []
+    # for test_size in test_sizeList:
+    #     trainData(useIntegrate=True, problemOrCategoryWise=1, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
+    #     trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=1, modelNumber=1,
+    #               mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
+    #     trainData(useIntegrate=False, platform=PlatformType.Codeforces, problemOrCategoryWise=1, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
+    #
+    #     trainData(useIntegrate=True, problemOrCategoryWise=2, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
+    #     trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=2,
+    #               modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
+    #     trainData(useIntegrate=False, platform=PlatformType.Codeforces, problemOrCategoryWise=2,
+    #               modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
+    #
+    # trainData(useIntegrate=True, problemOrCategoryWise=2, modelNumber=1, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2)
+    # trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=1, modelNumber=2, mlAlgos=ClassifierType.onlyNonHyperClassifiers[:1], test_size=0.5)
     # trainData(False, platform=PlatformType.Codeforces, problemOrCategoryWise=1, modelNumber=2, mlAlgos=[ClassifierType.onlyNonHyperClassifiers[0]])
 
