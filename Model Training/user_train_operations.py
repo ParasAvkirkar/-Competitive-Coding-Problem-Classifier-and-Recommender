@@ -16,32 +16,58 @@ sys.path.append('../hyperopt-sklearn')
 from constants import categories, performance_metric_keys, ClusterMethod, \
     PlatformType, Metrics, defaultTestSize
 
-def build_user_clusters(users_X, clusteringMethod=ClusterMethod.KMeans):
 
+def build_user_clusters(users_X, clusteringMethod=ClusterMethod.KMeans):
     mlAlgo = None
     if clusteringMethod == ClusterMethod.KMeans:
-        mlAlgo = KMeans(n_clusters=7, random_state=0)
+        mlAlgo = KMeans(n_clusters = 7, random_state = 0)
 
     mlAlgo = mlAlgo.fit(users_X)
     return mlAlgo
 
-def build_recommendation_list_for_users(usersClusterMap):
-   for label in usersClusterMap:
-       userList = usersClusterMap[label]
-       for user in userList:
-           user.calculate_user_level()
-           print(user.uname + ' ' + str(len(user.failed_probs)) + ' ' + str(len(user.solved_probs)))
-           if len(user.failed_probs) == 0 and len(user.solved_probs) > 0:
-               # for category in user.categoryDifficultyMap:
-               #     for level in user.categoryDifficultyMap[category]:
-               #          pass
-               print(user.uname + ' Level: ' + str(user.user_level))
-       userList.sort(key=lambda x: x.user_level, reverse=True)
 
-       #print(str(userList))
-       usersClusterMap[label] = userList
+def build_recommendation_list_for_users(usersClusterMap, probs):
+    probDict = {}
+    for prob in probs:
+        probDict[prob.prob_code] = prob
 
-def process_users(uniqueFileConvention, users, platform=PlatformType.Codechef, clusteringMethod=ClusterMethod.KMeans, test_size=0.2):
+    for label in usersClusterMap:
+        userList = usersClusterMap[label]
+        for user in userList:
+            user.calculate_user_level()
+            print(user.uname + ' ' + str(len(user.failed_probs)) + ' ' + str(len(user.solved_probs)))
+            if len(user.failed_probs) == 0 and len(user.solved_probs) > 0:
+                print(user.uname + ' Level: ' + str(user.user_level))
+
+        userList.sort(key = lambda x: x.user_level, reverse = True)
+        # print(userList)
+
+    for label in usersClusterMap:
+        userList = usersClusterMap[label]
+
+        probsSolvedUntilCurrentLevelUser = []
+        generalUsersStartIndex = int(len(userList) * 0.1) + 1
+        for i in range(len(userList)):
+            tempDict = {}
+            if i >= generalUsersStartIndex:
+                for probCode in probsSolvedUntilCurrentLevelUser:
+                    if probCode not in userList[i].solved_probs:
+                        tempDict[probCode] = probDict[probCode].get_problem_level()
+
+                        tempDict = dict(sorted(tempDict.items(), key=operator.itemgetter(1), reverse=True))
+                # print(str(tempDict))
+            for probCode in tempDict:
+                userList[i].recommendation_list.append(probCode)
+            # print(str(userList[i].recommendation_list))
+
+            for probCode in userList[i].solved_probs:
+                probsSolvedUntilCurrentLevelUser.append(probCode)
+
+        usersClusterMap[label] = userList
+        return usersClusterMap
+
+def process_users(uniqueFileConvention, users, probs, platform=PlatformType.Codechef,
+                  clusteringMethod=ClusterMethod.KMeans, test_size=0.2):
     df = pandas.read_csv(uniqueFileConvention + '_dataset.csv')
     X = np.array(df.drop(['uname'], 1)).astype(float)
     print(X.shape)
@@ -66,8 +92,12 @@ def process_users(uniqueFileConvention, users, platform=PlatformType.Codechef, c
             usersClusterMap[label] = userList
         index += 1
 
-    build_recommendation_list_for_users(usersClusterMap)
+    usersClusterMap = build_recommendation_list_for_users(usersClusterMap, probs)
+    usersToBeWrittenOnPickle = []
+    for label in usersClusterMap:
+        usersList = usersClusterMap[label]
+        usersToBeWrittenOnPickle = usersToBeWrittenOnPickle + usersList
 
-
-
-
+    with open(uniqueFileConvention + '_orm.pickle', 'wb') as f:
+        print('Dumping ' + uniqueFileConvention + '_orm.pickle')
+        pickle.dump(usersToBeWrittenOnPickle, f)
