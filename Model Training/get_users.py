@@ -51,7 +51,7 @@ def get_codechef_users():
                 userNameToObjects[map.uname] = user
             elif str(e) in map.uname:
                 errorMsg = 'A user in problem map exists whose row is not present in user table '\
-                           + str(map.uname) + ' '  + str(e)
+                           + str(map.uname) + ' ' + str(e)
             else:
                 errorMsg = 'Difficulty was empty in problem table ' + str(map.prob_code) + ' ' + str(e)
                 user.failed_probs[map.prob_code] = map.no_of_submissions

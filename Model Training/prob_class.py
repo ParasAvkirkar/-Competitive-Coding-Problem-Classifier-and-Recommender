@@ -1,6 +1,11 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
+import sys
+sys.path.append('Utilities/')
+
+from constants import codechefDifficultyLevels
+
 Base = declarative_base()
 
 class Integrated_Problem(Base):
@@ -39,6 +44,9 @@ class Codechef_Problem(Base):
     time_limit = Column('time_limit', String)
     source_limit = Column('source_limit', String)
     modified_description = Column('modified_description', String)
+
+    def get_problem_level(self):
+        return codechefDifficultyLevels[self.difficulty]
 
     def __repr__(self):
         return str(self.id) + " " + self.prob_code + " " + self.category
