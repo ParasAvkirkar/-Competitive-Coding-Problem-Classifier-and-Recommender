@@ -8,6 +8,7 @@ from constants import categories, codechefDifficultyLevels
 
 Base = declarative_base()
 
+
 class Codechef_User(Base):
     __tablename__ = 'codechef_user'
 
@@ -39,14 +40,29 @@ class Codechef_User(Base):
         # It contains category as key, whose values is another map
         # This map has difficulty as key and value as list of attempts taken to solve that problem
         self.categoryDifficultyMap = {}
+        self.user_level = 0.0
+        self.solved_probs = {}
+        self.failed_probs = {}
+        self.recommendation_list = []
+
         for category in categories:
             levelDict = {}
             for level in codechefDifficultyLevels:
                 levelDict[level] = []
             self.categoryDifficultyMap[category] = levelDict
 
+    # Applicable only when categoryDifficultyMap is filled
+    # Generally this method is expected to be called after building categoryDifficultyMap from database
+    def calculate_user_level(self):
+        for category in self.categoryDifficultyMap:
+            levelDict = self.categoryDifficultyMap[category]
+            for level in codechefDifficultyLevels:
+                probs_solved_in_current_level = len(levelDict[level])
+                self.user_level += probs_solved_in_current_level * codechefDifficultyLevels[level]
+
     def __repr__(self):
-        return str(self.id) + " " + self.uname
+        return str(self.id) + " " + self.uname + " " + str(self.user_level)
+
 
 class Codechef_User_Prob_Map(Base):
     __tablename__ = 'codechef_prob_user_map'

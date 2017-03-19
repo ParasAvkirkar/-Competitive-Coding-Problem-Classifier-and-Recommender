@@ -5,7 +5,8 @@ defaultTestSize = 0.5
 
 categories = ['greedy', 'graph', 'tree', 'combinatorics', 'math', 'dp']
 
-codechefDifficultyLevels = ['easy', 'medium', 'hard']
+# For each level in codechef, we had defined weights for that level
+codechefDifficultyLevels = {'easy':1, 'medium':1000, 'hard':1000000}
 
 classifierTypes = ['KNN', 'SVM', 'DECISIONTREE', 'RANDOMFOREST', 'NAIVEBAYES',
                    'HPKNN', 'HPSVM', 'HPRANDOMFOREST', 'HYPERSKLEARN']
@@ -23,6 +24,12 @@ class PlatformType:
     Spoj = 3
     platformString = {Default: 'integrated', Codechef: 'codechef', Codeforces: 'codeforces', Spoj: 'spoj'}
 
+
+class ClusterMethod:
+    KMeans = 1
+
+    allClusteringMethods = [KMeans]
+    clusterMethodString = {KMeans: 'KMeans'}
 
 class ClassifierType:
     KNN = 1
