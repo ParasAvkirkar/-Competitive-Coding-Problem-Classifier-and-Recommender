@@ -5,13 +5,12 @@ import pickle
 import sys, csv, os, random
 
 sys.path.append('Utilities/')
-from constants import categories, performance_metric_keys, ClassifierType, problemOrCategoryKeys, \
-    PlatformType, defaultTestSize
+from constants import categories, codechefDifficultyLevels, PlatformType, defaultTestSize
 from get_users import get_codechef_users
 from user_class import Codechef_User
 
 
-def generate(uniqueFileConvention, platform=PlatformType.Codechef):
+def generateLazyLoad(uniqueFileConvention, platform=PlatformType.Codechef):
     if platform == PlatformType.Codechef:
         users = None
         if not os.path.isfile(uniqueFileConvention + '_orm.pickle'):
@@ -25,12 +24,18 @@ def generate(uniqueFileConvention, platform=PlatformType.Codechef):
                 print('Loading from ' + uniqueFileConvention + '_orm.pickle')
                 users = pickle.load(f)
 
-        write_dataset(uniqueFileConvention, users)
+        write_dataset(uniqueFileConvention, users, platform)
+        return users
 
 
-def write_dataset(uniqueFileConvention, users):
+def write_dataset(uniqueFileConvention, users, platform=PlatformType.Codechef):
     print('Writing dataset')
     with open(uniqueFileConvention + '_dataset.csv', 'w') as f:
+        f.write('uname')
+        for category in categories:
+            for level in codechefDifficultyLevels:
+                f.write(',' + category + '_' + level)
+        f.write('\n')
         for user in users:
             f.write(user.uname)
             for category in user.categoryDifficultyMap:
