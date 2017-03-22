@@ -51,8 +51,8 @@ def calculateIrreducibleError(fX, fCapX):
     return calculateTotalError(fX, fCapX) - (calculateBias(fX, fCapX) ** 2) - calculateVariance(fX, fCapX)
 
 
-def train_for_categoryModel1(category, classifier, uniqueFileConvention, test_size=defaultTestSize):
-    dataFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)
+def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFileConvention, test_size=defaultTestSize):
+    dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
     modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)\
                           + '_' + ClassifierType.classifierTypeString[classifier]
     df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
@@ -176,8 +176,8 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, test_si
                    bias=bias, variance=variance, irreducibleError=irreducibleError, totalError=totalError)
 
 
-def train_for_categoryModel2(category, classifier, uniqueFileConvention, test_size=defaultTestSize):
-    dataFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)
+def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFileConvention, test_size=defaultTestSize):
+    dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
     modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)\
                           + '_' + ClassifierType.classifierTypeString[classifier]
     df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
