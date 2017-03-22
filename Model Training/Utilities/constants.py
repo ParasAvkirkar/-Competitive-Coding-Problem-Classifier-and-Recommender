@@ -77,6 +77,9 @@ class Metrics:
         self.isValid = isValid
         self.invalidityMessage = invalidityMessage
 
+    def __str__(self):
+        return 'Precision: '+str(self.precision[1]) + ' Recall: ' + str(self.recall[1]) + ' F1:' + str(self.fScore[1])
+
     @staticmethod
     def writeMultipleMetics(metricsFileName, classifierMetricsMap, isPositiveBased=True):
         performanceMetricIndex = 1 if isPositiveBased else 0

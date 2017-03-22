@@ -16,6 +16,7 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
     uniqueFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model0")\
                             + '_' + ("catWise" if problemOrCategoryWise is 1 else "probWise") +\
                            "_" + ("bag" if shouldBag else "notBag")
+    dataFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model0")
     metricsFileName = uniqueFileConvention + '_' + str(test_size) + '_metrics.csv'
     if shouldBag:
         accuracy = baggingBasedTraining(categories, mlAlgos, uniqueFileConvention, useIntegrated=True,
@@ -29,15 +30,21 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
             for category in categories:
                 print("Processing for category: "+category)
                 if modelNumber == 1:
-                    generateLazyLoad(useIntegrate, category, platform, uniqueFileConvention, test_size=test_size)
-                    m = train_for_categoryModel1(category, classifier, uniqueFileConvention, test_size=test_size)
+                    generateLazyLoad(useIntegrate, category, platform, uniqueFileConvention, dataFileConvention, test_size=test_size)
+                    m = train_for_categoryModel1(category, classifier, uniqueFileConvention,
+                                                 dataFileConvention, test_size=test_size)
                 elif modelNumber == 2:
+                    print('Test size: '+str(test_size))
                     generateLazyLoadForModel2(useIntegrate, category, platform, uniqueFileConvention,
-                                              test_size=defaultTestSize)
-                    m = train_for_categoryModel2(category, classifier, uniqueFileConvention, test_size=defaultTestSize)
-
+                                              dataFileConvention, test_size=test_size)
+                    m = train_for_categoryModel2(category, classifier, uniqueFileConvention,
+                                                 dataFileConvention, test_size=test_size)
                 metricsList.append(m)
                 print("================ CATEGORY OVER ================")
+                if m.isValid:
+                    print('Metrics: ' + str(m.precision[1]) + ' ' + str(m.recall[1]) + ' ' + str(m.fScore[1]))
+                else:
+                    print('Metrics invalid')
 
             classifierMetricsMap[classifier] = metricsList
             print("================ CLASSIFIER OVER ================")
@@ -62,9 +69,16 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
 if __name__ == '__main__':
 
     test_sizeList = [0.1, 0.2, 0.3, 0.4, 0.5]
-    for test_size in test_sizeList:
-        trainData(useIntegrate=True, platform=PlatformType.Default, problemOrCategoryWise=problemOrCategoryKeys['category'],
-                  modelNumber=1, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=test_size, shouldBag=True)
+    trainData(useIntegrate = True, platform =  PlatformType.Default, problemOrCategoryWise=1,
+              modelNumber=2, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2, shouldBag=False)
+
+    trainData(useIntegrate = True, platform = PlatformType.Default, problemOrCategoryWise = 1,
+              modelNumber = 1, mlAlgos = ClassifierType.onlyNonHyperClassifiers, test_size = 0.2, shouldBag = False)
+
+
+    # for test_size in test_sizeList:
+    #     trainData(useIntegrate=True, platform=PlatformType.Default, problemOrCategoryWise=problemOrCategoryKeys['category'],
+    #               modelNumber=1, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=test_size, shouldBag=True)
 
     # test_sizeList = []
     # for test_size in test_sizeList:

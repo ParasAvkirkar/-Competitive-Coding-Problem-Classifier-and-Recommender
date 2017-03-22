@@ -68,6 +68,9 @@ def build_recommendation_list_for_users(usersClusterMap, probs):
 
 def process_users(uniqueFileConvention, users, probs, platform=PlatformType.Codechef,
                   clusteringMethod=ClusterMethod.KMeans, test_size=0.2):
+    dataFileConvention = uniqueFileConvention + '_' + Platform.platformString[platform]\
+                         + '_' + ClusterMethod.clusterMethodString[clusteringMethod]
+
     df = pandas.read_csv(uniqueFileConvention + '_dataset.csv')
     X = np.array(df.drop(['uname'], 1)).astype(float)
     print(X.shape)
@@ -98,6 +101,6 @@ def process_users(uniqueFileConvention, users, probs, platform=PlatformType.Code
         usersList = usersClusterMap[label]
         usersToBeWrittenOnPickle = usersToBeWrittenOnPickle + usersList
 
-    with open(uniqueFileConvention + '_orm.pickle', 'wb') as f:
+    with open(dataFileConvention + '_orm.pickle', 'wb') as f:
         print('Dumping ' + uniqueFileConvention + '_orm.pickle')
         pickle.dump(usersToBeWrittenOnPickle, f)
