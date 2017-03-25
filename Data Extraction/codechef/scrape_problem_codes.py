@@ -6,7 +6,7 @@ import os
 import logging
 import sys
 import datetime
-import winsound
+# import winsound
 from itertools import izip
 import csv
 
@@ -61,4 +61,4 @@ except Exception as e:
 	print 'Exception at line '+ str(exc_tb.tb_lineno)
 	logging.error('Time: {0} File: {1} Line: {2} Caused By: {3} Problem href: {4}'.format(datetime.datetime.now(), os.path.basename(__file__),
 					exc_tb.tb_lineno, e, prob_href))
-	winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+	# winsound.PlaySound("SystemExit", winsound.SND_ALIAS)

@@ -12,4 +12,4 @@ if __name__ == '__main__':
     uniqueFileConvention = 'users_codechef'
     users = generateLazyLoad(uniqueFileConvention, PlatformType.Codechef)
     probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef)
-    process_users(uniqueFileConvention, users, probs, PlatformType.Codechef, ClusterMethod.KMeans)
+    # process_users(uniqueFileConvention, users, probs, PlatformType.Codechef, ClusterMethod.KMeans)

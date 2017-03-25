@@ -376,8 +376,7 @@ def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=Tru
     return accuracy
 
 
-def baggingBasedTraining(categories, classifiers, uniqueFileConvention, useIntegrated=True, platform=PlatformType.Default,
-                 modelNumber=1, test_size=defaultTestSize):
+def baggingBasedTraining(categories, classifiers, uniqueFileConvention, useIntegrated=True, platform=PlatformType.Default, test_size=defaultTestSize):
 
     globalPredsForProblem = {}
     for classifier in classifiers:

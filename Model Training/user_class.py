@@ -44,6 +44,7 @@ class Codechef_User(Base):
         self.solved_probs = {}
         self.failed_probs = {}
         self.recommendation_list = []
+        self.problemMappings = {}
 
         for category in categories:
             levelDict = {}
