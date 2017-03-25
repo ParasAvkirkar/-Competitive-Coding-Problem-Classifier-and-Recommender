@@ -1978,3 +1978,5 @@ ERROR:root:Time: 2016-12-16 18:35:54.388000 File: problems.py Line: 116 Caused B
 ERROR:root:2016-12-16 18:35:54.389000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
 ERROR:root:Time: 2016-12-16 18:36:31.731000 File: problems.py Line: 116 Caused By: 'charmap' codec can't encode character u'\u2264' in position 1363: character maps to <undefined>  Problem Name: BASE
 ERROR:root:2016-12-16 18:36:31.732000 :File Name: sqlDB.pyc :Line Number: 11 :Caused By: [Errno 2] No such file or directory: 'dbINFO.txt'
+ERROR:root:Time: 2017-03-23 23:08:00.077240 File: scrape_problem_codes.py Line: 21 Caused By: [Errno 2] No such file or directory: 'current_progress_prob_code.pickle'
+ERROR:root:Time: 2017-03-23 23:57:01.947458 File: scrape_problem_codes.py Line: 23 Caused By: list index out of range

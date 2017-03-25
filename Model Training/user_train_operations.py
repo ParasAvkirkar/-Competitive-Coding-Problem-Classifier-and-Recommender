@@ -104,3 +104,6 @@ def process_users(uniqueFileConvention, users, probs, platform=PlatformType.Code
     with open(dataFileConvention + '_orm.pickle', 'wb') as f:
         print('Dumping ' + uniqueFileConvention + '_orm.pickle')
         pickle.dump(usersToBeWrittenOnPickle, f)
+
+def define_categorywise_difficulty_rations():
+    pass

@@ -13,10 +13,10 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
               modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=defaultTestSize, shouldBag=False):
     if useIntegrate:
         platform = PlatformType.Default
-    uniqueFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model0")\
+    uniqueFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")\
                             + '_' + ("catWise" if problemOrCategoryWise is 1 else "probWise") +\
                            "_" + ("bag" if shouldBag else "notBag")
-    dataFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model0")
+    dataFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")
     metricsFileName = uniqueFileConvention + '_' + str(test_size) + '_metrics.csv'
     if shouldBag:
         accuracy = baggingBasedTraining(categories, mlAlgos, uniqueFileConvention, useIntegrated=True,
@@ -71,29 +71,12 @@ if __name__ == '__main__':
     test_sizeList = [0.1, 0.2, 0.3, 0.4, 0.5]
     trainData(useIntegrate = True, platform =  PlatformType.Default, problemOrCategoryWise=1,
               modelNumber=2, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2, shouldBag=False)
-
-    trainData(useIntegrate = True, platform = PlatformType.Default, problemOrCategoryWise = 1,
-              modelNumber = 1, mlAlgos = ClassifierType.onlyNonHyperClassifiers, test_size = 0.2, shouldBag = False)
-
-
-    # for test_size in test_sizeList:
-    #     trainData(useIntegrate=True, platform=PlatformType.Default, problemOrCategoryWise=problemOrCategoryKeys['category'],
-    #               modelNumber=1, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=test_size, shouldBag=True)
-
-    # test_sizeList = []
-    # for test_size in test_sizeList:
-    #     trainData(useIntegrate=True, problemOrCategoryWise=1, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-    #     trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=1, modelNumber=1,
-    #               mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-    #     trainData(useIntegrate=False, platform=PlatformType.Codeforces, problemOrCategoryWise=1, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-    #
-    #     trainData(useIntegrate=True, problemOrCategoryWise=2, modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-    #     trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=2,
-    #               modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-    #     trainData(useIntegrate=False, platform=PlatformType.Codeforces, problemOrCategoryWise=2,
-    #               modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=test_size)
-    #
-    # trainData(useIntegrate=True, problemOrCategoryWise=2, modelNumber=1, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2)
-    # trainData(useIntegrate=False, platform=PlatformType.Codechef, problemOrCategoryWise=1, modelNumber=2, mlAlgos=ClassifierType.onlyNonHyperClassifiers[:1], test_size=0.5)
-    # trainData(False, platform=PlatformType.Codeforces, problemOrCategoryWise=1, modelNumber=2, mlAlgos=[ClassifierType.onlyNonHyperClassifiers[0]])
-
+    platform = PlatformType.Default
+    modelNumber = 1
+    problemOrCategoryWise = 1
+    shouldBag = True
+    uniqueFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")\
+                            + '_' + ("catWise" if problemOrCategoryWise is 1 else "probWise") +\
+                           "_" + ("bag" if shouldBag else "notBag")
+    dataFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")
+    metricsFileName = uniqueFileConvention + '_' + str(test_size) + '_metrics.csv'

@@ -180,7 +180,12 @@ def generateLazyLoad(useIntegrated, category, platform, uniqueFileConvention, da
                      shouldShuffle=True, test_size=defaultTestSize):
     dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
     if os.path.isfile('data/' + category + '/' + dataFileConvention + '_dataset.csv'):
-        print(dataFileConvention + '_dataset.csv' + ' already generated')
+        print(dataFileConvention + '_dataset.csv' + ' already generated only shuffling right now')
+        with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'r') as f:
+            l = list(csv.reader(f))
+        random.shuffle(l)
+        with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'w') as f:
+            csv.writer(f).writerows(l)
         return
     print(dataFileConvention + '_dataset.csv' + ' not found')
     print(dataFileConvention + '_dataset.csv' + ' generating')
@@ -214,7 +219,12 @@ def generateLazyLoadForModel2(useIntegrated, category, platform, uniqueFileConve
                               test_size=defaultTestSize):
     dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
     if os.path.isfile('data/' + category + '/' + dataFileConvention + '_dataset.csv'):
-        print(dataFileConvention + '_dataset.csv' + ' already generated')
+        print(dataFileConvention + '_dataset.csv' + ' already generated only shuffling right now')
+        with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'r') as f:
+            l = list(csv.reader(f))
+        random.shuffle(l)
+        with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'w') as f:
+            csv.writer(f).writerows(l)
         return
     print(dataFileConvention + '_dataset.csv' + ' not found')
     print(dataFileConvention + '_dataset.csv' + ' generating')
@@ -223,13 +233,10 @@ def generateLazyLoadForModel2(useIntegrated, category, platform, uniqueFileConve
         generateLazyLoadForModel2.probs = get_all_probs_without_category_NA(useIntegrated, platform)
     probs = generateLazyLoadForModel2.probs
 
-    # with open('test_size.pickle') as f:
-    #     test_size = pickle.load(f)
     random.shuffle(probs)
     train_set = tuple([prob.modified_description for prob in probs])
 
     prob_class = []
-
     for prob in probs:
         prob_class.append(1.0 if category in prob.category else 0.0)
 
@@ -238,57 +245,97 @@ def generateLazyLoadForModel2(useIntegrated, category, platform, uniqueFileConve
     print 'Train Set Length: ' + str(len(train_set))
 
     timeStart = time.time()
-    count_vectorizer = CountVectorizer(stop_words = 'english')
-    count_vectorizer.fit_transform(train_set)
-    with open('data/' + dataFileConvention + '_countVectorizer.pickle', 'w+b') as f:
-        print("Dumping count vectorizer: " + 'data/' + dataFileConvention + '_countVectorizer.pickle')
-        pickle.dump(count_vectorizer, f)
 
-    freq_term_matrix = count_vectorizer.transform(train_set)
-    # print('Features:')
-    # print(str(count_vectorizer.vocabulary_))
-    # print('===================================================')
+    if os.path.isfile(PlatformType.platformString[platform] + '_tfidfMatrix_'+ '.pickle'):
+        print('Loading tfidf matrix from pickle')
+        with open(PlatformType.platformString[platform] + '_tfidfMatrix_'+ '.pickle', 'rb') as f:
+            tf_idf_matrix = pickle.load(f)
+    else:
+        print('Building tfidf matrix and dumping in pickle')
+        count_vectorizer = CountVectorizer(stop_words = 'english')
+        count_vectorizer.fit_transform(train_set)
+        freq_term_matrix = count_vectorizer.transform(train_set)
+        tfidf = TfidfTransformer(norm="l2")
+        tfidf.fit(freq_term_matrix)
+        tf_idf_matrix = tfidf.transform(freq_term_matrix)
+        with open(PlatformType.platformString[platform] + '_tfidfMatrix_' + '.pickle', 'wb') as f:
+            pickle.dump(tf_idf_matrix, f)
 
-    tfidf = TfidfTransformer(norm="l2")
-    tfidf.fit(freq_term_matrix)
-
-
-
-    with open('data/' + dataFileConvention + '_TfidfTransformer.pickle', 'w+b') as f:
-        print('Dumping tfidf transformer: ' + 'data/' + dataFileConvention + '_TfidfTransformer.pickle')
-        pickle.dump(tfidf, f)
-
-    np.set_printoptions(threshold = 'nan')
-    tf_idf_matrix = tfidf.transform(freq_term_matrix)
     # print(str(tf_idf_matrix))
     numpyAr = tf_idf_matrix.toarray()
-    
-    # print(str(numpyAr))
-    # print(str(tf_idf_matrix.todense()))
+    np.set_printoptions(threshold = 'nan')
     print 'Tfidf Feature Size: ' + str(len(numpyAr[0]) + 1)
+    list_of_features_needed = []
+    keepPercentage = 0.05
+
+    if os.path.isfile(PlatformType.platformString[platform]+'_list_of_features_aftertfidf_'+str(keepPercentage)+'.pickle'):
+        print('List of features after tfidf already found, reading from there')
+        with open(PlatformType.platformString[platform] + '_list_of_features_aftertfidf_' + str(keepPercentage) + '.pickle', 'rb') as f:
+            list_of_features_needed = pickle.load(f)
+    else:
+        print('Making List of features after tfidf and dumping as pickle')
+        for cat in categories:
+            list_of_features_needed = list_of_features_needed + get_categorywise_features(numpyAr, cat, probs, keepPercentage)
+
+        list_of_features_needed = list(set(list_of_features_needed))
+        list_of_features_needed.sort()
+        with open(PlatformType.platformString[platform]+'_list_of_features_aftertfidf_'+str(keepPercentage)+'.pickle', 'wb') as f:
+            pickle.dump(list_of_features_needed, f)
+
+    # print(str(list_of_features_needed))
+    numpyArrayList = []
+    for i in range(len(numpyAr)):
+        newRowList = []
+        for j in list_of_features_needed:
+            newRowList.append(numpyAr[i][j])
+        numpyArrayList = numpyArrayList + [np.array(newRowList)]
+    numpyAr = np.array(numpyArrayList)
+    print(numpyAr.shape)
 
     #Applying SVD to reduce features
-    svd = TruncatedSVD(int(0.1*len(numpyAr[0] + 1)))
-    lsa = make_pipeline(svd, Normalizer(copy = False))
-    reduced_lsa_features = lsa.fit_transform(tf_idf_matrix)
-    numpyAr = reduced_lsa_features
+    # svd = TruncatedSVD(int(0.1*len(numpyAr[0] + 1)))
+    # lsa = make_pipeline(svd, Normalizer(copy = False))
+    # reduced_lsa_features = lsa.fit_transform(tf_idf_matrix)
+    # numpyAr = reduced_lsa_features
+    #
     print 'Reduced Feature Size: ' + str(len(numpyAr[0]) + 1)
-    #print(str(reduced_lsa_features))
-    # print(str(numpyAr))
     print('Time taken for generating data: '+ str(time.time() - timeStart))
     if not os.path.exists('data/' + category):
         os.makedirs('data/' + category)
+    print('Currently on cat: '+str(category))
     with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'w') as f:
-        print('Writing' + 'data/' + category + '/' + dataFileConvention + '_dataset.csv')
+        print('Writing ' + 'data/' + category + '/' + dataFileConvention + '_dataset.csv')
         writer = csv.writer(f)
         i = 0
         for row in numpyAr:
             writer.writerow(list(row) + [prob_class[i]])
             i += 1
 
-
 generateLazyLoad.probs = []
 generateLazyLoadForModel2.probs = []
+
+def get_categorywise_features(numpyAr, category, probs, keepPercentage):
+    temp_numpy_arr = np.array([0.0 for i in range(len(numpyAr[0]))])
+    index = 0
+    for prob in probs:
+        if category in prob.category:
+            temp_numpy_arr = temp_numpy_arr + numpyAr[index]
+        index += 1
+    featureDict = {}
+    index = 0
+    for value in temp_numpy_arr:
+        featureDict[index] = value
+        index += 1
+    listOfSortedtuples = sorted(featureDict.items(), key = operator.itemgetter(1), reverse = True)
+    featureIndices = []
+    index = 0
+    for feature in listOfSortedtuples:
+        if index > keepPercentage*len(listOfSortedtuples):
+            break
+        featureIndices.append(feature[0])
+        index += 1
+
+    return featureIndices
 
 if __name__ == '__main__':
     pass

@@ -27,7 +27,6 @@ def generateLazyLoad(uniqueFileConvention, platform=PlatformType.Codechef):
         write_dataset(uniqueFileConvention, users, platform)
         return users
 
-
 def write_dataset(uniqueFileConvention, users, platform=PlatformType.Codechef):
     print('Writing dataset')
     with open(uniqueFileConvention + '_dataset.csv', 'w') as f:

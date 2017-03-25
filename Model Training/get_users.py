@@ -6,19 +6,25 @@ import datetime
 import logging
 import os
 import inspect
-
+import csv
 sys.path.append('Utilities/')
 
 from user_class import Codechef_User, Codechef_User_Prob_Map
 from get_probs import get_all_probs_without_category_NA
 from prob_class import Codechef_Problem
 from get_session import get_session, get_session_by_configuration
-from constants import PlatformType
+from constants import PlatformType, codechefDifficultyLevels
 
 logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 def get_codechef_users():
     s = get_session_by_configuration(useIntegrated=False)
+
+    probCodeToDifficulty = {}
+    with open('codechef_prob_diff.csv', 'r') as f:
+        reader = csv.reader(f)
+        for line in reader:
+            probCodeToDifficulty[line[0]] = line[1]
 
     probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef)
     probCodeToObjects = {}
@@ -34,28 +40,47 @@ def get_codechef_users():
     print('User name to object Map built')
     userProbMaps = s.query(Codechef_User_Prob_Map).filter()
     counter = 0.0
+    userNotPresentInProblemTable = 0
+    probNotPresentInProblemTable = 0
+    difficultyNotPresentInProblemTable = 0
     for map in userProbMaps:
         try:
             user = userNameToObjects[map.uname]
             prob = probCodeToObjects[map.prob_code]
             user.categoryDifficultyMap[prob.category][prob.difficulty].append(map.no_of_submissions)
             user.solved_probs[map.prob_code] = map.no_of_submissions
+            user.problemMappings[map.prob_code] = map
             userNameToObjects[map.uname] = user
         except KeyError as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             #print 'Exception at line ' + str(exc_tb.tb_lineno)
-            if str(e) in map.prob_code:
+            failedKey = str(e).replace("'", "")
+            if failedKey in str(map.prob_code):
                 errorMsg = 'A problem in problem map exists whose row is not present in problem table '\
-                           + str(map.prob_code) + ' ' + str(e)
+                           + str(map.prob_code) + ' ' + failedKey
                 user.failed_probs[map.prob_code] = map.no_of_submissions
                 userNameToObjects[map.uname] = user
-            elif str(e) in map.uname:
+                probNotPresentInProblemTable += 1
+            elif failedKey in map.uname:
                 errorMsg = 'A user in problem map exists whose row is not present in user table '\
-                           + str(map.uname) + ' ' + str(e)
+                           + str(map.uname) + ' ' + failedKey
+                userNotPresentInProblemTable += 1
             else:
-                errorMsg = 'Difficulty was empty in problem table ' + str(map.prob_code) + ' ' + str(e)
-                user.failed_probs[map.prob_code] = map.no_of_submissions
-                userNameToObjects[map.uname] = user
+                errorMsg = 'Difficulty was empty in problem table ' + str(map.prob_code) + ' ' + failedKey
+                if map.prob_code in probCodeToDifficulty:
+                    prob = probCodeToObjects[map.prob_code]
+                    difficulty = probCodeToDifficulty[map.prob_code]
+                    if difficulty in codechefDifficultyLevels:
+                        user.categoryDifficultyMap[prob.category][difficulty].append(map.no_of_submissions)
+                        user.solved_probs[map.prob_code] = map.no_of_submissions
+                        user.problemMappings[map.prob_code] = map
+                        userNameToObjects[map.uname] = user
+                        print('Difficulty taken from prob_diff csv')
+                else:
+                    print('Difficulty not found in prob_diff csv too!')
+                    user.failed_probs[map.prob_code] = map.no_of_submissions
+                    userNameToObjects[map.uname] = user
+                difficultyNotPresentInProblemTable += 1
             #print(errorMsg)
             logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(
                     datetime.datetime.now(), os.path.basename(__file__), exc_tb.tb_lineno, errorMsg))
@@ -65,6 +90,8 @@ def get_codechef_users():
         # if round(counter*100/userProbMaps.count(), 2) > 5:
         #     break
         print('Processing Map: '+str(round(counter*100/userProbMaps.count(), 2) ) + '%')
+    print('User failed cases: ' + userNotPresentInProblemTable + ' Problem failed cases: ' +
+          probNotPresentInProblemTable + ' Difficulty failed cases: ' + difficultyNotPresentInProblemTable)
 
     usersToBeReturned = []
     count_of_skewed_users = 0
