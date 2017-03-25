@@ -9,7 +9,7 @@ from constants import categories, performance_metric_keys, ClassifierType, probl
 from prob_train_operations import train_for_categoryModel1, get_accuracy, train_for_categoryModel2, baggingBasedTraining
 
 
-def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCategoryWise=problemOrCategoryKeys['problem'],
+def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCategoryWise=problemOrCategoryKeys['category'],
               modelNumber=1, mlAlgos=ClassifierType.allClassifierTypes, test_size=defaultTestSize, shouldBag=False):
     if useIntegrate:
         platform = PlatformType.Default
@@ -19,8 +19,8 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
     dataFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")
     metricsFileName = uniqueFileConvention + '_' + str(test_size) + '_metrics.csv'
     if shouldBag:
-        accuracy = baggingBasedTraining(categories, mlAlgos, uniqueFileConvention, useIntegrated=True,
-                            platform=PlatformType.Default, modelNumber=modelNumber, test_size=test_size)
+        accuracy = baggingBasedTraining(categories, mlAlgos, uniqueFileConvention, dataFileConvention,useIntegrated=True,
+                                        platform=PlatformType.Default, modelNumber=modelNumber, test_size=test_size)
         Metrics.writeBaggedMetrics(metricsFileName, accuracy)
     elif problemOrCategoryWise == problemOrCategoryKeys['category']:
         classifierMetricsMap = {}

@@ -10,7 +10,7 @@ import os
 import pickle
 import operator
 import warnings
-from generate_problems_dataset import generate, generateLazyLoad
+from generate_problems_dataset import generateLazyLoad
 
 sys.path.append('Utilities/')
 sys.path.append('../hyperopt-sklearn')
@@ -376,91 +376,38 @@ def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=Tru
     return accuracy
 
 
-def baggingBasedTraining(categories, classifiers, uniqueFileConvention, useIntegrated=True, platform=PlatformType.Default, test_size=defaultTestSize):
+def baggingBasedTraining(categories, classifiers, uniqueFileConvention, dataFileConvention, useIntegrated=True,
+                         platform=PlatformType.Default, test_size=defaultTestSize):
 
-    globalPredsForProblem = {}
+    preds_for_prob = {}
+    ans_for_prob = {}
     for classifier in classifiers:
-        preds_for_prob = {}
-        ans_for_prob = {}
-
         for category in categories:
             print('Processing for category: ' + category)
-            dataFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)
             modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) + '_' + \
                                   ClassifierType.classifierTypeString[classifier]
+            dataFileConvention = dataFileConvention + '_notShuffled'
             if not os.path.isfile("data/" + category + "/" + dataFileConvention + "_dataset.csv"):
                 print('File does not exist: ' + 'data/' + category + '/' + dataFileConvention + '_dataset.csv')
                 print('Generating dataset file')
                 generateLazyLoad(useIntegrated=useIntegrated, category=category, platform=platform,
-                                 uniqueFileConvention=uniqueFileConvention, shouldShuffle=False,
-                                 test_size=test_size)
+                                 uniqueFileConvention=uniqueFileConvention, dataFileConvention=dataFileConvention,
+                                 shouldShuffle=False, test_size=test_size)
             df = pandas.read_csv("data/" + category + "/" + dataFileConvention + "_dataset.csv")
             X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
             y = np.array(df['class']).astype(int)
-
             X_test = X[-int(len(X) * test_size):]
             y_test = y[-int(len(y) * test_size):]
 
             if not os.path.isfile('model/' + modelFileConvention + '.pickle'):
                 print('Model does not exist: ' 'model/' + modelFileConvention + '.pickle')
                 print('Training dataset for building model')
-                metrics = train_for_categoryModel1(category=category, classifier=classifier,
-                                                   uniqueFileConvention=uniqueFileConvention,
-                                                   test_size=test_size)
+                metrics = train_for_categoryModel1(category=category, classifier=classifier,uniqueFileConvention=uniqueFileConvention,
+                                                   dataFileConvention = dataFileConvention, test_size=test_size)
                 if not metrics.isValid:
                     return -1.0
             with open('model/' + modelFileConvention + '.pickle') as f:
                 clf = pickle.load(f)
-
-            # y_predictions = []
-            for i in range(len(X_test)):
-                if i not in preds_for_prob.keys():
-                    preds_for_prob[i] = {}
-
-                if i not in ans_for_prob.keys():
-                    ans_for_prob[i] = []
-
-                if i not in globalPredsForProblem.keys():
-                    globalPredsForProblem[i] = {}
-
-                current_prediction = clf.predict_proba(X_test[i].reshape(1, -1))
-                # print str(current_prediction[0][0]) + " " + str(current_prediction[0][1]) + '\t' + str(y_test[i]
-                # y_predictions.append(current_prediction[0][1])
-                preds_for_prob[i][category] = float(
-                    current_prediction[0][1])  # class 1 confidence i.e confidence for category c
-
-                if category not in globalPredsForProblem[i].keys():
-                    globalPredsForProblem[i][category] = 0.0
-
-                if y_test[i] == 1:
-                    ans_for_prob[i].append(category)
-
-            print('=================== CATEGORY OVER ===================')
-
-        for i in preds_for_prob:
-            for category in preds_for_prob[i]:
-                globalPredsForProblem[i][category] += preds_for_prob[i][category]
-
-        print('=================== CLASSIFIER OVER ===================')
-
-    for i in globalPredsForProblem:
-        for category in globalPredsForProblem[i]:
-                globalPredsForProblem[i][category] = float(globalPredsForProblem[i][category])/len(classifiers)
-
-    correct = 0
-    for i in globalPredsForProblem:
-        sorted_category_perc = sorted(globalPredsForProblem[i].items(), key=operator.itemgetter(1))
-        sorted_category_perc.reverse()  # desc
-
-        for j in range(3):
-            if sorted_category_perc[j][0] in ans_for_prob[i]:
-                correct += 1
-                break
-
-    accuracy = str(correct * 1.0 / len(globalPredsForProblem))
-    print('accuracy = ' + str(accuracy))
-    return accuracy
-
 
 
 

@@ -13,7 +13,7 @@ from user_class import Codechef_User, Codechef_User_Prob_Map
 from get_probs import get_all_probs_without_category_NA
 from prob_class import Codechef_Problem
 from get_session import get_session, get_session_by_configuration
-from constants import PlatformType, codechefDifficultyLevels
+from constants import PlatformType, codechefDifficultyLevels, categories
 
 logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
@@ -31,57 +31,50 @@ def get_codechef_users():
     for p in probs:
         probCodeToObjects[p.prob_code] = p
 
-    print('Prob code to object Map built')
     users = s.query(Codechef_User).filter()
     userNameToObjects = {}
     for user in users:
         userNameToObjects[user.uname] = user
 
-    print('User name to object Map built')
     userProbMaps = s.query(Codechef_User_Prob_Map).filter()
     counter = 0.0
-    userNotPresentInProblemTable = 0
-    probNotPresentInProblemTable = 0
-    difficultyNotPresentInProblemTable = 0
+    userNotInProbTable = 0
+    probNotInProbTablem = 0
+    difficultyErrCount = 0
     for map in userProbMaps:
         try:
             user = userNameToObjects[map.uname]
             prob = probCodeToObjects[map.prob_code]
-            user.categoryDifficultyMap[prob.category][prob.difficulty].append(map.no_of_submissions)
+            difficulty = ''
+            if map.prob_code in probCodeToDifficulty:
+                difficulty = probCodeToDifficulty[map.prob_code]
+            elif prob.difficulty in codechefDifficultyLevels:
+                difficulty = prob.difficulty
+            else:
+                difficultyErrCount += 1
+                user.failed_probs[map.prob_code] = map.no_of_submissions
+                user.problemMappings[map.prob_code] = map
+                continue
+            for cat in categories:
+                if cat in prob.category:
+                    user.categoryDifficultyMap[cat][difficulty].append(map.no_of_submissions)
             user.solved_probs[map.prob_code] = map.no_of_submissions
             user.problemMappings[map.prob_code] = map
             userNameToObjects[map.uname] = user
         except KeyError as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
-            #print 'Exception at line ' + str(exc_tb.tb_lineno)
             failedKey = str(e).replace("'", "")
             if failedKey in str(map.prob_code):
                 errorMsg = 'A problem in problem map exists whose row is not present in problem table '\
                            + str(map.prob_code) + ' ' + failedKey
                 user.failed_probs[map.prob_code] = map.no_of_submissions
                 userNameToObjects[map.uname] = user
-                probNotPresentInProblemTable += 1
+                probNotInProbTablem += 1
             elif failedKey in map.uname:
                 errorMsg = 'A user in problem map exists whose row is not present in user table '\
                            + str(map.uname) + ' ' + failedKey
-                userNotPresentInProblemTable += 1
-            else:
-                errorMsg = 'Difficulty was empty in problem table ' + str(map.prob_code) + ' ' + failedKey
-                if map.prob_code in probCodeToDifficulty:
-                    prob = probCodeToObjects[map.prob_code]
-                    difficulty = probCodeToDifficulty[map.prob_code]
-                    if difficulty in codechefDifficultyLevels:
-                        user.categoryDifficultyMap[prob.category][difficulty].append(map.no_of_submissions)
-                        user.solved_probs[map.prob_code] = map.no_of_submissions
-                        user.problemMappings[map.prob_code] = map
-                        userNameToObjects[map.uname] = user
-                        print('Difficulty taken from prob_diff csv')
-                else:
-                    print('Difficulty not found in prob_diff csv too!')
-                    user.failed_probs[map.prob_code] = map.no_of_submissions
-                    userNameToObjects[map.uname] = user
-                difficultyNotPresentInProblemTable += 1
-            #print(errorMsg)
+                userNotInProbTable += 1
+            
             logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(
                     datetime.datetime.now(), os.path.basename(__file__), exc_tb.tb_lineno, errorMsg))
 
@@ -90,24 +83,26 @@ def get_codechef_users():
         # if round(counter*100/userProbMaps.count(), 2) > 5:
         #     break
         print('Processing Map: '+str(round(counter*100/userProbMaps.count(), 2) ) + '%')
-    print('User failed cases: ' + userNotPresentInProblemTable + ' Problem failed cases: ' +
-          probNotPresentInProblemTable + ' Difficulty failed cases: ' + difficultyNotPresentInProblemTable)
+    print('User failed cases: ' + str(userNotInProbTable) + ' Problem failed cases: ' +
+          str(probNotInProbTablem) + ' Difficulty failed cases: ' + str(difficultyErrCount))
 
     usersToBeReturned = []
+    for userName in userNameToObjects:
+        usersToBeReturned.append(userNameToObjects[userName])
+
+    print('Fetched codechef users')
+    return usersToBeReturned
+
+def print_skewed_codechef_user_stats(userNameToObjects):
     count_of_skewed_users = 0
     for userName in userNameToObjects:
         total_solved = float(len(userNameToObjects[userName].solved_probs)
                              + len(userNameToObjects[userName].failed_probs))
         failed_to_fetch = float(len(userNameToObjects[userName].failed_probs))
         if total_solved > 0.0:
-            print(str(userName) + ' had loss of ' + str((failed_to_fetch/total_solved)*100)+ '%')
+            print(str(userName) + ' had loss of ' + str((failed_to_fetch / total_solved) * 100) + '%')
         print(str(userName) + ' ' + str(failed_to_fetch) + ' ' + str(total_solved))
-        # print(str(userNameToObjects[userName].solved_probs))
-        # print(str(userNameToObjects[userName].failed_probs))
         if failed_to_fetch > 0.0:
             count_of_skewed_users += 1
-        usersToBeReturned.append(userNameToObjects[userName])
 
-    print('Skewed users: '+str(count_of_skewed_users))
-    print('Fetched codechef users')
-    return usersToBeReturned
+    print('Skewed users: ' + str(count_of_skewed_users))

@@ -4,6 +4,23 @@ test_size = 0.0
 defaultTestSize = 0.5
 
 categories = ['greedy', 'graph', 'tree', 'combinatorics', 'math', 'dp']
+'''
+codechef
+    greedy
+    graph
+    tree -> trees, tree
+    combinatorics
+    math -> maths
+    dp
+
+codeforces
+    greedy
+    graph -> graph, graphs
+    tree -> trees
+    combinatorics
+    math
+    dp
+'''
 
 # For each level in codechef, we had defined weights for that level
 codechefDifficultyLevels = {'easy':1, 'medium':1000, 'hard':1000000}
