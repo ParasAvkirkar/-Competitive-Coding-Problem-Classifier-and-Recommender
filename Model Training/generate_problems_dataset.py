@@ -178,12 +178,12 @@ def generate(useIntegrated, category, platform, test_size=defaultTestSize):
 
 def generateLazyLoad(useIntegrated, category, platform, uniqueFileConvention, dataFileConvention,
                      shouldShuffle=True, test_size=defaultTestSize):
-    dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
     if os.path.isfile('data/' + category + '/' + dataFileConvention + '_dataset.csv'):
         print(dataFileConvention + '_dataset.csv' + ' already generated only shuffling right now')
         with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'r') as f:
             l = list(csv.reader(f))
-        random.shuffle(l)
+        if shouldShuffle:
+            random.shuffle(l)
         with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'w') as f:
             csv.writer(f).writerows(l)
         return
