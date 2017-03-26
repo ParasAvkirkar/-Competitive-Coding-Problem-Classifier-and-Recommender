@@ -10,9 +10,9 @@ import os
 import pickle
 import operator
 import warnings
-from generate_problems_dataset import generateLazyLoad
 
 sys.path.append('Utilities/')
+sys.path.append('../Data Transformation/integrated')
 sys.path.append('../hyperopt-sklearn')
 
 from constants import performance_metric_keys, ClassifierType, problemOrCategoryKeys, \
@@ -20,6 +20,8 @@ from constants import performance_metric_keys, ClassifierType, problemOrCategory
 from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
 from hyperopt import tpe
 from get_probs import get_all_probs_without_category_NA
+from generate_problems_dataset import generateLazyLoad
+import transform_description
 
 
 # with open('test_size.pickle') as f:
@@ -53,7 +55,7 @@ def calculateIrreducibleError(fX, fCapX):
 
 
 def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFileConvention, test_size=defaultTestSize):
-    modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)\
+    modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) \
                           + '_' + ClassifierType.classifierTypeString[classifier]
     df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
     X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
@@ -67,7 +69,7 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
     if classifier == ClassifierType.KNN:
         clf = neighbors.KNeighborsClassifier()
     elif classifier == ClassifierType.SVM:
-        clf = svm.SVC(probability=True)
+        clf = svm.SVC(probability = True)
     elif classifier == ClassifierType.DECISIONTREE:
         clf = tree.DecisionTreeClassifier()
     elif classifier == ClassifierType.RANDOMFOREST:
@@ -75,13 +77,13 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
     elif classifier == ClassifierType.NAIVEBAYES:
         clf = GaussianNB()
     elif classifier == ClassifierType.HPKNN:
-        clf = HyperoptEstimator(classifier=knn('clf'))
+        clf = HyperoptEstimator(classifier = knn('clf'))
     elif classifier == ClassifierType.HPSVM:
-        clf = HyperoptEstimator(classifier=svc('clf', max_iter=20000000))
+        clf = HyperoptEstimator(classifier = svc('clf', max_iter = 20000000))
     elif classifier == ClassifierType.HPRANDOMFOREST:
-        clf = HyperoptEstimator(classifier=random_forest('clf'))
+        clf = HyperoptEstimator(classifier = random_forest('clf'))
     elif classifier == ClassifierType.HYPERSKLEARN:
-        clf = HyperoptEstimator(classifier=any_classifier('clf'), algo=tpe.suggest, trial_timeout=60)
+        clf = HyperoptEstimator(classifier = any_classifier('clf'), algo = tpe.suggest, trial_timeout = 60)
     else:
         print "Enter valid classifier"
 
@@ -89,9 +91,14 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
     try:
         clf.fit(X_train, y_train)
         accuracy = clf.score(X_test, y_test)
+        # Here uniqueFileConvention that we get from function call has actually appended,
+        # '_' + category, at its end
+        with open('model/' + modelFileConvention + '.pickle', 'w') as f:
+            print('Dumping model: ' + 'model/' + modelFileConvention + '.pickle')
+            pickle.dump(clf, f)
     except:
         print('got training error')
-        m = Metrics(category=category)
+        m = Metrics(category = category)
         m.isValid = False
         m.invalidityMessage = 'Training Failed'
         return m
@@ -150,7 +157,7 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
         performance_metrics = precision_recall_fscore_support(np.array(y_test), np.array(y_predictions))
     except:
         print('performance metrics not valid')
-        m = Metrics(category=category)
+        m = Metrics(category = category)
         m.isValid = False
         m.invalidityMessage = 'Performance metrics invalid'
         return m
@@ -160,23 +167,18 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
     print "recall : " + str(performance_metrics[performance_metric_keys['recall']])
     print "fscore : " + str(performance_metrics[performance_metric_keys['fscore']])
 
-    # Here uniqueFileConvention that we get from function call has actually appended,
-    # '_' + category, at its end
-    with open('model/' + modelFileConvention + '.pickle', 'w') as f:
-        print('Dumping model: ' + 'model/' + modelFileConvention + '.pickle')
-        pickle.dump(clf, f)
 
-    return Metrics(category=category, truePositive=count_metrics['tp'], trueNegative=count_metrics['tn'],
-                   falsePositive=count_metrics['fp'], falseNegative=count_metrics['fn'],
-                   precision=performance_metrics[performance_metric_keys['precision']],
-                   recall=performance_metrics[performance_metric_keys['recall']],
-                   fScore=performance_metrics[performance_metric_keys['fscore']],
-                   bias=bias, variance=variance, irreducibleError=irreducibleError, totalError=totalError)
+    return Metrics(category = category, truePositive = count_metrics['tp'], trueNegative = count_metrics['tn'],
+                   falsePositive = count_metrics['fp'], falseNegative = count_metrics['fn'],
+                   precision = performance_metrics[performance_metric_keys['precision']],
+                   recall = performance_metrics[performance_metric_keys['recall']],
+                   fScore = performance_metrics[performance_metric_keys['fscore']],
+                   bias = bias, variance = variance, irreducibleError = irreducibleError, totalError = totalError)
 
 
 def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFileConvention, test_size=defaultTestSize):
     dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
-    modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)\
+    modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) \
                           + '_' + ClassifierType.classifierTypeString[classifier]
     df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
     df1 = df.ix[:, :-1]
@@ -196,7 +198,7 @@ def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFil
     if classifier == ClassifierType.KNN:
         clf = neighbors.KNeighborsClassifier()
     elif classifier == ClassifierType.SVM:
-        clf = svm.SVC(probability=True)
+        clf = svm.SVC(probability = True)
     elif classifier == ClassifierType.DECISIONTREE:
         clf = tree.DecisionTreeClassifier()
     elif classifier == ClassifierType.RANDOMFOREST:
@@ -204,13 +206,13 @@ def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFil
     elif classifier == ClassifierType.NAIVEBAYES:
         clf = GaussianNB()
     elif classifier == ClassifierType.HPKNN:
-        clf = HyperoptEstimator(classifier=knn('clf'))
+        clf = HyperoptEstimator(classifier = knn('clf'))
     elif classifier == ClassifierType.HPSVM:
-        clf = HyperoptEstimator(classifier=svc('clf', max_iter=20000000))
+        clf = HyperoptEstimator(classifier = svc('clf', max_iter = 20000000))
     elif classifier == ClassifierType.HPRANDOMFOREST:
-        clf = HyperoptEstimator(classifier=random_forest('clf'))
+        clf = HyperoptEstimator(classifier = random_forest('clf'))
     elif classifier == ClassifierType.HYPERSKLEARN:
-        clf = HyperoptEstimator(classifier=any_classifier('clf'), algo=tpe.suggest, trial_timeout=60)
+        clf = HyperoptEstimator(classifier = any_classifier('clf'), algo = tpe.suggest, trial_timeout = 60)
     else:
         clf = None
         print "Enter valid classifier"
@@ -223,7 +225,7 @@ def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFil
     except Exception as e:
         print('got training error')
         print e
-        m = Metrics(category=category)
+        m = Metrics(category = category)
         m.isValid = False
         m.invalidityMessage = 'Training Failed'
         return m
@@ -283,7 +285,7 @@ def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFil
         performance_metrics = precision_recall_fscore_support(np.array(y_test), np.array(y_predictions))
     except:
         print('performance metrics not valid')
-        m = Metrics(category=category)
+        m = Metrics(category = category)
         m.isValid = False
         m.invalidityMessage = 'Performance metrics invalid'
         return m
@@ -299,14 +301,14 @@ def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFil
         print('Dumping model: ' + 'model/' + modelFileConvention + '.pickle')
         pickle.dump(clf, f)
 
-    return Metrics(category=category, truePositive=count_metrics['tp'], trueNegative=count_metrics['tn'],
-                   falsePositive=count_metrics['fp'], falseNegative=count_metrics['fn'],
-                   precision=performance_metrics[performance_metric_keys['precision']],
-                   recall=performance_metrics[performance_metric_keys['recall']],
-                   fScore=performance_metrics[performance_metric_keys['fscore']],
-                   bias=bias, variance=variance, irreducibleError=irreducibleError, totalError=totalError)
+    return Metrics(category = category, truePositive = count_metrics['tp'], trueNegative = count_metrics['tn'],
+                   falsePositive = count_metrics['fp'], falseNegative = count_metrics['fn'],
+                   precision = performance_metrics[performance_metric_keys['precision']],
+                   recall = performance_metrics[performance_metric_keys['recall']],
+                   fScore = performance_metrics[performance_metric_keys['fscore']],
+                   bias = bias, variance = variance, irreducibleError = irreducibleError, totalError = totalError)
 
-
+# Deprecated method, broken and needs to be updated for current convention
 def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=True, platform=PlatformType.Default,
                  modelNumber=1, test_size=defaultTestSize):
     preds_for_prob = {}
@@ -320,9 +322,9 @@ def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=Tru
         if not os.path.isfile("data/" + category + "/" + dataFileConvention + "_dataset.csv"):
             print('File does not exist: ' + 'data/' + category + '/' + dataFileConvention + '_dataset.csv')
             print('Generating dataset file')
-            generateLazyLoad(useIntegrated=useIntegrated, category=category, platform=platform,
-                             uniqueFileConvention=uniqueFileConvention, shouldShuffle=False,
-                             test_size=test_size)
+            generateLazyLoad(useIntegrated = useIntegrated, category = category, platform = platform,
+                             uniqueFileConvention = uniqueFileConvention, shouldShuffle = False,
+                             test_size = test_size)
         df = pandas.read_csv("data/" + category + "/" + dataFileConvention + "_dataset.csv")
         X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
         y = np.array(df['class']).astype(int)
@@ -333,8 +335,9 @@ def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=Tru
         if not os.path.isfile('model/' + modelFileConvention + '.pickle'):
             print('Model does not exist: ' 'model/' + modelFileConvention + '.pickle')
             print('Training dataset for building model')
-            metrics = train_for_categoryModel1(category=category, classifier=classifier, uniqueFileConvention=uniqueFileConvention,
-                                               test_size=test_size)
+            metrics = train_for_categoryModel1(category = category, classifier = classifier,
+                                               uniqueFileConvention = uniqueFileConvention,
+                                               test_size = test_size)
             if not metrics.isValid:
                 return -1.0
         with open('model/' + modelFileConvention + '.pickle') as f:
@@ -360,7 +363,7 @@ def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=Tru
         print('=================== CATEGORY OVER ===================')
     correct = 0
     for i in range(len(X_test)):
-        sorted_category_perc = sorted(preds_for_prob[i].items(), key=operator.itemgetter(1))
+        sorted_category_perc = sorted(preds_for_prob[i].items(), key = operator.itemgetter(1))
         sorted_category_perc.reverse()  # desc
 
         for j in range(3):
@@ -376,8 +379,7 @@ def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=Tru
 
 def baggingBasedTraining(categories, classifiers, uniqueFileConvention, dataFileConvention, useIntegrated=True,
                          platform=PlatformType.Default, test_size=defaultTestSize):
-
-    #Preprocessing Models
+    # Preprocessing Models
     classifierCategoryMapToModels = {}
     for classifier in classifiers:
         categoryMapToModels = {}
@@ -389,15 +391,16 @@ def baggingBasedTraining(categories, classifiers, uniqueFileConvention, dataFile
             if not os.path.isfile("data/" + category + "/" + tempDataFileConv + "_dataset.csv"):
                 print('File does not exist: ' + 'data/' + category + '/' + tempDataFileConv + '_dataset.csv')
                 print('Generating dataset file')
-                generateLazyLoad(useIntegrated=useIntegrated, category=category, platform=platform,
-                                 uniqueFileConvention=uniqueFileConvention, dataFileConvention=tempDataFileConv,
-                                 shouldShuffle=False, test_size=test_size)
+                generateLazyLoad(useIntegrated = useIntegrated, category = category, platform = platform,
+                                 uniqueFileConvention = uniqueFileConvention, dataFileConvention = tempDataFileConv,
+                                 shouldShuffle = False, test_size = test_size)
 
             if not os.path.isfile('model/' + modelFileConvention + '.pickle'):
                 print('Model does not exist: ' 'model/' + modelFileConvention + '.pickle')
                 print('Training dataset for building model')
-                metrics = train_for_categoryModel1(category=category, classifier=classifier,uniqueFileConvention=uniqueFileConvention,
-                                                   dataFileConvention = dataFileConvention, test_size=test_size)
+                metrics = train_for_categoryModel1(category = category, classifier = classifier,
+                                                   uniqueFileConvention = uniqueFileConvention,
+                                                   dataFileConvention = tempDataFileConv, test_size = test_size)
 
             with open('model/' + modelFileConvention + '.pickle') as f:
                 clf = pickle.load(f)
@@ -405,27 +408,38 @@ def baggingBasedTraining(categories, classifiers, uniqueFileConvention, dataFile
 
         classifierCategoryMapToModels[ClassifierType.classifierTypeString[classifier]] = categoryMapToModels
 
+    print('All classifiers for each category collected')
     probs = get_all_probs_without_category_NA(False, PlatformType.Codechef)
-    test_probs = probs[-int(test_size*len(probs)):]
+    test_probs = probs[-int(test_size * len(probs)):]
+    correct_prediction = 0.0
+    problemsPredicted = 0.0
     for prob in test_probs:
+        classifier_score_for_each_cat = {}
+        for cat in categories:
+            classifier_score_for_each_cat[cat] = 0.0
         for classifierString in classifierCategoryMapToModels:
             for cat in classifierCategoryMapToModels[classifierString]:
+                tempDataFileConv = dataFileConvention + '_notShuffled' + '_' + cat + '_' + str(test_size)
+                featuresArr = np.array(createFeaturesForProbByCategory(prob, cat, tempDataFileConv))
+                current_prediction = classifierCategoryMapToModels[classifierString][cat].predict_proba(featuresArr.reshape(1, -1))
+                classifier_score_for_each_cat[cat] = classifier_score_for_each_cat[cat] + current_prediction[0][1]
+        categoryScores = sorted(classifier_score_for_each_cat.items(), key = operator.itemgetter(1), reverse = True)
+
+        for i in range(3):
+            if categoryScores[i][0] in prob.category:
+                correct_prediction += 1.0
+                break
+        problemsPredicted += 1.0
+        print('Processing Done till: '+str(problemsPredicted/len(test_probs)))
+    print(str(classifiers))
+    print('Accuracy: ' + str(correct_prediction/len(test_probs)))
 
 
-
-
-
-def createFeaturesForProbByCategory(prob, category):
-    description = transform_description.transform(prob.description)
-    filePath = '../Model Training/Integrated Model 1/data/' + category + '/'
+def createFeaturesForProbByCategory(prob, category, dataFileName):
+    description = transform_description.transform(prob.modified_description)
     # filePath = 'data/'+category+'/'
     features = []
-    with open(filePath + 'dataset.csv') as f:
-
-        with open(filePath + 'feature_size.pickle') as fs:
-            feature_size = pickle.load(fs)
-            print ('\n\n\n\tfeature size for ' + str(category) + ' : ' + str(feature_size))
-
+    with open("data/" + category + "/" + dataFileName + "_dataset.csv") as f:
         featureWords = f.readline().split(',')[0: -3]
         for word in featureWords:
             if description.count(word) > 0:
@@ -433,4 +447,3 @@ def createFeaturesForProbByCategory(prob, category):
             else:
                 features.append(0)
     return features
-

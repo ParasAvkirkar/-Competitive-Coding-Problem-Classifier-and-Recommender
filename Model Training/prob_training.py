@@ -69,9 +69,9 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
 
 if __name__ == '__main__':
 
-    test_sizeList = [0.1, 0.2, 0.3, 0.4, 0.5]
-    trainData(useIntegrate = True, platform =  PlatformType.Default, problemOrCategoryWise=1,
-              modelNumber=2, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2, shouldBag=False)
+    # test_sizeList = [0.1, 0.2, 0.3, 0.4, 0.5]
+    # trainData(useIntegrate = True, platform =  PlatformType.Default, problemOrCategoryWise=1,
+    #           modelNumber=2, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2, shouldBag=False)
     platform = PlatformType.Default
     modelNumber = 1
     problemOrCategoryWise = 1
@@ -85,3 +85,18 @@ if __name__ == '__main__':
     baggingBasedTraining(categories, ClassifierType.onlyNonHyperClassifiers,
                          uniqueFileConvention, dataFileConvention, False,
                          PlatformType.Default, test_size)
+    # baggingBasedTraining(categories, [ClassifierType.KNN],
+    #                      uniqueFileConvention, dataFileConvention, False,
+    #                      PlatformType.Default, test_size)
+    # baggingBasedTraining(categories, [ClassifierType.SVM],
+    #                      uniqueFileConvention, dataFileConvention, False,
+    #                      PlatformType.Default, test_size)
+    # baggingBasedTraining(categories, [ClassifierType.DECISIONTREE],
+    #                      uniqueFileConvention, dataFileConvention, False,
+    #                      PlatformType.Default, test_size)
+    # baggingBasedTraining(categories, [ClassifierType.RANDOMFOREST],
+    #                      uniqueFileConvention, dataFileConvention, False,
+    #                      PlatformType.Default, test_size)
+    # baggingBasedTraining(categories, [ClassifierType.NAIVEBAYES],
+    #                      uniqueFileConvention, dataFileConvention, False,
+    #                      PlatformType.Default, test_size)
