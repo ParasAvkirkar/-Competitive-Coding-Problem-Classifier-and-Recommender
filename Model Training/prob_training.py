@@ -30,9 +30,10 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
             for category in categories:
                 print("Processing for category: "+category)
                 if modelNumber == 1:
-                    generateLazyLoad(useIntegrate, category, platform, uniqueFileConvention, dataFileConvention, test_size=test_size)
+                    tempDataFileConv = dataFileConvention + '_' + category + '_' + str(test_size)
+                    generateLazyLoad(useIntegrate, category, platform, uniqueFileConvention, tempDataFileConv, test_size=test_size)
                     m = train_for_categoryModel1(category, classifier, uniqueFileConvention,
-                                                 dataFileConvention, test_size=test_size)
+                                                 tempDataFileConv, test_size=test_size)
                 elif modelNumber == 2:
                     print('Test size: '+str(test_size))
                     generateLazyLoadForModel2(useIntegrate, category, platform, uniqueFileConvention,
@@ -75,8 +76,12 @@ if __name__ == '__main__':
     modelNumber = 1
     problemOrCategoryWise = 1
     shouldBag = True
+    test_size = 0.2
     uniqueFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")\
                             + '_' + ("catWise" if problemOrCategoryWise is 1 else "probWise") +\
                            "_" + ("bag" if shouldBag else "notBag")
     dataFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")
     metricsFileName = uniqueFileConvention + '_' + str(test_size) + '_metrics.csv'
+    baggingBasedTraining(categories, ClassifierType.onlyNonHyperClassifiers,
+                         uniqueFileConvention, dataFileConvention, False,
+                         PlatformType.Default, test_size)

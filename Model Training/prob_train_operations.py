@@ -19,6 +19,7 @@ from constants import performance_metric_keys, ClassifierType, problemOrCategory
     PlatformType, Metrics, defaultTestSize
 from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
 from hyperopt import tpe
+from get_probs import get_all_probs_without_category_NA
 
 
 # with open('test_size.pickle') as f:
@@ -52,7 +53,6 @@ def calculateIrreducibleError(fX, fCapX):
 
 
 def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFileConvention, test_size=defaultTestSize):
-    dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
     modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size)\
                           + '_' + ClassifierType.classifierTypeString[classifier]
     df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
@@ -61,7 +61,6 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
 
     X_train = X[:-int(len(X) * test_size)]
     y_train = y[:-int(len(y) * test_size)]
-
     X_test = X[-int(len(X) * test_size):]
     y_test = y[-int(len(y) * test_size):]
 
@@ -97,7 +96,6 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
         m.invalidityMessage = 'Training Failed'
         return m
     warnings.filterwarnings("always")
-
     print("Classifier trained")
 
     if classifier == ClassifierType.HYPERSKLEARN:
@@ -379,35 +377,60 @@ def get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=Tru
 def baggingBasedTraining(categories, classifiers, uniqueFileConvention, dataFileConvention, useIntegrated=True,
                          platform=PlatformType.Default, test_size=defaultTestSize):
 
-    preds_for_prob = {}
-    ans_for_prob = {}
+    #Preprocessing Models
+    classifierCategoryMapToModels = {}
     for classifier in classifiers:
+        categoryMapToModels = {}
         for category in categories:
             print('Processing for category: ' + category)
             modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) + '_' + \
                                   ClassifierType.classifierTypeString[classifier]
-            dataFileConvention = dataFileConvention + '_notShuffled'
-            if not os.path.isfile("data/" + category + "/" + dataFileConvention + "_dataset.csv"):
-                print('File does not exist: ' + 'data/' + category + '/' + dataFileConvention + '_dataset.csv')
+            tempDataFileConv = dataFileConvention + '_notShuffled' + '_' + category + '_' + str(test_size)
+            if not os.path.isfile("data/" + category + "/" + tempDataFileConv + "_dataset.csv"):
+                print('File does not exist: ' + 'data/' + category + '/' + tempDataFileConv + '_dataset.csv')
                 print('Generating dataset file')
                 generateLazyLoad(useIntegrated=useIntegrated, category=category, platform=platform,
-                                 uniqueFileConvention=uniqueFileConvention, dataFileConvention=dataFileConvention,
+                                 uniqueFileConvention=uniqueFileConvention, dataFileConvention=tempDataFileConv,
                                  shouldShuffle=False, test_size=test_size)
-            df = pandas.read_csv("data/" + category + "/" + dataFileConvention + "_dataset.csv")
-            X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
-            y = np.array(df['class']).astype(int)
-            X_test = X[-int(len(X) * test_size):]
-            y_test = y[-int(len(y) * test_size):]
 
             if not os.path.isfile('model/' + modelFileConvention + '.pickle'):
                 print('Model does not exist: ' 'model/' + modelFileConvention + '.pickle')
                 print('Training dataset for building model')
                 metrics = train_for_categoryModel1(category=category, classifier=classifier,uniqueFileConvention=uniqueFileConvention,
                                                    dataFileConvention = dataFileConvention, test_size=test_size)
-                if not metrics.isValid:
-                    return -1.0
+
             with open('model/' + modelFileConvention + '.pickle') as f:
                 clf = pickle.load(f)
+            categoryMapToModels[category] = clf
+
+        classifierCategoryMapToModels[ClassifierType.classifierTypeString[classifier]] = categoryMapToModels
+
+    probs = get_all_probs_without_category_NA(False, PlatformType.Codechef)
+    test_probs = probs[-int(test_size*len(probs)):]
+    for prob in test_probs:
+        for classifierString in classifierCategoryMapToModels:
+            for cat in classifierCategoryMapToModels[classifierString]:
 
 
+
+
+
+def createFeaturesForProbByCategory(prob, category):
+    description = transform_description.transform(prob.description)
+    filePath = '../Model Training/Integrated Model 1/data/' + category + '/'
+    # filePath = 'data/'+category+'/'
+    features = []
+    with open(filePath + 'dataset.csv') as f:
+
+        with open(filePath + 'feature_size.pickle') as fs:
+            feature_size = pickle.load(fs)
+            print ('\n\n\n\tfeature size for ' + str(category) + ' : ' + str(feature_size))
+
+        featureWords = f.readline().split(',')[0: -3]
+        for word in featureWords:
+            if description.count(word) > 0:
+                features.append(1)
+            else:
+                features.append(0)
+    return features
 
