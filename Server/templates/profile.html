@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>Recommendation</title >
+    <script type="text/javascript" src=" {{ url_for('static', filename = 'canvasjs.min.js') }} "> </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+            {
+                theme: "theme2",
+                title:{
+                    text: "Problems Solved - Difficulty"
+                },
+                data: [
+                {
+                    type: "pie",
+                    showInLegend: true,
+                    toolTipContent: "{y} - #percent %",
+                    yValueFormatString: "#",
+                    legendText: "{indexLabel}",
+                    dataPoints: [
+                        {% for key in user.probsSolved %}
+                            { y: {{ user.probsSolved[key] }} , indexLabel: "{{ key }}" },
+                        {% endfor %}
+                    ]
+                }
+                ]
+            });
+
+            var chart2 = new CanvasJS.Chart("chartContainer2",
+            {
+                theme: "theme2",
+                title:{
+                    text: "Problems Solved - Category"
+                },
+                data: [
+                {
+                    type: "pie",
+                    showInLegend: true,
+                    toolTipContent: "{y} - #percent %",
+                    yValueFormatString: "#",
+                    legendText: "{indexLabel}",
+                    dataPoints: [
+                        {% for key in user.categorySolved %}
+                            { y: {{ user.categorySolved[key] }} , indexLabel: "{{ key }}" },
+                        {% endfor %}
+                    ]
+                }
+                ]
+            });
+            chart.render();
+            chart2.render();
+        }
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>HI THERE {{ user.name }}</h1>
+    <br><br>
+    <div>
+        <div id="chartContainer" style="height: 300px; width: 48%; display:inline-block"></div>
+        <div id="chartContainer2" style="height: 300px; width: 48%; display:inline-block"></div>
+    </div>
+    <br><br>
+    <h2>Here are some problems recommended for you: </h2>
+    <div class="row">
+
+        {% for prob in user.recommended_probs %}
+        <div class="col-sm-3 " style="background-color:lavender;margin:2px;padding:5px;border:double;border-radius:5px">
+            <ul>
+                <li><a href="{{ prob.link }}">{{ prob.name }}</a></li>
+                <li>{{ prob.category }}</li>
+                <li>{{ prob.diff }}</li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    <!--<ul>-->
+        <!--{% for prob in user.recommended_probs %}-->
+        <!--<li>-->
+            <!--<ul>-->
+                <!--<li><a href="{{ prob.link }}">{{ prob.name }}</a></li>-->
+                <!--<li>{{ prob.category }}</li>-->
+                <!--<li>{{ prob.diff }}</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--{% endfor %}-->
+    <!--</ul>-->
+</body>
+</html>
