@@ -129,7 +129,6 @@ class Metrics:
 
     @staticmethod
     def writeMultipleProblemwiseMetics(metricsFileName, classifierMetricsMap):
-
         with open(metricsFileName, 'w') as f:
             f.write('classifier,accuracy\n')
             for classifier in classifierMetricsMap:
@@ -137,6 +136,7 @@ class Metrics:
                         + str(classifierMetricsMap[classifier])
                         + '\n')
             print('Metrics written to file: ' + metricsFileName)
+            print(ClassifierType.classifierTypeString[classifier] + ' ' + str(classifierMetricsMap[classifier]))
 
     @staticmethod
     def writeBaggedMetrics(metricsFileName, accuracy):

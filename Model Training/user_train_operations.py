@@ -123,17 +123,17 @@ def get_categorywise_difficulty_limits(uniqueFileConvention, platform, probCodeT
         len0 = len(categorywise_tipping_points[cat][0])
         len1 = len(categorywise_tipping_points[cat][1])
         print(str(len0) + ' ' + str(len1))
-        print('Category: ' + cat + ' Maximum Stats ---> Easy_To_Medium: ' + str(
-            max(categorywise_tipping_points[cat][0])) + ' Medium_To_Hard: '
-              + str(max(categorywise_tipping_points[cat][1])))
-        # Currently considering maximum value as tendency of difficulty limits
-        categorywise_difficulty_limits[cat] = (max(categorywise_tipping_points[cat][0]), max(categorywise_tipping_points[cat][1]))
-        print('Category: ' + cat + ' Median Stats ---> Easy_To_Medium: ' + str(
-            categorywise_tipping_points[cat][0][len0 / 2]) + ' Medium_To_Hard: '
-              + str(categorywise_tipping_points[cat][1][len1 / 2]))
-        print('Category: ' + cat + ' Easy_To_Medium: ' + str(mode(categorywise_tipping_points[cat][0])) + ' Medium_To_Hard: '
-        + str(mode(categorywise_tipping_points[cat][1])))
-        print('===============')
+        # print('Category: ' + cat + ' Maximum Stats ---> Easy_To_Medium: ' + str(
+        #     max(categorywise_tipping_points[cat][0])) + ' Medium_To_Hard: '
+        #       + str(max(categorywise_tipping_points[cat][1])))
+        # # Currently considering maximum value as tendency of difficulty limits
+        # categorywise_difficulty_limits[cat] = (max(categorywise_tipping_points[cat][0]), max(categorywise_tipping_points[cat][1]))
+        # print('Category: ' + cat + ' Median Stats ---> Easy_To_Medium: ' + str(
+        #     categorywise_tipping_points[cat][0][len0 / 2]) + ' Medium_To_Hard: '
+        #       + str(categorywise_tipping_points[cat][1][len1 / 2]))
+        # print('Category: ' + cat + ' Easy_To_Medium: ' + str(mode(categorywise_tipping_points[cat][0])) + ' Medium_To_Hard: '
+        # + str(mode(categorywise_tipping_points[cat][1])))
+        # print('===============')
         plt.plot([i for i in range(len(categorywise_tipping_points[cat][0]))], categorywise_tipping_points[cat][0],
                  'b-')
         plt.plot([i for i in range(len(categorywise_tipping_points[cat][1]))], categorywise_tipping_points[cat][1],
@@ -172,8 +172,8 @@ def get_categorywise_tipping_points(uniqueFileConvention, platform, probCodeToOb
             difficultySequence = ''  # categorySolvingSequence = {} # A dictionary category --->
             for tupl in list_of_mapping_date:
                 map = tupl[0]
-                prob = probCodeToObjects[map.prob_code]
                 try:
+                    prob = probCodeToObjects[map.prob_code]
                     if cat in prob.category:
                         difficulty = ''
                         if map.prob_code in probCodeToDifficulty:
@@ -198,6 +198,7 @@ def get_categorywise_tipping_points(uniqueFileConvention, platform, probCodeToOb
                     if easyCount > 0:
                         categorywise_tipping_points[cat][0].append(easyCount)
                         easyCount = 0
+                        break
                 elif 'h' in character:
                     easyCount = 0
                     if mediumCount > 0:

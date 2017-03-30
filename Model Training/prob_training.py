@@ -17,11 +17,12 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
                             + '_' + ("catWise" if problemOrCategoryWise is 1 else "probWise") +\
                            "_" + ("bag" if shouldBag else "notBag")
     dataFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")
+
     metricsFileName = uniqueFileConvention + '_' + str(test_size) + '_metrics.csv'
     if shouldBag:
-        accuracy = baggingBasedTraining(categories, mlAlgos, uniqueFileConvention, dataFileConvention,useIntegrated=True,
-                                        platform=PlatformType.Default, modelNumber=modelNumber, test_size=test_size)
-        Metrics.writeBaggedMetrics(metricsFileName, accuracy)
+        accuracy = baggingBasedTraining(categories, mlAlgos,
+                             uniqueFileConvention, dataFileConvention, useIntegrated = useIntegrate,
+                             platform = platform, test_size = test_size)
     elif problemOrCategoryWise == problemOrCategoryKeys['category']:
         classifierMetricsMap = {}
         for classifier in mlAlgos:
@@ -35,7 +36,6 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
                     m = train_for_categoryModel1(category, classifier, uniqueFileConvention,
                                                  tempDataFileConv, test_size=test_size)
                 elif modelNumber == 2:
-                    print('Test size: '+str(test_size))
                     generateLazyLoadForModel2(useIntegrate, category, platform, uniqueFileConvention,
                                               dataFileConvention, test_size=test_size)
                     m = train_for_categoryModel2(category, classifier, uniqueFileConvention,
@@ -60,7 +60,8 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
                     print('Cannot apply hyper based classifiers to problem-wise modelling technique')
                     continue
                 print('Processing for classifier: '+ClassifierType.classifierTypeString[classifier])
-                classifierMetricsMap[classifier] = get_accuracy(categories, classifier, uniqueFileConvention, useIntegrated=useIntegrate,
+                classifierMetricsMap[classifier] = get_accuracy(categories, classifier, uniqueFileConvention, dataFileConvention,
+                                                   useIntegrated=useIntegrate,
                              platform=platform, modelNumber=1, test_size=test_size)
                 print('=================== CLASSIFICATION OVER ===================')
         Metrics.writeMultipleProblemwiseMetics(metricsFileName=metricsFileName,
@@ -70,33 +71,8 @@ def trainData(useIntegrate=False, platform=PlatformType.Default, problemOrCatego
 if __name__ == '__main__':
 
     # test_sizeList = [0.1, 0.2, 0.3, 0.4, 0.5]
-    # trainData(useIntegrate = True, platform =  PlatformType.Default, problemOrCategoryWise=1,
-    #           modelNumber=2, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2, shouldBag=False)
-    platform = PlatformType.Default
-    modelNumber = 1
-    problemOrCategoryWise = 1
-    shouldBag = True
-    test_size = 0.2
-    uniqueFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")\
-                            + '_' + ("catWise" if problemOrCategoryWise is 1 else "probWise") +\
-                           "_" + ("bag" if shouldBag else "notBag")
-    dataFileConvention = PlatformType.platformString[platform] + '_' + ("model1" if modelNumber is 1 else "model2")
-    metricsFileName = uniqueFileConvention + '_' + str(test_size) + '_metrics.csv'
-    baggingBasedTraining(categories, ClassifierType.onlyNonHyperClassifiers,
-                         uniqueFileConvention, dataFileConvention, False,
-                         PlatformType.Default, test_size)
-    # baggingBasedTraining(categories, [ClassifierType.KNN],
-    #                      uniqueFileConvention, dataFileConvention, False,
-    #                      PlatformType.Default, test_size)
-    # baggingBasedTraining(categories, [ClassifierType.SVM],
-    #                      uniqueFileConvention, dataFileConvention, False,
-    #                      PlatformType.Default, test_size)
-    # baggingBasedTraining(categories, [ClassifierType.DECISIONTREE],
-    #                      uniqueFileConvention, dataFileConvention, False,
-    #                      PlatformType.Default, test_size)
-    # baggingBasedTraining(categories, [ClassifierType.RANDOMFOREST],
-    #                      uniqueFileConvention, dataFileConvention, False,
-    #                      PlatformType.Default, test_size)
-    # baggingBasedTraining(categories, [ClassifierType.NAIVEBAYES],
-    #                      uniqueFileConvention, dataFileConvention, False,
-    #                      PlatformType.Default, test_size)
+    # trainData(useIntegrate = True, platform = PlatformType.Default, problemOrCategoryWise=1,
+    #           modelNumber=1, mlAlgos=ClassifierType.onlyNonHyperClassifiers, test_size=0.2, shouldBag=False)
+
+    trainData(shouldBag = True, useIntegrate = True, problemOrCategoryWise = 1, modelNumber = 1,
+              mlAlgos = ClassifierType.onlyNonHyperClassifiers, test_size = 0.2)

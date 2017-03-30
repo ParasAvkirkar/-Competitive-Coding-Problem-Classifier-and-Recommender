@@ -182,16 +182,19 @@ def generateLazyLoad(useIntegrated, category, platform, uniqueFileConvention, da
         print(dataFileConvention + '_dataset.csv' + ' already generated only shuffling right now')
         with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'r') as f:
             l = list(csv.reader(f))
+            firstHeadersRow = l[0]
+            l = l[1:]
         if shouldShuffle:
             random.shuffle(l)
         with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'w') as f:
-            csv.writer(f).writerows(l)
+            csv.writer(f).writerows([firstHeadersRow] + l)
         return
     print(dataFileConvention + '_dataset.csv' + ' not found')
     print(dataFileConvention + '_dataset.csv' + ' generating')
     probs = []
     if len(generateLazyLoad.probs) == 0:
         generateLazyLoad.probs = get_all_probs_without_category_NA(useIntegrated, platform)
+        random.shuffle(generateLazyLoad.probs)
     probs = generateLazyLoad.probs
     # with open('test_size.pickle') as f:
     #     test_size = pickle.load(f)
@@ -222,9 +225,11 @@ def generateLazyLoadForModel2(useIntegrated, category, platform, uniqueFileConve
         print(dataFileConvention + '_dataset.csv' + ' already generated only shuffling right now')
         with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'r') as f:
             l = list(csv.reader(f))
+            firstHeadersRow = l[0]
+            l = l[1:]
         random.shuffle(l)
         with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'w') as f:
-            csv.writer(f).writerows(l)
+            csv.writer(f).writerows([firstHeadersRow] + l)
         return
     print(dataFileConvention + '_dataset.csv' + ' not found')
     print(dataFileConvention + '_dataset.csv' + ' generating')
