@@ -7,6 +7,7 @@ import sys
 import os
 import pickle
 import operator
+import time
 import warnings
 import matplotlib.pyplot as plt
 from scipy.stats import mode
@@ -250,6 +251,9 @@ def train_word2vec():
         print ("DB accessed")
         userObjectsList, userNameToObjectsDict = get_codechef_users()
 
+        with open('userNameToObjectsDict.pickle', 'w+b') as f:
+            pickle.dump(userNameToObjectsDict, f)
+
     sentences = []
 
     for user in userNameToObjectsDict:
@@ -269,8 +273,5 @@ def train_word2vec():
     end = time.time()
     print ("Finished training Word2Vec model " + str(round((end - start) / 60, 2)) + " minutes")
 
-    print ("Saving files")
     model.save("Codechef_word2vec")
 
-    with open('userNameToObjectsDict.pickle', 'w+b') as f:
-        pickle.dump(userNameToObjectsDict, f)
