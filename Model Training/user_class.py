@@ -1,6 +1,6 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import orm
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, DateTime
 import sys, pickle
 
 sys.path.append('Utilities/')
@@ -66,13 +66,14 @@ class Codechef_User(Base):
 
 
 class Codechef_User_Prob_Map(Base):
-    __tablename__ = 'codechef_prob_user_map'
+    __tablename__ = 'codechef_prob_user_diff_map'
 
     id = Column('id', Integer, primary_key=True)
     uname = Column('uname', String)
     prob_code = Column('prob_code', String)
-    date = Column('date', String)
+    date = Column('date', DateTime)
     no_of_submissions = Column('no_of_submissions', String)
+    difficulty = Column('difficulty', String)
 
     def __repr__(self):
         return str(self.id) + " " + self.uname + " " + self.prob_code

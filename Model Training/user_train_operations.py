@@ -14,6 +14,11 @@ from generate_problems_dataset import generate, generateLazyLoad
 from generate_users_dataset import generateLazyLoad
 from datetime import datetime
 
+from gensim.models import Word2Vec
+from get_users import get_codechef_users
+from sorting import sort_by_date_difficulty
+
+
 sys.path.append('Utilities/')
 sys.path.append('../hyperopt-sklearn')
 
@@ -233,3 +238,39 @@ def get_pro_users(users, days_to_consider_pro):
             pro_users.append(user)
 
     return pro_users
+
+
+def train_word2vec():
+    try:
+        with open('userNameToObjectsDict.pickle', 'r+b') as f:
+            print ("Pickle used")
+            userNameToObjectsDict = pickle.load(f)
+
+    except:
+        print ("DB accessed")
+        userObjectsList, userNameToObjectsDict = get_codechef_users()
+
+    sentences = []
+
+    for user in userNameToObjectsDict:
+        submissionsDict = userNameToObjectsDict[user].problemMappings
+
+        sorted_submissions = sort_by_date_difficulty(submissionsDict)
+
+        submission_sentence = []
+
+        [submission_sentence.append(row[0]) for row in sorted_submissions]
+        sentences.append(submission_sentence)
+
+    print ("Sentences done")
+    print ("Started training Word2Vec model")
+    start = time.time()
+    model = Word2Vec(sentences, size=50, window=5, workers=2, min_count=1, iter=25, negative=15, sg=1)
+    end = time.time()
+    print ("Finished training Word2Vec model " + str(round((end - start) / 60, 2)) + " minutes")
+
+    print ("Saving files")
+    model.save("Codechef_word2vec")
+
+    with open('userNameToObjectsDict.pickle', 'w+b') as f:
+        pickle.dump(userNameToObjectsDict, f)
