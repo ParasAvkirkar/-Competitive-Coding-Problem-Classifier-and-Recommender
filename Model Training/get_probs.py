@@ -38,5 +38,22 @@ def get_all_probs_without_category_NA(useIntegrated=True, platform=PlatformType.
     return problist
 
 
+def get_difficulty(prob_code):
+    difficulty = 'NA'
+    global probCodeToDifficulty
+
+    if prob_code_difficulty_map_dict == None:
+        probCodeToDifficulty = {}
+        with open('codechef_prob_diff.csv', 'r') as f:
+            reader = csv.reader(f)
+            for line in reader:
+                probCodeToDifficulty[line[0]] = line[1]
+
+    if prob_code in probCodeToDifficulty:
+        difficulty = probCodeToDifficulty[prob_code]
+    
+    return difficulty
+
+
 if __name__ == '__main__':
     get_all_probs()

@@ -7,6 +7,7 @@ import logging
 import os
 import inspect
 import csv
+
 sys.path.append('Utilities/')
 
 from user_class import Codechef_User, Codechef_User_Prob_Map
@@ -17,35 +18,41 @@ from constants import PlatformType, codechefDifficultyLevels, categories
 
 logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
+
 def get_codechef_users():
     s = get_session_by_configuration(useIntegrated=False)
-
+    """
     probCodeToDifficulty = {}
     with open('codechef_prob_diff.csv', 'r') as f:
         reader = csv.reader(f)
         for line in reader:
             probCodeToDifficulty[line[0]] = line[1]
-
+    """
     probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef)
     probCodeToObjects = {}
     for p in probs:
         probCodeToObjects[p.prob_code] = p
-
     users = s.query(Codechef_User).filter()
     userNameToObjects = {}
     for user in users:
         userNameToObjects[user.uname] = user
-
-    userProbMaps = s.query(Codechef_User_Prob_Map).filter()
+    userProbMapQuery = s.query(Codechef_User_Prob_Map).filter()
+    print("DB Access completed")
+    print(userProbMapQuery.count())
+    userProbMaps = [p for p in userProbMapQuery if p.date != 'None' and p.difficulty != '']
+    print("user to problem Map ready")
+    print(len(userProbMaps))
     counter = 0.0
     userNotInProbTable = 0
     probNotInProbTablem = 0
     difficultyErrCount = 0
+    print ("Loop starts")
     for map in userProbMaps:
         try:
             user = userNameToObjects[map.uname]
             prob = probCodeToObjects[map.prob_code]
             difficulty = ''
+            """
             if map.prob_code in probCodeToDifficulty:
                 difficulty = probCodeToDifficulty[map.prob_code]
             elif prob.difficulty in codechefDifficultyLevels:
@@ -58,31 +65,37 @@ def get_codechef_users():
             for cat in categories:
                 if cat in prob.category:
                     user.categoryDifficultyMap[cat][difficulty].append(map.no_of_submissions)
+            """
+            if map.prob_code in user.problemMappings:
+                if map.date > user.problemMappings[map.prob_code].date:
+                    user.problemMappings[map.prob_code] = map
+            else:
+                user.problemMappings[map.prob_code] = map
+
             user.solved_probs[map.prob_code] = map.no_of_submissions
-            user.problemMappings[map.prob_code] = map
             userNameToObjects[map.uname] = user
         except KeyError as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             failedKey = str(e).replace("'", "")
             if failedKey in str(map.prob_code):
-                errorMsg = 'A problem in problem map exists whose row is not present in problem table '\
+                errorMsg = 'A problem in problem map exists whose row is not present in problem table ' \
                            + str(map.prob_code) + ' ' + failedKey
                 user.failed_probs[map.prob_code] = map.no_of_submissions
                 userNameToObjects[map.uname] = user
                 probNotInProbTablem += 1
             elif failedKey in map.uname:
-                errorMsg = 'A user in problem map exists whose row is not present in user table '\
+                errorMsg = 'A user in problem map exists whose row is not present in user table ' \
                            + str(map.uname) + ' ' + failedKey
                 userNotInProbTable += 1
-            
+
             logging.error('Time: {0} File: {1} Line: {2} Caused By: {3}'.format(
-                    datetime.datetime.now(), os.path.basename(__file__), exc_tb.tb_lineno, errorMsg))
+                datetime.datetime.now(), os.path.basename(__file__), exc_tb.tb_lineno, errorMsg))
 
         counter += 1.0
         # For testing uncomment the block below, because whole function takes more than an hour to process
-        # if round(counter*100/userProbMaps.count(), 2) > 5:
-        #     break
-        print('Processing Map: '+str(round(counter*100/userProbMaps.count(), 2) ) + '%')
+        # if round(counter*100/len(userProbMaps), 2) == 100 :
+        #    break
+        # print('Processing Map: '+str(round(counter*100/len(userProbMaps), 2) ) + '%')
     print('User failed cases: ' + str(userNotInProbTable) + ' Problem failed cases: ' +
           str(probNotInProbTablem) + ' Difficulty failed cases: ' + str(difficultyErrCount))
 
@@ -91,7 +104,8 @@ def get_codechef_users():
         usersToBeReturned.append(userNameToObjects[userName])
 
     print('Fetched codechef users')
-    return usersToBeReturned
+    return usersToBeReturned, userNameToObjects
+
 
 def print_skewed_codechef_user_stats(userNameToObjects):
     count_of_skewed_users = 0
