@@ -84,4 +84,4 @@ def get_word2vec_recommendation(user, prev_sub, diff, no_recomm):
     return recommendation
 
 
-#get_word2vec_recommendation('i_am_what_i_am', 5, 'easy', 5)
+get_word2vec_recommendation('i_am_what_i_am', 5, 'easy', 5)
