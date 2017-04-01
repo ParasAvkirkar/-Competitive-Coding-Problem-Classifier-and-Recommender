@@ -3,14 +3,8 @@ import pickle
 import csv
 
 from sorting import sort_by_date_difficulty, sort_by_date
-
-"""
-user - Username
-prev_sub - No of recent submissions to consider for recommendation
-diff - Difficulty level of problems to use for recommendation i.e ( "5" recently solved "easy" problems )
-no_recomm - No of problems to recommend
-"""
-
+from generate_users_dataset import generateLazyLoad
+from constants import PlatformType
 
 def build_recommendation_list_for_users(usersClusterMap, probs):
     probDict = {}
@@ -52,14 +46,20 @@ def build_recommendation_list_for_users(usersClusterMap, probs):
         usersClusterMap[label] = userList
         return usersClusterMap
 
+"""
+user - Username
+prev_sub - No of recent submissions to consider for recommendation
+diff - Difficulty level of problems to use for recommendation i.e ( "5" recently solved "easy" problems )
+no_recomm - No of problems to recommend
+"""
 
-def get_word2vec_recommendation(user, prev_sub, diff, no_recomm):
+def get_word2vec_recommendation(uniqueFileConvention, platform, user, prev_sub, diff, no_recomm):
     model = models.Word2Vec.load("Codechef_word2vec")
-    with open('userNameToObjectsDict.pickle', 'r+b') as f:
-        userNameToObjectsDict = pickle.load(f)
+    userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
+
     output_csv = open('recommend.csv', 'w')
     writer = csv.writer(output_csv)
-    submissionsDict = userNameToObjectsDict[user].problemMappings
+    submissionsDict = userNameToObjects[user].problemMappings
 
     sorted_submissions = sort_by_date_difficulty(submissionsDict, diff)
 
@@ -82,6 +82,6 @@ def get_word2vec_recommendation(user, prev_sub, diff, no_recomm):
     writer.writerow([user] + recommendation)
 
     return recommendation
-
-
-get_word2vec_recommendation('i_am_what_i_am', 5, 'easy', 5)
+if __name__ == '__main__':
+    uniqueFileConvention  = 'users_codechef'
+    get_word2vec_recommendation(uniqueFileConvention, PlatformType.Codechef, 'i_am_what_i_am', 5, 'easy', 5)

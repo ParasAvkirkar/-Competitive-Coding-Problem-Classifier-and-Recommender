@@ -15,19 +15,20 @@ def generateLazyLoad(uniqueFileConvention, platform=PlatformType.Codechef):
         users = None
         if not os.path.isfile(uniqueFileConvention + '_orm.pickle'):
             print(uniqueFileConvention + '_orm.pickle ' + 'not found')
-            users = get_codechef_users()
+            userNameToObjects = get_codechef_users()
             with open(uniqueFileConvention + '_orm.pickle', 'wb') as f:
                 print('Dumping ' + uniqueFileConvention + '_orm.pickle')
-                pickle.dump(users, f)
+                pickle.dump(userNameToObjects, f)
         else:
             with open(uniqueFileConvention + '_orm.pickle', 'rb') as f:
                 print('Loading from ' + uniqueFileConvention + '_orm.pickle')
-                users = pickle.load(f)
+                userNameToObjects = pickle.load(f)
 
-        write_dataset(uniqueFileConvention, users, platform)
-        return users
+        write_dataset(uniqueFileConvention, userNameToObjects, platform)
+        return userNameToObjects
 
-def write_dataset(uniqueFileConvention, users, platform=PlatformType.Codechef):
+def write_dataset(uniqueFileConvention, userNameToObjects, platform=PlatformType.Codechef):
+
     print('Writing dataset')
     with open(uniqueFileConvention + '_dataset.csv', 'w') as f:
         f.write('uname')
@@ -35,7 +36,8 @@ def write_dataset(uniqueFileConvention, users, platform=PlatformType.Codechef):
             for level in codechefDifficultyLevels:
                 f.write(',' + category + '_' + level)
         f.write('\n')
-        for user in users:
+        for username in userNameToObjects:
+            user = userNameToObjects[username]
             f.write(user.uname)
             for category in user.categoryDifficultyMap:
                 for level in user.categoryDifficultyMap[category]:

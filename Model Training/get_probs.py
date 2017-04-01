@@ -1,4 +1,5 @@
 import sys, os
+import csv
 
 sys.path.append('Utilities/')
 
@@ -6,6 +7,7 @@ from prob_class import Integrated_Problem, Codechef_Problem, Codeforces_Problem
 from get_session import get_session, get_session_by_configuration
 from constants import PlatformType
 
+probCodeToDifficulty = None
 
 def get_all_probs(useIntegrated=True, platform=PlatformType.Default):
     # s = get_session()
@@ -32,7 +34,8 @@ def get_all_probs_without_category_NA(useIntegrated=True, platform=PlatformType.
     else:
         probs = s.query(Codeforces_Problem).filter()
 
-    problist = [p for p in probs if p.category and 'N/A' not in p.category]
+    #problist = [p for p in probs if p.category and 'N/A' not in p.category]
+    problist = [p for p in probs if p.category != 'N/A']
     print len(problist)
 
     return problist
@@ -42,7 +45,7 @@ def get_difficulty(prob_code):
     difficulty = 'NA'
     global probCodeToDifficulty
 
-    if prob_code_difficulty_map_dict == None:
+    if probCodeToDifficulty == None:
         probCodeToDifficulty = {}
         with open('codechef_prob_diff.csv', 'r') as f:
             reader = csv.reader(f)
