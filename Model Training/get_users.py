@@ -21,13 +21,13 @@ logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 def get_codechef_users():
     s = get_session_by_configuration(useIntegrated=False)
-    """
+
     probCodeToDifficulty = {}
     with open('codechef_prob_diff.csv', 'r') as f:
         reader = csv.reader(f)
         for line in reader:
             probCodeToDifficulty[line[0]] = line[1]
-    """
+
     probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef)
     probCodeToObjects = {}
     for p in probs:
@@ -52,7 +52,7 @@ def get_codechef_users():
             user = userNameToObjects[map.uname]
             prob = probCodeToObjects[map.prob_code]
             difficulty = ''
-            """
+
             if map.prob_code in probCodeToDifficulty:
                 difficulty = probCodeToDifficulty[map.prob_code]
             elif prob.difficulty in codechefDifficultyLevels:
@@ -65,7 +65,7 @@ def get_codechef_users():
             for cat in categories:
                 if cat in prob.category:
                     user.categoryDifficultyMap[cat][difficulty].append(map.no_of_submissions)
-            """
+
             if map.prob_code in user.problemMappings:
                 if map.date > user.problemMappings[map.prob_code].date:
                     user.problemMappings[map.prob_code] = map
@@ -99,12 +99,12 @@ def get_codechef_users():
     print('User failed cases: ' + str(userNotInProbTable) + ' Problem failed cases: ' +
           str(probNotInProbTablem) + ' Difficulty failed cases: ' + str(difficultyErrCount))
 
-    usersToBeReturned = []
-    for userName in userNameToObjects:
-        usersToBeReturned.append(userNameToObjects[userName])
+    # usersToBeReturned = []
+    # for userName in userNameToObjects:
+    #    usersToBeReturned.append(userNameToObjects[userName])
 
     print('Fetched codechef users')
-    return usersToBeReturned, userNameToObjects
+    return userNameToObjects
 
 
 def print_skewed_codechef_user_stats(userNameToObjects):

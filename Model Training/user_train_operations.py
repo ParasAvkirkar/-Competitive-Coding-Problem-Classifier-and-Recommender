@@ -153,8 +153,8 @@ def get_categorywise_difficulty_limits(uniqueFileConvention, platform, probCodeT
 def get_categorywise_tipping_points(uniqueFileConvention, platform, probCodeToObjects, probCodeToDifficulty,
                                     days_to_consider_pro_user):
     print('Building category wise tipping points')
-    users = generateLazyLoad(uniqueFileConvention, platform)
-    pro_users = get_pro_users(users, days_to_consider_pro_user)
+    userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
+    pro_users = get_pro_users(userNameToObjects, days_to_consider_pro_user)
     print('Got ' + str(len(pro_users)) + ' pro users')
 
     categorywise_tipping_points = {}
@@ -214,10 +214,11 @@ def get_categorywise_tipping_points(uniqueFileConvention, platform, probCodeToOb
     return categorywise_tipping_points
 
 
-def get_pro_users(users, days_to_consider_pro):
+def get_pro_users(userNameToObjects, days_to_consider_pro):
     print('Getting pro users with days consideration: ' + str(days_to_consider_pro))
     pro_users = []
-    for user in users:
+    for username in userNameToObjects:
+        user = userNameToObjects[username]
         # Initializing sentinel values for first pass comparisons
         minDate = datetime.strptime('2100-01-01 01:01:01', '%Y-%m-%d %H:%M:%S')
         maxDate = datetime.strptime('1990-01-01 01:01:01', '%Y-%m-%d %H:%M:%S')
@@ -241,23 +242,13 @@ def get_pro_users(users, days_to_consider_pro):
     return pro_users
 
 
-def train_word2vec():
-    try:
-        with open('userNameToObjectsDict.pickle', 'r+b') as f:
-            print ("Pickle used")
-            userNameToObjectsDict = pickle.load(f)
-
-    except:
-        print ("DB accessed")
-        userObjectsList, userNameToObjectsDict = get_codechef_users()
-
-        with open('userNameToObjectsDict.pickle', 'w+b') as f:
-            pickle.dump(userNameToObjectsDict, f)
+def train_word2vec(uniqueFileConvention, platform):
+    userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
 
     sentences = []
 
-    for user in userNameToObjectsDict:
-        submissionsDict = userNameToObjectsDict[user].problemMappings
+    for user in userNameToObjects:
+        submissionsDict = userNameToObjects[user].problemMappings
 
         sorted_submissions = sort_by_date_difficulty(submissionsDict)
 

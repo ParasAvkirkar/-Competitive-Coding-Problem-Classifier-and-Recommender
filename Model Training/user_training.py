@@ -19,13 +19,14 @@ if __name__ == '__main__':
     for prb in probs:
         probCodeToObjects[prb.prob_code] = prb
     probCodeToDifficulty = {}
-    """
+
     with open('codechef_prob_diff.csv', 'r') as f:
         reader = csv.reader(f)
         for line in reader:
             probCodeToDifficulty[line[0]] = line[1]
-    """
+
     # get_categorywise_difficulty_limits(uniqueFileConvention, PlatformType.Codechef, probCodeToObjects,
     # probCodeToDifficulty, days_to_consider_pro_user = 730)
     # process_users(uniqueFileConvention, users, probs, PlatformType.Codechef, ClusterMethod.KMeans)
-    train_word2vec()
+    train_word2vec(uniqueFileConvention, PlatformType.Codechef)
+
