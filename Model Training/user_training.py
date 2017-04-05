@@ -1,7 +1,7 @@
 import sys, pickle
 import csv
 
-from libxslt import transformCtxt
+# from libxslt import transformCtxt
 
 sys.path.append('Utilities/')
 sys.path.append('../hyperopt-sklearn/')
@@ -13,7 +13,6 @@ from user_train_operations import process_users, get_categorywise_difficulty_lim
 
 if __name__ == '__main__':
     uniqueFileConvention = 'users_codechef'
-    # users = generateLazyLoad(uniqueFileConvention, PlatformType.Codechef)
     probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef)
     probCodeToObjects = {}
     for prb in probs:
@@ -25,8 +24,10 @@ if __name__ == '__main__':
         for line in reader:
             probCodeToDifficulty[line[0]] = line[1]
 
-    # get_categorywise_difficulty_limits(uniqueFileConvention, PlatformType.Codechef, probCodeToObjects,
-    # probCodeToDifficulty, days_to_consider_pro_user = 730)
-    # process_users(uniqueFileConvention, users, probs, PlatformType.Codechef, ClusterMethod.KMeans)
-    train_word2vec(uniqueFileConvention, PlatformType.Codechef)
+    categorywise_difficulty_limits = get_categorywise_difficulty_limits(uniqueFileConvention, PlatformType.Codechef, probCodeToObjects,
+                                       probCodeToDifficulty, days_to_consider_pro_user = 730)
+    userNameToObjects = generateLazyLoad(uniqueFileConvention, PlatformType.Codechef, categorywise_difficulty_limits)
+
+    # train_word2vec(uniqueFileConvention, PlatformType.Codechef)
+    process_users(uniqueFileConvention, userNameToObjects, probCodeToObjects, PlatformType.Codechef, ClusterMethod.KMeans)
 

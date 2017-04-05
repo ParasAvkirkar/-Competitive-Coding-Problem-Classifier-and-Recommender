@@ -4,6 +4,9 @@ test_size = 0.0
 defaultTestSize = 0.5
 
 categories = ['greedy', 'graph', 'tree', 'combinatorics', 'math', 'dp']
+categoryWiseWeights = {'math':1, 'combinatorics':1000, 'tree':1000000,
+                       'greedy':1000000000, 'dp':1000000000000, 'graph':1000000000000000}
+
 '''
 codechef
     greedy

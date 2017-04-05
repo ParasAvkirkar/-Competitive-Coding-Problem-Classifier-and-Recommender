@@ -1,22 +1,22 @@
-from sklearn import neighbors, svm, tree
-from sklearn.naive_bayes import GaussianNB
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import precision_recall_fscore_support
-# from sklearn.exceptions import ConvergenceWarning
-import numpy as np
-import pandas
-import sys
+import operator
 import os
 import pickle
-import operator
+import sys
 import warnings
 
+import numpy as np
+import pandas
+from sklearn import neighbors, svm, tree
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.externals.six import StringIO
+from sklearn.metrics import precision_recall_fscore_support
+from sklearn.naive_bayes import GaussianNB
+import pydotplus
 sys.path.append('Utilities/')
 sys.path.append('../Data Transformation/integrated')
 sys.path.append('../hyperopt-sklearn')
 
-from constants import performance_metric_keys, ClassifierType, problemOrCategoryKeys, \
-    PlatformType, Metrics, defaultTestSize
+from constants import performance_metric_keys, ClassifierType, PlatformType, Metrics, defaultTestSize
 from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
 from hyperopt import tpe
 from get_probs import get_all_probs_without_category_NA
@@ -91,13 +91,21 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
     try:
         clf.fit(X_train, y_train)
         accuracy = clf.score(X_test, y_test)
+        if classifier == ClassifierType.DECISIONTREE:
+            dot_data = StringIO()
+            tree.export_graphviz(clf, out_file = dot_data)
+            graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
+            graph.write_pdf('dt' + category + '.pdf')
+            print('pdf written')
+
         # Here uniqueFileConvention that we get from function call has actually appended,
         # '_' + category, at its end
         with open('model/' + modelFileConvention + '.pickle', 'w') as f:
             print('Dumping model: ' + 'model/' + modelFileConvention + '.pickle')
             pickle.dump(clf, f)
-    except:
+    except Exception as e:
         print('got training error')
+        print(str(e))
         m = Metrics(category = category)
         m.isValid = False
         m.invalidityMessage = 'Training Failed'
@@ -176,7 +184,6 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
 
 
 def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFileConvention, test_size=defaultTestSize):
-    dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
     modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) \
                           + '_' + ClassifierType.classifierTypeString[classifier]
     df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
@@ -310,7 +317,7 @@ def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFil
 
 # Deprecated method, broken and needs to be updated for current convention
 def get_accuracy(categories, classifier, uniqueFileConvention, dataFileConvention, useIntegrated=True,
-                 platform=PlatformType.Default, modelNumber=1, test_size=defaultTestSize):
+                 platform=PlatformType.Default, modelNumber=1, test_size=defaultTestSize, number_of_top_words=10):
     preds_for_prob = {}
     ans_for_prob = {}
 
@@ -324,7 +331,7 @@ def get_accuracy(categories, classifier, uniqueFileConvention, dataFileConventio
             print('Generating dataset file')
             generateLazyLoad(useIntegrated = useIntegrated, category = category, platform = platform,
                              uniqueFileConvention = uniqueFileConvention, dataFileConvention = tempDataFileConvention,
-                             shouldShuffle = False, test_size=test_size)
+                             shouldShuffle = False, test_size=test_size, number_of_top_words = number_of_top_words)
         df = pandas.read_csv("data/" + category + "/" + tempDataFileConvention + "_dataset.csv")
         X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
         y = np.array(df['class']).astype(int)
@@ -336,8 +343,8 @@ def get_accuracy(categories, classifier, uniqueFileConvention, dataFileConventio
             print('Model does not exist: ' 'model/' + modelFileConvention + '.pickle')
             print('Training dataset for building model')
             metrics = train_for_categoryModel1(category = category, classifier = classifier,
-                                               uniqueFileConvention = uniqueFileConvention,
-                                               dataFileConvention = tempDataFileConvention, test_size = test_size)
+                                               uniqueFileConvention = uniqueFileConvention, dataFileConvention = tempDataFileConvention,
+                                               test_size = test_size)
             if not metrics.isValid:
                 return -1.0
         with open('model/' + modelFileConvention + '.pickle') as f:

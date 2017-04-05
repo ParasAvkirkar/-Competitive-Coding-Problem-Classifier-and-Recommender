@@ -12,8 +12,9 @@ import warnings
 import matplotlib.pyplot as plt
 from scipy.stats import mode
 from generate_problems_dataset import generate, generateLazyLoad
-from generate_users_dataset import generateLazyLoad
+from generate_users_dataset import generateLazyLoad, get_userNameToObjects
 from datetime import datetime
+from recommend import build_recommendation_list_for_clusters
 
 from gensim.models import Word2Vec
 from get_users import get_codechef_users
@@ -32,63 +33,19 @@ def build_user_clusters(users_X, clusteringMethod=ClusterMethod.KMeans):
     if clusteringMethod == ClusterMethod.KMeans:
         mlAlgo = KMeans(n_clusters = 7, random_state = 0)
 
-    mlAlgo = mlAlgo.fit(users_X)
-    return mlAlgo
+    trained_model = mlAlgo.fit(users_X)
+    return trained_model
 
 
-def build_recommendation_list_for_users(usersClusterMap, probs):
-    probDict = {}
-    for prob in probs:
-        probDict[prob.prob_code] = prob
-
-    for label in usersClusterMap:
-        userList = usersClusterMap[label]
-        for user in userList:
-            user.calculate_user_level()
-            print(user.uname + ' ' + str(len(user.failed_probs)) + ' ' + str(len(user.solved_probs)))
-            if len(user.failed_probs) == 0 and len(user.solved_probs) > 0:
-                print(user.uname + ' Level: ' + str(user.user_level))
-
-        userList.sort(key = lambda x: x.user_level, reverse = True)
-        # print(userList)
-
-    for label in usersClusterMap:
-        userList = usersClusterMap[label]
-
-        probsSolvedUntilCurrentLevelUser = []
-        generalUsersStartIndex = int(len(userList) * 0.1) + 1
-        for i in range(len(userList)):
-            tempDict = {}
-            if i >= generalUsersStartIndex:
-                for probCode in probsSolvedUntilCurrentLevelUser:
-                    if probCode not in userList[i].solved_probs:
-                        tempDict[probCode] = probDict[probCode].get_problem_level()
-
-                        tempDict = dict(sorted(tempDict.items(), key = operator.itemgetter(1), reverse = True))
-                        # print(str(tempDict))
-            for probCode in tempDict:
-                userList[i].recommendation_list.append(probCode)
-            # print(str(userList[i].recommendation_list))
-
-            for probCode in userList[i].solved_probs:
-                probsSolvedUntilCurrentLevelUser.append(probCode)
-
-        usersClusterMap[label] = userList
-        return usersClusterMap
-
-
-def process_users(uniqueFileConvention, users, probs, platform=PlatformType.Codechef,
+def process_users(uniqueFileConvention, userNameToObjects, probCodeToObjects, platform=PlatformType.Codechef,
                   clusteringMethod=ClusterMethod.KMeans, test_size=0.2):
-    dataFileConvention = uniqueFileConvention + '_' + PlatformType.platformString[platform] \
-                         + '_' + ClusterMethod.clusterMethodString[clusteringMethod]
-
+    dataFileConvention = uniqueFileConvention + '_' + ClusterMethod.clusterMethodString[clusteringMethod]
     df = pandas.read_csv(uniqueFileConvention + '_dataset.csv')
     X = np.array(df.drop(['uname'], 1)).astype(float)
+    X_usernames = list(df['uname'])
+    print('printing usernames')
+    print(X_usernames)
     print(X.shape)
-
-    usersDict = {}
-    for user in users:
-        usersDict[user.uname] = user
 
     X_train = X[:-int(len(X) * test_size)]
     trainedModel = build_user_clusters(X_train, clusteringMethod)
@@ -99,14 +56,14 @@ def process_users(uniqueFileConvention, users, probs, platform=PlatformType.Code
     index = 0
     for label in X_train_labels:
         if label not in usersClusterMap:
-            usersClusterMap[label] = [users[index]]
+            usersClusterMap[label] = [userNameToObjects[X_usernames[index]]]
         else:
             userList = usersClusterMap[label]
-            userList.append(users[index])
+            userList.append(userNameToObjects[X_usernames[index]])
             usersClusterMap[label] = userList
         index += 1
 
-    usersClusterMap = build_recommendation_list_for_users(usersClusterMap, probs)
+    usersClusterMap = build_recommendation_list_for_clusters(usersClusterMap, probCodeToObjects)
     usersToBeWrittenOnPickle = []
     for label in usersClusterMap:
         usersList = usersClusterMap[label]
@@ -129,31 +86,30 @@ def get_categorywise_difficulty_limits(uniqueFileConvention, platform, probCodeT
         len0 = len(categorywise_tipping_points[cat][0])
         len1 = len(categorywise_tipping_points[cat][1])
         print(str(len0) + ' ' + str(len1))
-        # print('Category: ' + cat + ' Maximum Stats ---> Easy_To_Medium: ' + str(
-        #     max(categorywise_tipping_points[cat][0])) + ' Medium_To_Hard: '
-        #       + str(max(categorywise_tipping_points[cat][1])))
-        # # Currently considering maximum value as tendency of difficulty limits
-        # categorywise_difficulty_limits[cat] = (max(categorywise_tipping_points[cat][0]), max(categorywise_tipping_points[cat][1]))
-        # print('Category: ' + cat + ' Median Stats ---> Easy_To_Medium: ' + str(
-        #     categorywise_tipping_points[cat][0][len0 / 2]) + ' Medium_To_Hard: '
-        #       + str(categorywise_tipping_points[cat][1][len1 / 2]))
-        # print('Category: ' + cat + ' Easy_To_Medium: ' + str(mode(categorywise_tipping_points[cat][0])) + ' Medium_To_Hard: '
-        # + str(mode(categorywise_tipping_points[cat][1])))
-        # print('===============')
-        plt.plot([i for i in range(len(categorywise_tipping_points[cat][0]))], categorywise_tipping_points[cat][0],
-                 'b-')
-        plt.plot([i for i in range(len(categorywise_tipping_points[cat][1]))], categorywise_tipping_points[cat][1],
-                 'r-')
-        plt.xlabel(cat + ' tipping points')
-        plt.show()
+
+        categorywise_difficulty_limits[cat] = get_equivalence_by_tendency(categorywise_tipping_points[cat][0],
+                                                                          categorywise_tipping_points[cat][1])
+
+        # plt.plot([i for i in range(len(categorywise_tipping_points[cat][0]))], categorywise_tipping_points[cat][0],
+        #          'b-')
+        # plt.plot([i for i in range(len(categorywise_tipping_points[cat][1]))], categorywise_tipping_points[cat][1],
+        #          'r-')
+        # plt.xlabel(cat + ' tipping points')
+        # plt.show()
 
     return categorywise_difficulty_limits
+
+# Current tendency defining function is max, later on it can be median or mode
+def get_equivalence_by_tendency(easy_to_med_list, med_to_high_list):
+    easy_to_med = 0 if len(easy_to_med_list) == 0 else max(easy_to_med_list)
+    med_to_high = 0 if len(med_to_high_list) == 0 else max(med_to_high_list)
+    return easy_to_med, med_to_high
 
 
 def get_categorywise_tipping_points(uniqueFileConvention, platform, probCodeToObjects, probCodeToDifficulty,
                                     days_to_consider_pro_user):
     print('Building category wise tipping points')
-    userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
+    userNameToObjects = get_userNameToObjects(uniqueFileConvention, platform)
     pro_users = get_pro_users(userNameToObjects, days_to_consider_pro_user)
     print('Got ' + str(len(pro_users)) + ' pro users')
 

@@ -6,20 +6,14 @@ from sorting import sort_by_date_difficulty, sort_by_date
 from generate_users_dataset import generateLazyLoad
 from constants import PlatformType
 
-def build_recommendation_list_for_users(usersClusterMap, probs):
-    probDict = {}
-    for prob in probs:
-        probDict[prob.prob_code] = prob
+import operator
+
+
+def build_recommendation_list_for_clusters(usersClusterMap, probCodeToObjects):
 
     for label in usersClusterMap:
         userList = usersClusterMap[label]
-        for user in userList:
-            user.calculate_user_level()
-            print(user.uname + ' ' + str(len(user.failed_probs)) + ' ' + str(len(user.solved_probs)))
-            if len(user.failed_probs) == 0 and len(user.solved_probs) > 0:
-                print(user.uname + ' Level: ' + str(user.user_level))
-
-        userList.sort(key=lambda x: x.user_level, reverse=True)
+        userList.sort(key = lambda x: x.user_level, reverse = True)
         # print(userList)
 
     for label in usersClusterMap:
@@ -32,9 +26,9 @@ def build_recommendation_list_for_users(usersClusterMap, probs):
             if i >= generalUsersStartIndex:
                 for probCode in probsSolvedUntilCurrentLevelUser:
                     if probCode not in userList[i].solved_probs:
-                        tempDict[probCode] = probDict[probCode].get_problem_level()
+                        tempDict[probCode] = probCodeToObjects[probCode].get_problem_level()
 
-                        tempDict = dict(sorted(tempDict.items(), key=operator.itemgetter(1), reverse=True))
+                        tempDict = dict(sorted(tempDict.items(), key = operator.itemgetter(1), reverse = True))
                         # print(str(tempDict))
             for probCode in tempDict:
                 userList[i].recommendation_list.append(probCode)
@@ -46,12 +40,14 @@ def build_recommendation_list_for_users(usersClusterMap, probs):
         usersClusterMap[label] = userList
         return usersClusterMap
 
+
 """
 user - Username
 prev_sub - No of recent submissions to consider for recommendation
 diff - Difficulty level of problems to use for recommendation i.e ( "5" recently solved "easy" problems )
 no_recomm - No of problems to recommend
 """
+
 
 def get_word2vec_recommendation(uniqueFileConvention, platform, user, prev_sub, diff, no_recomm):
     model = models.Word2Vec.load("Codechef_word2vec")
@@ -69,7 +65,7 @@ def get_word2vec_recommendation(uniqueFileConvention, platform, user, prev_sub, 
     print submission_sentence  # Print problems given as input to recommender
 
     # Word2Vec function call to give recommendations
-    recommendation = model.most_similar(positive=submission_sentence, topn=no_recomm)
+    recommendation = model.most_similar(positive = submission_sentence, topn = no_recomm)
 
     # For each row x in the list recommendation
     # x[0] - Problem codes
@@ -82,6 +78,8 @@ def get_word2vec_recommendation(uniqueFileConvention, platform, user, prev_sub, 
     writer.writerow([user] + recommendation)
 
     return recommendation
+
+
 if __name__ == '__main__':
-    uniqueFileConvention  = 'users_codechef'
+    uniqueFileConvention = 'users_codechef'
     get_word2vec_recommendation(uniqueFileConvention, PlatformType.Codechef, 'i_am_what_i_am', 5, 'easy', 5)

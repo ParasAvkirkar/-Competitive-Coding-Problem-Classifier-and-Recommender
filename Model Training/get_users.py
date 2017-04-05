@@ -37,6 +37,7 @@ def get_codechef_users():
     for user in users:
         userNameToObjects[user.uname] = user
     userProbMapQuery = s.query(Codechef_User_Prob_Map).filter()
+
     print("DB Access completed")
     print(userProbMapQuery.count())
     userProbMaps = [p for p in userProbMapQuery if p.date != 'None' and p.difficulty != '']
