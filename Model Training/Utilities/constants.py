@@ -3,7 +3,8 @@ from enum import Enum
 test_size = 0.0
 defaultTestSize = 0.5
 
-categories = ['greedy', 'graph', 'tree', 'combinatorics', 'math', 'dp']
+categories = ['graph', 'tree', 'combinatorics', 'math', 'dp', 'greedy']
+
 '''
 codechef
     greedy

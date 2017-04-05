@@ -12,7 +12,6 @@ from get_probs import get_all_probs_without_category_NA
 from user_train_operations import process_users, get_categorywise_difficulty_limits, train_word2vec
 
 if __name__ == '__main__':
-    uniqueFileConvention = 'users_codechef'
     # users = generateLazyLoad(uniqueFileConvention, PlatformType.Codechef)
     probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef)
     probCodeToObjects = {}
@@ -25,8 +24,8 @@ if __name__ == '__main__':
         for line in reader:
             probCodeToDifficulty[line[0]] = line[1]
 
-    # get_categorywise_difficulty_limits(uniqueFileConvention, PlatformType.Codechef, probCodeToObjects,
-    # probCodeToDifficulty, days_to_consider_pro_user = 730)
-    # process_users(uniqueFileConvention, users, probs, PlatformType.Codechef, ClusterMethod.KMeans)
-    train_word2vec(uniqueFileConvention, PlatformType.Codechef)
+    uniqueFileConvention = 'users_codechef'
+    train_word2vec(uniqueFileConvention, PlatformType.Codechef, probs_all_or_categorywise=1)
+    uniqueFileConvention = 'users_codechef_all_probs'
+    train_word2vec(uniqueFileConvention, PlatformType.Codechef, probs_all_or_categorywise=2)
 

@@ -47,10 +47,11 @@ class Codechef_User(Base):
         self.problemMappings = {}
 
         for category in categories:
-            levelDict = {}
+            #levelDict = {}
+            self.categoryDifficultyMap[category] = {}
             for level in codechefDifficultyLevels:
-                levelDict[level] = []
-            self.categoryDifficultyMap[category] = levelDict
+                self.categoryDifficultyMap[category][level] = 0
+
 
     # Applicable only when categoryDifficultyMap is filled
     # Generally this method is expected to be called after building categoryDifficultyMap from database

@@ -19,7 +19,7 @@ from constants import PlatformType, codechefDifficultyLevels, categories
 logging.basicConfig(filename='exceptScenarios.log', level=logging.ERROR)
 
 
-def get_codechef_users():
+def get_codechef_users(probs_all_or_categorywise):
     s = get_session_by_configuration(useIntegrated=False)
 
     probCodeToDifficulty = {}
@@ -28,25 +28,27 @@ def get_codechef_users():
         for line in reader:
             probCodeToDifficulty[line[0]] = line[1]
 
-    probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef)
+    probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef,
+                                              probs_all_or_categorywise=probs_all_or_categorywise)
     probCodeToObjects = {}
     for p in probs:
         probCodeToObjects[p.prob_code] = p
     users = s.query(Codechef_User).filter()
     userNameToObjects = {}
+
     for user in users:
         userNameToObjects[user.uname] = user
     userProbMapQuery = s.query(Codechef_User_Prob_Map).filter()
-    print("DB Access completed")
-    print(userProbMapQuery.count())
-    userProbMaps = [p for p in userProbMapQuery if p.date != 'None' and p.difficulty != '']
+    print("Before pruning submissions list " + str(userProbMapQuery.count()))
+    userProbMaps = [p for p in userProbMapQuery if p.date != 'None' and p.difficulty != '' and p.prob_code in probCodeToObjects]
     print("user to problem Map ready")
-    print(len(userProbMaps))
+    print("After pruning submissions list " + str(len(userProbMaps)))
     counter = 0.0
     userNotInProbTable = 0
     probNotInProbTablem = 0
     difficultyErrCount = 0
     print ("Loop starts")
+    count = 0
     for map in userProbMaps:
         try:
             user = userNameToObjects[map.uname]
@@ -62,9 +64,16 @@ def get_codechef_users():
                 user.failed_probs[map.prob_code] = map.no_of_submissions
                 user.problemMappings[map.prob_code] = map
                 continue
+
             for cat in categories:
                 if cat in prob.category:
-                    user.categoryDifficultyMap[cat][difficulty].append(map.no_of_submissions)
+                    """
+                    if cat not in user.categoryDifficultyMap:
+                        user.categoryDifficultyMap[cat] = {}
+                    if prob.difficulty not in user.categoryDifficultyMap[cat]:
+                        user.categoryDifficultyMap[cat][prob.difficulty] = 0
+                    """
+                    user.categoryDifficultyMap[cat][prob.difficulty] += 1
 
             if map.prob_code in user.problemMappings:
                 if map.date > user.problemMappings[map.prob_code].date:
@@ -76,7 +85,12 @@ def get_codechef_users():
             userNameToObjects[map.uname] = user
         except KeyError as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
+            print "Exception"
+            print map.prob_code
+            print user.categoryDifficultyMap
+            print user.uname
             failedKey = str(e).replace("'", "")
+            # print e
             if failedKey in str(map.prob_code):
                 errorMsg = 'A problem in problem map exists whose row is not present in problem table ' \
                            + str(map.prob_code) + ' ' + failedKey
@@ -98,11 +112,10 @@ def get_codechef_users():
         # print('Processing Map: '+str(round(counter*100/len(userProbMaps), 2) ) + '%')
     print('User failed cases: ' + str(userNotInProbTable) + ' Problem failed cases: ' +
           str(probNotInProbTablem) + ' Difficulty failed cases: ' + str(difficultyErrCount))
-
     # usersToBeReturned = []
     # for userName in userNameToObjects:
     #    usersToBeReturned.append(userNameToObjects[userName])
-
+    print(str(len(userNameToObjects)))
     print('Fetched codechef users')
     return userNameToObjects
 
