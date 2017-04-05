@@ -24,6 +24,7 @@ if __name__ == '__main__':
         for line in reader:
             probCodeToDifficulty[line[0]] = line[1]
 
+
     uniqueFileConvention = 'users_codechef'
     train_word2vec(uniqueFileConvention, PlatformType.Codechef, probs_all_or_categorywise=1)
     uniqueFileConvention = 'users_codechef_all_probs'
