@@ -8,6 +8,7 @@ from get_session import get_session, get_session_by_configuration
 from constants import PlatformType
 
 probCodeToDifficulty = None
+probCodeToCategory = None
 
 def get_all_probs(useIntegrated=True, platform=PlatformType.Default):
     # s = get_session()
@@ -23,7 +24,7 @@ def get_all_probs(useIntegrated=True, platform=PlatformType.Default):
     return problist
 
 
-def get_all_probs_without_category_NA(useIntegrated=True, platform=PlatformType.Default):
+def get_all_probs_without_category_NA(useIntegrated=True, platform=PlatformType.Default, probs_all_or_categorywise = 1):
     # s = get_session()
     s = get_session_by_configuration(useIntegrated)
     # probs = s.query(Problem).filter()
@@ -34,9 +35,10 @@ def get_all_probs_without_category_NA(useIntegrated=True, platform=PlatformType.
     else:
         probs = s.query(Codeforces_Problem).filter()
 
-    #problist = [p for p in probs if p.category and 'N/A' not in p.category]
-    problist = [p for p in probs if p.category != 'N/A']
-    print len(problist)
+    if probs_all_or_categorywise == 1:
+        problist = [p for p in probs if p.category and 'N/A' not in p.category]
+    else:
+        problist = [p for p in probs if p.category != 'N/A']
 
     return problist
 
@@ -57,6 +59,21 @@ def get_difficulty(prob_code):
     
     return difficulty
 
+def get_category(prob_code):
+    category = 'NA'
+    global probCodeToCategory
+
+    if probCodeToCategory == None:
+        probCodeToCategory = {}
+        with open('codechef_prob_cat.csv', 'r') as f:
+            reader = csv.reader(f)
+            for line in reader:
+                probCodeToCategory[line[0]] = line[1]
+
+    if prob_code in probCodeToCategory:
+        category = probCodeToCategory[prob_code]
+
+    return category
 
 if __name__ == '__main__':
     get_all_probs()

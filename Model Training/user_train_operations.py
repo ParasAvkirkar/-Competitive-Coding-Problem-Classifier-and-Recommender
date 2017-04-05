@@ -4,7 +4,7 @@ from sklearn.metrics import precision_recall_fscore_support
 import numpy as np
 import pandas
 import sys
-import os
+import csv
 import pickle
 import operator
 import time
@@ -12,10 +12,11 @@ import warnings
 import matplotlib.pyplot as plt
 from scipy.stats import mode
 from generate_problems_dataset import generate, generateLazyLoad
-from generate_users_dataset import generateLazyLoad, get_userNameToObjects
-from datetime import datetime
 from recommend import build_recommendation_list_for_clusters
 
+from generate_users_dataset import generateLazyLoad, generateLazyLoadAll
+from datetime import datetime
+from get_probs import get_all_probs_without_category_NA
 from gensim.models import Word2Vec
 from get_users import get_codechef_users
 from sorting import sort_by_date_difficulty
@@ -27,6 +28,7 @@ sys.path.append('../hyperopt-sklearn')
 from constants import categories, performance_metric_keys, ClusterMethod, \
     PlatformType, Metrics, defaultTestSize, codechefDifficultyLevels
 
+categorywise_difficulty_limits = None
 
 def build_user_clusters(users_X, clusteringMethod=ClusterMethod.KMeans):
     mlAlgo = None
@@ -75,27 +77,56 @@ def process_users(uniqueFileConvention, userNameToObjects, probCodeToObjects, pl
 
 
 # Right now handles codechef, later platform wise changes would be made
-def get_categorywise_difficulty_limits(uniqueFileConvention, platform, probCodeToObjects, probCodeToDifficulty,
-                                          days_to_consider_pro_user):
-    categorywise_difficulty_limits = {}
-    categorywise_tipping_points = get_categorywise_tipping_points(uniqueFileConvention, platform, probCodeToObjects, probCodeToDifficulty, days_to_consider_pro_user)
-    print('Got categorywise tipping points')
-    for cat in categories:
-        categorywise_tipping_points[cat][0].sort()
-        categorywise_tipping_points[cat][1].sort()
-        len0 = len(categorywise_tipping_points[cat][0])
-        len1 = len(categorywise_tipping_points[cat][1])
-        print(str(len0) + ' ' + str(len1))
+def get_categorywise_difficulty_limits(uniqueFileConvention, platform, days_to_consider_pro_user):
 
-        categorywise_difficulty_limits[cat] = get_equivalence_by_tendency(categorywise_tipping_points[cat][0],
-                                                                          categorywise_tipping_points[cat][1])
+    global categorywise_difficulty_limits
+    if categorywise_difficulty_limits ==  None:
+        categorywise_difficulty_limits = {}
 
-        # plt.plot([i for i in range(len(categorywise_tipping_points[cat][0]))], categorywise_tipping_points[cat][0],
-        #          'b-')
-        # plt.plot([i for i in range(len(categorywise_tipping_points[cat][1]))], categorywise_tipping_points[cat][1],
-        #          'r-')
-        # plt.xlabel(cat + ' tipping points')
-        # plt.show()
+        probs = get_all_probs_without_category_NA(useIntegrated=False, platform=PlatformType.Codechef)
+        probCodeToObjects = {}
+        for prb in probs:
+            probCodeToObjects[prb.prob_code] = prb
+
+        probCodeToDifficulty = {}
+        with open('codechef_prob_diff.csv', 'r') as f:
+            reader = csv.reader(f)
+            for line in reader:
+                probCodeToDifficulty[line[0]] = line[1]
+
+        categorywise_tipping_points = get_categorywise_tipping_points(uniqueFileConvention, platform, probCodeToObjects, probCodeToDifficulty, days_to_consider_pro_user)
+        print('Got categorywise tipping points')
+        for cat in categories:
+            categorywise_tipping_points[cat][0].sort()
+            categorywise_tipping_points[cat][1].sort()
+            len0 = len(categorywise_tipping_points[cat][0])
+            len1 = len(categorywise_tipping_points[cat][1])
+            # print cat
+            # print(str(len0) + ' ' + str(len1))
+            try:
+                # print('Category: ' + cat + ' Maximum Stats ---> Easy_To_Medium: ' + str(
+                #     max(categorywise_tipping_points[cat][0])) + ' Medium_To_Hard: '
+                #       + str(max(categorywise_tipping_points[cat][1])))
+                # Currently considering maximum value as tendency of difficulty limits
+                categorywise_difficulty_limits[cat] = {}
+                categorywise_difficulty_limits[cat]['easy'] = max(categorywise_tipping_points[cat][0])
+                categorywise_difficulty_limits[cat]['medium'] = max(categorywise_tipping_points[cat][1])
+                # print('Category: ' + cat + ' Median Stats ---> Easy_To_Medium: ' + str(
+                #     categorywise_tipping_points[cat][0][len0 / 2]) + ' Medium_To_Hard: '
+                #       + str(categorywise_tipping_points[cat][1][len1 / 2]))
+                # print('Category: ' + cat + ' Easy_To_Medium: ' + str(mode(categorywise_tipping_points[cat][0])) + ' Medium_To_Hard: '
+                # + str(mode(categorywise_tipping_points[cat][1])))
+                # print('===============')
+            except Exception as e:
+                print e
+            plt.plot([i for i in range(len(categorywise_tipping_points[cat][0]))], categorywise_tipping_points[cat][0],
+                     'b-')
+            plt.plot([i for i in range(len(categorywise_tipping_points[cat][1]))], categorywise_tipping_points[cat][1],
+                     'r-')
+            plt.xlabel(cat + ' tipping points')
+            # plt.show()
+
+        print categorywise_difficulty_limits
 
     return categorywise_difficulty_limits
 
@@ -198,9 +229,11 @@ def get_pro_users(userNameToObjects, days_to_consider_pro):
     return pro_users
 
 
-def train_word2vec(uniqueFileConvention, platform):
-    userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
-
+def train_word2vec(uniqueFileConvention, platform,probs_all_or_categorywise):
+    if probs_all_or_categorywise == 1:
+        userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
+    else:
+        userNameToObjects = generateLazyLoadAll(uniqueFileConvention, platform)
     sentences = []
 
     for user in userNameToObjects:
@@ -220,5 +253,5 @@ def train_word2vec(uniqueFileConvention, platform):
     end = time.time()
     print ("Finished training Word2Vec model " + str(round((end - start) / 60, 2)) + " minutes")
 
-    model.save("Codechef_word2vec")
+    model.save(uniqueFileConvention)
 

@@ -2,10 +2,6 @@ def sort_by_date(submissionsDict):
     sorted_submissions = []
 
     date_wise_submissions = []
-    """
-	for p in submissionsDict:
-		date_wise_submissions.append([p,submissionsDict[p][0],submissionsDict[p][1]])
-	"""
 
     for prob_code in submissionsDict:
         date_wise_submissions.append(
@@ -29,11 +25,7 @@ def sort_by_date_difficulty(submissionsDict, diff=None):
     for level in difficulty:
 
         level_wise_submissions = []
-        """
-		for p in submissionsDict:
-			if submissionsDict[p][1] == level:
-				level_wise_submissions.append([p, submissionsDict[p][0], submissionsDict[p][1]])
-		"""
+
         for prob_code in submissionsDict:
             if submissionsDict[prob_code].difficulty == level:
                 level_wise_submissions.append(
