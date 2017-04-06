@@ -13,83 +13,88 @@ from constants import categories, performance_metric_keys, ClusterMethod, \
     PlatformType, Metrics, defaultTestSize, codechefDifficultyLevels
 
 categorywise_difficulty_limits = None
+difficulty_limits_without_category = None
 
 
 # Right now handles codechef, later platform wise changes would be made
 def get_difficulty_limits_without_category(uniqueFileConvention, platform, days_to_consider_pro_user):
-    print('Building tipping points without category')
-    userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
-    pro_users = get_pro_users(userNameToObjects, days_to_consider_pro_user)
-    print('Got ' + str(len(pro_users)) + ' pro users')
+    global difficulty_limits_without_category
 
-    probCodeToObjects = get_probCodeToObjectMap(useIntegrated = False, platform = PlatformType.Codechef)
-    probCodeToDifficulty = get_probCodeToDiff_Map(platform)
-    tipping_points = {0: [], 1: []}
+    if difficulty_limits_without_category == None:
+        print('Building tipping points without category')
+        userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
+        pro_users = get_pro_users(userNameToObjects, days_to_consider_pro_user)
+        print('Got ' + str(len(pro_users)) + ' pro users')
 
-    for user in pro_users:
-        list_of_mapping_date = []
-        for probCode in user.problemMappings:
-            map = user.problemMappings[probCode]
-            try:
-                list_of_mapping_date.append((map, datetime.strptime(map.date, '%Y-%m-%d %H:%M:%S')))
-            except ValueError as v:
-                # Ignoring probable absence of datetime value like None
-                # print('datetime found was none')
-                pass
-        # Sorting list of tuples based on date parameter
-        list_of_mapping_date = sorted(list_of_mapping_date, key = lambda x: x[1])
-        difficultySequence = ''  # categorySolvingSequence = {} # A dictionary category --->
-        for tupl in list_of_mapping_date:
-            map = tupl[0]
-            try:
-                prob = probCodeToObjects[map.prob_code]
-                difficulty = ''
-                if map.prob_code in probCodeToDifficulty:
-                    difficulty = probCodeToDifficulty[map.prob_code]
-                elif prob.difficulty in codechefDifficultyLevels:
-                    difficulty = prob.difficulty
-                else:
-                    # Didn't found difficulty from either prob_diff csv or DB
-                    continue
-                difficultySequence = difficultySequence + difficulty[0]
-            except KeyError as e:
-                # print(str(e))
-                pass
+        probCodeToObjects = get_probCodeToObjectMap(useIntegrated = False, platform = PlatformType.Codechef)
+        probCodeToDifficulty = get_probCodeToDiff_Map(platform)
+        tipping_points = {0: [], 1: []}
 
-        easyCount = 0
-        mediumCount = 0
-        for character in difficultySequence:
-            if 'e' in character:
-                easyCount += 1
-                mediumCount = 0
-            elif 'm' in character:
-                mediumCount += 1
-                if easyCount > 0:
-                    tipping_points[0].append(easyCount)
-                    easyCount = 0
-            elif 'h' in character:
-                easyCount = 0
-                if mediumCount > 0:
-                    tipping_points[1].append(mediumCount)
+        for user in pro_users:
+            list_of_mapping_date = []
+            for probCode in user.problemMappings:
+                map = user.problemMappings[probCode]
+                try:
+                    list_of_mapping_date.append((map, datetime.strptime(map.date, '%Y-%m-%d %H:%M:%S')))
+                except ValueError as v:
+                    # Ignoring probable absence of datetime value like None
+                    # print('datetime found was none')
+                    pass
+            # Sorting list of tuples based on date parameter
+            list_of_mapping_date = sorted(list_of_mapping_date, key = lambda x: x[1])
+            difficultySequence = ''  # categorySolvingSequence = {} # A dictionary category --->
+            for tupl in list_of_mapping_date:
+                map = tupl[0]
+                try:
+                    prob = probCodeToObjects[map.prob_code]
+                    difficulty = ''
+                    if map.prob_code in probCodeToDifficulty:
+                        difficulty = probCodeToDifficulty[map.prob_code]
+                    elif prob.difficulty in codechefDifficultyLevels:
+                        difficulty = prob.difficulty
+                    else:
+                        # Didn't found difficulty from either prob_diff csv or DB
+                        continue
+                    difficultySequence = difficultySequence + difficulty[0]
+                except KeyError as e:
+                    # print(str(e))
+                    pass
+
+            easyCount = 0
+            mediumCount = 0
+            for character in difficultySequence:
+                if 'e' in character:
+                    easyCount += 1
                     mediumCount = 0
-    tipping_points[0].sort()
-    tipping_points[1].sort()
-    print(str(tipping_points[0]))
-    print(str(tipping_points[1]))
+                elif 'm' in character:
+                    mediumCount += 1
+                    if easyCount > 0:
+                        tipping_points[0].append(easyCount)
+                        easyCount = 0
+                elif 'h' in character:
+                    easyCount = 0
+                    if mediumCount > 0:
+                        tipping_points[1].append(mediumCount)
+                        mediumCount = 0
+        tipping_points[0].sort()
+        tipping_points[1].sort()
+        # print(str(tipping_points[0]))
+        # print(str(tipping_points[1]))
+        #
+        # if len(plt.get_fignums()) > 0:
+        #     print('Existing pyplot windows opened are now being closed')
+        #     plt.close()
+        #
+        # plt.plot([i for i in range(len(tipping_points[0]))], tipping_points[0], 'b-')
+        # plt.plot([i for i in range(len(tipping_points[1]))], tipping_points[1], 'r-')
+        # plt.xlabel(' tipping points')
+        # plt.show()
 
-    if len(plt.get_fignums()) > 0:
-        print('Existing pyplot windows opened are now being closed')
-        plt.close()
+        difficulty_limits_without_category = {'easy': get_equivalence_by_tendency(tipping_points[0]),
+                                              'medium': get_equivalence_by_tendency(tipping_points[1])}
 
-    plt.plot([i for i in range(len(tipping_points[0]))], tipping_points[0], 'b-')
-    plt.plot([i for i in range(len(tipping_points[1]))], tipping_points[1], 'r-')
-    plt.xlabel(' tipping points')
-    # plt.show()
+        # print('Normal Difficulty Limits ' + str(difficulty_limits_without_category))
 
-    difficulty_limits_without_category = {'easy': get_equivalence_by_tendency(tipping_points[0]),
-                                          'medium': get_equivalence_by_tendency(tipping_points[1])}
-
-    print('Normal Difficulty Limits ' + str(difficulty_limits_without_category))
     return difficulty_limits_without_category
 
 

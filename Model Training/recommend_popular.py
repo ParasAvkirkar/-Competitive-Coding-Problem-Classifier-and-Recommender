@@ -22,10 +22,7 @@ def generate_popular_problems():
             probCodeToObjects[p.prob_code] = p
 
         userProbMapQuery = s.query(Codechef_User_Prob_Map).filter()
-        print("Before pruning submissions list " + str(userProbMapQuery.count()))
         userProbMaps = [p for p in userProbMapQuery if p.difficulty != '' and p.prob_code in probCodeToObjects]
-        print("user to problem Map ready")
-        print("After pruning submissions list " + str(len(userProbMaps)))
 
         popular_problems_by_level_cat = {}
         for level in codechefDifficultyLevels:
@@ -44,7 +41,8 @@ def generate_popular_problems():
                 sorted_popular_probs = sorted(popular_problems_by_level_cat[level][cat].items(), key=lambda k: k[1], reverse=True)
                 popular_problems_by_level_cat[level][cat] = sorted_popular_probs
 
-    # print popular_problems_by_level_cat
+    #print popular_problems_by_level_cat
+
     return popular_problems_by_level_cat
 
 def get_popular(level, category, all_recommendation, solved_probs):
@@ -54,6 +52,6 @@ def get_popular(level, category, all_recommendation, solved_probs):
     for prob_code in popular_problems_by_level_cat[level][category]:
         if prob_code not in all_recommendation and prob_code not in solved_probs:
             problem = prob_code
+            break
 
-    return problem
-generate_popular_problems()
+    return problem[0]
