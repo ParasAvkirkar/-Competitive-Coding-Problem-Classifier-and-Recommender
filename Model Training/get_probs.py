@@ -44,6 +44,14 @@ def get_all_probs_without_category_NA(useIntegrated=True, platform=PlatformType.
     return problist
 
 
+def get_probCodeToObjectMap(useIntegrated=True, platform=PlatformType.Default):
+    probs = get_all_probs_without_category_NA(useIntegrated = useIntegrated, platform = platform)
+    probCodeToObjects = {}
+    for prb in probs:
+        probCodeToObjects[prb.prob_code] = prb
+
+    return probCodeToObjects
+
 def get_difficulty(prob_code):
     difficulty = 'NA'
     global probCodeToDifficulty
@@ -59,6 +67,20 @@ def get_difficulty(prob_code):
         difficulty = probCodeToDifficulty[prob_code]
 
     return difficulty
+
+
+# Currently implemented for Codechef, because its difficulty for some probs are empty,
+#  later on can be replicated for other platforms
+def get_probCodeToDiff_Map(platform=PlatformType.Codechef):
+    if platform == PlatformType.Codechef:
+        probCodeToDifficulty = {}
+        with open('codechef_prob_diff.csv', 'r') as f:
+            reader = csv.reader(f)
+            for line in reader:
+                probCodeToDifficulty[line[0]] = line[1]
+        return probCodeToDifficulty
+
+    return None
 
 
 def get_category(prob_code):

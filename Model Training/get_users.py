@@ -39,6 +39,7 @@ def get_codechef_users(probs_all_or_categorywise):
     for user in users:
         userNameToObjects[user.uname] = user
     userProbMapQuery = s.query(Codechef_User_Prob_Map).filter()
+
     print("Before pruning submissions list " + str(userProbMapQuery.count()))
     userProbMaps = [p for p in userProbMapQuery if p.date != 'None' and p.difficulty != '' and p.prob_code in probCodeToObjects]
     print("user to problem Map ready")

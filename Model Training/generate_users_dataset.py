@@ -5,13 +5,29 @@ import pickle
 import sys, csv, os, random
 
 sys.path.append('Utilities/')
-from constants import categories, codechefDifficultyLevels, PlatformType, defaultTestSize
+from constants import categories, codechefDifficultyLevels, PlatformType, defaultTestSize, categoryWiseWeights
 from get_users import get_codechef_users
 from user_class import Codechef_User
 
 userNameToObjects = None
 userNameToObjectsAll = None
 
+
+def get_userNameToObjects(uniqueFileConvention, platform):
+    if platform == PlatformType.Codechef:
+        users = None
+        if not os.path.isfile(uniqueFileConvention + '_orm.pickle'):
+            print(uniqueFileConvention + '_orm.pickle ' + 'not found')
+            userNameToObjects = get_codechef_users()
+            with open(uniqueFileConvention + '_orm.pickle', 'wb') as f:
+                print('Dumping ' + uniqueFileConvention + '_orm.pickle')
+                pickle.dump(userNameToObjects, f)
+        else:
+            with open(uniqueFileConvention + '_orm.pickle', 'rb') as f:
+                print('Loading from ' + uniqueFileConvention + '_orm.pickle')
+                userNameToObjects = pickle.load(f)
+
+    return userNameToObjects
 
 def generateLazyLoad(uniqueFileConvention, platform=PlatformType.Codechef):
     global userNameToObjects
@@ -69,7 +85,11 @@ def write_dataset(uniqueFileConvention, userNameToObjects, platform=PlatformType
             user = userNameToObjects[username]
             f.write(user.uname)
             for category in user.categoryDifficultyMap:
+                i = 0
                 for level in user.categoryDifficultyMap[category]:
-                    f.write(',' + str(len(user.categoryDifficultyMap[category][level])))
+                    value = len(user.categoryDifficultyMap[category][level]) * categoryWiseWeights[category]\
+                                                                * categorywise_difficulty_weights[category][i]
+                    f.write(',' + str(value))
+                    i += 1
             f.write('\n')
         print('User Dataset written: ' + uniqueFileConvention)

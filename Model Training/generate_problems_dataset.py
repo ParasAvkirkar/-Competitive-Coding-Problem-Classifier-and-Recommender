@@ -17,7 +17,7 @@ from constants import categories, performance_metric_keys, ClassifierType, probl
     PlatformType, defaultTestSize
 
 
-def get_num_of_top_words_as_feature(dataFileConvention):
+def get_num_of_top_words_as_feature(dataFileConvention, number_of_top_words_as_feature):
     print('Getting number of top words')
     try:
         with open('data/' + dataFileConvention + '_num_of_top_words_as_feature.pickle') as f:
@@ -25,16 +25,16 @@ def get_num_of_top_words_as_feature(dataFileConvention):
             # print "\n\n\n\n num_of_top_words_as_feature = " + str(num_of_top_words_as_feature) + "\n\n\n\n"
     except:
         with open('data/' + dataFileConvention + '_num_of_top_words_as_feature.pickle', 'w') as f:
-            num_of_top_words_as_feature = 10
+            # num_of_top_words_as_feature = 10
             pickle.dump(num_of_top_words_as_feature, f)
             # print "\n\n\n\n exception in num of top words as feature, using default size of 10\n\n\n\n"
 
     return num_of_top_words_as_feature
 
 
-def make_csv_files(category, sorted_perc, word_count, percentages, dataFileConvention):
-    num_of_top_words_as_feature = get_num_of_top_words_as_feature(dataFileConvention)
-
+def make_csv_files(category, sorted_perc, word_count, percentages, dataFileConvention, number_of_top_words):
+    # num_of_top_words_as_feature = get_num_of_top_words_as_feature(dataFileConvention, number_of_top_words)
+    num_of_top_words_as_feature = number_of_top_words
     with open('data/' + category + '/' + dataFileConvention + '_20feature_word_all_data' + '.csv', 'w') as f:
         for w in sorted_perc[:num_of_top_words_as_feature]:
             # print w[0] + " " + str(word_count[w[0]]['yes']) + " " + str(word_count[w[0]]['no']) + " " + str(
@@ -87,9 +87,9 @@ def make_csv_files(category, sorted_perc, word_count, percentages, dataFileConve
         print('Writing csv file: ' + 'data/' + category + '/' + dataFileConvention + '_word_table' + '.csv')
 
 
-def write_dataset(category, sorted_perc, data, dataFileConvention):
-    num_of_top_words_as_feature = get_num_of_top_words_as_feature(dataFileConvention)
-
+def write_dataset(category, sorted_perc, data, dataFileConvention, number_of_top_words):
+    # num_of_top_words_as_feature = get_num_of_top_words_as_feature(dataFileConvention, number_of_top_words)
+    num_of_top_words_as_feature = number_of_top_words
     with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'w') as f:
         f.write(','.join([x[0] for x in sorted_perc[:num_of_top_words_as_feature]]))
         # print ','.join([x[0] for x in sorted_perc[:num_of_top_words_as_feature]])
@@ -111,11 +111,11 @@ def write_dataset(category, sorted_perc, data, dataFileConvention):
 
 
 # data can be train set or test set
-def prepare_dataset(sorted_perc, data, category, platform, dataFileConvention):
+def prepare_dataset(sorted_perc, data, category, platform, dataFileConvention, number_of_top_words):
     count = 0
     prepared_data = []
-    num_of_top_words_as_feature = get_num_of_top_words_as_feature(dataFileConvention)
-
+    # num_of_top_words_as_feature = get_num_of_top_words_as_feature(dataFileConvention, number_of_top_words)
+    num_of_top_words_as_feature = number_of_top_words
     for p in data:
         prepared_data.append([])
         features = []
@@ -177,7 +177,7 @@ def generate(useIntegrated, category, platform, test_size=defaultTestSize):
 
 
 def generateLazyLoad(useIntegrated, category, platform, uniqueFileConvention, dataFileConvention,
-                     shouldShuffle=True, test_size=defaultTestSize):
+                     shouldShuffle=True, test_size=defaultTestSize, number_of_top_words = 10):
     if os.path.isfile('data/' + category + '/' + dataFileConvention + '_dataset.csv'):
         print(dataFileConvention + '_dataset.csv' + ' already generated only shuffling right now')
         with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'r') as f:
@@ -208,19 +208,22 @@ def generateLazyLoad(useIntegrated, category, platform, uniqueFileConvention, da
     sorted_perc.reverse()  # desc order
 
     total_data = []
-    prepared_train_data = prepare_dataset(sorted_perc, train_set, category, platform, dataFileConvention)
-    prepared_test_data = prepare_dataset(sorted_perc, test_set, category, platform, dataFileConvention)
+    prepared_train_data = prepare_dataset(sorted_perc, train_set, category, platform, dataFileConvention,
+                                          number_of_top_words = number_of_top_words)
+    prepared_test_data = prepare_dataset(sorted_perc, test_set, category, platform, dataFileConvention,
+                                         number_of_top_words = number_of_top_words)
 
     [total_data.append(t) for t in prepared_train_data]
     [total_data.append(t) for t in prepared_test_data]
 
-    make_csv_files(category, sorted_perc, word_cnt_stats, percentages, dataFileConvention)
-    write_dataset(category, sorted_perc, total_data, dataFileConvention)
+    make_csv_files(category, sorted_perc, word_cnt_stats, percentages, dataFileConvention,
+                   number_of_top_words = number_of_top_words)
+    write_dataset(category, sorted_perc, total_data, dataFileConvention,
+                  number_of_top_words = number_of_top_words)
 
 
 def generateLazyLoadForModel2(useIntegrated, category, platform, uniqueFileConvention, dataFileConvention,
                               test_size=defaultTestSize):
-    dataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
     if os.path.isfile('data/' + category + '/' + dataFileConvention + '_dataset.csv'):
         print(dataFileConvention + '_dataset.csv' + ' already generated only shuffling right now')
         with open('data/' + category + '/' + dataFileConvention + '_dataset.csv', 'r') as f:

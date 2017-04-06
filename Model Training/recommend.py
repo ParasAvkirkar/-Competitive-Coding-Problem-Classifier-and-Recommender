@@ -7,8 +7,10 @@ import copy
 from sorting import sort_by_date_difficulty, sort_by_date
 from generate_users_dataset import generateLazyLoad, generateLazyLoadAll
 from get_probs import get_difficulty, get_category, get_all_probs_without_category_NA
-from user_train_operations import get_categorywise_difficulty_limits, get_categorywise_tipping_points
+from user_level_limits import get_categorywise_difficulty_limits, get_difficulty_limits_without_category
+
 from recommend_popular import get_popular
+
 sys.path.append('Utilities/')
 
 from constants import PlatformType, categories, stddifficultyLevels
@@ -244,7 +246,14 @@ def recommender(uniqueFileConvention, platform, user):
         print final_recommendation
     print("=====================================================================================")
 
+if __name__ == '__main__':
 
+    # uniqueFileConvention = 'users_codechef_all_probs'
+    # userNameToObjectsAll = generateLazyLoadAll(uniqueFileConvention, PlatformType.Codechef)
+    uniqueFileConvention = 'users_codechef'
+    userNameToObjects = generateLazyLoad(uniqueFileConvention, PlatformType.Codechef)
+    print "Total no of users in DB " + str(len(userNameToObjects))
+    #recommender(uniqueFileConvention, PlatformType.Codechef, 'geeksoul')
 
 # uniqueFileConvention = 'users_codechef_all_probs'
 # userNameToObjectsAll = generateLazyLoadAll(uniqueFileConvention, PlatformType.Codechef)
@@ -257,5 +266,5 @@ print "Total no of users in DB " + str(len(userNameToObjects))
 for username in userNameToObjects:
     recommender(uniqueFileConvention, PlatformType.Codechef, username)
 
-print "Noob users - " +str(noob_count) + " Low_sub_count - " + str(low_sub_count) + " Regular - "+str(regular_count) \
-      + " Total - " + str(total_count)
+    print "Noob users - " +str(noob_count) + " Low_sub_count - " + str(low_sub_count) + " Regular - "+str(regular_count) \
+          + " Total - " + str(total_count)
