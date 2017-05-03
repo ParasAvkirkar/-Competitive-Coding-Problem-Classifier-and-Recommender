@@ -1,4 +1,6 @@
+import os
 import sys
+import pickle
 import matplotlib.pyplot as plt
 from scipy.stats import mode
 from generate_problems_dataset import generate, generateLazyLoad
@@ -12,7 +14,7 @@ sys.path.append('../hyperopt-sklearn')
 from constants import categories, performance_metric_keys, ClusterMethod, \
     PlatformType, Metrics, defaultTestSize, codechefDifficultyLevels
 
-categorywise_difficulty_limits = None
+# categorywise_difficulty_limits = None
 difficulty_limits_without_category = None
 
 
@@ -100,9 +102,9 @@ def get_difficulty_limits_without_category(uniqueFileConvention, platform, days_
 
 # Right now handles codechef, later platform wise changes would be made
 def get_categorywise_difficulty_limits(uniqueFileConvention, platform, days_to_consider_pro_user):
-    global categorywise_difficulty_limits
-    if categorywise_difficulty_limits == None:
-        categorywise_difficulty_limits = {}
+
+    categorywise_difficulty_limits = {}
+    if not os.path.isfile(uniqueFileConvention + '_catwise_diff.pickle'):
         probCodeToDifficulty = get_probCodeToDiff_Map(platform)
         probCodeToObjects = get_probCodeToObjectMap(useIntegrated = False, platform = platform)
 
@@ -147,8 +149,12 @@ def get_categorywise_difficulty_limits(uniqueFileConvention, platform, days_to_c
             plt.xlabel(cat + ' tipping points')
             # plt.show()
 
-        print categorywise_difficulty_limits
-
+        # print categorywise_difficulty_limits
+        with open(uniqueFileConvention + '_catwise_diff.pickle', 'wb') as f:
+            pickle.dump(categorywise_difficulty_limits, f)
+    else:
+        with open(uniqueFileConvention + '_catwise_diff.pickle', 'rb') as f:
+            categorywise_difficulty_limits = pickle.load(f)
     return categorywise_difficulty_limits
 
 

@@ -4,8 +4,10 @@ import operator
 import sys
 import copy
 
+from sqlalchemy.sql.functions import user
+
 from sorting import sort_by_date_difficulty, sort_by_date
-from generate_users_dataset import generateLazyLoad, generateLazyLoadAll
+from generate_users_dataset import generateLazyLoad, generateLazyLoadAll, get_probCodeToObjects
 from get_probs import get_difficulty, get_category, get_all_probs_without_category_NA
 from user_level_limits import get_categorywise_difficulty_limits, get_difficulty_limits_without_category
 
@@ -14,6 +16,7 @@ from recommend_popular import get_popular
 sys.path.append('Utilities/')
 
 from constants import PlatformType, categories, stddifficultyLevels, codechefDifficultyLevels
+tp = tn = fp = fn = 0
 
 def build_recommendation_list_for_users(usersClusterMap, probs):
     probDict = {}
@@ -125,30 +128,34 @@ def print_recommendation(recommendation):
         val += get_difficulty(row[0])
         print val
 
-def recommender(uniqueFileConvention, platform, user):
+def recommender(uniqueFileConvention, userObjects):
 
-    userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
+    global tp, tn, fp, fn
 
-    categoryDifficultyMap = userNameToObjects[user].categoryDifficultyMap
-    optimum_category_level = get_user_level_by_category(uniqueFileConvention, categoryDifficultyMap)
+    submissionsDict = userObjects.problemMappings
+    optimum_category_level = get_user_level_by_category(uniqueFileConvention, userObjects.categoryDifficultyMap)
 
-    submissionsDict = userNameToObjects[user].problemMappings
+    evalsubmissions = []
+    for x in sort_by_date(submissionsDict)[-10:]:
+        evalsubmissions.append(x[0])
+    
+    for prob_code in evalsubmissions:
+        del submissionsDict[prob_code]
 
     # print "Category wise difficulty limits"
     # print categorywise_difficulty_limits
     # print "User submissions sorted by category and difficulty"
     # print categoryDifficultyMap
 
-    print user
     final_recommendation = []
 
     if len(submissionsDict) < 5:
 
         uniqueFileConvention1 = 'users_codechef_all_probs'
-        userNameToObjectsAll = generateLazyLoadAll(uniqueFileConvention1, platform=PlatformType.Codechef)
-        submissionsDict = userNameToObjectsAll[user].problemMappings
+        userObjectsAll = generateLazyLoadAll(uniqueFileConvention1, platform=PlatformType.Codechef)
+        submissionsDict = userObjectsAll.problemMappings
         if len(submissionsDict) < 5:
-            print "No submissions at all for this user"
+            print "Less than 5 submissions for this user"
             for category in categories:
                 final_recommendation.append(get_popular('easy', category, final_recommendation, {}))
 
@@ -206,16 +213,62 @@ def recommender(uniqueFileConvention, platform, user):
                 if categorywise_recomm[category]:
                     final_recommendation.append(categorywise_recomm[category][0][0])
                 else:
-                    prob_code = get_popular(level, category, all_recommendation, userNameToObjects[user].solved_probs)
+                    prob_code = get_popular(level, category, all_recommendation, userObjects.solved_probs)
                     final_recommendation.append(prob_code)
 
-    print final_recommendation
+        for prob_code in final_recommendation:
+            if prob_code in evalsubmissions:
+                tp += 1
+            else:
+                fp += 1
+
+        for prob_code in evalsubmissions:
+            if prob_code not in final_recommendation:
+                fn += 1
+
+    # print final_recommendation
+    # print evalsubmissions
+
+    recomm_prob_obj = []
+
+    probObjects, probObjectsAll = get_probCodeToObjects()
+
+    for prob_code in final_recommendation:
+        try:
+            recomm_prob_obj.append(probObjects[prob_code])
+        except:
+            recomm_prob_obj.append(probObjectsAll[prob_code])
+
     print("=====================================================================================")
+
+    return recomm_prob_obj
+
+
+def get_recommendations(username):
+
+    uniqueFileConvention = 'users_codechef'
+    platform = PlatformType.Codechef
+
+    userObjects = generateLazyLoad(uniqueFileConvention, platform, username)
+
+    recommended_probs = recommender(uniqueFileConvention, userObjects)
+
+    return recommended_probs, userObjects.categoryDifficultyMap, sort_by_date(userObjects.problemMappings)
+
 
 if __name__ == '__main__':
 
-    uniqueFileConvention = 'users_codechef'
-    userNameToObjects = generateLazyLoad(uniqueFileConvention, PlatformType.Codechef)
-
-    for username in userNameToObjects:
-        recommender(uniqueFileConvention, PlatformType.Codechef, username)
+    get_recommendations("i_am_what_i_am")
+    # uniqueFileConvention = 'users_codechef'
+    # global tp, tn, fp, fn
+    #
+    # tp = tp * 1.0
+    # precision = tp/(tp + fp)
+    # recall = tp/(tp + fn)
+    # f1_score = 2 * precision * recall / (precision + recall)
+    #
+    # print str(tp) + " " + str(fn)
+    # print str(fp) + " " + str(tn)
+    # print "Precision - " + str(precision)
+    # print "Recall - " + str(recall)
+    # print "F1score - " + str(f1_score)

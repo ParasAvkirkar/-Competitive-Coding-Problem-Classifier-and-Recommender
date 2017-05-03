@@ -76,6 +76,7 @@ def get_codechef_users(probs_all_or_categorywise):
                 user.problemMappings[map.prob_code] = map
 
             user.solved_probs[map.prob_code] = map.no_of_submissions
+            user.solved_probs_obj[map.prob_code] = prob
             userNameToObjects[map.uname] = user
         except KeyError as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -111,7 +112,7 @@ def get_codechef_users(probs_all_or_categorywise):
     #    usersToBeReturned.append(userNameToObjects[userName])
     print(str(len(userNameToObjects)))
     print('Fetched codechef users')
-    return userNameToObjects
+    return userNameToObjects, probCodeToObjects
 
 
 def print_skewed_codechef_user_stats(userNameToObjects):

@@ -42,6 +42,7 @@ class Codechef_User(Base):
         self.categoryDifficultyMap = {}
         self.user_level = 0.0
         self.solved_probs = {}
+        self.solved_probs_obj = {}
         self.failed_probs = {}
         self.recommendation_list = []
         self.problemMappings = {}
