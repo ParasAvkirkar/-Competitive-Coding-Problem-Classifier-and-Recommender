@@ -128,7 +128,7 @@ def print_recommendation(recommendation):
         val += get_difficulty(row[0])
         print val
 
-def recommender(uniqueFileConvention, userObjects):
+def recommender(uniqueFileConvention, userObjects, username):
 
     global tp, tn, fp, fn
 
@@ -152,7 +152,7 @@ def recommender(uniqueFileConvention, userObjects):
     if len(submissionsDict) < 5:
 
         uniqueFileConvention1 = 'users_codechef_all_probs'
-        userObjectsAll = generateLazyLoadAll(uniqueFileConvention1, platform=PlatformType.Codechef)
+        userObjectsAll = generateLazyLoadAll(uniqueFileConvention1, platform=PlatformType.Codechef, username=username)
         submissionsDict = userObjectsAll.problemMappings
         if len(submissionsDict) < 5:
             print "Less than 5 submissions for this user"
@@ -226,7 +226,7 @@ def recommender(uniqueFileConvention, userObjects):
             if prob_code not in final_recommendation:
                 fn += 1
 
-    # print final_recommendation
+    print final_recommendation
     # print evalsubmissions
 
     recomm_prob_obj = []
@@ -251,7 +251,7 @@ def get_recommendations(username):
 
     userObjects = generateLazyLoad(uniqueFileConvention, platform, username)
 
-    recommended_probs = recommender(uniqueFileConvention, userObjects)
+    recommended_probs = recommender(uniqueFileConvention, userObjects, username)
 
     return recommended_probs, userObjects.categoryDifficultyMap, sort_by_date(userObjects.problemMappings)
 
