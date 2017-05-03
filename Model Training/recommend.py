@@ -160,7 +160,7 @@ def recommender(uniqueFileConvention, userObjects):
                 final_recommendation.append(get_popular('easy', category, final_recommendation, {}))
 
         else:
-            level = get_user_level_without_category(uniqueFileConvention, userNameToObjectsAll[user].level_wise_submissions)
+            level = get_user_level_without_category(uniqueFileConvention, userObjectsAll[user].level_wise_submissions)
             recommendation = get_word2vec_recommendation(uniqueFileConvention1, submissionsDict, 5, level, 5)
 
             for problem in recommendation:
