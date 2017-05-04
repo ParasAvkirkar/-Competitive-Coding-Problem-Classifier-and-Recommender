@@ -104,7 +104,7 @@ def get_difficulty_limits_without_category(uniqueFileConvention, platform, days_
 def get_categorywise_difficulty_limits(uniqueFileConvention, platform, days_to_consider_pro_user):
 
     categorywise_difficulty_limits = {}
-    if not os.path.isfile(uniqueFileConvention + '_catwise_diff.pickle'):
+    if not os.path.isfile('users/' + uniqueFileConvention + '_catwise_diff.pickle'):
         probCodeToDifficulty = get_probCodeToDiff_Map(platform)
         probCodeToObjects = get_probCodeToObjectMap(useIntegrated = False, platform = platform)
 
@@ -150,10 +150,10 @@ def get_categorywise_difficulty_limits(uniqueFileConvention, platform, days_to_c
             # plt.show()
 
         # print categorywise_difficulty_limits
-        with open(uniqueFileConvention + '_catwise_diff.pickle', 'wb') as f:
+        with open('users/' + uniqueFileConvention + '_catwise_diff.pickle', 'wb') as f:
             pickle.dump(categorywise_difficulty_limits, f)
     else:
-        with open(uniqueFileConvention + '_catwise_diff.pickle', 'rb') as f:
+        with open('users/' + uniqueFileConvention + '_catwise_diff.pickle', 'rb') as f:
             categorywise_difficulty_limits = pickle.load(f)
     return categorywise_difficulty_limits
 

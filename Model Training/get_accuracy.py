@@ -24,9 +24,9 @@ tn = 0
 fp = 0
 fn = 0
 
+
 def get_word2vec_recommendation(uniqueFileConvention, submissionsDict, prev_sub, no_recomm):
     model = models.Word2Vec.load(uniqueFileConvention)
-
     sorted_submissions = sort_by_date(submissionsDict)
 
     submission_sentence = []
@@ -38,13 +38,13 @@ def get_word2vec_recommendation(uniqueFileConvention, submissionsDict, prev_sub,
     return recommendation
 
 
-def recommender(uniqueFileConvention, userObjects, username, prev_sub, no_recomm):
+def recommender(uniqueFileConvention, userObjects, username, prev_sub, no_recomm, no_test):
     global tp, tn, fp, fn
 
     submissionsDict = userObjects.problemMappings
 
     evalsubmissions = []
-    for x in sort_by_date(submissionsDict)[-10:]:
+    for x in sort_by_date(submissionsDict)[-no_test:]:
         evalsubmissions.append(x[0])
 
     for prob_code in evalsubmissions:
@@ -75,45 +75,50 @@ def recommender(uniqueFileConvention, userObjects, username, prev_sub, no_recomm
 
 
 
-def get_recommendations(username, prev_sub, no_recomm):
+def get_recommendations(username, prev_sub, no_recomm, no_test):
     uniqueFileConvention = 'users_codechef'
+    # uniqueFileConvention = 'users_codechef_all_probs'
     platform = PlatformType.Codechef
 
     userObjects = generateLazyLoad(uniqueFileConvention, platform, username)
-    recommender(uniqueFileConvention, userObjects, username, prev_sub, no_recomm)
+    recommender(uniqueFileConvention, userObjects, username, prev_sub, no_recomm, no_test)
 
 
 if __name__ == '__main__':
     user_list = []
     uniqueFileConvention = 'users_codechef'
+    # uniqueFileConvention = 'users_codechef_all_probs'
 
     with open("users_ids.txt", 'rb') as f:
         user_list = f.readlines()
 
     with open('accuracy_val.csv', 'w') as f:
         writer = csv.writer(f)
-        writer.writerow(['prev_sub', 'no_recomm', 'tp', 'tn', 'fp', 'fn', 'precision', 'recall', 'f1_score'])
+        writer.writerow(['prev_sub', 'no_recomm', 'no_test', 'tp', 'tn', 'fp', 'fn', 'precision', 'recall', 'f1_score'])
 
         prev_sub = 5
         no_recomm = 10
-        # for prev_sub in range(5,50,5):
-        for no_recomm in range(10, 101, 10):
-            tp = tn = fp = fn = 0
-            for username in user_list:
-                if os.path.isfile('users/' + uniqueFileConvention + '_' + username.strip() + '.pickle'):
-                    get_recommendations(username.strip(), prev_sub, no_recomm)
+        for no_test in range(10,11,10):
+            for prev_sub in range(5,6,5):
+                for no_recomm in range(10, 11, 10):
 
-            print str(tp) + " " + str(fn)
-            print str(fp) + " " + str(tn)
+                    print str(no_test)+ " " + str(prev_sub) + " " + str(no_recomm)
+                    tp = tn = fp = fn = 0
+                    for username in user_list:
+                        if os.path.isfile('users/' + uniqueFileConvention + '_' + username.strip() + '.pickle'):
+                            get_recommendations(username.strip(), prev_sub, no_recomm, no_test)
 
-            tp = tp * 1.0
-            precision = tp/(tp + fp)
-            recall = tp/(tp + fn)
-            f1_score = 2 * precision * recall / (precision + recall)
+                    print str(tp) + " " + str(fn)
+                    print str(fp) + " " + str(tn)
 
-            print "Precision - " + str(precision)
-            print "Recall - " + str(recall)
-            print "F1score - " + str(f1_score)
+                    tp = tp * 1.0
+                    precision = tp/(tp + fp)
+                    recall = tp/(tp + fn)
+                    f1_score = 2 * precision * recall / (precision + recall)
 
-            dat = [prev_sub, no_recomm, tp, tn, fp, fn, precision, recall, f1_score]
-            writer.writerow(dat)
+                    print "Precision - " + str(precision)
+                    print "Recall - " + str(recall)
+                    print "F1score - " + str(f1_score)
+
+                    dat = [prev_sub, no_recomm, no_test, tp, tn, fp, fn, precision, recall, f1_score]
+                    writer.writerow(dat)

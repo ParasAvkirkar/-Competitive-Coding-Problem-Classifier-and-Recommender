@@ -259,16 +259,3 @@ def get_recommendations(username):
 if __name__ == '__main__':
 
     get_recommendations("i_am_what_i_am")
-    # uniqueFileConvention = 'users_codechef'
-    # global tp, tn, fp, fn
-    #
-    # tp = tp * 1.0
-    # precision = tp/(tp + fp)
-    # recall = tp/(tp + fn)
-    # f1_score = 2 * precision * recall / (precision + recall)
-    #
-    # print str(tp) + " " + str(fn)
-    # print str(fp) + " " + str(tn)
-    # print "Precision - " + str(precision)
-    # print "Recall - " + str(recall)
-    # print "F1score - " + str(f1_score)
