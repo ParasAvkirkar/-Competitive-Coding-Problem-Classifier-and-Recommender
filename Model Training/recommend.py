@@ -71,12 +71,9 @@ def get_word2vec_recommendation(uniqueFileConvention, submissionsDict, prev_sub,
 
         # Word2Vec function call to give recommendations
         recommendation = model.most_similar(positive=submission_sentence, topn=no_recomm)
+        # recommendation = model.most_similar_cosmul(positive=submission_sentence, topn=no_recomm)
 
-        # For each row x in the list recommendation
-        # x[0] - Problem codes
-        # x[1] - Score
-        #
-        # To get difficulty for problem code use get_difficulty(prob_code) from get_probs.py
+
     else:
         submission_sentence = []
         sorted_submissions = sort_by_date_difficulty(submissionsDict)
@@ -135,12 +132,12 @@ def recommender(uniqueFileConvention, userObjects, username):
     submissionsDict = userObjects.problemMappings
     optimum_category_level = get_user_level_by_category(uniqueFileConvention, userObjects.categoryDifficultyMap)
 
-    evalsubmissions = []
-    for x in sort_by_date(submissionsDict)[-10:]:
-        evalsubmissions.append(x[0])
-    
-    for prob_code in evalsubmissions:
-        del submissionsDict[prob_code]
+    # evalsubmissions = []
+    # for x in sort_by_date(submissionsDict)[-10:]:
+    #     evalsubmissions.append(x[0])
+    #
+    # for prob_code in evalsubmissions:
+    #     del submissionsDict[prob_code]
 
     # print "Category wise difficulty limits"
     # print categorywise_difficulty_limits
@@ -216,15 +213,6 @@ def recommender(uniqueFileConvention, userObjects, username):
                     prob_code = get_popular(level, category, all_recommendation, userObjects.solved_probs)
                     final_recommendation.append(prob_code)
 
-        for prob_code in final_recommendation:
-            if prob_code in evalsubmissions:
-                tp += 1
-            else:
-                fp += 1
-
-        for prob_code in evalsubmissions:
-            if prob_code not in final_recommendation:
-                fn += 1
 
     print final_recommendation
     # print evalsubmissions

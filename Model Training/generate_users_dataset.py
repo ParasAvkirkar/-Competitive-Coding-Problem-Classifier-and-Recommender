@@ -104,7 +104,7 @@ def generateLazyLoadAll(uniqueFileConvention, platform=PlatformType.Codechef, us
         return userNameToObjectsAll
 
     if username == 'none':
-        with open(uniqueFileConvention + '_orm.pickle', 'rb') as f:
+        with open('users/' + uniqueFileConvention + '_orm.pickle', 'rb') as f:
             print('Loading from ' + uniqueFileConvention + '_orm.pickle')
             userNameToObjectsAll = pickle.load(f)
         return userNameToObjectsAll

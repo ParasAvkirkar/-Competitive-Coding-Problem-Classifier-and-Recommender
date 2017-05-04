@@ -5,6 +5,7 @@ import operator
 import sys
 import copy
 import csv
+import numpy as np
 
 from sqlalchemy.sql.functions import user
 
@@ -85,6 +86,7 @@ def get_recommendations(username, prev_sub, no_recomm, no_test):
 
 
 if __name__ == '__main__':
+
     user_list = []
     uniqueFileConvention = 'users_codechef'
     # uniqueFileConvention = 'users_codechef_all_probs'
@@ -98,7 +100,7 @@ if __name__ == '__main__':
 
         prev_sub = 5
         no_recomm = 10
-        for no_test in range(10,11,10):
+        for no_test in range(20,21,10):
             for prev_sub in range(5,6,5):
                 for no_recomm in range(10, 11, 10):
 

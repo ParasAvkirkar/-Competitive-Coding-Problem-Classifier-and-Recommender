@@ -95,8 +95,8 @@ def train_word2vec(uniqueFileConvention, platform, probs_all_or_categorywise):
     print ("Sentences done")
     print ("Started training Word2Vec model")
     start = time.time()
-    # model = Word2Vec(sentences, size=50, window=5, workers=2, min_count=1, iter=25, negative=15, sg=1)
-    model = Word2Vec(sentences, size=20, window=10, workers=2, min_count=1, iter=25, hs=1, sg=1)
+    model = Word2Vec(sentences, size=50, window=5, workers=2, min_count=1, iter=25, negative=15, sg=1)
+    # model = Word2Vec(sentences, size=20, window=10, workers=2, min_count=1, iter=25, hs=1, sg=0)
     end = time.time()
     print ("Finished training Word2Vec model")
 
