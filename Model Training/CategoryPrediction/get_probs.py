@@ -11,6 +11,7 @@ from transform_description import transform, new_transform
 probCodeToDifficulty = None
 probCodeToCategory = None
 
+
 def get_all_probs(useIntegrated=True, platform=PlatformType.Default):
     # s = get_session()
     s = get_session_by_configuration(useIntegrated)
@@ -52,7 +53,7 @@ def get_all_probs(useIntegrated=True, platform=PlatformType.Default):
     return problist
 
 
-def get_all_probs_without_category_NA(useIntegrated=True, platform=PlatformType.Default, probs_all_or_categorywise = 1):
+def get_all_probs_without_category_NA(useIntegrated=True, platform=PlatformType.Default, probs_all_or_categorywise=1):
     # s = get_session()
     s = get_session_by_configuration(useIntegrated)
     # probs = s.query(Problem).filter()
@@ -96,8 +97,9 @@ def get_difficulty(prob_code):
 
     if prob_code in probCodeToDifficulty:
         difficulty = probCodeToDifficulty[prob_code]
-    
+
     return difficulty
+
 
 # Currently implemented for Codechef, because its difficulty for some probs are empty,
 #  later on can be replicated for other platforms
@@ -126,8 +128,10 @@ def get_category(prob_code):
 
     if prob_code in probCodeToCategory:
         category = probCodeToCategory[prob_code]
+        category = category.split()
 
     return category
+
 
 if __name__ == '__main__':
     get_all_probs()

@@ -18,7 +18,7 @@ def get_userNameToObjects(uniqueFileConvention, platform):
         users = None
         if not os.path.isfile(uniqueFileConvention + '_orm.pickle'):
             print(uniqueFileConvention + '_orm.pickle ' + 'not found')
-            userNameToObjects = get_codechef_users()
+            userNameToObjects, probCodeToObjects = get_codechef_users()
             with open(uniqueFileConvention + '_orm.pickle', 'wb') as f:
                 print('Dumping ' + uniqueFileConvention + '_orm.pickle')
                 pickle.dump(userNameToObjects, f)
@@ -29,48 +29,90 @@ def get_userNameToObjects(uniqueFileConvention, platform):
 
     return userNameToObjects
 
-def generateLazyLoad(uniqueFileConvention, platform=PlatformType.Codechef):
+def get_probCodeToObjects():
+    with open('users/' + 'codechef_probs.pickle', 'rb') as f:
+        probCodeToObjects = pickle.load(f)
+
+    with open('users/' + 'codechef_probs_all.pickle', 'rb') as f:
+        probCodeToObjectsAll = pickle.load(f)
+
+    return probCodeToObjects, probCodeToObjectsAll
+
+
+def generateLazyLoad(uniqueFileConvention, platform=PlatformType.Codechef, username='none'):
     global userNameToObjects
 
-    if userNameToObjects is None:
-        if platform == PlatformType.Codechef:
-            users = None
-            if not os.path.isfile(uniqueFileConvention + '_orm.pickle'):
-                print(uniqueFileConvention + '_orm.pickle ' + 'not found')
-                userNameToObjects = get_codechef_users(probs_all_or_categorywise=1)
-                with open(uniqueFileConvention + '_orm.pickle', 'wb') as f:
-                    print('Dumping ' + uniqueFileConvention + '_orm.pickle')
-                    pickle.dump(userNameToObjects, f)
-            else:
-                with open(uniqueFileConvention + '_orm.pickle', 'rb') as f:
-                    print('Loading from ' + uniqueFileConvention + '_orm.pickle')
-                    userNameToObjects = pickle.load(f)
+    # if userNameToObjects is None:
+    #     if platform == PlatformType.Codechef:
+    #         users = None
+    userObject = None
 
-                    # write_dataset(uniqueFileConvention, userNameToObjects, platform)
+    if not os.path.isfile('users/'+ uniqueFileConvention + '_orm.pickle'):
+        print(uniqueFileConvention + '_orm.pickle ' + 'not found')
+        userNameToObjects, probCodeToObjects = get_codechef_users(probs_all_or_categorywise=1)
+        print('Dumping ' + uniqueFileConvention + '_orm.pickle')
+        with open('users/' + uniqueFileConvention + '_orm.pickle', 'wb') as f:
+            pickle.dump(userNameToObjects, f)
 
-    return userNameToObjects
+        with open('users/' + 'codechef_probs.pickle', 'wb') as f:
+            pickle.dump(probCodeToObjects, f)
+
+        for user in userNameToObjects:
+            with open('users/' + uniqueFileConvention + '_' + user + '.pickle', 'wb') as f:
+                pickle.dump(userNameToObjects[user], f)
+
+    if userNameToObjects is not None:
+        return userNameToObjects
+
+    if username == 'none':
+        with open('users/' + uniqueFileConvention + '_orm.pickle', 'rb') as f:
+            print('Loading from ' + uniqueFileConvention + '_orm.pickle')
+            userNameToObjects = pickle.load(f)
+        return userNameToObjects
+    else:
+        with open('users/' + uniqueFileConvention + '_' + username + '.pickle', 'rb') as f:
+            userObject = pickle.load(f)
+            # write_dataset(uniqueFileConvention, userNameToObjects, platform)
+        return userObject
 
 
-def generateLazyLoadAll(uniqueFileConvention, platform=PlatformType.Codechef):
+def generateLazyLoadAll(uniqueFileConvention, platform=PlatformType.Codechef, username='none'):
     global userNameToObjectsAll
 
-    if userNameToObjectsAll is None:
-        if platform == PlatformType.Codechef:
-            users = None
-            if not os.path.isfile(uniqueFileConvention + '_orm.pickle'):
-                print(uniqueFileConvention + '_orm.pickle ' + 'not found')
-                userNameToObjectsAll = get_codechef_users(probs_all_or_categorywise=2)
-                with open(uniqueFileConvention + '_orm.pickle', 'wb') as f:
-                    print('Dumping ' + uniqueFileConvention + '_orm.pickle')
-                    pickle.dump(userNameToObjectsAll, f)
-            else:
-                with open(uniqueFileConvention + '_orm.pickle', 'rb') as f:
-                    print('Loading from ' + uniqueFileConvention + '_orm.pickle')
-                    userNameToObjectsAll = pickle.load(f)
+    # if userNameToObjectsAll is None:
+    #     if platform == PlatformType.Codechef:
+    #         users = None
 
-                    # write_dataset(uniqueFileConvention, userNameToObjects, platform)
+    userObjectsAll = None
 
-    return userNameToObjectsAll
+    if not os.path.isfile('users/' + uniqueFileConvention + '_orm.pickle'):
+        print(uniqueFileConvention + '_orm.pickle ' + 'not found')
+        userNameToObjectsAll, probCodeToObjects = get_codechef_users(probs_all_or_categorywise=2)
+        print('Dumping ' + uniqueFileConvention + '_orm.pickle')
+
+        with open('users/' + uniqueFileConvention + '_orm.pickle', 'wb') as f:
+            pickle.dump(userNameToObjectsAll, f)
+
+        with open('users/' + 'codechef_probs_all.pickle', 'wb') as f:
+            pickle.dump(probCodeToObjects, f)
+
+        for user in userNameToObjectsAll:
+            with open('users/' + uniqueFileConvention + '_' + user + '.pickle', 'wb') as f:
+                pickle.dump(userNameToObjects[user], f)
+
+    if userNameToObjectsAll is not None:
+        return userNameToObjectsAll
+
+    if username == 'none':
+        with open('users/' + uniqueFileConvention + '_orm.pickle', 'rb') as f:
+            print('Loading from ' + uniqueFileConvention + '_orm.pickle')
+            userNameToObjectsAll = pickle.load(f)
+        return userNameToObjectsAll
+    else:
+        with open('users/' + uniqueFileConvention + '_' + username + '.pickle', 'rb') as f:
+            userObjectsAll = pickle.load(f)
+            # write_dataset(uniqueFileConvention, userNameToObjects, platform)
+        return userObjectsAll
 
 
 def write_dataset(uniqueFileConvention, userNameToObjects, platform=PlatformType.Codechef):

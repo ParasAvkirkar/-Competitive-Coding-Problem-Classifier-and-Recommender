@@ -4,19 +4,19 @@ import operator
 import sys
 import copy
 
+from sqlalchemy.sql.functions import user
+
 from sorting import sort_by_date_difficulty, sort_by_date
-from generate_users_dataset import generateLazyLoad, generateLazyLoadAll
+from generate_users_dataset import generateLazyLoad, generateLazyLoadAll, get_probCodeToObjects
 from get_probs import get_difficulty, get_category, get_all_probs_without_category_NA
 from user_level_limits import get_categorywise_difficulty_limits, get_difficulty_limits_without_category
 
+from recommend_popular import get_popular
+
 sys.path.append('Utilities/')
 
-from constants import PlatformType, categories
-
-noob_count = 0
-low_sub_count = 0
-total_count = 0
-regular_count = 0
+from constants import PlatformType, categories, stddifficultyLevels, codechefDifficultyLevels
+tp = tn = fp = fn = 0
 
 def build_recommendation_list_for_users(usersClusterMap, probs):
     probDict = {}
@@ -67,38 +67,41 @@ def get_word2vec_recommendation(uniqueFileConvention, submissionsDict, prev_sub,
 
     if len(sorted_submissions) >= prev_sub:
         submission_sentence = []
-
         [submission_sentence.append(row[0]) for row in sorted_submissions[-prev_sub:]]
 
         # Word2Vec function call to give recommendations
         recommendation = model.most_similar(positive=submission_sentence, topn=no_recomm)
+        # recommendation = model.most_similar_cosmul(positive=submission_sentence, topn=no_recomm)
 
-        # For each row x in the list recommendation
-        # x[0] - Problem codes
-        # x[1] - Score
-        #
-        # To get difficulty for problem code use get_difficulty(prob_code) from get_probs.py
 
     else:
-        # Insufficient input
-        # Recommend popular problems
-        # for each category in current diff level
-        # present in optimum_category_level
-        print str(diff) + " Insufficient input for this diff level. Recommend popular problems"
+        submission_sentence = []
+        sorted_submissions = sort_by_date_difficulty(submissionsDict)
+        [submission_sentence.append(row[0]) for row in sorted_submissions[-prev_sub:]]
+        recommendation = model.most_similar(positive=submission_sentence, topn=no_recomm)
 
     return recommendation
 
 
-"""
-user - Username
-prev_sub - No of recent submissions to consider for recommendation
-diff - Difficulty level of problems to use for recommendation i.e ( "5" recently solved "easy" problems )
-no_recomm - No of problems to recommend
-"""
+def get_user_level_without_category(uniqueFileConvention, level_wise_submissions):
+    optimum_level = 'easy'
+
+    difficulty_limits = get_difficulty_limits_without_category(uniqueFileConvention, PlatformType.Codechef, 730)
+
+    if level_wise_submissions['medium'] >= difficulty_limits['medium']:
+        optimum_level = 'hard'
+
+    elif level_wise_submissions['easy'] >= difficulty_limits['easy']:
+        optimum_level = 'medium'
+
+    return optimum_level
 
 
-def get_user_level_by_category(categoryDifficultyMap, categorywise_difficulty_limits):
+def get_user_level_by_category(uniqueFileConvention, categoryDifficultyMap):
     optimum_category_level = {'easy': [], 'medium': [], 'hard': []}
+
+    categorywise_difficulty_limits = get_categorywise_difficulty_limits(uniqueFileConvention, PlatformType.Codechef,
+                                                                        730)
     for category in categoryDifficultyMap:
 
         if categoryDifficultyMap[category]['medium'] >= categorywise_difficulty_limits[category]['medium']:
@@ -122,23 +125,19 @@ def print_recommendation(recommendation):
         val += get_difficulty(row[0])
         print val
 
-def recommender(uniqueFileConvention, platform, user):
+def recommender(uniqueFileConvention, userObjects, username):
 
-    global noob_count
-    global low_sub_count
-    global total_count
-    global regular_count
-    __user = ''
-    total_count += 1
+    global tp, tn, fp, fn
 
-    userNameToObjects = generateLazyLoad(uniqueFileConvention, platform)
+    submissionsDict = userObjects.problemMappings
+    optimum_category_level = get_user_level_by_category(uniqueFileConvention, userObjects.categoryDifficultyMap)
 
-    categorywise_difficulty_limits = get_categorywise_difficulty_limits(uniqueFileConvention, PlatformType.Codechef,
-                                                                        730)
-    categoryDifficultyMap = userNameToObjects[user].categoryDifficultyMap
-    optimum_category_level = get_user_level_by_category(categoryDifficultyMap, categorywise_difficulty_limits)
-
-    submissionsDict = userNameToObjects[user].problemMappings
+    # evalsubmissions = []
+    # for x in sort_by_date(submissionsDict)[-10:]:
+    #     evalsubmissions.append(x[0])
+    #
+    # for prob_code in evalsubmissions:
+    #     del submissionsDict[prob_code]
 
     # print "Category wise difficulty limits"
     # print categorywise_difficulty_limits
@@ -146,29 +145,27 @@ def recommender(uniqueFileConvention, platform, user):
     # print categoryDifficultyMap
 
     final_recommendation = []
-    print user
 
     if len(submissionsDict) < 5:
-        # Cold Start
-        # Recommend popular problems
-        # Write code to see if he actually has < 5 submissions or is it due to
-        # lack of problem categories if the latter case use other dictionary which
-        # is w/o categorizing probs so at least something will be recommended
-        print "Noob"
 
         uniqueFileConvention1 = 'users_codechef_all_probs'
-        userNameToObjectsAll = generateLazyLoadAll(uniqueFileConvention1, platform=PlatformType.Codechef)
-        submissionsDict = userNameToObjectsAll[user].problemMappings
+        userObjectsAll = generateLazyLoadAll(uniqueFileConvention1, platform=PlatformType.Codechef, username=username)
+        submissionsDict = userObjectsAll.problemMappings
         if len(submissionsDict) < 5:
-            print "Real Noob"
-            noob_count += 1
-            # Recommend popular problems
+            print "Less than 5 submissions for this user"
+            for category in categories:
+                final_recommendation.append(get_popular('easy', category, final_recommendation, {}))
+
         else:
-            recommendation = get_word2vec_recommendation(uniqueFileConvention1, submissionsDict, 5, 'easy', 5)
-            print recommendation
+            level = get_user_level_without_category(uniqueFileConvention, userObjectsAll[user].level_wise_submissions)
+            recommendation = get_word2vec_recommendation(uniqueFileConvention1, submissionsDict, 5, level, 5)
+
+            for problem in recommendation:
+                final_recommendation.append(problem[0])
 
     else:
-        # try:
+
+        all_recommendation = []
         iterations = 0
         obtained_categories = 0
         recomm_no_probs_per_category = 3
@@ -186,65 +183,67 @@ def recommender(uniqueFileConvention, platform, user):
                 if len(optimum_category_level[level]) != 0:
                     recommendation = get_word2vec_recommendation(uniqueFileConvention, submissionsDict, prev_sub, level, no_recomm)
                     if recommendation is not None:
-                        # print_recommendation(recommendation)
                         for problem in recommendation:
                             if problem[1] >= score_threshold:
                                 if get_difficulty(problem[0]) == level:
                                     rec_prob_cat = get_category(problem[0])
                                     for cat in rec_prob_cat:
                                         if cat in optimum_category_level[level]:
-                                            if problem[0] not in final_recommendation:
+                                            if problem[0] not in all_recommendation:
                                                 categorywise_recomm[cat].append(problem)
-                                                final_recommendation.append(problem[0])
+                                                all_recommendation.append(problem[0])
                                                 if len(categorywise_recomm[cat]) == recomm_no_probs_per_category:
                                                     optimum_category_level[level].remove(cat)
                                                     obtained_categories += 1
-                                                    # if len(optimum_category_level[level]) == 0:
-                                                    #     del optimum_category_level[level]
-                                                    #     break
+
                             else:
                                 break
                     else:
                         # Low submission count for a particular level
-                        print "Iteration " + str(iterations)
                         obtained_categories += len(optimum_category_level[level])
                         optimum_category_level[level][:] = []
-                        # print categorywise_recomm
 
-                        if user != __user:
-                            __user = user
-                            low_sub_count += 1
-
-                        print("======================================")
                         break
 
-        # except Exception as e:
-        #     print e
-        #     print level
-        #     print optimum_category_level_copy
-        #     print categoryDifficultyMap
+        for level in stddifficultyLevels:
+            for category in optimum_category_level_copy[level]:
+                if categorywise_recomm[category]:
+                    final_recommendation.append(categorywise_recomm[category][0][0])
+                else:
+                    prob_code = get_popular(level, category, all_recommendation, userObjects.solved_probs)
+                    final_recommendation.append(prob_code)
 
-        print categorywise_recomm
-        # print optimum_category_level_copy
-        ct = 0
-        for category in categorywise_recomm:
-            ct += len(categorywise_recomm[category])
-        if ct == 12:
-            regular_count += 1
-        print "Total iterations" + str(iterations)
+
+    print final_recommendation
+    # print evalsubmissions
+
+    recomm_prob_obj = []
+
+    probObjects, probObjectsAll = get_probCodeToObjects()
+
+    for prob_code in final_recommendation:
+        try:
+            recomm_prob_obj.append(probObjects[prob_code])
+        except:
+            recomm_prob_obj.append(probObjectsAll[prob_code])
+
     print("=====================================================================================")
+
+    return recomm_prob_obj
+
+
+def get_recommendations(username):
+
+    uniqueFileConvention = 'users_codechef'
+    platform = PlatformType.Codechef
+
+    userObjects = generateLazyLoad(uniqueFileConvention, platform, username)
+
+    recommended_probs = recommender(uniqueFileConvention, userObjects, username)
+
+    return recommended_probs, userObjects.categoryDifficultyMap, sort_by_date(userObjects.problemMappings)
+
 
 if __name__ == '__main__':
 
-    # uniqueFileConvention = 'users_codechef_all_probs'
-    # userNameToObjectsAll = generateLazyLoadAll(uniqueFileConvention, PlatformType.Codechef)
-    uniqueFileConvention = 'users_codechef'
-    userNameToObjects = generateLazyLoad(uniqueFileConvention, PlatformType.Codechef)
-    print "Total no of users in DB " + str(len(userNameToObjects))
-    #recommender(uniqueFileConvention, PlatformType.Codechef, 'geeksoul')
-
-    for username in userNameToObjects:
-        recommender(uniqueFileConvention, PlatformType.Codechef, username)
-
-    print "Noob users - " +str(noob_count) + " Low_sub_count - " + str(low_sub_count) + " Regular - "+str(regular_count) \
-          + " Total - " + str(total_count)
+    get_recommendations("i_am_what_i_am")

@@ -40,16 +40,13 @@ def get_codechef_users(probs_all_or_categorywise):
         userNameToObjects[user.uname] = user
     userProbMapQuery = s.query(Codechef_User_Prob_Map).filter()
 
-    print("Before pruning submissions list " + str(userProbMapQuery.count()))
     userProbMaps = [p for p in userProbMapQuery if p.date != 'None' and p.difficulty != '' and p.prob_code in probCodeToObjects]
-    print("user to problem Map ready")
-    print("After pruning submissions list " + str(len(userProbMaps)))
+
     counter = 0.0
     userNotInProbTable = 0
     probNotInProbTablem = 0
     difficultyErrCount = 0
-    print ("Loop starts")
-    count = 0
+
     for map in userProbMaps:
         try:
             user = userNameToObjects[map.uname]
@@ -68,13 +65,9 @@ def get_codechef_users(probs_all_or_categorywise):
 
             for cat in categories:
                 if cat in prob.category:
-                    """
-                    if cat not in user.categoryDifficultyMap:
-                        user.categoryDifficultyMap[cat] = {}
-                    if prob.difficulty not in user.categoryDifficultyMap[cat]:
-                        user.categoryDifficultyMap[cat][prob.difficulty] = 0
-                    """
                     user.categoryDifficultyMap[cat][prob.difficulty] += 1
+
+            user.level_wise_submissions[prob.difficulty] += 1
 
             if map.prob_code in user.problemMappings:
                 if map.date > user.problemMappings[map.prob_code].date:
@@ -83,6 +76,7 @@ def get_codechef_users(probs_all_or_categorywise):
                 user.problemMappings[map.prob_code] = map
 
             user.solved_probs[map.prob_code] = map.no_of_submissions
+            user.solved_probs_obj[map.prob_code] = prob
             userNameToObjects[map.uname] = user
         except KeyError as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -91,7 +85,7 @@ def get_codechef_users(probs_all_or_categorywise):
             print user.categoryDifficultyMap
             print user.uname
             failedKey = str(e).replace("'", "")
-            # print e
+
             if failedKey in str(map.prob_code):
                 errorMsg = 'A problem in problem map exists whose row is not present in problem table ' \
                            + str(map.prob_code) + ' ' + failedKey
@@ -118,7 +112,7 @@ def get_codechef_users(probs_all_or_categorywise):
     #    usersToBeReturned.append(userNameToObjects[userName])
     print(str(len(userNameToObjects)))
     print('Fetched codechef users')
-    return userNameToObjects
+    return userNameToObjects, probCodeToObjects
 
 
 def print_skewed_codechef_user_stats(userNameToObjects):

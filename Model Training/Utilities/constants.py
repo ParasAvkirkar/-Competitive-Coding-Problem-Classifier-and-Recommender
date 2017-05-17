@@ -26,7 +26,8 @@ codeforces
 '''
 
 # For each level in codechef, we had defined weights for that level
-codechefDifficultyLevels = {'easy':1, 'medium':1000, 'hard':1000000}
+codechefDifficultyLevels = {'school':0, 'easy':1, 'medium':1000, 'hard':1000000, 'challenge':0}
+stddifficultyLevels = ['easy', 'medium', 'hard']
 
 classifierTypes = ['KNN', 'SVM', 'DECISIONTREE', 'RANDOMFOREST', 'NAIVEBAYES',
                    'HPKNN', 'HPSVM', 'HPRANDOMFOREST', 'HYPERSKLEARN']
@@ -150,5 +151,4 @@ class Metrics:
 
     def __str__(self):
         return ''
-
 

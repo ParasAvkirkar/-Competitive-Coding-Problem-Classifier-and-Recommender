@@ -42,9 +42,11 @@ class Codechef_User(Base):
         self.categoryDifficultyMap = {}
         self.user_level = 0.0
         self.solved_probs = {}
+        self.solved_probs_obj = {}
         self.failed_probs = {}
         self.recommendation_list = []
         self.problemMappings = {}
+        self.level_wise_submissions = {}
 
         for category in categories:
             #levelDict = {}
@@ -52,6 +54,8 @@ class Codechef_User(Base):
             for level in codechefDifficultyLevels:
                 self.categoryDifficultyMap[category][level] = 0
 
+        for level in codechefDifficultyLevels:
+            self.level_wise_submissions[level] = 0
 
     # Applicable only when categoryDifficultyMap is filled
     # Generally this method is expected to be called after building categoryDifficultyMap from database
