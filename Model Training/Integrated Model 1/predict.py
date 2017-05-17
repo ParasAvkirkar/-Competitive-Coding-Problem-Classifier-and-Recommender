@@ -16,12 +16,13 @@ def createFeaturesForProbByCategory(prob, category):
     filePath = '../Model Training/Integrated Model 1/data/' + category + '/'
     # filePath = 'data/'+category+'/'
     features = []
-    with open(filePath + 'dataset.csv') as f:
+    with open(filePath + 'integrated_model1_10_' + category + '_0.2_dataset.csv') as f:
 
-        with open(filePath + 'feature_size.pickle') as fs:
-            feature_size = pickle.load(fs)
-            print ('\n\n\n\tfeature size for ' + str(category) + ' : ' + str(feature_size))
+        # with open(filePath + 'feature_size.pickle') as fs:
+        #     feature_size = pickle.load(fs)
+        #     print ('\n\n\n\tfeature size for ' + str(category) + ' : ' + str(feature_size))
 
+        feature_size = 10
         # try:
         # 	with open(filePath + 'feature_size.pickle') as fs:
         # 		feature_size = pickle.load(fs)
@@ -45,7 +46,7 @@ def predict_top3_categories(prob):
     category_models = {}
     features = {}
     for c in categories:
-        with open('../Model Training/Integrated Model 1/model/' + c) as f:
+        with open('../Model Training/Integrated Model 1/model/' + 'integrated_model1_probWise_10_' + c + '_0.2_RANDOMFOREST.pickle') as f:
             # with open('model/' + c, 'r') as f:
             category_models[c] = pickle.load(f)
             print 'Model Loaded'
@@ -75,5 +76,5 @@ def predict_top3_categories(prob):
 if __name__ == "__main__":
     # pass
     # prob = 'There are N servers which you have to place in N slots. Slots and servers are numbered from 1 to N. A distance between slots i and j is |i - j|. There are M pairs of servers that should be connected by wire. You are to place all the servers in the slots so the total wire length is minimized.'
-    # prob = 'Given an array of size n, you have to answer queries of the form : L R k . For each query, you have to find an element which occurs consecutively in the subarray [L,R] more than or equal to k times. k will always be greater than floor((R-L+1)/2). If no such element exists, print -1.'
+    prob = 'Given an array of size n, you have to answer queries of the form : L R k . For each query, you have to find an element which occurs consecutively in the subarray [L,R] more than or equal to k times. k will always be greater than floor((R-L+1)/2). If no such element exists, print -1.'
     print predict_top3_categories(prob)

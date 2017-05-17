@@ -37,6 +37,7 @@ def getData():
 def postData():
     platform_url = request.form.get('url')
     problem_content = request.form.get('content')
+    print platform_url
     if platform_url == 'www.codechef.com':
         c = problems.getProblemFromDescription(problem_content)
     elif platform_url == 'codeforces.com':

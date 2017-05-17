@@ -105,3 +105,20 @@ INFO:werkzeug:127.0.0.1 - - [20/Feb/2017 11:39:02] "POST /postData HTTP/1.1" 200
 INFO:werkzeug:127.0.0.1 - - [20/Feb/2017 12:43:02] "POST /postData HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Feb/2017 12:44:11] "POST /postData HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Feb/2017 13:01:28] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:23:02] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:24:00] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:24:14] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:25:50] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:26:15] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/paras/Documents/FYProject/Server/server.py', reloading
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:29:11] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:29:21] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:31:25] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/paras/Documents/FYProject/Model Training/Integrated Model 1/predict.py', reloading
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:50:25] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:55:56] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:58:23] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:58:56] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 18:59:46] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 19:00:19] "POST /postData HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2017 19:01:34] "POST /postData HTTP/1.1" 200 -

@@ -12,8 +12,8 @@ chrome.runtime.onMessage.addListener(function(response, sender, sendResponse){
 	}
 	else{
       $.post( "http://127.0.0.1:5000/postData", response, function( data ) {
-  //  			console.log(data);
-  //  			alert(data.result)
+   			console.log(data);
+//   			alert(data.result)
               var views = chrome.extension.getViews({
                   type: "popup"
               });
