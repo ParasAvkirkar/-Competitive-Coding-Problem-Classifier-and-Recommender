@@ -12,10 +12,12 @@ from sklearn.externals.six import StringIO
 from sklearn.metrics import precision_recall_fscore_support
 from sklearn.naive_bayes import GaussianNB
 import pydotplus
+
 sys.path.append('../Utilities/')
 sys.path.append('../../Data Transformation/integrated')
 sys.path.append('../../hyperopt-sklearn')
-from get_conventions import get_problem_model_file_convention, get_problem_dataset_file_convention, get_problem_metrics_file_convention
+from get_conventions import get_problem_model_file_convention, get_problem_dataset_file_convention, \
+    get_problem_metrics_file_convention
 from constants import performance_metric_keys, ClassifierType, PlatformType, Metrics, defaultTestSize
 from hpsklearn import HyperoptEstimator, any_classifier, knn, svc, random_forest
 from hyperopt import tpe
@@ -54,11 +56,16 @@ def calculateIrreducibleError(fX, fCapX):
     return calculateTotalError(fX, fCapX) - (calculateBias(fX, fCapX) ** 2) - calculateVariance(fX, fCapX)
 
 
-def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFileConvention, test_size=defaultTestSize):
-    # modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) \
-    #                       + '_' + ClassifierType.classifierTypeString[classifier]
-    modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) \
-                          + '_' + ClassifierType.classifierTypeString[classifier]
+def train_for_categoryModel1(platform, number_of_top_words, category, classifier, test_size=defaultTestSize):
+
+    modelFileConvention = get_problem_model_file_convention(platform = platform, model_number = 1,
+                                                            category_or_problemWise = "catWise",
+                                                            number_of_top_words = number_of_top_words,
+                                                            category = category, test_size = test_size,
+                                                            classifier = classifier)
+    dataFileConvention = get_problem_dataset_file_convention(platform = platform, model_number = 1,
+                                                             number_of_top_words = number_of_top_words,
+                                                             category = category, test_size = test_size)
 
     df = pandas.read_csv('data/' + category + '/' + dataFileConvention + '_dataset.csv')
     X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
@@ -69,6 +76,7 @@ def train_for_categoryModel1(category, classifier, uniqueFileConvention, dataFil
     X_test = X[-int(len(X) * test_size):]
     y_test = y[-int(len(y) * test_size):]
 
+    clf = None
     if classifier == ClassifierType.KNN:
         clf = neighbors.KNeighborsClassifier()
     elif classifier == ClassifierType.SVM:
@@ -318,23 +326,26 @@ def train_for_categoryModel2(category, classifier, uniqueFileConvention, dataFil
                    bias = bias, variance = variance, irreducibleError = irreducibleError, totalError = totalError)
 
 
-# Deprecated method, broken and needs to be updated for current convention
-def get_accuracy(categories, classifier, uniqueFileConvention, dataFileConvention, useIntegrated=True,
-                 platform=PlatformType.Default, modelNumber=1, test_size=defaultTestSize, number_of_top_words=10):
+# Deprecated method for model 2
+def get_accuracy(categories, classifier, useIntegrated=True, platform=PlatformType.Default, modelNumber=1, test_size=defaultTestSize, number_of_top_words=10):
     preds_for_prob = {}
     ans_for_prob = {}
 
     for category in categories:
         print('Processing for category: ' + category)
-        tempDataFileConvention = dataFileConvention + '_' + category + '_' + str(test_size)
-        modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) + '_' + \
-                              ClassifierType.classifierTypeString[classifier]
 
+        modelFileConvention = get_problem_model_file_convention(platform = platform, model_number = modelNumber,
+                                                                category_or_problemWise = "catWise",
+                                                                number_of_top_words = number_of_top_words,
+                                                                category = category, test_size = test_size,
+                                                                classifier = classifier)
+        dataFileConvention = get_problem_dataset_file_convention(platform = platform, model_number = modelNumber,
+                                                                 number_of_top_words = number_of_top_words,
+                                                                 category = category, test_size = test_size)
         print('Generating dataset file')
         generateLazyLoad(useIntegrated = useIntegrated, category = category, platform = platform,
-                         uniqueFileConvention = uniqueFileConvention, dataFileConvention = tempDataFileConvention,
-                         shouldShuffle = False, test_size=test_size, number_of_top_words = number_of_top_words)
-        df = pandas.read_csv("data/" + category + "/" + tempDataFileConvention + "_dataset.csv")
+                         shouldShuffle = False, test_size = test_size, number_of_top_words = number_of_top_words)
+        df = pandas.read_csv("data/" + category + "/" + dataFileConvention + "_dataset.csv")
         X = np.array(df.drop(['class', 'sub_size', 'time_limit'], 1)).astype(float)
         y = np.array(df['class']).astype(int)
 
@@ -344,9 +355,8 @@ def get_accuracy(categories, classifier, uniqueFileConvention, dataFileConventio
         if not os.path.isfile('model/' + modelFileConvention + '.pickle'):
             print('Model does not exist: ' 'model/' + modelFileConvention + '.pickle')
             print('Training dataset for building model')
-            metrics = train_for_categoryModel1(category = category, classifier = classifier,
-                                               uniqueFileConvention = uniqueFileConvention, dataFileConvention = tempDataFileConvention,
-                                               test_size = test_size)
+            metrics = train_for_categoryModel1(platform = platform, number_of_top_words = number_of_top_words,
+                                               category = category, classifier = classifier, test_size = test_size)
             if not metrics.isValid:
                 return -1.0
         with open('model/' + modelFileConvention + '.pickle') as f:
@@ -383,79 +393,6 @@ def get_accuracy(categories, classifier, uniqueFileConvention, dataFileConventio
 
     accuracy = str(correct * 1.0 / len(X_test))
     print('accuracy = ' + str(accuracy))
-    return accuracy
-
-
-def baggingBasedTraining(categories, classifiers, uniqueFileConvention, dataFileConvention, useIntegrated=True,
-                         platform=PlatformType.Default, test_size=defaultTestSize):
-
-    probs = get_all_probs_without_category_NA(useIntegrated = useIntegrated, platform = platform)
-    print(str(useIntegrated) + ' ' + PlatformType.platformString[platform])
-    test_probs = probs[-int(test_size * len(probs)):]
-
-    # Preprocessing Models
-    classifierCategoryMapToModels = {}
-    for classifier in classifiers:
-        categoryMapToModels = {}
-        for category in categories:
-            print('Processing for category: ' + category)
-            modelFileConvention = uniqueFileConvention + '_' + category + '_' + str(test_size) + '_' + \
-                                  ClassifierType.classifierTypeString[classifier]
-            tempDataFileConv = dataFileConvention + '_notShuffled' + '_' + category + '_' + str(test_size)
-            if not os.path.isfile("data/" + category + "/" + tempDataFileConv + "_dataset.csv"):
-                print('File does not exist: ' + 'data/' + category + '/' + tempDataFileConv + '_dataset.csv')
-                print('Generating dataset file')
-                generateLazyLoad(useIntegrated = useIntegrated, category = category, platform = platform,
-                                 uniqueFileConvention = uniqueFileConvention, dataFileConvention = tempDataFileConv,
-                                 shouldShuffle = False, test_size = test_size)
-
-            if not os.path.isfile('model/' + modelFileConvention + '.pickle'):
-                print('Model does not exist: ' 'model/' + modelFileConvention + '.pickle')
-                print('Training dataset for building model')
-                metrics = train_for_categoryModel1(category = category, classifier = classifier,
-                                                   uniqueFileConvention = uniqueFileConvention,
-                                                   dataFileConvention = tempDataFileConv, test_size = test_size)
-            clf = None
-            with open('model/' + modelFileConvention + '.pickle') as f:
-                clf = pickle.load(f)
-            categoryMapToModels[category] = clf
-
-        classifierCategoryMapToModels[ClassifierType.classifierTypeString[classifier]] = categoryMapToModels
-
-    print('All classifiers for each category collected')
-
-    correct_prediction = 0.0
-    problemsPredicted = 0.0
-    for prob in test_probs:
-        classifiers_score_for_each_cat = dict((cat, 0.0) for cat in categories)
-        categorywise_votes_byclassifiers = dict((cat, 0.0) for cat in categories)
-
-        for classifierString in classifierCategoryMapToModels:
-            category_percentages = {}
-            for cat in classifierCategoryMapToModels[classifierString]:
-                tempDataFileConv = dataFileConvention + '_notShuffled' + '_' + cat + '_' + str(test_size)
-                features = np.array(createFeaturesForProbByCategory(prob, cat, tempDataFileConv))
-                predict_scores = classifierCategoryMapToModels[classifierString][cat].predict_proba(features.reshape(1, -1))
-
-                category_percentages[cat] = predict_scores[0][1]
-                classifiers_score_for_each_cat[cat] = classifiers_score_for_each_cat[cat] + predict_scores[0][1]
-
-            category_percentages = sorted(category_percentages.items(), key=operator.itemgetter(1), reverse=True)
-            categorywise_votes_byclassifiers[category_percentages[0][0]] += 1
-
-        categoryScores = sorted(classifiers_score_for_each_cat.items(), key=operator.itemgetter(1), reverse=True)
-        categorywise_votes_byclassifiers = sorted(categorywise_votes_byclassifiers.items(), key=operator.itemgetter(1), reverse=True)
-        for i in range(3):
-            # if categorywise_votes_byclassifiers[i][0] in prob.category:
-            #     correct_prediction += 1.0
-            #     break
-            if categoryScores[i][0] in prob.category:
-                correct_prediction += 1.0
-                break
-        problemsPredicted += 1.0
-        # print('Processing Done till: ' + str(problemsPredicted / len(test_probs)))
-    accuracy = correct_prediction / len(test_probs)
-    print('Accuracy: ' + str(accuracy))
     return accuracy
 
 
