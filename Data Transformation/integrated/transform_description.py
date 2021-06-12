@@ -7,7 +7,8 @@ from nltk import pos_tag
 from nltk.stem.porter import *
 from stemming.porter2 import stem
 import spacy
-
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 
 def transform(desc):
     desc = removeNondecodableChars(desc)
@@ -16,6 +17,10 @@ def transform(desc):
     desc = removePunctuation(desc)
     desc = stemming(desc)
     # print 'Description Transformation Ended '
+    stop_words = set(stopwords.words('english'))
+    word_tokens = word_tokenize(desc)
+    filtered_sentence = [w for w in word_tokens if not w.lower() in stop_words]
+    desc=' '.join(filtered_sentence)
     return desc
 
 
@@ -26,7 +31,7 @@ def new_transform(desc):
     desc = removePunctuation(desc)
     # desc = lemmatize_spacy(desc)
     desc = stemming(desc)
-
+    
     return desc
 
 
