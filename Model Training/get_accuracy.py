@@ -118,12 +118,12 @@ if __name__ == '__main__':
                     recall = tp/(tp + fn)
                     f1_score = 2 * precision * recall / (precision + recall)
                     Specificity = tn / tn + fp
-                    False-Positive Rate = fp / fp + tn
-                    True-Negative Rate = tn / tn + fp
-                    False-Negative Rate = fn / fn + tp
+                    False_Positive_Rate = fp / fp + tn
+                    True_Negative_Rate = tn / tn + fp
+                    False_Negative_Rate = fn / fn + tp
                     print "Precision - " + str(precision)
                     print "Recall - " + str(recall)
                     print "F1score - " + str(f1_score)
 
-                    dat = [prev_sub, no_recomm, no_test, tp, tn, fp, fn, precision, recall, f1_score,Specificity,False-Positive Rate,True-Negative Rate,False-Negative Rate]
+                    dat = [prev_sub, no_recomm, no_test, tp, tn, fp, fn, precision, recall, f1_score,Specificity,False_Positive_Rate,True_Negative_Rate,False_Negative_Rate]
                     writer.writerow(dat)
