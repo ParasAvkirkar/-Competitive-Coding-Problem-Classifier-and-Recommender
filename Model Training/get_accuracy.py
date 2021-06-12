@@ -96,7 +96,7 @@ if __name__ == '__main__':
 
     with open('accuracy_val.csv', 'w') as f:
         writer = csv.writer(f)
-        writer.writerow(['prev_sub', 'no_recomm', 'no_test', 'tp', 'tn', 'fp', 'fn', 'precision', 'recall', 'f1_score'])
+        writer.writerow(['prev_sub', 'no_recomm', 'no_test', 'tp', 'tn', 'fp', 'fn', 'precision', 'recall', 'f1_score','Specificity','False_Positive_Rate','True_Negative_Rate','False_Negative_Rate'])
 
         prev_sub = 5
         no_recomm = 10
